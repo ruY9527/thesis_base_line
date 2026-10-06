@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "standalone-cave-baseline",
+  "identity_version": 1,
+  "status": "complete",
+  "audits": [
+    {
+      "audit_id": "A1",
+      "claim_id": "strong_baseline",
+      "claim_text": "Uploaded run establishes a strong, competitive paper baseline.",
+      "scope": "Current 12 local CAVE scenes, x8, 8x8 sigma3 symmetric blur; byte hashes frozen. Uploaded run binding remains unverified.",
+      "source_mode": "standalone",
+      "requested_assurance_class": "confirmatory",
+      "attained_assurance_class": "none",
+      "verdict": "inconclusive",
+      "audited_claim_effect": "inconclusive",
+      "source_runs": [],
+      "run_selection": {
+        "selection_rule": "All 12 diagnostic scenes and all 40 uploaded record points included. Local Model/1 and Model/2 are header-only; Model/3 has only epoch 1 and is a distinct run, so is not independent replication of the uploaded model.",
+        "excluded_runs": [
+          {
+            "run_id": "local_model3_epoch1",
+            "rationale": "Different epoch-1 metrics and no matching uploaded checkpoint; cannot substitute for the uploaded epoch1350 model."
+          }
+        ]
+      },
+      "evidence_artifacts": [
+        {
+          "path": "C:\\Users\\Administrator\\Downloads\\cave_record.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "5b0de5becf31c8f2ea132b812f88c28835e1eeeb7272fbf2cd1ec7fea0e84b79"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\model.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\train_cave_M.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\train_dataloader.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\utils.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\calculate_metrics.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_diagnostics.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "1b531516dcdd3bfe9f786d4e98310e4e7890f1ab3aa0edaee9a898329afe94e2"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "45077f72effbb3aba8877276c6fb1448877bc642924f8bf4222b3d948592894e"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\dataset_manifest.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "d275055254bc0848d0aada1d3137dda2e037d09276ae7f1be0eca3bd06013aed"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\interpolation_per_scene.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "b9bc3be98cce8f743fdfce2b8e16f0c64d94b70504e34ae7652a036301047fbc"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\phase_alignment_pairs.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "2bcda80726d3a6590be075a602da91236574444e9db99052a07589b4d3844ac1"
+        }
+      ],
+      "check_results": [
+        {
+          "check_id": "protocol_integrity",
+          "status": "inconclusive",
+          "rationale": "Fixed local degradation and all 12 scenes; uploaded training used test for model selection.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "metric_validity",
+          "status": "pass",
+          "rationale": "Reused project metrics; analytic 0.01 constant error gives PSNR 40, RMSE 2.55, SAM 0; phase checked with an interior ramp.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "baseline_fairness",
+          "status": "inconclusive",
+          "rationale": "No deep comparator rerun; interpolation has less input information; literature uses different protocols.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "outcome_accounting",
+          "status": "inconclusive",
+          "rationale": "All 12 local scenes included for all interpolation methods; history of uploaded training failures and other runs unknown.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "inferential_support",
+          "status": "inconclusive",
+          "rationale": "One diagnostic dataset and one uploaded training run; no independent split or seed replication.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "confound_control",
+          "status": "inconclusive",
+          "rationale": "Phase comparison changes grid only; uploaded model architecture/data binding unknown.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "provenance",
+          "status": "inconclusive",
+          "rationale": "Local diagnostic sources and result artifacts hashed; uploaded checkpoint absent.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "snapshot_continuity",
+          "status": "not_assessed",
+          "rationale": "No orchestrated immutable snapshot or authenticated runtime binding.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "independence",
+          "status": "not_assessed",
+          "rationale": "Same assistant implemented and audited diagnostics; no independent verifier.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        }
+      ],
+      "independence": {
+        "self_review": true,
+        "dimensions": [],
+        "evidence": "Diagnostic executor and auditor are the same assistant."
+      },
+      "limitations": [
+        "Uploaded checkpoint missing.",
+        "No deep method retraining.",
+        "Outcome-informed phase investigation is exploratory.",
+        "Scene standard deviations are not seed uncertainty."
+      ],
+      "predecessor_failures": [],
+      "minimum_corrective_action": "Provide matching checkpoint and manifest; freeze validation/test and rerun strong deep comparators with paired seeds.",
+      "narrative_anchor": "## Audit A1"
+    },
+    {
+      "audit_id": "A2",
+      "claim_id": "phase_alignment",
+      "claim_text": "Aligning interpolation sampling coordinates improves mean PSNR on current local CAVE scenes.",
+      "scope": "Current 12 local CAVE scenes, x8, 8x8 sigma3 symmetric blur; byte hashes frozen. Uploaded run binding remains unverified.",
+      "source_mode": "standalone",
+      "requested_assurance_class": "exploratory",
+      "attained_assurance_class": "exploratory",
+      "verdict": "supports_exploratory_follow_up",
+      "audited_claim_effect": "strengthen",
+      "source_runs": [],
+      "run_selection": {
+        "selection_rule": "All 12 diagnostic scenes and all 40 uploaded record points included. Local Model/1 and Model/2 are header-only; Model/3 has only epoch 1 and is a distinct run, so is not independent replication of the uploaded model.",
+        "excluded_runs": [
+          {
+            "run_id": "local_model3_epoch1",
+            "rationale": "Different epoch-1 metrics and no matching uploaded checkpoint; cannot substitute for the uploaded epoch1350 model."
+          }
+        ]
+      },
+      "evidence_artifacts": [
+        {
+          "path": "C:\\Users\\Administrator\\Downloads\\cave_record.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "5b0de5becf31c8f2ea132b812f88c28835e1eeeb7272fbf2cd1ec7fea0e84b79"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\model.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\train_cave_M.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\train_dataloader.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\utils.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\calculate_metrics.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_diagnostics.py",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "1b531516dcdd3bfe9f786d4e98310e4e7890f1ab3aa0edaee9a898329afe94e2"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "45077f72effbb3aba8877276c6fb1448877bc642924f8bf4222b3d948592894e"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\dataset_manifest.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "d275055254bc0848d0aada1d3137dda2e037d09276ae7f1be0eca3bd06013aed"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\interpolation_per_scene.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "b9bc3be98cce8f743fdfce2b8e16f0c64d94b70504e34ae7652a036301047fbc"
+        },
+        {
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\phase_alignment_pairs.csv",
+          "kind": "source_or_result",
+          "source": "experiment",
+          "digest": "2bcda80726d3a6590be075a602da91236574444e9db99052a07589b4d3844ac1"
+        }
+      ],
+      "check_results": [
+        {
+          "check_id": "protocol_integrity",
+          "status": "pass",
+          "rationale": "Fixed local degradation and all 12 scenes; uploaded training used test for model selection.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "metric_validity",
+          "status": "pass",
+          "rationale": "Reused project metrics; analytic 0.01 constant error gives PSNR 40, RMSE 2.55, SAM 0; phase checked with an interior ramp.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "baseline_fairness",
+          "status": "inconclusive",
+          "rationale": "No deep comparator rerun; interpolation has less input information; literature uses different protocols.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "outcome_accounting",
+          "status": "pass",
+          "rationale": "All 12 local scenes included for all interpolation methods; history of uploaded training failures and other runs unknown.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "inferential_support",
+          "status": "inconclusive",
+          "rationale": "One diagnostic dataset and one uploaded training run; no independent split or seed replication.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "confound_control",
+          "status": "pass",
+          "rationale": "Phase comparison changes grid only; uploaded model architecture/data binding unknown.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "provenance",
+          "status": "pass",
+          "rationale": "Local diagnostic sources and result artifacts hashed; uploaded checkpoint absent.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "snapshot_continuity",
+          "status": "not_assessed",
+          "rationale": "No orchestrated immutable snapshot or authenticated runtime binding.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        },
+        {
+          "check_id": "independence",
+          "status": "not_assessed",
+          "rationale": "Same assistant implemented and audited diagnostics; no independent verifier.",
+          "evidence_paths": [
+            "D:\\coding\\github_self\\thesis_base_line\\research\\baseline_comparison_20261006\\diagnostics.json"
+          ]
+        }
+      ],
+      "independence": {
+        "self_review": true,
+        "dimensions": [],
+        "evidence": "Diagnostic executor and auditor are the same assistant."
+      },
+      "limitations": [
+        "Uploaded checkpoint missing.",
+        "No deep method retraining.",
+        "Outcome-informed phase investigation is exploratory.",
+        "Scene standard deviations are not seed uncertainty."
+      ],
+      "predecessor_failures": [],
+      "minimum_corrective_action": "Replicate phase-controlled experiment with new scene validation and frozen test.",
+      "narrative_anchor": "## Audit A2"
+    }
+  ]
+}

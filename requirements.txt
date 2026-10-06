@@ -1,0 +1,13 @@
+# Recommended interpreter: Python 3.10 (64-bit).
+# Install: python -m pip install -r requirements.txt
+# CUDA 11.8 build for NVIDIA GPUs, including RTX 3060.
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+torch==2.2.2+cu118
+numpy==1.26.4
+scipy==1.11.4
+hdf5storage==0.1.19
+h5py==3.10.0
+pandas==2.1.4
+tqdm==4.66.4
+thop==0.1.1.post2209072238

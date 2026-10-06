@@ -1,0 +1,77 @@
+# ============================
+# 大文件 / 数据集（不上传远程仓库）
+# ============================
+
+# CAVE 高光谱数据集（约 2.9G），/ 开头锚定根目录，避免误伤 pf/code/CAVE/
+/cave/
+
+# 数据文件
+*.mat
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.tiff
+*.tfrecord
+
+# ============================
+# 模型权重 / 检查点
+# ============================
+*.pth
+*.pt
+*.pkl
+*.ckpt
+*.onnx
+*.pb
+*.weights
+*.safetensors
+
+# 保留记录文件（csv 很小，正常提交）
+# pf/**/cave_record.csv 不受影响
+
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ============================
+# 训练输出 / 日志
+# ============================
+runs/
+logs/
+outputs/
+checkpoints/
+wandb/
+*.log
+events.out.tfevents.*
+
+# ============================
+# IDE / 编辑器
+# ============================
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ============================
+# 操作系统
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini

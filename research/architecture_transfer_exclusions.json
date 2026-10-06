@@ -1,0 +1,18 @@
+[
+  {
+    "title": "SwinIR: Image Restoration Using Swin Transformer",
+    "venue": "ICCV Workshops",
+    "year": 2021,
+    "paper_url": "https://openaccess.thecvf.com/content/ICCV2021W/AIM/html/Liang_SwinIR_Image_Restoration_Using_Swin_Transformer_ICCVW_2021_paper.html",
+    "code_url": "https://github.com/JingyunLiang/SwinIR",
+    "reason": "作者与CVF正式记录均是ICCVW，不能计入用户指定ICCV主会清单。方法仍有参考价值，可作为范围外补充。"
+  },
+  {
+    "title": "MST++: Multi-stage Spectral-wise Transformer for Efficient Spectral Reconstruction",
+    "venue": "CVPR Workshops",
+    "year": 2022,
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2022W/NTIRE/papers/Cai_MST_Multi-Stage_Spectral-Wise_Transformer_for_Efficient_Spectral_Reconstruction_CVPRW_2022_paper.pdf",
+    "code_url": "https://github.com/caiyuanhao1998/MST-plus-plus",
+    "reason": "CVPRW，不能计入CVPR主会。与CVPR2022 MST是不同任务和论文：MST是CASSI光谱压缩重建，MST++是RGB→HSI。"
+  }
+]

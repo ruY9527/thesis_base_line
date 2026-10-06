@@ -1,0 +1,290 @@
+{
+  "verified_on": "2026-10-05",
+  "scope": "Direct HSI-MSI fusion; observed repository files and official paper/author records, not installation or metric reproduction",
+  "records": [
+    {
+      "title": "Unsupervised Hyperspectral Image Super-Resolution via Self-Supervised Modality Decoupling",
+      "authors": "Songcheng Du; Yang Zou; Zixu Wang; Xingyuan Li; Ying Li; Changjing Shang; Qiang Shen",
+      "venue": "IJCV",
+      "year": 2026,
+      "paper_url": "https://doi.org/10.1007/s11263-026-02757-8",
+      "code_url": "https://github.com/dusongcheng/MossFuse",
+      "setting": "自监督/无监督 HSI-MSI 融合；含退化估计",
+      "key_idea": "将模态共享与互补信息分解，使用子空间聚类损失引导分解后再融合。",
+      "baseline_transfer": "针对简单 concat+fuse 的冗余，将两路特征拆为共享/私有分支，再设计跨模态一致性与互补保留损失。",
+      "limitation": "不能只复制模块而保留 HR-HSI 标签损失称为自监督；环境 README 有重复/缺失版本项。",
+      "code_evidence": "已核对公开树：MossFuseNet.py、train.py、test.py、degradation_net.py；README 提供 python test.py 与合成过程。",
+      "priority": "P1",
+      "notes": "arxiv v1 标题 Modality Decoupling is All You Need；v4 明确 Journal reference IJCV134,152(2026)，DOI一致；Springer直读超时。",
+      "verification_urls": [
+        "https://arxiv.org/abs/2412.04802",
+        "https://github.com/dusongcheng/MossFuse"
+      ]
+    },
+    {
+      "title": "Hyperspectral and Multispectral Image Fusion with Arbitrary Resolution Through Self-Supervised Representations",
+      "authors": "Ting Wang; Zipei Yan; Jizhou Li; Xile Zhao; Chao Wang; Michael Ng",
+      "venue": "IJCV",
+      "year": 2025,
+      "paper_url": "https://link.springer.com/article/10.1007/s11263-025-02540-1",
+      "code_url": "https://github.com/wangting1907/CLoRF-Fusion",
+      "setting": "自监督连续表示 HSI-MSI 融合",
+      "key_idea": "连续低秩分解 CLoRF，将空间和光谱连续神经表示与低秩结构结合，按坐标查询任意分辨率。",
+      "baseline_transfer": "将 tail 固定网格输出改为低秩系数+光谱基/坐标解码器，探索连续空间尺度与波长建模。",
+      "limitation": "属于输出表示和优化框架改造，非普通注意力直接替换；示例需要模拟观测与已知响应。",
+      "code_evidence": "公开 inr/、train_tv_spatial.py、train_tv_spatial.sh、utils.py；README 有模拟 LR-HSI/MSI 与执行命令。",
+      "priority": "P1",
+      "notes": "Publisher opened，IJCV133(11):7515-7535；DOI10.1007/s11263-025-02540-1。",
+      "verification_urls": [
+        "https://link.springer.com/article/10.1007/s11263-025-02540-1",
+        "https://github.com/wangting1907/CLoRF-Fusion"
+      ]
+    },
+    {
+      "title": "CS2DIPs: Unsupervised HSI Super-Resolution Using Coupled Spatial and Spectral DIPs",
+      "authors": "Yuan Fang; Yipeng Liu; Chong-Yung Chi; Zhen Long; Ce Zhu",
+      "venue": "TIP",
+      "year": 2024,
+      "paper_url": "https://doi.org/10.1109/TIP.2024.3390582",
+      "code_url": "https://github.com/Ambitionfy/CS2DIPs",
+      "setting": "无需外部训练数据，观测对内优化",
+      "key_idea": "非负矩阵-向量张量分解结合耦合空间/光谱 DIP，生成丰度与光谱矩阵并物理重组。",
+      "baseline_transfer": "用双观测退化重投影损失替代 HR-HSI L1；探索把输出分解为光谱基与空间系数。",
+      "limitation": "逐图优化有迭代成本；已知退化/非负混合假设；必须避免以 GT 指标选停止时刻。",
+      "code_evidence": "demo.py 已打开：总损失明确比较 Y 与 PZ、X 与 H_z(Z)，执行反传；modules/含实现。",
+      "priority": "P1",
+      "notes": "TIP33:3090-3101；作者大学官网公开全文。",
+      "verification_urls": [
+        "https://www.ee.nthu.edu.tw/cychi/publications/journal_articles2011/CS2DIPs_unsupervised_HSI_super-resolution_using_coupled_spatial_and_spectral_DIPs.pdf",
+        "https://github.com/Ambitionfy/CS2DIPs/blob/main/demo.py"
+      ]
+    },
+    {
+      "title": "Cross-Attention in Coupled Unmixing Nets for Unsupervised Hyperspectral Super-Resolution",
+      "authors": "Jing Yao; Danfeng Hong; Jocelyn Chanussot; Deyu Meng; Xiaoxiang Zhu; Zongben Xu",
+      "venue": "ECCV",
+      "year": 2020,
+      "paper_url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123740205.pdf",
+      "code_url": "https://github.com/danfenghong/ECCV2020_CUCaNet",
+      "setting": "无监督盲融合/耦合解混",
+      "key_idea": "两路卷积自编码器学习基与系数，交叉注意力传递空间光谱信息，用一致性学习 SRF/PSF。",
+      "baseline_transfer": "替换 concat-only 融合，令 HSI 与 MSI 互相生成指导信息；加入可约束的 SRF/PSF 模块。",
+      "limitation": "交叉注意力与当前全局通道门控不同；光谱解混约束需一并理解。",
+      "code_evidence": "公开 model/ 与 Main_CAVE.py；README 提供 Windows Python3.7 PyTorch demo、逐图运行和输出路径。",
+      "priority": "P1",
+      "notes": "ECCV pp208-224；会议官网全文与代码仓库互相对应。",
+      "verification_urls": [
+        "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123740205.pdf",
+        "https://github.com/danfenghong/ECCV2020_CUCaNet"
+      ]
+    },
+    {
+      "title": "Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model",
+      "authors": "Jian Zhu; He Wang; Yang Xu; Zebin Wu; Zhihui Wei",
+      "venue": "CVPR",
+      "year": 2025,
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhu_Self-Learning_Hyperspectral_and_Multispectral_Image_Fusion_via_Adaptive_Residual_Guided_CVPR_2025_paper.pdf",
+      "code_url": "https://github.com/Zhu1116/ARGS-Diff",
+      "setting": "只用当前 LR-HSI/MSI 学习；无外部数据",
+      "key_idea": "分别从 HSI/MSI 学习光谱与空间扩散先验，在低维子空间中重建，采样每步使用自适应观测残差引导。",
+      "baseline_transfer": "先迁移可计算的观测残差/数据一致性校正到 CNN 输出或迭代块；完整扩散方案需大改。",
+      "limitation": "网络修正 residual 与观测退化 residual 不同；扩散训练与采样开销需实测。",
+      "code_evidence": "推理 sample_subspace.py、diffusion/、示例ckpt；训练仓库 ARGS-Diff-train 有 spatial_train.py/spectral_train.py/ guided_diffusion。",
+      "priority": "P1",
+      "notes": "训练仓库 https://github.com/Zhu1116/ARGS-Diff-train；README HR-HSI optional。",
+      "verification_urls": [
+        "https://arxiv.org/abs/2505.11800",
+        "https://github.com/Zhu1116/ARGS-Diff",
+        "https://github.com/Zhu1116/ARGS-Diff-train"
+      ]
+    },
+    {
+      "title": "Coupled Diffusion Posterior Sampling for Unsupervised Hyperspectral and Multispectral Images Fusion",
+      "authors": "Yang Xu; Jian Zhu; Danfeng Hong; Zhihui Wei; Zebin Wu",
+      "venue": "TIP",
+      "year": 2026,
+      "paper_url": "https://doi.org/10.1109/TIP.2025.3647207",
+      "code_url": "https://github.com/Zhu1116/CDPS-train",
+      "setting": "无监督；仅输入测试对学习扩散先验",
+      "key_idea": "分别学习光谱与空间扩散先验，并在耦合后验采样中同时约束两类观测保真。",
+      "baseline_transfer": "启发双分支先验和双退化观测一致性；CNN 可先做两路不同强度的数据保真反馈。",
+      "limitation": "与 ARGS-Diff 相近但不同工作；本文代码链接核对到训练/分支采样仓库，完整联合采样入口还需进一步复现审计。",
+      "code_evidence": "公开 guided_diffusion、spatial_train.py、spectral_train.py、spatial_sample.py、spectral_sample.py；README 训练步骤，HRHSI optional。",
+      "priority": "P2",
+      "notes": "仓库称 TIP2025 accepted；正式 TIP2026 vol35 pp69-84。不可直接写 TIP2025。",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41477791/",
+        "https://github.com/Zhu1116/CDPS-train"
+      ]
+    },
+    {
+      "title": "Unsupervised Test-Time Adaptation Learning for Effective Hyperspectral Image Super-Resolution With Unknown Degeneration",
+      "authors": "Lei Zhang; Jiangtao Nie; Wei Wei; Yanning Zhang",
+      "venue": "TPAMI",
+      "year": 2024,
+      "paper_url": "https://doi.org/10.1109/TPAMI.2024.3361894",
+      "code_url": "https://github.com/JiangtaoNie/UAL",
+      "setting": "监督合成数据预训练 + 无监督测试时适配；非全程零标签",
+      "key_idea": "共享互指导融合先验预训练，测试时自指导适配与未知退化联合估计；元训练与交替优化提高适配效率。",
+      "baseline_transfer": "保留现有监督 baseline 作为初始化，加入轻量 adapter 与观测一致性测试时更新，比较跨 PSF/SRF 的泛化。",
+      "limitation": "不能宣称无监督从头；每样本适配成本和测试时可用观测需报告。",
+      "code_evidence": "公开 Adaptor.py、Train_FusionModel.py、Spa_downs.py、meta-al-UTAL/；README 分清 UAL 与 UTAL/meta 训练流程。",
+      "priority": "P1",
+      "notes": "TPAMI46(7):5008-5025，2024；代码仓库同时含 CVPR2020 UAL。",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38315602/",
+        "https://github.com/JiangtaoNie/UAL"
+      ]
+    },
+    {
+      "title": "Unsupervised Adaptation Learning for Hyperspectral Imagery Super-Resolution",
+      "authors": "Lei Zhang; Jiangtao Nie; Wei Wei; Yanning Zhang; Shengcai Liao; Ling Shao",
+      "venue": "CVPR",
+      "year": 2020,
+      "paper_url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Zhang_Unsupervised_Adaptation_Learning_for_Hyperspectral_Imagery_Super-Resolution_CVPR_2020_paper.html",
+      "code_url": "https://github.com/JiangtaoNie/UAL",
+      "setting": "监督预训练 + 无监督逐样本适配",
+      "key_idea": "将跨图像的共有先验与当前观测的私有特性分开学习，融合模块预训练后训练适配器。",
+      "baseline_transfer": "实现难度较完整 diffusion 低，可将当前 Net 外接自适应修正网络并以重投影损失更新。",
+      "limitation": "属于 UTAL 的前作，共享仓库，优先读 TPAMI扩展再回溯。",
+      "code_evidence": "公开 Train_FusionModel.py 与 Adaptor.py；README明确两阶段。",
+      "priority": "P2",
+      "notes": "CVF搜索返回官方摘要，直接打开403；不以非官方摘要为证。",
+      "verification_urls": [
+        "https://openaccess.thecvf.com/content_CVPR_2020/html/Zhang_Unsupervised_Adaptation_Learning_for_Hyperspectral_Imagery_Super-Resolution_CVPR_2020_paper.html",
+        "https://github.com/JiangtaoNie/UAL"
+      ]
+    },
+    {
+      "title": "Unsupervised Sparse Dirichlet-Net for Hyperspectral Image Super-Resolution",
+      "authors": "Ying Qu; Hairong Qi; Chiman Kwan",
+      "venue": "CVPR",
+      "year": 2018,
+      "paper_url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Qu_Unsupervised_Sparse_Dirichlet-Net_CVPR_2018_paper.html",
+      "code_url": "https://github.com/aicip/uSDN",
+      "setting": "无监督耦合自编码器/解混",
+      "key_idea": "用 Dirichlet 表示学习丰度，结合稀疏与光谱一致性，把空间/光谱信息通过共享解码结构连接。",
+      "baseline_transfer": "学习自监督观测重构与物理约束基础；可增加非负、和为1的丰度分支作为结构先验。",
+      "limitation": "TensorFlow1.8旧实现，需迁移；对混合模型与丰度假设有依赖。",
+      "code_evidence": "公开 uSDN.py、pbAuto_uSDN.py、utils.py；作者 README 明确执行 uSDN.py 和 CVPR2018引用。",
+      "priority": "P2",
+      "notes": "基础历史论文；CVF直读403，官方作者代码与arxiv可回溯。",
+      "verification_urls": [
+        "https://github.com/aicip/uSDN"
+      ]
+    },
+    {
+      "title": "Self-Expressive High-Order Tensor Unrolling Network for Unsupervised Hyperspectral and Multispectral Image Fusion",
+      "authors": "He Wang; Yang Xu; Zhihui Wei; Zebin Wu",
+      "venue": "TIP",
+      "year": 2026,
+      "paper_url": "https://doi.org/10.1109/TIP.2026.3695389",
+      "code_url": "https://github.com/Shawn-H-Wang/SHOTUN",
+      "setting": "无监督张量展开；未知退化估计含预训练策略",
+      "key_idea": "重叠图像块间自表达关系形成高阶张量表示，保持空间结构；将交替子问题优化展开为模块。",
+      "baseline_transfer": "探索重叠 patch 非局部关系或低秩约束，或把 ResBlock 变为观测校正+学习先验的迭代块。",
+      "limitation": "并非直接替换 CA 即复现；高阶张量/非局部 patch 内存和复杂度需评估。",
+      "code_evidence": "公开 LowRankNetwork.py、blind.py、两个 unfolded_net_sparse_representation...py；README有执行 demo。",
+      "priority": "P2",
+      "notes": "正式 TIP35:5714-5729；原README旧 BibTeX编号10705122与新 DOI3695389不同，不复制旧编号。",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42202190/",
+        "https://github.com/Shawn-H-Wang/SHOTUN"
+      ]
+    },
+    {
+      "title": "MHF-Net: An Interpretable Deep Network for Multispectral and Hyperspectral Image Fusion",
+      "authors": "Qi Xie; Minghao Zhou; Qian Zhao; Zongben Xu; Deyu Meng",
+      "venue": "TPAMI",
+      "year": 2022,
+      "paper_url": "https://doi.org/10.1109/TPAMI.2020.3015691",
+      "code_url": "https://github.com/XieQi2015/MHF-net",
+      "setting": "监督学习；consistent/blind两种退化设置",
+      "key_idea": "低秩先验与观测退化建模，展开近端梯度算法构造可解释网络。",
+      "baseline_transfer": "在 ResBlock 前后显式加入空间/光谱残差校正，降低纯黑盒重构；低秩输出减少通道开销。",
+      "limitation": "盲模型仍不是无监督模型；官方为 TensorFlow1.x。",
+      "code_evidence": "CMHF-net/BMHF-net公开 MHFnet.py、CAVEmain.py、CAVE_dataReader.py；README有训练/测试开关。",
+      "priority": "P2",
+      "notes": "DOI早期在线2020；正式 TPAMI44(3):1457-1473(2022)。CVPR2019是前作不重复计算。",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/32780695/",
+        "https://github.com/XieQi2015/MHF-net/tree/master/CMHF-net"
+      ]
+    },
+    {
+      "title": "Deep Blind Hyperspectral Image Fusion",
+      "authors": "Wu Wang; Weihong Zeng; Yue Huang; Xinghao Ding; John Paisley",
+      "venue": "ICCV",
+      "year": 2019,
+      "paper_url": "https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Deep_Blind_Hyperspectral_Image_Fusion_ICCV_2019_paper.pdf",
+      "code_url": "https://github.com/wwhappylife/Deep-Blind-Hyperspectral-Image-Fusion",
+      "setting": "盲融合，监督学习/迭代估计观察模型；不可等同无监督",
+      "key_idea": "融合和 PSF/SRF 观察模型估计交替优化，同时追求空间与光谱精度。",
+      "baseline_transfer": "设计退化估计网络与 fusion 交替更新，研究固定 PSF/R 在真实传感器失配时的局限。",
+      "limitation": "作者仓库同时含 TNNLS2021 EDBIN；旧 TensorFlow依赖；需区分两版本。",
+      "code_evidence": "公开 models_boost_res/、models_ibp_sn22/、train_boost_res.py、test_boost_res.py及EDBIN代码。",
+      "priority": "P3",
+      "notes": "CVF官方PDF已搜索核对；说明 blind 不代表 label-free。",
+      "verification_urls": [
+        "https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Deep_Blind_Hyperspectral_Image_Fusion_ICCV_2019_paper.pdf",
+        "https://github.com/wwhappylife/Deep-Blind-Hyperspectral-Image-Fusion"
+      ]
+    },
+    {
+      "title": "IR&ArF: Toward Deep Interpretable Arbitrary Resolution Fusion of Unregistered Hyperspectral and Multispectral Images",
+      "authors": "Jiahui Qu; Xiaoyang Wu; Wenqian Dong; Jizhou Cui; Yunsong Li",
+      "venue": "TIP",
+      "year": 2025,
+      "paper_url": "https://doi.org/10.1109/TIP.2025.3551531",
+      "code_url": "https://github.com/Jiahuiqu/IR-ArF",
+      "setting": "监督未配准/任意尺度融合",
+      "key_idea": "构建空间光谱一致的任意尺度观察模型并展开优化，联合处理注册误差与动态分辨率需求。",
+      "baseline_transfer": "当前假设完美配准，可在融合前加入对齐与跨尺度查询；自监督版本需改成观测域注册/重投影损失。",
+      "limitation": "不能直接照搬训练称为自监督；官方 train.py L258使用HR-HSI真值L1，L263-265也用GT。",
+      "code_evidence": "model.py/train.py/test.py/dataloader.py 已公开；raw train.py 已核对GT损失。",
+      "priority": "P2",
+      "notes": "TIP34:1934-1949；README标题Towards，正式title Toward。",
+      "verification_urls": [
+        "https://github.com/Jiahuiqu/IR-ArF",
+        "https://raw.githubusercontent.com/Jiahuiqu/IR-ArF/main/train.py"
+      ]
+    },
+    {
+      "title": "OTIAS: OcTree Implicit Adaptive Sampling for Multispectral and Hyperspectral Image Fusion",
+      "authors": "Shangqi Deng; Jun Ma; Liang-Jian Deng; Ping Wei",
+      "venue": "AAAI",
+      "year": 2025,
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/32275",
+      "code_url": "https://github.com/shangqideng/OTIAS",
+      "setting": "监督 HSI-MSI 融合",
+      "key_idea": "八叉树在空间与通道维建模，按坐标生成与光谱信息有关的自适应插值核。",
+      "baseline_transfer": "替换固定双线性 feature interpolation，让上采样同时考虑波段/特征与空间坐标。",
+      "limitation": "完整算法并非简单三线性插值；官方用 GT L1，迁入 self-supervised需替换训练目标。",
+      "code_evidence": "公开 model/、train.py、eval.py、tools/；raw train.py L98-101确认out与ref监督损失；README提供权重与数据链接。",
+      "priority": "P2",
+      "notes": "AAAI39(3):2708-2716；Publisher DOI10.1609/aaai.v39i3.32275，2025-04-11。",
+      "verification_urls": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/32275",
+        "https://raw.githubusercontent.com/shangqideng/OTIAS/main/train.py"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "FusionNet: An Unsupervised Convolutional Variational Network for Hyperspectral and Multispectral Image Fusion",
+      "venue": "TIP2020",
+      "reason": "论文全文已找到，但本轮没有核实作者对应的真实公开代码，故未入主清单",
+      "paper_url": "https://haozhangxidian.github.io/Papers/TIP_FusionNet.pdf"
+    },
+    {
+      "title": "Enhancing Unregistered Hyperspectral Image Super-Resolution via Unmixing-based Abundance Fusion Learning",
+      "venue": "CVPR2026",
+      "reason": "有真实官方代码、作者声明CVPR2026录用；CVF页面本次403且arxiv未写journal reference，暂作为需要最后核验venue的候选，非不存在代码。",
+      "paper_url": "https://arxiv.org/abs/2603.07918",
+      "code_url": "https://github.com/yingkai-zhang/UAFL",
+      "key_idea": "SVD解混，保留光谱基、学习丰度残差；粗到细可变形对齐+空间通道交叉注意力。",
+      "code_evidence": "source/、run.py、requirements.txt、2026-07-04 code release声明",
+      "setting": "监督未配准参考融合；非自监督"
+    }
+  ]
+}
