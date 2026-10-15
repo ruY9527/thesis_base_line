@@ -1,0 +1,44 @@
+{
+  "canonical_id": "arxiv:2405.17818",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Hyperspectral and multispectral image fusion with arbitrary resolution through self-supervised representations",
+  "year": 2024,
+  "doi": null,
+  "arxiv_id": "2405.17818",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_2405.17818\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_2405.17818\\parsed.md",
+  "parser": "html",
+  "abstract": "The fusion of a low-resolution hyperspectral image (LR-HSI) with a high-resolution multispectral image (HR-MSI) has emerged as an effective technique for achieving HSI super-resolution (SR). Previous studies have mainly concentrated on estimating the posterior distribution of the latent high-resolution hyperspectral image (HR-HSI), leveraging an appropriate image prior and likelihood computed from the discrepancy between the latent HSI and observed images. Low rankness stands out for preserving latent HSI characteristics through matrix factorization among the various priors. However, the primary limitation in previous studies lies in the generalization of a fusion model with fixed resolution scales, which necessitates retraining whenever output resolutions are changed. To overcome this limitation, we propose a novel continuous low-rank factorization (CLoRF) by integrating two neural representations into the matrix factorization, capturing spatial and spectral information, respectively. This approach enables us to harness both the low rankness from the matrix factorization and the continuity from neural representation in a self-supervised manner.Theoretically, we prove the low-rank property and Lipschitz continuity in the proposed continuous low-rank factorization. Experimentally, our method significantly surpasses existing techniques and achieves user-desired resolutions without the need for neural network retraining. Code is available at https://github.com/wangting1907/CLoRF-Fusion.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "no oa pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 2267,
+  "parsed_chars": 91972,
+  "sentinel": "f844f69e099d",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_2405.17818\\parsed.md",
+      "offset": 0,
+      "limit": 2000
+    },
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_2405.17818\\parsed.md",
+      "offset": 2000,
+      "limit": 267
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

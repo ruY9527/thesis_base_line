@@ -1,0 +1,259 @@
+{
+  "output_language": "zh-CN",
+  "paper_type": "AI_method",
+  "paper_type_rationale": "有监督的双模态高光谱融合方法，需要还原残差扩散、边缘噪声与去噪网络的训练及推理。",
+  "dominant_domain": "高光谱图像融合",
+  "must_cover": [
+    "真实观测与训练伪 MSI 的区别",
+    "残差方向及少步扩散",
+    "边缘权重噪声",
+    "双路径网络及四尺度 L1 监督",
+    "同协议强基线和消融",
+    "跨传感器与复现限制"
+  ],
+  "key_numbers": [
+    "三数据集 PSNR 55.40/49.28/47.55",
+    "DSPNet 55.19/48.68/46.97",
+    "多模态残差 49.28、单模态 48.46、无残差 47.93",
+    "边缘噪声 +0.92 dB",
+    "多尺度监督 +0.74 dB",
+    "五步 49.28，十步 48.89",
+    "3×3 高斯标准差 2、倍率 8"
+  ],
+  "real_comparisons": [
+    "同表比较 DSPNet、DHIF、PSRT、LAGConv",
+    "监督与非监督方法训练条件不同，不把领先幅度等同扩散优越性",
+    "表 4 对比网络结构，需注明未做等参等算力控制"
+  ],
+  "central_claims": [
+    {
+      "claim": "多模态残差在该合成协议下改善重建。",
+      "supporting_evidence": [
+        {
+          "pages": [
+            3,
+            4,
+            7,
+            8
+          ]
+        }
+      ],
+      "what_it_actually_proves": "表 2 中相对无残差和单模态残差分别提高 1.35 和 0.82 dB。",
+      "what_it_does_not_prove": "没有证明所有传感器响应或域外场景都成立，也未独立隔离额外辅助通道与扩散路径的效应。"
+    },
+    {
+      "claim": "边缘感知噪声改善该协议下的空间与光谱指标。",
+      "supporting_evidence": [
+        {
+          "pages": [
+            4,
+            7,
+            8
+          ]
+        }
+      ],
+      "what_it_actually_proves": "表 3 的 PSNR 由 48.36 到 49.28，图 7 展示局部误差减少。",
+      "what_it_does_not_prove": "没有验证 MSI 边缘受模糊、噪声或标定错误影响时的可靠性。"
+    },
+    {
+      "claim": "五步设置在已测试步数中质量最高。",
+      "supporting_evidence": [
+        {
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "what_it_actually_proves": "表 5 五步优于三、四、十步。",
+      "what_it_does_not_prove": "步数不等于实际运行时间；没有证明全局最优或优于等成本直接回归。"
+    }
+  ],
+  "claim_boundaries": [
+    "主结果基于已知合成退化",
+    "伪 MSI 的真值仅用于训练目标，不据此指称测试泄漏",
+    "SAM 保留论文数值，不跨单位比较",
+    "跨传感器泛化在结论中列为未来工作"
+  ],
+  "negative_or_limiting_results": [
+    "十步比五步低 0.39 dB",
+    "伪 MSI 波段组合改变结果",
+    "表 5 列十步而相邻正文写六步",
+    "ICVL/Harvard 主文划分细节不足",
+    "论文 κ=1 与公开五步配置 κ=2 需核对"
+  ],
+  "mechanism_result_map": [
+    "残差桥→表 2",
+    "边缘噪声→表 3 与图 7",
+    "双路径/MSGAB/多尺度→表 4",
+    "采样链长度→表 5",
+    "伪 MSI 辅助目标→表 6"
+  ],
+  "comparative_positioning": [
+    "是少步条件残差扩散的一条强基线，适合检验新方向是否只是已有机制组合",
+    "对用户方向更关键的未测问题是观测可靠性变化，而非再加一般边缘注意力"
+  ],
+  "reuse_takeaways": [
+    "固定相同退化和场景划分后比较",
+    "独立改变真实响应和模型收到的响应元数据",
+    "加入 HSI 单输入及等成本回归模型",
+    "先复现五步，再做噪声权重稳健性消融"
+  ],
+  "followup_questions": [
+    "正确与错误 MSI 边缘对重建的作用能否由观测残差识别？",
+    "五步优势是否来自专用去噪器和监督，而非随机扩散？",
+    "原始场景互斥划分下能否复现表 1？"
+  ],
+  "section_plan": [
+    {
+      "section": "核心信息",
+      "focus": "固定元数据顺序记录官方主会身份，不补造 DOI。",
+      "evidence_sources": [
+        {
+          "pages": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "section": "原文摘要翻译",
+      "focus": "忠实翻译摘要，作者的性能概括与笔记判断分开。",
+      "evidence_sources": [
+        {
+          "section_id": "sec:abstract"
+        }
+      ]
+    },
+    {
+      "section": "创新点",
+      "focus": "解释多模态残差、边缘噪声、双路径和多尺度监督的实际作用。",
+      "evidence_sources": [
+        {
+          "pages": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "section": "一句话总结",
+      "focus": "概括条件残差扩散如何在少步内完成融合。",
+      "evidence_sources": [
+        {
+          "pages": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "section": "研究问题",
+      "focus": "区分扩散采样成本、细节恢复和去噪融合干扰三类瓶颈。",
+      "evidence_sources": [
+        {
+          "section_id": "sec:introduction"
+        }
+      ]
+    },
+    {
+      "section": "数据与任务定义",
+      "focus": "给出输入输出尺寸及退化模型，核对三个数据集的裁块和退化条件。",
+      "evidence_sources": [
+        {
+          "pages": [
+            3,
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "section": "方法主线",
+      "focus": "按四步训练推理流程解释 34 通道目标、残差符号、边缘噪声与双路径多尺度监督。",
+      "evidence_sources": [
+        {
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "section": "关键结果",
+      "focus": "转录强监督基线与作者主结果，并以消融表拆分各机制的局部收益与步数退化。",
+      "evidence_sources": [
+        {
+          "pages": [
+            6,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "section": "深度分析",
+      "focus": "从条件终点、辅助任务和边缘可迁移假设解释收益，同时指出结构与成本比较的混杂。",
+      "evidence_sources": [
+        {
+          "pages": [
+            3,
+            4,
+            5,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "section": "局限",
+      "focus": "给出传感器响应、样本划分、实际计时、显著性和正文表格不一致的证据边界。",
+      "evidence_sources": [
+        {
+          "pages": [
+            5,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "section": "我的笔记",
+      "focus": "衔接 SRF 标定误差研究，只提出验证计划，绝不修改用户基线。",
+      "evidence_sources": [
+        {
+          "pages": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "section": "引用",
+      "focus": "提供官方全文、代码和已读取的配置及加载器来源。",
+      "evidence_sources": [
+        {
+          "pages": [
+            1,
+            11
+          ]
+        }
+      ]
+    }
+  ],
+  "figure_decision_freeze": {
+    "output_language": "zh-CN",
+    "sha256": "f6770fc98a26660fb6becd1fe3d96a5dd68ca1997c31405d804a5cf207b310cb",
+    "pending_items": 0
+  }
+}

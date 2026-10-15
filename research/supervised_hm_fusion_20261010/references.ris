@@ -1,0 +1,255 @@
+TY  - CONF
+ID  - emrdiff
+TI  - EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution
+T2  - CVPR
+PY  - 2026
+UR  - https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html
+N1  - Evidence A; main
+ER  -
+
+TY  - CONF
+ID  - uafl
+TI  - Enhancing Unregistered Hyperspectral Image Super-Resolution via Unmixing-based Abundance Fusion Learning
+T2  - CVPR
+PY  - 2026
+UR  - https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Enhancing_Unregistered_Hyperspectral_Image_Super-Resolution_via_Unmixing-based_Abundance_Fusion_Learning_CVPR_2026_paper.html
+N1  - Evidence A; main
+ER  -
+
+TY  - CONF
+ID  - srlf
+TI  - A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging
+T2  - CVPR
+PY  - 2025
+UR  - https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html
+N1  - Evidence A; main
+ER  -
+
+TY  - JOUR
+ID  - hsc
+TI  - Heterospectral Structure Compensation Sampling for Hyperspectral Fusion Computational Imaging
+T2  - TIP
+PY  - 2025
+UR  - https://ieeexplore.ieee.org/document/11276863
+N1  - Evidence B; 在线 2025-12-03；34:7930–7942
+ER  -
+
+TY  - JOUR
+ID  - bhsr
+TI  - Blur-Resistant Hyperspectral Image Super-Resolution via Dual-Degradation Fusion Model
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2026.3714832
+N1  - Evidence B; 35:8338–8353；不采用索引缺省 1 月 1 日为首发日
+DO  - 10.1109/TIP.2026.3714832
+ER  -
+
+TY  - JOUR
+ID  - irarf
+TI  - IR&ArF: Toward Deep Interpretable Arbitrary Resolution Fusion of Unregistered Hyperspectral and Multispectral Images
+T2  - TIP
+PY  - 2025
+UR  - https://doi.org/10.1109/TIP.2025.3551531
+N1  - Evidence B; 34:1934–1949
+DO  - 10.1109/TIP.2025.3551531
+ER  -
+
+TY  - JOUR
+ID  - ssc
+TI  - Unaligned RGB Guided Hyperspectral Image Super-Resolution with Spatial-Spectral Concordance
+T2  - IJCV
+PY  - 2025
+UR  - https://doi.org/10.1007/s11263-025-02466-8
+N1  - Evidence C; 在线 2025-06-17；133(9):6590–6610
+DO  - 10.1007/s11263-025-02466-8
+ER  -
+
+TY  - CONF
+ID  - co2if
+TI  - CO²IF: Language-Bridging Hyperspectral-Multispectral Image Fusion with Coordinated and Cross-modal Optimal Transport
+T2  - AAAI
+PY  - 2026
+UR  - https://ojs.aaai.org/index.php/AAAI/article/view/38261
+N1  - Evidence A; main；40(15):12654–12662
+ER  -
+
+TY  - JOUR
+ID  - cauwt
+TI  - Content-Adaptive Unfolding Wavelet Transformer for Hyperspectral Image Super-Resolution
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2025.3636789
+N1  - Evidence C; 35:1923–1936；DOI 为 2025，不等于 2026 首发
+DO  - 10.1109/TIP.2025.3636789
+ER  -
+
+TY  - JOUR
+ID  - differentialdiff
+TI  - A Two-Stage Conditional Diffusion Model With Differential Attention for Hyperspectral and Multispectral Image Fusion
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2026.3723234
+N1  - Evidence C; DOI 已登记；IEEE SPS 2026 年 9 月页面
+DO  - 10.1109/TIP.2026.3723234
+ER  -
+
+TY  - JOUR
+ID  - vpg
+TI  - Uncertainty-Driven Generative Prior Learning for Sparse Model-Guided Hyperspectral Image Fusion
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2026.3689415
+N1  - Evidence C; 35:5224–5238
+DO  - 10.1109/TIP.2026.3689415
+ER  -
+
+TY  - CONF
+ID  - pino
+TI  - Physics-informed Neural Operator for Pansharpening
+T2  - NeurIPS
+PY  - 2025
+UR  - https://proceedings.neurips.cc/paper_files/paper/2025/hash/89af8e4eb696738f2c9e589522968a09-Abstract-Conference.html
+N1  - Evidence B; main；含 CAVE MHIF 实验
+ER  -
+
+TY  - JOUR
+ID  - nud
+TI  - Building Non-Uniform Degradation Model for Position-Aware Hyperspectral Image Fusion
+T2  - TPAMI
+PY  - 2025
+UR  - https://doi.org/10.1109/TPAMI.2025.3604234
+N1  - Evidence B; 47(12):11464–11482
+DO  - 10.1109/TPAMI.2025.3604234
+ER  -
+
+TY  - JOUR
+ID  - dses
+TI  - DSES-Diff: A Dynamic-Spectral and Efficient-Spatial Diffusion-Based Foundation Model for Scalable Hyperspectral and Multispectral Image Fusion
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2026.3736733
+N1  - Evidence C; Early Access 元数据：2026-10-01
+DO  - 10.1109/TIP.2026.3736733
+ER  -
+
+TY  - JOUR
+ID  - mossfuse
+TI  - Unsupervised Hyperspectral Image Super-Resolution via Self-Supervised Modality Decoupling
+T2  - IJCV
+PY  - 2026
+UR  - https://doi.org/10.1007/s11263-026-02757-8
+N1  - Evidence C; 在线 2026-03-06；预印本早于 2026
+DO  - 10.1007/s11263-026-02757-8
+ER  -
+
+TY  - JOUR
+ID  - clorf
+TI  - Hyperspectral and Multispectral Image Fusion with Arbitrary Resolution Through Self-Supervised Representations
+T2  - IJCV
+PY  - 2025
+UR  - https://doi.org/10.1007/s11263-025-02540-1
+N1  - Evidence C; 在线 2025-08-03
+DO  - 10.1007/s11263-025-02540-1
+ER  -
+
+TY  - CONF
+ID  - args
+TI  - Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model
+T2  - CVPR
+PY  - 2025
+UR  - https://openaccess.thecvf.com/content/CVPR2025/html/Zhu_Self-Learning_Hyperspectral_and_Multispectral_Image_Fusion_via_Adaptive_Residual_Guided_CVPR_2025_paper.html
+N1  - Evidence C; main；17862–17871
+ER  -
+
+TY  - JOUR
+ID  - cdps
+TI  - Coupled Diffusion Posterior Sampling for Unsupervised Hyperspectral and Multispectral Images Fusion
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2025.3647207
+N1  - Evidence C; 35:69–84；DOI 2025.3647207
+DO  - 10.1109/TIP.2025.3647207
+ER  -
+
+TY  - JOUR
+ID  - shotun
+TI  - Self-Expressive High-Order Tensor Unrolling Network for Unsupervised Hyperspectral and Multispectral Image Fusion
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2026.3695389
+N1  - Evidence C; 35:5714–5729
+DO  - 10.1109/TIP.2026.3695389
+ER  -
+
+TY  - JOUR
+ID  - bfctn
+TI  - Bayesian Fully-Connected Tensor Network for Hyperspectral-Multispectral Image Fusion
+T2  - TIP
+PY  - 2026
+UR  - https://doi.org/10.1109/TIP.2026.3696124
+N1  - Evidence C; DOI 已登记
+DO  - 10.1109/TIP.2026.3696124
+ER  -
+
+TY  - CONF
+ID  - onehsi
+TI  - OneHSI: A Unified Hyperspectral Foundation Model with Physical Consistency
+T2  - ECCV
+PY  - 2026
+UR  - https://eccv.ecva.net/virtual/2026/poster/4477
+N1  - Evidence B; 官方主会 poster #4477；论文 PDF 已公开
+ER  -
+
+TY  - CONF
+ID  - lgd
+TI  - LGD-Net: Leader-Guided Cross-Modal Dynamics for Hyperspectral and Panchromatic Image Fusion
+T2  - ECCV
+PY  - 2026
+UR  - https://eccv.ecva.net/virtual/2026/poster/3288
+N1  - Evidence B; 官方主会 poster #3288；论文 PDF 已公开
+ER  -
+
+TY  - CONF
+ID  - um
+TI  - Uncertainty-guided Memory Network for Hyperspectral Pansharpening
+T2  - AAAI
+PY  - 2026
+UR  - https://ojs.aaai.org/index.php/AAAI/article/view/37988
+N1  - Evidence C; main；article 37988
+ER  -
+
+TY  - CONF
+ID  - gew
+TI  - GEWDiff: Geometric Enhanced Wavelet-based Diffusion Model for Hyperspectral Image Super-resolution
+T2  - AAAI
+PY  - 2026
+UR  - https://ojs.aaai.org/index.php/AAAI/article/view/37978
+N1  - Evidence B; main；40(12):10109–10117
+ER  -
+
+TY  - CONF
+ID  - carl
+TI  - CARL: Camera-Agnostic Representation Learning for Spectral Image Analysis
+T2  - ICLR
+PY  - 2026
+UR  - https://openreview.net/pdf/06c03489864236829ee6008cde9cee87d1b41a15.pdf
+N1  - Evidence C; 正式版本标题页 Published as a conference paper；全文下载 403
+ER  -
+
+TY  - CONF
+ID  - lessvit
+TI  - LESSViT: Robust Hyperspectral Representation Learning under Spectral Configuration Shift
+T2  - NeurIPS
+PY  - 2026
+UR  - https://neurips.cc/Downloads/2026
+N1  - Evidence C; 官方 Downloads 列为 Poster #154948；会议未举行；arXiv 2605.18541
+ER  -
+
+TY  - CONF
+ID  - feinfn
+TI  - Fourier-enhanced Implicit Neural Fusion Network for Multispectral and Hyperspectral Image Fusion
+T2  - NeurIPS
+PY  - 2024
+UR  - https://proceedings.neurips.cc/paper_files/paper/2024/hash/74088c68894b99383c12399c9c637be9-Abstract-Conference.html
+N1  - Evidence C; main；历史新颖性锚点
+ER  -

@@ -1,0 +1,11 @@
+{
+  "matrix_records": 27,
+  "matrix_unique_ids": true,
+  "csv_json_match": true,
+  "ris_record_count": 27,
+  "missing_local_links": [],
+  "baseline_all_unchanged": true,
+  "local_pdf_count": 9,
+  "scope": "Artifact structure, source acceptance and baseline integrity only; not DeepPaperNote lint or model testing.",
+  "passed": true
+}

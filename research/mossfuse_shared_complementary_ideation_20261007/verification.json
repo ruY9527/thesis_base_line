@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-07",
+  "ideation_validator": "passed: structural only",
+  "novelty_validator": "passed: structural only; no systematic literature guarantee",
+  "original_python_files_count": 12,
+  "original_python_unchanged": true,
+  "new_python_elsewhere_detected": [
+    "research/gewdiff_transfer_20261007/fetch_with_available_parser.py",
+    "research/gewdiff_transfer_20261007/retrieve_sources.py"
+  ],
+  "new_python_note": "These paths appeared during this turn outside this report folder; this task did not create, edit or execute them. Scope of preservation check is the 12 originally recorded Python files.",
+  "algebra_recomputed_from_tracked_inputs": true,
+  "local_absolute_document_links_exist": true,
+  "this_task_python_modified": false,
+  "network_trained": false,
+  "scientific_novelty_confirmed": false,
+  "independent_review": false,
+  "artifact_sha256": {
+    "algebra-check.json": "99fc366fc4dd27aacb37bc2c65b814b08dacd94d4d7ea6408d148c10a317449e",
+    "research_direction_analysis.md": "08f90dd7508a35b822c487ddc6f46456f0eb7bdc70950dbfcc251ad3e93d355a",
+    "source-manifest.json": "d5fd178ac68e7f5b6fe14fc3546b0c028ff39f8c8e99d6bb1ed202e14b8adba9",
+    "ideation/idea-bank.md": "b95517b6e1bceaa6cea3729014179c4cacbb60a2de0496e3a615d3261840001d",
+    "ideation/idea-scores.json": "919080d66fdb5574395e0affdaa334c098939412b6dcebdd89aa904e2df5e63d",
+    "ideation/ideation-decision.json": "2a5d0c1484c9d8221e43e46de74af64569572061c7bbc97f3a7f759928ecb3c0",
+    "ideation/landscape-map.md": "41731abff6d61a8c37e0615ae086972ec3e4be601094198fe1717b08a2da976e",
+    "ideation/rejected-ideas.md": "a3c6563af44c9cfaa0542ef716900197ac8dad1debc94f72cd8ac70101cb228a",
+    "ideation/selected-idea.md": "c63784461b748b91d50b9ec46ca60a777f7dfc40346d83f7845a2edc87f6b0a1",
+    "novelty-review/novelty-decision.json": "c9ede8fcb9d4e563fb379939a8b9a4abb50aec90a8adf98ff59dcf55c213d796",
+    "novelty-review/novelty-report.md": "3e8ba83e89e44a16495d6991100e2d2ed40e6a25e30be07da1ca365e314634d3",
+    "novelty-review/prior-art-matrix.md": "b2c7f585932cfec547be3feaa3343916ac99dc4e0340779cc9c1da670b0aafbf",
+    "novelty-review/search-log.md": "21cb8e2a35fab469abdcfcf3c4d04e3993931aa4dabd68ef68ffe3e34b62141c"
+  }
+}

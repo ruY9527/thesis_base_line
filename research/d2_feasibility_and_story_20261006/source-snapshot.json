@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-06",
+  "hashes": {
+    "model.py": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66",
+    "train_cave_M.py": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc",
+    "train_dataloader.py": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578",
+    "utils.py": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944",
+    "calculate_metrics.py": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94"
+  },
+  "network_training": false,
+  "model_source_modified": false,
+  "old_reports_modified": false
+}

@@ -1,0 +1,39 @@
+{
+  "canonical_id": "arxiv:2505.11800",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model",
+  "year": 2025,
+  "doi": null,
+  "arxiv_id": "2505.11800",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\arxiv_2505.11800\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\arxiv_2505.11800\\parsed.md",
+  "parser": "html",
+  "abstract": "Hyperspectral and multispectral image (HSI-MSI) fusion involves combining a low-resolution hyperspectral image (LR-HSI) with a high-resolution multispectral image (HR-MSI) to generate a high-resolution hyperspectral image (HR-HSI). Most deep learning-based methods for HSI-MSI fusion rely on large amounts of hyperspectral data for supervised training, which is often scarce in practical applications. In this paper, we propose a self-learning Adaptive Residual Guided Subspace Diffusion Model (ARGS-Diff), which only utilizes the observed images without any extra training data. Specifically, as the LR-HSI contains spectral information and the HR-MSI contains spatial information, we design two lightweight spectral and spatial diffusion models to separately learn the spectral and spatial distributions from them. Then, we use these two models to reconstruct HR-HSI from two low-dimensional components, i.e, the spectral basis and the reduced coefficient, during the reverse diffusion process. Furthermore, we introduce an Adaptive Residual Guided Module (ARGM), which refines the two components through a residual guided function at each sampling step, thereby stabilizing the sampling process. Extensive experimental results demonstrate that ARGS-Diff outperforms existing state-of-the-art methods in terms of both performance and computational efficiency in the field of HSI-MSI fusion. Code is available at https://github.com/Zhu1116/ARGS-Diff.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "no oa pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1316,
+  "parsed_chars": 56358,
+  "sentinel": "88c4203a3fa0",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\arxiv_2505.11800\\parsed.md",
+      "offset": 0,
+      "limit": 1316
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

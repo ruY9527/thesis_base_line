@@ -1,0 +1,989 @@
+[
+  {
+    "doi": "10.1007/s11263-026-02757-8",
+    "title": [
+      "Unsupervised Hyperspectral Image Super-Resolution via Self-Supervised Modality Decoupling"
+    ],
+    "authors": [
+      "Songcheng Du",
+      "Yang Zou",
+      "Zixu Wang",
+      "Xingyuan Li",
+      "Ying Li",
+      "Changjing Shang",
+      "Qiang Shen"
+    ],
+    "journal": [
+      "International Journal of Computer Vision"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          6
+        ]
+      ]
+    },
+    "online": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          6
+        ]
+      ]
+    },
+    "print": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "volume": "134",
+    "issue": "4",
+    "page": null,
+    "article_number": "152",
+    "links": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11263-026-02757-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s11263-026-02757-8",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11263-026-02757-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1007/s11263-026-02757-8",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TPAMI.2025.3604234",
+    "title": [
+      "Building Non-Uniform Degradation Model for Position-Aware Hyperspectral Image Fusion"
+    ],
+    "authors": [
+      "Jie Lian",
+      "Lizhi Wang",
+      "Lin Zhu",
+      "Renwei Dian",
+      "Zhiwei Xiong",
+      "Hua Huang"
+    ],
+    "journal": [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    },
+    "volume": "47",
+    "issue": "12",
+    "page": "11464-11482",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/34/11230086/11230110.pdf?arnumber=11230110",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tpami.2025.3604234",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1016/j.inffus.2026.104498",
+    "title": [
+      "Rank-aware routing decomposition for hyperspectral and multispectral image fusion"
+    ],
+    "authors": [
+      "Yuanye Liu",
+      "Renwei Dian",
+      "Zhijun Zhao",
+      "Shutao Li"
+    ],
+    "journal": [
+      "Information Fusion"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          12
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026,
+          12
+        ]
+      ]
+    },
+    "volume": "136",
+    "issue": null,
+    "page": "104498",
+    "article_number": "104498",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253526003775?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253526003775?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "url": "https://doi.org/10.1016/j.inffus.2026.104498",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1016/j.inffus.2025.103997",
+    "title": [
+      "Exploring structured uncertainty for external prior-guided hyperspectral image fusion"
+    ],
+    "authors": [
+      "Junwei Xu",
+      "Zhenxuan Fang",
+      "Mengzu Liu",
+      "Fangfang Wu",
+      "Tao Huang",
+      "Weisheng Dong",
+      "Xin Li",
+      "Guangming Shi"
+    ],
+    "journal": [
+      "Information Fusion"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "volume": "129",
+    "issue": null,
+    "page": "103997",
+    "article_number": "103997",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525010590?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525010590?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "url": "https://doi.org/10.1016/j.inffus.2025.103997",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TIP.2026.3689415",
+    "title": [
+      "Uncertainty-Driven Generative Prior Learning for Sparse Model-Guided Hyperspectral Image Fusion"
+    ],
+    "authors": [
+      "Junwei Xu",
+      "Teng Feng",
+      "Zhenxuan Fang",
+      "Fangfang Wu",
+      "Le Dong",
+      "Tao Huang",
+      "Zhou Yang",
+      "Weisheng Dong",
+      "Xin Li"
+    ],
+    "journal": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "volume": "35",
+    "issue": null,
+    "page": "5224-5238",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11520599.pdf?arnumber=11520599",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tip.2026.3689415",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TIP.2026.3714832",
+    "title": [
+      "Blur-Resistant Hyperspectral Image Super-Resolution via Dual-Degradation Fusion Model"
+    ],
+    "authors": [
+      "Mai Xu",
+      "Yongxuan Dou",
+      "Xin Deng",
+      "Xin Zou",
+      "Zhenwei Shi"
+    ],
+    "journal": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "volume": "35",
+    "issue": null,
+    "page": "8338-8353",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11623387.pdf?arnumber=11623387",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tip.2026.3714832",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1016/j.isprsjprs.2026.02.024",
+    "title": [
+      "SpecAware: a spectral-content aware foundation model for unifying multi-sensor learning in hyperspectral remote sensing mapping"
+    ],
+    "authors": [
+      "Renjie Ji",
+      "Xue Wang",
+      "Chao Niu",
+      "Wen Zhang",
+      "Yong Mei",
+      "Kun Tan"
+    ],
+    "journal": [
+      "ISPRS Journal of Photogrammetry and Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "volume": "234",
+    "issue": null,
+    "page": "242-260",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0924271626000754?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0924271626000754?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "url": "https://doi.org/10.1016/j.isprsjprs.2026.02.024",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TGRS.2026.3727427",
+    "title": [
+      "Interpretable Cross-Sensor Hyperspectral Image Super-Resolution"
+    ],
+    "authors": [
+      "Yaoting Liu",
+      "Jiangmeng Zhou",
+      "Yafeng Zou",
+      "Licheng Liu",
+      "Xinxin Liu",
+      "Jing Li",
+      "Bin Yang"
+    ],
+    "journal": [
+      "IEEE Transactions on Geoscience and Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "volume": "64",
+    "issue": null,
+    "page": "5527116-5527116",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/36/11333908/11667122.pdf?arnumber=11667122",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tgrs.2026.3727427",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TGRS.2026.3691782",
+    "title": [
+      "HySens: Sensor-Agnostic Foundation Models for Hyperspectral Data"
+    ],
+    "authors": [
+      "Xiangyu Zhao",
+      "Zhitong Xiong",
+      "Xiao Xiang Zhu"
+    ],
+    "journal": [
+      "IEEE Transactions on Geoscience and Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "volume": "64",
+    "issue": null,
+    "page": "5513915-5513915",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/36/11333908/11514078.pdf?arnumber=11514078",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tgrs.2026.3691782",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TGRS.2025.3636047",
+    "title": [
+      "Dilated Transformation-Guided Unsupervised Multimodal Learning for Hyperspectral and Multispectral Image Fusion"
+    ],
+    "authors": [
+      "Yuanchao Su",
+      "Sheng Li",
+      "Yicong Zhou",
+      "Lianru Gao",
+      "Mengying Jiang",
+      "Xu Sun",
+      "Haiwei Li",
+      "Enke Hou"
+    ],
+    "journal": [
+      "IEEE Transactions on Geoscience and Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "volume": "63",
+    "issue": null,
+    "page": "1-15",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/36/10807682/11271725.pdf?arnumber=11271725",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tgrs.2025.3636047",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1007/s11263-025-02540-1",
+    "title": [
+      "Hyperspectral and Multispectral Image Fusion with Arbitrary Resolution Through Self-Supervised Representations"
+    ],
+    "authors": [
+      "Ting Wang",
+      "Zipei Yan",
+      "Jizhou Li",
+      "Xile Zhao",
+      "Chao Wang",
+      "Michael Ng"
+    ],
+    "journal": [
+      "International Journal of Computer Vision"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          3
+        ]
+      ]
+    },
+    "online": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          3
+        ]
+      ]
+    },
+    "print": {
+      "date-parts": [
+        [
+          2025,
+          11
+        ]
+      ]
+    },
+    "volume": "133",
+    "issue": "11",
+    "page": "7515-7535",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11263-025-02540-1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s11263-025-02540-1/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11263-025-02540-1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1007/s11263-025-02540-1",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TIP.2025.3551531",
+    "title": [
+      "IR&amp;ArF: Toward Deep Interpretable Arbitrary Resolution Fusion of Unregistered Hyperspectral and Multispectral Images"
+    ],
+    "authors": [
+      "Jiahui Qu",
+      "Xiaoyang Wu",
+      "Wenqian Dong",
+      "Jizhou Cui",
+      "Yunsong Li"
+    ],
+    "journal": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "volume": "34",
+    "issue": null,
+    "page": "1934-1949",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/10795784/10938029.pdf?arnumber=10938029",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tip.2025.3551531",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1007/s11263-025-02466-8",
+    "title": [
+      "Unaligned RGB Guided Hyperspectral Image Super-Resolution with Spatial-Spectral Concordance"
+    ],
+    "authors": [
+      "Yingkai Zhang",
+      "Zeqiang Lai",
+      "Tao Zhang",
+      "Ying Fu",
+      "Chenghu Zhou"
+    ],
+    "journal": [
+      "International Journal of Computer Vision"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          17
+        ]
+      ]
+    },
+    "online": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          17
+        ]
+      ]
+    },
+    "print": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "volume": "133",
+    "issue": "9",
+    "page": "6590-6610",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11263-025-02466-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s11263-025-02466-8/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11263-025-02466-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1007/s11263-025-02466-8",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TIP.2025.3647207",
+    "title": [
+      "Coupled Diffusion Posterior Sampling for Unsupervised Hyperspectral and Multispectral Images Fusion"
+    ],
+    "authors": [
+      "Yang Xu",
+      "Jian Zhu",
+      "Danfeng Hong",
+      "Zhihui Wei",
+      "Zebin Wu"
+    ],
+    "journal": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "volume": "35",
+    "issue": null,
+    "page": "69-84",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11321074.pdf?arnumber=11321074",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tip.2025.3647207",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TIP.2026.3695389",
+    "title": [
+      "Self-Expressive High-Order Tensor Unrolling Network for Unsupervised Hyperspectral and Multispectral Image Fusion"
+    ],
+    "authors": [
+      "He Wang",
+      "Yang Xu",
+      "Zhihui Wei",
+      "Zebin Wu"
+    ],
+    "journal": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "volume": "35",
+    "issue": null,
+    "page": "5714-5729",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11536824.pdf?arnumber=11536824",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tip.2026.3695389",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/TIP.2026.3696124",
+    "title": [
+      "Bayesian Fully-Connected Tensor Network for Hyperspectral-Multispectral Image Fusion"
+    ],
+    "authors": [
+      "Linsong Shan",
+      "Zecan Yang",
+      "Laurence T. Yang",
+      "Changlong Li",
+      "Honglu Zhao",
+      "Xin Nie"
+    ],
+    "journal": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "volume": "35",
+    "issue": null,
+    "page": "5910-5925",
+    "article_number": null,
+    "links": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11540397.pdf?arnumber=11540397",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "url": "https://doi.org/10.1109/tip.2026.3696124",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1016/j.inffus.2025.103295",
+    "title": [
+      "Hyperspectral super-resolution via nonlinear unmixing"
+    ],
+    "authors": [
+      "Qingke Zou",
+      "Jie Zhou",
+      "Mingjie Luo"
+    ],
+    "journal": [
+      "Information Fusion"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          11
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2025,
+          11
+        ]
+      ]
+    },
+    "volume": "123",
+    "issue": null,
+    "page": "103295",
+    "article_number": "103295",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525003689?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525003689?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "url": "https://doi.org/10.1016/j.inffus.2025.103295",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1016/j.inffus.2025.103261",
+    "title": [
+      "A spatial-frequency dual-domain implicit guidance method for hyperspectral and multispectral remote sensing image fusion based on Kolmogorov–Arnold Network"
+    ],
+    "authors": [
+      "Chunyu Zhu",
+      "Xuan Song",
+      "Yachao Li",
+      "Shangqi Deng",
+      "Tinghao Zhang"
+    ],
+    "journal": [
+      "Information Fusion"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          11
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2025,
+          11
+        ]
+      ]
+    },
+    "volume": "123",
+    "issue": null,
+    "page": "103261",
+    "article_number": "103261",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525003343?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525003343?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "url": "https://doi.org/10.1016/j.inffus.2025.103261",
+    "status": "verified"
+  },
+  {
+    "doi": "10.1016/j.patcog.2024.110916",
+    "title": [
+      "Deep blind super-resolution for hyperspectral images"
+    ],
+    "authors": [
+      "Pei Yang",
+      "Yong Ma",
+      "Xiaoguang Mei",
+      "Qihai Chen",
+      "Minghui Wu",
+      "Jiayi Ma"
+    ],
+    "journal": [
+      "Pattern Recognition"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "online": null,
+    "print": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "volume": "157",
+    "issue": null,
+    "page": "110916",
+    "article_number": "110916",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0031320324006678?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0031320324006678?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "url": "https://doi.org/10.1016/j.patcog.2024.110916",
+    "status": "verified"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "output_language": "zh-CN",
+  "reviews": {
+    "Figure 1": {"status":"repair_requested","preserved":["三组扩散示意与性能步数比较"],"omitted":[],"notes":"候选包含论文标题、作者和左栏摘要；页面预览显示图体完整位于右栏，需要去除周围正文。","failure_reason":"surrounding_prose_contamination","revised_bbox":[0.515,0.330,0.907,0.528],"target_section":"研究问题"},
+    "Figure 2": {"status":"pass","preserved":["HR-HSI 与伪 MSI 起点","LR-HSI/HR-MSI 条件","正反向箭头","残差及边缘噪声支路","张量维度与时间系数"],"notes":"完整的图 2 图体；无图注或周围正文混入。","target_section":"方法主线"},
+    "Figure 3": {"status":"pass","preserved":["两幅边缘图","HR-MSI 和 HR-HSI 标签"],"notes":"两幅图和各自标签完整，图注未混入。"},
+    "Figure 4": {"status":"repair_requested","preserved":["双路径 UNet","多尺度监督","MSGAB 子图"],"omitted":[],"notes":"图体位于左栏，但自动裁剪混入右栏公式及正文，需要保留两幅子图和标签。","failure_reason":"surrounding_prose_contamination","revised_bbox":[0.093,0.091,0.480,0.457],"target_section":"方法主线"},
+    "Figure 5": {"status":"pass","preserved":["三个数据集的三组可视化","真值、各方法名和逐图 PSNR","局部放大、误差图及色标"],"notes":"所有三组比较和色标完整可读，未混入图注。"},
+    "Figure 7": {"status":"repair_requested","preserved":["两种噪声配置的误差图、色标和标签"],"omitted":["上方重建图的大部分"],"notes":"上方重建图被裁掉，页面预览中完整图体可以定位，需要扩大上边界。","failure_reason":"scientific_content_clipped","revised_bbox":[0.574,0.089,0.854,0.284]},
+    "Table 5": {"status":"pass","preserved":["步数 3、4、5、10","四项指标及方向","全部数值与最佳值粗体"],"notes":"完整表 5 图体，表题已剔除，所有指标清楚。"},
+    "Table 6": {"status":"fail","preserved":["候选实际为表 5"],"omitted":["表 6 的波段组合与对应指标"],"notes":"表 6 候选错误地重复表 5。保留表 6 占位，并依据原始页面将关键数值转录为笔记表格。","failure_reason":"identity_mismatch"}
+  }
+}

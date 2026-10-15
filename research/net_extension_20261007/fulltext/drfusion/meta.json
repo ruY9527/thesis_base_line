@@ -1,0 +1,45 @@
+{
+  "canonical_id": "url:3212353e2eb3d14c",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\drfusion\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\drfusion\\parsed.md",
+  "parser": "pypdf fallback; page markers retained",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1065,
+  "parsed_chars": 50959,
+  "sentinel": "b1233abd0c32",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\drfusion\\parsed.md",
+      "offset": 0,
+      "limit": 1065
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false,
+  "original_fetch_paths": {
+    "raw_path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\net_literature_20261007\\url_3212353e2eb3d14c\\raw.pdf",
+    "parsed_path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\net_literature_20261007\\url_3212353e2eb3d14c\\parsed.md"
+  },
+  "persisted_file_sha256": {
+    "page-3.png": "5b4c70fb651edde1dbe983c62c72ccf63e8ef09dcae9bde93cba2f5cc1fd2277",
+    "page-5.png": "762066eea86a9c09977a89781b32763336ea42d3951cd9225302fec2a5eae415",
+    "parsed.md": "739f2e69ce82de3f6122f5d73b68772860accdadf1264e7516345325a9665401",
+    "raw.pdf": "9464ebf6771830f97d27f7a9520b22b8b1caf82b19459313be8770efc9aeecfc"
+  }
+}

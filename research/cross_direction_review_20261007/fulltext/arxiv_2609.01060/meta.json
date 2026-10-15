@@ -1,0 +1,39 @@
+{
+  "canonical_id": "arxiv:2609.01060",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Lightweight Interpretable RGB-Guided Hyperspectral Super-Resolution under Real Cross-resolution Misalignment",
+  "year": 2026,
+  "doi": null,
+  "arxiv_id": "2609.01060",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2609.01060\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2609.01060\\parsed.md",
+  "parser": "html",
+  "abstract": "Compact snapshot hyperspectral cameras provide rich instantaneous spectral measurements for ground-level machine vision, but at lower spatial resolution than standard RGB cameras. RGB-guided hyperspectral super-resolution (HSR) addresses this limitation by transferring spatial detail from a high-resolution RGB guide to a low-resolution hyperspectral image (HSI). These dual-camera systems are typically in a horizontal rig geometry, requiring cross-camera image alignment due to different fields of view. However, residual misregistration can inject spurious high-frequency details. Existing learned unaligned-fusion methods are usually trained for a fixed spectral support and spatial scale factors and can be computationally demanding, limiting their flexibility across sensors. We propose a lightweight and interpretable RGB-guided HSR framework combining cross-modal flow alignment with model-based Gram-Schmidt orthogonalization fusion. The method first warps the RGB guide onto the HSI grid, then estimates an energy-based confidence weight map by measuring local alignment reliability. This map is then used both in a weighted least-squares spectral regression and in a gated fusion between the super-resolved estimate and an HSI-preserving estimate. Unlike existing learned methods, the proposed framework has a low computational footprint and supports VIS-NIR spectral supports and scale factors without retraining. Experiments on the Real benchmark show that the proposed method improves reconstruction accuracy over learned fusion baselines while remaining substantially faster. On a 34-frame sequence acquired with our real RGB-HSI dual-camera setup, a reduced-resolution quantitative evaluation validates the method under genuine cross-sensor radiometric, noise, and geometric differences, while native-resolution qualitative results demonstrate deployment on the full 51-band VIS-NIR acquisition.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1086,
+  "parsed_chars": 55913,
+  "sentinel": "1546e6659bba",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2609.01060\\parsed.md",
+      "offset": 0,
+      "limit": 1086
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

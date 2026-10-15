@@ -1,0 +1,32 @@
+[
+  [
+    "eccv2026",
+    "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+    "index"
+  ],
+  [
+    "cvpr2026",
+    "https://openaccess.thecvf.com/CVPR2026?day=all",
+    "index"
+  ],
+  [
+    "diffdiff_crossref",
+    "https://api.crossref.org/works?query.title=A%20Two-Stage%20Conditional%20Diffusion%20Model%20With%20Differential%20Attention%20for%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=3",
+    "crossref"
+  ],
+  [
+    "bhsr_crossref",
+    "https://api.crossref.org/works?query.title=Blur-Resistant%20Hyperspectral%20Image%20Super-Resolution%20via%20Dual-Degradation%20Fusion%20Model&rows=3",
+    "crossref"
+  ],
+  [
+    "emrdiff",
+    "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+    "pdf"
+  ],
+  [
+    "co2if",
+    "https://ojs.aaai.org/index.php/AAAI/article/download/38261/42223",
+    "pdf"
+  ]
+]

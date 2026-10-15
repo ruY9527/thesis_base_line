@@ -1,0 +1,1044 @@
+<!-- PDF PAGE 1 -->
+
+Enhancing Unregistered Hyperspectral Image Super-Resolution via
+Unmixing-based Abundance Fusion Learning
+Yingkai Zhang1 Tao Zhang2 Jing Nie1 Ying Fu1*
+1Beijing Institute of Technology 2Hangzhou Dianzi University
+zhangyingkai@bit.edu.cn tzhang@hdu.edu.cn {3420235028, fuying@bit.edu.cn }
+Abstract
+Unregistered hyperspectral image (HSI) super-resolution
+(SR) typically aims to enhance a low-resolution HSI us-
+ing an unregistered high-resolution reference image. In
+this paper, we propose an unmixing-based fusion frame-
+work that decouples spatial-spectral information to simul-
+taneously mitigate the impact of unregistered fusion and en-
+hance the learnability of SR models. Specifically, we first
+utilize singular value decomposition for initial spectral un-
+mixing, preserving the original endmembers while dedicat-
+ing the subsequent network to enhancing the initial abun-
+dance map. To leverage the spatial texture of the unregis-
+tered reference, we introduce a coarse-to-fine deformable
+aggregation module, which first estimates a pixel-level flow
+and a similarity map using a coarse pyramid predictor. It
+further performs fine sub-pixel refinement to achieve de-
+formable aggregation of the reference features. The ag-
+gregative features are then refined via a series of spatial-
+channel abundance cross-attention blocks. Furthermore,
+a spatial-channel modulated fusion module is presented
+to merge encoder-decoder features using dynamic gating
+weights, yielding a high-quality, high-resolution HSI. Ex-
+perimental results on simulated and real datasets confirm
+that our proposed method achieves state-of-the-art super-
+resolution performance. The code will be available at
+https://github.com/yingkai-zhang/UAFL.
+1. Introduction
+Hyperspectral images (HSIs) provide extensive spectral in-
+formation that has driven progress in a variety of fields [17,
+35, 40, 59]. However, HSI sensors usually face a well-
+known trade-off between spatial and spectral resolution. As
+a result, HSIs often have high spectral accuracy but limited
+spatial detail. Therefore, hyperspectral Super-Resolution
+(SR) has become a vital area of research.
+Single HSI SR methods [11, 28, 49] have shown some
+* Corresponding Author
+38.0
+37.0
+36.0
+35.0
+34.0
+33.0
+32.0
+31.0
+30.0
+1 128 256 384 512 640 3200
+MoE-PNP
+FLOPs (G)
+PSNR (dB)
+HSIFN
+SSPSR
+(44.67M)
+(21.1M)
+(20.8M)
+MCNet
+(2.2M)
+NonRegOptimized (2.0M)(0.2M)
+BIQRNN
+SRLF
+LRTN
+(1.3M)
+(1.33M)
+(3.79M)
+ESSA
+(11.1M)
+Ours
+(5.94M)
+SSCH-S
+(11.01M)
+ 
+Figure 1. Comparison of performance (PSNR), computational cost
+(FLOPs), and memory cost (Params). The vertical axis represents
+PSNR (dB), while the horizontal axis indicates FLOPs. The size
+of each bubble corresponds to the number of parameters.
+effectiveness, but they are inherently limited by the finite
+information available in a single input. Consequently, there
+has been a growing focus on reference-based registered HSI
+SR [30, 31], which utilizes an auxiliary high-resolution
+(HR) reference image to augment the spatial resolution of
+a low-resolution (LR) HSI. While effective, they are limited
+by the restrictive assumption that the LR HSI and HR refer-
+ence image are perfectly aligned. This is seldom the case in
+practical applications, where misalignments inevitably arise
+from platform vibrations, perspective shifts, or differences
+in sensor acquisition times [48]. This challenge has led to
+the development of methods [21, 56] for unregistered HSI
+SR, which aim to perform alignment and fusion jointly.
+Some works [21, 53] typically follow a two-stage
+pipeline where a pre-trained module (e.g., RAFT [41]) first
+explicitly aligns the reference image, which is then fused
+by a subsequent spatial-spectral coupled network. Nev-
+ertheless, these approaches have two primary challenges.
+First, the reliance on coupled spatial-spectral fusion con-
+strains the learning capacity of networks (Fig. 1). Second,
+the explicit alignment step often introduces textural distor-
+tions and artifacts (Fig. 2(a-c)) due to inherent disparities in
+This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.
+Except for this watermark, it is identical to the accepted version;
+the final published version of the proceedings is available on IEEE Xplore.
+41573
+
+
+<!-- PDF PAGE 2 -->
+
+(a) Target HSI(b) Reference RGB(c) Warped RGB(d) Hyperspectral Unmixing for Unregistered Hyperspectral Image Super-Resolution
+HR HSI
+LR HSI
+HR RGB
+Endmember
+Abundance
+Endmember
+Abundance
+𝐀𝐡𝐫𝐡𝐬𝐢
+𝐄𝐡𝐫𝐡𝐬𝐢
+𝐀𝐥𝐫𝐡𝐬𝐢
+𝐄𝐥𝐫𝐡𝐬𝐢
+HR HSI Unmixing
+LR HSI Unmixing
+41.59 dB
+41.46 dB
+14.79 dB
+Mixing(𝐄𝐡𝐫𝐡𝐬𝐢, 𝐀𝐡𝐫𝐡𝐬𝐢)
+Mixing(𝐄𝐥𝐫𝐡𝐬𝐢, 𝐀𝐡𝐫𝐡𝐬𝐢)
+Mixing(𝐄𝐥𝐫𝐡𝐬𝐢,𝐈𝐡𝐫𝐫𝐠𝐛)
+Figure 2. The motivation. (c) The explicit alignment within the
+SSCH [53] is prone to introducing spatial distortions and textural
+artifacts into the warped image. (d) The result validates the princi-
+ple that leveraging a well-aligned, high-fidelity abundance enables
+the reconstruction of the HR HSI from its LR counterpart.
+resolution and data distribution.
+The inherent low-rank property of HSIs [25, 37], stem-
+ming from strong spectral correlations, is a cornerstone of
+restoration tasks [12, 44] and underpins spectral unmix-
+ing [13]. As discussed in the work [9], unmixing-based
+methods [1, 20] are robust to geometric misalignment,
+while others [5, 6] are more sensitive, employing alignment
+constraint. Inspired by this, we provide an analysis of spec-
+tral unmixing for unregistered HSI SR in Fig. 2(d). It can
+be seen that combining LR HSI endmembers with well-
+structured HR abundances yields superior results, in con-
+trast to direct mixing with an unregistered reference, which
+produces a visually plausible image but suffers from poor
+quantitative performance due to real misalignment. This
+decoupling strategy transforms the complex problem into
+a more specific learning objective, which simplifies the op-
+timization process for the network.
+In this paper, we propose an unmixing-based fu-
+sion framework that leverages deformable aggregation
+and spatial-channel modulated fusion to guide HSI super-
+resolution. Specifically, our approach reframes the task
+from direct fusion of spatial-spectral to learning residual
+abundance maps. We first utilize singular value decom-
+position to decouple HSI into endmembers and abundance,
+which is further enhanced with an unregistered reference
+image. Next, we present a coarse-to-fine deformable mod-
+ule that performs implicit feature aggregation by first esti-
+mating a pixel-level flow and similarity map with a coarse
+pyramid predictor, and then executing a fine sub-pixel re-
+finement using deformable convolution for an effective ag-
+gregation of reference features. The resulting features are
+then refined by a spatial-channel abundance cross-attention
+mechanism to enhance their representation capability. Be-
+sides, a spatial-channel modulated fusion module in the de-
+coder generates dynamic gating weights to optimally merge
+encoder-decoder features, ensuring a high-fidelity recon-
+struction of both spatial details and spectral signatures. The
+main contributions of our work are summarized as follows:
+• We propose an unmixing-based fusion framework for un-
+registered HSI SR by decoupling spatial-spectral infor-
+mation to mitigate the impact of unregistered fusion and
+enhance the learnability of SR model.
+• We introduce a coarse-to-fine deformable aggregation
+module with spatial-channel abundance cross-attention
+for robust feature aggregation and enhanced representa-
+tional capability.
+• We design a spatial-channel modulated fusion module
+that generates dynamic gating weights to dynamically
+merge encoder-decoder features. This ensures a high-
+fidelity reconstruction of both fine spatial details and
+spectral signatures in the final HSI.
+2. Related Work
+In this section, we review the reference-based super-
+resolution, including registered HSI super-resolution and
+unregistered HSI super-resolution.
+2.1. Registered HSI Super-Resolution
+Registered HSI super-resolution (SR) leverages an HR ref-
+erence image to provide spatial details. The majority of
+these methods follow the strict assumption that the LR HSI
+and the HR reference image are perfectly registered. One
+line of research focuses on optimization techniques with
+hand-crafted priors [1, 2, 13, 20, 22, 58]. Although these
+methods can be robust to geometric misalignment to a cer-
+tain extent, they struggle with complex, real-world scenar-
+ios due to the dependence on assumed priors.
+In recent years, various deep learning methods, includ-
+ing CNNs and Transformers [4, 7, 19, 23, 24, 42, 43, 50–
+55] have been proposed. Another line of research based
+on these [8, 14–16, 29, 31, 51], learn the mapping from LR
+HSI and HR reference to HR HSI directly from data, remov-
+ing the need for hand-crafted priors. However, the perfor-
+mance of these methods hinges on the assumption of per-
+fectly aligned data. This idealized condition is difficult to
+satisfy in real-world scenarios, which undermines the prac-
+tical applicability of these registered fusion approaches.
+2.2. Unregistered HSI Super-Resolution
+To mitigate the reliance on strict alignment priors and
+enhance the practical applicability, some works begin to
+study unregistered HSI SR [9, 34, 39, 48, 56, 57]. These
+approaches typically train on unregistered data simulated
+41574
+
+
+<!-- PDF PAGE 3 -->
+
+1×1	ConvStride=15×5	Depth-wise ConvStride=13×3	ConvStride=1 CAveragePoolingSigmoidLeakyReLU PMatrixMultiplicationConcatenateElement-wiseMultiplicationWindowPartitionElement-wiseAddition
+(c) Spatial-Channel Modulated Fusion(SCMF)
+LNSACALNCACAH×𝑊×𝐶H×𝑊×𝐶
+C
+H×𝑊×𝐶
+H×𝑊×𝐶
+H×𝑊×𝐶
+SpatialModulation
+ChannelModulation
+Value
+ValueWeight
+Weight
+H×𝑊×𝐶P
+H×𝑊×𝐶
+𝐕
+𝐐𝐊M×𝑀×𝐶
+RMM×𝑀𝑀
+H×𝑊×𝐶
+𝐕
+𝐐𝐊𝐻×𝑊×𝐶C×𝐶H×𝑊×𝐶M×𝑀×𝐶 H×𝑊×𝐶
+RWindowReverse
+Spatial AbundanceChannel AbundanceCross-AttentionCross-Attention
+LRHSISRHSIHRRGB
+SCMFSCACA
+Unmixing
+CFDA
+Mixing
+SCACA
+SCACA
+×𝑁! ×𝑁!×𝑁"
+Skip Connection
+𝐄
+h×𝑤×𝐵H×𝑊×𝑏H×𝑊×𝐵H×𝑊×𝐵
+H×𝑊×𝐾𝐵×𝐾
+H×𝑊×𝐶𝐻𝑁×𝑊𝑁×𝑁𝐶H×𝑊×𝐶
+H×𝑊×𝐾𝐄𝐵×𝐾
+Unmixing-based Fusion Framework
+EmbeddingMappingH×𝑊×𝐶H×𝑊×𝐶H×𝑊×𝐶
+Embedding
+Coarse Pyramid Flow Predictor (CPFP)
+C
+WarpC
+Chunk
+CPFPDecimalC
+Warp
+Tanh
+Sine Encoding
+Frequency Encoding
+DCN
+Down Up
+H×𝑊×𝐶
+H×𝑊×𝐶
+H×𝑊×2
+H×𝑊×1
+H×𝑊×2
+H×𝑊×1
+Fine Sub-Pixel Refinement (FSPR)H×𝑊×𝐶
+H×𝑊×𝐶
+(a) Coarse-to-Fine Deformable Aggregation(CFDA)(b) Spatial-Channel Abundance Cross-Attention (SCACA)
+Figure 3. The overall architecture. We adopt a multi-scale encoder-decoder based on unmixing with several key modules: (a) Coarse-
+to-Fine Deformable Aggregation module, (b) Spatial-Channel Abundance Cross-Attention module, and (c) Spatial-Channel Modulation
+Fusion module to super-resolve high-quality HR HSI.
+through rigid or non-rigid transformations. The predom-
+inant strategy involves a two-stage pipeline where an ex-
+plicit transformation is first estimated and then applied. For
+instance, some methods conduct rigid or non-rigid trans-
+formation through optimization [9], spatial transformer net-
+work [34], or optical flow model [21]. Zhang et al. [53]
+first utilize a pre-trained flow model, and then finetune the
+feature in a post-process fusion network. The dominant ap-
+proaches are hindered by the fact that explicit pre-alignment
+often introduces textural artifacts, while integrated meth-
+ods [38, 56] suffer from the learning constraints imposed
+by coupled spatial-spectral data. Therefore, we propose an
+unmixing-based fusion network that implicitly aggregates
+features, complemented by cross-attention and modulated
+fusion, to mitigate the impact of unregistered fusion and en-
+hance representational capability.
+3. Unmixing-based Fusion Framework
+In this section, we first introduce the motivation and formu-
+lation of our framework in 3.1. Then, we present the details
+of key modules in 3.2, 3.3, and 3.4.
+3.1. Motivation and Overall Framework
+Motivation. Spectral unmixing, enabled by the inherent
+low-rank property of HSIs [9, 13, 37, 46], can mitigate
+the adverse effects of unregistered fusion, as discussed in
+work [9]. Inspired by this, as shown in Fig. 2(d), we pro-
+vide unmixing analysis on HR HSI, LR HSI, and HR un-
+registered RGB. The matrix and tensor are defined asX and
+X , respectively. A high-quality HSI can be reconstructed by
+fusing endmembers from the LR HSI with abundances from
+an HR source, i.e., Mixing(Elrhsi, Ahrhsi). This allows us
+to reframe the fusion task from learning in a complex, cou-
+pled spatial-spectral domain to a more tractable problem:
+learning to enhance the decoupled abundance maps. While
+a reference RGB image can provide the necessary spatial
+structure for these abundances, direct mix by Elrhsi and
+Ihrrgb is quantitatively poor due to real misalignment, even
+if it appears visually sharp (Fig. 2(d)). Consequently, to ef-
+fectively aggregate unregistered reference features, we pro-
+pose a coarse-to-fine deformable aggregation module. By
+operating on deep features rather than pixels, our module
+with cross-attention blocks learns robust and clear repre-
+sentations and makes more effective use of the unregistered
+reference to guide the abundance map enhancement.
+The architecture of our framework is illustrated in Fig. 3.
+Given an LR HSI X ∈ Rh×w×B and an unregistered HR
+RGB I ∈ RH×W ×b, our goal is to reconstruct an HR HSI
+Y ∈ RH×W ×B, where H, W , and B denote the high-
+resolution height, width, and number of spectral bands.
+Unmixing. To initialize the unmixing process, we first up-
+sample the LR HSI X to the target spatial dimensions, HSI
+X↑ ∈ RH×W ×B. Subsequently, we apply singular value
+decomposition to decouple X↑ by X↑ = USVT, where
+U ∈ RB×B, S ∈ RB×HW , V ∈ RHW ×HW , and X↑ de-
+notes that X↑ is reshaped to RB×HW . The pre-estimated
+endmember matrix E ∈ RB×K is formed by taking the first
+K left singular vectors from U, where K is the number of
+endmembers. The abundance A ∈ RK×HW is obtained by:
+A = ETX↑, (1)
+41575
+
+
+<!-- PDF PAGE 4 -->
+
+where A is an initial abundance map, which is then re-
+shaped to A ∈ RH×W ×K for subsequent learning residual
+abundance maps with the unregistered reference I by:
+ˆA = f(A, I|θ), (2)
+where ˆA is the learned residual abundance map, f(·|θ) de-
+notes our network, and θ represents learnable parameters.
+Mixing. We then reconstruct a residual HSI component by
+mixing ˆA with the initial endmembers E:
+Yres = E ˆA, (3)
+where ˆA ∈ RK×HW and Yres ∈ RB×HW . The super-
+resolved HR HSI Y is obtained by adding this learned resid-
+ual component to the initial upsampled HSI:
+Y = Yres + X↑, (4)
+where Yres denotes that Yres is reshaped to RH×W ×B.
+3.2. Coarse-to-Fine Deformable Aggregation
+To effectively leverage the spatial information from the un-
+registered reference image I to enhance the initial abun-
+dance map A, we introduce a Coarse-to-Fine Deformable
+Aggregation (CFDA) module (Fig. 3(a)). The core of this
+module is the deformable convolution guided by a dy-
+namically predicted prior flow, which is progressively re-
+fined. We first extract deep features from both the ini-
+tial abundance map and the reference image, denoted as
+F ∈ RH×W ×C and Fref ∈ RH×W ×C, respectively.
+Coarse Pyramid Flow Predictor . For the initial coarse
+motion estimation, we utilize a lightweight pyramid pre-
+dictor to compute a preliminary flow field. The feature F
+and reference feature Fref are first downsampled asF↓ and
+Fref ↓, and a convolutional layer predicts a low-resolution
+flow field. This flow is then upsampled to the original reso-
+lution to serve as a coarse motion prior:
+Cf low = Up(Conv3×3(F↓, Fref ↓)), (5)
+where Up(·) denotes bilinear upsampling, Conv3×3(·, ·) de-
+notes the convolution with kernel size 3 × 3 for concatena-
+tion of inputs. Then, Fref is warped using this coarse flow.
+The warped feature is then concatenated with F and fed
+into another convolutional layer to predict a residual flow
+∆Cf low and the similarity map F ′
+sim. The final prior flow
+Ff low ∈ RH×W ×2 is the sum of the coarse and residual
+components, and prior similarity map Fsim ∈ RH×W ×1,
+which indicates regions of high confidence, is obtained by
+applying a sigmoid function:
+Ff low = Cf low + ∆Cf low,
+Fsim = Sigmoid(F ′
+sim). (6)
+Fine Sub-Pixel Refinement. The predicted flow provides
+a coarse displacement but lacks fine-grained precision. To
+further enhance this, and inspired by the work [45], we
+encode sub-pixel displacements, providing a detailed prior
+that enables the network to capture fine local details at each
+sampling location. We first extract the decimal component
+df ∈ RH×W ×2 of the flow Ff low. We follow previous
+works [33, 45] and adopt a frequency positional encoding:
+γ(df) = [ωdf , ω2df , · · ·, ωN −1df], (7)
+where, γ(df) ∈ RH×W ×2N , ω is the angular speed
+and N denotes the frequency bands. We then obtain
+a high-dimensional feature positional encoding, Fpe ∈
+RH×W ×4N that represents fine-grained sub-pixel positional
+information by concatenating a series of sine and cosine
+functions with varying frequencies:
+Fpe = Concat[Sin(γ(df)), Cos(γ(df))]. (8)
+Then, a refinement network takes the concatenation of the
+target feature, the warped reference feature, and the posi-
+tional features to predict a residual offset and mask:
+∆P = fre(Concat[F , Warp(Fref , Ff low), Fpe]), (9)
+where Warp(·) is the warping operation. ∆P can be chun-
+ked to ∆Po and ∆Pm, which perform fine-grained correc-
+tions on the prior coarse flow. The final offset O and mod-
+ulation mask M for deformable can be obtained by:
+O = Ff low + Tanh(∆Po),
+M = Sigmoid(Fsim ⊙ ∆Pm), (10)
+where ⊙ denotes element-wise multiplication. Finally, the
+aggregative reference feature ˆFref is obtained by applying
+the modulated deformable convolution to the original refer-
+ence feature Fref using the offsets O and masks M.
+3.3. Spatial-Channel Abundance Cross-Attention
+After obtaining the aggregative features from the CFDA
+module, we introduce a Spatial-Channel Abundance Cross-
+Attention (SCACA) block to further refine the abundance
+map features, as shown in Fig. 3(b).
+We first modulate the aggregative reference feature ˆFref
+by a lightweight self-modulated network:
+ˆFref m = ˆFref + ˆFref ⊙ Sigmoid(Conv5×5( ˆFref )), (11)
+where Conv5×5 denotes the 5 × 5 depth-wise convolution.
+Inspired by the work [47], we then utilize hierarchical cross-
+attention (sequentially spatial and channel cross-attention)
+to restore their fine-grained details.
+Spatial Abundance Cross-Attention (SACA). To enhance
+the spatial structure of the abundance map, we employ a
+window-based cross-attention. The abundance feature F is
+first processed by a LayerNorm (LN) layer, then interacted
+41576
+
+
+<!-- PDF PAGE 5 -->
+
+with the modulated aggregative reference feature ˆFref m by
+the cross-attention block:
+F ′ = F + FFN(SACA(LN(F), ˆFref m)), (12)
+where FFN(·) consists of several convolutional layers and
+GELU activation layers. For attention block, the input abun-
+dance feature Z is first conducted a window partition oper-
+ation into Zw ∈ RM ×M ×C, where M is the window size.
+Similarly, ˆFref m is divided into non-overlapping patches,
+where single patch is ˆFref w ∈ RM ×M ×C. Thus, the Query
+(Q), Key (K), and Value (V) matrices are all derived from
+Zw. The cross-attention mechanism is introduced by mod-
+ulating the Value vector with the reference feature before
+the final attention aggregation. The core operation within a
+window can be summarized as:
+Vmod = V ⊙ Reshape( ˆFref w),
+ˆZ = Softmax
+ QKT
+√dk
++ B
+
+Vmod,
+(13)
+where B is the learnable relative position bias. This allows
+the model to learn fine-grained spatial correspondence by
+leveraging the structural information from the reference fea-
+ture to guide the refinement of the abundance map.
+Channel Abundance Cross-Attention (CACA). Comple-
+mentary to the spatial attention, the CACA block focuses on
+refining the channel-wise signatures of the abundance map,
+dynamically enhancing salient spectral signatures while at-
+tenuating those that are irrelevant. Similar to the spatial at-
+tention, the Q, K, and V matrices are derived from the inter-
+mediate abundance feature F ′. The channel cross-attention
+is realized by modulating the Value vector:
+Vmod = V ⊙ ˆFref m. (14)
+This operation adaptively recalibrates the channel-wise re-
+sponses of the abundance features based on the channel
+characteristics of the aggregative reference features. By
+combining these two mechanisms, the SCACA module ef-
+fectively fuses multi-modal information, leading to a re-
+fined abundance map.
+3.4. Spatial-Channel Modulated Fusion
+To effectively merge the hierarchical features from the
+encoder-decoder architecture and ensure a high-fidelity re-
+construction, we propose a Spatial-Channel Modulated Fu-
+sion (SCMF) module. This module is designed to adap-
+tively fuse features from a decoder stage, Fdec, with corre-
+sponding features from an encoder stage, Fenc. The core
+principle is to decouple the fusion process into two parallel,
+complementary pathways, one focusing on spatial modula-
+tion and the other on channel modulation. The two features
+Fenc and Fdec are first concatenated along the channel di-
+mension to form a unified feature map, Fcat, which serves
+as the input for modulated fusion.
+Spatial Modulation. This modulation is designed to em-
+phasize or suppress spatial details based on local context.
+It consists of a spatial value branch and a spatial gating
+branch. The value branch, composed of depth-wise con-
+volutions and Leaky ReLU, processes the concatenated fea-
+ture to generate a spatially-rich representation, Vspa. Con-
+currently, the spatial gating branch generates a pixel-wise
+gating weight, Wspa. The weight is produced by a con-
+volution followed by a sigmoid activation function, which
+assigns an importance weight to each spatial location:
+Mspa = Sigmoid(Conv3×3(Fcat)). (15)
+The output of this modulation is the element-wise product
+of the value and the gating weight, Fspa = Vspa ⊙ Mspa,
+where Mspa is broadcast across the channel dimension.
+Channel Modulation. Complementary to the spatial mod-
+ulation, the channel modulation focuses on adaptively re-
+calibrating channel-wise feature responses. It also consists
+of a channel value branch and a channel gating branch. The
+value branch uses a1 ×1 convolution to produce a channel-
+mixed representation, Vspe. The channel gating branch first
+aggregates global spatial information into a channel de-
+scriptor using Global Average Pooling (GAP). This descrip-
+tor is then transformed by a 1 × 1 convolution to compute
+channel-wise attention weights, which are normalized by a
+sigmoid function:
+Mspe = Sigmoid(Conv1×1(GAP(Fcat))). (16)
+The resulting attention vector Mspe ∈ R1×1×C is used
+to modulate the channel value feature, yielding the output
+Fspe = Vspe ⊙ Mspe.
+To dynamically balance the contributions of spatial and
+channel information during the fusion process, leading to
+a more robust and high-fidelity reconstruction, the outputs
+of the two modulations are fused via element-wise addition.
+Besides, to ensure stable training and preserve information
+from the decoder stream, this fused result is added to the
+original decoder feature Fdec in a residual connection:
+ˆFdec = (Fspa + Fspe) + Fdec. (17)
+4. Experiments
+In this section, we first introduce the experimental settings.
+Then, we compare our approach with several state-of-the-
+art methods on simulated and real data. We further conduct
+ablation studies to validate the effectiveness of our modules.
+4.1. Experimental Settings
+Datasets and Metrics . We utilize two distinct datasets,
+ICVL [3] and REAL [21]. The ICVL dataset contains 201
+pairs of images with a resolution of 1300 × 1392, which
+41577
+
+
+<!-- PDF PAGE 6 -->
+
+Ground Truth (ICVL [3])
+Input (×4) SSPSR [18] MCNet [26] BiQRNN [10] ESSA [49] NonReg [56]
+MoE-PNP [38] HSIFN [21] LRTN [30] SRLF [31] SSCH-S [53] Ours
+Figure 4. Visual comparison on the simulated dataset, ICVL [3]. The ground truth and input HSIs are shown with band 20. The results of
+different methods under the scale factor (×4) on the ICVL dataset with the error maps.
+are cut into a size of 512 by the center in the experiment.
+The RGB reference image is generated by the spectral re-
+sponse function of Nikon D700 as [2]. The misregistra-
+tion is achieved by adjusting the pose of the virtual cam-
+era to control the generation of new viewpoints [27, 53].
+The REAL dataset comprises 60 paired, unregistered HSI
+images of both indoor and outdoor scenes, captured by a
+dual-camera system equipped with SOC710-VP hyperspec-
+tral camera. Following the works [21, 53], we choose 20
+pairs for testing and the rest for training in ICVL dataset,
+and 10 pairs for testing and the rest for training in REAL
+dataset. To evaluate the performance, we employ three met-
+rics, i.e., peak signal-to-noise ratio (PSNR), structural sim-
+ilarity index (SSIM), and spectral angle mapping (SAM).
+Implementation Details. Following the work [53], we uti-
+lize the Gaussian kernel (µ = 8, σ = 3) to blur the HSI and
+downsample with the scale factor (e.g., ×4, ×8, ×16) to ac-
+quire the LR HSI. We use C = 64 dimensions and K = 3
+endmembers as the final configuration for our model. We
+develop our model using Pytorch [36] with a batch size of
+1, trained on a single Nvidia RTX 4090 GPU. The model is
+trained via the AdamW [32] optimizer with the weight de-
+cay rate of 5 × 10−5 and learning rate of 1 × 10−5 to min-
+imize the L1 loss function for 150 epochs in ICVL dataset
+and 300 epochs in REAL dataset. All methods are trained
+with the same settings as ours for fair comparison.
+4.2. Main Results
+Competing Methods. We compare the proposed method
+with several state-of-the-art (SOTA) SR methods, includ-
+ing single HSI SR methods (SSPSR [18], MCNet [26],
+BiQRNN [10], and ESSA [49]) and reference-based HSI
+SR methods (Optimized [8], NonReg [56], MoE-PNP [38],
+HSIFN [21], LRTN [30], SRLF [31], and SSCH [53]).
+Results on Simulated Dataset . Tab. 1 shows a quanti-
+tative comparison on the simulated ICVL dataset under a
+scale factor of ×4. As shown, our model achieves a leading
+PSNR of 41.84 dB and a leading SAM of 0.025, demon-
+Table 1. Quantitative comparison under scale factor of ×4 on the
+simulated dataset, ICVL [3]. PSNR is in dB. The best and second
+best results are highlighted in bold and underline, respectively.
+Method Venue PSNR↑ SSIM↑ SAM↓
+Bicubic - 35.33 0.960 0.028
+SSPSR [18] TCI’20 40.19 0.982 0.033
+MCNet [26] RS’20 39.90 0.980 0.033
+BiQRNN [10] JSTAR’21 37.85 0.974 0.039
+ESSA [49] ICCV’23 38.41 0.977 0.057
+Optimized [8] CVPR’19 25.35 0.801 0.026
+NonReg [56] TGRS’22 33.47 0.949 0.131
+MoE-PNP [38] TNNLS’24 33.97 0.957 0.074
+HSIFN [21] TNNLS’24 41.14 0.983 0.041
+LRTN [30] IJCV’25 37.58 0.975 0.061
+SRLF [31] CVPR’25 38.75 0.977 0.041
+SSCH-S [53] IJCV’25 41.38 0.987 0.031
+Ours - 41.84 0.986 0.025
+strating its superior capability in recovering both spatial de-
+tails and spectral signatures. This performance surpasses
+recent methods, including SSCH-S [53] and HSIFN [21],
+confirming the advantages of our proposed approach.
+As shown in Fig. 4, the error maps represent the ab-
+solute pixel-wise difference between each output and the
+ground truth. It is visually evident that our proposed method
+achieves a substantially lower error compared to all compet-
+ing approaches. Methods such as NonReg [56] and MoE-
+PNP [38] suffer from significant errors, while even recent
+SOTA methods like HSIFN [21] and SSCH-S [53] exhibit
+noticeable high-error patterns along sharp edges. In con-
+trast, the error map of our method is almost dark blue,
+demonstrating its capability in accurately recovering both
+overall structure and high-frequency details.
+Results on Real Dataset . Tab. 2 shows a comprehensive
+quantitative comparison on the real-world dataset, REAL,
+across scale factors of ×4, ×8, and ×16. Our method con-
+sistently outperforms all previous methods across all scales
+and metrics. Notably, at the most challenging ×16 scale,
+41578
+
+
+<!-- PDF PAGE 7 -->
+
+Table 2. Quantitative comparison of various methods under several scale factors on the real dataset, REAL [21]. PSNR is in dB. The best
+and second best results are highlighted in bold and underline, respectively.
+Method Venue Scale Factor ×4 Scale Factor ×8 Scale Factor ×16 Params FLOPs
+PSNR↑ SSIM↑ SAM↓ PSNR↑ SSIM↑ SAM↓ PSNR↑ SSIM↑ SAM↓ (M) (G)
+Bicubic - 34.07 0.941 0.042 28.43 0.870 0.058 24.84 0.815 0.086 - -
+SSPSR [18] TCI’20 39.04 0.976 0.040 31.13 0.906 0.069 27.20 0.851 0.077 20.82 180.40
+MCNet [26] RS’20 39.07 0.974 0.038 31.31 0.904 0.063 27.04 0.845 0.088 2.20 280.30
+BiQRNN [10] JSTAR’21 37.80 0.969 0.044 31.66 0.908 0.060 26.53 0.832 0.111 1.30 468.70
+ESSA [49] ICCV’23 39.94 0.982 0.040 31.85 0.913 0.064 26.70 0.918 0.111 11.10 78.14
+Optimized [8] CVPR’19 27.26 0.916 0.189 26.99 0.909 0.195 26.93 0.912 0.220 0.20 14.17
+NonReg [56] TGRS’22 31.60 0.951 0.081 30.00 0.923 0.167 29.09 0.904 0.584 2.00 161.61
+MoE-PNP [38] TNNLS’24 32.57 0.951 0.101 31.12 0.946 0.119 29.91 0.934 0.121 44.67 3040.81
+HSIFN [21] TNNLS’24 40.15 0.982 0.037 34.39 0.953 0.052 30.07 0.939 0.100 21.01 594.10
+LRTN [30] IJCV’25 38.62 0.978 0.054 34.79 0.957 0.066 31.41 0.937 0.081 3.79 33.15
+SRLF [31] CVPR’25 39.06 0.978 0.043 34.63 0.953 0.064 31.12 0.929 0.091 1.33 20.31
+SSCH-S [53] IJCV’25 41.16 0.986 0.036 36.19 0.969 0.052 31.91 0.940 0.084 11.01 165.68
+Ours - 42.05 0.988 0.033 37.23 0.972 0.046 32.28 0.942 0.065 5.94 96.17
+Ground Truth (REAL [21])
+Input (×8) SSPSR [18] MCNet [26] BiQRNN [10] ESSA [49] NonReg [56]
+MoE-PNP [38] HSIFN [21] LRTN [30] SRLF [31] SSCH-S [53] Ours
+Ground Truth (REAL [21])
+Input (×16) SSPSR [18] MCNet [26] BiQRNN [10] ESSA [49] NonReg [56]
+MoE-PNP [38] HSIFN [21] LRTN [30] SRLF [31] SSCH-S [53] Ours
+Figure 5. Visual comparison on the real dataset, REAL [21]. The ground truth and input HSIs are shown with band 20. The results of
+different methods under the scale factor (×8, ×16) on the REAL dataset with the error maps.
+our model achieves a PSNR of 32.28 dB, surpassing the
+second-best method, SSCH-S [53], by 0.37 dB. This trend
+of superior performance is maintained at the ×8 and ×4
+scales, where we achieve PSNR gains of 1.04 dB and 0.89
+dB over the second-best, respectively, demonstrating the ro-
+bustness and effectiveness of our approach in real-world
+scenarios. Furthermore, our model achieves this leading
+performance with higher efficiency. It utilizes only 5.94M
+parameters and 96.17G FLOPs, which is approximately half
+the parameters and 42% fewer FLOPs than SSCH-S. This
+highlights our excellent balance between super-resolution
+accuracy and computational efficiency. As illustrated in
+Fig. 5, our method consistently achieves a better visual re-
+construction quality across multiple scale factors ( ×8 and
+×16). This indicates a more accurate recovery of challeng-
+ing high-frequency details, especially at large scale factors.
+For example, in the sharp object edges shown in Fig. 5,
+other methods tend to leave residual artifacts compared to
+ours, resulting in higher error maps. This further validates
+the practical effectiveness of our proposed framework.
+41579
+
+
+<!-- PDF PAGE 8 -->
+
+Table 3. Ablation study of the proposed components. Results on
+the REAL dataset at scale factor ×4.
+Unmix SCACA CFDA SCMF PSNR↑ SSIM↑ SAM↓ Params
+✗ ✗ ✗ ✗ 41.26 0.984 0.036 5.08M
+✓ ✗ ✗ ✗ 41.41 0.986 0.034 5.05M
+✓ ✓ ✗ ✗ 41.66 0.987 0.034 4.85M
+✓ ✓ ✓ ✗ 41.95 0.988 0.033 5.85M
+✓ ✓ ✓ ✓ 42.05 0.988 0.033 5.94M
+Table 4. Ablation study on the CFDA module. Results on the
+REAL dataset at scale factor ×4.
+Method PSNR↑ SSIM↑ SAM↓ Params
+w/o Aggregation 41.66 0.987 0.034 4.85M
+w/ DCNv2 [60] 41.80 0.987 0.033 5.78M
+w/ CFDA 41.95 0.988 0.033 5.85M
+4.3. Ablation Study
+We conduct a series of ablation studies to validate the ef-
+fectiveness of our proposed components. All ablation ex-
+periments are performed on the REAL dataset at a×4 scale
+factor unless otherwise specified.
+As shown in Tab. 3, we incrementally add our core mod-
+ules to a baseline with the self-attention architecture. The
+introduction of the Unmix strategy provides a strong foun-
+dation (41.41 dB of PSNR and 0.036 of SAM). Subse-
+quently, integrating the SCACA module for feature refine-
+ment and the CFDA for aggregation boosts the PSNR to
+41.66 dB and 41.95 dB, respectively, underscoring the im-
+portance of robust feature aggregation and refinement. The
+final addition of the SCMF module further improves per-
+formance to 42.05 dB. The improvements validate that each
+component contributes effectively to the final HSI.
+Effect of the CFDA Module . Tab. 4 specifically ana-
+lyzes the contribution of our proposed aggregation module.
+Compared to a baseline without aggregation (41.66 dB), a
+generic DCNv2 [60] improves the PSNR to 41.85 dB. Our
+proposed CFDA module further elevates the performance to
+41.95 dB. Besides, as shown in Fig. 6, we provide a visual
+comparison of fused feature maps generated by different ag-
+gregation modules with the same attention block. The fea-
+tures aggregated using DCNv2 suffer from severe artifacts
+and blurred text, whereas our proposed module produces a
+much cleaner representation with sharper details. Both the
+quantitative metrics and the visual comparisons underscore
+the efficacy of our CFDA module.
+Effect of the SCMF Module . To further validate the ef-
+fectiveness of the SCMF module, we perform comparative
+experiments across various scale factors, with the results
+shown in Tab. 5. The inclusion of SCMF yields consis-
+tent performance gains across all scale factors. Notably,
+(a) Target HSI(b) Reference RGB
+(c) DCNv2(d) Ours (CFDA)
+Figure 6. Visual comparison of fused feature maps generated by
+different aggregation modules, followed by an identical attention
+block. Note the severe artifacts and blurred text produced by the
+standard DCNv2 [60], in contrast to the superior clarity of the fea-
+tures from our CFDA.
+Table 5. Ablation study on the SCMF module.
+Method ×4 ×8 ×16 ParamsPSNR↑ SAM↓ PSNR↑ SAM↓ PSNR↑ SAM↓
+w/o SCMF 41.95 0.033 37.02 0.047 31.90 0.068 5.85M
+w/ SCMF 42.05 0.033 37.23 0.046 32.28 0.065 5.94M
+the improvement becomes more pronounced as the super-
+resolution task becomes more challenging, with a PSNR
+gain of 0.38 dB at the×16 scale. This highlights the crucial
+role of SCMF in adaptively fusing multi-scale features for
+high-fidelity reconstruction.
+5. Conclusion
+In this work, we propose an unmixing-based fusion frame-
+work that addresses the critical challenges of explicit align-
+ment (distortions or artifacts) and spatial-spectral coupling
+in unregistered HSI super-resolution. By leveraging a spec-
+tral unmixing paradigm, our approach decouples the prob-
+lem, enabling robust aggregation via our Coarse-to-Fine
+Deformable Aggregation (CFDA) module and effective fea-
+ture refinement with our Spatial-Channel Abundance Cross-
+Attention (SCACA) block. Finally, our Spatial-Channel
+Modulated Fusion (SCMF) module ensures the high-fidelity
+reconstruction of both spatial details and spectral signa-
+tures in the final super-resolved HSI. The experimental re-
+sults clearly demonstrate that our method outperforms other
+state-of-the-art methods in super-resolution accuracy and
+visual quality. This highlights the significant potential of
+our unmixing-based fusion framework to advance the prac-
+tical applicability of reference-based HSI super-resolution.
+41580
+
+
+<!-- PDF PAGE 9 -->
+
+Acknowledgments
+This work was supported by the National Natural Science
+Foundation of China (62331006 and 62506108), and the
+Fundamental Research Funds for the Central Universities.
+References
+[1] Naveed Akhtar, Faisal Shafait, and Ajmal Mian. Sparse
+spatio-spectral representation for hyperspectral image super-
+resolution. In Proceedings of the European Conference on
+Computer Vision, pages 63–78, 2014. 2
+[2] Naveed Akhtar, Faisal Shafait, and Ajmal Mian. Bayesian
+sparse representation for hyperspectral image super resolu-
+tion. In Proceedings of the IEEE/CVF Conference on Com-
+puter Vision and Pattern Recognition , pages 3631–3640,
+2015. 2, 6
+[3] Boaz Arad and Ohad Ben-Shahar. Sparse recovery of hyper-
+spectral signal from natural rgb images. In Proceedings of
+the European Conference on Computer Vision, pages 19–34,
+2016. 5, 6
+[4] Linwei Chen, Ying Fu, Jingyu Shangguan, Jinglin Xu, and
+Yuxin Peng. A survey on degraded image segmentation.Chi-
+nese Journal of Electronics, 35(5):1–21, 2026. 2
+[5] Renwei Dian, Shutao Li, Anjing Guo, and Leyuan Fang.
+Deep hyperspectral image sharpening.IEEE Transactions on
+Neural Networks and Learning Systems, 29(11):5345–5355,
+2018. 2
+[6] Weisheng Dong, Fazuo Fu, Guangming Shi, Xun Cao, Jin-
+jian Wu, Guangyu Li, and Xin Li. Hyperspectral image
+super-resolution via non-negative structured sparse represen-
+tation. IEEE Transactions on Image Processing, 25(5):2337–
+2352, 2016. 2
+[7] Ying Fu and Yingkai Zhang. Reinforcement learning based
+plug-and-play method for hyperspectral image reconstruc-
+tion. In Proceedings of the CAAI International Conference
+on Artificial Intelligence, pages 466–477. Springer, 2022. 2
+[8] Ying Fu, Tao Zhang, Yinqiang Zheng, Debing Zhang, and
+Hua Huang. Hyperspectral image super-resolution with op-
+timized rgb guidance. In Proceedings of the IEEE/CVF Con-
+ference on Computer Vision and Pattern Recognition, pages
+11661–11670, 2019. 2, 6, 7
+[9] Ying Fu, Yongrong Zheng, Lin Zhang, Yinqiang Zheng,
+and Hua Huang. Simultaneous hyperspectral image super-
+resolution and geometric alignment with a hybrid camera
+system. Neurocomputing, 384:282–294, 2020. 2, 3
+[10] Ying Fu, Zhiyuan Liang, and Shaodi You. Bidirectional
+3d quasi-recurrent neural network for hyperspectral image
+super-resolution. IEEE Journal of Selected Topics in Ap-
+plied Earth Observations and Remote Sensing , 14:2674–
+2688, 2021. 6, 7
+[11] Ying Fu, Tao Zhang, Lizhi Wang, and Hua Huang. Coded
+hyperspectral image reconstruction using deep external and
+internal learning. IEEE Transactions on Pattern Analysis and
+Machine Intelligence, 44(7):3404–3420, 2022. 1
+[12] Wei He, Quanming Yao, Chao Li, Naoto Yokoya, and Qibin
+Zhao. Non-local meets global: An integrated paradigm for
+hyperspectral denoising. In Proceedings of the IEEE/CVF
+Conference on Computer Vision and Pattern Recognition ,
+pages 6868–6877, 2019. 2
+[13] Rob Heylen, Mario Parente, and Paul Gader. A review of
+nonlinear hyperspectral unmixing methods. IEEE Journal of
+Selected Topics in Applied Earth Observations and Remote
+Sensing, 7(6):1844–1868, 2014. 2, 3
+[14] Junming Hou, Xiaoyu Chen, Ran Ran, Xiaofeng Cong,
+Xinyang Liu, Jian Wei You, and Liang-Jian Deng. Binarized
+neural network for multi-spectral image fusion. In Proceed-
+ings of the IEEE/CVF Conference on Computer Vision and
+Pattern Recognition, pages 2236–2245, 2025. 2
+[15] Junming Hou, Xinyang Liu, Chenxu Wu, Xiaofeng Cong,
+Chentong Huang, Liang-Jian Deng, and Jian Wei You.
+Bidomain uncertainty gated recursive network for pan-
+sharpening. Information Fusion, 118:102938, 2025.
+[16] Jin-Fan Hu, Ting-Zhu Huang, Liang-Jian Deng, Tai-Xiang
+Jiang, Gemine Vivone, and Jocelyn Chanussot. Hyperspec-
+tral image super-resolution via deep spatiospectral attention
+convolutional neural networks.IEEE Transactions on Neural
+Networks and Learning Systems, 33(12):7251–7265, 2022. 2
+[17] Jungho Im and John R Jensen. Hyperspectral remote sensing
+of vegetation. Geography Compass, 2(6):1943–1961, 2008.
+1
+[18] Junjun Jiang, He Sun, Xianming Liu, and Jiayi Ma. Learn-
+ing spatial-spectral prior for super-resolution of hyperspec-
+tral imagery. IEEE Transactions on Computational Imaging,
+6:1082–1096, 2020. 6, 7
+[19] Yuqi Jiang, Ying Fu, Qiankun Liu, and Jun Zhang. Msfa
+image denoising using physics-based noise model and noise-
+decoupled network. IEEE Transactions on Pattern Analysis
+and Machine Intelligence, 2025. 2
+[20] Rei Kawakami, Yasuyuki Matsushita, John Wright, Moshe
+Ben-Ezra, Yu-Wing Tai, and Katsushi Ikeuchi. High-
+resolution hyperspectral imaging via matrix factorization. In
+Proceedings of the IEEE/CVF Conference on Computer Vi-
+sion and Pattern Recognition, pages 2329–2336, 2011. 2
+[21] Zeqiang Lai, Ying Fu, and Jun Zhang. Hyperspectral im-
+age super resolution with real unaligned rgb guidance. IEEE
+Transactions on Neural Networks and Learning Systems , 1
+(1):1–13, 2024. 1, 3, 5, 6, 7
+[22] Charis Lanaras, Emmanuel Baltsavias, and Konrad
+Schindler. Hyperspectral super-resolution by coupled
+spectral unmixing. In Proceedings of the IEEE/CVF Inter-
+national Conference on Computer Vision, pages 3586–3594,
+2015. 2
+[23] Hesong Li and Ying Fu. Fcdfusion: A fast, low color de-
+viation method for fusing visible and infrared image pairs.
+Computational Visual Media, 11(1):195–211, 2025. 2
+[24] Hesong Li, Ziqi Wu, Ruiwen Shao, Tao Zhang, and Ying
+Fu. Noise calibration and spatial-frequency interactive net-
+work for stem image enhancement. In Proceedings of
+the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition, pages 21287–21296, 2025. 2
+[25] Miaoyu Li, Ying Fu, Tao Zhang, Ji Liu, Dejing Dou, Cheng-
+gang Yan, and Yulun Zhang. Latent diffusion enhanced rect-
+angle transformer for hyperspectral image restoration. IEEE
+Transactions on Pattern Analysis and Machine Intelligence,
+2024. 2
+41581
+
+
+<!-- PDF PAGE 10 -->
+
+[26] Qiang Li, Qi Wang, and Xuelong Li. Mixed 2d/3d convolu-
+tional network for hyperspectral image super-resolution. Re-
+mote Sensing, 12(10):1660, 2020. 6, 7
+[27] Yingping Liang, Jiaming Liu, Debing Zhang, and Ying Fu.
+Mpi-flow: Learning realistic optical flow with multiplane
+images. In Proceedings of the IEEE/CVF International Con-
+ference on Computer Vision, pages 13857–13868, 2023. 6
+[28] Zhiyuan Liang, Shuai Wang, Tao Zhang, and Ying Fu. Blind
+super-resolution of single remotely sensed hyperspectral im-
+age. IEEE Transactions on Geoscience and Remote Sensing,
+61:1–14, 2023. 1
+[29] Xinyang Liu, Junming Hou, Chenxu Wu, Xiaofeng Cong,
+Zihao Chen, Shangqi Deng, Junling Li, Liang-Jian Deng,
+and Bo Liu. Physics-informed neural operator for pansharp-
+ening. In Proceedings of the Advances in Neural Information
+Processing Systems, 2025. 2
+[30] Yuanye Liu, Renwei Dian, and Shutao Li. Low-rank
+transformer for high-resolution hyperspectral computational
+imaging. International Journal of Computer Vision, 133(2):
+809–824, 2025. 1, 6, 7
+[31] Yuanye Liu, Jinyang Liu, Renwei Dian, and Shutao Li. A se-
+lective re-learning mechanism for hyperspectral fusion imag-
+ing. In Proceedings of the IEEE/CVF Conference on Com-
+puter Vision and Pattern Recognition , pages 7437–7446.
+IEEE, 2025. 1, 2, 6, 7
+[32] Ilya Loshchilov and Frank Hutter. Decoupled weight decay
+regularization. arXiv preprint arXiv:1711.05101, 2017. 6
+[33] Ben Mildenhall, Pratul P Srinivasan, Matthew Tancik,
+Jonathan T Barron, Ravi Ramamoorthi, and Ren Ng. Nerf:
+Representing scenes as neural radiance fields for view syn-
+thesis. Communications of the ACM , 65(1):99–106, 2021.
+4
+[34] Jiangtao Nie, Lei Zhang, Wei Wei, Chen Ding, and Yanning
+Zhang. Unsupervised deep hyperspectral super-resolution
+with unregistered images. In Proceedings of the IEEE In-
+ternational Conference on Multimedia and Expo, pages 1–6,
+2020. 2, 3
+[35] Zhihong Pan, Glenn Healey, Manish Prasad, and Bruce
+Tromberg. Face recognition in hyperspectral images. IEEE
+Transactions on Pattern Analysis and Machine Intelligence,
+25(12):1552–1560, 2003. 1
+[36] Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer,
+James Bradbury, Gregory Chanan, Trevor Killeen, Zeming
+Lin, Natalia Gimelshein, Luca Antiga, et al. Pytorch: An im-
+perative style, high-performance deep learning library. Pro-
+ceedings of the Advances in Neural Information Processing
+Systems, 32, 2019. 6
+[37] Jiangtao Peng, Weiwei Sun, Heng-Chao Li, Wei Li, Xi-
+angchao Meng, Chiru Ge, and Qian Du. Low-rank and sparse
+representation for hyperspectral image processing: A review.
+IEEE Geoscience and Remote Sensing Magazine, 10(1):10–
+43, 2021. 2, 3
+[38] Jiahui Qu, Jizhou Cui, Wenqian Dong, Qian Du, Xiaoyang
+Wu, Song Xiao, and Yunsong Li. A principle design of
+registration-fusion consistency: Toward interpretable deep
+unregistered hyperspectral image fusion. IEEE Transactions
+on Neural Networks and Learning Systems , 36(5):9648–
+9662, 2024. 3, 6, 7
+[39] Ying Qu, Hairong Qi, Chiman Kwan, Naoto Yokoya, and Jo-
+celyn Chanussot. Unsupervised and unregistered hyperspec-
+tral image super-resolution with mutual dirichlet-net. IEEE
+Transactions on Geoscience and Remote Sensing , 60:1–18,
+2022. 2
+[40] Billy G Ram, Peter Oduor, C Igathinathane, Kirk Howatt,
+and Xin Sun. A systematic review of hyperspectral imag-
+ing in precision agriculture: Analysis of its current state and
+future prospects. Computers and Electronics in Agriculture,
+222:109037, 2024. 1
+[41] Zachary Teed and Jia Deng. Raft: Recurrent all-pairs field
+transforms for optical flow. In Proceedings of the European
+Conference on Computer Vision, pages 402–419, 2020. 1
+[42] Ye Tian, Ying Fu, and Jun Zhang. Transformer-based under-
+sampled single-pixel imaging. Chinese Journal of Electron-
+ics, 32(5):1151–1159, 2023. 2
+[43] Jianan Wang, Yang Hong, Hesong Li, Tao Wang, Songrong
+Liu, and Ying Fu. Erienet: An efficient raw image enhance-
+ment network under low-light environment. arXiv preprint
+arXiv:2512.15186, 2025. 2
+[44] Kaixuan Wei and Ying Fu. Low-rank bayesian tensor factor-
+ization for hyperspectral image denoising. Neurocomputing,
+331:412–423, 2019. 2
+[45] Kai Xu, Ziwei Yu, Xin Wang, Michael Bi Mi, and
+Angela Yao. Enhancing video super-resolution via im-
+plicit resampling-based alignment. In Proceedings of the
+IEEE/CVF Conference on Computer Vision and Pattern
+Recognition, pages 2546–2555, 2024. 4
+[46] Jize Xue, Yong-Qiang Zhao, Yuanyang Bu, Wenzhi Liao,
+Jonathan Cheung-Wai Chan, and Wilfried Philips. Spatial-
+spectral structured sparse low-rank representation for hyper-
+spectral image super-resolution. IEEE Transactions on Im-
+age Processing, 30:3084–3097, 2021. 3
+[47] Zhiyang Yao, Shuyang Liu, Xiaoyun Yuan, and Lu Fang.
+Specat: Spatial-spectral cumulative-attention transformer for
+high-resolution hyperspectral image reconstruction. In Pro-
+ceedings of the IEEE/CVF Conference on Computer Vision
+and Pattern Recognition, pages 25368–25377, 2024. 4
+[48] Jiacheng Ying, Hui-Liang Shen, and Si-Yuan Cao. Un-
+aligned hyperspectral image fusion via registration and in-
+terpolation modeling. IEEE Transactions on Geoscience and
+Remote Sensing, 60:1–14, 2022. 1, 2
+[49] Mingjin Zhang, Chi Zhang, Qiming Zhang, Jie Guo, Xinbo
+Gao, and Jing Zhang. Essaformer: Efficient transformer for
+hyperspectral image super-resolution. In Proceedings of the
+IEEE/CVF International Conference on Computer Vision ,
+pages 23073–23084, 2023. 1, 6, 7
+[50] Tao Zhang, Ying Fu, and Jun Zhang. Guided hyperspectral
+image denoising with realistic data. International Journal of
+Computer Vision, 130(11):2885–2901, 2022. 2
+[51] Tao Zhang, Ying Fu, Liwei Huang, Siyuan Li, Shaodi You,
+and Chenggang Yan. Rgb-guided hyperspectral image super-
+resolution with deep progressive learning. CAAI Transac-
+tions on Intelligence Technology, 9(3):679–694, 2024. 2
+[52] Tao Zhang, Ying Fu, and Jun Zhang. Deep guided attention
+network for joint denoising and demosaicing in real image.
+Chinese Journal of Electronics, 33(1):303–312, 2024.
+41582
+
+
+<!-- PDF PAGE 11 -->
+
+[53] Yingkai Zhang, Zeqiang Lai, Tao Zhang, Ying Fu, and
+Chenghu Zhou. Unaligned rgb guided hyperspectral image
+super-resolution with spatial-spectral concordance. Interna-
+tional Journal of Computer Vision, 133(9):6590–6610, 2025.
+1, 2, 3, 6, 7
+[54] Yingkai Zhang, Shuang Chen, Ye Tian, Yunyi Gao, Jiany-
+ong Jiang, and Ying Fu. Supervise-assisted multi-modality
+fusion diffusion model for pet restoration. Tsinghua Science
+and Technology, 2026.
+[55] Yingkai Zhang, Tao Zhang, Jing Nie, and Ying Fu. Real
+noise decoupling for hyperspectral image denoising. In Pro-
+ceedings of the AAAI Conference on Artificial Intelligence ,
+pages 12925–12933, 2026. 2
+[56] Ke Zheng, Lianru Gao, Danfeng Hong, Bing Zhang, and Jo-
+celyn Chanussot. Nonregsrnet: A nonrigid registration hy-
+perspectral super-resolution network. IEEE Transactions on
+Geoscience and Remote Sensing , 60:1–16, 2022. 1, 2, 3, 6,
+7
+[57] Yuan Zhou, Anand Rangarajan, and Paul D Gader. An in-
+tegrated approach to registration and fusion of hyperspectral
+and multispectral images. IEEE Transactions on Geoscience
+and Remote Sensing, 58(5):3020–3033, 2019. 2
+[58] Jian Zhu, He Wang, Yang Xu, Zebin Wu, and Zhihui Wei.
+Self-learning hyperspectral and multispectral image fusion
+via adaptive residual guided subspace diffusion model. In
+Proceedings of the IEEE/CVF Conference on Computer Vi-
+sion and Pattern Recognition, pages 17862–17871, 2025. 2
+[59] Tianyu Zhu, Hesong Li, and Ying Fu. Trim-sod: A multi-
+modal, multi-task, and multi-scale spacecraft optical dataset.
+Space: Science & Technology, 5:0299, 2025. 1
+[60] Xizhou Zhu, Han Hu, Stephen Lin, and Jifeng Dai. De-
+formable convnets v2: More deformable, better results. In
+Proceedings of the IEEE/CVF Conference on Computer Vi-
+sion and Pattern Recognition, pages 9308–9316, 2019. 8
+41583
+
+<!-- END-OF-PAPER:2593c6d9b523 -->

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "status": "complete",
+  "novelty_decision_rating": 3,
+  "impact_positioning_rating": 3,
+  "decision_confidence_rating": 2,
+  "narrowest_defensible_positioning": "I13：仅探索在固定专家与同等配准条件下，以监督光谱误差差额训练细节注入决策，是否能超过匹配置信度、测量残差和普通专家门控。",
+  "what_would_change_the_decision": "若 CoPGNet 或参考 SR/专家门控已有功能等价收益教师，或普通 gate/置信度基线达到同等效果，降为 1–2；若高召回补检与独立实验同时支持必要机制，才重审定位。",
+  "top_kill_shot_objections": [
+    "普通 MoE 或 oracle convex-gate 教师可能功能等价",
+    "CVPR2022 Task Decoupled 已有冻结 SISR 加真值残差监督",
+    "2026-09 先例已覆盖可靠性细节注入与回退",
+    "CoPGNet 未得全文，存在高优先级覆盖风险",
+    "收益改善可能只来自额外专家容量或合成扰动"
+  ],
+  "literature_context_used": [
+    "../research-report.md",
+    "../paper-cards.md",
+    "../reading-ledger.md",
+    "../sources.json",
+    "prior-art-matrix.md",
+    "search-log.md",
+    "prior local geometry and MossFuse ideation"
+  ],
+  "paper_review_summary_used": "",
+  "claims_to_qualify": [
+    "不得声称首次门控、回退、oracle 教师或不确定性融合",
+    "不得声称已确认无人提出或独立查新",
+    "不得声称保证恢复所有同观测真实谱",
+    "不得声称已提升性能或适合顶刊",
+    "I14 仅储备，新颖性不足"
+  ],
+  "missing_prior_work": [
+    "CoPGNet 全文及其收益/先验权重训练细节",
+    "BUGPan 全文用于完整动态计算对照",
+    "更高召回的参考 SR 和专家收益教师文献",
+    "GSNR 另附补充材料"
+  ],
+  "review_findings_to_add": [],
+  "literature_assurance": {
+    "mode": "unlinked",
+    "paths": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "file_sha256": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "corpus_manifest_sha256": "",
+    "corpus_version": null,
+    "review_profile": "bounded exploratory discovery",
+    "assurance_verdict": "bounded-exploration-with-material-gaps",
+    "unresolved_high_priority_novelty_question_ids": [
+      "Q1",
+      "Q2",
+      "Q3"
+    ]
+  },
+  "review_independence": "same-context self-review; no materially independent reviewer",
+  "evidence_class": "exploratory literature synthesis and analytic toy check; no trained outcomes",
+  "selection_history": [
+    "I11 broad uncertainty decomposition killed by Guo 2026",
+    "I12 broad confidence fallback killed by September 2026 preprint",
+    "I13 newly generated after I12 failure; no empirical outcome selection",
+    "CVPR2022 Task Decoupled subsequently added as strong residual-supervision comparator; two-branch/GT-residual claims excluded",
+    "I14 downgraded after full SpecAware read; not maintained as main contribution"
+  ],
+  "reserve_idea": {
+    "idea_id": "I14",
+    "novelty_decision_rating": 2,
+    "decision_confidence_rating": 3,
+    "status": "needs major differentiation; not main contribution"
+  }
+}

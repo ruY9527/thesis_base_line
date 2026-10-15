@@ -1,0 +1,52 @@
+[
+  {
+    "id": "neurips2026",
+    "requested_url": "https://neurips.cc/Downloads/2026",
+    "final_url": "https://neurips.cc/Downloads/2026",
+    "content_type": "text/html; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\neurips2026\\source.html",
+    "bytes": 1377548,
+    "sha256": "3b983840566e7565c969a620f069ec7bc1d718053f07ba10941d08aa112fe267",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "carl_pdf",
+    "url": "https://openreview.net/pdf/06c03489864236829ee6008cde9cee87d1b41a15.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "clorf_metadata",
+    "requested_url": "https://api.crossref.org/works/10.1007/s11263-025-02540-1",
+    "final_url": "https://api.crossref.org/works/10.1007/s11263-025-02540-1",
+    "content_type": "application/json",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\clorf_metadata\\source.json",
+    "bytes": 30088,
+    "sha256": "5132dda9b7db8038806112a56db6a7f60fbf338428551efd12a19806915c8376",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "ssc_metadata",
+    "requested_url": "https://api.crossref.org/works/10.1007/s11263-025-02466-8",
+    "final_url": "https://api.crossref.org/works/10.1007/s11263-025-02466-8",
+    "content_type": "application/json",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\ssc_metadata\\source.json",
+    "bytes": 34451,
+    "sha256": "c65a1bc82f641adb3ae720eb0495ac745065b7e0df6246a806a7c42286b8ca67",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "feinfn",
+    "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/74088c68894b99383c12399c9c637be9-Abstract-Conference.html",
+    "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/74088c68894b99383c12399c9c637be9-Abstract-Conference.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\feinfn\\source.html",
+    "bytes": 10051,
+    "sha256": "83618cb6d804f92e2a03b18f2b6f7b82d8f2ba6a36fd57a2fafe5faf7350534c",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  }
+]

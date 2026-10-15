@@ -1,0 +1,80 @@
+{
+  "status": "ok",
+  "script": "write_obsidian_note.py",
+  "output_language": "zh-CN",
+  "paper_id": "title:44820b570eab",
+  "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+  "note_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\SRLF-Net.md",
+  "subdir": "高光谱图像融合",
+  "images_dir": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images",
+  "materialized_figures": [
+    {
+      "source_id": "Figure 1",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1_review_repair1.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_001_fig_figure_1_review_repair1.png",
+      "relative_markdown_path": "images/page_001_fig_figure_1_review_repair1.png",
+      "reviewed_asset_sha256": "8778c96a514ab3672735d463b3855f3d17108cf950637d1dabcc865a6136fa92"
+    },
+    {
+      "source_id": "Figure 2",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_2_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_004_fig_figure_2_review.png",
+      "relative_markdown_path": "images/page_004_fig_figure_2_review.png",
+      "reviewed_asset_sha256": "b072923336f500db70d87a464748c3cec7f3696cf6c4ddb4a50afa3605d66e21"
+    },
+    {
+      "source_id": "Figure 4",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_figure_4_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_005_fig_figure_4_review.png",
+      "relative_markdown_path": "images/page_005_fig_figure_4_review.png",
+      "reviewed_asset_sha256": "2549140474a8e8d547342bf18e5468952541b3a9a853200a2782a4346266b062"
+    },
+    {
+      "source_id": "Figure 5",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_006_fig_figure_5_review.png",
+      "relative_markdown_path": "images/page_006_fig_figure_5_review.png",
+      "reviewed_asset_sha256": "d1d90c88e58e7f327f21248e5b08251c7a51a8d334bf8c62a724f62e960bd7ad"
+    },
+    {
+      "source_id": "Figure 6",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_006_fig_figure_6_review.png",
+      "relative_markdown_path": "images/page_006_fig_figure_6_review.png",
+      "reviewed_asset_sha256": "855e113680618ff1002235d0ecf80fe507cee3f9eaa99e8fb1e2f5635ef24a95"
+    },
+    {
+      "source_id": "Figure 7",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_007_fig_figure_7_review.png",
+      "relative_markdown_path": "images/page_007_fig_figure_7_review.png",
+      "reviewed_asset_sha256": "0477320cf66d32995d2dffcbb364d3ff807f414fb5b6a86be1d8a59618f0e850"
+    },
+    {
+      "source_id": "Figure 9",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_008_fig_figure_9_review.png",
+      "relative_markdown_path": "images/page_008_fig_figure_9_review.png",
+      "reviewed_asset_sha256": "084045727ee7479292238440d1cd930e5c761e6707f0db57b6b42afa7ee41638"
+    },
+    {
+      "source_id": "Table 1",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_table_1_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_005_fig_table_1_review.png",
+      "relative_markdown_path": "images/page_005_fig_table_1_review.png",
+      "reviewed_asset_sha256": "47b5944f018c27967ff42d52968d6609d327fc161fc60b3461cf7636dda44878"
+    },
+    {
+      "source_id": "Table 4",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_4_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\images\\page_007_fig_table_4_review.png",
+      "relative_markdown_path": "images/page_007_fig_table_4_review.png",
+      "reviewed_asset_sha256": "03ef1c26aaddf06a82ad9af7500cc831db22d381a23d6e8907fb3c90cdce1479"
+    }
+  ],
+  "overwrote_existing_note": false,
+  "admission": "workspace",
+  "domain_routing_skipped": false,
+  "output_mode": "workspace",
+  "base_output_root": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes"
+}

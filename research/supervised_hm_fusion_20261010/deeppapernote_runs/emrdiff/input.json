@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "source_type": "seed_record",
+  "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+  "translated_title": "EMR-Diff：用于高光谱图像超分辨率的边缘感知多模态残差扩散模型",
+  "authors": ["Tao Zhang", "Shengtao Yao", "Rong Zeng", "Zunjie Zhu", "Bolun Zheng", "Yaoqi Sun", "Ying Fu", "Chenggang Yan"],
+  "year": "2026",
+  "venue": "CVPR 2026, pp. 23419–23429",
+  "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+  "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+  "local_pdf_path": "D:/coding/github_self/thesis_base_line/research/supervised_hm_fusion_20261010/sources/emrdiff/source.pdf",
+  "metadata_sources": ["official_cvf_landing_page", "official_cvf_pdf_first_page"],
+  "abstract": "Hardware constraints make it challenging to simultaneously acquire hyperspectral images (HSIs) with both high spatial and high spectral resolutions. A promising solution is to fuse low-resolution HSI (LR-HSI) with high-resolution multispectral images (HR-MSI) to generate high-resolution HSI (HR-HSI). Recently, diffusion models have introduced possibilities for HSI super-resolution, but suffer from low-efficiency sampling, detail-limited generation, and insufficient denoising. To address these issues, we propose an Edge-aware Multimodal Residual Diffusion Model (EMR-Diff). Specifically, multimodal residual mechanism is introduced to facilitate efficient information transfer among HR-MSI, LR-HSI, and HR-HSI, significantly improving the fusion efficiency. Edge-aware noise strategy is designed by exploiting the edge information of HR-MSI, which guides the model to prioritize high-frequency detail reconstruction by applying stronger noise perturbations to edge regions. In addition, we propose a Bilateral Attention Fusion UNet and design a multi-scale supervision mechanism to enable progressive reconstruction and collaborative optimization of spectral and spatial features. Extensive experiments demonstrate that our method achieves superior performance over existing approaches in both quantitative metrics and visual quality. Our code is available at: https://github.com/luocz55/EMR-Diff."
+}

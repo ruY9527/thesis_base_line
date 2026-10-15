@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-06",
+  "source_checks": {
+    "research/d2_baseline_interaction_metric_plan.md": {
+      "sha256": "9ea846a8002133cfa6dab836b9c45420a5bbcf3ad0d95645d76ff246215b8355",
+      "unchanged_since_previous_review": true
+    },
+    "research/p01_decoupling_research_directions.md": {
+      "sha256": "d0e592262981fb57b9e5c35d3a3fdbd7eafbe163f7439821da3fcd5b00151fe9",
+      "unchanged_since_previous_review": true
+    },
+    "research/p01_mossfuse_deep_dive.md": {
+      "sha256": "877475ec353db4d25ac0cda9f2c1cb4637d839060c41323d9b20404c16c28174",
+      "unchanged_since_previous_review": true
+    },
+    "research/baseline_comparison_20261006/results-audit.json": {
+      "sha256": "612c103262a7cca2d0ba362e860404c94a2d2830e8cf8721c199ea93144b71cf",
+      "unchanged_since_previous_review": true
+    },
+    "model.py": {
+      "sha256": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66",
+      "unchanged_since_previous_review": true
+    },
+    "train_cave_M.py": {
+      "sha256": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc",
+      "unchanged_since_previous_review": true
+    },
+    "utils.py": {
+      "sha256": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944",
+      "unchanged_since_previous_review": true
+    },
+    "calculate_metrics.py": {
+      "sha256": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94",
+      "unchanged_since_previous_review": true
+    }
+  },
+  "new_model_training": false,
+  "metric_reproduction": false
+}

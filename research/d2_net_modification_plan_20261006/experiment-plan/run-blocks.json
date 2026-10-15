@@ -1,0 +1,534 @@
+[
+  {
+    "block_id": "B0",
+    "title": "公共协议与未来技术验收",
+    "paper_role": "appendix",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "decision_gate_id": "G0",
+    "priority": "must-run",
+    "seeds": 1,
+    "dependencies": [],
+    "why_this_block_exists": "冻结清单/旧Net/候选兼容性；M1-B及M3开始前匹配可微算子。",
+    "dataset_split_task": "CAVE 场景16 train/4 val/12既有test；B3附声明受限族，B4内部观测任务。",
+    "systems_compared": [
+      "原始Net",
+      "关闭/零尺度候选",
+      "原NumPy R/D 与未来torch R/D"
+    ],
+    "fixed_factors": [
+      "R/D/采样相位",
+      "场景清单和指标实现",
+      "共同原Net初值",
+      "验证选模与同预算"
+    ],
+    "variable_factors": [
+      "公共协议与未来技术验收"
+    ],
+    "metrics": [
+      "输出等价误差",
+      "形状/梯度",
+      "划分/保存",
+      "算子误差"
+    ],
+    "setup_details": "无新增源码时只能做计划审查；模型测试必须等实现。",
+    "success_criterion": "公共初值可对齐、Tensor接口一致、checkpoint可复测；D float64<1e-10/float32<1e-5才能开物理损失。",
+    "minimum_effect_size": "0.10dB为探索工程门槛，不是统计显著性；机制需要公平对照。",
+    "failure_interpretation": "协议或实现不一致先修复；不运行科学比较。",
+    "expected_output_artifact": "research/d2_net_modification_plan_20261006/future-results/B0/summary.json",
+    "compute_budget": "结构轨道共同2000epoch；M3共同2000step筛查/10000step探索；先测显存/耗时，不承诺时长。",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "固定scene清单，不按测试误差选择；首seed筛查后如调参记录选择历史。",
+    "non_vacuity_check": "尚待新Net实现；关闭/零尺度、加性接口、均匀局部对照及可学内部任务允许简单比较者胜出。",
+    "complete_outcome_accounting": "所有OOM/NaN/跳过/超时/未跑/失败seed保留；技术重试关联父run。",
+    "hidden_information_controls": "B1/B2/B3监督筛查允许HR训练但只验证选模；B4训练/初始化不得读HR，评估访问隔离。",
+    "anti_claims_ruled_out": [
+      "指标来自HR预训练/选模泄漏、不同样本与训练预算，或仅合成差分好看。"
+    ],
+    "predecessor_failures": [
+      "泛交互/投影已有先例",
+      "baseline协议与历史test选择限制",
+      "未有新增网络实验结果"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_net_modification_plan_20261006/d2_net_modification_plan.md",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_net_modification_plan_20261006/future-results/B0/summary.json",
+          "kind": "metrics_failures_and_configuration"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "B0协议先过；B2需G1科研门槛且用户查看首轮数值后继续；B3讲解耦取舍才必做；B4只在无HR协议和结构冻结后人工启用。",
+    "independence_requirements": [],
+    "independence_evidence": "同一代理自审规划，不声称独立验证。"
+  },
+  {
+    "block_id": "B1",
+    "title": "M1-A：来源交互首轮筛查",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1"
+    ],
+    "decision_gate_id": "G1",
+    "priority": "must-run",
+    "seeds": 3,
+    "dependencies": [
+      "B0"
+    ],
+    "why_this_block_exists": "先1seed E0/E1，再同预算E1-add/E1-mlp及3个配对seed。",
+    "dataset_split_task": "CAVE 场景16 train/4 val/12既有test；B3附声明受限族，B4内部观测任务。",
+    "systems_compared": [
+      "E0",
+      "E1",
+      "E1-add",
+      "E1-mlp"
+    ],
+    "fixed_factors": [
+      "R/D/采样相位",
+      "场景清单和指标实现",
+      "共同原Net初值",
+      "验证选模与同预算"
+    ],
+    "variable_factors": [
+      "M1-A：来源交互首轮筛查"
+    ],
+    "metrics": [
+      "PSNR",
+      "RMSE",
+      "SAM",
+      "eta/饱和/方差",
+      "时间/显存"
+    ],
+    "setup_details": "原有监督HR-L1；64/8块、dim64/8blocks；所有组复制共同原Net初始化。",
+    "success_criterion": "单seed验证PSNR增量>=0.10dB、RMSE不升、SAM相对恶化<=1%；之后至少2/3seed正增益且简单对照不能解释全部收益。",
+    "minimum_effect_size": "0.10dB为探索工程门槛，不是统计显著性；机制需要公平对照。",
+    "failure_interpretation": "若简单对照更好收窄结构解释；稳定下降则停止M2累加路线。",
+    "expected_output_artifact": "research/d2_net_modification_plan_20261006/future-results/B1/summary.json",
+    "compute_budget": "结构轨道共同2000epoch；M3共同2000step筛查/10000step探索；先测显存/耗时，不承诺时长。",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "固定scene清单，不按测试误差选择；首seed筛查后如调参记录选择历史。",
+    "non_vacuity_check": "尚待新Net实现；关闭/零尺度、加性接口、均匀局部对照及可学内部任务允许简单比较者胜出。",
+    "complete_outcome_accounting": "所有OOM/NaN/跳过/超时/未跑/失败seed保留；技术重试关联父run。",
+    "hidden_information_controls": "B1/B2/B3监督筛查允许HR训练但只验证选模；B4训练/初始化不得读HR，评估访问隔离。",
+    "anti_claims_ruled_out": [
+      "收益只来自额外参数、初始化、上采样相位或局部平滑；分离损害只在极端强度出现。"
+    ],
+    "predecessor_failures": [
+      "泛交互/投影已有先例",
+      "baseline协议与历史test选择限制",
+      "未有新增网络实验结果"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_net_modification_plan_20261006/d2_net_modification_plan.md",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_net_modification_plan_20261006/future-results/B1/summary.json",
+          "kind": "metrics_failures_and_configuration"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "B0协议先过；B2需G1科研门槛且用户查看首轮数值后继续；B3讲解耦取舍才必做；B4只在无HR协议和结构冻结后人工启用。",
+    "independence_requirements": [],
+    "independence_evidence": "同一代理自审规划，不声称独立验证。"
+  },
+  {
+    "block_id": "B2",
+    "title": "M2：局部光谱分配",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1"
+    ],
+    "decision_gate_id": "G2",
+    "priority": "defer",
+    "seeds": 3,
+    "dependencies": [
+      "B1"
+    ],
+    "why_this_block_exists": "只替换J中的HSI项，rho零初始化；原C/fuse/body/tail不变。",
+    "dataset_split_task": "CAVE 场景16 train/4 val/12既有test；B3附声明受限族，B4内部观测任务。",
+    "systems_compared": [
+      "E1",
+      "E2",
+      "E2-uniform",
+      "E2-msi",
+      "E2-hsi",
+      "E2-conv"
+    ],
+    "fixed_factors": [
+      "R/D/采样相位",
+      "场景清单和指标实现",
+      "共同原Net初值",
+      "验证选模与同预算"
+    ],
+    "variable_factors": [
+      "M2：局部光谱分配"
+    ],
+    "metrics": [
+      "整体PSNR/RMSE/SAM",
+      "固定输入边缘区RMSE/SAM",
+      "rho/邻居权重",
+      "时间/显存"
+    ],
+    "setup_details": "3x3窗口、query/key16；固定同模型/损失训练协议。",
+    "success_criterion": "相对E1验证PSNR>=0.10dB、RMSE不升、SAM相对恶化<=1%；边缘无系统恶化，再3seed和局部对照。",
+    "minimum_effect_size": "0.10dB为探索工程门槛，不是统计显著性；机制需要公平对照。",
+    "failure_interpretation": "若均匀/卷积解释收益，不讲光谱分配机制；退化或OOM先修实现再判科学门槛。",
+    "expected_output_artifact": "research/d2_net_modification_plan_20261006/future-results/B2/summary.json",
+    "compute_budget": "结构轨道共同2000epoch；M3共同2000step筛查/10000step探索；先测显存/耗时，不承诺时长。",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "固定scene清单，不按测试误差选择；首seed筛查后如调参记录选择历史。",
+    "non_vacuity_check": "尚待新Net实现；关闭/零尺度、加性接口、均匀局部对照及可学内部任务允许简单比较者胜出。",
+    "complete_outcome_accounting": "所有OOM/NaN/跳过/超时/未跑/失败seed保留；技术重试关联父run。",
+    "hidden_information_controls": "B1/B2/B3监督筛查允许HR训练但只验证选模；B4训练/初始化不得读HR，评估访问隔离。",
+    "anti_claims_ruled_out": [
+      "收益只来自额外参数、初始化、上采样相位或局部平滑；分离损害只在极端强度出现。"
+    ],
+    "predecessor_failures": [
+      "泛交互/投影已有先例",
+      "baseline协议与历史test选择限制",
+      "未有新增网络实验结果"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_net_modification_plan_20261006/d2_net_modification_plan.md",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_net_modification_plan_20261006/future-results/B2/summary.json",
+          "kind": "metrics_failures_and_configuration"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "B0协议先过；B2需G1科研门槛且用户查看首轮数值后继续；B3讲解耦取舍才必做；B4只在无HR协议和结构冻结后人工启用。",
+    "independence_requirements": [],
+    "independence_evidence": "同一代理自审规划，不声称独立验证。"
+  },
+  {
+    "block_id": "B3",
+    "title": "M1-B：分离原因机制验证",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1"
+    ],
+    "decision_gate_id": "G3",
+    "priority": "nice-to-have",
+    "seeds": 3,
+    "dependencies": [
+      "B0",
+      "B1"
+    ],
+    "why_this_block_exists": "角色目标/读出/头容量相同，比较无分离、直接分离、投影分离与bridge开关。",
+    "dataset_split_task": "CAVE 场景16 train/4 val/12既有test；B3附声明受限族，B4内部观测任务。",
+    "systems_compared": [
+      "D0",
+      "D1弱/中分离",
+      "D2投影分离",
+      "bridge关闭/开启"
+    ],
+    "fixed_factors": [
+      "R/D/采样相位",
+      "场景清单和指标实现",
+      "共同原Net初值",
+      "验证选模与同预算"
+    ],
+    "variable_factors": [
+      "M1-B：分离原因机制验证"
+    ],
+    "metrics": [
+      "角色读出误差",
+      "样本方差/范数",
+      "分离梯度比",
+      "联合响应/局部分配",
+      "PSNR/RMSE/SAM"
+    ],
+    "setup_details": "先过D预检；分离梯度比0/0.01/0.1，极强值只压力测试。 四组一致成像诊断见主方案4.4节；模式/块先固定，完整误差与混合误差同时评估。",
+    "success_criterion": "合理强度有可重复具体取舍且接口改善；弱约束、role-only可以竞争，投影不靠塌缩。",
+    "minimum_effect_size": "0.10dB为探索工程门槛，不是统计显著性；机制需要公平对照。",
+    "failure_interpretation": "若没有取舍，放弃分离有害解释，保留经B1/B2支持的结构收益。",
+    "expected_output_artifact": "research/d2_net_modification_plan_20261006/future-results/B3/summary.json",
+    "compute_budget": "结构轨道共同2000epoch；M3共同2000step筛查/10000step探索；先测显存/耗时，不承诺时长。",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "固定scene清单，不按测试误差选择；首seed筛查后如调参记录选择历史。",
+    "non_vacuity_check": "尚待新Net实现；关闭/零尺度、加性接口、均匀局部对照及可学内部任务允许简单比较者胜出。",
+    "complete_outcome_accounting": "所有OOM/NaN/跳过/超时/未跑/失败seed保留；技术重试关联父run。",
+    "hidden_information_controls": "B1/B2/B3监督筛查允许HR训练但只验证选模；B4训练/初始化不得读HR，评估访问隔离。",
+    "anti_claims_ruled_out": [
+      "收益只来自额外参数、初始化、上采样相位或局部平滑；分离损害只在极端强度出现。"
+    ],
+    "predecessor_failures": [
+      "泛交互/投影已有先例",
+      "baseline协议与历史test选择限制",
+      "未有新增网络实验结果"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_net_modification_plan_20261006/d2_net_modification_plan.md",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_net_modification_plan_20261006/future-results/B3/summary.json",
+          "kind": "metrics_failures_and_configuration"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "B0协议先过；B2需G1科研门槛且用户查看首轮数值后继续；B3讲解耦取舍才必做；B4只在无HR协议和结构冻结后人工启用。",
+    "independence_requirements": [],
+    "independence_evidence": "同一代理自审规划，不声称独立验证。"
+  },
+  {
+    "block_id": "B4",
+    "title": "M3：无HR的训练依据",
+    "paper_role": "main",
+    "claim_ids": [
+      "C2"
+    ],
+    "decision_gate_id": "G4",
+    "priority": "defer",
+    "seeds": 3,
+    "dependencies": [
+      "B0",
+      "B1"
+    ],
+    "why_this_block_exists": "选择已冻结结构；先SS-obs，再SS-int，最后同四组普通目标vsLmix的2x2。",
+    "dataset_split_task": "CAVE 场景16 train/4 val/12既有test；B3附声明受限族，B4内部观测任务。",
+    "systems_compared": [
+      "原Net与冻结改进Net",
+      "obs-only",
+      "internal",
+      "same-quartet plain",
+      "same-quartet plus mix"
+    ],
+    "fixed_factors": [
+      "R/D/采样相位",
+      "场景清单和指标实现",
+      "共同原Net初值",
+      "验证选模与同预算"
+    ],
+    "variable_factors": [
+      "M3：无HR的训练依据"
+    ],
+    "metrics": [
+      "Lobs",
+      "四组完整误差",
+      "Lmix",
+      "自然PSNR/RMSE/SAM",
+      "前向/step/时间",
+      "失败/冲突"
+    ],
+    "setup_details": "不使用HR训练权重；内部32x32目标来自完整观测L；先2000steps共同筛查再10000steps共同预算。",
+    "success_criterion": "无HR泄漏、算子一致、生成任务可学且完整误差与自然指标有改善；同四组/预算比较支持训练价值。",
+    "minimum_effect_size": "0.10dB为探索工程门槛，不是统计显著性；机制需要公平对照。",
+    "failure_interpretation": "Lmix独有收益不成立则去掉；HR泄漏/不可学/算子错则先修，绝不宣称唯一恢复。",
+    "expected_output_artifact": "research/d2_net_modification_plan_20261006/future-results/B4/summary.json",
+    "compute_budget": "结构轨道共同2000epoch；M3共同2000step筛查/10000step探索；先测显存/耗时，不承诺时长。",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "固定scene清单，不按测试误差选择；首seed筛查后如调参记录选择历史。",
+    "non_vacuity_check": "尚待新Net实现；关闭/零尺度、加性接口、均匀局部对照及可学内部任务允许简单比较者胜出。",
+    "complete_outcome_accounting": "所有OOM/NaN/跳过/超时/未跑/失败seed保留；技术重试关联父run。",
+    "hidden_information_controls": "训练与初始化无HR；SS-obs固定预算last，内部调参只用观测HSI的独立内部验证目标；冻结后HR仅评估。",
+    "anti_claims_ruled_out": [
+      "指标来自HR预训练/选模泄漏、不同样本与训练预算，或仅合成差分好看。"
+    ],
+    "predecessor_failures": [
+      "泛交互/投影已有先例",
+      "baseline协议与历史test选择限制",
+      "未有新增网络实验结果"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_net_modification_plan_20261006/d2_net_modification_plan.md",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_net_modification_plan_20261006/future-results/B4/summary.json",
+          "kind": "metrics_failures_and_configuration"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "B0协议先过；B2需G1科研门槛且用户查看首轮数值后继续；B3讲解耦取舍才必做；B4只在无HR协议和结构冻结后人工启用。",
+    "independence_requirements": [],
+    "independence_evidence": "同一代理自审规划，不声称独立验证。"
+  }
+]

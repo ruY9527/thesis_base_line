@@ -1,0 +1,39 @@
+{
+  "canonical_id": "arxiv:2306.12085",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "HSR-Diff:Hyperspectral Image Super-Resolution via Conditional Diffusion Models",
+  "year": 2023,
+  "doi": null,
+  "arxiv_id": "2306.12085",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\arxiv_2306.12085\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\arxiv_2306.12085\\parsed.md",
+  "parser": "html",
+  "abstract": "Despite the proven significance of hyperspectral images (HSIs) in performing various computer vision tasks, its potential is adversely affected by the low-resolution (LR) property in the spatial domain, resulting from multiple physical factors. Inspired by recent advancements in deep generative models, we propose an HSI Super-resolution (SR) approach with Conditional Diffusion Models (HSR-Diff) that merges a high-resolution (HR) multispectral image (MSI) with the corresponding LR-HSI. HSR-Diff generates an HR-HSI via repeated refinement, in which the HR-HSI is initialized with pure Gaussian noise and iteratively refined. At each iteration, the noise is removed with a Conditional Denoising Transformer (CDF ormer) that is trained on denoising at different noise levels, conditioned on the hierarchical feature maps of HR-MSI and LR-HSI. In addition, a progressive learning strategy is employed to exploit the global information of full-resolution images. Systematic experiments have been conducted on four public datasets, demonstrating that HSR-Diff outperforms state-of-the-art methods.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "no oa pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1336,
+  "parsed_chars": 50872,
+  "sentinel": "c6ac3581a8c9",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\arxiv_2306.12085\\parsed.md",
+      "offset": 0,
+      "limit": 1336
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

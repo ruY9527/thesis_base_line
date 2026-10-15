@@ -1,0 +1,74 @@
+{
+  "verified_on": "2026-10-11",
+  "literature_search_cutoff": "2026-10-10",
+  "notes": [
+    {
+      "id": "emrdiff",
+      "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+      "identifier": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+      "note_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\EMR-Diff.md",
+      "domain": "高光谱图像融合",
+      "save_mode": "workspace",
+      "note_sha256": "6221c485d55e268c2a6710950d3203c7291305ef8c952fe2a7c172ff7c42b03e",
+      "warning_count": 0,
+      "materialized_count": 7,
+      "retained_placeholder_count": 5,
+      "checks": {
+        "all_lint_gates": true,
+        "grounding_gate": true,
+        "quality_review": true,
+        "readability_review": true,
+        "language_chain": true,
+        "note_and_review_sha_match": true,
+        "formal_save_success": true,
+        "no_pending_figure_decisions": true,
+        "no_source_truncation": true,
+        "materialized_asset_sha_match": true,
+        "all_image_links_exist": true,
+        "image_count_matches_save": true,
+        "placeholder_count_matches": true
+      },
+      "passed": true
+    },
+    {
+      "id": "srlf",
+      "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+      "identifier": "10.1109/cvpr52734.2025.00697",
+      "note_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\SRLF-Net\\SRLF-Net.md",
+      "domain": "高光谱图像融合",
+      "save_mode": "workspace",
+      "note_sha256": "30dcd464ba3593aa3ef96c53417d7d610ddf2bf1da05f2950a83963a635d35cc",
+      "warning_count": 0,
+      "materialized_count": 9,
+      "retained_placeholder_count": 3,
+      "checks": {
+        "all_lint_gates": true,
+        "grounding_gate": true,
+        "quality_review": true,
+        "readability_review": true,
+        "language_chain": true,
+        "note_and_review_sha_match": true,
+        "formal_save_success": true,
+        "no_pending_figure_decisions": true,
+        "no_source_truncation": true,
+        "materialized_asset_sha_match": true,
+        "all_image_links_exist": true,
+        "image_count_matches_save": true,
+        "placeholder_count_matches": true
+      },
+      "passed": true
+    }
+  ],
+  "baseline_all_unchanged": true,
+  "missing_local_links": [],
+  "additional_author_code": {
+    "url": "https://raw.githubusercontent.com/YuanyeLiu/SRLF-Net/main/deep_select_mamba.py",
+    "snapshot_date": "2026-10-11",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\author_core_snapshot.txt",
+    "sha256": "bcea9265778b8b86f22df1c41d89571bceac6ad1e1e798715393a8c77561ea7d",
+    "sha_match": true
+  },
+  "model_training_or_numerical_replication_performed": false,
+  "scope": "Saved-note byte integrity, required skill gates, language, copied image identities, links and baseline integrity. Model reviews are model judgments; lint does not establish scientific novelty.",
+  "passed": true
+}

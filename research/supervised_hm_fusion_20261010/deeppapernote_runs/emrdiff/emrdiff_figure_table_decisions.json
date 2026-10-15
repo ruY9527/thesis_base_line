@@ -1,0 +1,588 @@
+{
+  "status": "ok",
+  "script": "plan_figure_table_decisions.py",
+  "output_language": "zh-CN",
+  "paper_id": "title:b594f500b60c",
+  "decisions": [
+    {
+      "item_id": "figure:Figure 1",
+      "source_id": "Figure 1",
+      "kind": "figure",
+      "label": "Figure 1",
+      "caption": "Comparison of different diffusion models. With edge-",
+      "pages": [
+        1
+      ],
+      "section_id": "sec:preamble",
+      "decision": "insert",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 2,
+      "target_section": "研究问题",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_001_fig_figure_1_review_repair1.png",
+      "relative_markdown_embed": "![Figure 1](images/page_001_fig_figure_1_review_repair1.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1_review_repair1.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "7fae5132b8002ce88f621fcaa7388efc6c1412588826768fd3f7acdd2dba4d02",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1_review_repair1.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_001.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 1,
+        "caption": "Comparison of different diffusion models. With edge-",
+        "bbox_pt": [
+          315.18,
+          261.36,
+          555.084,
+          418.176
+        ],
+        "normalized_bbox": [
+          0.515,
+          0.33,
+          0.907,
+          0.528
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "7fae5132b8002ce88f621fcaa7388efc6c1412588826768fd3f7acdd2dba4d02",
+        "preserved_scientific_elements": [
+          "全部三组扩散示意",
+          "步数比较坐标轴与方法名",
+          "正反向箭头及模态标签"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "已逐项对照页面预览；重裁剪去除了标题、摘要和图注，三组图体完整。",
+        "failure_reason": "",
+        "repair_attempts": 1,
+        "revised_bbox": [
+          0.515,
+          0.33,
+          0.907,
+          0.528
+        ]
+      }
+    },
+    {
+      "item_id": "figure:Figure 2",
+      "source_id": "Figure 2",
+      "kind": "figure",
+      "label": "Figure 2",
+      "caption": "Architecture of the proposed EMR-Diff for HSI super-resolution. The multimodal residual E0 is obtained by subtracting A0",
+      "pages": [
+        3
+      ],
+      "section_id": "sec:related-work",
+      "decision": "insert",
+      "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 1,
+      "target_section": "方法主线",
+      "plan_kind": "method_overview",
+      "source_image_filename": "page_003_fig_figure_2_review.png",
+      "relative_markdown_embed": "![Figure 2](images/page_003_fig_figure_2_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_fig_figure_2_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "d58790b5976b74b84efb198bfef1aea7580c5b870d0fd6aa51b44639f8cbafc4",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_fig_figure_2_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_003.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 3,
+        "caption": "Architecture of the proposed EMR-Diff for HSI super-resolution. The multimodal residual E0 is obtained by subtracting A0",
+        "bbox_pt": [
+          36.8409538269043,
+          39.105194091796875,
+          579.96142578125,
+          243.0322723388672
+        ],
+        "normalized_bbox": [
+          0.060198,
+          0.049375,
+          0.947649,
+          0.306859
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "d58790b5976b74b84efb198bfef1aea7580c5b870d0fd6aa51b44639f8cbafc4",
+        "preserved_scientific_elements": [
+          "HR-HSI 与伪 MSI 起点",
+          "LR-HSI/HR-MSI 条件",
+          "正反向箭头",
+          "残差及边缘噪声支路",
+          "张量维度与时间系数"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "完整的图 2 图体；无图注或周围正文混入。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 3",
+      "source_id": "Figure 3",
+      "kind": "figure",
+      "label": "Figure 3",
+      "caption": "Edge similarity of HR-HSI and MR-HSI.",
+      "pages": [
+        4
+      ],
+      "section_id": "sec:related-work",
+      "decision": "insert",
+      "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 3,
+      "target_section": "深度分析",
+      "plan_kind": "supporting_figure",
+      "source_image_filename": "page_004_fig_figure_3_review.png",
+      "relative_markdown_embed": "![Figure 3](images/page_004_fig_figure_3_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "49a33b09abf369a34a53da9c458e39e797d24c70a38acecf70d8a40d2528ade1",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_004.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 4,
+        "caption": "Edge similarity of HR-HSI and MR-HSI.",
+        "bbox_pt": [
+          351.1960754394531,
+          71.75450134277344,
+          516.990966796875,
+          165.30245971679688
+        ],
+        "normalized_bbox": [
+          0.57385,
+          0.090599,
+          0.844756,
+          0.208715
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "49a33b09abf369a34a53da9c458e39e797d24c70a38acecf70d8a40d2528ade1",
+        "preserved_scientific_elements": [
+          "两幅边缘图",
+          "HR-MSI 和 HR-HSI 标签"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "两幅图和各自标签完整，图注未混入。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 4",
+      "source_id": "Figure 4",
+      "kind": "figure",
+      "label": "Figure 4",
+      "caption": "Architecture of the proposed BAF-UNet. Multi-scale",
+      "pages": [
+        5
+      ],
+      "section_id": "sec:related-work",
+      "decision": "insert",
+      "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 1,
+      "target_section": "方法主线",
+      "plan_kind": "method_overview",
+      "source_image_filename": "page_005_fig_figure_4_review_repair1.png",
+      "relative_markdown_embed": "![Figure 4](images/page_005_fig_figure_4_review_repair1.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4_review_repair1.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "631e4cab90843801818fb92e1bf329eb72305a6c700a09105a1fd38d074a12b9",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4_review_repair1.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_005.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 5,
+        "caption": "Architecture of the proposed BAF-UNet. Multi-scale",
+        "bbox_pt": [
+          56.916,
+          72.072,
+          293.76,
+          361.944
+        ],
+        "normalized_bbox": [
+          0.093,
+          0.091,
+          0.48,
+          0.457
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "631e4cab90843801818fb92e1bf329eb72305a6c700a09105a1fd38d074a12b9",
+        "preserved_scientific_elements": [
+          "双路径编码及跳跃连接",
+          "四尺度监督",
+          "MSGAB 全部算子、支路与残差",
+          "子图标签"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "已对照页面预览确认完整左栏图体，右栏正文和公式被剔除。",
+        "failure_reason": "",
+        "repair_attempts": 1,
+        "revised_bbox": [
+          0.093,
+          0.091,
+          0.48,
+          0.457
+        ]
+      }
+    },
+    {
+      "item_id": "figure:Figure 5",
+      "source_id": "Figure 5",
+      "kind": "figure",
+      "label": "Figure 5",
+      "caption": "Visual comparison results for all methods across the ICVL, Harvard, and Chikusei datasets. Under the ICVL and Harvard",
+      "pages": [
+        6
+      ],
+      "section_id": "sec:experimental-results",
+      "decision": "insert",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_006_fig_figure_5_review.png",
+      "relative_markdown_embed": "![Figure 5](images/page_006_fig_figure_5_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_figure_5_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "7bde48d4bdbfff082bf5b6eccc1a90dea49c7b1f3a8ced2930d5f38c16a1dfca",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_figure_5_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_006.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 6,
+        "caption": "Visual comparison results for all methods across the ICVL, Harvard, and Chikusei datasets. Under the ICVL and Harvard",
+        "bbox_pt": [
+          56.56363296508789,
+          252.9583740234375,
+          554.4134521484375,
+          660.8121948242188
+        ],
+        "normalized_bbox": [
+          0.092424,
+          0.319392,
+          0.905904,
+          0.834359
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "7bde48d4bdbfff082bf5b6eccc1a90dea49c7b1f3a8ced2930d5f38c16a1dfca",
+        "preserved_scientific_elements": [
+          "三个数据集的三组可视化",
+          "真值、各方法名和逐图 PSNR",
+          "局部放大、误差图及色标"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "所有三组比较和色标完整可读，未混入图注。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 6",
+      "source_id": "Figure 6",
+      "kind": "figure",
+      "label": "Figure 6",
+      "caption": "Spectral errors in the ICVL, Harvard, and Chikusei",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "placeholder",
+      "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+      "skip_reason": "asset_candidate_missing",
+      "visual_quality_status": "",
+      "priority": 3,
+      "target_section": "深度分析",
+      "plan_kind": "supporting_figure"
+    },
+    {
+      "item_id": "figure:Figure 7",
+      "source_id": "Figure 7",
+      "kind": "figure",
+      "label": "Figure 7",
+      "caption": "Visualization of pure noise and edge-aware noise.",
+      "pages": [
+        8
+      ],
+      "section_id": "sec:methods-3",
+      "decision": "insert",
+      "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 3,
+      "target_section": "深度分析",
+      "plan_kind": "supporting_figure",
+      "source_image_filename": "page_008_fig_figure_7_review_repair1.png",
+      "relative_markdown_embed": "![Figure 7](images/page_008_fig_figure_7_review_repair1.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7_review_repair1.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "d7474c852e29ba5035f5ed034e95745ccbe00dda0b3ac8fd04e998afb0f145f1",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7_review_repair1.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_008.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 8,
+        "caption": "Visualization of pure noise and edge-aware noise.",
+        "bbox_pt": [
+          351.288,
+          70.488,
+          522.648,
+          224.928
+        ],
+        "normalized_bbox": [
+          0.574,
+          0.089,
+          0.854,
+          0.284
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "d7474c852e29ba5035f5ed034e95745ccbe00dda0b3ac8fd04e998afb0f145f1",
+        "preserved_scientific_elements": [
+          "两幅重建图及放大区域",
+          "两幅误差图",
+          "色标与配置标签"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "扩大上边界后两幅重建图和下方误差图完整，图注未混入。",
+        "failure_reason": "",
+        "repair_attempts": 1,
+        "revised_bbox": [
+          0.574,
+          0.089,
+          0.854,
+          0.284
+        ]
+      }
+    },
+    {
+      "item_id": "table:Table 1",
+      "source_id": "Table 1",
+      "kind": "table",
+      "label": "Table 1",
+      "caption": "All methods are compared quantitatively on the ICVL, Harvard, and Chikusei datasets. ↑and ↓indicate that higher or lower values",
+      "pages": [
+        6
+      ],
+      "section_id": "sec:experimental-results",
+      "decision": "low_priority",
+      "reason": "caption_detected_but_not_selected_by_figure_plan",
+      "skip_reason": "",
+      "visual_quality_status": "",
+      "priority": 99,
+      "target_section": ""
+    },
+    {
+      "item_id": "table:Table 2",
+      "source_id": "Table 2",
+      "kind": "table",
+      "label": "Table 2",
+      "caption": "Ablation study of multimodal residual.",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "visual_defect",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "visual_quality_gate_rejected_candidate",
+      "visual_quality_status": "reject_visual_quality",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_007_fig_table_2.png",
+      "relative_markdown_embed": "![Table 2](images/page_007_fig_table_2.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png"
+    },
+    {
+      "item_id": "table:Table 3",
+      "source_id": "Table 3",
+      "kind": "table",
+      "label": "Table 3",
+      "caption": "Ablation study of edge-aware noise.",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "visual_defect",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "visual_quality_gate_rejected_candidate",
+      "visual_quality_status": "reject_visual_quality",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_007_fig_table_3.png",
+      "relative_markdown_embed": "![Table 3](images/page_007_fig_table_3.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png"
+    },
+    {
+      "item_id": "table:Table 4",
+      "source_id": "Table 4",
+      "kind": "table",
+      "label": "Table 4",
+      "caption": "Ablation study on BAF-UNet. MSS denotes multi-scale",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "visual_defect",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "visual_quality_gate_rejected_candidate",
+      "visual_quality_status": "reject_visual_quality",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_007_fig_table_4.png",
+      "relative_markdown_embed": "![Table 4](images/page_007_fig_table_4.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png"
+    },
+    {
+      "item_id": "table:Table 5",
+      "source_id": "Table 5",
+      "kind": "table",
+      "label": "Table 5",
+      "caption": "Ablation study of diffusion steps.",
+      "pages": [
+        8
+      ],
+      "section_id": "sec:methods-3",
+      "decision": "insert",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_008_fig_table_5_review.png",
+      "relative_markdown_embed": "![Table 5](images/page_008_fig_table_5_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "ef5ddfc4fa4bacfd7870a27d9c18e165a45522fc53241a90590cad5480d90e2e",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_008.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 8,
+        "caption": "Ablation study of diffusion steps.",
+        "bbox_pt": [
+          72.70500183105469,
+          84.4238052368164,
+          280.5373840332031,
+          147.54168701171875
+        ],
+        "normalized_bbox": [
+          0.118799,
+          0.106596,
+          0.458394,
+          0.18629
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "ef5ddfc4fa4bacfd7870a27d9c18e165a45522fc53241a90590cad5480d90e2e",
+        "preserved_scientific_elements": [
+          "步数 3、4、5、10",
+          "四项指标及方向",
+          "全部数值与最佳值粗体"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "完整表 5 图体，表题已剔除，所有指标清楚。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "table:Table 6",
+      "source_id": "Table 6",
+      "kind": "table",
+      "label": "Table 6",
+      "caption": "Ablation study of pseudo-MSI synthesis.",
+      "pages": [
+        8
+      ],
+      "section_id": "sec:methods-3",
+      "decision": "visual_defect",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "identity_mismatch",
+      "visual_quality_status": "usable_candidate",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_008_fig_table_6_review.png",
+      "relative_markdown_embed": "![Table 6](images/page_008_fig_table_6_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "ef5ddfc4fa4bacfd7870a27d9c18e165a45522fc53241a90590cad5480d90e2e",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\page_previews\\page_008.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "source_page": 8,
+        "caption": "Ablation study of pseudo-MSI synthesis.",
+        "bbox_pt": [
+          72.70500183105469,
+          84.4238052368164,
+          280.5373840332031,
+          147.54168701171875
+        ],
+        "normalized_bbox": [
+          0.118799,
+          0.106596,
+          0.458394,
+          0.18629
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "fail",
+        "reviewed_asset_sha256": "ef5ddfc4fa4bacfd7870a27d9c18e165a45522fc53241a90590cad5480d90e2e",
+        "preserved_scientific_elements": [
+          "候选实际为表 5"
+        ],
+        "omitted_scientific_elements": [
+          "表 6 的波段组合与对应指标"
+        ],
+        "notes": "表 6 候选错误地重复表 5。保留表 6 占位，并依据原始页面将关键数值转录为笔记表格。",
+        "failure_reason": "identity_mismatch",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    }
+  ],
+  "summary": {
+    "total_items": 13,
+    "by_decision": {
+      "insert": 7,
+      "placeholder": 1,
+      "low_priority": 1,
+      "visual_defect": 4
+    }
+  }
+}

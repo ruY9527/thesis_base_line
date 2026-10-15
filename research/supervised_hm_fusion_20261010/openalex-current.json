@@ -1,0 +1,852 @@
+[
+  {
+    "title": "Deep Spectral Unmixing Unfolding Network for Multispectral and Hyperspectral Image Fusion",
+    "doi": "10.1016/j.inffus.2026.104835",
+    "authors": [
+      "Xiujuan Lang",
+      "Tao Lu",
+      "Jiaming Wang",
+      "Yuan Yao",
+      "Yanduo Zhang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-10-01",
+    "cited_by_count": 0,
+    "journal": "Information Fusion",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7220669630",
+    "relevance_score": 124.851685
+  },
+  {
+    "title": "Hyperspectral and Multispectral Image Fusion via Deep Generalised Linear Mixed Model",
+    "doi": "10.1049/cit2.70180",
+    "authors": [
+      "Yi-Xiang Wang",
+      "Ziyue Yang",
+      "Yu Wang",
+      "Xiujuan Lang",
+      "Tao Lu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-09-29",
+    "cited_by_count": 0,
+    "journal": "CAAI Transactions on Intelligence Technology",
+    "abstract": "ABSTRACT Hyperspectral–multispectral image fusion is an incomplete information fusion problem, and directly embedding information can lead to modality‐specific responses and cause spectral distortion, whereas the strong interband redundancy of hyperspectral images makes full‐dimensional fusion inefficient. To address the aforementioned issues, we propose a novel fusion framework based on the generalised linear mixed model theory. Specifically, high‐dimensional hyperspectral images can be compose",
+    "openalex_id": "https://openalex.org/W7214770854",
+    "relevance_score": 123.907265
+  },
+  {
+    "title": "Unsupervised Scale-Conditioned Hyperspectral and Multispectral Image Fusion via a Frequency–Spatial Dual-Domain Network",
+    "doi": "10.3390/rs18183187",
+    "authors": [
+      "Peng Tang",
+      "Ke Zheng",
+      "Jiaxin Li",
+      "Haoyang Yu",
+      "Xu Sun"
+    ],
+    "year": 2026,
+    "publication_date": "2026-09-16",
+    "cited_by_count": 0,
+    "journal": "Remote Sensing",
+    "abstract": "Hyperspectral–multispectral image fusion reconstructs high-spatial-resolution hyperspectral images (HR-HSIs) by combining low-resolution hyperspectral images (LR-HSIs) with high-resolution multispectral images (HR-MSIs). Many methods only support integer resolution ratios; when the LR-HSI/HR-MSI ratio is fractional, inputs are often resampled to a nearby integer ratio, altering observations and introducing interpolation error. We propose SCDF-Net, an unsupervised Scale-Conditioned Dual-domain Fu",
+    "openalex_id": "https://openalex.org/W7213400747",
+    "relevance_score": 109.15566
+  },
+  {
+    "title": "LMCAN: A Lightweight Multiscale Contextual Attention Network for Hyperspectral and Multispectral Image Fusion",
+    "doi": "10.3390/rs18183154",
+    "authors": [
+      "Mingming Ma",
+      "Zhengzhong Fang",
+      "Peixian He",
+      "Jialiang Wu",
+      "Tianyi Xu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-09-14",
+    "cited_by_count": 0,
+    "journal": "Remote Sensing",
+    "abstract": "Hyperspectral and multispectral image fusion requires enhancing spatial details while preserving the pixel-wise spectral fidelity of hyperspectral observations. Transformer-based approaches provide effective contextual modeling, yet hierarchical token merging may cause spectral mixing, whereas pixel-preserving tokenization restricts the spatial context captured by window attention. To resolve this trade-off, we propose a Lightweight Multiscale Contextual Attention Network (LMCAN) that reconstruc",
+    "openalex_id": "https://openalex.org/W7212557877",
+    "relevance_score": 119.34943
+  },
+  {
+    "title": "A multi-scale spatial-conditioned spectral routing network for hyperspectral and multispectral image fusion",
+    "doi": "10.1016/j.jag.2026.105547",
+    "authors": [
+      "Bo Zhou",
+      "Xianfeng Zhang",
+      "Ziyuan Feng",
+      "Miao Ren",
+      "Xiaobo Zhi"
+    ],
+    "year": 2026,
+    "publication_date": "2026-09-01",
+    "cited_by_count": 0,
+    "journal": "International Journal of Applied Earth Observation and Geoinformation",
+    "abstract": "Hyperspectral and multispectral image fusion (HMIF) aims to reconstruct high spatial resolution hyperspectral images by jointly leveraging the complementary spectral information from hyperspectral imagery and the spatial details from high spatial resolution multispectral imagery. Existing deep learning-based methods typically improve fusion performance by enlarging the receptive field to capture richer spatial–spectral contextual information, which inevitably increase computational complexity an",
+    "openalex_id": "https://openalex.org/W7204889613",
+    "relevance_score": 106.3844
+  },
+  {
+    "title": "Scalable Fusion of Multiple Multispectral and Hyperspectral Images via Tucker Decomposition",
+    "doi": null,
+    "authors": [
+      "Fatima Z. M'Rani",
+      "Matthieu Puigt",
+      "Cédric Jamet",
+      "Claire Guilloteau",
+      "Gilles Delmaire"
+    ],
+    "year": 2026,
+    "publication_date": "2026-08-31",
+    "cited_by_count": 0,
+    "journal": "HAL (Le Centre pour la Communication Scientifique Directe)",
+    "abstract": "International audience",
+    "openalex_id": "https://openalex.org/W7161466198",
+    "relevance_score": 105.28747
+  },
+  {
+    "title": "Hyperspectral and Multispectral Image Fusion via Decoupled Dual-Codebook Network",
+    "doi": "10.5281/zenodo.21975863",
+    "authors": [
+      "Jiaming Wang",
+      "Yu Wang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-08-17",
+    "cited_by_count": 0,
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7203631073",
+    "relevance_score": 116.50912
+  },
+  {
+    "title": "An Adaptive Polyline-Path Mask Attention for Hyperspectral and Multispectral Image Fusion",
+    "doi": "10.3390/rs18152536",
+    "authors": [
+      "Xin Lyu",
+      "Chenchen Xia",
+      "Wenjun Xie",
+      "Sai Wang",
+      "Xin Li"
+    ],
+    "year": 2026,
+    "publication_date": "2026-08-03",
+    "cited_by_count": 0,
+    "journal": "Remote Sensing",
+    "abstract": "Reconstructing high-resolution hyperspectral images (HR-HSIs) from low-resolution hyperspectral images (LR-HSIs) and high-resolution multispectral images (HR-MSIs) is an important multimodal remote sensing task for applications requiring both fine spatial details and reliable spectral characterization. However, existing Transformer-based HSI–MSI fusion methods still face difficulty in jointly preserving geometric structures and spectral continuity. Specifically, flattening two-dimensional image ",
+    "openalex_id": "https://openalex.org/W7172292893",
+    "relevance_score": 124.14652
+  },
+  {
+    "title": "Vision Transformer-Based Hyperspectral and Multispectral Image Fusion for Satellite Remote Sensing",
+    "doi": "10.1109/cmss69636.2026.11688326",
+    "authors": [
+      "Om Nishane",
+      "Sachin Dagadkar",
+      "Diksha Nishane",
+      "Rohan P. Nandanwar"
+    ],
+    "year": 2026,
+    "publication_date": "2026-08-01",
+    "cited_by_count": 0,
+    "journal": "",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7213537163",
+    "relevance_score": 111.79159
+  },
+  {
+    "title": "ZY1E-HMSR v1.0: Paired ZY1E hyperspectral and multispectral satellite images for image super-resolution",
+    "doi": "10.5281/zenodo.21635780",
+    "authors": [
+      "Hu Cui"
+    ],
+    "year": 2026,
+    "publication_date": "2026-07-28",
+    "cited_by_count": 0,
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "abstract": "The ZY1E-HMSR dataset contains ten paired hyperspectral and multispectral satellite image samples acquired by the hyperspectral and multispectral sensors onboard the ZY1E satellite. The hyperspectral images contain 76 spectral bands covering approximately 400–1000 nm, while the corresponding multispectral images contain eight bands with a spatial-resolution ratio of 1:3.The data were processed through radiometric calibration, orthorectification, cross-modal registration, paired image cropping, r",
+    "openalex_id": "https://openalex.org/W7213759701",
+    "relevance_score": 72.625084
+  },
+  {
+    "title": "Optimized Embedded Implementation of Hyperspectral-Multispectral Image Fusion on Raspberry Pi",
+    "doi": "10.48550/arxiv.2607.23136",
+    "authors": [
+      "Salah Eddine Brezini",
+      "Okba Bekhelifi",
+      "Oussama Mezouar",
+      "Chams Eddine Choucha",
+      "Sarra Boukhacheba"
+    ],
+    "year": 2026,
+    "publication_date": "2026-07-25",
+    "cited_by_count": 0,
+    "journal": "arXiv (Cornell University)",
+    "abstract": "Remote sensing optical images have become central to a wide range of applications. In particular, hyperspectral images, with their high spectral resolution, enable the extraction of rich information about the objects and materials present in the observed scene. Nevertheless, processing such data comes at the expense of a high computational load due to its large data volume, making real-time processing very difficult to achieve. Recently, we proposed an approach to investigate the feasibility of ",
+    "openalex_id": "https://openalex.org/W7171571605",
+    "relevance_score": 207.90306
+  },
+  {
+    "title": "Dual-Prior-Guided Cross-Mamba Network for Hyperspectral and Multispectral Image Fusion",
+    "doi": "10.1145/3833087",
+    "authors": [
+      "Huapeng Wu",
+      "Jie Gui",
+      "Baosheng Yu",
+      "Tianming Zhan",
+      "Yuan Yan Tang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-07-23",
+    "cited_by_count": 0,
+    "journal": "ACM Transactions on Multimedia Computing Communications and Applications",
+    "abstract": "Recently, hyperspectral and multispectral image fusion algorithms based on local and long-range connectivity learning (e.g., CNNs, Transformer, and Mamba) have produced good results. However, designing effective hybrid architectures of CNNs, transformer, and Mamba, guided by rich prior information, that efficiently learn complementary spatial-spectral features in complex hyperspectral and multispectral images, thereby further improving image fusion performance, remains a challenge. In this artic",
+    "openalex_id": "https://openalex.org/W7170185166",
+    "relevance_score": 124.64831
+  },
+  {
+    "title": "Blind Hyperspectral and Multispectral Images Fusion: A Unified Tensor Fusion Framework from Coupled Inverse Problem Perspective",
+    "doi": "10.1137/25m1814098",
+    "authors": [
+      "Ying Gao",
+      "Michael K. Ng",
+      "Chunfeng Cui"
+    ],
+    "year": 2026,
+    "publication_date": "2026-07-21",
+    "cited_by_count": 0,
+    "journal": "SIAM Journal on Imaging Sciences",
+    "abstract": "Abstract. Hyperspectral and multispectral images fusion aims at integrating a low-resolution hyperspectral image (LR-HSI) and a high-resolution multispectral image (HR-MSI) to construct a high-resolution hyperspectral image (HR-HSI). It is generally assumed that spatial blurring operator and spectral response operator are prior-known. However, such an assumption is extremely restrictive in practice. To overcome this limitation, this paper formulates blind fusion as a coupled inverse problem, int",
+    "openalex_id": "https://openalex.org/W7169838559",
+    "relevance_score": 116.40368
+  },
+  {
+    "title": "A systematic literature review of shallow and deep prior modeling methods for hyperspectral-multispectral image fusion",
+    "doi": "10.55214/2576-8484.v10i6.13148",
+    "authors": [
+      "Wenchao Cai",
+      "Wei Jen Chew",
+      "Pei Xuan Ku"
+    ],
+    "year": 2026,
+    "publication_date": "2026-06-24",
+    "cited_by_count": 0,
+    "journal": "Edelweiss Applied Science and Technology",
+    "abstract": "This review examines the evolution of prior modeling in hyperspectral–multispectral (HS–MS) image fusion and compares how shallow, deep, and hybrid priors address reconstruction accuracy, interpretability, and real-world deployment challenges. A PRISMA-guided review was conducted on 62 journal studies retrieved from Scopus, Taylor & Francis Online, and Wiley Online Library. The selected studies were classified according to methodological paradigm, historical trajectory, prior type, and reported ",
+    "openalex_id": "https://openalex.org/W7168366380",
+    "relevance_score": 180.97427
+  },
+  {
+    "title": "Implementation of a Lightweight Hyperspectral and Multispectral Image Fusion Method for Earth Observation on Raspberry Pi",
+    "doi": "10.1109/icsmacs68968.2026.11628530",
+    "authors": [
+      "Salah Eddine Brezini",
+      "Mohamed Kadiri",
+      "Abdelkrim Meche",
+      "Mohammed Dahmani",
+      "Fethi Abdelatif Dali"
+    ],
+    "year": 2026,
+    "publication_date": "2026-06-01",
+    "cited_by_count": 0,
+    "journal": "",
+    "abstract": "This manuscript has been accepted for publication in the proceedings of the 2026 International Conference on Speech, Multimodal and Advanced Communication Systems (ICSMACS), Algiers, Algeria.",
+    "openalex_id": "https://openalex.org/W7172285458",
+    "relevance_score": 107.49994
+  },
+  {
+    "title": "Hyperspectral and Multispectral Fusion Method based on Quadratic Optimization Model",
+    "doi": "10.2352/j.imagingsci.technol.2026.70.5.050401",
+    "authors": [
+      "Zican Sang",
+      "Long Ma"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-28",
+    "cited_by_count": 0,
+    "journal": "Journal of Imaging Science and Technology",
+    "abstract": "Hyperspectral super-resolution fusion technology aims to fuse hyperspectral images with multispectral images in the same scene for the super-resolution reconstruction of hyperspectral data. Current deep learning methods are usually trained by data augmentation or constructing complex encoding–decoding networks, often neglecting the physical characteristics of hyperspectral data involving width, height, and three-dimensional channel information. Traditional methods continue to play a role in supe",
+    "openalex_id": "https://openalex.org/W7162646627",
+    "relevance_score": 65.99683
+  },
+  {
+    "title": "Hyperspectral and Multispectral Image Fusion Based on Adaptive Wavelet Transform and Dual Spectral–Spatial Branch",
+    "doi": "10.3390/rs18111726",
+    "authors": [
+      "Yanhui Chang",
+      "Zhiyun Xiao",
+      "Jiayang Lu",
+      "Tao Fang",
+      "Tengfei Bao"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-27",
+    "cited_by_count": 1,
+    "journal": "Remote Sensing",
+    "abstract": "As the role of remote sensing continues to grow, the fusion technology of low-spatial-resolution hyperspectral images and high-spatial-resolution multispectral images has become increasingly critical. Traditional methods rely on fixed rules and exhibit poor robustness, whereas deep learning methods struggle to establish efficient interactions between local and global information due to the complexity of their underlying networks. Therefore, we propose a deep learning fusion module that combines ",
+    "openalex_id": "https://openalex.org/W7162558045",
+    "relevance_score": 101.78276
+  },
+  {
+    "title": "Adaptive Multi-scale Global–Local Network for Hyperspectral and Multispectral Fusion",
+    "doi": "10.1007/s11220-026-00791-x",
+    "authors": [
+      "Junyue Huang",
+      "Long Ma"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-25",
+    "cited_by_count": 0,
+    "journal": "Sensing and Imaging",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7162307621",
+    "relevance_score": 73.08693
+  },
+  {
+    "title": "Rank-aware routing decomposition for hyperspectral and multispectral image fusion",
+    "doi": "10.1016/j.inffus.2026.104498",
+    "authors": [
+      "Yuanye Liu",
+      "Renwei Dian",
+      "Zhijun Zhao",
+      "Shutao Li"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-24",
+    "cited_by_count": 0,
+    "journal": "Information Fusion",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7162198327",
+    "relevance_score": 119.712524
+  },
+  {
+    "title": "A spatially guided dual-path network for hyperspectral and multispectral image fusion",
+    "doi": "10.1016/j.knosys.2026.116227",
+    "authors": [
+      "Ruiping Liu",
+      "Jie Li",
+      "Pan Wang",
+      "Chunyu Zhu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-19",
+    "cited_by_count": 2,
+    "journal": "Knowledge-Based Systems",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7161679908",
+    "relevance_score": 127.57631
+  },
+  {
+    "title": "Shared Tensor Guidance Super-resolution Network for Locally Overlapping Hyperspectral and Multispectral Remote Sensing Image Fusion",
+    "doi": "10.1109/cait70489.2026.11553960",
+    "authors": [
+      "Yipeng Rao",
+      "Tong Gao"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-08",
+    "cited_by_count": 0,
+    "journal": "",
+    "abstract": "Hyperspectral and multispectral image fusion aims to generate a high-resolution hyperspectral image (HR-HSI) from a low-resolution hyperspectral image (LR-HSI) and a high-resolution multispectral image (HR-MSI). However, existing methods often suffer from performance degradation in non-overlapping regions—i.e., areas covered only by HR-MSI—resulting in the loss of fine spatial details and spectral consistency. To address this issue, we propose a novel fusion method named STG-Net (Shared Tensor G",
+    "openalex_id": "https://openalex.org/W7164375715",
+    "relevance_score": 95.87825
+  },
+  {
+    "title": "Region-aware fusion for non-overlapping hyperspectral and multispectral remote sensing images",
+    "doi": "10.1016/j.isprsjprs.2026.04.045",
+    "authors": [
+      "Haoyang Yu",
+      "Baosen Huang",
+      "Lianru Gao",
+      "Antonio Plaza",
+      "Ke Zheng"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-04",
+    "cited_by_count": 1,
+    "journal": "ISPRS Journal of Photogrammetry and Remote Sensing",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7160268750",
+    "relevance_score": 108.9093
+  },
+  {
+    "title": "Hyperspectral and Multispectral Image Fusion based on a Parametric Model and Sparse Unmixing to Address Spectral Variability",
+    "doi": "10.1109/rast69551.2026.11672383",
+    "authors": [
+      "Noura Mokhtari",
+      "Salah Eddine Brezini",
+      "Mohammed Dahmani",
+      "Mohammed Kadiri"
+    ],
+    "year": 2026,
+    "publication_date": "2026-05-01",
+    "cited_by_count": 0,
+    "journal": "International Conference on Recent Advances in Air and Space Technologies (RAST)",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7206192466",
+    "relevance_score": 103.43687
+  },
+  {
+    "title": "A New Spatial-Spectral Fusion GAN for Hyperspectral and Multispectral Image Fusion",
+    "doi": "10.1109/icsipc69751.2026.11584239",
+    "authors": [
+      "Zihan Fang",
+      "Fang Zhou"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-24",
+    "cited_by_count": 0,
+    "journal": "International Conference on Signal Image Processing and Communication (ICSIPC)",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7167623256",
+    "relevance_score": 124.881226
+  },
+  {
+    "title": "Provable Unregistered Hyperspectral-Multispectral Image Fusion via Spectral Unmixing and Adversarial Learning",
+    "doi": "10.1109/icassp55912.2026.11460454",
+    "authors": [
+      "Jiahui Song",
+      "Sagar Shrestha",
+      "Xiao Fu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-21",
+    "cited_by_count": 1,
+    "journal": "IEEE International Conference on Acoustics Speech and Signal Processing",
+    "abstract": "This work addresses the problem of fusing a pair of hyperspectral (HSI) and multispectral (MSI) images that are roughly overlapping in coverage but unregistered, with the goal of super-resolving the spatial resolution of the HSI and the spectral resolution of the MSI. Existing approaches to unregistered fusion often either fail to simultaneously sharpen both images or require large amounts of training data. Moreover, theoretical recoverability guarantees have so far been established only for spa",
+    "openalex_id": "https://openalex.org/W7155040040",
+    "relevance_score": 188.15143
+  },
+  {
+    "title": "A Pyramid-Enhanced Swin Transformer for Robust Hyperspectral–Multispectral Image Fusion and Super-Resolution",
+    "doi": "10.3390/rs18081255",
+    "authors": [
+      "Yu Lu",
+      "Lin Hu",
+      "Jiankai Hu",
+      "Shu Gan",
+      "Xiping Yuan"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-21",
+    "cited_by_count": 1,
+    "journal": "Remote Sensing",
+    "abstract": "Due to the inherent limitations of both hyperspectral and multispectral imagery, balancing high spatial resolution with high spectral fidelity has become one of the fundamental challenges in remote sensing image processing. A prevailing strategy is to fuse these two types of data to reconstruct images that jointly preserve their respective advantages. However, existing reconstruction approaches still suffer from complex coupling between spatial and spectral information, and limited feature extra",
+    "openalex_id": "https://openalex.org/W7155063439",
+    "relevance_score": 187.25458
+  },
+  {
+    "title": "AGFormer: Adaptive Graph Transformer for Multispectral and Hyperspectral Image Fusion",
+    "doi": "10.1109/icassp55912.2026.11464682",
+    "authors": [
+      "Quan Zhang",
+      "Jun Li",
+      "Yan Li",
+      "Jialin Gui",
+      "Yangyang Qu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-21",
+    "cited_by_count": 0,
+    "journal": "IEEE International Conference on Acoustics Speech and Signal Processing",
+    "abstract": "Multispectral and hyperspectral image fusion aims to restore the spatial details of hyperspectral images using the complementary texture information from multispectral images. However, existing convolution-based and attention-based methods are limited in modeling irregular ground objects due to their local or fixed receptive fields. To address this limitation, we propose the Adaptive Graph Transformer (AGFormer), which integrates graph neural networks with a dual-stream Transformer backbone. AGF",
+    "openalex_id": "https://openalex.org/W7155044568",
+    "relevance_score": 131.27057
+  },
+  {
+    "title": "SSUN: Symmetric Cross-Stage State Interaction Deep Unrolling Network for hyperspectral and Multispectral Image Fusion",
+    "doi": "10.1109/icassp55912.2026.11463815",
+    "authors": [
+      "Xiangfei Shen",
+      "Ke Li",
+      "Tao Liu",
+      "Qianqian Liu",
+      "Jianbin Lu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-21",
+    "cited_by_count": 0,
+    "journal": "IEEE International Conference on Acoustics Speech and Signal Processing",
+    "abstract": "The fusion of low-resolution hyperspectral (LRHS) and high-resolution multispectral (HRMS) images is a critical technique for producing high-resolution hyperspectral imagery (HRHSI). However, prevailing methods directly map observed LRHSI and HRMSI to the target HRHSI, lacking interpretability due to insufficient exploitation of imaging priors. Although recent approaches have incorporated the deep unrolling network (DUN) to enable more explainable reconstruction, their performance remains constr",
+    "openalex_id": "https://openalex.org/W7155039596",
+    "relevance_score": 97.11519
+  },
+  {
+    "title": "Im2State: Image-to-state Mamba for hyperspectral and multispectral image fusion",
+    "doi": "10.1016/j.inffus.2026.104385",
+    "authors": [
+      "Chenyu Li",
+      "Danfeng Hong",
+      "Bing Zhang",
+      "Jocelyn Chanussot"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-19",
+    "cited_by_count": 12,
+    "journal": "Information Fusion",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7154900820",
+    "relevance_score": 141.79294
+  },
+  {
+    "title": "CRA-MHIF:Consensus Reasoning Attention Network for Multispectral and Hyperspectral Image Fusion",
+    "doi": "10.5281/zenodo.19592353",
+    "authors": [
+      "Sen Jia",
+      "Xiyou Fu",
+      "Pengchao Han",
+      "Pan Liu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-15",
+    "cited_by_count": 0,
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "abstract": "Experimental Data for CRA-MHIF: Consensus Reasoning Attention Network for Multispectral and Hyperspectral Image FusionThis package includes all supporting data for the paper:Consensus Reasoning Attention Network for Multispectral and Hyperspectral Image Fusion1. Datasets UsedAll datasets are publicly available and used as described in the paper.CAVE Dataset:Source: https://cave.cs.columbia.edu/repository/MultispectralDescription: 32 indoor multispectral scenes with 31 spectral bands (400–700 nm,",
+    "openalex_id": "https://openalex.org/W7154513981",
+    "relevance_score": 116.17673
+  },
+  {
+    "title": "CoFusion: Multispectral and Hyperspectral Image Fusion via Spectral Coordinate Attention",
+    "doi": "10.48550/arxiv.2604.10584",
+    "authors": [
+      "Baisong Li"
+    ],
+    "year": 2026,
+    "publication_date": "2026-04-12",
+    "cited_by_count": 0,
+    "journal": "arXiv (Cornell University)",
+    "abstract": "Multispectral and Hyperspectral Image Fusion (MHIF) aims to reconstruct high-resolution images by integrating low-resolution hyperspectral images (LRHSI) and high-resolution multispectral images (HRMSI). However, existing methods face limitations in modeling cross-scale interactions and spatial-spectral collaboration, making it difficult to achieve an optimal trade-off between spatial detail enhancement and spectral fidelity. To address this challenge, we propose CoFusion: a unified spatial-spec",
+    "openalex_id": "https://openalex.org/W7154242211",
+    "relevance_score": 117.15508
+  },
+  {
+    "title": "Hyperspectral and multispectral image fusion via N-gram transformer and local adaptive fusion strategy",
+    "doi": "10.1016/j.image.2026.117552",
+    "authors": [
+      "Yuyuan Luo",
+      "Bin Yang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-03-31",
+    "cited_by_count": 0,
+    "journal": "Signal Processing Image Communication",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7146936869",
+    "relevance_score": 112.34987
+  },
+  {
+    "title": "High-frequency geometry enhanced graph attention network for hyperspectral and multispectral image fusion",
+    "doi": "10.1016/j.patcog.2026.113592",
+    "authors": [
+      "Ziqing Ma",
+      "Chang Yang",
+      "Zhichang Guo",
+      "Yao Li"
+    ],
+    "year": 2026,
+    "publication_date": "2026-03-27",
+    "cited_by_count": 1,
+    "journal": "Pattern Recognition",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7141188397",
+    "relevance_score": 106.684204
+  },
+  {
+    "title": "CO²IF: Language-Bridging Hyperspectral-Multispectral Image Fusion with Coordinated and Cross-modal Optimal Transport",
+    "doi": "10.1609/aaai.v40i15.38261",
+    "authors": [
+      "Mingjin Zhang",
+      "Zhongkai Yang",
+      "Fei Gao"
+    ],
+    "year": 2026,
+    "publication_date": "2026-03-14",
+    "cited_by_count": 0,
+    "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "abstract": "Due to the difficulties of directly obtaining high-resolution hyperspectral images (HR-HSI), the fusion of low-resolution hyperspectral images (LR-HSI) and high-resolution multispectral images (HR-MSI) has emerged as an effective approach. While existing methods leverage image-level priors from HR-MSI, they often lack explicit semantic guidance for precise detail reconstruction. Recognizing that textual scene descriptions encapsulate valuable object attributes and contextual information, we intr",
+    "openalex_id": "https://openalex.org/W7138055605",
+    "relevance_score": 194.48
+  },
+  {
+    "title": "PIF-Net: Ill-Posed Prior Guided Multispectral and Hyperspectral Image Fusion via Invertible Mamba and Fusion-Aware LoRA",
+    "doi": "10.1609/aaai.v40i8.37519",
+    "authors": [
+      "Baisong Li",
+      "Xingwang Wang",
+      "Haixiao Xu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-03-14",
+    "cited_by_count": 2,
+    "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "abstract": "The goal of multispectral and hyperspectral image fusion (MHIF) is to generate high-quality images that simultaneously possess rich spectral information and fine spatial details. However, due to the inherent trade-off between spectral and spatial information and the limited availability of observations, this task is fundamentally ill-posed. Previous studies have not effectively addressed the ill-posed nature caused by data misalignment. To tackle this challenge, we propose a fusion framework nam",
+    "openalex_id": "https://openalex.org/W7138128186",
+    "relevance_score": 110.24472
+  },
+  {
+    "title": "Blind Hyperspectral and Multispectral Images Fusion: A Unified Tensor Fusion Framework from Coupled Inverse Problem Perspective",
+    "doi": "10.48550/arxiv.2603.11530",
+    "authors": [
+      "Ying Sara Gao",
+      "Michael K. Ng",
+      "Chunfeng cui"
+    ],
+    "year": 2026,
+    "publication_date": "2026-03-12",
+    "cited_by_count": 0,
+    "journal": "arXiv (Cornell University)",
+    "abstract": "Hyperspectral and multispectral images fusion aims at integrating a low-resolution hyperspectral image (LR-HSI) and a high-resolution multispectral image (HR-MSI) to construct a high-resolution hyperspectral image (HR-HSI). It is generally assumed that spatial blurring operator and spectral response operator are prior-known. However, such an assumption is extremely restrictive in practice. To overcome this limitation, this paper formulates blind fusion as a coupled inverse problem, integrating b",
+    "openalex_id": "https://openalex.org/W7135238877",
+    "relevance_score": 115.88432
+  },
+  {
+    "title": "Blind Hyperspectral and Multispectral Images Fusion: A Unified Tensor Fusion Framework from Coupled Inverse Problem Perspective",
+    "doi": null,
+    "authors": [
+      "Ying Gao",
+      "Michael K. Ng",
+      "Chunfeng cui"
+    ],
+    "year": 2026,
+    "publication_date": "2026-03-12",
+    "cited_by_count": 0,
+    "journal": "arXiv (Cornell University)",
+    "abstract": "Hyperspectral and multispectral images fusion aims at integrating a low-resolution hyperspectral image (LR-HSI) and a high-resolution multispectral image (HR-MSI) to construct a high-resolution hyperspectral image (HR-HSI). It is generally assumed that spatial blurring operator and spectral response operator are prior-known. However, such an assumption is extremely restrictive in practice. To overcome this limitation, this paper formulates blind fusion as a coupled inverse problem, integrating b",
+    "openalex_id": "https://openalex.org/W7135428829",
+    "relevance_score": 115.88432
+  },
+  {
+    "title": "A Dual-Stream State-Space Fusion Network with Implicit Neural Representation for Hyperspectral–Multispectral Image Fusion",
+    "doi": "10.3390/rs18050789",
+    "authors": [
+      "Baisen Liu",
+      "Shuaiwei Wang",
+      "Hongxia Chu",
+      "Weiming Zheng",
+      "Weili Kong"
+    ],
+    "year": 2026,
+    "publication_date": "2026-03-04",
+    "cited_by_count": 0,
+    "journal": "Remote Sensing",
+    "abstract": "Hyperspectral–multispectral (HSI–MSI) image fusion aims to reconstruct high-spatial-resolution hyperspectral images (HR-HSIs) by combining the spectral fidelity of low-resolution HSIs (LR-HSIs) with the spatial details of high-resolution MSIs (HR-MSIs). A key challenge is preserving spectral–spatial consistency under cross-modal resolution mismatch, where inadequate long-range dependency modeling and unstable inter-modality interaction may induce spectral distortion and structural discontinuitie",
+    "openalex_id": "https://openalex.org/W7133914228",
+    "relevance_score": 185.14616
+  },
+  {
+    "title": "SMF2Net: Spectral-assisted multi-receptive field fusion network for hyperspectral and multispectral image fusion",
+    "doi": "10.1016/j.ejrs.2026.02.001",
+    "authors": [
+      "Siyuan Liu",
+      "Huanru Yue",
+      "Ruixia Cai",
+      "Bing Li",
+      "Yudong Zhang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-02-05",
+    "cited_by_count": 1,
+    "journal": "The Egyptian Journal of Remote Sensing and Space Science",
+    "abstract": "Hyperspectral image (HSI) is extensively used in classification, detection, tracking, and other tasks attributed to its capacity to capture extensive spectral information and comprehensively characterize the spectral signatures unique to distinct materials. Nevertheless, the acquisition of high-resolution HSI (HR-HSI) is fundamentally challenged by the intrinsic technical constraints of HSI sensors. Therefore, the fusion of low-resolution HSI and high-resolution multispectral image (MSI) to obta",
+    "openalex_id": "https://openalex.org/W7127993967",
+    "relevance_score": 120.66932
+  },
+  {
+    "title": "Hyperspectral Image Fusion with Spectral-Band and Fusion-Scale Agnosticism",
+    "doi": "10.48550/arxiv.2602.01681",
+    "authors": [
+      "Yu-Jie Liang",
+      "ZiHan Cao",
+      "Liang-Jian Deng",
+      "Yang Yang",
+      "Malu Zhang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-02-02",
+    "cited_by_count": 0,
+    "journal": "arXiv (Cornell University)",
+    "abstract": "Current deep learning models for Multispectral and Hyperspectral Image Fusion (MS/HS fusion) are typically designed for fixed spectral bands and spatial scales, which limits their transferability across diverse sensors. To address this, we propose SSA, a universal framework for MS/HS fusion with spectral-band and fusion-scale agnosticism. Specifically, we introduce Matryoshka Kernel (MK), a novel operator that enables a single model to adapt to arbitrary numbers of spectral channels. Meanwhile, ",
+    "openalex_id": "https://openalex.org/W7127318796",
+    "relevance_score": 69.91758
+  },
+  {
+    "title": "Hyperspectral and multispectral image fusion guided by latent diffusion and spectral expert models",
+    "doi": "10.1016/j.knosys.2026.115319",
+    "authors": [
+      "Yanchun YANG",
+      "Jialong Li",
+      "Yi Li",
+      "Zeyv Wang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-14",
+    "cited_by_count": 3,
+    "journal": "Knowledge-Based Systems",
+    "abstract": "",
+    "openalex_id": "https://openalex.org/W7123504792",
+    "relevance_score": 119.365814
+  },
+  {
+    "title": "PIF-Net: Ill-Posed Prior Guided Multispectral and Hyperspectral Image Fusion via Invertible Mamba and Fusion-Aware LoRA",
+    "doi": "10.48448/v91g-hj45",
+    "authors": [
+      "Association for Artificial Intelligence 2026",
+      "Xu Haixiao",
+      "Baisong Li",
+      "Xingwang Wang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-07",
+    "cited_by_count": 0,
+    "journal": "Underline Science Inc.",
+    "abstract": "The goal of multispectral and hyperspectral image fusion (MHIF) is to generate high-quality images that simultaneously possess rich spectral information and fine spatial details. However, due to the inherent trade-off between spectral and spatial information and the limited availability of observations, this task is fundamentally ill-posed. Previous studies have not effectively addressed the ill-posed nature caused by data misalignment. To tackle this challenge, we propose a fusion framework nam",
+    "openalex_id": "https://openalex.org/W7128710731",
+    "relevance_score": 109.58628
+  },
+  {
+    "title": "Bayesian Fully-Connected Tensor Network for Hyperspectral-Multispectral Image Fusion",
+    "doi": "10.1109/tip.2026.3696124",
+    "authors": [
+      "Linsong Shan",
+      "Zecan Yang",
+      "Laurence Tianruo Yang",
+      "C R Li",
+      "Honglu Zhao"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 0,
+    "journal": "IEEE Transactions on Image Processing",
+    "abstract": "Tensor decomposition is a powerful tool for data analysis and has been extensively employed in the field of hyperspectral-multispectral image fusion (HMF). Existing tensor decomposition-based fusion methods typically rely on disruptive data vectorization/reshaping or impose rigid constraints on the arrangement of factor tensors, hindering the preservation of spatial-spectral structures and the modeling of cross-dimensional correlations. Although recent advances utilizing the Fully-Connected Tens",
+    "openalex_id": "https://openalex.org/W4416055995",
+    "relevance_score": 211.85486
+  },
+  {
+    "title": "Blind Hyperspectral–Multispectral Image Fusion Robust to Spatial Misregistration and Spectral Range Nonoverlap",
+    "doi": "10.1109/jstars.2026.3675001",
+    "authors": [
+      "Yu Gao",
+      "Lifu Zhang",
+      "Xueijan Sun",
+      "Yan Zhang",
+      "Qian Li"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 0,
+    "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "abstract": "Hyperspectral- multispectral image fusion (HMF) aims to recover a high-resolution hyperspectral image (HrHSI) from an observed high-resolution multispectral image (HrMSI) and a low-resolution hyperspectral image (LrHSI). Traditional HMF methods often suffer from over-reliance on degradation priors. While current blind HMF methods reduce this dependence by estimating the spectral degradation process, they still struggle with common real-world challenges, particularly spatial misregistration and s",
+    "openalex_id": "https://openalex.org/W7137828518",
+    "relevance_score": 198.17319
+  },
+  {
+    "title": "EFSANet: Explicit Frequency Modeling and Style-Aware Alignment for Hyperspectral–Multispectral Image Fusion",
+    "doi": "10.1109/jstars.2026.3698685",
+    "authors": [
+      "Dongbin Hu",
+      "Yingying Fan",
+      "Ma Yh",
+      "Yurong Qian",
+      "Yuanxu Wang"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 0,
+    "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "abstract": "The fusion of low-resolution hyperspectral images (LR-HSIs) and high-resolution multispectral images (HR-MSIs) is an effective strategy for reconstructing high-resolution hyperspectral images (HR-HSIs), and is important for remote sensing observation, land-cover classification, and environmental monitoring. In recent years, deep learning-based hyperspectral-multispectral fusion methods have achieved remarkable progress. However, existing methods still face two key challenges. First, differences ",
+    "openalex_id": "https://openalex.org/W7162809243",
+    "relevance_score": 189.25037
+  },
+  {
+    "title": "AMHF-Net: A Multispectral and Hyperspectral Image Fusion Network for Arbitrary-Band Hyperspectral Images",
+    "doi": "10.1109/jstars.2026.3679754",
+    "authors": [
+      "Shunyao Wang",
+      "Qi Xie",
+      "Qian Zhao",
+      "Deyu Meng"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 1,
+    "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "abstract": "Hyperspectral and multispectral image fusion serves as an effective approach to obtain high-resolution hyperspectral images at low cost. Current deep learning based hyperspectral image fusion methods often focus on fusing images with a fixed number of spectral bands, making them difficult to adapt to remote sensing images with varying spectral bands. To address this limitation, we propose a novel network framework named Arbitrary-band Multispectral and Hyperspectral images Fusion Network (AMHF-N",
+    "openalex_id": "https://openalex.org/W7147066319",
+    "relevance_score": 138.02464
+  },
+  {
+    "title": "Region-Aware MoE Network for Hyperspectral and Multispectral Image Fusion",
+    "doi": "10.1109/tgrs.2026.3680287",
+    "authors": [
+      "Nan Xiao",
+      "Xiyou Fu",
+      "Qi Ren",
+      "Wangquan He",
+      "Siqi Wei"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 8,
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "abstract": "Existing transformer-based hyperspectral image (HSI) and multispectral image (MSI) fusion methods often suffer from limited cross-modal interaction and insufficient capability to model heterogeneous spatial and spectral patterns across different regions, which restricts their ability to fully exploit modality complementarity. To address these issues, we propose a Region-Aware Mixture of Experts network for HSI and MSI fusion. The proposed framework consists of three key components. First, an att",
+    "openalex_id": "https://openalex.org/W7148553398",
+    "relevance_score": 133.77556
+  },
+  {
+    "title": "Unsupervised Frequency-Guided Network for Hyperspectral and Multispectral Image Fusion",
+    "doi": "10.1109/jstars.2026.3698939",
+    "authors": [
+      "Yan Li",
+      "Jun Li",
+      "Quan Zhang",
+      "Jian Long",
+      "Weilong Zhu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 0,
+    "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "abstract": "Hyperspectral and multispectral image fusion (HMIF) aims to reconstruct high-resolution hyperspectral images by integrating the spectral richness of low-resolution HSIs with the spatial structures of high-resolution MSIs. While supervised methods achieve high fusion accuracy, they are inherently limited by the practical difficulty of acquiring ground-truth labels. Existing unsupervised approaches, though more suitable for real-world scenarios, often yield suboptimal performance due to the neglec",
+    "openalex_id": "https://openalex.org/W7163002333",
+    "relevance_score": 129.55045
+  },
+  {
+    "title": "Hyperspectral and Multispectral Image Fusion via Coupled Tensor Wheel Decomposition",
+    "doi": "10.1109/tgrs.2026.3697926",
+    "authors": [
+      "Ting Xu",
+      "Jin-Liang Xiao",
+      "Ya-Ru Fan",
+      "Liu Liu",
+      "Liang-Jian Deng"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 0,
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "abstract": "Hyperspectral and multispectral image fusion (HSI–MSI fusion) focuses on recovering a high-resolution hyperspectral image by integrating a low-resolution hyperspectral image with its high-resolution multispectral counterpart. Recent advances in coupled tensor decomposition (CTD)-based approaches have demonstrated strong potential by jointly modeling the intrinsic correlations among the three images within a unified tensor decomposition (TD) framework. However, the TDs employed in existing CTD-ba",
+    "openalex_id": "https://openalex.org/W7162640240",
+    "relevance_score": 127.1149
+  },
+  {
+    "title": "Coupled Diffusion Posterior Sampling for Unsupervised Hyperspectral and Multispectral Images Fusion",
+    "doi": "10.1109/tip.2025.3647207",
+    "authors": [
+      "Yang Xu",
+      "Jian Zhu",
+      "Danfeng Hong",
+      "Zhihui Wei",
+      "Zebin Wu"
+    ],
+    "year": 2026,
+    "publication_date": "2026-01-01",
+    "cited_by_count": 1,
+    "journal": "IEEE Transactions on Image Processing",
+    "abstract": "Hyperspectral images (HSIs) and multispectral images (MSIs) fusion is a hot topic in the remote sensing society. A high-resolution HSI (HR-HSI) can be obtained by fusing a low-resolution HSI (LR-HSI) and a high-resolution MSI (HR-MSI) or RGB image. However, most deep learning-based methods require a large amount of HR-HSIs for supervised training, which is very rare in practice. In this paper, we propose a coupled diffusion posterior sampling (CDPS) method for HSI and MSI fusion in which the HR-",
+    "openalex_id": "https://openalex.org/W7117890058",
+    "relevance_score": 124.90041
+  }
+]

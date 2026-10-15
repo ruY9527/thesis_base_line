@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.1",
+  "status": "complete",
+  "date": "2026-10-07",
+  "mode": "standalone",
+  "review_type": "self_review_same_context",
+  "materially_independent_review": false,
+  "systematic_literature_review_completed": false,
+  "candidate": "Input-compatible geometry with MossFuse role-conditioned residual diffusion; optional fixed preconditioning of physical MSI-visible spectral directions.",
+  "novelty_decision_rating": 3,
+  "decision_confidence_rating": 2,
+  "impact_positioning_rating": 3,
+  "what_would_change_the_decision": "Downgrade or abandon new-method positioning if a recent full text implements equivalent control or same-condition deterministic correction explains all benefit; keep usefulness separate from novelty.",
+  "top_kill_shot_objections": ["Residual/wavelet and role-separated diffusion already exist", "Spectral range/null decomposition is established", "Same-condition deterministic correction may explain all benefit", "Original x32 observation-only residual targets are unresolved"],
+  "literature_context_used": ["prior-art-matrix.md", "search-log.md", "../gewdiff_transfer_20261007/analysis.md"],
+  "missing_prior_work": [],
+  "review_findings_to_add": [],
+  "literature_assurance": {
+    "mode": "unlinked",
+    "assurance_verdict": "focused-search-only",
+    "unresolved_high_priority_novelty_question_ids": ["N1", "N2", "N3", "N4", "N5", "N6"]
+  },
+  "generic_combination_rating": 2,
+  "rating_interpretation": "Narrow proceed only, subject to recent-neighbor full-text comparison and same-condition deterministic controls.",
+  "narrowest_defensible_positioning": "Test whether observation-compatible geometry, constrained by physical spectral observability and MossFuse feature roles, reduces erroneous structural transfer, and determine whether iterative residual generation improves over a same-condition deterministic correction at acceptable cost.",
+  "selection_history": "User proposed GEWDiff–MossFuse transfer; method refined after source reading and prior-art inspection. Existing local notes already mention observability/compatibility. No trained outcomes used. Exploratory proposal, not preregistered or confirmatory.",
+  "empirical_validity": "unverified_no_training",
+  "engineering_feasibility": {
+    "geometry_only_modulation": "clear_code_interface_pending_implementation",
+    "supervised_residual_diffusion": "defined_target_pending_training",
+    "observation_only_x8_internal_training": "constructible_under_scale_transfer_assumptions",
+    "original_x32_same_factor_internal_training": "not_directly_constructible_with_original_valid_kernel_and_small_lr_input",
+    "fixed_geometry_preconditioning": "synthetic_algebra_checked_network_and_sampler_unverified"
+  },
+  "strongest_overlaps": ["MossFuse", "GEWDiff", "DDIF", "HSR-Diff", "ARGS-Diff", "PG-FDN", "SSDG", "DifferentialDiff", "SDP-Net", "DDSR", "WCGE-Net", "KANDiff"],
+  "unresolved_high_priority_questions": [
+    {"id": "N1", "question": "Do newest full texts implement equivalent reliable geometry and role-specific control?"},
+    {"id": "N2", "question": "Does a same-condition deterministic refiner replace diffusion?"},
+    {"id": "N3", "question": "Is observational compatibility a useful geometry signal outside clean commuting synthetic data?"},
+    {"id": "N4", "question": "Does internal-scale training transfer, especially to original x32 fusion?"},
+    {"id": "N5", "question": "Is fixed A_G merely equivalent weighting without a distinct empirical benefit?"},
+    {"id": "N6", "question": "Does spectral preservation hold empirically in MSI-invisible directions?"}
+  ],
+  "claims_to_qualify": ["first geometry-aware fusion diffusion", "first disentangled diffusion conditions", "first range/null projection", "guaranteed spectral or topological preservation", "exact posterior sampling", "SOTA performance", "original speed retained", "native x32 observation-only training established"],
+  "change_condition": "Downgrade or abandon new-method positioning if a recent full text implements equivalent control or same-condition deterministic correction explains all benefit; keep usefulness separate from novelty.",
+  "evidence_files": ["analysis.md", "prior-art-matrix.md", "search-log.md", "source-manifest.json", "algebra-results.json"],
+  "code_manifest_commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+  "baseline_modified": false,
+  "training_executed": false
+}

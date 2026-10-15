@@ -1,0 +1,536 @@
+[
+  {
+    "block_id": "B1",
+    "paper_role": "appendix",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "decision_gate_id": "G1",
+    "anti_claims_ruled_out": [
+      "效应只由极强损失、任务不可学、辅助头塌缩或额外数据造成。",
+      "收益来自额外目标、计算、参数、测试选模或改变退化与归一化。"
+    ],
+    "why_this_block_exists": "协议与非空预检",
+    "dataset_split_task": "受控合成族轨道T；CAVE训练16/验证4/测试12轨道N，清单见split-manifest.csv。",
+    "systems_compared": [
+      "原NumPy R/D",
+      "候选可微R/D",
+      "受限族oracle",
+      "零空间冲突",
+      "加性目标"
+    ],
+    "fixed_factors": [
+      "原R/D及采样相位",
+      "数据与普通完整目标",
+      "公共权重复制初始化",
+      "冻结选模与指标"
+    ],
+    "variable_factors": [
+      "边界/核/相位实现",
+      "标签与内部数据路径"
+    ],
+    "metrics": [
+      "算子最大绝对误差",
+      "梯度与形状",
+      "冲突观测差",
+      "非零目标幅度"
+    ],
+    "setup_details": "数值代数已通过；可微D一致性、自然数据标签隔离和内部任务仍待实现。",
+    "seeds": 1,
+    "success_criterion": "float64算子差<1e-10、float32候选差<1e-5，非零可用梯度，split无重叠，目标与输入角色明确。",
+    "minimum_effect_size": "探索阈值见主文第8节；不得当显著性证据。",
+    "failure_interpretation": "算子不一致则修实现；受限族oracle失败则修先验；标签隔离失败不得进入主训练。",
+    "expected_output_artifact": "research/d2_feasibility_and_story_20261006/future-results/B1/summary.json",
+    "compute_budget": "B1 CPU小检查；其余先实测2000步1种子，暂定10000步全组一致；不承诺运行时长。",
+    "dependencies": [],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "按固定场景清单与生成模式划分；未看D2结果；不按测试错误选择案例。",
+    "non_vacuity_check": "代数先验族可恢复、加性参照可胜已检查；网络可学性与可微D未检查。",
+    "complete_outcome_accounting": "记录planned/completed/failed/skipped/timeout/retry；保留OOM、NaN、空分母及所有种子，重试与父run关联。",
+    "hidden_information_controls": "模型只读观测与声明生成先验；测试HR只进冻结评估器，训练不读取HR；legacy归一化元数据另行披露。",
+    "independence_requirements": [],
+    "independence_evidence": "本轮为同一代理自审；未来评估暂不宣称独立。",
+    "operational_threat_model": "探索研究的标签泄漏、结果挑选和预算失配。",
+    "operational_harms": "错误科研结论与无效计算投入。",
+    "predecessor_failures": [
+      "Generic interaction, projection and synergy training have substantial prior art.",
+      "Unrestricted joint-null targets are not identifiable from the two observations.",
+      "Uploaded supervised checkpoint binding and test-based selection are unsuitable as the main comparator."
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_feasibility_and_story_20261006/future-results/B1/summary.json",
+          "kind": "metrics_and_failures"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "人工检查前驱科学门槛后才激活；完成文件或通过结构校验不等于通过门槛。"
+  },
+  {
+    "block_id": "B2",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1"
+    ],
+    "decision_gate_id": "G2",
+    "anti_claims_ruled_out": [
+      "效应只由极强损失、任务不可学、辅助头塌缩或额外数据造成。"
+    ],
+    "why_this_block_exists": "受控任务与分离效应",
+    "dataset_split_task": "受控合成族轨道T；CAVE训练16/验证4/测试12轨道N，清单见split-manifest.csv。",
+    "systems_compared": [
+      "原联合Net无分离",
+      "同容量可加参照",
+      "角色辅助无分离G0",
+      "原表示直接分离"
+    ],
+    "fixed_factors": [
+      "原R/D及采样相位",
+      "数据与普通完整目标",
+      "公共权重复制初始化",
+      "冻结选模与指标"
+    ],
+    "variable_factors": [
+      "分离强度0/0.01/0.1/0.3梯度比",
+      "加性或乘法目标"
+    ],
+    "metrics": [
+      "E_mix",
+      "四幅完整误差",
+      "加性绝对差分",
+      "角色误差",
+      "非塌缩指标"
+    ],
+    "setup_details": "先1种子筛查，3种子主档；明确生成先验，按基础谱/空间模式划分，所有模型同数据普通完整L1。",
+    "seeds": 3,
+    "success_criterion": "联合参照能学；合理分离有可重复取舍且不是极强损失才出现；不将OOD普遍失败当损害。",
+    "minimum_effect_size": "探索阈值见主文第8节；不得当显著性证据。",
+    "failure_interpretation": "无合理效应则不保留解耦损害因果主张；不可学则调整诊断任务而非修改期待结论。",
+    "expected_output_artifact": "research/d2_feasibility_and_story_20261006/future-results/B2/summary.json",
+    "compute_budget": "B1 CPU小检查；其余先实测2000步1种子，暂定10000步全组一致；不承诺运行时长。",
+    "dependencies": [
+      "B1"
+    ],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "按固定场景清单与生成模式划分；未看D2结果；不按测试错误选择案例。",
+    "non_vacuity_check": "代数先验族可恢复、加性参照可胜已检查；网络可学性与可微D未检查。",
+    "complete_outcome_accounting": "记录planned/completed/failed/skipped/timeout/retry；保留OOM、NaN、空分母及所有种子，重试与父run关联。",
+    "hidden_information_controls": "模型只读观测与声明生成先验；测试HR只进冻结评估器，训练不读取HR；legacy归一化元数据另行披露。",
+    "independence_requirements": [],
+    "independence_evidence": "本轮为同一代理自审；未来评估暂不宣称独立。",
+    "operational_threat_model": "探索研究的标签泄漏、结果挑选和预算失配。",
+    "operational_harms": "错误科研结论与无效计算投入。",
+    "predecessor_failures": [
+      "Generic interaction, projection and synergy training have substantial prior art.",
+      "Unrestricted joint-null targets are not identifiable from the two observations.",
+      "Uploaded supervised checkpoint binding and test-based selection are unsuitable as the main comparator."
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_feasibility_and_story_20261006/future-results/B2/summary.json",
+          "kind": "metrics_and_failures"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "人工检查前驱科学门槛后才激活；完成文件或通过结构校验不等于通过门槛。"
+  },
+  {
+    "block_id": "B3",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1"
+    ],
+    "decision_gate_id": "G3",
+    "anti_claims_ruled_out": [
+      "效应只由极强损失、任务不可学、辅助头塌缩或额外数据造成。"
+    ],
+    "why_this_block_exists": "约束接口必要性",
+    "dataset_split_task": "受控合成族轨道T；CAVE训练16/验证4/测试12轨道N，清单见split-manifest.csv。",
+    "systems_compared": [
+      "直接分离",
+      "投影分离",
+      "弱直接分离",
+      "去互补负项",
+      "角色辅助无分离"
+    ],
+    "fixed_factors": [
+      "原R/D及采样相位",
+      "数据与普通完整目标",
+      "公共权重复制初始化",
+      "冻结选模与指标"
+    ],
+    "variable_factors": [
+      "分离施加位置及公平简单替代"
+    ],
+    "metrics": [
+      "E_mix",
+      "完整误差",
+      "角色重建",
+      "投影方差/有效秩",
+      "训练参数与成本"
+    ],
+    "setup_details": "相同角色目标、相同投影头参数与公共初始化；角色监督读取辅助映射以防常数逃避。",
+    "seeds": 3,
+    "success_criterion": "响应相对改善约10%且角色/完整误差没有明显恶化；简单替代不能解释全部效果。",
+    "minimum_effect_size": "探索阈值见主文第8节；不得当显著性证据。",
+    "failure_interpretation": "弱约束同样好则优先简单方案；头塌缩则接口机制失败，保留负结果。",
+    "expected_output_artifact": "research/d2_feasibility_and_story_20261006/future-results/B3/summary.json",
+    "compute_budget": "B1 CPU小检查；其余先实测2000步1种子，暂定10000步全组一致；不承诺运行时长。",
+    "dependencies": [
+      "B2"
+    ],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "按固定场景清单与生成模式划分；未看D2结果；不按测试错误选择案例。",
+    "non_vacuity_check": "代数先验族可恢复、加性参照可胜已检查；网络可学性与可微D未检查。",
+    "complete_outcome_accounting": "记录planned/completed/failed/skipped/timeout/retry；保留OOM、NaN、空分母及所有种子，重试与父run关联。",
+    "hidden_information_controls": "模型只读观测与声明生成先验；测试HR只进冻结评估器，训练不读取HR；legacy归一化元数据另行披露。",
+    "independence_requirements": [],
+    "independence_evidence": "本轮为同一代理自审；未来评估暂不宣称独立。",
+    "operational_threat_model": "探索研究的标签泄漏、结果挑选和预算失配。",
+    "operational_harms": "错误科研结论与无效计算投入。",
+    "predecessor_failures": [
+      "Generic interaction, projection and synergy training have substantial prior art.",
+      "Unrestricted joint-null targets are not identifiable from the two observations.",
+      "Uploaded supervised checkpoint binding and test-based selection are unsuitable as the main comparator."
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_feasibility_and_story_20261006/future-results/B3/summary.json",
+          "kind": "metrics_and_failures"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "人工检查前驱科学门槛后才激活；完成文件或通过结构校验不等于通过门槛。"
+  },
+  {
+    "block_id": "B4",
+    "paper_role": "main",
+    "claim_ids": [
+      "C2"
+    ],
+    "decision_gate_id": "G4",
+    "anti_claims_ruled_out": [
+      "收益来自额外目标、计算、参数、测试选模或改变退化与归一化。"
+    ],
+    "why_this_block_exists": "训练机制与自然指标",
+    "dataset_split_task": "受控合成族轨道T；CAVE训练16/验证4/测试12轨道N，清单见split-manifest.csv。",
+    "systems_compared": [
+      "B0-obs",
+      "B0-int",
+      "角色辅助G0",
+      "A0C0",
+      "A1C0",
+      "A0C1",
+      "A1C1",
+      "同预算真实内部任务",
+      "简单局部/高频误差加权"
+    ],
+    "fixed_factors": [
+      "原R/D及采样相位",
+      "数据与普通完整目标",
+      "公共权重复制初始化",
+      "冻结选模与指标"
+    ],
+    "variable_factors": [
+      "分离位置A",
+      "是否混合目标C"
+    ],
+    "metrics": [
+      "平均波段PSNR",
+      "RMSE×255",
+      "SAM度",
+      "E_mix",
+      "每场景差值",
+      "峰值显存/时间"
+    ],
+    "setup_details": "四元数据/完整L1/四次前向预算相同；训练观测16、验证观测4、冻结测试12；主3种子。",
+    "seeds": 3,
+    "success_criterion": "相对原架构内部任务与同四元普通训练PSNR暂以+0.10dB推进，RMSE不恶化、SAM差<=+0.02度，且重复方向一致。",
+    "minimum_effect_size": "探索阈值见主文第8节；不得当显著性证据。",
+    "failure_interpretation": "只合成有效则降为诊断；A无价值则删除A；只胜坏约束不算baseline收益；波动覆盖效应则不确定。",
+    "expected_output_artifact": "research/d2_feasibility_and_story_20261006/future-results/B4/summary.json",
+    "compute_budget": "B1 CPU小检查；其余先实测2000步1种子，暂定10000步全组一致；不承诺运行时长。",
+    "dependencies": [
+      "B1",
+      "B3"
+    ],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "按固定场景清单与生成模式划分；未看D2结果；不按测试错误选择案例。",
+    "non_vacuity_check": "代数先验族可恢复、加性参照可胜已检查；网络可学性与可微D未检查。",
+    "complete_outcome_accounting": "记录planned/completed/failed/skipped/timeout/retry；保留OOM、NaN、空分母及所有种子，重试与父run关联。",
+    "hidden_information_controls": "模型只读观测与声明生成先验；测试HR只进冻结评估器，训练不读取HR；legacy归一化元数据另行披露。",
+    "independence_requirements": [],
+    "independence_evidence": "本轮为同一代理自审；未来评估暂不宣称独立。",
+    "operational_threat_model": "探索研究的标签泄漏、结果挑选和预算失配。",
+    "operational_harms": "错误科研结论与无效计算投入。",
+    "predecessor_failures": [
+      "Generic interaction, projection and synergy training have substantial prior art.",
+      "Unrestricted joint-null targets are not identifiable from the two observations.",
+      "Uploaded supervised checkpoint binding and test-based selection are unsuitable as the main comparator."
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_feasibility_and_story_20261006/future-results/B4/summary.json",
+          "kind": "metrics_and_failures"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "人工检查前驱科学门槛后才激活；完成文件或通过结构校验不等于通过门槛。"
+  },
+  {
+    "block_id": "B5",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "decision_gate_id": "G5",
+    "anti_claims_ruled_out": [
+      "效应只由极强损失、任务不可学、辅助头塌缩或额外数据造成。",
+      "收益来自额外目标、计算、参数、测试选模或改变退化与归一化。"
+    ],
+    "why_this_block_exists": "近期强对照与先验边界",
+    "dataset_split_task": "受控合成族轨道T；CAVE训练16/验证4/测试12轨道N，清单见split-manifest.csv。",
+    "systems_compared": [
+      "冻结最终候选",
+      "MossFuse同协议",
+      "分解或关系家族CLoRF/SHOTUN择一",
+      "公平简单最佳组"
+    ],
+    "fixed_factors": [
+      "原R/D及采样相位",
+      "数据与普通完整目标",
+      "公共权重复制初始化",
+      "冻结选模与指标"
+    ],
+    "variable_factors": [
+      "已声明先验偏差",
+      "噪声/退化敏感性",
+      "另一个数据集"
+    ],
+    "metrics": [
+      "PSNR/RMSE/SAM",
+      "场景与种子差值区间",
+      "失败比例",
+      "预算"
+    ],
+    "setup_details": "关键结论建议5种子；第二数据集来源未冻结，不启动；场景优化与摊销模型成本单列。",
+    "seeds": 5,
+    "success_criterion": "强对照与另一个声明范围内场景集合重复成立，机制有效范围与失败先验清楚；近邻检索补全。",
+    "minimum_effect_size": "探索阈值见主文第8节；不得当显著性证据。",
+    "failure_interpretation": "收益不重复或同构先行工作覆盖则降级定位；不可解释负结果不可省略。",
+    "expected_output_artifact": "research/d2_feasibility_and_story_20261006/future-results/B5/summary.json",
+    "compute_budget": "B1 CPU小检查；其余先实测2000步1种子，暂定10000步全组一致；不承诺运行时长。",
+    "dependencies": [
+      "B4"
+    ],
+    "priority": "nice-to-have",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "按固定场景清单与生成模式划分；未看D2结果；不按测试错误选择案例。",
+    "non_vacuity_check": "代数先验族可恢复、加性参照可胜已检查；网络可学性与可微D未检查。",
+    "complete_outcome_accounting": "记录planned/completed/failed/skipped/timeout/retry；保留OOM、NaN、空分母及所有种子，重试与父run关联。",
+    "hidden_information_controls": "模型只读观测与声明生成先验；测试HR只进冻结评估器，训练不读取HR；legacy归一化元数据另行披露。",
+    "independence_requirements": [],
+    "independence_evidence": "本轮为同一代理自审；未来评估暂不宣称独立。",
+    "operational_threat_model": "探索研究的标签泄漏、结果挑选和预算失配。",
+    "operational_harms": "错误科研结论与无效计算投入。",
+    "predecessor_failures": [
+      "Generic interaction, projection and synergy training have substantial prior art.",
+      "Unrestricted joint-null targets are not identifiable from the two observations.",
+      "Uploaded supervised checkpoint binding and test-based selection are unsuitable as the main comparator."
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        {
+          "path": "model.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "utils.py",
+          "snapshot": "digest-at-start"
+        },
+        {
+          "path": "research/d2_feasibility_and_story_20261006/experiment-plan/split-manifest.csv",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "declared_evaluator_artifacts": [
+        {
+          "path": "calculate_metrics.py",
+          "snapshot": "digest-at-start"
+        }
+      ],
+      "required_outputs": [
+        {
+          "path": "research/d2_feasibility_and_story_20261006/future-results/B5/summary.json",
+          "kind": "metrics_and_failures"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    },
+    "activation_rule": "人工检查前驱科学门槛后才激活；完成文件或通过结构校验不等于通过门槛。"
+  }
+]

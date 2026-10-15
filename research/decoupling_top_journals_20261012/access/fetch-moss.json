@@ -1,0 +1,48 @@
+{
+  "canonical_id": "arxiv:2412.04802",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Unsupervised Hyperspectral Image Super-Resolution via Self-Supervised Modality Decoupling",
+  "year": 2024,
+  "doi": null,
+  "arxiv_id": "2412.04802v4",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\fulltext\\arxiv_2412.04802\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\fulltext\\arxiv_2412.04802\\parsed.md",
+  "parser": "html",
+  "abstract": "Fusion-based hyperspectral image super-resolution aims to fuse low-resolution hyperspectral images (LR-HSIs) and high-resolution multispectral images (HR-MSIs) to reconstruct high spatial and high spectral resolution images. Current methods typically apply direct fusion from the two modalities without effective supervision, leading to an incomplete perception of deep modality-complementary information and a limited understanding of inter-modality correlations. To address these issues, we propose a simple yet effective solution for unsupervised HMIF, revealing that modality decoupling is key to improving fusion performance. Specifically, we propose an end-to-end self-supervised Modality-Decoupled Spatial-Spectral Fusion (MossFuse) framework that decouples shared and complementary information across modalities and aggregates a concise representation of both LR-HSIs and HR-MSIs to reduce modality redundancy. Also, we introduce the subspace clustering loss as a clear guide to decouple modality-shared features from modality-complementary ones. Systematic experiments over multiple datasets demonstrate that our simple and effective approach consistently outperforms the existing HMIF methods while requiring considerably fewer parameters with reduced inference time. The source source code is in \\href{https://github.com/dusongcheng/MossFuse}{MossFuse}.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    },
+    {
+      "step": "cache",
+      "outcome": "hit"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 2234,
+  "parsed_chars": 108769,
+  "sentinel": "f5ca9f7ca223",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\fulltext\\arxiv_2412.04802\\parsed.md",
+      "offset": 0,
+      "limit": 2000
+    },
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\fulltext\\arxiv_2412.04802\\parsed.md",
+      "offset": 2000,
+      "limit": 234
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

@@ -1,0 +1,268 @@
+[
+  {
+    "title": [
+      "DSES-Diff: A Dynamic-Spectral and Efficient-Spatial Diffusion-Based Foundation Model for Scalable Hyperspectral and Multispectral Image Fusion"
+    ],
+    "DOI": "10.1109/tip.2026.3736733",
+    "container-title": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tip.2026.3736733",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3514-9705",
+        "authenticated-orcid": false,
+        "given": "Yang",
+        "family": "Xu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Nanjing University of Science and Technology (NJUST)",
+            "place": [
+              "Nanjing, China"
+            ],
+            "department": [
+              "School of Computer Science and Engineering"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jian",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nanjing University of Science and Technology (NJUST)",
+            "place": [
+              "Nanjing, China"
+            ],
+            "department": [
+              "School of Computer Science and Engineering"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3212-9584",
+        "authenticated-orcid": false,
+        "given": "Danfen",
+        "family": "Hong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Southeast University",
+            "place": [
+              "Nanjing, China"
+            ],
+            "department": [
+              "School of Automation"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0178-9384",
+        "authenticated-orcid": false,
+        "given": "Liang",
+        "family": "Xiao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nanjing University of Science and Technology (NJUST)",
+            "place": [
+              "Nanjing, China"
+            ],
+            "department": [
+              "School of Computer Science and Engineering"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4841-6051",
+        "authenticated-orcid": false,
+        "given": "Zhihui",
+        "family": "Wei",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nanjing University of Science and Technology (NJUST)",
+            "place": [
+              "Nanjing, China"
+            ],
+            "department": [
+              "School of Computer Science and Engineering"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7162-0202",
+        "authenticated-orcid": false,
+        "given": "Zebin",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nanjing University of Science and Technology (NJUST)",
+            "place": [
+              "Nanjing, China"
+            ],
+            "department": [
+              "School of Computer Science and Engineering"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/4358840/11715984.pdf?arnumber=11715984",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "title": [
+      "Hierarchical Spectral–Spatial Transformer for Hyperspectral and Multispectral Image Fusion"
+    ],
+    "DOI": "10.3390/rs16224127",
+    "container-title": [
+      "Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          5
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          5
+        ]
+      ]
+    },
+    "published-print": null,
+    "URL": "https://doi.org/10.3390/rs16224127",
+    "author": [
+      {
+        "given": "Tianxing",
+        "family": "Zhu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Software Engineering, Tongji University, Shanghai 200070, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qin",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Software Engineering, Tongji University, Shanghai 200070, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lixiang",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science, Northwestern Polytechnical University, Xi’an 710072, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": "<jats:p>This paper presents the Hierarchical Spectral–Spatial Transformer (HSST) network, a novel approach applicable to both drone-based and broader remote sensing platforms for integrating hyperspectral (HSI) and multispectral (MSI) imagery. The HSST network improves upon conventional multi-head self-attention transformers by integrating cross attention, effectively capturing spectral and spatial features across different modalities and scales. The network’s hierarchical design facilitates the extraction of multi-scale information and employs a progressive fusion strategy to incrementally refine spatial details through upsampling. Evaluations on three prominent hyperspectral datasets confirm the HSST’s superior efficacy over existing methods. The findings underscore the HSST’s utility for applications, including drone operations, where the high-fidelity fusion of HSI and MSI data is crucial.</jats:p>",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2072-4292/16/22/4127/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  }
+]

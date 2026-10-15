@@ -1,0 +1,316 @@
+[
+  {
+    "title": [
+      "A Two-Stage Conditional Diffusion Model With Differential Attention for Hyperspectral and Multispectral Image Fusion"
+    ],
+    "DOI": "10.1109/tip.2026.3723234",
+    "container-title": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tip.2026.3723234",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2358-9191",
+        "authenticated-orcid": false,
+        "given": "Yingxia",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Yangtze University",
+            "place": [
+              "Jingzhou, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0008-7255-7955",
+        "authenticated-orcid": false,
+        "given": "Ruijie",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Yangtze University",
+            "place": [
+              "Jingzhou, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5214-7114",
+        "authenticated-orcid": false,
+        "given": "Wai Keung",
+        "family": "Wong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The Hong Kong Polytechnic University",
+            "place": [
+              "Hong Kong, Hong Kong"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9554-2379",
+        "authenticated-orcid": false,
+        "given": "Jie",
+        "family": "Wen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Harbin Institute of Technology",
+            "place": [
+              "Shenzhen, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11658817.pdf?arnumber=11658817",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "title": [
+      "Unsupervised Model-Embedded Two-Stage Diffusion Method for Multispectral and Hyperspectral Image Fusion"
+    ],
+    "DOI": "10.1109/tgrs.2025.3610663",
+    "container-title": [
+      "IEEE Transactions on Geoscience and Remote Sensing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tgrs.2025.3610663",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0008-9169-6918",
+        "authenticated-orcid": false,
+        "given": "Jialin",
+        "family": "Zhou",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Electronics and Information Engineering, Harbin Institute of Technology, Harbin, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7308-9590",
+        "authenticated-orcid": false,
+        "given": "Shou",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Information and Communication Engineering, Harbin Engineering University, Harbin, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Kuo",
+        "family": "Yuan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronics and Information Engineering, Harbin Institute of Technology, Harbin, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Xinlan",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronics and Information Engineering, Harbin Institute of Technology, Harbin, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2692-3829",
+        "authenticated-orcid": false,
+        "given": "Ping",
+        "family": "Fu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronics and Information Engineering, Harbin Institute of Technology, Harbin, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1906-4883",
+        "authenticated-orcid": false,
+        "given": "Jiaqing",
+        "family": "Qiao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronics and Information Engineering, Harbin Institute of Technology, Harbin, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/36/10807682/11165469.pdf?arnumber=11165469",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "title": [
+      "Constrained Conditional Denoising Diffusion for Hyperspectral-Multispectral Fusion"
+    ],
+    "DOI": "10.1109/tci.2025.3643318",
+    "container-title": [
+      "IEEE Transactions on Computational Imaging"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tci.2025.3643318",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2005-405X",
+        "authenticated-orcid": false,
+        "given": "James E.",
+        "family": "Fowler",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Computer Engineering, Mississippi State University, Mississippi State, MS, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/6745852/11302051/11297763.pdf?arnumber=11297763",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  }
+]

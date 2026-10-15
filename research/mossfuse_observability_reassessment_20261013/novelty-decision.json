@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1",
+  "status": "complete",
+  "novelty_decision_rating": 3,
+  "impact_positioning_rating": 3,
+  "decision_confidence_rating": 3,
+  "narrowest_defensible_positioning": "已知正确成像算子下，检验观测灵敏度引导的共享与互补功能分工，是否改善未见SRF下的HSI–MSI融合并超出普通条件输入、增强与适应。",
+  "what_would_change_the_decision": "完整基线在合法响应变化下出现可重复的功能与任务问题，候选方法在公平对照中修复该问题，且补齐最接近方法全文后仍存在明确差异。",
+  "top_kill_shot_objections": [
+    "MossFuse已包含Shared共同观测监督、SRF/PSF、最终物理一致性与响应扰动，宽泛物理增强主张重复已有机制。",
+    "一般零空间歧义不构成Shared实际失效证据，Shared漂移也可能合理。",
+    "算子条件化、选择性重学习、置信度路由、零空间与不确定性已有强近邻。",
+    "补齐公开入口缺失的论文损失或使用更多监督、参数与适应预算会造成错误归因。"
+  ],
+  "literature_context_used": [
+    "prior-art-matrix.md",
+    "search-log.md",
+    "证据账本.md",
+    "MossFuse作者v4全文",
+    "作者仓库固定提交d6c7eb4a487046aecae5265cabf81b0c23506465"
+  ],
+  "paper_review_summary_used": "重新评估_证据与研究边界.md",
+  "claims_to_qualify": [
+    "MossFuse的Shared并非没有物理监督。",
+    "MossFuse已做响应扰动，但没有单独证明跨响应下的分支功能机制。",
+    "没有本轮模型实验，不能声称已发现MossFuse失败或候选方法有效。",
+    "部分近邻只有摘要或代码证据，不能宣称文献覆盖完整。",
+    "收窄版本仅获探索性定位，不是新颖性通过。"
+  ],
+  "missing_prior_work": [
+    "NUD/PAF、RASD-FuNet、WCGE-Net完整方法重叠审计",
+    "同任务算子相对功能分工与已知算子未见响应协议的更全面检索"
+  ],
+  "review_findings_to_add": [
+    {
+      "type": "claim_accuracy",
+      "claim": "Shared已有共同LR-MSI物理监督",
+      "evidence": "MossFuse式16"
+    },
+    {
+      "type": "methodology",
+      "claim": "当前公开反传入口与完整论文损失不同",
+      "evidence": "固定train.py149–164"
+    },
+    {
+      "type": "missing_information",
+      "claim": "分工瓶颈、独立改善收益尚无实验证据",
+      "evidence": "empirical_model_experiments_run=false"
+    }
+  ],
+  "literature_assurance": {
+    "mode": "unlinked",
+    "paths": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "file_sha256": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "corpus_manifest_sha256": "",
+    "corpus_version": null,
+    "review_profile": "targeted-novelty-challenge",
+    "assurance_verdict": "targeted-search-only-not-systematic",
+    "unresolved_high_priority_novelty_question_ids": [
+      "NQ1",
+      "NQ2",
+      "NQ3"
+    ]
+  }
+}

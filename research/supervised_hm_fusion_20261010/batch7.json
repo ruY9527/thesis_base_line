@@ -1,0 +1,17 @@
+[
+  [
+    "hsc_train",
+    "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/train_caveL1_method2.py",
+    "text"
+  ],
+  [
+    "hsc_model",
+    "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/net2/multiscale_specconvfront2_reschangemarx.py",
+    "text"
+  ],
+  [
+    "hsc_readme",
+    "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/README.md",
+    "text"
+  ]
+]

@@ -1,0 +1,162 @@
+{
+  "as_of": "2026-10-07",
+  "scope": "targeted deep research, not a systematic review or exhaustive novelty proof",
+  "records": [
+    {
+      "title": "dTV",
+      "venue": "Inverse Problems 2018",
+      "url": "https://arxiv.org/abs/1710.05705",
+      "read_depth": "完整arXiv v4：END-OF-PAPER:a4aac5004727",
+      "overlap": "方向几何引导、盲核和失配",
+      "threat": 4,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "HSR-Diff",
+      "venue": "ICCV 2023",
+      "url": "https://arxiv.org/abs/2306.12085",
+      "read_depth": "本地已有全文证据，本轮复用；本轮 CVF 403",
+      "overlap": "双观测条件扩散",
+      "threat": 4,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "DDIF",
+      "venue": "Information Fusion 2024",
+      "url": "https://liangjiandeng.github.io/papers/2024/zihan-infus2024.pdf",
+      "read_depth": "本地作者全文，本轮重新核对 CSM/FWM 方法段",
+      "overlap": "残差扩散、粗细条件调制与空间小波",
+      "threat": 5,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "GEWDiff",
+      "venue": "AAAI 2026",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/37978/41940",
+      "read_depth": "本地正式全文表2/结论，本轮在线作者扩展稿方法",
+      "overlap": "mask条件与边缘噪声",
+      "threat": 5,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "GGAT",
+      "venue": "Pattern Recognition 2026；卷期 November 2026，已在线",
+      "url": "https://doi.org/10.1016/j.patcog.2026.113592",
+      "read_depth": "出版商可检索摘要、引言；完整访问403；首次上线日期未核实",
+      "overlap": "HSI–MSI显式高阶几何和MSI图注意力",
+      "threat": 5,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "SDP-Net",
+      "venue": "Knowledge-Based Systems 2026",
+      "url": "https://doi.org/10.1016/j.knosys.2026.116227",
+      "read_depth": "摘要/引言＋固定提交作者模型全文与train函数；完整论文缺口",
+      "overlap": "像素结构引导、控制注入、光谱保护、双路径门控",
+      "threat": 5,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "SA-RFM",
+      "venue": "ICML 2026，PMLR 306",
+      "url": "https://proceedings.mlr.press/v306/zhang26df.html",
+      "read_depth": "完整会议PDF含附录：END-OF-PAPER:4b86a82f8070",
+      "overlap": "MSI结构诱导各向异性条件生成，联合配准融合",
+      "threat": 4,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "ARGS-Diff",
+      "venue": "CVPR 2025",
+      "url": "https://arxiv.org/abs/2505.11800",
+      "read_depth": "本地既有作者全文和正式定位，本轮CVF403",
+      "overlap": "自学习双先验、自适应观测残差指导",
+      "threat": 4,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "Matrix-R",
+      "venue": "Sensors 2025",
+      "url": "https://www.mdpi.com/1424-8220/25/24/7662",
+      "read_depth": "出版商全文投影定义和历史pansharpening段落，非全篇精读",
+      "overlap": "响应行空间/零空间分离",
+      "threat": 5,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "DDSR",
+      "venue": "Remote Sensing 2024",
+      "url": "https://doi.org/10.3390/rs16152692",
+      "read_depth": "工作区既有方法段证据；本轮尝试全文429",
+      "overlap": "响应range/null分离及扩散",
+      "threat": 5,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "HSDiff",
+      "venue": "arXiv预印本 2025",
+      "url": "https://arxiv.org/abs/2511.18473",
+      "read_depth": "作者全文相关方法、实验、局限和metameric augmentation段落",
+      "overlap": "纹理引导同色异谱增强、物理后验与不确定性",
+      "threat": 4,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "Prior-consistent DIM",
+      "venue": "Geo-spatial Information Science，2026在线",
+      "url": "https://doi.org/10.1080/10095020.2026.2694245",
+      "read_depth": "出版商可检索摘要/动机；全文403",
+      "overlap": "退化先验注入及空间光谱一致性",
+      "threat": 4,
+      "origin": "previous bounded research; evidence not silently promoted"
+    },
+    {
+      "title": "HySure",
+      "venue": "TGRS 2015",
+      "url": "https://doi.org/10.1109/TGRS.2014.2375320",
+      "read_depth": "完整作者预印本：END-OF-PAPER:ae722f549f12"
+    },
+    {
+      "title": "CLoRF",
+      "venue": "IJCV 2025",
+      "url": "https://doi.org/10.1007/s11263-025-02540-1",
+      "read_depth": "完整arXiv v2：END-OF-PAPER:f844f69e099d；核心train脚本，正式版差异未逐页核对"
+    },
+    {
+      "title": "Local low rank HSI fusion",
+      "venue": "TIP 2016",
+      "url": "https://doi.org/10.1109/TIP.2015.2496263",
+      "read_depth": "正式元数据/摘要；助手最后取得的PDF实际是2014扩展报告，不能视为正式版全文"
+    },
+    {
+      "title": "Local low rank extended report",
+      "venue": "HAL extended report 2014",
+      "url": "https://hal.science/hal-00960076v2",
+      "read_depth": "完整正文与参考文献：END-OF-PAPER:358766021635；显式小奇异值噪声放大与ridge逆解先例"
+    },
+    {
+      "title": "Local low rank coupled unmixing",
+      "venue": "TGRS 2017",
+      "url": "https://doi.org/10.1109/TGRS.2017.2718728",
+      "read_depth": "发现候选、摘要；全文获取失败，不用于细节否定"
+    },
+    {
+      "title": "STEREO",
+      "venue": "TSP 2018",
+      "url": "https://doi.org/10.1109/TSP.2018.2876362",
+      "read_depth": "发现与理论挑战候选；HTML为14行stub，已降级；不用于细节综合"
+    },
+    {
+      "title": "IR&ArF",
+      "venue": "TIP 2025",
+      "url": "https://doi.org/10.1109/TIP.2025.3551531",
+      "read_depth": "发现候选；SA-RFM参考文献交叉验证，不深读"
+    },
+    {
+      "title": "Deep SURE",
+      "venue": "TGRS 2022",
+      "url": "https://doi.org/10.1109/TGRS.2022.3215902",
+      "read_depth": "CLoRF参考文献发现；可作后续对照，不推断方法细节"
+    }
+  ]
+}

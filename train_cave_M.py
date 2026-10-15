@@ -1,7 +1,8 @@
 from scipy.io import loadmat
 from thop import profile, clever_format
 
-from model import Net
+#from model import Net
+from model_decoupling import Net
 from calculate_metrics import Loss_SAM, Loss_RMSE, Loss_PSNR
 
 from train_dataloader import *
@@ -74,7 +75,7 @@ def train_model():
     stride = 32  # 滑动窗口方式裁剪，stride
     stride1 = 32  # 重建用的stride
     LR = 0.00015  # 0.00015
-    EPOCH = 2000  # 2000
+    EPOCH = 1000  # 2000
     weight_decay = 1e-8
     BATCH_SIZE = 16
     num = 20

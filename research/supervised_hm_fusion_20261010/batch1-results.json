@@ -1,0 +1,198 @@
+[
+  {
+    "id": "eccv2026",
+    "requested_url": "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+    "final_url": "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+    "content_type": "text/html; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\eccv2026\\source.html",
+    "bytes": 4793927,
+    "sha256": "1eec2ae790117778a296efacfc8e6fd8a40042775de089c12f157eceaa17d1f3",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "spectral_titles": [
+      {
+        "title": "MorphJEPA: Morphology-Aware Latent Prediction for Hyperspectral Images",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/4891"
+      },
+      {
+        "title": "Filterless Snapshot Hyperspectral Imaging using Guided Patch Diffusion",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/3834"
+      },
+      {
+        "title": "Compact Low-Cost Hyperspectral Imaging via Angular-to-Spectral Diversity Conversion",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/3677"
+      },
+      {
+        "title": "OneHSI: A Unified Hyperspectral Foundation Model with Physical Consistency",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/4477"
+      },
+      {
+        "title": "Context-Aware Joint Alignment for Cross-Scene Hyperspectral Image Classification",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/4764"
+      },
+      {
+        "title": "LGD-Net: Leader-Guided Cross-Modal Dynamics for Hyperspectral and Panchromatic Image Fusion",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/3288"
+      },
+      {
+        "title": "Rethinking Cross-Spectral Image Generation via Shared-Specific Representation",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/4507"
+      }
+    ]
+  },
+  {
+    "id": "cvpr2026",
+    "requested_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+    "final_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\cvpr2026\\source.html",
+    "bytes": 12117927,
+    "sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "spectral_titles": [
+      {
+        "title": "Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Cai_Exploring_Spatiotemporal_Feature_Propagation_for_Video-Level_Compressive_Spectral_Reconstruction_Dataset_CVPR_2026_paper.html"
+      },
+      {
+        "title": "Enhancing Unregistered Hyperspectral Image Super-Resolution via Unmixing-based Abundance Fusion Learning",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Enhancing_Unregistered_Hyperspectral_Image_Super-Resolution_via_Unmixing-based_Abundance_Fusion_Learning_CVPR_2026_paper.html"
+      },
+      {
+        "title": "Joint Spectral Image Reconstruction and Semantic Segmentation with Cooperative Unfolding",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper.html"
+      },
+      {
+        "title": "Spectral Super-Resolution via Adversarial Unfolding and Data-Driven Spectrum Regularization: From Multispectral Satellite Data to NASA Hyperspectral Image",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Young_Spectral_Super-Resolution_via_Adversarial_Unfolding_and_Data-Driven_Spectrum_Regularization_From_CVPR_2026_paper.html"
+      },
+      {
+        "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html"
+      },
+      {
+        "title": "Lumosaic: Hyperspectral Video via Active Illumination and Coded-Exposure Pixels",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Verma_Lumosaic_Hyperspectral_Video_via_Active_Illumination_and_Coded-Exposure_Pixels_CVPR_2026_paper.html"
+      },
+      {
+        "title": "Regulating Rather than Constraining: Adaptive Guidance for Complex Spectral Reconstruction in Pansharpening",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wen_Regulating_Rather_than_Constraining_Adaptive_Guidance_for_Complex_Spectral_Reconstruction_CVPR_2026_paper.html"
+      },
+      {
+        "title": "MetaSpectra+: A Compact Broadband Metasurface Camera for Snapshot Hyperspectral+ Imaging",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_MetaSpectra_A_Compact_Broadband_Metasurface_Camera_for_Snapshot_Hyperspectral_Imaging_CVPR_2026_paper.html"
+      }
+    ]
+  },
+  {
+    "id": "diffdiff_crossref",
+    "requested_url": "https://api.crossref.org/works?query.title=A%20Two-Stage%20Conditional%20Diffusion%20Model%20With%20Differential%20Attention%20for%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=3",
+    "final_url": "https://api.crossref.org/works?query.title=A%20Two-Stage%20Conditional%20Diffusion%20Model%20With%20Differential%20Attention%20for%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=3",
+    "content_type": "application/json",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\diffdiff_crossref\\source.json",
+    "bytes": 28599,
+    "sha256": "8de9bf4a53df854430b26526380ac592d25d86e2446567aec34594340d00b270",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "matches": [
+      {
+        "title": [
+          "A Two-Stage Conditional Diffusion Model With Differential Attention for Hyperspectral and Multispectral Image Fusion"
+        ],
+        "DOI": "10.1109/tip.2026.3723234",
+        "container-title": [
+          "IEEE Transactions on Image Processing"
+        ],
+        "published-online": null
+      },
+      {
+        "title": [
+          "Unsupervised Model-Embedded Two-Stage Diffusion Method for Multispectral and Hyperspectral Image Fusion"
+        ],
+        "DOI": "10.1109/tgrs.2025.3610663",
+        "container-title": [
+          "IEEE Transactions on Geoscience and Remote Sensing"
+        ],
+        "published-online": null
+      },
+      {
+        "title": [
+          "Constrained Conditional Denoising Diffusion for Hyperspectral-Multispectral Fusion"
+        ],
+        "DOI": "10.1109/tci.2025.3643318",
+        "container-title": [
+          "IEEE Transactions on Computational Imaging"
+        ],
+        "published-online": null
+      }
+    ]
+  },
+  {
+    "id": "bhsr_crossref",
+    "requested_url": "https://api.crossref.org/works?query.title=Blur-Resistant%20Hyperspectral%20Image%20Super-Resolution%20via%20Dual-Degradation%20Fusion%20Model&rows=3",
+    "final_url": "https://api.crossref.org/works?query.title=Blur-Resistant%20Hyperspectral%20Image%20Super-Resolution%20via%20Dual-Degradation%20Fusion%20Model&rows=3",
+    "content_type": "application/json",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_crossref\\source.json",
+    "bytes": 19003,
+    "sha256": "9b4a755a196f244c8d043c49bd1b86e29b59a3807f6005486d3323e44b3bd1e8",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "matches": [
+      {
+        "title": [
+          "Blur-Resistant Hyperspectral Image Super-Resolution via Dual-Degradation Fusion Model"
+        ],
+        "DOI": "10.1109/tip.2026.3714832",
+        "container-title": [
+          "IEEE Transactions on Image Processing"
+        ],
+        "published-online": null
+      },
+      {
+        "title": [
+          "Hyperspectral Image Super-Resolution Via Adjacent Spectral Fusion Strategy"
+        ],
+        "DOI": "10.1109/icassp39728.2021.9413980",
+        "container-title": [
+          "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+        ],
+        "published-online": null
+      },
+      {
+        "title": [
+          "Image Fusion for Hyperspectral Image Super-Resolution"
+        ],
+        "DOI": "10.1109/whispers.2018.8747231",
+        "container-title": [
+          "2018 9th Workshop on Hyperspectral Image and Signal Processing: Evolution in Remote Sensing (WHISPERS)"
+        ],
+        "published-online": null
+      }
+    ]
+  },
+  {
+    "id": "emrdiff",
+    "requested_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+    "final_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+    "content_type": "application/pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+    "bytes": 3226159,
+    "sha256": "638a1409c0ffea067b25f72800cf3cb4f81dd3ab327d3aee578597c375608e60",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "extraction_error": "No module named 'pymupdf'"
+  },
+  {
+    "id": "co2if",
+    "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38261/42223",
+    "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38261/42223",
+    "content_type": "application/pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\co2if\\source.pdf",
+    "bytes": 2499001,
+    "sha256": "c3d1c2fc95f19ce1ae44219881c34b84448a150f77d43d975c6600db1d8f0d49",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "extraction_error": "No module named 'pymupdf'"
+  }
+]

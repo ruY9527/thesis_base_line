@@ -1,0 +1,680 @@
+[
+  {
+    "name": "ambiguity_separation",
+    "identifier": "https://arxiv.org/pdf/2605.15050",
+    "canonical_id": "arxiv:2605.15050",
+    "source": "arxiv_html",
+    "format": "html",
+    "status": "ok",
+    "title": "Separating Intrinsic Ambiguity from Estimation Uncertainty in Deep Generative Models for Linear Inverse Problems",
+    "year": 2026,
+    "doi": null,
+    "arxiv_id": "2605.15050",
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2605.15050\\raw.html",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2605.15050\\parsed.md",
+    "parser": "html",
+    "abstract": "Recently, deep generative models have been used for posterior inference in inverse problems, including high-stakes applications in medical imaging and scientific discovery, where the uncertainty of a prediction can matter as much as the prediction itself. However, posterior uncertainty is difficult to interpret because it can mix ambiguity inherent to the forward operator with uncertainty propagated through inference. We introduce a structural decomposition of posterior uncertainty that isolates intrinsic ambiguity. A cascade formulation makes this ambiguity accessible for calibration analysis, enabling qualitative diagnostics and simulation-based calibration tests that reveal failure modes that remain hidden when models are selected by reconstruction quality alone. We first validate the approach on a Gaussian example with analytical posterior structure, then illustrate the decomposition on accelerated magnetic resonance imaging (MRI), and finally apply the calibration diagnostics to electroencephalography (EEG) source imaging.",
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "no oa pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 736,
+    "parsed_chars": 68353,
+    "sentinel": "cdd680e21009",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2605.15050\\parsed.md",
+        "offset": 0,
+        "limit": 736
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": null
+  },
+  {
+    "name": "bugpan",
+    "identifier": "10.1016/j.inffus.2025.102938",
+    "canonical_id": "doi:10.1016/j.inffus.2025.102938",
+    "source": "",
+    "format": "",
+    "status": "failed",
+    "title": "Bidomain uncertainty gated recursive network for pan-sharpening",
+    "year": 2025,
+    "doi": "10.1016/j.inffus.2025.102938",
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": null,
+    "parsed_path": null,
+    "parser": null,
+    "abstract": null,
+    "tried": [
+      {
+        "step": "unpaywall",
+        "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+      },
+      {
+        "step": "openalex",
+        "outcome": "no oa"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      },
+      {
+        "step": "crossref",
+        "outcome": "no pdf link"
+      },
+      {
+        "step": "doi_landing",
+        "outcome": "http 200"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ],
+    "note": "All sources failed and no abstract was retrievable",
+    "parsed_lines": null,
+    "parsed_chars": null,
+    "sentinel": null,
+    "read_plan": [],
+    "figures": [],
+    "parser_used_ocr": null
+  },
+  {
+    "name": "carl",
+    "identifier": "https://proceedings.iclr.cc/paper_files/paper/2026/file/282967f8abaae52a452a97ee961410f3-Paper-Conference.pdf",
+    "canonical_id": "url:c262a8a47ce209f1",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_c262a8a47ce209f1\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_c262a8a47ce209f1\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1361,
+    "parsed_chars": 89205,
+    "sentinel": "e217733d253b",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_c262a8a47ce209f1\\parsed.md",
+        "offset": 0,
+        "limit": 1361
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "copgnet",
+    "identifier": "10.1016/j.inffus.2025.103997",
+    "canonical_id": "doi:10.1016/j.inffus.2025.103997",
+    "source": "",
+    "format": "",
+    "status": "failed",
+    "title": "Exploring structured uncertainty for external prior-guided hyperspectral image fusion",
+    "year": 2025,
+    "doi": "10.1016/j.inffus.2025.103997",
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": null,
+    "parsed_path": null,
+    "parser": null,
+    "abstract": null,
+    "tried": [
+      {
+        "step": "unpaywall",
+        "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+      },
+      {
+        "step": "openalex",
+        "outcome": "no oa"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "no oa pdf"
+      },
+      {
+        "step": "crossref",
+        "outcome": "no pdf link"
+      },
+      {
+        "step": "doi_landing",
+        "outcome": "http 200"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ],
+    "note": "All sources failed and no abstract was retrievable",
+    "parsed_lines": null,
+    "parsed_chars": null,
+    "sentinel": null,
+    "read_plan": [],
+    "figures": [],
+    "parser_used_ocr": null
+  },
+  {
+    "name": "diff_spectra",
+    "identifier": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c34ddd05eb089991f06f3c5dc36836e0-Paper-Conference.pdf",
+    "canonical_id": "url:1a56609bb2664d53",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_1a56609bb2664d53\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_1a56609bb2664d53\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1225,
+    "parsed_chars": 79555,
+    "sentinel": "a4f3dfe88cb4",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_1a56609bb2664d53\\parsed.md",
+        "offset": 0,
+        "limit": 1225
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "difiv",
+    "identifier": "https://www.cedric-richard.fr/Articles/wang2023deep.pdf",
+    "canonical_id": "url:4db410cd0a0fae61",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_4db410cd0a0fae61\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_4db410cd0a0fae61\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1545,
+    "parsed_chars": 70943,
+    "sentinel": "20dec1dde813",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_4db410cd0a0fae61\\parsed.md",
+        "offset": 0,
+        "limit": 1545
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "gsnr",
+    "identifier": "https://openaccess.thecvf.com/content/CVPR2026/papers/Gualdron-Hurtado_GSNR_Graph_Smooth_Null-Space_Representation_for_Inverse_Problems_CVPR_2026_paper.pdf",
+    "canonical_id": "url:e3e793af408e3a65",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_e3e793af408e3a65\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_e3e793af408e3a65\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1143,
+    "parsed_chars": 49219,
+    "sentinel": "e56a8daee065",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_e3e793af408e3a65\\parsed.md",
+        "offset": 0,
+        "limit": 1143
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "hipandas",
+    "identifier": "https://openaccess.thecvf.com/content/ICCV2025/papers/Xu_Hipandas_Hyperspectral_Image_Joint_Denoising_and_Super-Resolution_by_Image_Fusion_ICCV_2025_paper.pdf",
+    "canonical_id": "url:5a6d3a3e04b71018",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_5a6d3a3e04b71018\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_5a6d3a3e04b71018\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 971,
+    "parsed_chars": 46481,
+    "sentinel": "3c8dd44958a0",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_5a6d3a3e04b71018\\parsed.md",
+        "offset": 0,
+        "limit": 971
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "lightweight_unaligned",
+    "identifier": "https://arxiv.org/pdf/2609.01060",
+    "canonical_id": "arxiv:2609.01060",
+    "source": "arxiv_html",
+    "format": "html",
+    "status": "ok",
+    "title": "Lightweight Interpretable RGB-Guided Hyperspectral Super-Resolution under Real Cross-resolution Misalignment",
+    "year": 2026,
+    "doi": null,
+    "arxiv_id": "2609.01060",
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2609.01060\\raw.html",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2609.01060\\parsed.md",
+    "parser": "html",
+    "abstract": "Compact snapshot hyperspectral cameras provide rich instantaneous spectral measurements for ground-level machine vision, but at lower spatial resolution than standard RGB cameras. RGB-guided hyperspectral super-resolution (HSR) addresses this limitation by transferring spatial detail from a high-resolution RGB guide to a low-resolution hyperspectral image (HSI). These dual-camera systems are typically in a horizontal rig geometry, requiring cross-camera image alignment due to different fields of view. However, residual misregistration can inject spurious high-frequency details. Existing learned unaligned-fusion methods are usually trained for a fixed spectral support and spatial scale factors and can be computationally demanding, limiting their flexibility across sensors. We propose a lightweight and interpretable RGB-guided HSR framework combining cross-modal flow alignment with model-based Gram-Schmidt orthogonalization fusion. The method first warps the RGB guide onto the HSI grid, then estimates an energy-based confidence weight map by measuring local alignment reliability. This map is then used both in a weighted least-squares spectral regression and in a gated fusion between the super-resolved estimate and an HSI-preserving estimate. Unlike existing learned methods, the proposed framework has a low computational footprint and supports VIS-NIR spectral supports and scale factors without retraining. Experiments on the Real benchmark show that the proposed method improves reconstruction accuracy over learned fusion baselines while remaining substantially faster. On a 34-frame sequence acquired with our real RGB-HSI dual-camera setup, a reduced-resolution quantitative evaluation validates the method under genuine cross-sensor radiometric, noise, and geometric differences, while native-resolution qualitative results demonstrate deployment on the full 51-band VIS-NIR acquisition.",
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1086,
+    "parsed_chars": 55913,
+    "sentinel": "1546e6659bba",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2609.01060\\parsed.md",
+        "offset": 0,
+        "limit": 1086
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": null
+  },
+  {
+    "name": "pino",
+    "identifier": "https://proceedings.neurips.cc/paper_files/paper/2025/file/89af8e4eb696738f2c9e589522968a09-Paper-Conference.pdf",
+    "canonical_id": "url:f2374da1c30123d5",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f2374da1c30123d5\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f2374da1c30123d5\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1722,
+    "parsed_chars": 97680,
+    "sentinel": "1bb85f387467",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f2374da1c30123d5\\parsed.md",
+        "offset": 0,
+        "limit": 1722
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "specaware",
+    "identifier": "https://arxiv.org/pdf/2510.27219",
+    "canonical_id": "arxiv:2510.27219",
+    "source": "arxiv_html",
+    "format": "html",
+    "status": "ok",
+    "title": "SpecAware: A Spectral-Content Aware Foundation Model for Unifying Multi-Sensor Learning in Hyperspectral Remote Sensing Mapping",
+    "year": 2025,
+    "doi": null,
+    "arxiv_id": "2510.27219",
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\raw.html",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\parsed.md",
+    "parser": "html",
+    "abstract": "Hyperspectral imaging (HSI) is a critical technique for fine-grained land-use and land-cover (LULC) mapping. However, the inherent heterogeneity of HSI data, particularly the variation in spectral channels across sensors, has long constrained the development of model generalization via transfer learning or joint training. Existing HSI foundation models show promise for different downstream tasks, but typically underutilize the critical guiding role of sensor meta-attributes and image semantic features, resulting in limited adaptability to cross-sensor joint learning. To address these issues, we propose SpecAware, which is a novel hyperspectral spectral-content aware foundation model for unifying multi-sensor learning for HSI mapping. To support this work, we constructed the Hyper-400K dataset, which is a new large-scale pre-training dataset with over 400\\,k high-quality patches from diverse airborne AVIRIS sensors that cover two data processing levels (L1 and L2). The core of SpecAware is a hypernetwork-driven unified image embedding process for HSI data. Firstly, we designed a meta-content aware module to generate a unique conditional input for each HSI sample, tailored to each spectral band by fusing the sensor meta-attributes and its own image content. Secondly, we designed the HyperEmbedding module, where a sample-conditioned hypernetwork dynamically generates a pair of matrix factors for channel-wise encoding. This process implements two-step matrix factorization, consisting of adaptive spatial pattern extraction and latent semantic feature projection, yielding a unified hyperspectral token representation. Thus, SpecAware learns to capture and interpret spatial-spectral features across diverse scenes and sensors, enabling adaptive processing of variable spectral channels within a unified multi-sensor joint pre-training framework.",
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 2892,
+    "parsed_chars": 109905,
+    "sentinel": "709b41987850",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\parsed.md",
+        "offset": 0,
+        "limit": 2000
+      },
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\parsed.md",
+        "offset": 2000,
+        "limit": 892
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": null
+  },
+  {
+    "name": "srlf",
+    "identifier": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+    "canonical_id": "url:d592a59bf26e9693",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_d592a59bf26e9693\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_d592a59bf26e9693\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1062,
+    "parsed_chars": 43782,
+    "sentinel": "e11304668abd",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_d592a59bf26e9693\\parsed.md",
+        "offset": 0,
+        "limit": 1062
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "task_decoupled",
+    "identifier": "https://openaccess.thecvf.com/content/CVPR2022/papers/Huang_Task_Decoupled_Framework_for_Reference-Based_Super-Resolution_CVPR_2022_paper.pdf",
+    "canonical_id": "url:f3896f6c56068d5b",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f3896f6c56068d5b\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f3896f6c56068d5b\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 875,
+    "parsed_chars": 41852,
+    "sentinel": "23dc2b585231",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f3896f6c56068d5b\\parsed.md",
+        "offset": 0,
+        "limit": 875
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "uafl",
+    "identifier": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Enhancing_Unregistered_Hyperspectral_Image_Super-Resolution_via_Unmixing-based_Abundance_Fusion_Learning_CVPR_2026_paper.pdf",
+    "canonical_id": "url:2bb5993df40328fd",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1044,
+    "parsed_chars": 48915,
+    "sentinel": "2593c6d9b523",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\parsed.md",
+        "offset": 0,
+        "limit": 1044
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "umnet",
+    "identifier": "https://ojs.aaai.org/index.php/AAAI/article/download/37988/41950",
+    "canonical_id": "url:fe4bf9c1e6c6dec6",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_fe4bf9c1e6c6dec6\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_fe4bf9c1e6c6dec6\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 880,
+    "parsed_chars": 33705,
+    "sentinel": "3e70f9ba059e",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_fe4bf9c1e6c6dec6\\parsed.md",
+        "offset": 0,
+        "limit": 880
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "unipan",
+    "identifier": "https://openaccess.thecvf.com/content/ICCV2025/papers/Cui_Enpowering_Your_Pansharpening_Models_with_Generalizability_Unified_Distribution_is_All_ICCV_2025_paper.pdf",
+    "canonical_id": "url:2a2ed1bd3162fe5f",
+    "source": "direct_url",
+    "format": "pdf",
+    "status": "ok",
+    "title": null,
+    "year": null,
+    "doi": null,
+    "arxiv_id": null,
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2a2ed1bd3162fe5f\\raw.pdf",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2a2ed1bd3162fe5f\\parsed.md",
+    "parser": "pypdf fallback; page markers retained",
+    "abstract": null,
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 1237,
+    "parsed_chars": 54579,
+    "sentinel": "6e6a3ccaf7f6",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2a2ed1bd3162fe5f\\parsed.md",
+        "offset": 0,
+        "limit": 1237
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": false
+  },
+  {
+    "name": "uq_nullspace",
+    "identifier": "https://arxiv.org/pdf/2304.06955",
+    "canonical_id": "arxiv:2304.06955",
+    "source": "arxiv_html",
+    "format": "html",
+    "status": "ok",
+    "title": "Uncertainty-Aware Null Space Networks for Data-Consistent Image Reconstruction",
+    "year": 2023,
+    "doi": null,
+    "arxiv_id": "2304.06955",
+    "pmid": null,
+    "pmcid": null,
+    "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2304.06955\\raw.html",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2304.06955\\parsed.md",
+    "parser": "html",
+    "abstract": "Reconstructing an image from noisy and incomplete measurements is a central task in several image processing applications. In recent years, state-of-the-art reconstruction methods have been developed based on recent advances in deep learning. Especially for highly underdetermined problems, maintaining data consistency is a key goal. This can be achieved either by iterative network architectures or by a subsequent projection of the network reconstruction. However, for such approaches to be used in safety-critical domains such as medical imaging, the network reconstruction should not only provide the user with a reconstructed image, but also with some level of confidence in the reconstruction. In order to meet these two key requirements, this paper combines deep null-space networks with uncertainty quantification. Evaluation of the proposed method includes image reconstruction from undersampled Radon measurements on a toy CT dataset and accelerated MRI reconstruction on the fastMRI dataset. This work is the first approach to solving inverse problems that additionally models data-dependent uncertainty by estimating an input-dependent scale map, providing a robust assessment of reconstruction quality.",
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ],
+    "note": null,
+    "parsed_lines": 933,
+    "parsed_chars": 54950,
+    "sentinel": "f16507201b27",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2304.06955\\parsed.md",
+        "offset": 0,
+        "limit": 933
+      }
+    ],
+    "figures": [],
+    "parser_used_ocr": null
+  }
+]

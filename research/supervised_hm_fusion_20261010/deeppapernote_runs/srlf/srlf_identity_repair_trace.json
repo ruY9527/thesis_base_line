@@ -1,0 +1,296 @@
+{
+  "status": "ok",
+  "run_status": "ok",
+  "script": "build_identity_contract.py",
+  "artifact_type": "identity_repair_trace",
+  "schema_version": 2,
+  "paper_id": "doi:10.1109/cvpr52734.2025.00697",
+  "identity_verdict": "accepted",
+  "identity_failure_class": "",
+  "repair_attempts": [
+    {
+      "attempt": 1,
+      "action": "accept_identity_promotion",
+      "status": "accepted",
+      "evidence_used": [
+        {
+          "kind": "title_author_year",
+          "value": "A Selective Re-Learning Mechanism for Hyperspectral Fusion Imaging",
+          "source": "openalex"
+        }
+      ],
+      "rejected_candidate_identity": {
+        "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+        "translated_title": "用于高光谱融合成像的选择性再学习机制",
+        "authors": [
+          "Yuanye Liu",
+          "Jinyang Liu",
+          "Renwei Dian",
+          "Shutao Li"
+        ],
+        "year": "2025",
+        "venue": "CVPR 2025, pp. 7437–7446",
+        "doi": "",
+        "arxiv_id": "",
+        "zotero_key": ""
+      },
+      "accepted_correction": {
+        "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+        "translated_title": "用于高光谱融合成像的选择性再学习机制",
+        "authors": [
+          "Yuanye Liu",
+          "Jinyang Liu",
+          "Renwei Dian",
+          "Shutao Li"
+        ],
+        "year": "2025",
+        "venue": "CVPR 2025, pp. 7437–7446",
+        "doi": "10.1109/cvpr52734.2025.00697",
+        "arxiv_id": "",
+        "zotero_key": ""
+      },
+      "promoted_identifiers": {
+        "doi": "10.1109/cvpr52734.2025.00697"
+      },
+      "previous_paper_id": "title:44820b570eab",
+      "accepted_paper_id": "doi:10.1109/cvpr52734.2025.00697"
+    }
+  ],
+  "accepted_observations": [
+    {
+      "provider": "openalex",
+      "retrieved_by": {
+        "kind": "title",
+        "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+      },
+      "status": "accepted",
+      "reason": "title_author_year",
+      "record": {
+        "title": "A Selective Re-Learning Mechanism for Hyperspectral Fusion Imaging",
+        "authors": [
+          "Yuanye Liu",
+          "Jinyang Liu",
+          "Renwei Dian",
+          "Shutao Li"
+        ],
+        "affiliations": [
+          "Hunan University"
+        ],
+        "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+        "year": "2025",
+        "doi": "10.1109/cvpr52734.2025.00697",
+        "source": "openalex",
+        "source_type": "openalex",
+        "source_url": "https://doi.org/10.1109/cvpr52734.2025.00697",
+        "pdf_url": "",
+        "abstract": "",
+        "metadata_sources": [
+          "openalex"
+        ]
+      }
+    },
+    {
+      "provider": "crossref",
+      "retrieved_by": {
+        "kind": "title",
+        "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+      },
+      "status": "accepted",
+      "reason": "shared_identifier",
+      "record": {
+        "title": "A Selective Re-Learning Mechanism for Hyperspectral Fusion Imaging",
+        "authors": [
+          "Yuanye Liu",
+          "Jinyang Liu",
+          "Renwei Dian",
+          "Shutao Li"
+        ],
+        "affiliations": [
+          "Hunan University,The School of Robotics,China",
+          "Hunan University,The College of Electrical and Information Engineering,China"
+        ],
+        "venue": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "doi": "10.1109/cvpr52734.2025.00697",
+        "source": "crossref",
+        "source_type": "crossref",
+        "source_url": "https://doi.org/10.1109/cvpr52734.2025.00697",
+        "year": "2025",
+        "published": "2025",
+        "abstract": "",
+        "metadata_sources": [
+          "crossref"
+        ]
+      }
+    }
+  ],
+  "rejected_observations": [],
+  "bound_sources": [
+    {
+      "kind": "local_pdf",
+      "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+      "provider": "seed_record",
+      "binding_reason": "trusted_input"
+    },
+    {
+      "kind": "pdf_url",
+      "value": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+      "provider": "seed_record",
+      "binding_reason": "trusted_input"
+    }
+  ],
+  "field_provenance": {
+    "title": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "translated_title": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "authors": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "year": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "venue": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "abstract": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "source_url": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "pdf_url": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "local_pdf_path": {
+      "provider": "seed_record",
+      "retrieved_by": {
+        "kind": "input",
+        "value": "title:44820b570eab"
+      }
+    },
+    "affiliations": {
+      "provider": "openalex",
+      "retrieved_by": {
+        "kind": "title",
+        "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+      }
+    },
+    "doi": {
+      "provider": "openalex",
+      "retrieved_by": {
+        "kind": "title",
+        "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+      }
+    }
+  },
+  "selected_identity_evidence": [
+    {
+      "kind": "doi",
+      "value": "10.1109/cvpr52734.2025.00697",
+      "trust": "strong",
+      "source": "metadata"
+    },
+    {
+      "kind": "title",
+      "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+      "trust": "metadata",
+      "source": "metadata"
+    },
+    {
+      "kind": "trusted_source_path",
+      "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+      "trust": "strong",
+      "source": "source_manifestation"
+    },
+    {
+      "kind": "pdf_url",
+      "value": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+      "trust": "source_manifestation",
+      "source": "metadata"
+    },
+    {
+      "kind": "source_url",
+      "value": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+      "trust": "source_manifestation",
+      "source": "metadata"
+    },
+    {
+      "kind": "pdf_url",
+      "value": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+      "trust": "source_manifestation",
+      "source": "source_manifestation"
+    },
+    {
+      "kind": "source_url",
+      "value": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+      "trust": "source_manifestation",
+      "source": "source_manifestation"
+    }
+  ],
+  "equivalence_decision": {
+    "status": "equivalent",
+    "reason": "title_author_or_abstract_supports_equivalence",
+    "location_binding": "source_manifestation",
+    "evidence": [
+      {
+        "kind": "title_similarity",
+        "status": "match",
+        "score": 1.0,
+        "source_value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+        "work_value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+      },
+      {
+        "kind": "leading_author",
+        "status": "match",
+        "source_value": "Yuanye Liu",
+        "work_value": "Yuanye Liu"
+      },
+      {
+        "kind": "abstract_similarity",
+        "status": "match",
+        "score": 1.0
+      }
+    ]
+  },
+  "warnings": [],
+  "unresolved_risks": [],
+  "failure_summary": "",
+  "provenance": {
+    "resolve_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_resolve.json",
+    "metadata_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_metadata.json"
+  }
+}

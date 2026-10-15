@@ -1,0 +1,33 @@
+{
+  "verified_on": "2026-10-13",
+  "repository": "https://github.com/dusongcheng/MossFuse",
+  "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+  "committer_date": "2026-09-28T11:04:58Z",
+  "files": {
+    "dataset.py": {
+      "sha256": "cf137a80be81bc4c789d9c11431b4c870910ad4c71f7abca845c17dde4396c01",
+      "lines": 174
+    },
+    "degradation_net.py": {
+      "sha256": "a91946b318cf0a429836f94c21294313bfc2d9105c66cdfb0d99d5d82bc8e0e7",
+      "lines": 121
+    },
+    "MossFuseNet.py": {
+      "sha256": "f359ca1c9a5985f41b7e731cd0d9db0b8f11ab3aa68749d0acdb7a4a23bcf74c",
+      "lines": 263
+    },
+    "README.md": {
+      "sha256": "abc0547596d13ac356b6d800544ab5dffb4f1c49ec1c722ef169297e1d442fd8",
+      "lines": 68
+    },
+    "test.py": {
+      "sha256": "162a71f2b0bd85d1f8cb99055fdc1b867455aa66cba3421b8646e5a7603f529d",
+      "lines": 67
+    },
+    "train.py": {
+      "sha256": "7ff9c5298af8b05b8d65df51958cbfc1246da61e0a790e6a69bbe47e4d8290d3",
+      "lines": 294
+    }
+  },
+  "empirical_model_experiments_run": false
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "id": "tip_tpami_census",
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(ISSN%3A1057-7149%20OR%20ISSN%3A0162-8828)%20AND%20(hyperspectral%20AND%20(fusion%20OR%20super-resolution))%20AND%20FIRST_PDATE%3A%5B2025-01-01%20TO%202026-10-10%5D&format=json&resultType=core&pageSize=100",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(ISSN%3A1057-7149%20OR%20ISSN%3A0162-8828)%20AND%20(hyperspectral%20AND%20(fusion%20OR%20super-resolution))%20AND%20FIRST_PDATE%3A%5B2025-01-01%20TO%202026-10-10%5D&format=json&resultType=core&pageSize=100",
+    "content_type": "application/json;charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\tip_tpami_census\\source.json",
+    "bytes": 160136,
+    "sha256": "3fcc6b84d2e223479ae69bd17eae095d78c0e25a680da470fc558a2db7e39337",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "cvpr2025",
+    "requested_url": "https://openaccess.thecvf.com/CVPR2025?day=all",
+    "final_url": "https://openaccess.thecvf.com/CVPR2025?day=all",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\cvpr2025\\source.html",
+    "bytes": 8396274,
+    "sha256": "2f08dc191b870530993ba6a5a79e8c8ae812f158b6a30b21a96f3b190af96bfa",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "spectral_titles": [
+      {
+        "title": "HyperGS: Hyperspectral 3D Gaussian Splatting",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Thirgood_HyperGS_Hyperspectral_3D_Gaussian_Splatting_CVPR_2025_paper.html"
+      },
+      {
+        "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html"
+      },
+      {
+        "title": "Binarized Neural Network for Multi-spectral Image Fusion",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Hou_Binarized_Neural_Network_for_Multi-spectral_Image_Fusion_CVPR_2025_paper.html"
+      },
+      {
+        "title": "VolFormer: Explore More Comprehensive Cube Interaction for Hyperspectral Image Restoration and Beyond",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_VolFormer_Explore_More_Comprehensive_Cube_Interaction_for_Hyperspectral_Image_Restoration_CVPR_2025_paper.html"
+      },
+      {
+        "title": "Illumination Spectrum Estimation for Multispectral Images via Surface Reflectance Modeling and Spatial-Spectral Feature Generation",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Oh_Illumination_Spectrum_Estimation_for_Multispectral_Images_via_Surface_Reflectance_Modeling_CVPR_2025_paper.html"
+      },
+      {
+        "title": "Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhu_Self-Learning_Hyperspectral_and_Multispectral_Image_Fusion_via_Adaptive_Residual_Guided_CVPR_2025_paper.html"
+      },
+      {
+        "title": "Dense Dispersed Structured Light for Hyperspectral 3D Imaging of Dynamic Scenes",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Shin_Dense_Dispersed_Structured_Light_for_Hyperspectral_3D_Imaging_of_Dynamic_CVPR_2025_paper.html"
+      },
+      {
+        "title": "HyperFree: A Channel-adaptive and Tuning-free Foundation Model for Hyperspectral Remote Sensing Imagery",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Li_HyperFree_A_Channel-adaptive_and_Tuning-free_Foundation_Model_for_Hyperspectral_Remote_CVPR_2025_paper.html"
+      },
+      {
+        "title": "Automatic Spectral Calibration of Hyperspectral Images: Method, Dataset and Benchmark",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Du_Automatic_Spectral_Calibration_of_Hyperspectral_Images_Method_Dataset_and_Benchmark_CVPR_2025_paper.html"
+      },
+      {
+        "title": "Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html"
+      },
+      {
+        "title": "Active Hyperspectral Imaging Using an Event Camera",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_Active_Hyperspectral_Imaging_Using_an_Event_Camera_CVPR_2025_paper.html"
+      }
+    ]
+  },
+  {
+    "id": "iccv2025",
+    "requested_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+    "final_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\iccv2025\\source.html",
+    "bytes": 7692642,
+    "sha256": "e684fe760c417a35c2f1e9a5acb3015a192fce10e566086e2d4bf7f78cbb97fe",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "spectral_titles": [
+      {
+        "title": "Physical Degradation Model-Guided Interferometric Hyperspectral Reconstruction with Unfolding Transformer",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.html"
+      },
+      {
+        "title": "Spectral Image Tokenizer",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Esteves_Spectral_Image_Tokenizer_ICCV_2025_paper.html"
+      },
+      {
+        "title": "Hipandas: Hyperspectral Image Joint Denoising and Super-Resolution by Image Fusion with the Panchromatic Image",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Xu_Hipandas_Hyperspectral_Image_Joint_Denoising_and_Super-Resolution_by_Image_Fusion_ICCV_2025_paper.html"
+      },
+      {
+        "title": "MP-HSIR: A Multi-Prompt Framework for Universal Hyperspectral Image Restoration",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wu_MP-HSIR_A_Multi-Prompt_Framework_for_Universal_Hyperspectral_Image_Restoration_ICCV_2025_paper.html"
+      },
+      {
+        "title": "Spatio-Spectral Pattern Illumination for Direct and Indirect Separation from a Single Hyperspectral Image",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Ishihara_Spatio-Spectral_Pattern_Illumination_for_Direct_and_Indirect_Separation_from_a_ICCV_2025_paper.html"
+      }
+    ]
+  },
+  {
+    "id": "bhsr_modules",
+    "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/modules.py",
+    "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/modules.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_modules\\source.html",
+    "bytes": 5628,
+    "sha256": "236e9a2271b9698dd913d7c0ad4a1587303a45f0cefef65f5de26d056e145e95",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "bhsr_loss",
+    "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/loss.py",
+    "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/loss.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_loss\\source.html",
+    "bytes": 3291,
+    "sha256": "c1a0e6851de220a07eb425a82664eef6d56f8e4a56d19d83932666f1a20cf140",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "nud_repo",
+    "requested_url": "https://api.github.com/repos/jeline0110/NUD_PAF/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/jeline0110/NUD_PAF/git/trees/main?recursive=1",
+    "content_type": "application/json; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_repo\\source.json",
+    "bytes": 4590,
+    "sha256": "ac11faa39f2cb6c615fefd7f90af83841b48ce357791d319d527811b47d15a01",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  }
+]

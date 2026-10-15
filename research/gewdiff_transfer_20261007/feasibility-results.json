@@ -1,0 +1,278 @@
+{
+  "date": "2026-10-07",
+  "status": "untrained_read_only_training_scene_diagnostics",
+  "scope": "Three alphabetically first training scenes only, no test-set selection; not representative performance.",
+  "metric_protocol": "Unit-peak mean per-band PSNR, no clipping; HR pixels sampled every 4 pixels, basis LR-only. Oracle coefficients use HR ground truth solely to bound compression error; these are not achievable fusion predictions.",
+  "rwa_protocol": "Continuous average/difference lifting with an unpaired last band; deliberately not the author integer floor/round implementation. LR-fitted regression. Zero high-frequency regression residual.",
+  "device": "NVIDIA GeForce RTX 3060",
+  "gpu_total_memory_gib": 11.99951171875,
+  "baseline_params": 831071,
+  "20_band_network_params_same_width_depth": 818388,
+  "baseline_macs_batch1_64_patch": 3103635456.0,
+  "20_band_network_macs_same_width_depth": 3077277696.0,
+  "nullspace": {
+    "R_rank": 3,
+    "D_rank": 4,
+    "R_delta_max_abs": 4.1690727544168535e-17,
+    "delta_D_transpose_max_abs": 0.0,
+    "delta_norm": 0.9999999999999999,
+    "interpretation": "Nonzero perturbation invisible to both linear observations. Can scale and add to an interior-positive image while preserving boundedness."
+  },
+  "scenes": [
+    {
+      "scene": "balloons_ms .mat",
+      "hr_shape": [
+        512,
+        512,
+        31
+      ],
+      "sampled_hr_pixels": 16384,
+      "clean_D_msi_minus_R_lr_max_abs": 6.661338147750939e-16,
+      "basis_fitted_only_on_lr_hsi": true,
+      "pca_oracle_projection": [
+        {
+          "k": 8,
+          "psnr_mean_band_db": 51.38230144768785,
+          "psnr_global_db": 50.82261480010139,
+          "sam_deg_nonzero_pixels": 1.6316815440866754,
+          "rmse_unit_range": 0.002876532333124216
+        },
+        {
+          "k": 12,
+          "psnr_mean_band_db": 55.847465226547975,
+          "psnr_global_db": 55.05141177536242,
+          "sam_deg_nonzero_pixels": 0.975204736341098,
+          "rmse_unit_range": 0.001767784864560906
+        },
+        {
+          "k": 16,
+          "psnr_mean_band_db": 59.724382122012805,
+          "psnr_global_db": 58.823863274981825,
+          "sam_deg_nonzero_pixels": 0.5910394402153466,
+          "rmse_unit_range": 0.001145003558105946
+        },
+        {
+          "k": 20,
+          "psnr_mean_band_db": 62.99294774836177,
+          "psnr_global_db": 61.158251671705415,
+          "sam_deg_nonzero_pixels": 0.4445676643628794,
+          "rmse_unit_range": 0.0008751599129546466
+        },
+        {
+          "k": 24,
+          "psnr_mean_band_db": 66.29167749789006,
+          "psnr_global_db": 63.54664765502669,
+          "sam_deg_nonzero_pixels": 0.32784875114049794,
+          "rmse_unit_range": 0.0006647641911219124
+        },
+        {
+          "k": 31,
+          "psnr_mean_band_db": 300.0,
+          "psnr_global_db": 300.0,
+          "sam_deg_nonzero_pixels": 3.1073612914332515e-07,
+          "rmse_unit_range": 1.1662106873600791e-16
+        }
+      ],
+      "continuous_rwa_zero_regression_residual_oracle_coarse": {
+        "psnr_mean_band_db": 64.42999409838573,
+        "psnr_global_db": 53.10569348339197,
+        "sam_deg_nonzero_pixels": 1.0723146992023962,
+        "rmse_unit_range": 0.002211644531239963
+      },
+      "continuous_rwa_pca_oracle_projection": [
+        {
+          "k": 8,
+          "psnr_mean_band_db": 51.22128264426164,
+          "psnr_global_db": 49.55650369076479,
+          "sam_deg_nonzero_pixels": 1.5592366548470955,
+          "rmse_unit_range": 0.0033279348485820955
+        },
+        {
+          "k": 12,
+          "psnr_mean_band_db": 55.122240912529584,
+          "psnr_global_db": 52.21773165520798,
+          "sam_deg_nonzero_pixels": 1.1850071880269213,
+          "rmse_unit_range": 0.0024497029051997296
+        },
+        {
+          "k": 16,
+          "psnr_mean_band_db": 64.42999409838573,
+          "psnr_global_db": 53.10569348339197,
+          "sam_deg_nonzero_pixels": 1.0723146992024049,
+          "rmse_unit_range": 0.002211644531239962
+        }
+      ],
+      "float_lifting_exact_inverse_max_error": 1.1102230246251565e-16
+    },
+    {
+      "scene": "beads_ms .mat",
+      "hr_shape": [
+        512,
+        512,
+        31
+      ],
+      "sampled_hr_pixels": 16384,
+      "clean_D_msi_minus_R_lr_max_abs": 5.551115123125783e-16,
+      "basis_fitted_only_on_lr_hsi": true,
+      "pca_oracle_projection": [
+        {
+          "k": 8,
+          "psnr_mean_band_db": 44.146486335432144,
+          "psnr_global_db": 43.56312210514949,
+          "sam_deg_nonzero_pixels": 2.9593768154684863,
+          "rmse_unit_range": 0.00663504533723023
+        },
+        {
+          "k": 12,
+          "psnr_mean_band_db": 49.39507420353401,
+          "psnr_global_db": 48.22833242101068,
+          "sam_deg_nonzero_pixels": 1.271420255705034,
+          "rmse_unit_range": 0.003877781897844961
+        },
+        {
+          "k": 16,
+          "psnr_mean_band_db": 53.65970451321035,
+          "psnr_global_db": 52.95136239839755,
+          "sam_deg_nonzero_pixels": 0.7142132494451002,
+          "rmse_unit_range": 0.0022512922695523837
+        },
+        {
+          "k": 20,
+          "psnr_mean_band_db": 57.56416767391892,
+          "psnr_global_db": 55.93801379339932,
+          "sam_deg_nonzero_pixels": 0.5183194264865499,
+          "rmse_unit_range": 0.0015962441194237499
+        },
+        {
+          "k": 24,
+          "psnr_mean_band_db": 61.76377297076902,
+          "psnr_global_db": 58.33184441722845,
+          "sam_deg_nonzero_pixels": 0.36390140665952625,
+          "rmse_unit_range": 0.0012117353538369739
+        },
+        {
+          "k": 31,
+          "psnr_mean_band_db": 300.0,
+          "psnr_global_db": 300.0,
+          "sam_deg_nonzero_pixels": 2.96027861105345e-07,
+          "rmse_unit_range": 1.429637553393105e-16
+        }
+      ],
+      "continuous_rwa_zero_regression_residual_oracle_coarse": {
+        "psnr_mean_band_db": 59.8530458052031,
+        "psnr_global_db": 50.47259511965766,
+        "sam_deg_nonzero_pixels": 1.071862615152588,
+        "rmse_unit_range": 0.0029948166848120716
+      },
+      "continuous_rwa_pca_oracle_projection": [
+        {
+          "k": 8,
+          "psnr_mean_band_db": 43.92857243772759,
+          "psnr_global_db": 43.438692736561215,
+          "sam_deg_nonzero_pixels": 2.976564170756741,
+          "rmse_unit_range": 0.006730779497639206
+        },
+        {
+          "k": 12,
+          "psnr_mean_band_db": 49.39107451606737,
+          "psnr_global_db": 47.81949782874153,
+          "sam_deg_nonzero_pixels": 1.4453914005495052,
+          "rmse_unit_range": 0.004064668282040935
+        },
+        {
+          "k": 16,
+          "psnr_mean_band_db": 59.85304580520311,
+          "psnr_global_db": 50.47259511965766,
+          "sam_deg_nonzero_pixels": 1.0718626151525725,
+          "rmse_unit_range": 0.002994816684812071
+        }
+      ],
+      "float_lifting_exact_inverse_max_error": 1.1102230246251565e-16
+    },
+    {
+      "scene": "cd_ms .mat",
+      "hr_shape": [
+        512,
+        512,
+        31
+      ],
+      "sampled_hr_pixels": 16384,
+      "clean_D_msi_minus_R_lr_max_abs": 4.440892098500626e-16,
+      "basis_fitted_only_on_lr_hsi": true,
+      "pca_oracle_projection": [
+        {
+          "k": 8,
+          "psnr_mean_band_db": 37.07578187227831,
+          "psnr_global_db": 36.85825016072814,
+          "sam_deg_nonzero_pixels": 3.6411007032604457,
+          "rmse_unit_range": 0.014357786528723052
+        },
+        {
+          "k": 12,
+          "psnr_mean_band_db": 41.079223407166005,
+          "psnr_global_db": 40.93601349188138,
+          "sam_deg_nonzero_pixels": 2.1515577620603037,
+          "rmse_unit_range": 0.008978407762833648
+        },
+        {
+          "k": 16,
+          "psnr_mean_band_db": 44.23290920301997,
+          "psnr_global_db": 44.04898052320441,
+          "sam_deg_nonzero_pixels": 1.302621148533484,
+          "rmse_unit_range": 0.006274093317019628
+        },
+        {
+          "k": 20,
+          "psnr_mean_band_db": 47.51882418641353,
+          "psnr_global_db": 47.17416771374087,
+          "sam_deg_nonzero_pixels": 0.9053368928179576,
+          "rmse_unit_range": 0.004378159853673255
+        },
+        {
+          "k": 24,
+          "psnr_mean_band_db": 52.07008407498676,
+          "psnr_global_db": 50.949412094090164,
+          "sam_deg_nonzero_pixels": 0.532651846734679,
+          "rmse_unit_range": 0.0028348455039938036
+        },
+        {
+          "k": 31,
+          "psnr_mean_band_db": 300.0,
+          "psnr_global_db": 300.0,
+          "sam_deg_nonzero_pixels": 2.9066408689082204e-07,
+          "rmse_unit_range": 9.91709593891442e-17
+        }
+      ],
+      "continuous_rwa_zero_regression_residual_oracle_coarse": {
+        "psnr_mean_band_db": 51.25310688369144,
+        "psnr_global_db": 42.63005754953519,
+        "sam_deg_nonzero_pixels": 1.3884384775170298,
+        "rmse_unit_range": 0.007387493682936829
+      },
+      "continuous_rwa_pca_oracle_projection": [
+        {
+          "k": 8,
+          "psnr_mean_band_db": 37.059829087776194,
+          "psnr_global_db": 36.782931878724476,
+          "sam_deg_nonzero_pixels": 3.547264699788485,
+          "rmse_unit_range": 0.01448282910356487
+        },
+        {
+          "k": 12,
+          "psnr_mean_band_db": 40.66221901432504,
+          "psnr_global_db": 40.35866610366757,
+          "sam_deg_nonzero_pixels": 2.282606550479257,
+          "rmse_unit_range": 0.00959547978455314
+        },
+        {
+          "k": 16,
+          "psnr_mean_band_db": 51.25310688369144,
+          "psnr_global_db": 42.63005754953518,
+          "sam_deg_nonzero_pixels": 1.388438477517035,
+          "rmse_unit_range": 0.00738749368293683
+        }
+      ],
+      "float_lifting_exact_inverse_max_error": 1.1102230246251565e-16
+    }
+  ]
+}

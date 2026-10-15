@@ -1,0 +1,751 @@
+{
+  "status": "ok",
+  "script": "extract_source_text.py",
+  "schema_version": 1,
+  "paper_id": "title:b594f500b60c",
+  "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+  "source_sha256": "638a1409c0ffea067b25f72800cf3cb4f81dd3ab327d3aee578597c375608e60",
+  "source_kind": "pdf_text",
+  "raw_sections_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_raw_sections.jsonl",
+  "full_text_md_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_full_text.md",
+  "pdf": {
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+    "total_pages": 11,
+    "text_pages_extracted": 11,
+    "text_max_pages": null,
+    "text_truncated": false
+  },
+  "coverage": {
+    "total_pages": 11,
+    "text_max_pages": null,
+    "text_pages_extracted": 11,
+    "text_pages_scanned": 11,
+    "text_truncated": false,
+    "truncated_due_to_page_limit": false,
+    "appendix_detected": false,
+    "appendix_start_page": null,
+    "references_start_page": null
+  },
+  "sections": [
+    {
+      "section_id": "sec:preamble",
+      "kind": "preamble",
+      "title": "preamble",
+      "page_start": 1,
+      "page_end": 1,
+      "char_count": 407,
+      "text_hash_sha256": "0be6100db2854d88db8fc676323f03037f120a9df07627f4e13c28df246160f0"
+    },
+    {
+      "section_id": "sec:abstract",
+      "kind": "abstract",
+      "title": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "char_count": 1422,
+      "text_hash_sha256": "b743b09057c7c60af624f831c947908982fbe3ffb2d0345cdeeae3c1eb8b2d7b"
+    },
+    {
+      "section_id": "sec:introduction",
+      "kind": "introduction",
+      "title": "1. Introduction",
+      "page_start": 1,
+      "page_end": 2,
+      "char_count": 6379,
+      "text_hash_sha256": "0eff48214b19b578e7ce322362b030a140d9e52e637ed530e4b9c8a1e40ccdba"
+    },
+    {
+      "section_id": "sec:related-work",
+      "kind": "introduction",
+      "title": "2. Related Work",
+      "page_start": 2,
+      "page_end": 5,
+      "char_count": 13577,
+      "text_hash_sha256": "deac12baad8e4849ec9e71960334ab5f7a7c88b1cb721d0e10224a9a637b66c1"
+    },
+    {
+      "section_id": "sec:experimental-results",
+      "kind": "experiment",
+      "title": "4. Experimental Results",
+      "page_start": 5,
+      "page_end": 6,
+      "char_count": 756,
+      "text_hash_sha256": "02664479971a397edd269c8227de0b65ef16cd5169e6864d99446025e4abc056"
+    },
+    {
+      "section_id": "sec:methods",
+      "kind": "method",
+      "title": "Methods",
+      "page_start": 6,
+      "page_end": 7,
+      "char_count": 4325,
+      "text_hash_sha256": "7490c6622c855c9c54ed97f6a22810b637113bed9902d54373af0d02bf27f73b"
+    },
+    {
+      "section_id": "sec:methods-2",
+      "kind": "method",
+      "title": "Methods",
+      "page_start": 7,
+      "page_end": 7,
+      "char_count": 205,
+      "text_hash_sha256": "48760e6d00c843aa795e96b1d8fcc17a46f4619b246ae9ef4d99911f2001e6e5"
+    },
+    {
+      "section_id": "sec:methods-3",
+      "kind": "method",
+      "title": "Methods",
+      "page_start": 7,
+      "page_end": 8,
+      "char_count": 5752,
+      "text_hash_sha256": "b75b05507604f3482fb79af4b39ee5495bac00bead771567195c66349fb929df"
+    },
+    {
+      "section_id": "sec:conclusion",
+      "kind": "conclusion",
+      "title": "5. Conclusion",
+      "page_start": 8,
+      "page_end": 8,
+      "char_count": 1110,
+      "text_hash_sha256": "1c3c0b4617f8a8887670f50d935d7d008255e9d3c159a5c00e3678054473a8ee"
+    },
+    {
+      "section_id": "sec:acknowledgments",
+      "kind": "acknowledgments",
+      "title": "Acknowledgments",
+      "page_start": 9,
+      "page_end": 9,
+      "char_count": 119,
+      "text_hash_sha256": "eedae41060c6115cd71480d2772a4c95c6cf813c3bf3475016c8f1ab1a546056"
+    },
+    {
+      "section_id": "sec:references",
+      "kind": "references",
+      "title": "References",
+      "page_start": 9,
+      "page_end": 11,
+      "char_count": 13762,
+      "text_hash_sha256": "a50ea15beb373a24e6aacd1c0517cc7c2c078b20dfa3a0909c77c553d57b6152"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "char_count": 4154,
+      "section_ids": [
+        "sec:preamble",
+        "sec:abstract",
+        "sec:introduction"
+      ]
+    },
+    {
+      "page": 2,
+      "char_count": 5815,
+      "section_ids": [
+        "sec:introduction",
+        "sec:related-work"
+      ]
+    },
+    {
+      "page": 3,
+      "char_count": 4132,
+      "section_ids": [
+        "sec:related-work"
+      ]
+    },
+    {
+      "page": 4,
+      "char_count": 4305,
+      "section_ids": [
+        "sec:related-work"
+      ]
+    },
+    {
+      "page": 5,
+      "char_count": 4193,
+      "section_ids": [
+        "sec:related-work",
+        "sec:experimental-results"
+      ]
+    },
+    {
+      "page": 6,
+      "char_count": 2433,
+      "section_ids": [
+        "sec:experimental-results",
+        "sec:methods"
+      ]
+    },
+    {
+      "page": 7,
+      "char_count": 4425,
+      "section_ids": [
+        "sec:methods",
+        "sec:methods-2",
+        "sec:methods-3"
+      ]
+    },
+    {
+      "page": 8,
+      "char_count": 4827,
+      "section_ids": [
+        "sec:methods-3",
+        "sec:conclusion"
+      ]
+    },
+    {
+      "page": 9,
+      "char_count": 5646,
+      "section_ids": [
+        "sec:acknowledgments",
+        "sec:references"
+      ]
+    },
+    {
+      "page": 10,
+      "char_count": 5945,
+      "section_ids": [
+        "sec:references"
+      ]
+    },
+    {
+      "page": 11,
+      "char_count": 2344,
+      "section_ids": [
+        "sec:references"
+      ]
+    }
+  ],
+  "captions": {
+    "figures": [
+      {
+        "id": "Figure 1",
+        "caption": "Comparison of different diffusion models. With edge-",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "section_id": "sec:preamble"
+      },
+      {
+        "id": "Figure 2",
+        "caption": "Architecture of the proposed EMR-Diff for HSI super-resolution. The multimodal residual E0 is obtained by subtracting A0",
+        "page": 3,
+        "pages": [
+          3
+        ],
+        "section_id": "sec:related-work"
+      },
+      {
+        "id": "Figure 3",
+        "caption": "Edge similarity of HR-HSI and MR-HSI.",
+        "page": 4,
+        "pages": [
+          4
+        ],
+        "section_id": "sec:related-work"
+      },
+      {
+        "id": "Figure 4",
+        "caption": "Architecture of the proposed BAF-UNet. Multi-scale",
+        "page": 5,
+        "pages": [
+          5
+        ],
+        "section_id": "sec:related-work"
+      },
+      {
+        "id": "Figure 5",
+        "caption": "Visual comparison results for all methods across the ICVL, Harvard, and Chikusei datasets. Under the ICVL and Harvard",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section_id": "sec:experimental-results"
+      },
+      {
+        "id": "Figure 6",
+        "caption": "Spectral errors in the ICVL, Harvard, and Chikusei",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Figure 7",
+        "caption": "Visualization of pure noise and edge-aware noise.",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section_id": "sec:methods-3"
+      }
+    ],
+    "tables": [
+      {
+        "id": "Table 1",
+        "caption": "All methods are compared quantitatively on the ICVL, Harvard, and Chikusei datasets. ↑and ↓indicate that higher or lower values",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section_id": "sec:experimental-results"
+      },
+      {
+        "id": "Table 2",
+        "caption": "Ablation study of multimodal residual.",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Table 3",
+        "caption": "Ablation study of edge-aware noise.",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Table 4",
+        "caption": "Ablation study on BAF-UNet. MSS denotes multi-scale",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Table 5",
+        "caption": "Ablation study of diffusion steps.",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section_id": "sec:methods-3"
+      },
+      {
+        "id": "Table 6",
+        "caption": "Ablation study of pseudo-MSI synthesis.",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section_id": "sec:methods-3"
+      }
+    ]
+  },
+  "math_index": [
+    {
+      "text": "Y = D(B(X)),",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "Z = RX,",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "where X ∈RH×W ×S, Y ∈Rh×w×S, and Z represents",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "A0 = Y↑c⃝Z,",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "E0 = A0 −X ′",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "t = X ′",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "t = X ′",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "noise, we set it to 1. αt = ηt −ηt−1, ηt−1 is a monoton-",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "ically increasing sequence. t = 1, 2, . . . , T. When t = 1,",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "0. When t = T, ηt ap-",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "t−1 = ηt−1",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "Gx = Cx ∗P , Gy = Cy ∗P ,",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "Cx =",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": ", Cy =",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "M =",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "y + ϵ, ϵ = 10−8.",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "N ∗= N · W = N · norm(M).",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "I = LReLU(LN(Conv(In))),",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "J = SpatialAttn(I) ⊙I,",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "g1 = f 1",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "group(J), g2 = f S",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "βi = Softmax (Conv (GAP (gi))) ,",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "h =",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "i=1",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "βi · gi, i = 1, 2",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "V = MLP(h), Out = V + In.",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "Lmulti =",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "k=0",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    },
+    {
+      "text": "where n = 2k, n′ = 23−k, Y↑n denotes the image upsam-",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 5
+    }
+  ],
+  "appendix_index": {
+    "appendix_detected": false,
+    "start_page": null,
+    "sections": [],
+    "figure_captions": [],
+    "table_captions": []
+  },
+  "language_hint": "en",
+  "text_hash_sha256": "2ad2708a97b196b026d56c165b0b1d8190e1c42fdffd239fc87462fb6d848e55",
+  "identity_contract": {
+    "artifact_type": "canonical_identity",
+    "schema_version": 2,
+    "paper_id": "title:b594f500b60c",
+    "identity_verdict": "accepted",
+    "work_level_identity": {
+      "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+      "translated_title": "EMR-Diff：用于高光谱图像超分辨率的边缘感知多模态残差扩散模型",
+      "authors": [
+        "Tao Zhang",
+        "Shengtao Yao",
+        "Rong Zeng",
+        "Zunjie Zhu",
+        "Bolun Zheng",
+        "Yaoqi Sun",
+        "Ying Fu",
+        "Chenggang Yan"
+      ],
+      "year": "2026",
+      "venue": "CVPR 2026, pp. 23419–23429",
+      "doi": "",
+      "arxiv_id": "",
+      "zotero_key": ""
+    },
+    "source_manifestation": {
+      "source_kind": "local_pdf",
+      "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+      "year": "2026",
+      "venue": "CVPR 2026, pp. 23419–23429",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+      "local_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+      "doi": "",
+      "arxiv_id": "",
+      "zotero_key": ""
+    },
+    "accepted_metadata": {
+      "status": "ok",
+      "source_type": "seed_record",
+      "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+      "translated_title": "EMR-Diff：用于高光谱图像超分辨率的边缘感知多模态残差扩散模型",
+      "authors": [
+        "Tao Zhang",
+        "Shengtao Yao",
+        "Rong Zeng",
+        "Zunjie Zhu",
+        "Bolun Zheng",
+        "Yaoqi Sun",
+        "Ying Fu",
+        "Chenggang Yan"
+      ],
+      "year": "2026",
+      "venue": "CVPR 2026, pp. 23419–23429",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+      "local_pdf_path": "D:/coding/github_self/thesis_base_line/research/supervised_hm_fusion_20261010/sources/emrdiff/source.pdf",
+      "metadata_sources": [
+        "official_cvf_landing_page",
+        "official_cvf_pdf_first_page"
+      ],
+      "abstract": "Hardware constraints make it challenging to simultaneously acquire hyperspectral images (HSIs) with both high spatial and high spectral resolutions. A promising solution is to fuse low-resolution HSI (LR-HSI) with high-resolution multispectral images (HR-MSI) to generate high-resolution HSI (HR-HSI). Recently, diffusion models have introduced possibilities for HSI super-resolution, but suffer from low-efficiency sampling, detail-limited generation, and insufficient denoising. To address these issues, we propose an Edge-aware Multimodal Residual Diffusion Model (EMR-Diff). Specifically, multimodal residual mechanism is introduced to facilitate efficient information transfer among HR-MSI, LR-HSI, and HR-HSI, significantly improving the fusion efficiency. Edge-aware noise strategy is designed by exploiting the edge information of HR-MSI, which guides the model to prioritize high-frequency detail reconstruction by applying stronger noise perturbations to edge regions. In addition, we propose a Bilateral Attention Fusion UNet and design a multi-scale supervision mechanism to enable progressive reconstruction and collaborative optimization of spectral and spatial features. Extensive experiments demonstrate that our method achieves superior performance over existing approaches in both quantitative metrics and visual quality. Our code is available at: https://github.com/luocz55/EMR-Diff.",
+      "paper_id": "title:b594f500b60c",
+      "script": "resolve_paper.py"
+    },
+    "bound_sources": [
+      {
+        "kind": "local_pdf",
+        "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "provider": "seed_record",
+        "binding_reason": "trusted_input"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+        "provider": "seed_record",
+        "binding_reason": "trusted_input"
+      }
+    ],
+    "field_provenance": {
+      "title": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "translated_title": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "authors": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "year": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "venue": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "abstract": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "source_url": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "pdf_url": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "local_pdf_path": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      }
+    },
+    "selected_identity_evidence": [
+      {
+        "kind": "title",
+        "value": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+        "trust": "metadata",
+        "source": "metadata"
+      },
+      {
+        "kind": "trusted_source_path",
+        "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "trust": "strong",
+        "source": "source_manifestation"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+        "trust": "source_manifestation",
+        "source": "metadata"
+      },
+      {
+        "kind": "source_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+        "trust": "source_manifestation",
+        "source": "metadata"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+        "trust": "source_manifestation",
+        "source": "source_manifestation"
+      },
+      {
+        "kind": "source_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+        "trust": "source_manifestation",
+        "source": "source_manifestation"
+      }
+    ],
+    "equivalence_decision": {
+      "status": "equivalent",
+      "reason": "title_author_or_abstract_supports_equivalence",
+      "location_binding": "source_manifestation",
+      "evidence": [
+        {
+          "kind": "title_similarity",
+          "status": "match",
+          "score": 1.0,
+          "source_value": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+          "work_value": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution"
+        },
+        {
+          "kind": "leading_author",
+          "status": "match",
+          "source_value": "Tao Zhang",
+          "work_value": "Tao Zhang"
+        },
+        {
+          "kind": "abstract_similarity",
+          "status": "match",
+          "score": 1.0
+        }
+      ]
+    },
+    "warnings": [],
+    "repair_trace_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_identity_repair_trace.json",
+    "provenance": {
+      "resolve_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_resolve.json",
+      "metadata_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_metadata.json"
+    }
+  },
+  "source_manifestation": {
+    "source_kind": "local_pdf",
+    "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+    "year": "2026",
+    "venue": "CVPR 2026, pp. 23419–23429",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+    "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+    "local_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+    "doi": "",
+    "arxiv_id": "",
+    "zotero_key": ""
+  }
+}

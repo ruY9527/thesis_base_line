@@ -1,0 +1,438 @@
+[
+  {
+    "block_id": "B1",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1"
+    ],
+    "decision_gate_id": "G1",
+    "anti_claims_ruled_out": [
+      "增益来自容量、尺度正则或额外观测信息"
+    ],
+    "why_this_block_exists": "算子、模式与旋转不变性检查",
+    "dataset_split_task": "基线R/D、人工粗/细及谱可见/零模式；不使用自然指标",
+    "systems_compared": [
+      "MSI-only",
+      "joint support",
+      "classical restricted ridge"
+    ],
+    "fixed_factors": [
+      "observation access",
+      "loss within each route",
+      "selection rules",
+      "budget"
+    ],
+    "variable_factors": [
+      "spatial scale",
+      "spectral visibility"
+    ],
+    "metrics": [
+      "operator residual",
+      "basis rotation error",
+      "joint spectrum"
+    ],
+    "setup_details": "当前CAVE CNN起点；局部谱基和模板定义先冻结；训练实现未完成",
+    "seeds": 3,
+    "success_criterion": "数学定义和实现一致；保留比较者可胜的无噪声满秩情形",
+    "minimum_effect_size": "数值容差按float64设1e-10，非性能门槛",
+    "failure_interpretation": "算子或表示有错则先修复；反例无效则修改主张",
+    "expected_output_artifact": "planned_results/B1.json",
+    "compute_budget": "先小规模pilot，按实际硬件测量；本轮没有启动训练",
+    "dependencies": [],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "预先manifest及案例规则；当前历史测试已被查看，不充当新盲测",
+    "non_vacuity_check": "无噪声满秩下不收缩解可胜出；同信息学习门控可胜；保留这些情形",
+    "complete_outcome_accounting": "保留每scene/seed的负结果、错误、skip、超时和技术重试；不得仅存best",
+    "hidden_information_controls": "条件只能读观测；GT-hidden路线禁止GT用于条件/停止/选择；留出观测也从条件移除",
+    "independence_requirements": [
+      "最终外部scene未参与方法选择",
+      "评价与条件的数据访问分离"
+    ],
+    "independence_evidence": "当前没有独立复现或审查，仅规划要求",
+    "predecessor_failures": [
+      "RU-only不足以表示完整融合可辨性",
+      "原测试选择历史需保留"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        "deep-research-report.md",
+        "joint_support_probe.py"
+      ],
+      "declared_evaluator_artifacts": [],
+      "required_outputs": [
+        {
+          "path": "planned_results/B1.json",
+          "kind": "metrics"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    }
+  },
+  {
+    "block_id": "B2",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1"
+    ],
+    "decision_gate_id": "G2",
+    "anti_claims_ruled_out": [
+      "增益来自容量、尺度正则或额外观测信息"
+    ],
+    "why_this_block_exists": "自然场景机制诊断",
+    "dataset_split_task": "CAVE训练/验证观测＋独立数据；冻结evaluator，显式scene manifest",
+    "systems_compared": [
+      "rank and texture predictor",
+      "RU-only predictor",
+      "joint-support predictor"
+    ],
+    "fixed_factors": [
+      "observation access",
+      "loss within each route",
+      "selection rules",
+      "budget"
+    ],
+    "variable_factors": [
+      "support grouping",
+      "template bandwidth"
+    ],
+    "metrics": [
+      "scene-level boundary SAM",
+      "mode error",
+      "incremental predictive value"
+    ],
+    "setup_details": "当前CAVE CNN起点；局部谱基和模板定义先冻结；训练实现未完成",
+    "seeds": 3,
+    "success_criterion": "联合支持提供超出秩/纹理/RU/尺度ridge的解释，外部数据方向一致",
+    "minimum_effect_size": "解释增量须场景配对区间不跨零；预实验前确定模型与复杂度",
+    "failure_interpretation": "不能解释自然失稳则收缩机制主张",
+    "expected_output_artifact": "planned_results/B2.json",
+    "compute_budget": "先小规模pilot，按实际硬件测量；本轮没有启动训练",
+    "dependencies": [
+      "B1"
+    ],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "预先manifest及案例规则；当前历史测试已被查看，不充当新盲测",
+    "non_vacuity_check": "无噪声满秩下不收缩解可胜出；同信息学习门控可胜；保留这些情形",
+    "complete_outcome_accounting": "保留每scene/seed的负结果、错误、skip、超时和技术重试；不得仅存best",
+    "hidden_information_controls": "条件只能读观测；GT-hidden路线禁止GT用于条件/停止/选择；留出观测也从条件移除",
+    "independence_requirements": [
+      "最终外部scene未参与方法选择",
+      "评价与条件的数据访问分离"
+    ],
+    "independence_evidence": "当前没有独立复现或审查，仅规划要求",
+    "predecessor_failures": [
+      "RU-only不足以表示完整融合可辨性",
+      "原测试选择历史需保留"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        "deep-research-report.md",
+        "joint_support_probe.py"
+      ],
+      "declared_evaluator_artifacts": [],
+      "required_outputs": [
+        {
+          "path": "planned_results/B2.json",
+          "kind": "metrics"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    }
+  },
+  {
+    "block_id": "B3",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "decision_gate_id": "G3",
+    "anti_claims_ruled_out": [
+      "增益来自容量、尺度正则或额外观测信息"
+    ],
+    "why_this_block_exists": "共享骨干机制消融",
+    "dataset_split_task": "分别supervised及GT-hidden；观测条件完全相同，3seeds",
+    "systems_compared": [
+      "same-capacity learned geometry gate",
+      "RU-only gate",
+      "joint physical gate",
+      "same-information learned joint gate",
+      "scale-adaptive ridge"
+    ],
+    "fixed_factors": [
+      "observation access",
+      "loss within each route",
+      "selection rules",
+      "budget"
+    ],
+    "variable_factors": [
+      "gate rule",
+      "geometry condition"
+    ],
+    "metrics": [
+      "PSNR",
+      "SAM",
+      "boundary SAM",
+      "spectral gradient error",
+      "runtime"
+    ],
+    "setup_details": "当前CAVE CNN起点；局部谱基和模板定义先冻结；训练实现未完成",
+    "seeds": 3,
+    "success_criterion": "边界收益且整体不劣，胜过同信息量学习门控或明确简化理由",
+    "minimum_effect_size": "boundary SAM >=5%相对改善；PSNR下降<=0.1dB；整体SAM恶化<=1%；规划阈值尚待冻结",
+    "failure_interpretation": "只胜弱对照或靠额外损失则不能主张支持度机制",
+    "expected_output_artifact": "planned_results/B3.json",
+    "compute_budget": "先小规模pilot，按实际硬件测量；本轮没有启动训练",
+    "dependencies": [
+      "B2"
+    ],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "预先manifest及案例规则；当前历史测试已被查看，不充当新盲测",
+    "non_vacuity_check": "无噪声满秩下不收缩解可胜出；同信息学习门控可胜；保留这些情形",
+    "complete_outcome_accounting": "保留每scene/seed的负结果、错误、skip、超时和技术重试；不得仅存best",
+    "hidden_information_controls": "条件只能读观测；GT-hidden路线禁止GT用于条件/停止/选择；留出观测也从条件移除",
+    "independence_requirements": [
+      "最终外部scene未参与方法选择",
+      "评价与条件的数据访问分离"
+    ],
+    "independence_evidence": "当前没有独立复现或审查，仅规划要求",
+    "predecessor_failures": [
+      "RU-only不足以表示完整融合可辨性",
+      "原测试选择历史需保留"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        "deep-research-report.md",
+        "joint_support_probe.py"
+      ],
+      "declared_evaluator_artifacts": [],
+      "required_outputs": [
+        {
+          "path": "planned_results/B3.json",
+          "kind": "metrics"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    }
+  },
+  {
+    "block_id": "B4",
+    "paper_role": "main",
+    "claim_ids": [
+      "C2"
+    ],
+    "decision_gate_id": "G4",
+    "anti_claims_ruled_out": [
+      "增益来自容量、尺度正则或额外观测信息"
+    ],
+    "why_this_block_exists": "三类强方法公平比较",
+    "dataset_split_task": "每路线独立比较预算与checkpoint；测试GT仅供冻结evaluator",
+    "systems_compared": [
+      "geometry-gated neural family",
+      "local low-rank physical family",
+      "observation-self-supervised family"
+    ],
+    "fixed_factors": [
+      "observation access",
+      "loss within each route",
+      "selection rules",
+      "budget"
+    ],
+    "variable_factors": [
+      "method family"
+    ],
+    "metrics": [
+      "scene PSNR/SAM/ERGAS",
+      "boundary SAM",
+      "offline/scene adaptation/inference time"
+    ],
+    "setup_details": "当前CAVE CNN起点；局部谱基和模板定义先冻结；训练实现未完成",
+    "seeds": 3,
+    "success_criterion": "在本任务明确范围内胜过或匹配合理强对照并展示关键边界优势",
+    "minimum_effect_size": "沿用B3质量门槛，额外报告Pareto权衡",
+    "failure_interpretation": "输给强方法则收缩为模块或诊断贡献",
+    "expected_output_artifact": "planned_results/B4.json",
+    "compute_budget": "先小规模pilot，按实际硬件测量；本轮没有启动训练",
+    "dependencies": [
+      "B3"
+    ],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "预先manifest及案例规则；当前历史测试已被查看，不充当新盲测",
+    "non_vacuity_check": "无噪声满秩下不收缩解可胜出；同信息学习门控可胜；保留这些情形",
+    "complete_outcome_accounting": "保留每scene/seed的负结果、错误、skip、超时和技术重试；不得仅存best",
+    "hidden_information_controls": "条件只能读观测；GT-hidden路线禁止GT用于条件/停止/选择；留出观测也从条件移除",
+    "independence_requirements": [
+      "最终外部scene未参与方法选择",
+      "评价与条件的数据访问分离"
+    ],
+    "independence_evidence": "当前没有独立复现或审查，仅规划要求",
+    "predecessor_failures": [
+      "RU-only不足以表示完整融合可辨性",
+      "原测试选择历史需保留"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        "deep-research-report.md",
+        "joint_support_probe.py"
+      ],
+      "declared_evaluator_artifacts": [],
+      "required_outputs": [
+        {
+          "path": "planned_results/B4.json",
+          "kind": "metrics"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    }
+  },
+  {
+    "block_id": "B5",
+    "paper_role": "main",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "decision_gate_id": "G5",
+    "anti_claims_ruled_out": [
+      "增益来自容量、尺度正则或额外观测信息"
+    ],
+    "why_this_block_exists": "失败边界与无真值尺度迁移",
+    "dataset_split_task": "预定noise/SRF/PSF/basis perturbations；真实无HR数据辅助评价",
+    "systems_compared": [
+      "geometry-gated neural family",
+      "local low-rank physical family",
+      "observation-self-supervised family"
+    ],
+    "fixed_factors": [
+      "observation access",
+      "loss within each route",
+      "selection rules",
+      "budget"
+    ],
+    "variable_factors": [
+      "noise",
+      "operator error",
+      "basis coverage",
+      "scale"
+    ],
+    "metrics": [
+      "boundary and mode errors",
+      "held-out observation prediction",
+      "consistency",
+      "failure frequency"
+    ],
+    "setup_details": "当前CAVE CNN起点；局部谱基和模板定义先冻结；训练实现未完成",
+    "seeds": 3,
+    "success_criterion": "揭示明确的有效范围；两路线结果分开解释",
+    "minimum_effect_size": "不得用无参考质量分数替代HR谱精度；不要求所有setting胜出",
+    "failure_interpretation": "算子错误下失效则限制结论；原生尺度失败则不能宣称无真值迁移成功",
+    "expected_output_artifact": "planned_results/B5.json",
+    "compute_budget": "先小规模pilot，按实际硬件测量；本轮没有启动训练",
+    "dependencies": [
+      "B4"
+    ],
+    "priority": "must-run",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_rule": "预先manifest及案例规则；当前历史测试已被查看，不充当新盲测",
+    "non_vacuity_check": "无噪声满秩下不收缩解可胜出；同信息学习门控可胜；保留这些情形",
+    "complete_outcome_accounting": "保留每scene/seed的负结果、错误、skip、超时和技术重试；不得仅存best",
+    "hidden_information_controls": "条件只能读观测；GT-hidden路线禁止GT用于条件/停止/选择；留出观测也从条件移除",
+    "independence_requirements": [
+      "最终外部scene未参与方法选择",
+      "评价与条件的数据访问分离"
+    ],
+    "independence_evidence": "当前没有独立复现或审查，仅规划要求",
+    "predecessor_failures": [
+      "RU-only不足以表示完整融合可辨性",
+      "原测试选择历史需保留"
+    ],
+    "execution": {
+      "mode": "manual",
+      "entrypoint": null,
+      "declared_inputs": [
+        "deep-research-report.md",
+        "joint_support_probe.py"
+      ],
+      "declared_evaluator_artifacts": [],
+      "required_outputs": [
+        {
+          "path": "planned_results/B5.json",
+          "kind": "metrics"
+        }
+      ]
+    },
+    "lineage_policy": {
+      "allowed_relations": [
+        "baseline",
+        "replication",
+        "ablation",
+        "parameter_variation",
+        "negative_control",
+        "sensitivity",
+        "alternative_hypothesis",
+        "technical_retry"
+      ]
+    }
+  }
+]

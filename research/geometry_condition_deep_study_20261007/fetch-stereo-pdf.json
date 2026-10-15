@@ -1,0 +1,43 @@
+{
+  "canonical_id": "arxiv:1804.05307",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Hyperspectral Super-Resolution: A Coupled Tensor Factorization Approach",
+  "year": 2018,
+  "doi": null,
+  "arxiv_id": "1804.05307",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1804.05307\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1804.05307\\parsed.md",
+  "parser": "html",
+  "abstract": "Hyperspectral super-resolution refers to the problem of fusing a hyperspectral image (HSI) and a multispectral image (MSI) to produce a super-resolution image (SRI) that has fine spatial and spectral resolution. State-of-the-art methods approach the problem via low-rank matrix approximations to the matricized HSI and MSI. These methods are effective to some extent, but a number of challenges remain. First, HSIs and MSIs are naturally third-order tensors (data \"cubes\") and thus matricization is prone to loss of structural information--which could degrade performance. Second, it is unclear whether or not these low-rank matrix-based fusion strategies can guarantee identifiability or exact recovery of the SRI. However, identifiability plays a pivotal role in estimation problems and usually has a significant impact on performance in practice. Third, the majority of the existing methods assume that there are known (or easily estimated) degradation operators applied to the SRI to form the corresponding HSI and MSI--which is hardly the case in practice. In this work, we propose to tackle the super-resolution problem from a tensor perspective. Specifically, we utilize the multidimensional structure of the HSI and MSI to propose a coupled tensor factorization framework that can effectively overcome the aforementioned issues. The proposed approach guarantees the identifiability of the SRI under mild and realistic conditions. Furthermore, it works with little knowledge of the degradation operators, which is clearly an advantage over the existing methods. Semi-real numerical experiments are included to show the effectiveness of the proposed approach.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    },
+    {
+      "step": "cache",
+      "outcome": "hit"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 14,
+  "parsed_chars": 313,
+  "sentinel": "5a8241f4a6ea",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1804.05307\\parsed.md",
+      "offset": 0,
+      "limit": 14
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

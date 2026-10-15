@@ -1,0 +1,37 @@
+{
+  "name": "task_decoupled",
+  "identifier": "https://openaccess.thecvf.com/content/CVPR2022/papers/Huang_Task_Decoupled_Framework_for_Reference-Based_Super-Resolution_CVPR_2022_paper.pdf",
+  "canonical_id": "url:f3896f6c56068d5b",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f3896f6c56068d5b\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f3896f6c56068d5b\\parsed.md",
+  "parser": "pypdf fallback; page markers retained",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 875,
+  "parsed_chars": 41852,
+  "sentinel": "23dc2b585231",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f3896f6c56068d5b\\parsed.md",
+      "offset": 0,
+      "limit": 875
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

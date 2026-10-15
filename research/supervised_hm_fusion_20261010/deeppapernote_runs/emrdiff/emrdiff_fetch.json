@@ -1,0 +1,236 @@
+{
+  "status": "ok",
+  "script": "fetch_pdf.py",
+  "paper_id": "title:b594f500b60c",
+  "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+  "pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+  "pdf_source": "local_pdf",
+  "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+  "pdf_url": "",
+  "source_sha256": "638a1409c0ffea067b25f72800cf3cb4f81dd3ab327d3aee578597c375608e60",
+  "identity_contract": {
+    "artifact_type": "canonical_identity",
+    "schema_version": 2,
+    "paper_id": "title:b594f500b60c",
+    "identity_verdict": "accepted",
+    "work_level_identity": {
+      "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+      "translated_title": "EMR-Diff：用于高光谱图像超分辨率的边缘感知多模态残差扩散模型",
+      "authors": [
+        "Tao Zhang",
+        "Shengtao Yao",
+        "Rong Zeng",
+        "Zunjie Zhu",
+        "Bolun Zheng",
+        "Yaoqi Sun",
+        "Ying Fu",
+        "Chenggang Yan"
+      ],
+      "year": "2026",
+      "venue": "CVPR 2026, pp. 23419–23429",
+      "doi": "",
+      "arxiv_id": "",
+      "zotero_key": ""
+    },
+    "source_manifestation": {
+      "source_kind": "local_pdf",
+      "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+      "year": "2026",
+      "venue": "CVPR 2026, pp. 23419–23429",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+      "local_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+      "doi": "",
+      "arxiv_id": "",
+      "zotero_key": ""
+    },
+    "accepted_metadata": {
+      "status": "ok",
+      "source_type": "seed_record",
+      "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+      "translated_title": "EMR-Diff：用于高光谱图像超分辨率的边缘感知多模态残差扩散模型",
+      "authors": [
+        "Tao Zhang",
+        "Shengtao Yao",
+        "Rong Zeng",
+        "Zunjie Zhu",
+        "Bolun Zheng",
+        "Yaoqi Sun",
+        "Ying Fu",
+        "Chenggang Yan"
+      ],
+      "year": "2026",
+      "venue": "CVPR 2026, pp. 23419–23429",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+      "local_pdf_path": "D:/coding/github_self/thesis_base_line/research/supervised_hm_fusion_20261010/sources/emrdiff/source.pdf",
+      "metadata_sources": [
+        "official_cvf_landing_page",
+        "official_cvf_pdf_first_page"
+      ],
+      "abstract": "Hardware constraints make it challenging to simultaneously acquire hyperspectral images (HSIs) with both high spatial and high spectral resolutions. A promising solution is to fuse low-resolution HSI (LR-HSI) with high-resolution multispectral images (HR-MSI) to generate high-resolution HSI (HR-HSI). Recently, diffusion models have introduced possibilities for HSI super-resolution, but suffer from low-efficiency sampling, detail-limited generation, and insufficient denoising. To address these issues, we propose an Edge-aware Multimodal Residual Diffusion Model (EMR-Diff). Specifically, multimodal residual mechanism is introduced to facilitate efficient information transfer among HR-MSI, LR-HSI, and HR-HSI, significantly improving the fusion efficiency. Edge-aware noise strategy is designed by exploiting the edge information of HR-MSI, which guides the model to prioritize high-frequency detail reconstruction by applying stronger noise perturbations to edge regions. In addition, we propose a Bilateral Attention Fusion UNet and design a multi-scale supervision mechanism to enable progressive reconstruction and collaborative optimization of spectral and spatial features. Extensive experiments demonstrate that our method achieves superior performance over existing approaches in both quantitative metrics and visual quality. Our code is available at: https://github.com/luocz55/EMR-Diff.",
+      "paper_id": "title:b594f500b60c",
+      "script": "resolve_paper.py"
+    },
+    "bound_sources": [
+      {
+        "kind": "local_pdf",
+        "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "provider": "seed_record",
+        "binding_reason": "trusted_input"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+        "provider": "seed_record",
+        "binding_reason": "trusted_input"
+      }
+    ],
+    "field_provenance": {
+      "title": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "translated_title": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "authors": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "year": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "venue": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "abstract": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "source_url": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "pdf_url": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      },
+      "local_pdf_path": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:b594f500b60c"
+        }
+      }
+    },
+    "selected_identity_evidence": [
+      {
+        "kind": "title",
+        "value": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+        "trust": "metadata",
+        "source": "metadata"
+      },
+      {
+        "kind": "trusted_source_path",
+        "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+        "trust": "strong",
+        "source": "source_manifestation"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+        "trust": "source_manifestation",
+        "source": "metadata"
+      },
+      {
+        "kind": "source_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+        "trust": "source_manifestation",
+        "source": "metadata"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+        "trust": "source_manifestation",
+        "source": "source_manifestation"
+      },
+      {
+        "kind": "source_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+        "trust": "source_manifestation",
+        "source": "source_manifestation"
+      }
+    ],
+    "equivalence_decision": {
+      "status": "equivalent",
+      "reason": "title_author_or_abstract_supports_equivalence",
+      "location_binding": "source_manifestation",
+      "evidence": [
+        {
+          "kind": "title_similarity",
+          "status": "match",
+          "score": 1.0,
+          "source_value": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+          "work_value": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution"
+        },
+        {
+          "kind": "leading_author",
+          "status": "match",
+          "source_value": "Tao Zhang",
+          "work_value": "Tao Zhang"
+        },
+        {
+          "kind": "abstract_similarity",
+          "status": "match",
+          "score": 1.0
+        }
+      ]
+    },
+    "warnings": [],
+    "repair_trace_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_identity_repair_trace.json",
+    "provenance": {
+      "resolve_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_resolve.json",
+      "metadata_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_metadata.json"
+    }
+  },
+  "source_manifestation": {
+    "source_kind": "local_pdf",
+    "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+    "year": "2026",
+    "venue": "CVPR 2026, pp. 23419–23429",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+    "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+    "local_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+    "doi": "",
+    "arxiv_id": "",
+    "zotero_key": ""
+  }
+}

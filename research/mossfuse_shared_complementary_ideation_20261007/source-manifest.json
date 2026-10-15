@@ -1,0 +1,314 @@
+{
+  "date": "2026-10-07",
+  "primary_sources": {
+    "MossFuse": "https://doi.org/10.1007/s11263-026-02757-8",
+    "SRLF": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+    "RASD": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003775",
+    "CoMM": "https://proceedings.iclr.cc/paper_files/paper/2025/file/108030643e640ac050e0ed5e6aace48f-Paper-Conference.pdf",
+    "NUD_PAF": "https://pubmed.ncbi.nlm.nih.gov/41191478/",
+    "ES": "https://openreview.net/forum?id=upMIVpe467",
+    "SpecAware": "https://doi.org/10.1016/j.isprsjprs.2026.02.024",
+    "Optics": "https://vccimaging.org/Publications/Fu2025Limitations/",
+    "PSF2026": "https://www.tandfonline.com/doi/full/10.1080/19479832.2026.2613383"
+  },
+  "new_reference_audit": [
+    {
+      "repo": "YuanyeLiu/SRLF-Net",
+      "commit": "a23bd1932b25ed1bc9f8f97b97bc7cc1244ac2bd",
+      "code_paths": [
+        "README.md",
+        "calculate_metrics.py",
+        "deep_select_mamba.py",
+        "deep_select_mamba_gf5.py",
+        "main.py",
+        "mambair.py",
+        "ssim.py",
+        "test.py",
+        "train_cave.py",
+        "train_dataloader.py",
+        "train_nc.py",
+        "utils.py"
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/YuanyeLiu/SRLF-Net/a23bd1932b25ed1bc9f8f97b97bc7cc1244ac2bd/README.md",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\SRLF_README.md.txt",
+          "sha256": "bf3fc784cca8aea589ced22785e036689d35b402826990c4771f3313485e73ce",
+          "lines": 26,
+          "review_scope": "仓库说明及代码公开性。",
+          "blob_url": "https://github.com/YuanyeLiu/SRLF-Net/blob/a23bd1932b25ed1bc9f8f97b97bc7cc1244ac2bd/README.md"
+        },
+        {
+          "path": "deep_select_mamba.py",
+          "url": "https://raw.githubusercontent.com/YuanyeLiu/SRLF-Net/a23bd1932b25ed1bc9f8f97b97bc7cc1244ac2bd/deep_select_mamba.py",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\SRLF_deep_select_mamba.py.txt",
+          "sha256": "bcea9265778b8b86f22df1c41d89571bceac6ad1e1e798715393a8c77561ea7d",
+          "lines": 394,
+          "review_scope": "选读 Degenerate 与 Model_and_SSIM_Guided，250–324 核对观测域选择性修正。",
+          "blob_url": "https://github.com/YuanyeLiu/SRLF-Net/blob/a23bd1932b25ed1bc9f8f97b97bc7cc1244ac2bd/deep_select_mamba.py"
+        },
+        {
+          "path": "train_cave.py",
+          "url": "https://raw.githubusercontent.com/YuanyeLiu/SRLF-Net/a23bd1932b25ed1bc9f8f97b97bc7cc1244ac2bd/train_cave.py",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\SRLF_train_cave.py.txt",
+          "sha256": "cb2d5028c7d375c58b81cb4fbf7557e41d0967f3c82a199acfdc41755a524433",
+          "lines": 237,
+          "review_scope": "核对 164–178 活动 HR-HSI L1；不把未调用损失类视为训练。",
+          "blob_url": "https://github.com/YuanyeLiu/SRLF-Net/blob/a23bd1932b25ed1bc9f8f97b97bc7cc1244ac2bd/train_cave.py"
+        }
+      ]
+    },
+    {
+      "repo": "YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion",
+      "commit": "c977d8f6f67508eb3a22afca5b3f8aadd1ad496c",
+      "code_paths": [
+        "FusionDataset.py",
+        "RASD_FuNet.py",
+        "README.md",
+        "metrics.py",
+        "selectpoint.py",
+        "ss2d_.py",
+        "test.py",
+        "test_gf5.py",
+        "train_cave.py",
+        "train_zs_shot.py",
+        "utils.py"
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/README.md",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\RASD_README.md.txt",
+          "sha256": "6ddd5ccf2047854ed29c997f44a037f42fbafb8669a132c907cbe8506cfd6dac",
+          "lines": 2,
+          "review_scope": "仓库说明及代码公开性。",
+          "blob_url": "https://github.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/blob/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/README.md"
+        },
+        {
+          "path": "RASD_FuNet.py",
+          "url": "https://raw.githubusercontent.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/RASD_FuNet.py",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\RASD_RASD_FuNet.py.txt",
+          "sha256": "86f6adbb7f645932c486f0af114bd75dca043fafbe48a3f615d039429612c471",
+          "lines": 581,
+          "review_scope": "核对 LRD/SLBlock，331–428 分数与双路线；492–511 输出。",
+          "blob_url": "https://github.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/blob/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/RASD_FuNet.py"
+        },
+        {
+          "path": "selectpoint.py",
+          "url": "https://raw.githubusercontent.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/selectpoint.py",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\RASD_selectpoint.py.txt",
+          "sha256": "e733e2d38151ad9d235e773246748aa0ee9309ab309373e929d912a7a490434c",
+          "lines": 78,
+          "review_scope": "批索引选择/回填工具，不将其当作秩估计。",
+          "blob_url": "https://github.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/blob/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/selectpoint.py"
+        },
+        {
+          "path": "train_zs_shot.py",
+          "url": "https://raw.githubusercontent.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/train_zs_shot.py",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\RASD_train_zs_shot.py.txt",
+          "sha256": "7efcbf8ccf16338ab03bea6b5be12e35595080fd028bfdc3567e695ce7ccfa74",
+          "lines": 403,
+          "review_scope": "93–110 输入 HSI 的内部降尺度目标构造；223–251 来源路径；281–300 活动目标；外部 GF5 配置及数据身份未核实，不认证无外部 HR 标签。",
+          "blob_url": "https://github.com/YuanyeLiu/Rank-Aware-Routing-Decomposition-for-Hyperspectral-and-Multispectral-Image-Fusion/blob/c977d8f6f67508eb3a22afca5b3f8aadd1ad496c/train_zs_shot.py"
+        }
+      ]
+    },
+    {
+      "repo": "vccimaging/OpticsAwareHSI-Analysis",
+      "commit": "e6fd100689e1bd406b7466ef4f45a488ec4bb19b",
+      "code_paths": [
+        "MST_plus_plus_code/train_code/architecture/AWAN.py",
+        "MST_plus_plus_code/train_code/architecture/GMSR.py",
+        "MST_plus_plus_code/train_code/architecture/HDNet.py",
+        "MST_plus_plus_code/train_code/architecture/HPRN.py",
+        "MST_plus_plus_code/train_code/architecture/HSCNN_Plus.py",
+        "MST_plus_plus_code/train_code/architecture/MIRNet.py",
+        "MST_plus_plus_code/train_code/architecture/MPRNet.py",
+        "MST_plus_plus_code/train_code/architecture/MSFN.py",
+        "MST_plus_plus_code/train_code/architecture/MST.py",
+        "MST_plus_plus_code/train_code/architecture/MST_Plus_Plus.py",
+        "MST_plus_plus_code/train_code/architecture/Restormer.py",
+        "MST_plus_plus_code/train_code/architecture/SSRnet.py",
+        "MST_plus_plus_code/train_code/architecture/SSTHyper.py",
+        "MST_plus_plus_code/train_code/architecture/__init__.py",
+        "MST_plus_plus_code/train_code/architecture/edsr.py",
+        "MST_plus_plus_code/train_code/architecture/hinet.py",
+        "MST_plus_plus_code/train_code/architecture/hrnet.py",
+        "MST_plus_plus_code/train_code/architecture/hysat.py",
+        "MST_plus_plus_code/train_code/hsi_dataset.py",
+        "MST_plus_plus_code/train_code/train.py",
+        "MST_plus_plus_code/train_code/utils.py",
+        "README.md",
+        "RGB2HS/train_RGB2HS_fixed_metamer.py",
+        "RGB2HS/train_RGB2HS_no_metamer.py",
+        "RGB2HS/train_RGB2HS_onthefly_metamer.py",
+        "RGB2HS/validate_RGB2HS.py",
+        "architecture/AWAN.py",
+        "architecture/GMSR.py",
+        "architecture/HDNet.py",
+        "architecture/HPRN.py",
+        "architecture/HSCNN_Plus.py",
+        "architecture/MIRNet.py",
+        "architecture/MPRNet.py",
+        "architecture/MSFN.py",
+        "architecture/MST.py",
+        "architecture/MST_Plus_Plus.py",
+        "architecture/Restormer.py",
+        "architecture/SSRnet.py",
+        "architecture/SSTHyper.py",
+        "architecture/__init__.py",
+        "architecture/edsr.py",
+        "architecture/hinet.py",
+        "architecture/hrnet.py",
+        "architecture/hysat.py",
+        "config/arad_1k.py",
+        "config/cave.py",
+        "config/icvl.py",
+        "config/kaust.py",
+        "dataset_tools/__init__.py",
+        "dataset_tools/loader.py",
+        "dataset_tools/prepare_CAVE.py",
+        "dataset_tools/prepare_ICVL.py",
+        "dataset_tools/prepare_KAUST.py",
+        "metamer/__init__.py",
+        "metamer/generate_metamers.py",
+        "metamer/metrics.py",
+        "metamer/utils.py",
+        "metamer/visualize.py"
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/vccimaging/OpticsAwareHSI-Analysis/e6fd100689e1bd406b7466ef4f45a488ec4bb19b/README.md",
+          "local_temp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\moss_ideation_20261007\\Optics_README.md.txt",
+          "sha256": "c49164e3b1a0981c94cf34a55b80e5433b1fe04ee06c1aad68fb6948ec4c4e39",
+          "lines": 304,
+          "review_scope": "说明与同色异谱实验入口；未执行 RGB 光谱重建或数据增强。",
+          "blob_url": "https://github.com/vccimaging/OpticsAwareHSI-Analysis/blob/e6fd100689e1bd406b7466ef4f45a488ec4bb19b/README.md"
+        }
+      ]
+    }
+  ],
+  "reused_fixed_audit": [
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "MossFuseNet.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/MossFuseNet.py",
+      "sha256": "f359ca1c9a5985f41b7e731cd0d9db0b8f11ab3aa68749d0acdb7a4a23bcf74c",
+      "lines": 263,
+      "review_scope": "编码器、Decoder_HR、MossFuse.forward；不声称复现全部训练",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/MossFuseNet.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "net.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/net.py",
+      "sha256": "f846258cf120362836bafebf8b02b9c2fe3ae12e36de4c5b1ddebbe71da2c81e",
+      "lines": 320,
+      "review_scope": "Cross_Spatial_Attention、Cross_Spectral_Attention、聚合类",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/net.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "train.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/train.py",
+      "sha256": "7ff9c5298af8b05b8d65df51958cbfc1246da61e0a790e6a69bbe47e4d8290d3",
+      "lines": 294,
+      "review_scope": "活动 backward 项与仅用于日志的 HR loss",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/train.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "utils.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/utils.py",
+      "sha256": "6014a003c1f0d69d9c92cdadc30cc8230367fccd7987167f7ffebf90ad6daab0",
+      "lines": 269,
+      "review_scope": "cal_cos_loss、cal_decomp_loss（本轮 MossFuse 文件）",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/utils.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/README.md",
+      "sha256": "abc0547596d13ac356b6d800544ab5dffb4f1c49ec1c722ef169297e1d442fd8",
+      "lines": 68,
+      "review_scope": "仓库说明与方法/环境边界",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/README.md"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "cs+inp/train.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs+inp/train.py",
+      "sha256": "dd61cbef68894adde477c30638856a718c880bdf0c2d95f52cdbc7d51069f65b",
+      "lines": 139,
+      "review_scope": "physics/model/losses 的训练组织",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs%2Binp/train.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "cs+inp/run_train.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs+inp/run_train.py",
+      "sha256": "ed6f9069dd76471036ea3b6b1372ef7e3a16cb0cbfa9c471ccbf2d313dd3be77",
+      "lines": 35,
+      "review_scope": "仅下载保存摘要，未进行完整语义审查",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs%2Binp/run_train.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "mri/losses.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/losses.py",
+      "sha256": "a60c8ee10a1e18344e9e813b2eb380304715d4e5960a4d1e5f368a0b82081a7b",
+      "lines": 109,
+      "review_scope": "SplitR2RLoss 及 model adaptation",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/losses.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "mri/training.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/training.py",
+      "sha256": "a952de697834440249e719e2f35c390c34351ddfe5463153b069d4e3ab26ed1a",
+      "lines": 1393,
+      "review_scope": "仅选读数据流片段，不宣称完整训练器审查",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/training.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/README.md",
+      "sha256": "6cb36d06466f4c9cfb7b02b5e8d5e92ca0038ea5dcdcfed79039c1a3ff0c4867",
+      "lines": 162,
+      "review_scope": "仓库说明与方法/环境边界",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/README.md"
+    }
+  ],
+  "reused_manifest_path": "D:\\coding\\github_self\\thesis_base_line\\research\\d2_net_modification_plan_20261006\\source-manifest.json",
+  "reused_manifest_sha256": "d97edb37243ee94c8382285ab0cd397635b34d4a03fbbb54c09bae5b93992156",
+  "local_python_before": {
+    "calculate_metrics.py": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94",
+    "FunctionTest.py": "e2123da95b5fc25d2727fc7e680b06395f104a3aef9c64545290cabb6685f961",
+    "model.py": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66",
+    "train_cave_M.py": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc",
+    "train_dataloader.py": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578",
+    "utils.py": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944",
+    "other_base/baseline.py": "dfc7a5ca076305bfe5ab1b99a83438b310cf3e27177f912dd67b3f49133b43e7",
+    "research/baseline_diagnostics.py": "1b531516dcdd3bfe9f786d4e98310e4e7890f1ab3aa0edaee9a898329afe94e2",
+    "research/build_baseline_learning_report.py": "b6fb32c6440655214843ef258c418d9fbf9978f97907fe485683dbfbba30f3ec",
+    "research/d2_feasibility_and_story_20261006/build_planning_pack.py": "59e1d686c549fb6f5bea098b5b3e0ff19401253651bd54323f35551579f274c7",
+    "research/d2_feasibility_and_story_20261006/feasibility_preflight.py": "1d7ac980dd4871f3f5b97867aac653a4f755e8581b8b4dd3a64f88c67cc8afa5",
+    "research/d2_researchability_review_20261006/verify_observation_quartet.py": "c6b0936b2c38049bd1ed46d81ad95dd1e6dfbd5d2b4737873f2d0c12168e4b9a"
+  },
+  "code_run": false,
+  "new_network_training": false,
+  "review_independent": false
+}

@@ -1,0 +1,3276 @@
+{
+  "status": "ok",
+  "script": "plan_figures.py",
+  "paper_id": "title:b594f500b60c",
+  "output_language": "zh-CN",
+  "figure_plan": {
+    "paper_id": "title:b594f500b60c",
+    "figures": [
+      {
+        "id": "Figure 2",
+        "caption": "Architecture of the proposed EMR-Diff for HSI super-resolution. The multimodal residual E0 is obtained by subtracting A0",
+        "kind": "method_overview",
+        "section": "机制流程",
+        "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+        "priority": 1,
+        "anchor_text": "机制流程",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_003_fig_figure_2.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_fig_figure_2.png",
+          "width": 724,
+          "height": 271,
+          "size_bytes": 50183,
+          "label": "Figure 2",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.228504,
+            "visual_rect_count": 3877,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 0,
+            "table_body_rows": 0,
+            "caption_text_chars": 139,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 3,
+            "score": 8,
+            "matched_terms": [
+              "fig. 2",
+              "architecture",
+              "proposed",
+              "emr-diff",
+              "super-resolution",
+              "multimodal"
+            ],
+            "snippet": "echanism, edge-aware noise, and BAF-UNet. The struc- ture diagram of EMR-Diff is shown in Fig. 2. Notation. In general, the relationship between LR-HSI, HR-MSI, and HR-HSI can be express",
+            "images": [
+              {
+                "filename": "page_003_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_01.png",
+                "width": 609,
+                "height": 609,
+                "size_bytes": 157275
+              },
+              {
+                "filename": "page_003_img_07.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_07.png",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 47614
+              },
+              {
+                "filename": "page_003_img_10.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_10.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 11544
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_003_fig_figure_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_fig_figure_2.png",
+                "width": 724,
+                "height": 271,
+                "size_bytes": 50183,
+                "label": "Figure 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.228504,
+                  "visual_rect_count": 3877,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 139,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 3,
+            "matched_terms": [
+              "emr-diff",
+              "super-resolution",
+              "multimodal"
+            ],
+            "snippet": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 5,
+            "score": 3,
+            "matched_terms": [
+              "architecture",
+              "proposed",
+              "super-resolution"
+            ],
+            "snippet": "sion UNet (BAF-UNet) HR-MSI(↓8) (b) Multi-scale Group Attention Block (MSGAB) · Figure 4. Architecture of the proposed BAF-UNet. Multi-scale supervision calculates the L1 loss between the resu",
+            "images": [
+              {
+                "filename": "page_005_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_01.png",
+                "width": 77,
+                "height": 246,
+                "size_bytes": 892
+              },
+              {
+                "filename": "page_005_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_02.png",
+                "width": 129,
+                "height": 77,
+                "size_bytes": 490
+              },
+              {
+                "filename": "page_005_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_03.png",
+                "width": 78,
+                "height": 247,
+                "size_bytes": 892
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_005_fig_figure_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4.png",
+                "width": 666,
+                "height": 394,
+                "size_bytes": 114987,
+                "label": "Figure 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.305482,
+                  "visual_rect_count": 74,
+                  "visual_body_ratio": 0.406427,
+                  "paragraph_text_chars": 900,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 218,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 4",
+        "caption": "Architecture of the proposed BAF-UNet. Multi-scale",
+        "kind": "method_overview",
+        "section": "机制流程",
+        "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+        "priority": 1,
+        "anchor_text": "机制流程",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_005_fig_figure_4.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4.png",
+          "width": 666,
+          "height": 394,
+          "size_bytes": 114987,
+          "label": "Figure 4",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.305482,
+            "visual_rect_count": 74,
+            "visual_body_ratio": 0.406427,
+            "paragraph_text_chars": 900,
+            "table_body_rows": 0,
+            "caption_text_chars": 218,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 5,
+            "score": 8,
+            "matched_terms": [
+              "figure 4",
+              "architecture",
+              "proposed",
+              "baf-unet",
+              "multi-scale"
+            ],
+            "snippet": "tention Fusion UNet (BAF-UNet) HR-MSI(↓8) (b) Multi-scale Group Attention Block (MSGAB) · Figure 4. Architecture of the proposed BAF-UNet. Multi-scale supervision calculates the L1 loss be",
+            "images": [
+              {
+                "filename": "page_005_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_01.png",
+                "width": 77,
+                "height": 246,
+                "size_bytes": 892
+              },
+              {
+                "filename": "page_005_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_02.png",
+                "width": 129,
+                "height": 77,
+                "size_bytes": 490
+              },
+              {
+                "filename": "page_005_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_03.png",
+                "width": 78,
+                "height": 247,
+                "size_bytes": 892
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_005_fig_figure_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4.png",
+                "width": 666,
+                "height": 394,
+                "size_bytes": 114987,
+                "label": "Figure 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.305482,
+                  "visual_rect_count": 74,
+                  "visual_body_ratio": 0.406427,
+                  "paragraph_text_chars": 900,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 218,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 4,
+            "score": 6,
+            "matched_terms": [
+              "fig. 4",
+              "baf-unet"
+            ],
+            "snippet": "ge of each step. We propose a dual-path guided model archi- tecture BAF-UNet, as shown in Fig. 4. The first path pro- cesses the noisy input X ′ t, incorporating time-step embed- ding vi",
+            "images": [
+              {
+                "filename": "page_004_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_01.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21096
+              },
+              {
+                "filename": "page_004_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_02.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21403
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_004_fig_figure_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3.png",
+                "width": 221,
+                "height": 124,
+                "size_bytes": 26227,
+                "label": "Figure 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.031998,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.754087,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 3,
+            "score": 3,
+            "matched_terms": [
+              "architecture",
+              "proposed",
+              "baf-unet"
+            ],
+            "snippet": "𝒳𝒳1 ′ 𝒳𝒳t ′ 𝒳𝒳T ′ 𝒳𝒳0 ′ H×W×(S+s) H×W×(S+s) 𝒜𝒜0 𝒜𝒜0 𝜂𝜂1 𝜂𝜂t 𝜂𝜂1 𝜂𝜂t 𝑵𝑵∗ 𝜂𝜂T 𝜂𝜂T Figure 2. Architecture of the proposed EMR-Diff for HSI super-resolution. The multimodal residual E0 is obtained",
+            "images": [
+              {
+                "filename": "page_003_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_01.png",
+                "width": 609,
+                "height": 609,
+                "size_bytes": 157275
+              },
+              {
+                "filename": "page_003_img_07.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_07.png",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 47614
+              },
+              {
+                "filename": "page_003_img_10.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_10.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 11544
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_003_fig_figure_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_fig_figure_2.png",
+                "width": 724,
+                "height": 271,
+                "size_bytes": 50183,
+                "label": "Figure 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.228504,
+                  "visual_rect_count": 3877,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 139,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 1",
+        "caption": "Comparison of different diffusion models. With edge-",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_001_fig_figure_1.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+          "width": 697,
+          "height": 561,
+          "size_bytes": 126765,
+          "label": "Figure 1",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.454144,
+            "visual_rect_count": 53,
+            "visual_body_ratio": 0.485733,
+            "paragraph_text_chars": 1816,
+            "table_body_rows": 0,
+            "caption_text_chars": 165,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 1,
+            "score": 8,
+            "matched_terms": [
+              "figure 1",
+              "comparison",
+              "different",
+              "diffusion",
+              "models",
+              "edge-"
+            ],
+            "snippet": "-efficiency Comparison (c) Edge-aware Multimodal Residual Diffusion Model Forward Reverse Figure 1. Comparison of different diffusion models. With edge- aware noise and multimodal residual",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 3,
+            "score": 3,
+            "matched_terms": [
+              "diffusion",
+              "models",
+              "edge-"
+            ],
+            "snippet": "ated by modulating Gaussian noise with the edge information of HR-MSI. During the forward diffusion process, the starting point X ′ 0 is gradually injected with E0 and N ∗, both controlled",
+            "images": [
+              {
+                "filename": "page_003_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_01.png",
+                "width": 609,
+                "height": 609,
+                "size_bytes": 157275
+              },
+              {
+                "filename": "page_003_img_07.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_07.png",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 47614
+              },
+              {
+                "filename": "page_003_img_10.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_img_10.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 11544
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_003_fig_figure_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_fig_figure_2.png",
+                "width": 724,
+                "height": 271,
+                "size_bytes": 50183,
+                "label": "Figure 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.228504,
+                  "visual_rect_count": 3877,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 139,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 3,
+            "matched_terms": [
+              "different",
+              "diffusion",
+              "models",
+              "edge-"
+            ],
+            "snippet": "ng feature confusion and enabling the network to focus on learning specific features from different sources. Meanwhile, the BAF-UNet (S) using only single- scale supervision results in a PS",
+            "images": [
+              {
+                "filename": "page_008_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_01.png",
+                "width": 71,
+                "height": 1046,
+                "size_bytes": 5880
+              },
+              {
+                "filename": "page_008_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_02.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 144192
+              },
+              {
+                "filename": "page_008_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_03.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 98022
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_table_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 43,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_table_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 48,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+                "width": 224,
+                "height": 115,
+                "size_bytes": 55025,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.030077,
+                  "visual_rect_count": 5,
+                  "visual_body_ratio": 0.719652,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 59,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 5",
+        "caption": "Visual comparison results for all methods across the ICVL, Harvard, and Chikusei datasets. Under the ICVL and Harvard",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_006_fig_figure_5.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_figure_5.png",
+          "width": 663,
+          "height": 543,
+          "size_bytes": 584486,
+          "label": "Figure 5",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.418915,
+            "visual_rect_count": 78,
+            "visual_body_ratio": 0.773065,
+            "paragraph_text_chars": 519,
+            "table_body_rows": 0,
+            "caption_text_chars": 406,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 6,
+            "score": 8,
+            "matched_terms": [
+              "figure 5",
+              "visual",
+              "comparison",
+              "methods",
+              "across",
+              "icvl"
+            ],
+            "snippet": "0.05 0.04 0.03 0.02 0.01 0.00 0.05 0.04 0.03 0.02 0.01 0.00 0.05 0.04 0.03 0.02 0.01 0.00 Figure 5. Visual comparison results for all methods across the ICVL, Harvard, and Chikusei dataset",
+            "images": [
+              {
+                "filename": "page_006_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_img_01.png",
+                "width": 62,
+                "height": 941,
+                "size_bytes": 6911
+              },
+              {
+                "filename": "page_006_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_img_02.png",
+                "width": 417,
+                "height": 210,
+                "size_bytes": 7975
+              },
+              {
+                "filename": "page_006_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_img_03.png",
+                "width": 417,
+                "height": 210,
+                "size_bytes": 7124
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_006_fig_table_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_table_1.png",
+                "width": 652,
+                "height": 197,
+                "size_bytes": 35344,
+                "label": "Table 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.14944,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1195,
+                  "table_body_rows": 14,
+                  "caption_text_chars": 208,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_006_fig_figure_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_figure_5.png",
+                "width": 663,
+                "height": 543,
+                "size_bytes": 584486,
+                "label": "Figure 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.418915,
+                  "visual_rect_count": 78,
+                  "visual_body_ratio": 0.773065,
+                  "paragraph_text_chars": 519,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 406,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "fig. 5",
+              "visual",
+              "comparison",
+              "methods",
+              "across",
+              "icvl"
+            ],
+            "snippet": "n the ICVL, Harvard, and Chikusei datasets. The comparison pixel is at the yellow star in Fig. 5. deviation of 2) and downsampling by 8 times bicubic inter- polation. HR-MSI is obtained",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 3,
+            "matched_terms": [
+              "visual",
+              "comparison",
+              "methods",
+              "across"
+            ],
+            "snippet": "achieves superior performance over existing approaches in both quantita- tive metrics and visual quality. Our code is available at: https://github.com/luocz55/EMR-Diff. 1. Introduction H",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 2",
+        "caption": "Ablation study of multimodal residual.",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_007_fig_table_2.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+          "width": 816,
+          "height": 95,
+          "size_bytes": 535,
+          "label": "Table 2",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "reject",
+            "quality_reason_codes": [
+              "table_body_missing",
+              "caption_only_suspected"
+            ],
+            "page_coverage_ratio": 0.090746,
+            "visual_rect_count": 0,
+            "visual_body_ratio": 0.0,
+            "paragraph_text_chars": 0,
+            "table_body_rows": 0,
+            "caption_text_chars": 47,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "reject_visual_quality"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "table 2",
+              "ablation",
+              "multimodal",
+              "residual"
+            ],
+            "snippet": "and BAF-UNet architecture, can more effectively capture the data distribution of HR-HSI, Table 2. Ablation study of multimodal residual. Methods PSNR ↑ SSIM ↑ SAM ↓ ERGAS ↓ None Residual",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 3,
+            "matched_terms": [
+              "ablation",
+              "multimodal",
+              "residual"
+            ],
+            "snippet": "Table 5. Ablation study of diffusion steps. Steps PSNR ↑ SSIM ↑ SAM ↓ ERGAS ↓ 3 48.54 0.9987 0.0239 0.8009",
+            "images": [
+              {
+                "filename": "page_008_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_01.png",
+                "width": 71,
+                "height": 1046,
+                "size_bytes": 5880
+              },
+              {
+                "filename": "page_008_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_02.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 144192
+              },
+              {
+                "filename": "page_008_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_03.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 98022
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_table_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 43,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_table_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 48,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+                "width": 224,
+                "height": 115,
+                "size_bytes": 55025,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.030077,
+                  "visual_rect_count": 5,
+                  "visual_body_ratio": 0.719652,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 59,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 2,
+            "matched_terms": [
+              "multimodal",
+              "residual"
+            ],
+            "snippet": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution Tao Zhang1,4 Shengtao Y",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 3",
+        "caption": "Ablation study of edge-aware noise.",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_007_fig_table_3.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+          "width": 648,
+          "height": 115,
+          "size_bytes": 33814,
+          "label": "Table 3",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "reject",
+            "quality_reason_codes": [
+              "table_body_missing",
+              "multiple_caption_regions_suspected"
+            ],
+            "page_coverage_ratio": 0.086783,
+            "visual_rect_count": 2,
+            "visual_body_ratio": 0.461596,
+            "paragraph_text_chars": 132,
+            "table_body_rows": 0,
+            "caption_text_chars": 44,
+            "other_caption_count": 1,
+            "other_caption_labels": [
+              "Table 2"
+            ]
+          },
+          "candidate_status": "reject_visual_quality"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "table 3",
+              "ablation",
+              "edge-aware",
+              "noise"
+            ],
+            "snippet": "imodal Residual 48.46 0.9986 0.0241 0.8025 Multimodal Residual 49.28 0.9990 0.0233 0.7800 Table 3. Ablation study of edge-aware noise. Methods PSNR ↑ SSIM ↑ SAM ↓ ERGAS ↓ Pure Noise 48.36",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "table 3",
+              "ablation",
+              "edge-aware",
+              "noise"
+            ],
+            "snippet": "-frequency details, we compared it with a baseline using pure Gaussian noise. As shown in Table 3, all metrics showed consistent improve- ment after adopting edge-aware noise, with PSNR i",
+            "images": [
+              {
+                "filename": "page_008_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_01.png",
+                "width": 71,
+                "height": 1046,
+                "size_bytes": 5880
+              },
+              {
+                "filename": "page_008_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_02.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 144192
+              },
+              {
+                "filename": "page_008_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_03.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 98022
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_table_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 43,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_table_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 48,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+                "width": 224,
+                "height": 115,
+                "size_bytes": 55025,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.030077,
+                  "visual_rect_count": 5,
+                  "visual_body_ratio": 0.719652,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 59,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 2,
+            "matched_terms": [
+              "edge-aware",
+              "noise"
+            ],
+            "snippet": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution Tao Zhang1,4",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 4",
+        "caption": "Ablation study on BAF-UNet. MSS denotes multi-scale",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_007_fig_table_4.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+          "width": 448,
+          "height": 93,
+          "size_bytes": 24437,
+          "label": "Table 4",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "reject",
+            "quality_reason_codes": [
+              "table_body_missing",
+              "multiple_caption_regions_suspected"
+            ],
+            "page_coverage_ratio": 0.048478,
+            "visual_rect_count": 4,
+            "visual_body_ratio": 0.642715,
+            "paragraph_text_chars": 81,
+            "table_body_rows": 0,
+            "caption_text_chars": 113,
+            "other_caption_count": 1,
+            "other_caption_labels": [
+              "Table 3"
+            ]
+          },
+          "candidate_status": "reject_visual_quality"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "table 4",
+              "ablation",
+              "baf-unet",
+              "denotes",
+              "multi-scale"
+            ],
+            "snippet": "ERGAS ↓ Pure Noise 48.36 0.9986 0.0245 0.8198 Edge-aware Noise 49.28 0.9990 0.0233 0.7800 Table 4. Ablation study on BAF-UNet. MSS denotes multi-scale supervision. BAF-UNet(S) is with sin",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "table 4",
+              "ablation",
+              "baf-unet",
+              "multi-scale"
+            ],
+            "snippet": "modular ablation study on the key design of BAF-UNet, and the results are sum- marized in Table 4. Replacing the MSGAB module with a regular residual block in B-UNet leads to a significan",
+            "images": [
+              {
+                "filename": "page_008_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_01.png",
+                "width": 71,
+                "height": 1046,
+                "size_bytes": 5880
+              },
+              {
+                "filename": "page_008_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_02.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 144192
+              },
+              {
+                "filename": "page_008_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_03.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 98022
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_table_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 43,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_table_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 48,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+                "width": 224,
+                "height": 115,
+                "size_bytes": 55025,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.030077,
+                  "visual_rect_count": 5,
+                  "visual_body_ratio": 0.719652,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 59,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 5,
+            "score": 3,
+            "matched_terms": [
+              "baf-unet",
+              "denotes",
+              "multi-scale"
+            ],
+            "snippet": "oftMax Conv LN LReLU Conv LReLU GAP Conv SoftMax MLP (a) Bilateral Attention Fusion UNet (BAF-UNet) HR-MSI(↓8) (b) Multi-scale Group Attention Block (MSGAB) · Figure 4. Architecture of the",
+            "images": [
+              {
+                "filename": "page_005_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_01.png",
+                "width": 77,
+                "height": 246,
+                "size_bytes": 892
+              },
+              {
+                "filename": "page_005_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_02.png",
+                "width": 129,
+                "height": 77,
+                "size_bytes": 490
+              },
+              {
+                "filename": "page_005_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_03.png",
+                "width": 78,
+                "height": 247,
+                "size_bytes": 892
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_005_fig_figure_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4.png",
+                "width": 666,
+                "height": 394,
+                "size_bytes": 114987,
+                "label": "Figure 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.305482,
+                  "visual_rect_count": 74,
+                  "visual_body_ratio": 0.406427,
+                  "paragraph_text_chars": 900,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 218,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 5",
+        "caption": "Ablation study of diffusion steps.",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_008_fig_table_5.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+          "width": 277,
+          "height": 84,
+          "size_bytes": 6453,
+          "label": "Table 5",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.027064,
+            "visual_rect_count": 0,
+            "visual_body_ratio": 0.0,
+            "paragraph_text_chars": 116,
+            "table_body_rows": 5,
+            "caption_text_chars": 43,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "table 5",
+              "ablation",
+              "diffusion",
+              "steps"
+            ],
+            "snippet": "Table 5. Ablation study of diffusion steps. Steps PSNR ↑ SSIM ↑ SAM ↓ ERGAS ↓ 3 48.54 0.9987 0.02",
+            "images": [
+              {
+                "filename": "page_008_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_01.png",
+                "width": 71,
+                "height": 1046,
+                "size_bytes": 5880
+              },
+              {
+                "filename": "page_008_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_02.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 144192
+              },
+              {
+                "filename": "page_008_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_03.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 98022
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_table_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 43,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_table_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 48,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+                "width": 224,
+                "height": 115,
+                "size_bytes": 55025,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.030077,
+                  "visual_rect_count": 5,
+                  "visual_body_ratio": 0.719652,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 59,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 4,
+            "score": 2,
+            "matched_terms": [
+              "diffusion",
+              "steps"
+            ],
+            "snippet": "by propagating the multimodal residual through the Markov chain, we effectively guide the diffusion model to reconstruct the missing spatial structures and spectral properties, rather than",
+            "images": [
+              {
+                "filename": "page_004_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_01.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21096
+              },
+              {
+                "filename": "page_004_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_02.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21403
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_004_fig_figure_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3.png",
+                "width": 221,
+                "height": 124,
+                "size_bytes": 26227,
+                "label": "Figure 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.031998,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.754087,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 1,
+            "matched_terms": [
+              "diffusion"
+            ],
+            "snippet": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution Tao Zhang1,4 Shengtao Yao1 Rong Zeng1 Zunj",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 6",
+        "caption": "Ablation study of pseudo-MSI synthesis.",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_008_fig_table_6.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+          "width": 277,
+          "height": 84,
+          "size_bytes": 6453,
+          "label": "Table 6",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.027064,
+            "visual_rect_count": 0,
+            "visual_body_ratio": 0.0,
+            "paragraph_text_chars": 116,
+            "table_body_rows": 5,
+            "caption_text_chars": 48,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "table 6",
+              "ablation",
+              "pseudo-msi",
+              "synthesis"
+            ],
+            "snippet": "9 4 48.70 0.9988 0.0237 0.7890 5 49.28 0.9990 0.0233 0.7800 10 48.89 0.9988 0.0236 0.7882 Table 6. Ablation study of pseudo-MSI synthesis. Bands PSNR ↑ SSIM ↑ SAM ↓ ERGAS ↓ (29,30,31) 48.",
+            "images": [
+              {
+                "filename": "page_008_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_01.png",
+                "width": 71,
+                "height": 1046,
+                "size_bytes": 5880
+              },
+              {
+                "filename": "page_008_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_02.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 144192
+              },
+              {
+                "filename": "page_008_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_03.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 98022
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_table_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 43,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_table_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 48,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+                "width": 224,
+                "height": 115,
+                "size_bytes": 55025,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.030077,
+                  "visual_rect_count": 5,
+                  "visual_body_ratio": 0.719652,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 59,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 7,
+            "score": 2,
+            "matched_terms": [
+              "ablation",
+              "synthesis"
+            ],
+            "snippet": "UNet architecture, can more effectively capture the data distribution of HR-HSI, Table 2. Ablation study of multimodal residual. Methods PSNR ↑ SSIM ↑ SAM ↓ ERGAS ↓ None Residual 47.93 0.9",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 1,
+            "matched_terms": [
+              "pseudo-msi"
+            ],
+            "snippet": "ectral and spatial resolution remains *Corresponding author HR-HSI Edge-aware Noise Noise Pseudo-MSI HR-HSI Multimodal Residual Better computational efficiency Better computational efficienc",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 3",
+        "caption": "Edge similarity of HR-HSI and MR-HSI.",
+        "kind": "supporting_figure",
+        "section": "深度分析",
+        "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+        "priority": 3,
+        "anchor_text": "深度分析",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_004_fig_figure_3.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3.png",
+          "width": 221,
+          "height": 124,
+          "size_bytes": 26227,
+          "label": "Figure 3",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.031998,
+            "visual_rect_count": 2,
+            "visual_body_ratio": 0.754087,
+            "paragraph_text_chars": 0,
+            "table_body_rows": 0,
+            "caption_text_chars": 47,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 4,
+            "score": 8,
+            "matched_terms": [
+              "fig. 3",
+              "edge",
+              "similarity",
+              "hr-hsi",
+              "mr-hsi"
+            ],
+            "snippet": "high similarity of the high-frequency edge information in HR-HSI and HR-MSI, as shown in Fig. 3. Sobel oper- ator is used to extract edge information of HR-MSI. First, we convert the HR",
+            "images": [
+              {
+                "filename": "page_004_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_01.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21096
+              },
+              {
+                "filename": "page_004_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_02.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21403
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_004_fig_figure_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3.png",
+                "width": 221,
+                "height": 124,
+                "size_bytes": 26227,
+                "label": "Figure 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.031998,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.754087,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 7,
+            "score": 3,
+            "matched_terms": [
+              "edge",
+              "similarity",
+              "hr-hsi"
+            ],
+            "snippet": "IF, PSRT, DSPNet, SMGU, LRTN, EMR-Diff), our EMR-Diff method, with multimodal resid- ual, edge-aware noise, and BAF-UNet architecture, can more effectively capture the data distributio",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 2,
+            "matched_terms": [
+              "edge",
+              "hr-hsi"
+            ],
+            "snippet": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution Tao Zh",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_01.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 38019
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_02.jpeg",
+                "width": 301,
+                "height": 300,
+                "size_bytes": 13618
+              },
+              {
+                "filename": "page_001_img_03.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_img_03.jpeg",
+                "width": 300,
+                "height": 300,
+                "size_bytes": 15146
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1.png",
+                "width": 697,
+                "height": 561,
+                "size_bytes": 126765,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.454144,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 0.485733,
+                  "paragraph_text_chars": 1816,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 165,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 6",
+        "caption": "Spectral errors in the ICVL, Harvard, and Chikusei",
+        "kind": "supporting_figure",
+        "section": "深度分析",
+        "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+        "priority": 3,
+        "anchor_text": "深度分析",
+        "insert_mode": "placeholder",
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "fig. 6",
+              "spectral",
+              "errors",
+              "icvl",
+              "harvard",
+              "chikusei"
+            ],
+            "snippet": "ansfer effectively guide the model to accurately reconstruct critical spatial details. In Fig. 6, our EMR-Diff consistently maintains the lowest error curve and the smallest fluctuation",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 5,
+            "score": 3,
+            "matched_terms": [
+              "spectral",
+              "icvl",
+              "chikusei"
+            ],
+            "snippet": "and the downsampled version of the real HR- HSI at the same resolution. on structural and spectral priors. The two paths fuse features in deep layers rather than early concatenation, preve",
+            "images": [
+              {
+                "filename": "page_005_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_01.png",
+                "width": 77,
+                "height": 246,
+                "size_bytes": 892
+              },
+              {
+                "filename": "page_005_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_02.png",
+                "width": 129,
+                "height": 77,
+                "size_bytes": 490
+              },
+              {
+                "filename": "page_005_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_img_03.png",
+                "width": 78,
+                "height": 247,
+                "size_bytes": 892
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_005_fig_figure_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4.png",
+                "width": 666,
+                "height": 394,
+                "size_bytes": 114987,
+                "label": "Figure 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.305482,
+                  "visual_rect_count": 74,
+                  "visual_body_ratio": 0.406427,
+                  "paragraph_text_chars": 900,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 218,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 6,
+            "score": 3,
+            "matched_terms": [
+              "icvl",
+              "harvard",
+              "chikusei"
+            ],
+            "snippet": "Table 1. All methods are compared quantitatively on the ICVL, Harvard, and Chikusei datasets. ↑and ↓indicate that higher or lower values correspond to",
+            "images": [
+              {
+                "filename": "page_006_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_img_01.png",
+                "width": 62,
+                "height": 941,
+                "size_bytes": 6911
+              },
+              {
+                "filename": "page_006_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_img_02.png",
+                "width": 417,
+                "height": 210,
+                "size_bytes": 7975
+              },
+              {
+                "filename": "page_006_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_img_03.png",
+                "width": 417,
+                "height": 210,
+                "size_bytes": 7124
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_006_fig_table_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_table_1.png",
+                "width": 652,
+                "height": 197,
+                "size_bytes": 35344,
+                "label": "Table 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.14944,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1195,
+                  "table_body_rows": 14,
+                  "caption_text_chars": 208,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_006_fig_figure_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_figure_5.png",
+                "width": 663,
+                "height": 543,
+                "size_bytes": 584486,
+                "label": "Figure 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.418915,
+                  "visual_rect_count": 78,
+                  "visual_body_ratio": 0.773065,
+                  "paragraph_text_chars": 519,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 406,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "page-proximity-and-caption-cues"
+      },
+      {
+        "id": "Figure 7",
+        "caption": "Visualization of pure noise and edge-aware noise.",
+        "kind": "supporting_figure",
+        "section": "深度分析",
+        "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+        "priority": 3,
+        "anchor_text": "深度分析",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_008_fig_figure_7.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+          "width": 224,
+          "height": 115,
+          "size_bytes": 55025,
+          "label": "Figure 7",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.030077,
+            "visual_rect_count": 5,
+            "visual_body_ratio": 0.719652,
+            "paragraph_text_chars": 93,
+            "table_body_rows": 0,
+            "caption_text_chars": 59,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "fig. 7",
+              "visualization",
+              "pure",
+              "noise",
+              "edge-aware"
+            ],
+            "snippet": "ng edge-aware noise, with PSNR increas- ing by 0.92 dB. As the error map visualization in Fig. 7 shows, images generated using edge-aware noise exhibit significantly smaller errors in ed",
+            "images": [
+              {
+                "filename": "page_008_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_01.png",
+                "width": 71,
+                "height": 1046,
+                "size_bytes": 5880
+              },
+              {
+                "filename": "page_008_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_02.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 144192
+              },
+              {
+                "filename": "page_008_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_img_03.png",
+                "width": 800,
+                "height": 800,
+                "size_bytes": 98022
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_table_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 43,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_table_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_6.png",
+                "width": 277,
+                "height": 84,
+                "size_bytes": 6453,
+                "label": "Table 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.027064,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 116,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 48,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_008_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7.png",
+                "width": 224,
+                "height": 115,
+                "size_bytes": 55025,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.030077,
+                  "visual_rect_count": 5,
+                  "visual_body_ratio": 0.719652,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 59,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 4,
+            "score": 3,
+            "matched_terms": [
+              "pure",
+              "noise",
+              "edge-aware"
+            ],
+            "snippet": "ually add Gaussian noise to an original image, eventually completely destroying it into a pure noise image. EMR-Diff improves to fully utilize the information of LR-HSI and HR-MSI and",
+            "images": [
+              {
+                "filename": "page_004_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_01.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21096
+              },
+              {
+                "filename": "page_004_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_img_02.jpeg",
+                "width": 500,
+                "height": 500,
+                "size_bytes": 21403
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_004_fig_figure_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3.png",
+                "width": 221,
+                "height": 124,
+                "size_bytes": 26227,
+                "label": "Figure 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.031998,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.754087,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 7,
+            "score": 3,
+            "matched_terms": [
+              "visualization",
+              "pure",
+              "noise",
+              "edge-aware"
+            ],
+            "snippet": "antitative metrics. It demonstrates the effectiveness of the proposed method. Qualitative Visualization. The spatial visualization is shown in Fig. 5, and zoom-in image and the corresponding er",
+            "images": [
+              {
+                "filename": "page_007_img_01.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_01.png",
+                "width": 474,
+                "height": 312,
+                "size_bytes": 71274
+              },
+              {
+                "filename": "page_007_img_02.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_02.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 46856
+              },
+              {
+                "filename": "page_007_img_03.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_img_03.png",
+                "width": 441,
+                "height": 312,
+                "size_bytes": 43386
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_table_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_2.png",
+                "width": 816,
+                "height": 95,
+                "size_bytes": 535,
+                "label": "Table 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "caption_only_suspected"
+                  ],
+                  "page_coverage_ratio": 0.090746,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 47,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_3.png",
+                "width": 648,
+                "height": 115,
+                "size_bytes": 33814,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.086783,
+                  "visual_rect_count": 2,
+                  "visual_body_ratio": 0.461596,
+                  "paragraph_text_chars": 132,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 44,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_table_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_007_fig_table_4.png",
+                "width": 448,
+                "height": 93,
+                "size_bytes": 24437,
+                "label": "Table 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_body_missing",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.048478,
+                  "visual_rect_count": 4,
+                  "visual_body_ratio": 0.642715,
+                  "paragraph_text_chars": 81,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 113,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      }
+    ]
+  }
+}

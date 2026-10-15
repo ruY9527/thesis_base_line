@@ -70,6 +70,22 @@ events.out.tfevents.*
 *.swo
 
 # ============================
+# 调研资料大文件（可再生的抓取产物，不上传）
+# ============================
+# 论文原文 PDF（research/**/raw.pdf、sources/**/source.pdf 等）
+*.pdf
+
+# 随调研脚本下载的第三方 Python 包二进制（pymupdf/PIL 等）
+.deps/
+
+# 抓取的网页原文（体积大，parsed.md / meta.json 已保留正文）
+raw.html
+source.html
+
+# 从 HTML 抽取的原始图片（未被 parsed.md 引用；notes/ 下被笔记引用的图片不受影响）
+research/**/fulltext/**/images/
+
+# ============================
 # 操作系统
 # ============================
 .DS_Store

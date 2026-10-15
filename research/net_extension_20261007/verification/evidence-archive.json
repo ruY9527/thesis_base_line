@@ -1,0 +1,30 @@
+{
+  "sit": {
+    "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\sit",
+    "sentinel": "559d12f3b934",
+    "sha256": {
+      "page-6.png": "812f9b24118e0eae831b5cc2b77603d90ed7de222496900566ee6a087d478c2c",
+      "parsed.md": "5cb1e5abe946a38786d3de8cb75bfbeb53737a997b45971bd71853de365c134d",
+      "raw.pdf": "3c6c81aefce910d3f2ea6f959702ed248f17cff66f898c4c27b31276fbd60222"
+    }
+  },
+  "drfusion": {
+    "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\drfusion",
+    "sentinel": "b1233abd0c32",
+    "sha256": {
+      "page-3.png": "5b4c70fb651edde1dbe983c62c72ccf63e8ef09dcae9bde93cba2f5cc1fd2277",
+      "page-5.png": "762066eea86a9c09977a89781b32763336ea42d3951cd9225302fec2a5eae415",
+      "parsed.md": "739f2e69ce82de3f6122f5d73b68772860accdadf1264e7516345325a9665401",
+      "raw.pdf": "9464ebf6771830f97d27f7a9520b22b8b1caf82b19459313be8770efc9aeecfc"
+    }
+  },
+  "rnd": {
+    "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\rnd",
+    "sentinel": "ad7a95a11468",
+    "sha256": {
+      "page-3.png": "29fc5ba41fa964742945e718cfe41c9455e2001eca775c1844bc29066a83ea59",
+      "parsed.md": "37f73e87dac76011523e3810d18c3295997b5ac1445d8565db7566e921413338",
+      "raw.pdf": "04d42250c17c840171c790e8a9eb8b005fccb3f13d4f38ef90fd80138b62a2f5"
+    }
+  }
+}

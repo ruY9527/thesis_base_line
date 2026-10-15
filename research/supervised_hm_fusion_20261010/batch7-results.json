@@ -1,0 +1,35 @@
+[
+  {
+    "id": "hsc_train",
+    "requested_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/train_caveL1_method2.py",
+    "final_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/train_caveL1_method2.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_train\\source.html",
+    "bytes": 9157,
+    "sha256": "42c1ce7dae113932aefc6ab05d0fd8e958e065c684050f5402beb2f3d38f5bd8",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "hsc_model",
+    "requested_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/net2/multiscale_specconvfront2_reschangemarx.py",
+    "final_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/net2/multiscale_specconvfront2_reschangemarx.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_model\\source.html",
+    "bytes": 20860,
+    "sha256": "9bb0f46f17080381f6d7018bc965bded1bfabfedf9ac069d38e8f13fa51106b4",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "hsc_readme",
+    "requested_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/README.md",
+    "final_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_readme\\source.html",
+    "bytes": 1328,
+    "sha256": "f681c2f98dd4d2d7b27b1b67987ccfa850e6c507a8b50fef4e9ba32f3d3c079a",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  [
+    "neurips2026",
+    "https://neurips.cc/Downloads/2026",
+    "html"
+  ],
+  [
+    "carl_pdf",
+    "https://openreview.net/pdf/06c03489864236829ee6008cde9cee87d1b41a15.pdf",
+    "pdf"
+  ],
+  [
+    "clorf_metadata",
+    "https://api.crossref.org/works/10.1007/s11263-025-02540-1",
+    "json"
+  ],
+  [
+    "ssc_metadata",
+    "https://api.crossref.org/works/10.1007/s11263-025-02466-8",
+    "json"
+  ],
+  [
+    "feinfn",
+    "https://proceedings.neurips.cc/paper_files/paper/2024/hash/74088c68894b99383c12399c9c637be9-Abstract-Conference.html",
+    "html"
+  ]
+]

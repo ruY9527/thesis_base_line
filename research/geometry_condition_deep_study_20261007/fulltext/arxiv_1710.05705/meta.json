@@ -1,0 +1,39 @@
+{
+  "canonical_id": "arxiv:1710.05705",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Blind Image Fusion for Hyperspectral Imaging with the Directional Total Variation",
+  "year": 2017,
+  "doi": null,
+  "arxiv_id": "1710.05705",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1710.05705\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1710.05705\\parsed.md",
+  "parser": "html",
+  "abstract": "Hyperspectral imaging is a cutting-edge type of remote sensing used for mapping vegetation properties, rock minerals and other materials. A major drawback of hyperspectral imaging devices is their intrinsic low spatial resolution. In this paper, we propose a method for increasing the spatial resolution of a hyperspectral image by fusing it with an image of higher spatial resolution that was obtained with a different imaging modality. This is accomplished by solving a variational problem in which the regularization functional is the directional total variation. To accommodate for possible mis-registrations between the two images, we consider a non-convex blind super-resolution problem where both a fused image and the corresponding convolution kernel are estimated. Using this approach, our model can realign the given images if needed. Our experimental results indicate that the non-convexity is negligible in practice and that reliable solutions can be computed using a variety of different optimization algorithms. Numerical results on real remote sensing data from plant sciences and urban monitoring show the potential of the proposed method and suggests that it is robust with respect to the regularization parameters, mis-registration and the shape of the kernel.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 901,
+  "parsed_chars": 60703,
+  "sentinel": "a4aac5004727",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1710.05705\\parsed.md",
+      "offset": 0,
+      "limit": 901
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

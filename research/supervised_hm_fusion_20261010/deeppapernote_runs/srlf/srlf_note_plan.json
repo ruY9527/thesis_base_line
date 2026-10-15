@@ -1,0 +1,37 @@
+{
+  "output_language":"zh-CN",
+  "paper_type":"AI_method",
+  "paper_type_rationale":"有监督 HSI/MSI 融合，核心是多尺度 SS2D 初步融合及由观测模型引导的选择性再学习。",
+  "dominant_domain":"高光谱图像融合",
+  "must_cover":["观测与真值记号","四步网络机制","SSIM/SAM 排序和比例","输入观测无需 HR 真值","多尺度贡献与选择贡献分解","可学习退化代理消融","FLOPs 口径与真实数据边界","已查看的作者代码与补充材料差异"],
+  "key_numbers":["CAVE 49.3881 对 Mog-DCN 48.5910","Harvard 47.8954 对 47.8910","w/o selection 49.3135、86.65G，对 full 49.3881、81.22G","w/o multi-scale 48.0473","w/o B and R 49.3412","四阶段对五阶段 49.3881/49.5214","Gaofen5 QNR 0.9733","补充跨数据集 PSNR 46.4822"],
+  "real_comparisons":["同表监督基线 MIMO-SST、DSPNet、Mog-DCN","选择消融保留网络结构，收益需同时看准确率与计算","可学习退化代理仅比固定先验低 0.0469 dB，不能忽略已有盲化处理"],
+  "central_claims":[
+    {"claim":"选择机制在既定合成协议下减少计算并小幅提升准确率。","supporting_evidence":[{"pages":[7,8]}],"what_it_actually_proves":"移除选择使 PSNR 下降 0.0746 dB，报告 FLOPs 增加 5.43G。","what_it_does_not_prove":"不能把整网相对其他方法的增益全部归于选择，也没有证明相同选择比例下优于随机选择。"},
+    {"claim":"多尺度初步融合是准确率的重要来源。","supporting_evidence":[{"pages":[4,7,8]}],"what_it_actually_proves":"移除多尺度 PSNR 降低 1.3408 dB，比选择消融的差值大。","what_it_does_not_prove":"不能将多尺度与其他参数容量因素完全分开。"},
+    {"claim":"固定已知退化可以替换为可学习代理，并保持接近性能。","supporting_evidence":[{"pages":[7,8]}],"what_it_actually_proves":"表 4 中使用步长卷积和无偏置线性层的设置达到 49.3412 dB。","what_it_does_not_prove":"不等于真实成像固定、元数据错误时选择排序仍可靠，也没有恢复真实传感器响应的证据。"},
+    {"claim":"真实 Gaofen5 的无参考评价改善。","supporting_evidence":[{"pages":[7]}],"what_it_actually_proves":"缩尺度训练后原分辨率测试的 QNR 为 0.9733。","what_it_does_not_prove":"没有原生 HR-HSI 真值，无法据此证明全部高频光谱准确。"}
+  ],
+  "claim_boundaries":["重投影一致性不是 HR 真值正确性的充分条件","学习代理消融与标定错误鲁棒性是不同问题","补充材料忽略注意力矩阵计算","跨数据集表中 UIQI 并非最优，不能复述全部指标最优","监督真值只进入训练损失，模型 gt_msi/gt_hsi 参数名实为输入观测"],
+  "negative_or_limiting_results":["Harvard PSNR 优势仅 0.0044 dB","多尺度消融准确率差大于选择差","五阶段准确率更高，四阶段是成本折中","补充训练损失高于测试损失，gap 缩小不能独立证明抗过拟合","代码使用通道注意力，不能按空间注意力的 N² 推导节省"],
+  "mechanism_result_map":["多尺度 SS2D→图 3 和表 4","SSIM/SAM 选择→表 4 与图 9","选择比例→图 8","级联深度→表 3","固定先验或学习代理→表 4","真实缩尺度监督→表 2"],
+  "comparative_positioning":["是观测重投影、困难区域选择和 Mamba+谱 Transformer 路线的直接前作","新方向应检验错误标定下排序与修正收益的对应，而非重新提出一般困难区域选择"],
+  "reuse_takeaways":["对照相同 K 的随机、边缘和真值误差选择","对照 HSI 单输入计算 MSI 净收益","真实 R 与提供 Rhat 独立控制","在相同硬件上测端到端时间并计入排序与数据搬运"],
+  "followup_questions":["观测评分排序能否预测后续修正收益，而不是仅预测重投影误差？","Rhat 错误时，固定先验版本与学习代理版本谁更稳健？","跳过某些位置的再学习是否优于同成本缩小网络？"],
+  "supplementary_reading":{"pdf":"D:/coding/github_self/thesis_base_line/research/supervised_hm_fusion_20261010/sources/srlf_supp/source.pdf","scope":"补充材料第 1–2 页方法、训练、划分、成本与表 5–6；没有逐例分析补充图 11–12"},
+  "author_code_source":{"url":"https://raw.githubusercontent.com/YuanyeLiu/SRLF-Net/main/deep_select_mamba.py","snapshot_date":"2026-10-11","sha256":"bcea9265778b8b86f22df1c41d89571bceac6ad1e1e798715393a8c77561ea7d","scope":"只读核心网络，不运行外部代码"},
+  "section_plan":[
+    {"section":"核心信息","focus":"按固定顺序记录官方书目与已交叉核对 DOI。","evidence_sources":[{"pages":[1]}]},
+    {"section":"原文摘要翻译","focus":"忠实呈现初步融合、选择再学习及作者成本和过拟合主张。","evidence_sources":[{"section_id":"sec:abstract"}]},
+    {"section":"创新点","focus":"解释统一初步融合之后再分配学习资源的三个设计层次。","evidence_sources":[{"pages":[2,3,4]}]},
+    {"section":"一句话总结","focus":"概括通过观测一致性定位失真特征再进行定向修正。","evidence_sources":[{"pages":[5,6]}]},
+    {"section":"研究问题","focus":"说明空间光谱难度异质性如何转化为精度与计算预算的折中问题。","evidence_sources":[{"section_id":"sec:introduction"}]},
+    {"section":"数据与任务定义","focus":"区分合成 HR 真值训练与 Gaofen5 再退化监督，说明已知响应和配准假设。","evidence_sources":[{"pages":[5,7,8]}]},
+    {"section":"方法主线","focus":"还原四阶段级联，空间和光谱评分选择以及选中点再学习、回填与再融合。","evidence_sources":[{"pages":[4,5,6]}]},
+    {"section":"关键结果","focus":"比较强监督基线，分开选择、多尺度、学习代理和深度消融的数值与因果边界。","evidence_sources":[{"pages":[5,7,8]}]},
+    {"section":"深度分析","focus":"分析重投影排序与真实误差的不等价，核对注意力方向、实际成本和过拟合解释。","evidence_sources":[{"pages":[3,5,6,7,8]}]},
+    {"section":"局限","focus":"明确小幅收益的方差缺失、算量口径、代理退化与真实标定错误测试的区别。","evidence_sources":[{"pages":[7,8]}]},
+    {"section":"我的笔记","focus":"设计独立标定扰动与相同选择预算的反证实验，仅提出基线修改计划。","evidence_sources":[{"pages":[5,7,8]}]},
+    {"section":"引用","focus":"列出正式全文、补充材料和静态核对的作者代码来源。","evidence_sources":[{"pages":[1,9,10]}]}
+  ]
+}

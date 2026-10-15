@@ -1,0 +1,862 @@
+{
+  "status": "ok",
+  "script": "extract_source_text.py",
+  "schema_version": 1,
+  "paper_id": "doi:10.1109/cvpr52734.2025.00697",
+  "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+  "source_sha256": "cad1f047916b146817526efc2e8f898db8af0bfdc87599bb45ddf05cd1b146a9",
+  "source_kind": "pdf_text",
+  "raw_sections_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_raw_sections.jsonl",
+  "full_text_md_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_full_text.md",
+  "pdf": {
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+    "total_pages": 10,
+    "text_pages_extracted": 10,
+    "text_max_pages": null,
+    "text_truncated": false
+  },
+  "coverage": {
+    "total_pages": 10,
+    "text_max_pages": null,
+    "text_pages_extracted": 10,
+    "text_pages_scanned": 10,
+    "text_truncated": false,
+    "truncated_due_to_page_limit": false,
+    "appendix_detected": false,
+    "appendix_start_page": null,
+    "references_start_page": 9
+  },
+  "sections": [
+    {
+      "section_id": "sec:preamble",
+      "kind": "preamble",
+      "title": "preamble",
+      "page_start": 1,
+      "page_end": 1,
+      "char_count": 446,
+      "text_hash_sha256": "2e363af322cefeeded502e66bc82757572ce81634ad66caca4dd4534f17f0a0d"
+    },
+    {
+      "section_id": "sec:preliminary",
+      "kind": "introduction",
+      "title": "Preliminary",
+      "page_start": 1,
+      "page_end": 1,
+      "char_count": 1063,
+      "text_hash_sha256": "bc8005ce829365dc4927aa20f8430d84e686e212d02e71b12dfb18705d3cb6dd"
+    },
+    {
+      "section_id": "sec:abstract",
+      "kind": "abstract",
+      "title": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "char_count": 1851,
+      "text_hash_sha256": "aaa98a8230ef583c9e5502003eeea90e2033322195af9e47bb722ebfcf99446d"
+    },
+    {
+      "section_id": "sec:introduction",
+      "kind": "introduction",
+      "title": "1. Introduction",
+      "page_start": 1,
+      "page_end": 2,
+      "char_count": 5265,
+      "text_hash_sha256": "5082a1eceb7193096b5b8e7741614af3fc041cb7ff39a9206417010ff824b979"
+    },
+    {
+      "section_id": "sec:related-work",
+      "kind": "introduction",
+      "title": "2. Related Work",
+      "page_start": 2,
+      "page_end": 4,
+      "char_count": 6344,
+      "text_hash_sha256": "b5af913c691e89954113a329fdd2a73617fa3332843a3ac32069402690f39746"
+    },
+    {
+      "section_id": "sec:preliminary-2",
+      "kind": "introduction",
+      "title": "Preliminary",
+      "page_start": 4,
+      "page_end": 4,
+      "char_count": 13,
+      "text_hash_sha256": "a8366a4cee831437634ce63fddc52ca207c35e602a17c614b4032c4a61dc92ac"
+    },
+    {
+      "section_id": "sec:preliminary-3",
+      "kind": "introduction",
+      "title": "Preliminary",
+      "page_start": 4,
+      "page_end": 5,
+      "char_count": 3904,
+      "text_hash_sha256": "bdbc55a75dc48bb152206b23f566a993038d7a5588fa12456fed83ee57490252"
+    },
+    {
+      "section_id": "sec:method",
+      "kind": "method",
+      "title": "Method",
+      "page_start": 5,
+      "page_end": 6,
+      "char_count": 2818,
+      "text_hash_sha256": "7dd9cb8a76e3df2d4ea6fb953cff6c9956640f7318c51fa6f407b2f575bb03da"
+    },
+    {
+      "section_id": "sec:methods",
+      "kind": "method",
+      "title": "methods.",
+      "page_start": 6,
+      "page_end": 7,
+      "char_count": 2306,
+      "text_hash_sha256": "bb215de56bc863133b05d597e64aa79b4306b5164bdb23f1b19248aeba7a639e"
+    },
+    {
+      "section_id": "sec:method-2",
+      "kind": "method",
+      "title": "Method",
+      "page_start": 7,
+      "page_end": 7,
+      "char_count": 255,
+      "text_hash_sha256": "0a6f0fd94c8331d6d07234920f9018980feba76fd03a5b64cf93747f48f44ba4"
+    },
+    {
+      "section_id": "sec:model",
+      "kind": "method",
+      "title": "Model",
+      "page_start": 7,
+      "page_end": 7,
+      "char_count": 273,
+      "text_hash_sha256": "4fe40372da33f3346f006f6da4fcd66aec0bacc015e391ff2e1512771ed7aea5"
+    },
+    {
+      "section_id": "sec:model-2",
+      "kind": "method",
+      "title": "Model",
+      "page_start": 7,
+      "page_end": 7,
+      "char_count": 348,
+      "text_hash_sha256": "064b86db0e112ef1d95f04ef7c542eb7efa22b0fbf18140976f4bd9ffe9e2bb9"
+    },
+    {
+      "section_id": "sec:experiments",
+      "kind": "experiment",
+      "title": "4. Experiments",
+      "page_start": 7,
+      "page_end": 8,
+      "char_count": 5511,
+      "text_hash_sha256": "17e0e948bb3e514d4b0a54cd6b299f1a41d4652b60a9edaeb6f4c17f779a7ca6"
+    },
+    {
+      "section_id": "sec:conclusion",
+      "kind": "conclusion",
+      "title": "5. Conclusion",
+      "page_start": 8,
+      "page_end": 8,
+      "char_count": 782,
+      "text_hash_sha256": "c3bc71ae1b4581744a49f128ae6a655471a91565dc132c615a7ca14b1747792b"
+    },
+    {
+      "section_id": "sec:references",
+      "kind": "references",
+      "title": "References",
+      "page_start": 9,
+      "page_end": 10,
+      "char_count": 11076,
+      "text_hash_sha256": "b1674999136b303a272bb11fd4178c7e02704fcc7283651163f9b3c5d4ca1140"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "char_count": 3862,
+      "section_ids": [
+        "sec:preamble",
+        "sec:preliminary",
+        "sec:abstract",
+        "sec:introduction"
+      ]
+    },
+    {
+      "page": 2,
+      "char_count": 5692,
+      "section_ids": [
+        "sec:introduction",
+        "sec:related-work"
+      ]
+    },
+    {
+      "page": 3,
+      "char_count": 5511,
+      "section_ids": [
+        "sec:related-work"
+      ]
+    },
+    {
+      "page": 4,
+      "char_count": 3369,
+      "section_ids": [
+        "sec:related-work",
+        "sec:preliminary-2",
+        "sec:preliminary-3"
+      ]
+    },
+    {
+      "page": 5,
+      "char_count": 3059,
+      "section_ids": [
+        "sec:preliminary-3",
+        "sec:method"
+      ]
+    },
+    {
+      "page": 6,
+      "char_count": 2550,
+      "section_ids": [
+        "sec:method",
+        "sec:methods"
+      ]
+    },
+    {
+      "page": 7,
+      "char_count": 3330,
+      "section_ids": [
+        "sec:methods",
+        "sec:method-2",
+        "sec:model",
+        "sec:model-2",
+        "sec:experiments"
+      ]
+    },
+    {
+      "page": 8,
+      "char_count": 4196,
+      "section_ids": [
+        "sec:experiments",
+        "sec:conclusion"
+      ]
+    },
+    {
+      "page": 9,
+      "char_count": 5765,
+      "section_ids": [
+        "sec:references"
+      ]
+    },
+    {
+      "page": 10,
+      "char_count": 5337,
+      "section_ids": [
+        "sec:references"
+      ]
+    }
+  ],
+  "captions": {
+    "figures": [
+      {
+        "id": "Figure 1",
+        "caption": "The diagram of the Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SSG-SRL) and PSNR-FLOPs-Params",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "section_id": "sec:preamble"
+      },
+      {
+        "id": "Fig 1",
+        "caption": "This mechanism incorporates the observation model",
+        "page": 2,
+        "pages": [
+          2
+        ],
+        "section_id": "sec:introduction"
+      },
+      {
+        "id": "Figure 2",
+        "caption": "The overview of the proposed SRLF-Net. The Embedding layer and the Refine layer are both individual convolutional layers.",
+        "page": 4,
+        "pages": [
+          4
+        ],
+        "section_id": "sec:related-work"
+      },
+      {
+        "id": "Figure 3",
+        "caption": "Different structures of Preliminary Fusion Modules and Effective Receptive Fields. (a) Due to the limitations of the SSM",
+        "page": 4,
+        "pages": [
+          4
+        ],
+        "section_id": "sec:related-work"
+      },
+      {
+        "id": "Figure 4",
+        "caption": "The process of the Spatial Re-learning (Spa-RL) block and Spectral Re-learning (Spe-RL) block. The Spa-RL block and the",
+        "page": 5,
+        "pages": [
+          5
+        ],
+        "section_id": "sec:preliminary-3"
+      },
+      {
+        "id": "Figure 5",
+        "caption": "The pseudo-color images and spectral angle error maps of reconstructed jelly beans ms (a test image of the CAVE dataset) by",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section_id": "sec:method"
+      },
+      {
+        "id": "Figure 6",
+        "caption": "The pseudo-color images spectral angle error maps of reconstructed imgf7 (a test image of the Harvard dataset) by different",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section_id": "sec:method"
+      },
+      {
+        "id": "Figure 7",
+        "caption": "The pseudo-color images of reconstructed Gaofen5 (part) by different methods.",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Figure 8",
+        "caption": "Robustness analysis of the ratio coefficient λ.",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Figure 9",
+        "caption": "Visualization of the positions of distorted feature points under varied ratio coefficient λ for different stages. Visualization of",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section_id": "sec:experiments"
+      }
+    ],
+    "tables": [
+      {
+        "id": "Table 1",
+        "caption": "Quantitative indexes of the test methods on the CAVE dataset and the Harvard dataset. The best result is marked in bold font.",
+        "page": 5,
+        "pages": [
+          5
+        ],
+        "section_id": "sec:preliminary-3"
+      },
+      {
+        "id": "Table 2",
+        "caption": "No-reference quality assessment for Gaofen5. The best result is marked in bold font.",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Table 3",
+        "caption": "Ablation study on network depth.",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Table 4",
+        "caption": "Ablation study on key modules. The best result is marked",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      },
+      {
+        "id": "Table 1",
+        "caption": "records the test results of all methods on the CAVE",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section_id": "sec:methods"
+      }
+    ]
+  },
+  "math_index": [
+    {
+      "text": "y = Ku,",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 4
+    },
+    {
+      "text": "K = (CB, CAB, CA",
+      "section_id": "sec:related-work",
+      "page_start": 2,
+      "page_end": 4
+    },
+    {
+      "text": "T1 = SS2D(Fin),",
+      "section_id": "sec:preliminary-3",
+      "page_start": 4,
+      "page_end": 5
+    },
+    {
+      "text": "1 = Down(T1),",
+      "section_id": "sec:preliminary-3",
+      "page_start": 4,
+      "page_end": 5
+    },
+    {
+      "text": "T2 = SS2D(T d",
+      "section_id": "sec:preliminary-3",
+      "page_start": 4,
+      "page_end": 5
+    },
+    {
+      "text": "2 = PS(T2),",
+      "section_id": "sec:preliminary-3",
+      "page_start": 4,
+      "page_end": 5
+    },
+    {
+      "text": "Fout = SS2D(Concat(T",
+      "section_id": "sec:preliminary-3",
+      "page_start": 4,
+      "page_end": 5
+    },
+    {
+      "text": "Y ′ = RZ′,",
+      "section_id": "sec:method",
+      "page_start": 5,
+      "page_end": 6
+    },
+    {
+      "text": "Mspa = SSIM(Y, Y ′).",
+      "section_id": "sec:method",
+      "page_start": 5,
+      "page_end": 6
+    },
+    {
+      "text": "spa = Sortp(Flatten(Mspa)),",
+      "section_id": "sec:method",
+      "page_start": 5,
+      "page_end": 6
+    },
+    {
+      "text": "VY ′, VY = Select(Y ′, Y ; M ′",
+      "section_id": "sec:method",
+      "page_start": 5,
+      "page_end": 6
+    },
+    {
+      "text": "V = RLspa(VY ′ + VY ),",
+      "section_id": "sec:method",
+      "page_start": 5,
+      "page_end": 6
+    },
+    {
+      "text": "spa = V + Y ′ + Y,",
+      "section_id": "sec:method",
+      "page_start": 5,
+      "page_end": 6
+    },
+    {
+      "text": "r = λ(1 −Avg(Mspa)),",
+      "section_id": "sec:method",
+      "page_start": 5,
+      "page_end": 6
+    },
+    {
+      "text": "X′ = (Z′",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "Mspe = SAM(X′, X).",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "spe = Sortr(Flatten(Mspe)),",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "UX′, UX = Select(X′, X; M ′",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "U = RLspe(UX′ + UX),",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "spe = U + X′ + X,",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "FLOPsSSIM = C1(5k2 + 10)HW,",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "FLOPsSAM = 6HW",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "width of the input MSI. In our experiments, H = W = 512,",
+      "section_id": "sec:methods",
+      "page_start": 6,
+      "page_end": 7
+    },
+    {
+      "text": "N = 1",
+      "section_id": "sec:model",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "text": "N = 2",
+      "section_id": "sec:model",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "text": "N = 3",
+      "section_id": "sec:model",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "text": "N = 4",
+      "section_id": "sec:model",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "text": "N = 5",
+      "section_id": "sec:model",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "text": "C1 = 3, C2 = 31, s = 8, and k = 5. Therefore, the FLOPs",
+      "section_id": "sec:model-2",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "text": "N ranging from 1 to 5. It shows that when N <= 4, eval-",
+      "section_id": "sec:experiments",
+      "page_start": 7,
+      "page_end": 8
+    },
+    {
+      "text": "dB −48.7428 dB). However, when N = 5, the quality im-",
+      "section_id": "sec:experiments",
+      "page_start": 7,
+      "page_end": 8
+    },
+    {
+      "text": "increasing by only 0.1333 dB compared to N = 4. Consid-",
+      "section_id": "sec:experiments",
+      "page_start": 7,
+      "page_end": 8
+    },
+    {
+      "text": "ering the computational cost and fusion quality, N = 4 is",
+      "section_id": "sec:experiments",
+      "page_start": 7,
+      "page_end": 8
+    },
+    {
+      "text": "ble when 0.1 ≤λ ≤0.3. When λ > 0.3, SAM begins to",
+      "section_id": "sec:experiments",
+      "page_start": 7,
+      "page_end": 8
+    },
+    {
+      "text": "fluctuate, and as λ > 0.5, SAM gradually increases. Mean-",
+      "section_id": "sec:experiments",
+      "page_start": 7,
+      "page_end": 8
+    }
+  ],
+  "appendix_index": {
+    "appendix_detected": false,
+    "start_page": null,
+    "sections": [],
+    "figure_captions": [],
+    "table_captions": []
+  },
+  "language_hint": "en",
+  "text_hash_sha256": "856a4c09111a76e719758118a6764e8845093883b733a1a068025634f4f6a51b",
+  "identity_contract": {
+    "artifact_type": "canonical_identity",
+    "schema_version": 2,
+    "paper_id": "doi:10.1109/cvpr52734.2025.00697",
+    "identity_verdict": "accepted",
+    "work_level_identity": {
+      "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+      "translated_title": "用于高光谱融合成像的选择性再学习机制",
+      "authors": [
+        "Yuanye Liu",
+        "Jinyang Liu",
+        "Renwei Dian",
+        "Shutao Li"
+      ],
+      "year": "2025",
+      "venue": "CVPR 2025, pp. 7437–7446",
+      "doi": "10.1109/cvpr52734.2025.00697",
+      "arxiv_id": "",
+      "zotero_key": ""
+    },
+    "source_manifestation": {
+      "source_kind": "local_pdf",
+      "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+      "year": "2025",
+      "venue": "CVPR 2025, pp. 7437–7446",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+      "local_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+      "doi": "",
+      "arxiv_id": "",
+      "zotero_key": ""
+    },
+    "accepted_metadata": {
+      "status": "ok",
+      "source_type": "seed_record",
+      "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+      "translated_title": "用于高光谱融合成像的选择性再学习机制",
+      "authors": [
+        "Yuanye Liu",
+        "Jinyang Liu",
+        "Renwei Dian",
+        "Shutao Li"
+      ],
+      "year": "2025",
+      "venue": "CVPR 2025, pp. 7437–7446",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+      "local_pdf_path": "D:/coding/github_self/thesis_base_line/research/supervised_hm_fusion_20261010/sources/srlf/source.pdf",
+      "metadata_sources": [
+        "official_cvf_landing_page",
+        "official_cvf_pdf_first_page",
+        "openalex",
+        "crossref"
+      ],
+      "abstract": "Hyperspectral fusion imaging is challenged by high computational cost due to the abundant spectral information. We find that pixels in regions with smooth spatial-spectral structure can be reconstructed well using a shallow network, while only those in regions with complex spatial-spectral structure require a deeper network. However, existing methods process all pixels uniformly, which ignores this property. To leverage this property, we propose a Selective Re-learning Fusion Network (SRLF) that initially extracts features from all pixels uniformly and then selectively refines distorted feature points. Specifically, SRLF first employs a Preliminary Fusion Module with robust global modeling capability to generate a preliminary fusion feature. Afterward, it applies a Selective Re-learning Module to focus on improving distorted feature points in the preliminary fusion feature. To achieve targeted learning, we present a novel Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SSG-SRL) that integrates the observation model to identify the feature points with spatial or spectral distortions. Only these distorted points are sent to the corresponding re-learning blocks, reducing both computational cost and the risk of overfitting. Finally, we develop an SRLF-Net, composed of multiple cascaded SRLFs, which surpasses multiple state-of-the-art methods on several datasets with minimal computational cost.",
+      "paper_id": "doi:10.1109/cvpr52734.2025.00697",
+      "script": "resolve_paper.py",
+      "affiliations": [
+        "Hunan University"
+      ],
+      "doi": "10.1109/cvpr52734.2025.00697",
+      "source": "openalex",
+      "published": "2025",
+      "identity_confidence": "high",
+      "identity_confidence_reasons": [
+        "doi_present"
+      ]
+    },
+    "bound_sources": [
+      {
+        "kind": "local_pdf",
+        "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "provider": "seed_record",
+        "binding_reason": "trusted_input"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+        "provider": "seed_record",
+        "binding_reason": "trusted_input"
+      }
+    ],
+    "field_provenance": {
+      "title": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "translated_title": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "authors": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "year": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "venue": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "abstract": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "source_url": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "pdf_url": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "local_pdf_path": {
+        "provider": "seed_record",
+        "retrieved_by": {
+          "kind": "input",
+          "value": "title:44820b570eab"
+        }
+      },
+      "affiliations": {
+        "provider": "openalex",
+        "retrieved_by": {
+          "kind": "title",
+          "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+        }
+      },
+      "doi": {
+        "provider": "openalex",
+        "retrieved_by": {
+          "kind": "title",
+          "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+        }
+      }
+    },
+    "selected_identity_evidence": [
+      {
+        "kind": "doi",
+        "value": "10.1109/cvpr52734.2025.00697",
+        "trust": "strong",
+        "source": "metadata"
+      },
+      {
+        "kind": "title",
+        "value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+        "trust": "metadata",
+        "source": "metadata"
+      },
+      {
+        "kind": "trusted_source_path",
+        "value": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "trust": "strong",
+        "source": "source_manifestation"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+        "trust": "source_manifestation",
+        "source": "metadata"
+      },
+      {
+        "kind": "source_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+        "trust": "source_manifestation",
+        "source": "metadata"
+      },
+      {
+        "kind": "pdf_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+        "trust": "source_manifestation",
+        "source": "source_manifestation"
+      },
+      {
+        "kind": "source_url",
+        "value": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+        "trust": "source_manifestation",
+        "source": "source_manifestation"
+      }
+    ],
+    "equivalence_decision": {
+      "status": "equivalent",
+      "reason": "title_author_or_abstract_supports_equivalence",
+      "location_binding": "source_manifestation",
+      "evidence": [
+        {
+          "kind": "title_similarity",
+          "status": "match",
+          "score": 1.0,
+          "source_value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+          "work_value": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging"
+        },
+        {
+          "kind": "leading_author",
+          "status": "match",
+          "source_value": "Yuanye Liu",
+          "work_value": "Yuanye Liu"
+        },
+        {
+          "kind": "abstract_similarity",
+          "status": "match",
+          "score": 1.0
+        }
+      ]
+    },
+    "warnings": [],
+    "repair_trace_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_identity_repair_trace.json",
+    "provenance": {
+      "resolve_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_resolve.json",
+      "metadata_artifact_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_metadata.json"
+    }
+  },
+  "source_manifestation": {
+    "source_kind": "local_pdf",
+    "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+    "year": "2025",
+    "venue": "CVPR 2025, pp. 7437–7446",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+    "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+    "local_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+    "doi": "",
+    "arxiv_id": "",
+    "zotero_key": ""
+  }
+}

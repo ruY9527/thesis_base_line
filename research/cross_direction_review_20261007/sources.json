@@ -1,0 +1,252 @@
+{
+  "searched_on": "2026-10-07",
+  "window": [
+    "2024-10-07",
+    "2026-10-07"
+  ],
+  "core_fulltext": [
+    {
+      "id": "srlf",
+      "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+      "venue": "CVPR 2025 main",
+      "year": 2025,
+      "field": "选择性计算 / HSI–MSI 融合",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+      "mechanism": "先初步融合，再用回投影后的空间与光谱偏差选择需要重新学习的位置。",
+      "transfer": "在融合特征后增加小型修正头，先以固定比例选择测试是否有收益。",
+      "overlap": "回投影残差选点、SAM/SSIM 驱动重新学习已经存在，不能作为新贡献。",
+      "limit": "FLOPs 的下降不能直接换算成 4090 实际延迟下降。"
+    },
+    {
+      "id": "uafl",
+      "title": "Enhancing Unregistered Hyperspectral Image Super-Resolution via Unmixing-based Abundance Fusion Learning",
+      "venue": "CVPR 2026 main",
+      "year": 2026,
+      "field": "未配准引导 / 丰度空间",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Enhancing_Unregistered_Hyperspectral_Image_Super-Resolution_via_Unmixing-based_Abundance_Fusion_Learning_CVPR_2026_paper.html",
+      "mechanism": "SVD 子空间内学习丰度残差，结合多尺度形变聚合与空间、通道交互。",
+      "transfer": "丰度残差可代替当前 31 通道尾部残差；先与直接残差在相同训练预算下比较。",
+      "overlap": "低秩残差、丰度融合、匹配置信度及流引导偏移均已有直接先例。",
+      "limit": "输出包含原始上采样 HSI 跳连，不能把其整体输出误说成严格 rank-3；SVD 分量也不自动满足非负端元约束。"
+    },
+    {
+      "id": "umnet",
+      "title": "UMNet: Uncertainty-guided Memory Network for Hyperspectral Pansharpening",
+      "venue": "AAAI 2026 main",
+      "year": 2026,
+      "field": "结构化不确定性 / HS–PAN",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37988",
+      "mechanism": "空间、光谱因子化不确定性配合递归融合；先学习不确定性，再提高困难位置的训练权重。",
+      "transfer": "用独立小头估计训练误差分布，研究其能否区分可纠正错误与不可辨识误差。",
+      "overlap": "空间×光谱不确定性、异方差损失和困难样本加权已经存在。",
+      "limit": "PAN 单通道结果不能直接证明三通道 MSI 融合有效；误差尺度也不等于已校准的真实后验方差。"
+    },
+    {
+      "id": "hipandas",
+      "title": "Hipandas: Hyperspectral Image Joint Denoising and Super-Resolution by Image Fusion",
+      "venue": "ICCV 2025 main",
+      "year": 2025,
+      "field": "联合去噪 / 低秩细节",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Xu_Hipandas_Hyperspectral_Image_Joint_Denoising_and_Super-Resolution_by_Image_Fusion_ICCV_2025_paper.html",
+      "mechanism": "分阶段处理噪声与超分辨率，使用低秩网络建模 HSI 及细节，并学习 PAN 响应。",
+      "transfer": "保留有监督 L1，将低秩细节头作为消融，增加噪声压力测试。",
+      "overlap": "低秩细节先验、联合去噪与超分辨率不是新的迁移点。",
+      "limit": "原方法是按场景无监督优化；低秩头可能损伤稀少材料是待验证假设，不能当作已发现的缺陷。"
+    },
+    {
+      "id": "unipan",
+      "title": "Enpowering Your Pansharpening Models with Generalizability: Unified Distribution is All You Need",
+      "venue": "ICCV 2025 main",
+      "year": 2025,
+      "field": "分布迁移 / 分位数变换",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Cui_Enpowering_Your_Pansharpening_Models_with_Generalizability_Unified_Distribution_is_All_ICCV_2025_paper.html",
+      "mechanism": "逐波段经验分位数变换，把输入映射到统一分布；在原始域监督并保留原始 LR 跳连。",
+      "transfer": "仅作为泛化对照，变换参数只能在训练场景拟合。",
+      "overlap": "原始辐射域损失与原始跳连已在 Algorithm 1 中，不能包装成我们的改进。",
+      "limit": "边际对齐不保证联合光谱关系；论文已指出多维扩展方向，不能声称首次提出。"
+    },
+    {
+      "id": "pino",
+      "title": "Physics-informed Neural Operator for Pansharpening",
+      "venue": "NeurIPS 2025 main",
+      "year": 2025,
+      "field": "连续表示 / 成像算子",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/89af8e4eb696738f2c9e589522968a09-Paper-Conference.pdf",
+      "mechanism": "编码后查询连续空间、波长表示，通过 SRF 积分形成输出，并保留 LR 跳连。",
+      "transfer": "共享连续光谱残差解码器可替换固定 31 通道 tail；输入 SRF 应先使用已知标定值。",
+      "overlap": "它已经包含 CAVE HSI–MSI 融合实验，不能把“从 pansharpening 迁移到融合”本身作为创新。",
+      "limit": "文中不同传感器实验不等于已证明任意通道数、任意 SRF 单模型泛化；联合学习辐射场和 SRF 还涉及可辨识性。"
+    },
+    {
+      "id": "diff_spectra",
+      "title": "Unraveling Metameric Dilemma for Spectral Reconstruction: A High-Fidelity Approach via Semi-Supervised Learning",
+      "venue": "NeurIPS 2025 main",
+      "year": 2025,
+      "field": "同色异谱 / 生成先验",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c34ddd05eb089991f06f3c5dc36836e0-Paper-Conference.pdf",
+      "mechanism": "结合光照、色度处理，同色异谱增强及光谱扩散先验进行 RGB→HSI 重建。",
+      "transfer": "优先迁移歧义压力测试和训练增强，暂不搬入完整多步扩散链。",
+      "overlap": "同色异谱增强、范围/零空间分解、光谱扩散均已有先例。",
+      "limit": "任务没有 LR HSI；同样的输入不能由确定性模型区分真实零空间分量。印刷公式存在需核对之处，见正文。"
+    },
+    {
+      "id": "carl",
+      "title": "CARL: Camera-Agnostic Representation Learning for Spectral Image Analysis",
+      "venue": "ICLR 2026 main",
+      "year": 2026,
+      "field": "跨相机表示 / 波长条件化",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/282967f8abaae52a452a97ee961410f3-Paper-Conference.pdf",
+      "mechanism": "物理波长编码与光谱聚合生成固定宽度表示，再学习空间表示和跨相机特征。",
+      "transfer": "仅借用共享波段编码与聚合，不在 CAVE 从头复现大规模基础模型预训练。",
+      "overlap": "通道数无关表示、波长编码和跨相机表示学习已经存在。",
+      "limit": "主要验证分类与分割，不能直接推断高保真光谱重建；语义不变性可能损失幅值是研究问题。"
+    },
+    {
+      "id": "gsnr",
+      "title": "GSNR: Graph Smooth Null-Space Representation for Inverse Problems",
+      "venue": "CVPR 2026 main",
+      "year": 2026,
+      "field": "图先验 / 不可观测分量",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Gualdron-Hurtado_GSNR_Graph_Smooth_Null-Space_Representation_for_Inverse_Problems_CVPR_2026_paper.html",
+      "mechanism": "在测量零空间内用图平滑构造低维结构，并学习其系数作为逆问题先验。",
+      "transfer": "作为零空间正则化的强对照；融合任务应使用两个观测组成的联合算子。",
+      "overlap": "“在不可见分量上加入图先验/学习低维零空间”已经存在，NPN 也是直接前驱。",
+      "limit": "全图特征分解可能昂贵；已读主 PDF，另附补充材料未取得，因此不据此作完整理论审计。"
+    },
+    {
+      "id": "specaware",
+      "title": "SpecAware: A Spectral-Content Aware Foundation Model for Unifying Multi-Sensor Learning in Hyperspectral Remote Sensing Mapping",
+      "venue": "ISPRS JPRS 2026 journal",
+      "year": 2026,
+      "field": "传感器条件超网络 / 多传感器",
+      "url": "https://doi.org/10.1016/j.isprsjprs.2026.02.024",
+      "mechanism": "元数据与内容联合生成每波段矩阵因子，动态编码、动态解码可变通道 HSI。",
+      "transfer": "轻量共享波段前端可适配 Net；需要检验完整 SRF 形状是否比波长/FWHM 更有效。",
+      "overlap": "可变通道解码器、重建预训练、Charbonnier+SAM 保谱损失都已经存在。",
+      "limit": "主要下游任务是语义解译；全文为作者 arXiv v2，期刊身份另经 DOI 和作者代码核实，未逐字比对期刊最终排版。"
+    }
+  ],
+  "extended_catalog": [
+    {
+      "id": "EMR-Diff",
+      "venue": "CVPR 2026 main",
+      "purpose": "边缘感知、多模态残差扩散",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "GEWDiff",
+      "venue": "AAAI 2026 main",
+      "purpose": "几何约束、波形/小波与扩散相关方向的直接对照",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37978",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "CO²IF",
+      "venue": "AAAI 2026 main",
+      "purpose": "语言引导、跨模态最优传输与融合",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38261",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "OTIAS",
+      "venue": "AAAI 2025 main",
+      "purpose": "自适应采样与隐式表示",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32275",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "CLoRF",
+      "venue": "IJCV 2025 journal",
+      "purpose": "任意分辨率、自监督连续表示融合",
+      "url": "https://link.springer.com/article/10.1007/s11263-025-02540-1",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "MossFuse",
+      "venue": "IJCV 2026 journal",
+      "purpose": "自监督模态解耦、无监督 HSI 超分辨率",
+      "url": "https://link.springer.com/article/10.1007/s11263-026-02757-8",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "SSC-HSR",
+      "venue": "IJCV 2025 journal",
+      "purpose": "未对齐 RGB 引导与空间光谱一致性",
+      "url": "https://link.springer.com/article/10.1007/s11263-025-02466-8",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "HyperSIGMA",
+      "venue": "TPAMI 2025 journal",
+      "purpose": "HSI 基础模型，多任务包括重建方向",
+      "url": "https://github.com/WHU-Sigma/HyperSIGMA",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "CDPS",
+      "venue": "TIP 2026 journal",
+      "purpose": "耦合扩散后验采样、无监督 HSI–MSI 融合",
+      "url": "https://github.com/Zhu1116/CDPS-train",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "NPN",
+      "venue": "NeurIPS 2025 main",
+      "purpose": "传感算子专属的低维零空间学习先验",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/acb1891d79e617134ed604084ebbc919-Abstract-Conference.html",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "CoPGNet",
+      "venue": "Information Fusion 2026 journal",
+      "purpose": "外部先验引导与结构化不确定性",
+      "url": "https://doi.org/10.1016/j.inffus.2025.103997",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    },
+    {
+      "id": "BUGPan",
+      "venue": "Information Fusion 2025 journal",
+      "purpose": "双域不确定性门控与可变递归计算",
+      "url": "https://doi.org/10.1016/j.inffus.2025.102938",
+      "depth": "official abstract / metadata or author repository; not full-text read in this pass"
+    }
+  ],
+  "opponents_fulltext": [
+    {
+      "id": "task_decoupled",
+      "title": "Task Decoupled Framework for Reference-based Super-Resolution",
+      "venue": "CVPR 2022 main，历史先例",
+      "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Huang_Task_Decoupled_Framework_for_Reference-Based_Super-Resolution_CVPR_2022_paper.pdf",
+      "overlap": "单图 SR 与参考纹理迁移分开；冻结单图 SR 后，以 HR−SISR 残差监督纹理分支，再用匹配置信度控制迁移。"
+    },
+    {
+      "id": "lightweight_unaligned",
+      "title": "Lightweight Interpretable RGB-Guided Hyperspectral Super-Resolution under Real Cross-resolution Misalignment",
+      "venue": "arXiv 2026-09-01; 未核实正式发表",
+      "url": "https://arxiv.org/abs/2609.01060",
+      "overlap": "配准可靠性加权细节注入；低置信度回退到上采样 HSI。"
+    },
+    {
+      "id": "ambiguity_separation",
+      "title": "Separating Intrinsic Ambiguity from Estimation Uncertainty in Deep Generative Models for Linear Inverse Problems",
+      "venue": "2026; ICML FoGen workshop，非 ICML 主会",
+      "url": "https://arxiv.org/abs/2605.15050",
+      "overlap": "范围/零空间级联，分开内禀歧义与传播不确定性，并以 oracle 条件作校准诊断。"
+    },
+    {
+      "id": "difiv",
+      "title": "Deep Hyperspectral and Multispectral Image Fusion Accounting for Spectral Variability",
+      "venue": "TGRS 2023，历史先例",
+      "url": "https://www.cedric-richard.fr/Articles/wang2023deep.pdf",
+      "overlap": "两个时相的潜在 HR 图像与局部变化先验；不能声称首次处理跨模态局部变化。"
+    },
+    {
+      "id": "uq_nullspace",
+      "title": "Uncertainty-Aware Null Space Networks for Data-Consistent Image Reconstruction",
+      "venue": "arXiv 2023，历史先例",
+      "url": "https://arxiv.org/abs/2304.06955",
+      "overlap": "数据一致零空间网络加输入相关误差尺度，已经结合重建与不确定性。"
+    }
+  ]
+}

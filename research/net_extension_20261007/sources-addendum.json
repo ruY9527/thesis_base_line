@@ -1,0 +1,372 @@
+{
+  "searched_on": "2026-10-07",
+  "window": [
+    "2024-10-07",
+    "2026-10-07"
+  ],
+  "scope": "HSI–MSI fusion baseline: supervised CAVE, 31→3 channels, x8; expansion and renewed reading only; no training or model changes",
+  "skill_protocol": "research-papers canonical helper; every parsed main-paper line read; end sentinel verified; figures/central method pages inspected. New full-text caches are temporary and do not count as repository artifacts. Parent preserved three new full texts and central page renders under fulltext/ with SHA-256 receipts.",
+  "new_fulltext": [
+    {
+      "id": "sit",
+      "title": "Automatic Spectral Calibration of Hyperspectral Images: Method, Dataset and Benchmark",
+      "authors": [
+        "Zhuoran Du",
+        "Shaodi You",
+        "Cheng Cheng",
+        "Shikui Wei"
+      ],
+      "venue": "CVPR 2025 main",
+      "publication_month": "2025-06",
+      "pages": "28081–28090",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Du_Automatic_Spectral_Calibration_of_Hyperspectral_Images_Method_Dataset_and_Benchmark_CVPR_2025_paper.html",
+      "fulltext_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Du_Automatic_Spectral_Calibration_of_Hyperspectral_Images_Method_Dataset_and_Benchmark_CVPR_2025_paper.pdf",
+      "depth": "full main paper including references; supplement not obtained",
+      "parsed_lines": 1007,
+      "sentinel": "559d12f3b934",
+      "read_segments": [
+        [
+          0,
+          505
+        ],
+        [
+          505,
+          502
+        ]
+      ],
+      "visual_pages": [
+        6
+      ],
+      "mechanism": "Global illumination features modulate spectral attention; calibrated/uncalibrated HSI dataset.",
+      "transfer": "Illumination-conditioned input front-end and controlled illumination stress tests; distinguish radiance reconstruction from reflectance calibration.",
+      "prior_art": "SIT itself covers global illumination-aware spectral calibration; DivIll 2021 covers illumination variations; DIFIV 2023 covers cross-image spectral variability.",
+      "kill_criteria": "No calibrated target/measured illumination or no repeatable improvement over ordinary augmentation/simple global gains.",
+      "local_evidence": {
+        "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\sit",
+        "sentinel": "559d12f3b934",
+        "sha256": {
+          "page-6.png": "812f9b24118e0eae831b5cc2b77603d90ed7de222496900566ee6a087d478c2c",
+          "parsed.md": "5cb1e5abe946a38786d3de8cb75bfbeb53737a997b45971bd71853de365c134d",
+          "raw.pdf": "3c6c81aefce910d3f2ea6f959702ed248f17cff66f898c4c27b31276fbd60222"
+        }
+      }
+    },
+    {
+      "id": "drfusion",
+      "title": "Degradation-Robust Fusion: An Efficient Degradation-Aware Diffusion Framework for Multimodal Image Fusion in Arbitrary Degradation Scenarios",
+      "authors": [
+        "Yu Shi",
+        "Yu Liu",
+        "Zhong-Cheng Wu",
+        "Juan Cheng",
+        "Huafeng Li",
+        "Xun Chen"
+      ],
+      "venue": "CVPR 2026 main",
+      "publication_month": "2026-06",
+      "pages": "33848–33858",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Shi_Degradation-Robust_Fusion_An_Efficient_Degradation-Aware_Diffusion_Framework_for_Multimodal_Image_CVPR_2026_paper.html",
+      "fulltext_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Shi_Degradation-Robust_Fusion_An_Efficient_Degradation-Aware_Diffusion_Framework_for_Multimodal_Image_CVPR_2026_paper.pdf",
+      "depth": "full main paper including references; supplement not obtained",
+      "parsed_lines": 1065,
+      "sentinel": "b1233abd0c32",
+      "read_segments": [
+        [
+          0,
+          355
+        ],
+        [
+          355,
+          355
+        ],
+        [
+          710,
+          355
+        ]
+      ],
+      "visual_pages": [
+        3,
+        5
+      ],
+      "mechanism": "Limited-step fused-output regression plus joint degradation/fusion observation correction.",
+      "transfer": "Deterministic supervised Net with optional bounded measurement-residual refinement; use actual HSI+MSI joint operator.",
+      "prior_art": "DRFusion, DDNM, PINO, NPN/GSNR already cover observation constraints or data-consistent priors.",
+      "kill_criteria": "Same-budget single/iterative gradient corrections or consistency loss perform equally; gains only in observation residual rather than HR spectral fidelity.",
+      "formula_audit": "Eq.15 proposed block generalized inverse is not a Moore–Penrose inverse for arbitrary rank-deficient operators; numerical counterexample recorded in literature-addendum.md. Product pseudoinverse reverse-order law also needs conditions. No code audit or experimental invalidation claimed.",
+      "local_evidence": {
+        "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\drfusion",
+        "sentinel": "b1233abd0c32",
+        "sha256": {
+          "page-3.png": "5b4c70fb651edde1dbe983c62c72ccf63e8ef09dcae9bde93cba2f5cc1fd2277",
+          "page-5.png": "762066eea86a9c09977a89781b32763336ea42d3951cd9225302fec2a5eae415",
+          "parsed.md": "739f2e69ce82de3f6122f5d73b68772860accdadf1264e7516345325a9665401",
+          "raw.pdf": "9464ebf6771830f97d27f7a9520b22b8b1caf82b19459313be8770efc9aeecfc"
+        }
+      }
+    },
+    {
+      "id": "rnd",
+      "title": "Real Noise Decoupling for Hyperspectral Image Denoising",
+      "authors": [
+        "Yingkai Zhang",
+        "Tao Zhang",
+        "Jing Nie",
+        "Ying Fu"
+      ],
+      "venue": "AAAI 2026 main",
+      "publication_date": "2026-03-14",
+      "doi": "10.1609/aaai.v40i15.38291",
+      "pages": "12925–12933",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38291",
+      "fulltext_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38291/42253",
+      "author_code": "https://github.com/yingkai-zhang/RND",
+      "depth": "full main paper including references; supplement not obtained",
+      "parsed_lines": 788,
+      "sentinel": "ad7a95a11468",
+      "read_segments": [
+        [
+          0,
+          400
+        ],
+        [
+          400,
+          388
+        ]
+      ],
+      "visual_pages": [
+        3
+      ],
+      "mechanism": "Synthetic calibrated-noise pretraining; frozen teacher to help learn unknown residual noise; wavelet guidance; joint finetuning.",
+      "transfer": "Small LR-HSI precleaning branch plus paired-noise fusion training; compare joint vs cascaded denoise/fusion with equal total budget.",
+      "prior_art": "RND directly covers explicit/implicit noise split and staged training; Hipandas covers joint denoise+guided HSI SR.",
+      "kill_criteria": "No real paired noise data, loss of weak spectral/edge details, or augmentation-only/cascaded baselines explain all improvement.",
+      "local_evidence": {
+        "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\rnd",
+        "sentinel": "ad7a95a11468",
+        "sha256": {
+          "page-3.png": "29fc5ba41fa964742945e718cfe41c9455e2001eca775c1844bc29066a83ea59",
+          "parsed.md": "37f73e87dac76011523e3810d18c3295997b5ac1445d8565db7566e921413338",
+          "raw.pdf": "04d42250c17c840171c790e8a9eb8b005fccb3f13d4f38ef90fd80138b62a2f5"
+        }
+      }
+    }
+  ],
+  "renewed_cached_fulltext": [
+    {
+      "id": "uafl",
+      "venue": "CVPR 2026 main",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Enhancing_Unregistered_Hyperspectral_Image_Super-Resolution_via_Unmixing-based_Abundance_Fusion_Learning_CVPR_2026_paper.html",
+      "parsed_lines": 1044,
+      "sentinel": "2593c6d9b523",
+      "protocol": "Read full 0–1043; initial output middle truncated, repaired by rereading 410–764; visual p3 examined.",
+      "title": "Enhancing Unregistered Hyperspectral Image Super-Resolution via Unmixing-based Abundance Fusion Learning"
+    },
+    {
+      "id": "umnet",
+      "venue": "AAAI 2026 main",
+      "publication_date": "2026-03-14",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37988",
+      "parsed_lines": 880,
+      "sentinel": "3e70f9ba059e",
+      "protocol": "Read 0–439,440–879; visual p2 and p3 examined.",
+      "title": "UMNet: Uncertainty-guided Memory Network for Hyperspectral Pansharpening",
+      "doi": "10.1609/aaai.v40i12.37988",
+      "title_verification": "AAAI official title matches re-read PDF page1. Earlier addendum label Uncertainty-Aware...Hyperspectral Image Pansharpening was an agent transcription error, corrected."
+    },
+    {
+      "id": "carl",
+      "venue": "ICLR 2026 main",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/282967f8abaae52a452a97ee961410f3-Abstract-Conference.html",
+      "parsed_lines": 1361,
+      "sentinel": "e217733d253b",
+      "protocol": "Read 0–339,340–679,680–1019,1020–1360, including all appendix; visual p3 and p4 examined.",
+      "title": "CARL: Camera-Agnostic Representation Learning for Spectral Image Analysis"
+    }
+  ],
+  "candidates_metadata_only": [
+    {
+      "id": "args_diff",
+      "title": "Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model",
+      "venue": "CVPR 2025 main",
+      "publication_month": "2025-06",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhu_Self-Learning_Hyperspectral_and_Multispectral_Image_Fusion_via_Adaptive_Residual_Guided_CVPR_2025_paper.html",
+      "depth": "official abstract/metadata; discovery candidate, not full-text shortlist",
+      "overlap": "Self-learning spatial/spectral distributions in low-dimensional factors plus adaptive residual-guided diffusion already proposed."
+    },
+    {
+      "id": "dfpir",
+      "title": "Degradation-Aware Feature Perturbation for All-in-One Image Restoration",
+      "venue": "CVPR 2025 main",
+      "publication_month": "2025-06",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Tian_Degradation-Aware_Feature_Perturbation_for_All-in-One_Image_Restoration_CVPR_2025_paper.html",
+      "depth": "official abstract/metadata; discovery candidate",
+      "overlap": "Degradation-guided channel shuffle and attention masking already proposed; transfer across task is not originality."
+    },
+    {
+      "id": "universal_degradation",
+      "title": "Towards a Universal Image Degradation Model via Content-Degradation Disentanglement",
+      "venue": "ICCV 2025 main",
+      "publication_month": "2025-10",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Yang_Towards_a_Universal_Image_Degradation_Model_via_Content-Degradation_Disentanglement_ICCV_2025_paper.html",
+      "depth": "official abstract/metadata; discovery candidate",
+      "overlap": "Global/local content–degradation disentanglement already proposed."
+    },
+    {
+      "id": "umfnet",
+      "title": "Uncertainty-Aware Modality Fusion for Unaligned RGB-T Salient Object Detection",
+      "venue": "CVPR 2026 main",
+      "publication_month": "2026-06",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Uncertainty-Aware_Modality_Fusion_for_Unaligned_RGB-T_Salient_Object_Detection_CVPR_2026_paper.html",
+      "depth": "official abstract/metadata; discovery candidate",
+      "overlap": "Latent Gaussian uncertainty implicit alignment and confidence modulation are prior art in adjacent fusion."
+    },
+    {
+      "id": "multispectral_demosaicing",
+      "title": "Multispectral Demosaicing via Dual Cameras",
+      "venue": "ICCV 2025 main",
+      "publication_month": "2025-10",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tedla_Multispectral_Demosaicing_via_Dual_Cameras_ICCV_2025_paper.html",
+      "depth": "official abstract/metadata; discovery candidate",
+      "overlap": "RGB-guided MS reconstruction plus paired dual-camera dataset; different observation geometry, not LR-HSI fusion."
+    },
+    {
+      "id": "hsc",
+      "title": "Heterospectral Structure Compensation Sampling for Hyperspectral Fusion Computational Imaging",
+      "venue": "TIP 2025 journal",
+      "publication_date": "2025-12-03",
+      "doi": "10.1109/TIP.2025.3636676",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11276863",
+      "author_code": "https://github.com/1318133/HSC-Sampling",
+      "depth": "publisher abstract and author code metadata; full-text resolution failed",
+      "overlap": "Cross-band structural complementarity compensates missing LR-HSI details, and multi-phase feature interaction is already proposed.",
+      "fetch_tried": [
+        "Unpaywall skipped: no authorized email configured",
+        "OpenAlex: no OA",
+        "Semantic Scholar: HTTP429",
+        "Crossref: no PDF link",
+        "DOI landing: HTTP202"
+      ],
+      "open_access_gap": true
+    },
+    {
+      "id": "vpg",
+      "title": "Uncertainty-Driven Generative Prior Learning for Sparse Model-Guided Hyperspectral Image Fusion",
+      "venue": "TIP 2026 journal",
+      "publication_year": 2026,
+      "exact_publication_day": null,
+      "doi": "10.1109/TIP.2026.3689415",
+      "url": "https://ieeexplore.ieee.org/document/11520599",
+      "doi_url": "https://doi.org/10.1109/TIP.2026.3689415",
+      "author_record": "https://orcid.org/0000-0001-9375-5426",
+      "depth": "publisher-deposited DOI metadata and indexed author abstract; full-text resolution failed; IEEE robot check",
+      "overlap": "Uncertainty-driven probabilistic clean-codebook matching plus unfolding already covers clean VQ prior and modulation.",
+      "fetch_tried": [
+        "Unpaywall skipped: no authorized email configured",
+        "OpenAlex: no OA",
+        "Semantic Scholar: HTTP429 then no OA PDF, abstract recovered",
+        "Crossref: no PDF link usable by helper",
+        "DOI landing: HTTP202"
+      ],
+      "open_access_gap": true
+    },
+    {
+      "id": "csmsf",
+      "title": "Robust Depth Estimation Under Sensor Degradations: A Multi-Sensor Fusion Perspective",
+      "venue": "TPAMI 2025 journal",
+      "publication_month": "2025-10",
+      "doi": "10.1109/TPAMI.2025.3581311",
+      "url": "https://ieeexplore.ieee.org/document/11045210",
+      "depth": "publisher-deposited DOI metadata; discovery candidate; publisher robot check",
+      "overlap": "Candidate threat to general sensor rejection and sensor-separable fusion; do not infer detailed algorithm without full text."
+    },
+    {
+      "id": "assr",
+      "title": "ASSR-Net: Anisotropic Structure-Aware and Spectrally Recalibrated Network for Hyperspectral Image Fusion",
+      "venue": "arXiv preprint; no main venue verified",
+      "publication_date": "2026-04-07",
+      "url": "https://arxiv.org/abs/2604.05742",
+      "depth": "author abstract; novelty prior-art candidate",
+      "overlap": "Directional spatial enhancement then LR-HSI-anchored spectral recalibration already proposed."
+    },
+    {
+      "id": "copgnet",
+      "title": "Exploring Structured Uncertainty for External Prior-Guided Hyperspectral Image Fusion",
+      "authors": [
+        "Junwei Xu",
+        "Zhenxuan Fang",
+        "Mengzu Liu",
+        "Fangfang Wu",
+        "Tao Huang",
+        "Weisheng Dong",
+        "Xin Li",
+        "Guangming Shi"
+      ],
+      "venue": "Information Fusion 2026 journal",
+      "publication_month": "2026-05",
+      "volume": "129",
+      "article_number": "103997",
+      "doi": "10.1016/j.inffus.2025.103997",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525010590",
+      "depth": "Publisher indexed abstract/introduction and section snippets; complete HTML/PDF unavailable in this pass; not full-text read",
+      "overlap": "External clean HSI prior + internal structural prior, structure-attentive feature modulation, SAM-guided two-stage region uncertainty weighting already proposed. Threat to broad uncertainty gating or structure-consistency claims; exact gain-supervised detail-injection target remains unclosed.",
+      "fetch_tried": [
+        {
+          "canonical_id": "url:241ff27db960ec13",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253525010590",
+          "result": "HTTP403; status failed; no parsed text; no read_plan or sentinel"
+        },
+        {
+          "canonical_id": "url:4038ba08ea5dbd14",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525010590",
+          "result": "HTTP403; status failed; no parsed text; no read_plan or sentinel"
+        },
+        {
+          "method": "web open abs URL",
+          "result": "HTTP403"
+        },
+        {
+          "method": "web search canonical publisher URL",
+          "result": "Indexed abstract/introduction and section snippets; explicitly no complete methodology or experiments"
+        }
+      ],
+      "open_access_gap": true
+    }
+  ],
+  "retrieval_notes": [
+    "CVF HTML web opens sometimes403 while direct official PDFs succeeded via canonical helper.",
+    "System python lacked pypdf; bundled runtime succeeded.",
+    "No real email invented for Unpaywall/OpenAlex.",
+    "Only three addendum files written to repository. New PDFs/parsed text and renders in temporary runtime cache; persistent original pack untouched.",
+    "This is bounded expansion, not exhaustive systematic review. No certainty of originality."
+  ],
+  "persistent_evidence": {
+    "sit": {
+      "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\sit",
+      "sentinel": "559d12f3b934",
+      "sha256": {
+        "page-6.png": "812f9b24118e0eae831b5cc2b77603d90ed7de222496900566ee6a087d478c2c",
+        "parsed.md": "5cb1e5abe946a38786d3de8cb75bfbeb53737a997b45971bd71853de365c134d",
+        "raw.pdf": "3c6c81aefce910d3f2ea6f959702ed248f17cff66f898c4c27b31276fbd60222"
+      }
+    },
+    "drfusion": {
+      "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\drfusion",
+      "sentinel": "b1233abd0c32",
+      "sha256": {
+        "page-3.png": "5b4c70fb651edde1dbe983c62c72ccf63e8ef09dcae9bde93cba2f5cc1fd2277",
+        "page-5.png": "762066eea86a9c09977a89781b32763336ea42d3951cd9225302fec2a5eae415",
+        "parsed.md": "739f2e69ce82de3f6122f5d73b68772860accdadf1264e7516345325a9665401",
+        "raw.pdf": "9464ebf6771830f97d27f7a9520b22b8b1caf82b19459313be8770efc9aeecfc"
+      }
+    },
+    "rnd": {
+      "directory": "D:\\coding\\github_self\\thesis_base_line\\research\\net_extension_20261007\\fulltext\\rnd",
+      "sentinel": "ad7a95a11468",
+      "sha256": {
+        "page-3.png": "29fc5ba41fa964742945e718cfe41c9455e2001eca775c1844bc29066a83ea59",
+        "parsed.md": "37f73e87dac76011523e3810d18c3295997b5ac1445d8565db7566e921413338",
+        "raw.pdf": "04d42250c17c840171c790e8a9eb8b005fccb3f13d4f38ef90fd80138b62a2f5"
+      }
+    }
+  }
+}

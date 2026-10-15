@@ -1,0 +1,2074 @@
+
+## PDF PAGE 1
+OneHSI: A Unified Hyperspectral Foundation
+Model with Physical Consistency
+Yufei Wen1, Jingdan Kang2, Shuxin Zhong1, Yuting Zhang1, Yutong Feng3,
+Jintai Chen1, and Kaishun Wu1 B⋆
+1 The Hong Kong University of Science and Technology (Guangzhou), Guangzhou,
+Guangdong, China
+wuks@hkust-gz.edu.cn
+2 South China University of Technology, Guangzhou, Guangdong, China
+3 National University of Singapore, Singapore
+Abstract. Hyperspectral imaging (HSI) promises material-level percep-
+tion beyond RGB vision, yet current models remain tightly coupled to
+sensing hardware. Minor changes in spectral discretization or spatial res-
+olution can invalidate trained networks, despite all sensors observing the
+same material reflectance physics. We introduce OneHSI, a unified hy-
+perspectral foundation model that aligns representations across hetero-
+geneous sensing configurations through physically motivated inductive
+biases. Rather than treating bands and resolutions as arbitrary tensor di-
+mensions, OneHSI reparameterizes spectral channels in a shared continu-
+ous wavelength space, separates scale-invariant relational attention from
+scale-conditioned feature transformation, and balances cross-domain con-
+tributions to learn sensor-invariant representations. Cross-domain exper-
+iments demonstrate state-of-the-art performance and strong robustness
+under sensor and scale shifts, supporting physics-aligned representation
+learning as a principled path toward cross-sensor generalization.
+Keywords: Hyperspectral imaging · Foundation model · Cross-sensor
+generalization · Spectral representation learning
+1
+Introduction
+Hyperspectral imaging (HSI) promises material-level perception beyond RGB
+vision [24,64], supporting applications from satellite crop monitoring [60,62] to
+intraoperative tumor assessment [42,58]. Across these settings, sensing configura-
+tions differ dramatically, spanning hundreds of meters to micrometers in spatial
+scale [93,106], with varying spectral bands [25,71], wavelength coverage [27,94],
+and noise characteristics [67, 83]. Consequently, models trained on one sensor
+often generalize poorly on another [37, 86, 96], trapping hyperspectral learning
+in a device-dependent paradigm where minor hardware changes can invalidate
+trained models and compromise reproducibility [69,92].
+⋆Corresponding author.
+
+
+## PDF PAGE 2
+2
+Y. Wen et al.
+𝐑𝐞mote Imaging
+Medical Imaging
+Hyperspectral Dataset Scale
+Across four major HSI domains
+Spatial Resolution (meters/pixel)
+Hyperspectral Dataset Characteristics
+Spatial Resolution & Spectral Bands
+Proximal Imaging
+Number of Spectral Bands (number)
+(b)
+(c)
+Meso-Scale
+Proximal HSI
+Micro-Scale
+Microscopic HSI
+Multi-Scale Comparison of Water Spectral Reflectance
+Water reflectance spectra observed at different spatial scales
+Spectral Band Wavelength (nm)
+Spectral Reflectance (normalized)
+Driving Imaging
+Macro-Scale
+Remote HSI
+(a)
+HSI Dataset
+Meso-Scale
+Micro-Scale
+Macro-Scale
+Sampled region
+Fig. 1: The hyperspectral landscape motivating OneHSI. (a) Normalized water re-
+flectance curves [68] observed at macro- [106], meso- [2], and micro-scales [93] share
+consistent spectral structure, indicating underlying physical commonality across di-
+verse sensors and resolutions. (b) Representative datasets exhibit variation in spatial
+resolution and spectral dimensionality (C1 and C2), demonstrating the inher-
+ent cross-domain sensing heterogeneity. (c) Dataset scale across major HSI domains
+reveals severe domain imbalance (C3).
+Recent efforts attempt to extend Vision Foundation Models (VFMs) [61,101,
+113] to hyperspectral imagery, including SpectralGPT [38], HyperSIGMA [99],
+SpectralEarth [12], and HyperFree [46]. However, these approaches are predomi-
+nantly trained on relatively homogeneous satellite imagery and implicitly assume
+stable spectral configurations and spatial scales [96,119]. As a result, when de-
+ployed in ground-level scenarios such as medical imaging [42,58] or autonomous
+driving [29,105], where spectral bands, spatial resolutions, and acquisition condi-
+tions differ substantially, their performance often degrades significantly [10,88].
+Although remote and ground-level hyperspectral systems differ in observation
+geometry and spatial scale (as illustrated in Fig. 1), their measurements share
+a common physical basis: intrinsic spectral signatures are largely gov-
+erned by material composition rather than the sensing device [15,24,64].
+Acquisition-dependent factors such as spectral mixing, atmospheric and medium
+effects, and sensor noise do vary with scale and platform; nonetheless, the relative
+spectral shape (band ratios, peak structure) remains broadly informative across
+sensors, which can be viewed as sampling related spectra with different wave-
+length responses and physical resolutions [25,89]. Yet current learning pipelines
+consistently fail to exploit this physical commonality. Three primary factors
+fundamentally break this cross-sensor consistency: (i) spectral misalignment
+across sensor-specific wavelength coordinates (C1); (ii) spatial-scale incon-
+sistency caused by heterogeneous resolutions (C2); and (iii) data imbalance
+that biases representation learning toward dominant domains (C3).
+To improve physical consistency, we design OneHSI, a unified hyperspec-
+tral foundation model that promotes invariance to sensing configurations by
+aligning representations with the underlying material physics. Specifically, at
+spectral level, Spectral Coordinate Reparameterization (SCORE) repa-
+rameterizes band heterogeneity in a shared continuous wavelength space, learn-
+
+
+## PDF PAGE 3
+OneHSI: A Unified Hyperspectral Foundation Model
+3
+ing wavelength-conditioned spectral embeddings that remain stable under ar-
+bitrary discretizations (C1). At spatial level, Scale-Equivariant Adaptive
+Transformation (SEAT) treats resolution changes as variations in physical
+sampling density, sharing relational attention while conditioning feature trans-
+formation on physical scale (C2). At domain level, Cross-Domain Represen-
+tation Equalization (CORE) balances per-domain contributions and applies a
+domain-adversarial objective to learn sensor-invariant representations, prevent-
+ing dominant domains from distorting spectral similarity (C3). Our contribu-
+tions are summarized below.
+– We build on the premise that hyperspectral observations across satellites and
+ground-level sensors share a common reflectance structure largely governed
+by material composition, despite large variations in spectral configurations
+and spatial scales. This physical commonality, which OneHSI demonstrates
+empirically, provides the foundation for unified cross-domain hyperspectral
+representation learning.
+– We design OneHSI with three modules: (i) Spectral Coordinate Reparameteri-
+zation models cross-sensor band heterogeneity as sampling of a shared continu-
+ous function over wavelength, (ii) Scale-Equivariant Adaptive Transformation
+reinterprets spatial resolution as variation in physical sampling density and
+conditions feature transformation on physical scale, and (iii) Cross-Domain
+Representation Equalization balances per-domain contributions through cross-
+domain sampling and adversarial alignment.
+– Comprehensive experiments across heterogeneous hyperspectral domains show
+that OneHSI achieves state-of-the-art performance while remaining robust
+to sensor shifts, scale variations, and domain imbalance, demonstrating the
+benefit of physics-aligned representation learning.
+2
+Related Work
+Deep Learning for Hyperspectral Imaging. Deep learning has significantly
+advanced HSI analysis [48,74,92], but progress remains highly domain-specific.
+Most methodological development has focused on remote sensing [43], supported
+by large-scale benchmarks and practical demand. This has led to increasingly so-
+phisticated spectral–spatial CNNs [112] and Transformer-based architectures [16,
+32,33,57,111], and more recently, Mamba-style state space models [50,100,104].
+In contrast, ground-level applications, including proximal sensing [13,82], med-
+ical imaging [80, 91], and autonomous driving [6, 29], remain data-limited and
+fragmented. Models developed for satellite imagery often fail to transfer to fine-
+grained ground-level scenes, exposing a persistent domain gap [18,53,108].
+Heterogeneity of Hyperspectral Data. The domain gap largely stems from
+intrinsic heterogeneity in sensing configurations [79]. At the sensor level, dif-
+ferences in Spectral Response Functions (SRFs)
+[72] result in incompatible
+band discretizations. Existing approaches attempt to address this through spec-
+tral super-resolution [1,20] or explicit cross-sensor normalization [98], but such
+reconstruction-based solutions are typically inflexible and generalize poorly to
+
+
+## PDF PAGE 4
+4
+Y. Wen et al.
+(𝐻𝐻× 𝑊𝑊) × 𝐶𝐶𝑚𝑚
+×
+𝐶𝐶𝑚𝑚× 𝐷𝐷
+(𝐻𝐻× 𝑊𝑊) × 𝐷𝐷
+Statistical 
+Modulation
+Shared Self-Attention
+×N times
+LayerNorm
+LayerNorm
+𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑒𝑒( 𝑠𝑠m −𝜇𝜇𝑒𝑒2
+𝜎𝜎𝑒𝑒2
+)
+FFN
+…
+Scale Router
+Encoder
+𝚽𝚽map
+Norm
+𝑋𝑋𝑚𝑚,𝑖𝑖
+′
+𝑊𝑊𝑚𝑚
+Imbalanced HSI Data
+Remote
+Proximal
+Medical
+Driving
+Cross-Domain Representation 
+Equalization (CORE)
+𝑋𝑋𝑚𝑚,𝑖𝑖
+𝜆𝜆𝑚𝑚
+450nm
+950nm
+𝑆𝑆𝑚𝑚
+5 × 10−4 m/pixel
+Balanced Mini Batch
+𝑋𝑋𝑚𝑚,𝑖𝑖
+𝜆𝜆𝑚𝑚
+Patch & Mask
+𝑆𝑆𝑚𝑚
+…
+√
+√
+Sampling
+Scale-Equivariant Adaptive 
+Transformation (SEAT)
+Spectral Coordinate 
+Reparameterization (SCORE)
+Shared Physical Space
+𝛾𝛾𝑚𝑚,𝑖𝑖
+𝛿𝛿𝑚𝑚,𝑖𝑖
+𝑐𝑐𝑚𝑚,𝑖𝑖
+Pooling
+෨𝑋𝑋𝑚𝑚,𝑖𝑖= 𝑋𝑋𝑚𝑚,𝑖𝑖
+′
+ ⊙1 + 𝛾𝛾𝑚𝑚,𝑖𝑖 + 𝛿𝛿𝑚𝑚,𝑖𝑖
+Training Objective
+ℱFiLM
+Spectral Alignment
+Exp1
+Exp2
+ExpN
+Adaptive
+Sensor-specific Space
+𝐿𝐿𝑑𝑑𝑑𝑑𝑑𝑑
+𝐿𝐿𝑏𝑏𝑏𝑏𝑏𝑏
+Projection
+Unmask
+Decoder
+𝐿𝐿𝑟𝑟𝑟𝑟𝑟𝑟
+Utilization
+Expert
+s
+Utilization
+Expert
+s
+Balance
+Debias
+Domain Classifier
+Accuracy
+High
+Low
+Sec 3.3
+Sec 3.5
+Sec 3.4
+Sec 3.6
+Fig. 2: Overview of OneHSI. CORE first balances multi-domain HSI samples to mit-
+igate dataset imbalance (Sec. 3.5). SCORE then reparameterizes sensor-specific spec-
+tra into a shared physical wavelength space (Sec. 3.3). Following the MAE paradigm,
+masked tokens are processed by transformer blocks equipped with SEAT which adap-
+tively handles spatial scale variations (Sec. 3.4). A lightweight decoder reconstructs the
+aligned HSI cube from the visible tokens. Training is jointly supervised by the recon-
+struction loss Lrec, domain adversarial loss Ldal, and expert balancing loss Lbal.
+unseen hardware [45,115]. At the physical level, acquisition scales vary dramati-
+cally, from meter-level satellite imagery [65] to micrometer-level microscopy [70].
+While conventional multi-scale architectures capture intra-image hierarchies,
+they do not resolve the inter-dataset feature shift induced by orders-of-magnitude
+changes in physical resolution [41,45].
+Hyperspectral Foundation Models. Inspired by VFMs (e.g., ViT [17], MAE [34],
+and CLIP [81]), recent works extend large-scale pre-training to hyperspectral
+imagery [61, 101, 113]. Models such as SpectralGPT [38], HyperSIGMA [99],
+and SpectralEarth [12] adopt the Masked Autoencoder (MAE) paradigm [34] to
+learn spectral–spatial representations from remote sensing datasets, while Hyper-
+Free [46] explores prompt-based segmentation pre-training. Despite their strong
+performance, these models are predominantly trained on satellite imagery and
+implicitly assume fixed spectral bands and spatial scales, limiting their ability to
+generalize across heterogeneous sensors. While concurrent works pursue broader
+generalization across spectral channels [44] or cameras [7], OneHSI instead ad-
+dresses spectral, spatial-scale, and domain heterogeneity jointly.
+
+
+## PDF PAGE 5
+OneHSI: A Unified Hyperspectral Foundation Model
+5
+3
+Method
+3.1
+Problem Formulation
+We consider multi-domain hyperspectral datasets Ω= {ωm}M
+m=1, where ωm =
+{Xm,i ∈RH×W ×Cm}Nm
+i=1. Each domain m is associated with its own spectral
+coordinate system λm ∈RCm and spatial scale sm, inducing incompatible spec-
+tral grids and spatial resolutions across domains. Our goal is to learn a unified,
+domain-agnostic representation Zm,i via a mapping function
+  f _\thet a : (X_ {m , i}, \lambda _m, s_m) \mapsto Z_{m, i}, 
+(1)
+that is invariant to domain-specific spectral coordinates and spatial scales.
+3.2
+Overview of OneHSI
+As illustrated in Fig. 2, we introduce OneHSI, a unified hyperspectral founda-
+tion model with physically motivated inductive biases that addresses coordi-
+nate mismatch at three structural levels: spectral, spatial, and domain. At the
+spectral level, Spectral Coordinate Reparameterization (SCORE) lifts discrete
+channels into a shared continuous wavelength space via wavelength-conditioned
+projections (Sec. 3.3). At the spatial level, Scale-Equivariant Adaptive Trans-
+formation (SEAT) decouples relational modeling from scale-specific adaptation:
+shared self-attention preserves long-range spectral–spatial dependencies, while
+resolution-aware experts modulate feed-forward transformations (Sec. 3.4). At
+the domain level, Cross-Domain Representation Equalization (CORE) balances
+per-domain contributions and, together with a domain-adversarial objective,
+learns sensor-invariant representations (Sec. 3.5).
+3.3
+Spectral COordinate REparameterization (SCORE)
+Hyperspectral sensors sample reflectance at sensor-specific wavelength coordi-
+nates, so channel indices lack a consistent physical meaning across domains [36,
+96]. Rather than aligning discrete indices or inverting the imaging process,
+SCORE reparameterizes each spectral channel as a sample of a shared con-
+tinuous function over wavelength.
+Spectral Alignment. Given a hyperspectral cube Xm,i ∈RH×W ×Cm with
+wavelength coordinates λm ∈RCm, we normalize wavelengths into a canonical
+range:
+  \ h at {\la
+mbda }_m 
+= \frac {\lambda _m - \lambda _{\min }}{\lambda _{\max } - \lambda _{\min }}, 
+(2)
+where λmin and λmax denote the global minimum and maximum wavelengths
+computed over all pre-training domains. We then construct a coordinate-conditioned
+spectral projection matrix Wm ∈RCm×D by applying a shared mapping func-
+tion Φmap : R →RD to each normalized wavelength coordinate independently:
+  W_
+{ m }^{(c)} = 
+\ ma
+th b f { \ P h i }_{\text {map}}(\hat {\lambda }_m^{(c)}), \quad \forall c \in \{1, \dots , C_m\}. 
+(3)
+
+
+## PDF PAGE 6
+6
+Y. Wen et al.
+This maps sensor-specific channel bases into a shared spectral basis:
+  
+X'_ { m,i} = 
+X_
+{m, i } W_ m, \quad X'_{m,i} \in \mathbb {R}^{H \times W \times D}. 
+(4)
+Consequently, channel-index dependency is removed, aligning heterogeneous spec-
+tral representations in shared physical wavelength space.
+Statistical Modulation. Even after coordinate alignment, sensors exhibit domain-
+specific statistical biases [45,98]. To preserve the shared spectral geometry while
+adapting global statistics, we apply a lightweight FiLM modulation [78]. A global
+context vector cm,i is obtained via spatial adaptive average pooling over X′
+m,i:
+  c_ { m,i} = \operatorna
+me {A
+dapt i veAvgPool}(X_{m,i}'), \quad c_{m,i} \in \R ^D, 
+(5)
+and mapped to the channel-wise FiLM affine parameters γm,i, δm,i ∈RD:
+  (\ga mma _ { m,i}, \delta _{m,i}) = \mathcal {F}_{\text {FiLM}}(c_{m,i}). 
+(6)
+Feature modulation is then performed as:
+  \ti l de
+ {X } _{ m ,i} = X_{m,i}' \odot (1 + \gamma _{m,i}) + \delta _{m,i}, 
+(7)
+where ⊙denotes channel-wise multiplication broadcast across the spatial di-
+mensions. Finally, the resulting tensor ˜Xm,i is partitioned into non-overlapping
+patches and linearly projected to form a sequence of token embeddings Zm,i ∈
+RN×D for subsequent processing.
+3.4
+Scale-Equivariant Adaptive Transformation (SEAT)
+Physical scale alters local spatial frequency characteristics but preserves long-
+range relational structure [22,52]. This suggests that scale invariance primarily
+concerns relational dependencies rather than local feature statistics. In trans-
+formers, such relational dependencies are naturally modeled by self-attention,
+whereas feed-forward layers refine localized transformations [76,95]. We therefore
+introduce the SEAT, which shares self-attention layers across domains and con-
+ditions only the feed-forward components on physical scale [23, 77]. Intuitively,
+two views of the same material at different resolutions share the same relations
+among regions but may need different local filters; SEAT therefore keeps atten-
+tion shared while only scale-conditioned experts adapt the feed-forward path. We
+do not assume semantic equivalence across scales: the experts absorb the (pos-
+sibly non-smooth) scale-dependent variation through smooth Gaussian gating
+over log10 s.
+Given a sample (m, i) from domain m with physical scale sm (meters per
+pixel), we operate in logarithmic space s′
+m = log10(sm) to reflect multiplicative
+resolution differences. We instantiate E scale-aware experts, each parameterized
+by a learnable scale anchor µe and bandwidth σ2
+e. The affinity between domain
+m and expert e is
+  g_ { m,e}
+ = -\f
+rac
+ {(s'_m-\mu _e)^2}{\sigma _e^2}. 
+(8)
+
+
+## PDF PAGE 7
+OneHSI: A Unified Hyperspectral Foundation Model
+7
+Normalized gating scores are obtained by softmax over experts:
+  G_ {
+m,e}=\fra
+c 
+{\e xp (g_{m,
+e
+}
+)
+}{\
+sum _ {j=1}^{E}\exp (g_{m,j})}, \quad \sum _{e=1}^{E}G_{m,e}=1. 
+(9)
+For efficiency, we select the top-Kexp experts with index set Im and renormalize
+their weights:
+  w_ {
+m,e}
+=
+\fra c {G
+_
+{m , e}}{\sum _{j\in \mathcal {I}_{m}}G_{m,j}}, \quad \forall e\in \mathcal {I}_{m}. 
+(10)
+For the input token sequence Zm,i ∈RN×D, the SEAT output is computed as
+  Y_ {
+m
+,i}=
+\sum _{e\in \mathcal {I}_{m}} w_{m,e} \cdot \operatorname {Expert}_e(Z_{m,i}). 
+(11)
+Under this formulation, samples with similar log-scales activate overlapping
+expert subsets, enabling smooth scale interpolation while preserving globally
+shared relational representations.
+3.5
+Cross-Domain Representation Equalization (CORE)
+As shown in Table 1, the hyperspectral data distribution is highly skewed across
+domains, where remote sensing datasets significantly outnumber those from
+ground-level domains. Such imbalance biases gradient updates toward dominant
+domains, potentially skewing the shared representation and degrading cross-
+domain invariance [4, 9]. To mitigate domain-induced representation collapse,
+CORE enforces balanced domain contribution at the mini-batch level. Specif-
+ically, given M coarse domain pools (remote/proximal/medical/driving), each
+mini-batch B is constructed by uniformly sampling Kdom instances per domain:
+  |\ m athca
+l { B}_ m | = K_{dom},\quad \forall m\in \{1,\dots ,M\}. 
+(12)
+This yields |B| = MKdom with uniform coarse-domain proportions and enforces
+a uniform per-domain proportion of 1/M, which helps stabilize cross-domain
+optimization [21,28]. In short, CORE operates at the data level through balanced
+per-domain sampling, and is complemented by the domain-adversarial objective
+in our training loss, which aligns features across domains; together they prevent
+dominant domains from dictating the shared representation.
+3.6
+Training Objective
+Our training objective enforces representation consistency across spectral coor-
+dinates, spatial scales, and sensing domains.
+  \mat h cal { L } _{to t a l } = \mathcal {L}_{rec} + \alpha \cdot \mathcal {L}_{bal} + \beta \cdot \mathcal {L}_{dal}. 
+(13)
+Each term regularizes a distinct structural source of heterogeneity.
+
+
+## PDF PAGE 8
+8
+Y. Wen et al.
+Reconstruction Loss. Following Masked Autoencoders (MAE) [34], we recon-
+struct the masked patches in the physically aligned feature space. Let ˜Xm,i,p
+denote the aligned feature of patch p from sample (m, i), and ˆXm,i,p its de-
+coder prediction. To prevent trivial representation collapse, the target features
+˜Xm,i,p are detached from the computational graph during optimization. The
+reconstruction loss is
+  \m a t
+hca
+l
+ {L}_{r
+e
+c} = \
+f
+rac {1
+}{| \mathca l {B}|}\
+sum
+ 
+_ {(m,i)\in \mathcal {B}}\frac {1}{|\mathcal {M}_{m,i}|}\sum _{p \in \mathcal {M}_{m,i}} \left \| \tilde {X}_{m,i,p} - \hat {X}_{m,i,p} \right \|_2^2, 
+(14)
+where Mm,i denotes the masked patch indices. Reconstructing in this physi-
+cally aligned space forces the encoder to learn sensor-agnostic spectral–spatial
+structures, bypassing sensor-specific channel dependencies.
+Expert Balancing Loss. To prevent expert collapse and ensure effective ca-
+pacity utilization, we regularize routing distributions. For SEAT layer l, let Gl
+m,e
+denote the pre-top-Kexp softmax gating probability of expert e for domain m.
+Specifically, the routing statistics over the M domains are calculated as:
+  
+P ^ {
+l
+}
+_
+e=\
+fr
+ac {
+1 }
+{ M }
+\
+s
+u
+m _
+{
+m
+= 1 }^
+{
+M
+}G^{l}_{m,e}, \quad f^{l}_e=\frac {1}{M}\sum _{m=1}^{M}\mathbf {1}\!\left [e\in \mathcal {I}^{l}_m\right ], 
+(15)
+where P l
+e is the average routing probability, f l
+e is the fraction of domains as-
+signed to expert e, and Il
+m is the index set of the top-Kexp experts selected
+for domain m. As the routing mechanism is deterministically guided by domain
+scales, minimizing the loss across all L SEAT layers ensures that the learnable
+anchors µe distribute uniformly across diverse physical scales:
+  \m a t
+h
+c
+a
+l {
+L
+}
+_{b
+a l
+} = 
+\frac {E}{L} \sum _{l=1}^{L} \sum _{e=1}^{E} f_e^{l} \cdot P_e^{l}. 
+(16)
+Domain-Adversarial Loss. To further remove sensor-specific biases after spec-
+tral alignment, we promote domain-invariant global representations. Let zm,i =
+1
+N
+PN
+n=1 Zm,i,n denote the global representation of sample (m, i). A domain clas-
+sifier hψ is trained adversarially via a gradient reversal layer Rη [21]:
+  \m a t
+hca
+l
+ {L}_{d
+al} = \frac {1} { |\m athcal {B}|}\sum _{(m,i)\in \mathcal {B}} \operatorname {CE}\!\left (h_{\psi }\!\left (\mathcal {R}_{\eta }(z_{m,i})\right ),\, y_m\right ), 
+(17)
+where B denotes a mini-batch and ym is the coarse domain label. Through gradi-
+ent reversal, the encoder is encouraged to suppress domain-discriminative cues,
+yielding more domain-agnostic features.
+4
+Experiments
+4.1
+Experiment Setup
+Datasets. We use two disjoint dataset groups: (i) a large-scale multi-domain
+corpus for pretraining, and (ii) diverse downstream datasets for evaluation.
+
+
+## PDF PAGE 9
+OneHSI: A Unified Hyperspectral Foundation Model
+9
+Table 1: Overview of pre-training and downstream
+datasets. OneHSI tackles spectral, spatial, and do-
+main heterogeneity in a unified framework.
+Basic Information
+Spectral Properties
+Spatial
+Stage Domain Datasets
+Sensor
+Volume Bands Range (nm) Scale (m/pixel)
+Pre-training
+Remote
+AVIRIS [25]
+AVIRIS (NASA)
+36,524
+224
+370-2510
+2 × 101
+Remote
+EnMAP [27]
+EnMAP HSI
+7,845
+128
+418-2445
+3 × 101
+Proximal NTIRE2022 [2]
+Specim IQ
+950
+31
+400-700
+1 × 10−3
+Proximal HSIFood [109]
+Specim IQ
+3,389
+204
+397-1003
+5 × 10−4
+Proximal SpectralWaste [13] Specim FX17
+7,655
+224
+900-1700
+1 × 10−3
+Proximal WeedCube [82]
+Specim FX10
+160
+224
+400-1000
+2 × 10−4
+Medical
+Xeno [87]
+TIVITA Tissue
+14,013
+100
+500-1000
+5 × 10−4
+Medical
+MicroChol [116]
+AOTF + Dhyana
+880
+60
+550-1000
+1 × 10−6
+Medical
+HyperSkin [71]
+Specim FX10
+264
+31
+400-700
+1 × 10−4
+Driving
+HSI-Drivev2 [29]
+Photonfocus
+752
+25
+564-956
+2 × 10−2
+Driving
+Hyko [107]
+Ximea IMEC
+160
+15
+468-642
+2 × 10−2
+Downstream
+Remote
+NaSC-TG2 [118]
+Tiangong-2 WIS
+20,000
+48
+400-1040
+1 × 102
+Remote
+OHID-1 [63]
+Zhuhai-1 OHS
+10
+32
+400-1000
+1 × 101
+Remote
+M2SODAI [40]
+AisaFENIX
+1257
+128
+400-1000
+7 × 10−1
+Remote
+HSI-BAY [56]
+AVIRIS
+2 Scenes
+224
+370-2510
+2 × 101
+Remote
+HRSSD [54]
+Orbita OHS
+704
+32
+466-940
+1 × 101
+Proximal DeepHS [97]
+Specim FX10
+2560
+224
+400-1000
+1 × 10−4
+Proximal HZDR [3]
+Specim FX10
+53
+224
+400-1000
+8 × 10−4
+Proximal LIB-HSI [30]
+Specim IQ
+513
+204
+400-1000
+1 × 10−2
+Proximal NPU [110]
+GaiaField-V10
+454
+128
+400-1000
+1 × 10−3
+Proximal FoodAnomaly [8]
+Resonon Pika L
+147
+300
+400-1000
+1 × 10−4
+Medical
+Dermoscopy [26]
+Ximea MQ022HG
+330
+16
+465-630
+4 × 10−5
+Medical
+Histology-GB [73]
+Headwall Hyperspec
+469
+826
+400-1000
+4 × 10−7
+Medical
+HeiPor [94]
+TIVITA Tissue
+5756
+100
+500-1000
+5 × 10−4
+Driving
+Hyper-Drive [31]
+IMEC VNIR
+500
+33
+660-1700
+1 × 10−2
+Driving
+HSI City [90]
+LightGene HS
+1330
+128
+450-950
+3 × 10−3
+Driving
+HyperRoad [59]
+FLIR + XIMEA
+3799
+28
+470-960
+3 × 10−2
+Input 
+Data
+Ground 
+Truth
+Specialized 
+Model
+“residential”
+“mountain”
+Foundation 
+Model
+“river”
+Ours
+“residential”
+𝑺𝑺𝟐𝟐Mamba
+HyperFree
+OneHSI
+MambaHSI
+HyperFree
+OneHSI
+SS-Mamba
+HyperFree
+OneHSI
+CSDBF 
+HyperFree
+OneHSI
+GT-HAD  
+HyperFree
+OneHSI
+DSSN
+HyperFree
+OneHSI
+Input
+GT
+Input
+GT
+Input
+GT
+Input
+GT
+Input
+GT
+Input
+GT
+Note:For HOD task, labels omitted for boxes with confidence >0.90.
+HC 
+NaSC-TG2
+HOD
+NPU
+HCD
+HSI-BAY 
+HAD
+FoodAnomaly
+HS
+ HSI City V2 
+HSD
+HRSSD 
+Fig. 3: Qualitative comparison
+of OneHSI against task-specific
+models and HyperFree across
+diverse HSI tasks.
+Pre-training Datasets. To learn a universal hyperspectral representation, we
+curate a large-scale, multi-source dataset along three fundamental axes (Table 1).
+– Spectral Heterogeneity. The dataset includes measurements from airborne
+AVIRIS [25], spaceborne EnMAP [27], and ground-level push-broom sen-
+sors [87,109], covering different wavelength configurations and band numbers.
+– Scale Diversity. Spatial resolutions span from meter-scale remote sensing [27]
+to micrometer-scale microscopy [116], covering multiple orders of magnitude.
+– Semantic Diversity. The corpus covers natural landscapes [2,82] urban and
+driving environments [29, 107], and biomedical samples [71, 87], preventing
+over-specialization to any single domain.
+Downstream Datasets. To prevent data contamination, we ensure that the
+downstream datasets (Table 1) are strictly disjoint from the pretraining set
+(full dataset descriptions, splits, and statistics in Supp. Sec. B). We evalu-
+ate OneHSI across four heterogeneous sensing domains—remote sensing, prox-
+imal imaging, medical imaging, and driving scenes—covering six representative
+hyperspectral tasks: classification (HC), segmentation (HS), object detection
+(HOD), change detection (HCD), anomaly detection (HAD), and saliency de-
+tection (HSD) (Fig. 3). This evaluation protocol systematically tests cross-sensor
+generalization, cross-scale robustness, and cross-task transferability.
+Baselines. To comprehensively evaluate OneHSI, we compare against two dis-
+tinct categories of SOTA baselines: task-specific models tailored to individual
+benchmarks, and general-purpose hyperspectral foundation models.
+
+
+## PDF PAGE 10
+10
+Y. Wen et al.
+Task-Specific Models. These include Transformer-based architectures such as
+SpectralFormer [37], SpecTr [114], State Space Models (SSMs) tailored for long
+spectral sequences (e.g., MambaHSI [50], S2Mamba [100], SS-Mamba [49]), as
+well as established CNN-based frameworks (e.g., Unet [85], S2ADet [35]). These
+methods are competitive task-specific baselines implemented under their official
+protocols and tuned for each task.
+Hyperspectral Foundation Models. We compare with recent hyperspectral
+foundation models, including HyperSIGMA [99] and HyperFree [46]. For a con-
+sistent comparison, all foundation baselines are initialized using their official
+pretrained checkpoints and fine-tuned under the same downstream training pro-
+tocol. This setup allows us to evaluate cross-domain generalization and represen-
+tation efficiency relative to existing unified hyperspectral pretraining approaches.
+Metrics. We adopt standard evaluation protocols tailored to each downstream
+task category (full per-task metric definitions in Supp. Sec. C). For pixel-level
+classification and semantic segmentation tasks, we report Overall Accuracy (OA),
+Average Accuracy (AA), and the Kappa coefficient (KA), with mean Intersec-
+tion over Union (mIoU) additionally used for segmentation. For object detection
+tasks, we report Precision, and mean Average Precision (mAP), where AP@0.5
+is computed at an IoU threshold of 0.5 unless otherwise specified. For change
+detection and anomaly detection, which typically involve binary or highly im-
+balanced settings, we additionally report the F1-score to balance precision and
+recall. For salient object detection, we adopt three commonly used structural
+evaluation metrics, including the Structure-measure (Sα), Weighted F-measure
+(Fβ), and Enhanced-alignment measure (Eξ).
+Implementation Details. All experiments are implemented in PyTorch 2.5.0
+and trained on 8 NVIDIA A800 GPUs for approximately 30 hours. We adopt
+a ViT-Huge encoder [17] with scale-conditioned MoE (top-Kexp = 2). Training
+runs for 100 epochs (1000 iterations each) using AdamW with an initial learning
+rate of 2 × 10−4, 5-epoch warmup, and cosine decay. The batch size is B = 8
+with balanced cross-domain sampling (M = 4, Kdom = 2), and MAE masking
+ratio is 0.75. Loss weights are α = 0.10 and β = 0.05 (complete architecture and
+pretraining hyperparameters in Supp. Sec. A).
+Downstream adaptation. We adapt the shared pretrained encoder with lightweight
+task-specific heads, fine-tuning the encoder for all tasks except anomaly detec-
+tion, which uses it frozen; all compared foundation models follow the identical
+pipeline, with the full per-task protocol in Supp. Sec. A.10.
+4.2
+Main Results
+Consistent Cross-Domain Gains under Spectral and Scale Variation.
+Across the sixteen benchmarks (Table 2), OneHSI achieves consistent perfor-
+mance gain over both task-specific models and existing hyperspectral models,
+particularly in scenarios characterized by sensor heterogeneity and large scale
+
+
+## PDF PAGE 11
+OneHSI: A Unified Hyperspectral Foundation Model
+11
+Table 2:
+Quantitative comparison with task-specific SOTAs and HSI foundation
+models on 16 benchmarks. Evaluations span six downstream tasks (classification, seg-
+mentation, object detection, change detection, anomaly detection, and salient detec-
+tion) across four domains: remote sensing, proximal imaging, medical imaging, and
+driving scenes. Best results (%) are in bold.
+HC: NaSC-TG2 (National Scene Classification) [118]
+HS: OHID-1 (Urban Land Cover Segmentation) [63]
+Metrics SpectralFormer [37] MambaHSI [50]
+S2Mamba [100]
+HyperSIGMA [99]HyperFree [46]OneHSIMetrics
+SSSAN [66]
+CVSSN [47]
+MambaHSI [50]HyperSIGMA [99]HyperFree [46]OneHSI
+OA
+93.31
+94.41
+94.51
+93.57
+94.66
+95.53
+OA
+89.50
+90.30
+91.93
+91.54
+91.81
+92.50
+AA
+92.41
+92.77
+93.71
+93.83
+94.01
+95.03
+AA
+83.60
+88.60
+89.21
+89.88
+90.53
+90.72
+KA
+91.46
+91.92
+93.01
+93.15
+93.36
+94.53
+KA
+85.50
+86.40
+87.52
+88.31
+88.94
+89.83
+HOD: M2SODAI (Maritime Object Detection) [40]
+HCD: HSI-BAY (Bay Area Change Detection) [56]
+Metrics
+SSFE [117]
+S2ADet [35]
+Mamba-YOLO [104]HyperSIGMA [99]HyperFree [46]OneHSIMetrics ChangeMamba [14] STGFormer [103] CSDBF [102] HyperSIGMA [99]HyperFree [46]OneHSI
+Precision
+69.82
+73.19
+76.04
+73.67
+76.58
+81.02
+OA
+96.40
+97.13
+97.91
+97.45
+97.58
+98.37
+mAP
+28.13
+32.47
+34.26
+31.58
+33.42
+36.21
+KA
+95.90
+96.42
+97.52
+97.20
+97.33
+98.13
+AP@0.5
+67.31
+70.84
+73.57
+71.26
+74.03
+78.24
+F1
+96.78
+97.01
+97.68
+97.48
+97.60
+98.07
+HSD: HRSSD (Salient Object Detection) [54]
+HC: DeepHS (Fruit Ripeness Classification) [97]
+Metrics
+MambaLG [75]
+DSTC [55]
+DSSN [54]
+HyperSIGMA [99]HyperFree [46]OneHSIMetrics DeepHS-Net [97]
+S2Mamba [100] MambaHSI [50]HyperSIGMA [99]HyperFree [46]OneHSI
+Fβ
+49.13
+48.97
+55.62
+51.27
+53.08
+58.64
+OA
+58.28
+65.17
+68.73
+61.57
+60.77
+72.36
+Eξ
+72.37
+75.42
+76.93
+78.09
+75.19
+79.58
+AA
+57.54
+64.02
+65.17
+59.56
+59.07
+66.37
+Sα
+63.04
+60.29
+67.56
+61.83
+63.18
+68.41
+KA
+37.40
+49.57
+52.13
+41.29
+40.35
+54.06
+HS: HZDR (PCB Circuit Segmentation) [3]
+HS: LIB-HSI (Building Facades Segmentation) [30]
+Metrics
+Unet [85]
+ScSE-Unet+ [5]
+MambaHSI [50]
+HyperSIGMA [99]HyperFree [46]OneHSIMetrics
+Unet [85]
+SpecTr [114]
+MambaHSI [50]HyperSIGMA [99]HyperFree [46]OneHSI
+OA
+69.73
+73.00
+75.23
+70.47
+73.58
+77.02
+OA
+90.56
+91.80
+92.14
+90.33
+91.71
+93.08
+KA
+87.36
+87.00
+88.12
+88.46
+89.03
+89.67
+AA
+74.83
+76.42
+76.27
+75.19
+75.64
+78.21
+mIoU
+57.81
+58.00
+59.42
+60.13
+61.07
+62.15
+mIoU
+84.32
+83.73
+85.06
+83.97
+84.25
+86.72
+HOD: NPU (Object Detection) [110]
+HAD: HSI-AgriFoodAnomaly (Food Anomaly Detection) [8]
+Metrics Mamba-YOLO [104]
+S2ADet [35]
+SS-Mamba [49]
+HyperSIGMA [99]HyperFree [46]OneHSIMetrics
+ACDA [39]
+MambaHSI [50]
+GT-HAD [51] HyperSIGMA [99]HyperFree [46]OneHSI
+Precision
+92.23
+96.18
+96.43
+90.37
+93.58
+96.64
+OA
+90.06
+92.13
+94.27
+88.54
+91.38
+95.41
+mAP
+75.83
+76.94
+78.33
+77.43
+77.12
+77.68
+KA
+88.37
+91.08
+93.42
+86.59
+88.94
+94.21
+AP@0.5
+92.24
+93.33
+95.84
+94.27
+95.14
+96.39
+F1
+85.72
+87.26
+85.71
+84.63
+86.19
+91.87
+HC: HSIDermoscopy (Melanoma Classification) [26]
+HC: HistologyHSI-GB (Histological Tumor Classification) [73]
+Metrics SpectralFormer [37] MambaHSI [50]
+PWS-CS [19]
+HyperSIGMA [99]HyperFree [46]OneHSIMetricsSpectralFormer [37] S2Mamba [100] MambaHSI [50]HyperSIGMA [99]HyperFree [46]OneHSI
+OA
+70.38
+72.14
+73.34
+66.42
+64.75
+76.28
+OA
+85.22
+85.97
+86.43
+85.08
+85.12
+88.36
+AA
+61.25
+63.81
+65.42
+57.87
+53.13
+70.54
+AA
+84.38
+84.92
+85.64
+84.73
+85.91
+87.25
+KA
+53.33
+56.27
+49.72
+48.46
+49.71
+61.38
+KA
+69.80
+71.23
+72.01
+70.64
+72.53
+76.85
+HS: HeiPorSPECTRAL (Organ Segmentation) [94]
+HS: Hyper-Drive (Environment Scene Segmentation) [31]
+Metrics
+HTC [94]
+SpecTr [114]
+MambaHSI [50]
+HyperSIGMA [99]HyperFree [46]OneHSIMetrics
+Unet [85]
+SpecTr [114]
+MambaHSI [50]HyperSIGMA [99]HyperFree [46]OneHSI
+OA
+94.27
+95.13
+95.42
+93.19
+93.58
+96.81
+OA
+79.45
+82.10
+84.26
+78.62
+81.73
+86.91
+AA
+92.47
+93.12
+93.65
+92.38
+91.74
+94.38
+AA
+34.12
+40.45
+41.27
+36.89
+38.68
+45.52
+KA
+92.83
+93.67
+93.94
+92.51
+91.36
+95.54
+KA
+70.79
+72.34
+75.85
+69.97
+73.56
+77.48
+HS: Hyperspectral City V2 (Driving Scene Segmentation) [90]
+HS: HyperRoad (Driving Scene Segmentation) [59]
+Metrics
+Unet [85]
+SpecTr [114]
+MambaHSI [50]
+HyperSIGMA [99]HyperFree [46]OneHSIMetrics
+Unet [85]
+SpecTr [114]
+MambaHSI [50]HyperSIGMA [99]HyperFree [46]OneHSI
+OA
+84.31
+85.07
+87.53
+81.26
+84.92
+88.38
+OA
+95.23
+97.57
+98.02
+95.61
+97.08
+98.54
+AA
+49.86
+50.42
+52.37
+46.95
+49.73
+53.48
+AA
+95.04
+97.12
+97.43
+95.39
+96.88
+97.96
+KA
+71.23
+71.88
+73.64
+67.54
+70.91
+74.35
+KA
+92.17
+94.43
+94.97
+92.58
+94.09
+95.21
+variation. On the remote HRSSD [54] benchmark, OneHSI improves Fβ from
+55.62% to 58.64%, demonstrating stronger robustness to complex land-cover
+distributions. On the micro-scale HistologyHSI-GB dataset [73], it outperforms
+prior methods by 4.32% in KA, highlighting its effectiveness under extreme res-
+olution shifts. For object detection on NPU [110], although slightly below SS-
+Mamba [49] in overall mAP, OneHSI achieves the highest Precision and AP@0.5,
+indicating competitive localization quality even in detection oriented settings. A
+clear pattern emerges: performance gains are most pronounced in multi-scale and
+cross-sensor scenarios, where prior HSI foundation models struggle to generalize.
+Qualitative comparisons in Fig. 3 further corroborate these findings. Across
+classification, segmentation, object detection, change detection, anomaly detec-
+tion and salient tasks, OneHSI produces clearer boundaries, fewer spurious re-
+sponses, and more semantically coherent predictions. These results indicate that
+OneHSI learns representations that transfer consistently across heterogeneous
+sensors, scales, and tasks, supporting it as a general-purpose backbone.
+Controlled Architectural Comparison. To eliminate confounding factors
+from data scale and training configuration, we re-train HyperSIGMA [99] and
+HyperFree [46] from scratch using our identical dataset and protocol (ViT-H
+backbone, 100 epochs on 8×A800 GPUs, and matched hyperparameters). Un-
+
+
+## PDF PAGE 12
+12
+Y. Wen et al.
+der these controlled conditions, OneHSI exhibits faster pre-training convergence
+(Fig. 4) and consistently superior performance across all four downstream tasks
+under both Full Fine-tuning and Frozen Encoder evaluation (Table 3). Impor-
+tantly, these gains are achieved with substantially lower computational cost
+(363G FLOPs vs. 510G/841G), indicating that the improvements arise from
+architectural efficiency rather than increased scale.
+Moreover, OneHSI attains the lowest inference latency among all baselines
+and is the only model whose inference time is essentially invariant to the number
+of spectral bands, unlike SpectralFormer (which grows roughly 6× with bands)
+and SpecTr (which runs out of memory at 5122), with full latency and memory
+comparisons in Supp. Sec. A.7.
+Spatial MAE
+Remote
+Proximal
+Medical
+Driving
+HyperFree
+Spectral MAE
+HyperSigma
+Loss
+Epoch
+Ours
+Fig. 4: Training loss convergence across four domains.
+Table 3: Downstream validation on diverse domains: Remote [63], Proximal [30],
+Medical [94], and Driving [31]. Results are reported as Full Fine-tuning / Frozen En-
+coder in Overall Accuracy (OA).
+Method
+Params (M) FLOPs (G) OHID-1 [63]
+LIB [30]
+HeiPor [94]
+Drive [31]
+HyperSIGMA [99]
+1715.690
+841.812
+91.35 / 86.47
+91.80 / 87.39
+95.42 / 91.63
+85.20 / 80.82
+HyperFree [46]
+744.510
+510.372
+90.12 / 86.14
+90.55 / 86.71
+94.88 / 90.46
+84.65 / 79.23
+OneHSI
+953.847
+363.248
+92.50 / 90.65 93.08 / 90.25 96.81 / 94.10 86.91 / 83.45
+Few-Shot Segmentation Transfer. We evaluate few-shot adaptation on seg-
+mentation tasks across four representative domains (Table 4). Under the chal-
+lenging 1-shot setting, OneHSI outperforms HyperSIGMA [99] and HyperFree [46]
+on four benchmarks, indicating stronger data efficiency under extremely limited
+supervision. As supervision increases to 5 and 10 shots, OneHSI consistently
+
+
+## PDF PAGE 13
+OneHSI: A Unified Hyperspectral Foundation Model
+13
+Table 4: Few-shot experiment results on four representative hyperspectral benchmarks
+from remote, proximal, medical and driving scenes. We compare OneHSI against SOTA
+foundation models under 1, 5, and 10-shot settings.
+Datasets
+Metrics (%)
+1-shot
+5-shot
+10-shot
+HyperSIGMA HyperFree
+OneHSI
+HyperSIGMA HyperFree
+OneHSI
+HyperSIGMA HyperFree
+OneHSI
+OHID-1 [63]
+(Remote Scene Seg.)
+OA
+78.93±3.47
+78.41±3.52
+80.76±3.05
+83.71±2.39
+84.26±2.31
+86.12±1.98
+88.04±1.62
+88.73±1.54
+90.15±1.29
+KA
+73.42±3.55
+72.98±3.60
+75.21±3.12
+78.36±2.46
+78.91±2.37
+80.68±2.05
+83.19±1.58
+83.84±1.49
+85.27±1.26
+LIB-HSI [30]
+(Proximal Scene Seg.)
+OA
+74.86±3.62
+75.91±3.35
+79.84±3.01
+82.74±2.51
+82.13±2.45
+86.98±2.02
+87.21±1.68
+86.93±1.61
+89.73±1.32
+KA
+69.87±3.69
+70.95±3.40
+73.92±3.06
+76.93±2.57
+76.21±2.49
+81.12±2.06
+82.07±1.64
+81.63±1.57
+84.96±1.29
+HeiPorSPECTRAL [94]
+(Medical Scene Seg.)
+OA
+80.12±3.18
+81.43±3.02
+85.06±2.74
+86.54±2.36
+86.79±2.21
+90.87±1.93
+90.71±1.71
+91.26±1.58
+93.68±1.27
+KA
+75.43±3.24
+76.82±3.07
+80.34±2.78
+82.03±2.42
+82.47±2.25
+86.14±1.95
+86.73±1.68
+87.39±1.54
+90.12±1.24
+HyperRoad [59]
+(Driving Scene Seg.)
+OA
+88.23±2.89
+89.74±2.61
+92.37±2.28
+92.41±2.14
+93.86±1.93
+96.18±1.62
+95.02±1.41
+96.03±1.19
+97.48±0.95
+KA
+83.71±2.95
+85.63±2.65
+88.12±2.31
+88.42±2.11
+90.37±1.89
+92.74±1.59
+92.04±1.38
+93.76±1.17
+95.13±0.93
+achieves the highest OA and KA, with pronounced gains on proximal, medical,
+and driving datasets.
+Robustness to Metadata and Sensor Noise. We assess robustness to im-
+perfect wavelength metadata and sensor noise. Under wavelength jitter OneHSI
+stays stable, losing only 0.36 OA at a 5 nm perturbation, and it degrades only
+gradually as the metadata assumptions become coarser. Under Gaussian, Poisson–
+Gaussian, and striping noise its average drop of 2.59 OA is roughly half that of
+HyperSIGMA and HyperFree, which fall by 5.03 and 5.60 respectively, showing
+that OneHSI retains accuracy considerably better than prior foundation models
+under realistic acquisition perturbations.
+4.3
+Ablation Studies
+Overview. We conduct a series of ablation studies to analyze the key designs
+of OneHSI. First, we examine domain composition and training strategies to
+highlight the importance of joint multi-domain optimization (Fig. 5). Second,
+we evaluate the proposed architectural modules by comparing SCORE with
+alternative spectral mappings (Table 5) and SEAT with standard MoE baselines
+(Table 7). Third, we study the training objectives, analyzing the effects of the
+auxiliary losses (Table 6).
+Impact of Domain Composition and Training Strategy. We ablate the
+joint multi-domain pre-training to assess the role of domain diversity (Fig. 5).
+Removing any single domain consistently degrades performance, with the largest
+drops observed on tasks from the corresponding domain; notably, excluding re-
+mote sensing data causes the most severe degradation. We further compare joint
+training with a sequential training baseline that optimizes on remote, proximal,
+medical, and driving data in order. Sequential training underperforms joint train-
+ing on most datasets, highlighting the importance of simultaneous multi-domain
+exposure for learning domain-balanced spectral representations.
+Effectiveness of SCORE. We ablate the two designs within SCORE: Spectral
+Alignment (SA) and Statistical Modulation (SM) (Table 5). Removing SM (denoted
+
+
+## PDF PAGE 14
+14
+Y. Wen et al.
+Sequential Training
+w/o Proximal Data
+w/o Medical Data
+w/o Remote Data
+w/o Driving Data
+Ours (OneHSI)
+OHID-1
+NaSC-TG2
+HyperRoad
+HSI-BAY
+DeepHS
+HZDR
+LIB-HSI
+HSI-FoodAnomaly
+HSIDermoscopy
+HistologyHSI-GB
+HeiPorSPECTRAL
+Hyper-Drive
+Hyperspectral City V2 
+Fig. 5:
+Ablation on different train-
+ing strategies and dataset domains, re-
+porting overall accuracy (OA, %) on
+each downstream benchmark. Sequen-
+tial training optimizes the model on re-
+mote, proximal, medical, and driving
+data in sequence; each w/o curve re-
+moves one pretraining domain.
+Table 5: Ablation on Spectral Alignment (SA)
+and Statistical Modulation (SM) on OA (%).
+Variant
+SA SM OHID-1 [63] LIB-HSI [30] HeiPor [94] HyperRoad [59]
+OneHSI
+✓
+✓
+92.50
+93.08
+96.81
+98.54
+OneHSI w/o SM
+✓
+–
+91.65
+90.12
+95.41
+95.83
+OneHSI w/ Proj.
+–
+✓
+90.27
+89.13
+91.94
+93.72
+OneHSI w/ Inter. –
+✓
+85.10
+86.65
+91.35
+91.19
+Table 6: Ablation on loss terms and SEAT
+module on OA (%) over four benchmarks.
+Variant
+OHID-1 [63] LIB-HSI [30] HeiPor [94] HyperRoad [59]
+OneHSI
+92.50
+93.08
+96.81
+98.54
+w/o Lbal
+90.68
+92.01
+93.94
+97.09
+w/o Ldal
+89.73
+89.24
+92.37
+96.14
+SEAT-only
+87.41
+89.82
+92.13
+95.78
+ViT [17]
+89.72
+88.95
+92.47
+96.31
+Table 7: Ablation on SEAT module routing
+on OA (%) over four benchmarks.
+Variant
+OHID-1 [63] LIB-HSI [30] HeiPor [94] HyperRoad [59]
+No MoE
+89.85
+90.50
+93.15
+96.60
+Base MoE, top-1
+90.45
+91.12
+94.20
+97.15
+Base MoE, top-2
+90.80
+91.45
+94.55
+97.40
+SEAT, top-1
+91.95
+92.60
+96.25
+98.20
+SEAT, top-2
+92.50
+93.08
+96.81
+98.54
+as OneHSI w/o SM) degrades performance, indicating that coordinate alignment
+alone cannot eliminate residual sensor-specific statistics. Replacing the learnable
+alignment with CNN projection [46] and wavelength interpolation [11] (denoted
+as OneHSI w/ Proj. and OneHSI w/ Inter.) leads to further accuracy drops.
+This suggests that fixed or purely geometric alignment is insufficient and data-
+driven wavelength reparameterization is critical for spectral discretizations.
+Effectiveness of Auxiliary Losses. We ablate the Expert Balancing Loss
+Lbal and Domain-Adversarial Loss Ldal to assess their contributions (Table 6).
+Removing Lbal leads to moderate performance drops, while ablating Ldal causes
+substantially larger degradation, highlighting the importance of domain adver-
+sarial training for feature invariance. We further evaluate a variant that retains
+SEAT but removes both auxiliary losses (denoted as SEAT-only). This vari-
+ant performs worst, indicating that architectural flexibility alone is insufficient
+without regularization. For reference, the plain ViT baseline [17] also underper-
+forms OneHSI, confirming that optimal performance arises from the combination
+of scale-aware capacity and invariance-inducing objectives.
+Effectiveness of SEAT. Table 7 evaluates the architectural design of the SEAT
+module by comparing three variants: a dense network (No MoE), a standard
+MoE with generic global routing (Base MoE) [84], and our scale-aware routing.
+Base MoE provides only marginal improvements over the dense network, indi-
+cating that generic token routing fails to capture the complex spectral–spatial
+
+
+## PDF PAGE 15
+OneHSI: A Unified Hyperspectral Foundation Model
+15
+structures in hyperspectral data. In contrast, SEAT significantly improves per-
+formance, increasing accuracy on the HeiPorSPECTRAL dataset [94] by over
+2.2% compared to Base MoE. This result suggests that the gain primarily comes
+from assigning experts to distinct physical scales rather than simply enlarging
+model capacity. In addition, top-2 routing consistently outperforms top-1 across
+both MoE variants, indicating that secondary experts capture complementary
+features that are particularly useful in scale transition regions.
+Hyperparameter and Loss-Weight Sensitivity. We further examine sensi-
+tivity to the MAE masking ratio, the learning rate, and the auxiliary loss weights
+α and β (Supp. Sec. A.6). Overall accuracy varies by at most about one point
+around our default masking ratio and learning rate, whereas the expert-balancing
+and domain-adversarial losses prove decisive, improving accuracy by more than
+five points over a reconstruction-only baseline on OHID-1.
+5
+Conclusions
+In this work, we tackle the long-standing device dependency in hyperspectral
+learning by introducing OneHSI, a physically consistent hyperspectral foun-
+dation model. By reparameterizing spectral channels in continuous wavelength
+space, separating scale-invariant relational modeling from scale-conditioned adap-
+tation, and balancing cross-domain contributions, OneHSI improves consistency
+across heterogeneous sensing configurations. Extensive experiments spanning
+satellite, proximal, medical, and driving datasets demonstrate that OneHSI achieves
+state-of-the-art performance while remaining robust under spectral discretiza-
+tion shifts, resolution changes, and domain imbalance. While our current frame-
+work assumes reliable wavelength metadata and does not explicitly model atmo-
+spheric effects, integrating physics-informed degradation modeling and scaling
+to broader sensing regimes remain promising directions. More broadly, this work
+suggests that hyperspectral foundation modeling should be built upon physi-
+cal invariances rather than sensor-specific statistics, offering a principled path
+toward truly cross-sensor material perception.
+Acknowledgements
+This work was supported in part by the China NSFC Grant (No. 62472366), the
+Project of the Department of Education of Guangdong Province
+(Nos 2023KCXTD042, 2024GCZX003, 2024KCXTD008, and 2025KCXTD056),
+the Guangdong Provincial Key Laboratory of Integrated Communication, Sens-
+ing and Computation for Ubiquitous Internet of Things (No. 2023B1212010007),
+the ‘111 Center’ (No. D25008), the Shenzhen Science and Technology Foundation
+(No. ZDSYS20190902092853047), the Guangdong Basic and Applied Basic Re-
+search Foundation (No. 2026A1515011793), and the Youth S&T Talent Support
+Programme of Guangdong Provincial Association for Science and Technology
+(No. SKXRC2025467).
+
+
+## PDF PAGE 16
+16
+Y. Wen et al.
+References
+1. Akgun, T., Altunbasak, Y., Mersereau, R.M.: Super-resolution reconstruction of
+hyperspectral images. IEEE Transactions on Image Processing 14(11), 1860–1875
+(2005)
+2. Arad, B., Timofte, R., Yahel, R., Morag, N., Bernat, A., Cai, Y., Lin, J., Lin, Z.,
+Wang, H., Zhang, Y., et al.: NTIRE 2022 spectral recovery challenge and data
+set. In: CVPRW. pp. 863–881 (2022)
+3. Arbash, E., Fuchs, M., Rasti, B., Lorenz, S., Ghamisi, P., Gloaguen, R.: PCB-
+Vision: A multiscene RGB-hyperspectral benchmark dataset of printed circuit
+boards. IEEE Sensors Journal 24(10), 17140–17158 (2024)
+4. Arjovsky, M., Bottou, L., Gulrajani, I., Lopez-Paz, D.: Invariant risk minimiza-
+tion. arXiv preprint arXiv:1907.02893 (2019)
+5. Barman, T., Coleman, S., Kerr, D., Harrigan, S., Quinn, J.: Optimizing industrial
+e-waste recycling with attention-driven deep learning for PCB segmentation using
+hyperspectral imaging. In: CIETES. pp. 1–7. IEEE (2025)
+6. Basterretxea, K., Martínez, V., Echanobe, J., Gutiérrez-Zaballa, J., Del Campo,
+I.: HSI-Drive: A dataset for the research of hyperspectral image processing applied
+to autonomous driving systems. In: IV. pp. 866–873. IEEE (2021)
+7. Baumann, A., Ayala, L., Seidlitz, S., Sellner, J., Studier-Fischer, A., Özdemir,
+B., Maier-Hein, L., Ilic, S.: CARL: Camera-agnostic representation learning for
+spectral image analysis. In: ICLR (2026)
+8. Bechar, M.E.A., Abdallah Saab, N., Assainova, O., Settouti, N., El Bouz, M.:
+HSI-AgriFoodAnomaly: A hyperspectral dataset for anomaly detection in the
+agri-food industrial inspection. Recherche Data Gouv (2025)
+9. Ben-David, S., Blitzer, J., Crammer, K., Kulesza, A., Pereira, F., Vaughan, J.W.:
+A theory of learning from different domains. Machine Learning 79(1), 151–175
+(2010)
+10. Bhargava, A., Sachdeva, A., Sharma, K., Alsharif, M.H., Uthansakul, P.,
+Uthansakul, M.: Hyperspectral imaging and its applications: A review. Heliyon
+10(12) (2024)
+11. Bioucas-Dias, J.M., Plaza, A., Camps-Valls, G., Scheunders, P., Nasrabadi, N.,
+Chanussot, J.: Hyperspectral remote sensing data analysis and future challenges.
+IEEE Geoscience and Remote Sensing Magazine 1(2), 6–36 (2013)
+12. Braham, N.A.A., Albrecht, C.M., Mairal, J., Chanussot, J., Wang, Y., Zhu, X.X.:
+SpectralEarth: Training hyperspectral foundation models at scale. IEEE Journal
+of Selected Topics in Applied Earth Observations and Remote Sensing (2025)
+13. Casao, S., Peña, F., Sabater, A., Castillón, R., Suárez, D., Montijano, E., Murillo,
+A.C.: SpectralWaste dataset: Multimodal data for waste sorting automation. In:
+IROS. pp. 5852–5858. IEEE (2024)
+14. Chen, H., Song, J., Han, C., Xia, J., Yokoya, N.: ChangeMamba: Remote sensing
+change detection with spatiotemporal state space model. IEEE Transactions on
+Geoscience and Remote Sensing 62, 1–20 (2024)
+15. Clark, R.N., Swayze, G.A., Gallagher, A.J., King, T., Calvin, W.M.: The US
+geological survey, digital spectral library: version 1 (0.2 to 3.0 um). Tech. rep.,
+Geological Survey (US) (1993)
+16. Deepa, V., Kala, L.: Detection of missing aircrafts by spectral signature identifi-
+cation using hyperspectral images. In: ICCMC. pp. 497–501. IEEE (2017)
+17. Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner,
+T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., et al.: An image is
+
+
+## PDF PAGE 17
+OneHSI: A Unified Hyperspectral Foundation Model
+17
+worth 16x16 words: Transformers for image recognition at scale. arXiv preprint
+arXiv:2010.11929 (2020)
+18. Durgam, A., Paheding, S., Dhiman, V., Devabhaktuni, V.: Cross-view geo-
+localization: a survey. IEEE Access 12, 192028–192050 (2024)
+19. Ekong, F., Zhou, J., Sarpong, K., Gao, Y.: Pixel-wise shuffling with collaborative
+sparsity for melanoma hyperspectral image classification. In: WACV. pp. 6485–
+6494. IEEE (2025)
+20. Galliani, S., Lanaras, C., Marmanis, D., Baltsavias, E., Schindler, K.: Learned
+spectral super-resolution. arXiv preprint arXiv:1703.09470 (2017)
+21. Ganin, Y., Ustinova, E., Ajakan, H., Germain, P., Larochelle, H., Laviolette, F.,
+March, M., Lempitsky, V.: Domain-adversarial training of neural networks. Jour-
+nal of Machine Learning Research 17(59), 1–35 (2016)
+22. Geirhos, R., Rubisch, P., Michaelis, C., Bethge, M., Wichmann, F.A., Brendel,
+W.: ImageNet-trained CNNs are biased towards texture; increasing shape bias
+improves accuracy and robustness. In: ICLR (2019)
+23. Geva, M., Schuster, R., Berant, J., Levy, O.: Transformer feed-forward layers are
+key-value memories. In: EMNLP. pp. 5484–5495 (2021)
+24. Goetz, A.F., Vane, G., Solomon, J.E., Rock, B.N.: Imaging spectrometry for earth
+remote sensing. Science 228(4704), 1147–1153 (1985)
+25. Green, R.O., Eastwood, M.L., Sarture, C.M., Chrien, T.G., Aronsson, M., Chip-
+pendale, B.J., Faust, J.A., Pavri, B.E., Chovit, C.J., Solis, M., et al.: Imaging
+spectroscopy and the airborne visible/infrared imaging spectrometer (AVIRIS).
+Remote Sensing of Environment 65(3), 227–248 (1998)
+26. Gu, Y., Partridge, Y.P., Zhou, J.: A hyperspectral dermoscopy dataset for
+melanoma detection. In: International Workshop on Computer-Assisted and
+Robotic Endoscopy. pp. 268–276. Springer (2018)
+27. Guanter, L., Kaufmann, H., Segl, K., Foerster, S., Rogass, C., Chabrillat, S.,
+Kuester, T., Hollstein, A., Rossner, G., Chlebek, C., et al.: The EnMAP space-
+borne imaging spectroscopy mission for earth observation. Remote Sensing 7(7),
+8830–8857 (2015)
+28. Gulrajani, I., Lopez-Paz, D.: In search of lost domain generalization. arXiv
+preprint arXiv:2007.01434 (2020)
+29. Gutiérrez-Zaballa, J., Basterretxea, K., Echanobe, J., Martínez, M.V., Martinez-
+Corral, U.: HSI-Drive v2.0: More data for new challenges in scene understanding
+for autonomous driving. In: SSCI. pp. 207–214. IEEE (2023)
+30. Habili, N., Kwan, E., Li, W., Webers, C., Oorloff, J., Armin, M.A., Petersson, L.:
+A hyperspectral and RGB dataset for building façade segmentation. In: ECCV.
+pp. 258–267. Springer (2022)
+31. Hanson, N., Pyatski, B., Hibbard, S., DiMarzio, C., Padır, T.: Hyper-Drive:
+Visible-short wave infrared hyperspectral imaging datasets for robots in unstruc-
+tured environments. In: WHISPERS. pp. 1–5. IEEE (2023)
+32. He, G., Fu, H., Feng, P., Liu, S., Chang, J., Jin, S.: Real-time detection of flying
+aircraft using hyperspectral satellite imges. In: ISNCC. pp. 1–8. IEEE (2022)
+33. He, J., Zhao, L., Yang, H., Zhang, M., Li, W.: HSI-BERT: Hyperspectral image
+classification using the bidirectional encoder representation from transformers.
+IEEE Transactions on Geoscience and Remote Sensing 58(1), 165–178 (2019)
+34. He, K., Chen, X., Xie, S., Li, Y., Dollár, P., Girshick, R.: Masked autoencoders
+are scalable vision learners. In: CVPR. pp. 16000–16009 (2022)
+35. He, X., Tang, C., Liu, X., Zhang, W., Sun, K., Xu, J.: Object detection in hyper-
+spectral image via unified spectral–spatial feature aggregation. IEEE Transactions
+on Geoscience and Remote Sensing 61, 1–13 (2023)
+
+
+## PDF PAGE 18
+18
+Y. Wen et al.
+36. He, X., Chen, Y., Ghamisi, P.: Heterogeneous transfer learning for hyperspectral
+image classification based on convolutional neural network. IEEE Transactions
+on Geoscience and Remote Sensing 58(5), 3246–3263 (2019)
+37. Hong, D., Han, Z., Yao, J., Gao, L., Zhang, B., Plaza, A., Chanussot, J.: Spectral-
+Former: Rethinking hyperspectral image classification with transformers. IEEE
+Transactions on Geoscience and Remote Sensing 60, 1–15 (2021)
+38. Hong, D., Zhang, B., Li, X., Li, Y., Li, C., Yao, J., Yokoya, N., Li, H., Ghamisi,
+P., Jia, X., Plaza, A., Gamba, P., Benediktsson, J.A., Chanussot, J.: Spectral-
+GPT: Spectral remote sensing foundation model. IEEE Transactions on Pattern
+Analysis and Machine Intelligence 46(8), 5227–5244 (2024)
+39. Hu, M., Wu, C., Zhang, L., Du, B.: Hyperspectral anomaly change detection based
+on autoencoder. IEEE Journal of Selected Topics in Applied Earth Observations
+and Remote Sensing 14, 3750–3762 (2021)
+40. Jang, J., Oh, S., Kim, Y., Seo, D., Choi, Y., Yang, H.J.: M2SODAI: Multi-modal
+maritime object detection dataset with RGB and hyperspectral image sensors.
+NeurIPS 36, 53831–53843 (2023)
+41. Jiang, Z., Li, J., Xu, S., Liu, Z., Ma, D., Wang, Q., Yuan, Y.: Cross-domain
+hyperspectral image classification. Pattern Recognition p. 111836 (2025)
+42. Karim, S., Qadir, A., Farooq, U., Shakir, M., Laghari, A.A.: Hyperspectral imag-
+ing: a review and trends towards medical imaging. Current Medical Imaging Re-
+views 19(5), 417–427 (2023)
+43. Khan, A., Vibhute, A.D., Mali, S., Patil, C.H.: A systematic review on hyper-
+spectral imaging technology with a machine and deep learning methodology for
+agricultural applications. Ecological Informatics 69, 101678 (2022)
+44. Laprade, W.M., Westergaard, J.C., Christensen, S., Nielsen, M., Dahl, A.B.: A
+general purpose spectral foundational model for both proximal and remote sensing
+spectral imaging. arXiv preprint arXiv:2503.01628 (2025)
+45. Lee, H., Eum, S., Kwon, H.: Exploring cross-domain pretrained model for hy-
+perspectral image classification. IEEE Transactions on Geoscience and Remote
+Sensing 60, 1–12 (2022)
+46. Li, J., Liu, Y., Wang, X., Peng, Y., Sun, C., Wang, S., Sun, Z., Ke, T., Jiang, X.,
+Lu, T., et al.: HyperFree: A channel-adaptive and tuning-free foundation model
+for hyperspectral remote sensing imagery. In: CVPR. pp. 23048–23058 (2025)
+47. Li, M., Liu, Y., Xue, G., Huang, Y., Yang, G.: Exploring the relationship between
+center and neighborhoods: Central vector oriented self-similarity network for hy-
+perspectral image classification. IEEE Transactions on Circuits and Systems for
+Video Technology 33(4), 1979–1993 (2022)
+48. Li, S., Song, W., Fang, L., Chen, Y., Ghamisi, P., Benediktsson, J.A.: Deep learn-
+ing for hyperspectral image classification: An overview. IEEE Transactions on
+Geoscience and Remote Sensing 57(9), 6690–6709 (2019)
+49. Li, W., Yuan, F., Zhang, H., Lv, Z., Wu, B.: Hyperspectral object detection
+based on spatial–spectral fusion and visual Mamba. Remote Sensing 16(23), 4482
+(2024)
+50. Li, Y., Luo, Y., Zhang, L., Wang, Z., Du, B.: MambaHSI: Spatial–spectral Mamba
+for hyperspectral image classification. IEEE Transactions on Geoscience and Re-
+mote Sensing 62, 1–16 (2024)
+51. Lian, J., Wang, L., Sun, H., Huang, H.: GT-HAD: Gated transformer for hyper-
+spectral anomaly detection. IEEE Transactions on Neural Networks and Learning
+Systems 36(2), 3631–3645 (2024)
+52. Lindeberg, T.: Normative theory of visual receptive fields. Heliyon 7(1) (2021)
+
+
+## PDF PAGE 19
+OneHSI: A Unified Hyperspectral Foundation Model
+19
+53. Lindenberger, P., Sarlin, P.E., Hosang, J., Balice, M., Pollefeys, M., Lynen,
+S., Trulls, E.: Scaling image geo-localization to continent level. arXiv preprint
+arXiv:2510.26795 (2025)
+54. Liu, P., Bai, H., Xu, T., Wang, J., Chen, H., Li, J.: Hyperspectral remote sensing
+images salient object detection: The first benchmark dataset and baseline. IEEE
+Transactions on Geoscience and Remote Sensing (2025)
+55. Liu, P., Xu, T., Wang, J., Chen, H., Bai, H., Li, J.: Dual-stage hyperspectral image
+classification model with spectral supertoken. In: ECCV. pp. 368–386. Springer
+(2024)
+56. López-Fandiño, J., Heras, D.B., Argüello, F., Dalla Mura, M.: GPU framework for
+change detection in multitemporal hyperspectral images. International Journal of
+Parallel Programming 47(2), 272–292 (2019)
+57. Lou, C., Al-qaness, M.A., AL-Alimi, D., Dahou, A., Abd Elaziz, M., Abualigah,
+L., Ewees, A.A.: Land use/land cover (LULC) classification using hyperspectral
+images: a review. Geo-spatial Information Science 28(2), 345–386 (2025)
+58. Lu, G., Fei, B.: Medical hyperspectral imaging: a review. Journal of Biomedical
+Optics 19(1), 010901–010901 (2014)
+59. Lu, J., Liu, H., Yao, Y., Tao, S., Tang, Z., Lu, J.: HSI road: a hyper spectral
+image dataset for road segmentation. In: ICME. pp. 1–6. IEEE Computer Society
+(2020)
+60. Lu, R., Chen, Y.R.: Hyperspectral imaging for safety inspection of food and
+agricultural products. In: Pathogen Detection and Remediation for Safe Eating.
+vol. 3544, pp. 121–133. SPIE (1999)
+61. Lu, S., Guo, J., Zimmer-Dauphinee, J.R., Nieusma, J.M., Wang, X., Wernke,
+S.A., Huo, Y., et al.: Vision foundation models in remote sensing: A survey. IEEE
+Geoscience and Remote Sensing Magazine (2025)
+62. Mahesh, S., Jayas, D., Paliwal, J., White, N.: Hyperspectral imaging to classify
+and monitor quality of agricultural materials. Journal of Stored Products Research
+61, 17–26 (2015)
+63. Mani, A., Gorbachev, S., Yan, J., Dixit, A., Shi, X., Li, L., Sun, Y., Chen, X.,
+Wu, J., Deng, J., et al.: OHID-1: A new large hyperspectral image dataset for
+multi-classification. Scientific Data 12(1), 251 (2025)
+64. Manolakis, D.G., Lockwood, R.B., Cooley, T.W.: Hyperspectral imaging remote
+sensing: physics, sensors, and algorithms. Cambridge University Press (2016)
+65. Marcus, W.A., Legleiter, C.J., Aspinall, R.J., Boardman, J.W., Crabtree, R.L.:
+High spatial resolution hyperspectral mapping of in-stream habitats, depths, and
+woody debris in mountain streams. Geomorphology 55(1-4), 363–380 (2003)
+66. Mei, X., Pan, E., Ma, Y., Dai, X., Huang, J., Fan, F., Du, Q., Zheng, H., Ma, J.:
+Spectral-spatial attention networks for hyperspectral image classification. Remote
+Sensing 11(8), 963 (2019)
+67. Meola, J., Eismann, M.T., Moses, R.L., Ash, J.N.: Modeling and estimation of
+signal-dependent noise in hyperspectral imagery. Applied Optics 50(21), 3829–
+3846 (2011)
+68. Morel, A., Prieur, L.: Analysis of variations in ocean color 1. Limnology and
+Oceanography 22(4), 709–722 (1977)
+69. Nalepa, J., Myller, M., Cwiek, M., Zak, L., Lakota, T., Tulczyjew, L., Kawulok,
+M.: Towards on-board hyperspectral satellite image segmentation: Understanding
+robustness of deep learning through simulating acquisition conditions. Remote
+Sensing 13(8), 1532 (2021)
+
+
+## PDF PAGE 20
+20
+Y. Wen et al.
+70. Nasr-Esfahani, S., Muthukumar, V., Regentova, E., Taghva, K., Trabia, M.:
+Hyperspectral methods in microscopy image analysis: A survey. In: SIGMAP.
+pp. 111–119. SciTePress—Science and Technology Publications Setúbal, Portugal
+(2021)
+71. Ng, P.C., Chi, Z., Verdie, Y., Lu, J., Plataniotis, K.N.: Hyper-Skin: A hyperspec-
+tral dataset for reconstructing facial skin-spectra from RGB images. NeurIPS 36,
+24158–24170 (2023)
+72. Nie, S., Gu, L., Zheng, Y., Lam, A., Ono, N., Sato, I.: Deeply learned filter
+response functions for hyperspectral reconstruction. In: CVPR. pp. 4767–4776
+(2018)
+73. Ortega, S., Quintana-Quintana, L., Leon, R., Fabelo, H., Plaza, M.d.l.L.,
+Camacho, R., Callico, G.M.: Histological hyperspectral glioblastoma dataset
+(HistologyHSI-GB). Scientific Data 11(1), 681 (2024)
+74. Ozdemir, A., Polat, K.: Deep learning applications for hyperspectral imaging: a
+systematic review. Journal of the Institute of Electronics and Computer 2(1),
+39–56 (2020)
+75. Pan, Z., Li, C., Plaza, A., Chanussot, J., Hong, D.: Hyperspectral image classifi-
+cation with Mamba. IEEE Transactions on Geoscience and Remote Sensing 63,
+1–14 (2025)
+76. Park,
+N.,
+Kim,
+S.:
+How
+do
+vision
+transformers
+work?
+arXiv
+preprint
+arXiv:2202.06709 (2022)
+77. Peebles, W., Xie, S.: Scalable diffusion models with transformers. In: ICCV. pp.
+4195–4205 (2023)
+78. Perez, E., Strub, F., De Vries, H., Dumoulin, V., Courville, A.: FiLM: Visual
+reasoning with a general conditioning layer. In: AAAI. vol. 32 (2018)
+79. Piqueras, S., Burger, J., Tauler, R., de Juan, A.: Relevant aspects of quantification
+and sample heterogeneity in hyperspectral image resolution. Chemometrics and
+Intelligent Laboratory Systems 117, 169–182 (2012)
+80. Pu, Y.Y., Feng, Y.Z., Sun, D.W.: Recent progress of hyperspectral imaging on
+quality and safety inspection of fruits and vegetables: A review. Comprehensive
+Reviews in Food Science and Food Safety 14(2), 176–188 (2015)
+81. Radford, A., Kim, J.W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry,
+G., Askell, A., Mishkin, P., Clark, J., et al.: Learning transferable visual models
+from natural language supervision. In: ICML. pp. 8748–8763. PMLR (2021)
+82. Ram, B.G., Mettler, J., Howatt, K., Ostlie, M., Sun, X.: WeedCube: Proximal
+hyperspectral image dataset of crops and weeds for machine learning applications.
+Data in Brief 56, 110837 (2024)
+83. Rasti, B., Scheunders, P., Ghamisi, P., Licciardi, G., Chanussot, J.: Noise reduc-
+tion in hyperspectral imagery: Overview and application. Remote Sensing 10(3),
+482 (2018)
+84. Riquelme, C., Puigcerver, J., Mustafa, B., Neumann, M., Jenatton, R., Su-
+sano Pinto, A., Keysers, D., Houlsby, N.: Scaling vision with sparse mixture of
+experts. NeurIPS 34, 8583–8595 (2021)
+85. Ronneberger, O., Fischer, P., Brox, T.: U-Net: Convolutional networks for biomed-
+ical image segmentation. In: MICCAI. pp. 234–241. Springer (2015)
+86. Roy, S.K., Krishna, G., Dubey, S.R., Chaudhuri, B.B.: HybridSN: Exploring 3-
+D–2-D CNN feature hierarchy for hyperspectral image classification. IEEE Geo-
+science and Remote Sensing Letters 17(2), 277–281 (2019)
+87. Sellner, J., Studier-Fischer, A., Qasim, A.B., Seidlitz, S., Schreck, N., Tizabi,
+M., Wiesenfarth, M., Kopp-Schneider, A., Heinecke, J., Brandt, J., et al.: Xeno-
+
+
+## PDF PAGE 21
+OneHSI: A Unified Hyperspectral Foundation Model
+21
+learning: knowledge transfer across species in deep learning-based spectral image
+analysis. Nature Biomedical Engineering pp. 1–15 (2026)
+88. Shah, I.A., Li, J., Glavin, M., Jones, E., Ward, E., Deegan, B.: Hyperspectral
+imaging-based perception in autonomous driving scenarios: Benchmarking base-
+line semantic segmentation models. In: WHISPERS. pp. 1–5. IEEE (2024)
+89. Shaw, G., Manolakis, D.: Signal processing for hyperspectral image exploitation.
+IEEE Signal Processing Magazine 19(1), 12–16 (2002)
+90. Shen, Q., Huang, Y., Ren, T., Fu, Y., You, S.: Urban scene understanding via
+hyperspectral images: Dataset and benchmark. Tech. Rep. 4560035, SSRN (2023)
+91. Siche, R., Vejarano, R., Aredo, V., Velasquez, L., Saldana, E., Quevedo, R.: Eval-
+uation of food quality and safety with hyperspectral imaging (HSI). Food Engi-
+neering Reviews 8(3), 306–322 (2016)
+92. Signoroni, A., Savardi, M., Baronio, A., Benini, S.: Deep learning meets hyper-
+spectral image analysis: A multidisciplinary review. Journal of Imaging 5(5), 52
+(2019)
+93. Slonecker, T., Paine, E.C., Simon, N.S.: Data release: Upper klamath lake, oregon,
+hyperspectral algal samples. US Geological Survey (USGS) Data Release p. 608
+(2018)
+94. Studier-Fischer, A., Seidlitz, S., Sellner, J., Bressan, M., Özdemir, B., Ay-
+ala, L., Odenthal, J., Knoedler, S., Kowalewski, K.F., Haney, C.M., et al.:
+HeiPorSPECTRAL-the Heidelberg porcine hyperspectral imaging dataset of 20
+physiological organs. Scientific Data 10(1), 414 (2023)
+95. Tolstikhin, I.O., Houlsby, N., Kolesnikov, A., Beyer, L., Zhai, X., Unterthiner, T.,
+Yung, J., Steiner, A., Keysers, D., Uszkoreit, J., et al.: MLP-Mixer: An all-MLP
+architecture for vision. NeurIPS 34, 24261–24272 (2021)
+96. Tuia, D., Persello, C., Bruzzone, L.: Domain adaptation for the classification
+of remote sensing data: An overview of recent advances. IEEE Geoscience and
+Remote Sensing Magazine 4(2), 41–57 (2016)
+97. Varga, L.A., Makowski, J., Zell, A.: Measuring the ripeness of fruit with hyper-
+spectral imaging and deep learning. In: IJCNN. pp. 1–8. IEEE (2021)
+98. Volpi, M., Camps-Valls, G., Tuia, D.: Spectral alignment of multi-temporal cross-
+sensor images with automated kernel canonical correlation analysis. ISPRS Jour-
+nal of Photogrammetry and Remote Sensing 107, 50–63 (2015)
+99. Wang, D., Hu, M., Jin, Y., Miao, Y., Yang, J., Xu, Y., Qin, X., Ma, J., Sun, L.,
+Li, C., et al.: HyperSIGMA: Hyperspectral intelligence comprehension foundation
+model. IEEE Transactions on Pattern Analysis and Machine Intelligence (2025)
+100. Wang, G., Zhang, X., Peng, Z., Zhang, T., Jiao, L.: S2Mamba: A spatial-spectral
+state space model for hyperspectral image classification. IEEE Transactions on
+Geoscience and Remote Sensing (2025)
+101. Wang, W., Dai, J., Chen, Z., Huang, Z., Li, Z., Zhu, X., Hu, X., Lu, T., Lu, L.,
+Li, H., et al.: InternImage: Exploring large-scale vision foundation models with
+deformable convolutions. In: CVPR. pp. 14408–14419 (2023)
+102. Wang, X., Zhao, K., Zhao, X., Li, S.: CSDBF: Dual-branch framework based
+on temporal–spatial joint graph attention with complement strategy for hyper-
+spectral image change detection. IEEE Transactions on Geoscience and Remote
+Sensing 60, 1–18 (2022)
+103. Wang, Y., Hong, D., Sha, J., Gao, L., Liu, L., Zhang, Y., Rong, X.: Spectral–
+spatial–temporal transformers for hyperspectral image change detection. IEEE
+Transactions on Geoscience and Remote Sensing 60, 1–14 (2022)
+104. Wang, Z., Li, C., Xu, H., Zhu, X., Li, H.: Mamba YOLO: A simple baseline for
+object detection with state space model. In: AAAI. vol. 39, pp. 8205–8213 (2025)
+
+
+## PDF PAGE 22
+22
+Y. Wen et al.
+105. Weber, C., Aguejdad, R., Briottet, X., Avala, J., Fabre, S., Demuynck, J., Zenou,
+E., Deville, Y., Karoui, M.S., Benhalouche, F.Z., et al.: Hyperspectral imagery
+for environmental urban planning. In: IGARSS. pp. 1628–1631. IEEE (2018)
+106. Werdell, P.J., Bailey, S., Fargion, G., Pietras, C., Knobelspiesse, K., Feldman, G.,
+McClain, C.: Unique data repository facilitates ocean color satellite validation.
+Eos, Transactions American Geophysical Union 84(38), 377–387 (2003)
+107. Winkens, C., Sattler, F., Adams, V., Paulus, D.: HyKo: A spectral dataset for
+scene understanding. In: ICCVW. pp. 254–261 (2017)
+108. Workman, S., Souvenir, R., Jacobs, N.: Wide-area image geolocalization with
+aerial reference imagery. In: ICCV (2015)
+109. Xia, X., Liu, W., Wang, L., Sun, J.: HSIFoodIngr-64: A dataset for hyperspectral
+food-related studies and a benchmark method on food ingredient retrieval. IEEE
+Access 11, 13152–13162 (2023)
+110. Yan, L., Zhao, M., Wang, X., Zhang, Y., Chen, J.: Object detection in hyperspec-
+tral images. IEEE Signal Processing Letters 28, 508–512 (2021)
+111. Yang, X., Cao, W., Lu, Y., Zhou, Y.: Hyperspectral image transformer classifica-
+tion networks. IEEE Transactions on Geoscience and Remote Sensing 60, 1–15
+(2022)
+112. Yu, C., Han, R., Song, M., Liu, C., Chang, C.I.: A simplified 2D-3D CNN architec-
+ture for hyperspectral image classification based on spatial–spectral fusion. IEEE
+Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+13, 2485–2501 (2020)
+113. Yuan, L., Chen, D., Chen, Y.L., Codella, N., Dai, X., Gao, J., Hu, H., Huang,
+X., Li, B., Li, C., et al.: Florence: A new foundation model for computer vision.
+arXiv preprint arXiv:2111.11432 (2021)
+114. Yun, B., Lei, B., Chen, J., Wang, H., Qiu, S., Shen, W., Li, Q., Wang, Y.: SpecTr:
+Spectral transformer for microscopic hyperspectral pathology image segmenta-
+tion. IEEE Transactions on Circuits and Systems for Video Technology 34(6),
+4610–4624 (2023)
+115. Zhang, L., Nie, J., Wei, W., Zhang, Y., Liao, S., Shao, L.: Unsupervised adaptation
+learning for hyperspectral imagery super-resolution. In: CVPR. pp. 3073–3082
+(2020)
+116. Zhang, Q., Li, Q., Yu, G., Sun, L., Zhou, M., Chu, J.: A multidimensional chole-
+doch database and benchmarks for cholangiocarcinoma diagnosis. IEEE Access
+7, 149414–149421 (2019)
+117. Zhang, Y., Zeng, X., Zhang, H., Xu, M.: Spectral-aware deep networks for object
+detection in hyperspectral images with cloud interference. In: Proceedings of the
+International Conference on Image Processing, Machine Learning and Pattern
+Recognition. pp. 391–396 (2024)
+118. Zhou, Z., Li, S., Wu, W., Guo, W., Li, X., Xia, G., Zhao, Z.: NaSC-TG2: Natural
+scene classification with Tiangong-2 remotely sensed imagery. IEEE Journal of
+Selected Topics in Applied Earth Observations and Remote Sensing 14, 3228–
+3242 (2021)
+119. Zhu, X.X., Tuia, D., Mou, L., Xia, G.S., Zhang, L., Xu, F., Fraundorfer, F.: Deep
+learning in remote sensing: A comprehensive review and list of resources. IEEE
+Geoscience and Remote Sensing Magazine 5(4), 8–36 (2017)

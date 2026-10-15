@@ -1,0 +1,66 @@
+{
+  "files": {
+    "model.py": {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\model.py",
+      "sha256": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66"
+    },
+    "train_cave_M.py": {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\train_cave_M.py",
+      "sha256": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc"
+    },
+    "train_dataloader.py": {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\train_dataloader.py",
+      "sha256": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578"
+    },
+    "utils.py": {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\utils.py",
+      "sha256": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944"
+    },
+    "calculate_metrics.py": {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\calculate_metrics.py",
+      "sha256": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94"
+    }
+  },
+  "train_files": [
+    "balloons_ms .mat",
+    "beads_ms .mat",
+    "cd_ms .mat",
+    "chart_and_stuffed_toy_ms .mat",
+    "clay_ms.mat",
+    "cloth_ms.mat",
+    "egyptian_statue_ms.mat",
+    "face_ms.mat",
+    "fake_and_real_beers_ms.mat",
+    "fake_and_real_food_ms.mat",
+    "fake_and_real_lemon_slices_ms.mat",
+    "fake_and_real_lemons_ms.mat",
+    "fake_and_real_peppers_ms.mat",
+    "fake_and_real_strawberries_ms.mat",
+    "fake_and_real_sushi_ms.mat",
+    "fake_and_real_tomatoes_ms.mat",
+    "feathers_ms.mat",
+    "flowers_ms.mat",
+    "glass_tiles_ms.mat",
+    "hairs_ms.mat"
+  ],
+  "test_files": [
+    "jelly_beans_ms.mat",
+    "oil_painting_ms.mat",
+    "paints_ms.mat",
+    "photo_and_face_ms.mat",
+    "pompoms_ms.mat",
+    "real_and_fake_apples_ms.mat",
+    "real_and_fake_peppers_ms.mat",
+    "sponges_ms.mat",
+    "stuffed_toys_ms.mat",
+    "superballs_ms.mat",
+    "thread_spools_ms.mat",
+    "watercolors_ms.mat"
+  ],
+  "user_preferences": {
+    "training": "supervised",
+    "focus": "method innovation",
+    "gpu": "4090",
+    "time_budget": "not specified"
+  }
+}

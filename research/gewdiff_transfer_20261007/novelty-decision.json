@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-07",
+  "mode": "standalone",
+  "review_type": "self_review_same_context",
+  "materially_independent_review": false,
+  "systematic_literature_review_completed": false,
+  "candidate": "Explicit compensation of discarded spectral-wavelet regression residuals in HSI-MSI fusion, with observational reliability constraining additional MSI detail injection; diffusion evaluated against deterministic compensation.",
+  "novelty_decision_rating": 3,
+  "decision_confidence_rating": 2,
+  "generic_gewdiff_transfer_rating": 2,
+  "rating_interpretation": "Narrow proceed only; generic transfer requires substantial reframing. No novelty guarantee.",
+  "narrowest_defensible_positioning": "Test whether reliability-constrained compensation of the discarded residual of a specified spectral compressor improves full-spectrum fidelity under modality mismatch, and whether diffusion is necessary for that compensation.",
+  "empirical_validity": "unverified_no_training",
+  "engineering_feasibility": {
+    "deterministic_bridge_and_compensation": "high_with_protocol_fixes",
+    "lightweight_residual_diffusion": "moderate_requires_memory_and_training_checks",
+    "original_large_model_port": "low_to_moderate_poor_first_step_for_current_baseline"
+  },
+  "selection_history": "Candidate formed after original-paper reading and refined after closest-work inspection and three training-scene oracle probes. Outcome-informed exploratory proposal, not confirmatory or preregistered.",
+  "strongest_overlaps": ["DDIF", "HSR-Diff", "ARGS-Diff", "PG-FDN", "WCGE-Net", "Latent diffusion and spectral expert models", "CDPS"],
+  "unresolved_high_priority_questions": [
+    {"id": "N1", "question": "Do recent full texts already implement the same discarded spectral residual compensation and reliability gate?"},
+    {"id": "N2", "question": "Is the compression-error motivation stable across all training scenes, spectral materials, and datasets?"},
+    {"id": "N3", "question": "Does an equal-budget deterministic residual CNN replace the proposed compensation?"},
+    {"id": "N4", "question": "Does the gate respond to known modality mismatch and reduce corresponding injection errors?"},
+    {"id": "N5", "question": "Does diffusion add stable value beyond deterministic refinement under comparable compute?"}
+  ],
+  "evidence_files": ["analysis.md", "prior-art-matrix.md", "search-log.md", "source-manifest.json", "feasibility-results.json"],
+  "code_manifest_commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+  "baseline_modified": false,
+  "training_executed": false
+}

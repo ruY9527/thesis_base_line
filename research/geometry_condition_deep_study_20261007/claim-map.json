@@ -1,0 +1,55 @@
+[
+  {
+    "claim_id": "C1",
+    "priority": "primary",
+    "claim": "局部联合支持能解释超出rank/texture/RU/scale-ridge的自然几何失稳",
+    "why_it_matters": "决定模块是否有独立研究价值",
+    "minimum_convincing_evidence": "场景级独立数据和强对照，3seeds；GT-hidden流程冻结后评价",
+    "anti_claim": "只是新增参数、额外物理损失或普通尺度ridge",
+    "falsifier": "控制纹理/尺度后无解释增量",
+    "decision_if_unproven": "reframe",
+    "linked_blocks": [
+      "B1",
+      "B2",
+      "B3",
+      "B5"
+    ],
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "decision_rule": "按对应gate，不以执行完成代替科学支持",
+    "loss_contract": "supervised与GT-hidden损失分别对齐，报告全部质量和成本",
+    "falsification_test": "控制纹理/尺度后无解释增量",
+    "selection_history": [
+      "前轮基线测试输出已查看；本轮仅检索及人工算子反例，未看候选训练结果"
+    ],
+    "predecessor_failures": [
+      "MSI-only门控不能代表HSI对粗空间零光谱方向的支持"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "priority": "primary",
+    "claim": "额外物理几何残差在两训练路线中改善边界光谱归属而整体不劣",
+    "why_it_matters": "决定模块是否有独立研究价值",
+    "minimum_convincing_evidence": "场景级独立数据和强对照，3seeds；GT-hidden流程冻结后评价",
+    "anti_claim": "只是新增参数、额外物理损失或普通尺度ridge",
+    "falsifier": "强同信息对照等效或更好，或整体谱质量下降",
+    "decision_if_unproven": "reframe",
+    "linked_blocks": [
+      "B3",
+      "B4",
+      "B5"
+    ],
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "decision_rule": "按对应gate，不以执行完成代替科学支持",
+    "loss_contract": "supervised与GT-hidden损失分别对齐，报告全部质量和成本",
+    "falsification_test": "强同信息对照等效或更好，或整体谱质量下降",
+    "selection_history": [
+      "前轮基线测试输出已查看；本轮仅检索及人工算子反例，未看候选训练结果"
+    ],
+    "predecessor_failures": [
+      "MSI-only门控不能代表HSI对粗空间零光谱方向的支持"
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+import torch.optim
+from data_loader import build_datasets
+import pandas as pd
+from utils import *
+from validate import validate
+from train import train
+import csv
+import args_parser
+from models.SDPNet import SDPNet
+
+args = args_parser.args_parser()
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+print(args)
+
+df = pd.read_excel(args.dataset + '_rand.xlsx', sheet_name='Sheet1')
+h_rand = df.iloc[:, 0].tolist()
+w_rand = df.iloc[:, 1].tolist()
+
+
+def main():
+    # Custom dataloader
+    train_list, test_list = build_datasets(args.root,
+                                           args.dataset,
+                                           args.image_size,
+                                           args.n_select_bands,
+                                           args.scale_ratio)
+    if args.dataset == 'paviau':
+        args.n_bands = 93
+
+    elif args.dataset == 'Pavia':
+        args.n_bands = 102
+    elif args.dataset == 'Chikusei':
+        args.n_bands = 128
+
+    elif args.dataset == 'houston18':
+        args.n_bands = 46
+    elif args.dataset == 'wadc':
+        args.n_bands = 191
+    # Build the models
+    if args.arch == 'SSRNET' or args.arch == 'SpatRNET' or args.arch == 'SpecRNET':
+        model = SSRNET(args.arch,
+                       args.scale_ratio,
+                       args.n_select_bands,
+                       args.n_bands).cuda()
+    elif args.arch == 'DCT':
+        model = DCT(n_colors=args.n_bands, upscale_factor=args.scale_ratio, n_feats=180).cuda()
+    elif args.arch == 'SDPNet':
+        model = SDPNet(args.n_bands, args.n_select_bands,args.scale_ratio).cuda()
+
+    # Loss and optimizer
+    criterion = nn.L1Loss().cuda()
+    optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr)
+    parameter_nums = sum(p.numel() for p in model.parameters())
+    print("Model size:", str(float(parameter_nums / 1e6)) + 'M')
+
+    # Load the trained model parameters
+    model_path = f'./checkpoints/{args.dataset}_{args.arch}_x{int(args.scale_ratio)}.pkl'
+    if os.path.exists(model_path):
+        recent_psnr, recent_rmse, recent_ergas, recent_sam, recent_cc,recent_moae, recent_uiqi, recent_ssim = validate(test_list,
+                                                                                 args.arch,
+                                                                                 model,
+                                                                                 0,
+                                                                                 args.n_epochs)
+        print(f'psnr: {recent_psnr}, rmse: {recent_rmse}, ergas: {recent_ergas}, sam: {recent_sam}, cc: {recent_cc}, MOAE:{recent_moae}, UIQI:{recent_uiqi}, SSIM:{recent_ssim}')
+
+
+    best_psnr, best_rmse, best_ergas, best_sam, best_cc,best_moae, best_uiqi, best_ssim = validate(test_list,
+                                                                   args.arch,
+                                                                   model,
+                                                                   0,
+                                                                   args.n_epochs)
+    print(f'Initial PSNR: {best_psnr}, RMSE: {best_rmse}, ERGAS: {best_ergas}, SAM: {best_sam}, CC: {best_cc}, MOAE:{best_moae}, UIQI:{best_uiqi}, SSIM:{best_ssim}')
+
+
+
+    # Training loop
+    print('Start Training:')
+    best_epoch = 0
+    for epoch in range(args.n_epochs):
+        # One epoch's training
+        print(f'Train_Epoch_{epoch}: ')
+        h_str = h_rand[epoch]
+        w_str = w_rand[epoch]
+        train(train_list,
+              args.image_size,
+              args.scale_ratio,
+              args.n_bands,
+              args.arch,
+              model,
+              optimizer,
+              criterion,
+              epoch,
+              args.n_epochs,
+              h_str,
+              w_str)
+
+        # One epoch's validation
+        print(f'Val_Epoch_{epoch}: ')
+        recent_psnr, recent_rmse, recent_ergas, recent_sam, recent_cc,recent_moae, recent_uiqi, recent_ssim = validate(test_list,
+                                                                                 args.arch,
+                                                                                 model,
+                                                                                 epoch,
+                                                                                 args.n_epochs)
+
+
+        print(f'PSNR: {recent_psnr}, RMSE: {recent_rmse}, ERGAS: {recent_ergas}, SAM: {recent_sam}, CC: {recent_cc}, MOAE:{recent_moae}, UIQI:{recent_uiqi}, SSIM:{recent_ssim}')
+
+        # Save metrics to CSV
+        metrics_path = f'./checkpoints/{args.dataset}_{args.arch}_x{int(args.scale_ratio)}_metrics.csv'
+        with open(metrics_path, mode='a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([epoch, recent_psnr, recent_rmse, recent_ergas, recent_sam, recent_cc, recent_moae,recent_uiqi,recent_ssim])
+
+        # Save model if it achieves better performance
+        is_best = recent_psnr > best_psnr
+        best_psnr = max(recent_psnr, best_psnr)
+        best_rmse = min(recent_rmse, best_rmse)
+        best_ergas = min(recent_ergas, best_ergas)
+        best_sam = min(recent_sam, best_sam)
+        best_cc = max(recent_cc, best_cc)
+        best_moae = min(recent_moae, best_moae)
+        best_uiqi = max(recent_uiqi, best_uiqi)
+        best_ssim = max(recent_ssim, best_ssim)
+
+        if is_best:
+            best_epoch = epoch
+            torch.save(model.state_dict(), model_path)
+            print('Saved the best model.')
+
+
+    print(
+        f'Final Best PSNR: {best_psnr}, Best RMSE: {best_rmse}, Best ERGAS: {best_ergas}, Best SAM: {best_sam}, Best CC: {best_cc},Best MOAE:{best_moae}, Best UIQI:{best_uiqi}, Best SSIM:{best_ssim} ')
+
+
+if __name__ == '__main__':
+    main()

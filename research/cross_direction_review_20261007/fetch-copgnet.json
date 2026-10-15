@@ -1,0 +1,51 @@
+{
+  "name": "copgnet",
+  "identifier": "10.1016/j.inffus.2025.103997",
+  "canonical_id": "doi:10.1016/j.inffus.2025.103997",
+  "source": "",
+  "format": "",
+  "status": "failed",
+  "title": "Exploring structured uncertainty for external prior-guided hyperspectral image fusion",
+  "year": 2025,
+  "doi": "10.1016/j.inffus.2025.103997",
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": null,
+  "parsed_path": null,
+  "parser": null,
+  "abstract": null,
+  "tried": [
+    {
+      "step": "unpaywall",
+      "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+    },
+    {
+      "step": "openalex",
+      "outcome": "no oa"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "no oa pdf"
+    },
+    {
+      "step": "crossref",
+      "outcome": "no pdf link"
+    },
+    {
+      "step": "doi_landing",
+      "outcome": "http 200"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    }
+  ],
+  "note": "All sources failed and no abstract was retrievable",
+  "parsed_lines": null,
+  "parsed_chars": null,
+  "sentinel": null,
+  "read_plan": [],
+  "figures": [],
+  "parser_used_ocr": null
+}

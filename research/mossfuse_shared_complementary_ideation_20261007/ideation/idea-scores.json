@@ -1,0 +1,482 @@
+{
+  "topic": "MossFuse 共享与互补的观测条件分工",
+  "scoring_scale": "1-5",
+  "interpretation": "投入排序；并非科学新颖性/指标认证。",
+  "ideas": [
+    {
+      "idea_id": "I01",
+      "title": "共享互补后换更强注意力",
+      "summary": "更强聚合可能改善重建。",
+      "hypothesis": "更强聚合可能改善重建。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://doi.org/10.1007/s11263-026-02757-8",
+        "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "同参数普通卷积与新注意力，冻结训练协议。",
+      "disconfirming_evidence": "改善只由容量或优化解释，或同构聚合已存在。",
+      "kill_criteria": "改善只由容量或优化解释，或同构聚合已存在。",
+      "closest_work": [
+        "MossFuse",
+        "SRLF"
+      ],
+      "differentiation": "只换模块，尚无新的成像失配或训练机制。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 1,
+        "feasibility": 5,
+        "testability": 4,
+        "significance": 2
+      },
+      "risk": "low",
+      "estimated_effort": "days",
+      "status": "rejected",
+      "rationale": "只换模块，尚无新的成像失配或训练机制。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I02",
+      "title": "新增乘性交互或协同分支",
+      "summary": "保护特定分离接口的联合响应可能帮助重建。",
+      "hypothesis": "保护特定分离接口的联合响应可能帮助重建。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://doi.org/10.1007/s11263-026-02757-8",
+        "https://proceedings.iclr.cc/paper_files/paper/2025/file/108030643e640ac050e0ed5e6aace48f-Paper-Conference.pdf"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "合理分离强度、弱约束、同容量加法和乘法对照。",
+      "disconfirming_evidence": "原 Net 不受损，简单弱约束解释收益，或普通扩容相同。",
+      "kill_criteria": "原 Net 不受损，简单弱约束解释收益，或普通扩容相同。",
+      "closest_work": [
+        "MossFuse",
+        "CoMM"
+      ],
+      "differentiation": "原 D2 可保留为结构试验；泛化协同主张强重叠。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 2,
+        "feasibility": 4,
+        "testability": 4,
+        "significance": 3
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "rejected",
+      "rationale": "原 D2 可保留为结构试验；泛化协同主张强重叠。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I03",
+      "title": "按局部秩切换处理分支",
+      "summary": "局部低秩和复杂区域需要不同处理路线。",
+      "hypothesis": "局部低秩和复杂区域需要不同处理路线。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003775"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "局部秩与普通路由、RASD 思路对照。",
+      "disconfirming_evidence": "已有秩路由完整覆盖机制或普通动态分支解释全部收益。",
+      "kill_criteria": "已有秩路由完整覆盖机制或普通动态分支解释全部收益。",
+      "closest_work": [
+        "RASD"
+      ],
+      "differentiation": "RASD 已直接涉及，不再以一般秩路由为主要贡献。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 4,
+        "testability": 4,
+        "significance": 3
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "rejected",
+      "rationale": "RASD 已直接涉及，不再以一般秩路由为主要贡献。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I04",
+      "title": "逐样本余弦与动态分离损失权重",
+      "summary": "消除批间影响或优化冲突可能改善稳定性。",
+      "hypothesis": "消除批间影响或优化冲突可能改善稳定性。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://doi.org/10.1007/s11263-026-02757-8"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "同损失尺度、逐样本与批展平、固定小权重对照。",
+      "disconfirming_evidence": "逐样本常规实现或弱约束已解释收益。",
+      "kill_criteria": "逐样本常规实现或弱约束已解释收益。",
+      "closest_work": [
+        "MossFuse"
+      ],
+      "differentiation": "实现与优化对照，不足以形成独立共享互补研究问题。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 5,
+        "testability": 5,
+        "significance": 2
+      },
+      "risk": "low",
+      "estimated_effort": "days",
+      "status": "rejected",
+      "rationale": "实现与优化对照，不足以形成独立共享互补研究问题。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I05",
+      "title": "同秩区域的连续响应可辨性控制细节分配",
+      "summary": "在局部基可估计的条件下，RU 的连续灵敏度比秩和纹理更能指导光谱细节分配。",
+      "hypothesis": "在局部基可估计的条件下，RU 的连续灵敏度比秩和纹理更能指导光谱细节分配。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003775",
+        "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+        "https://vccimaging.org/Publications/Fu2025Limitations/",
+        "https://doi.org/10.1007/s11263-026-02757-8"
+      ],
+      "assumptions": [
+        "已知 R 和相容 D；LR 局部基可合理估计。",
+        "基内条件恢复不能解释所有基外或联合零空间内容。"
+      ],
+      "novelty_questions": [
+        "NQ1：近期响应条件子空间融合是否已完整实现相同门控与错误诊断？"
+      ],
+      "minimum_validation": "LR 基自然错误诊断；同秩不同灵敏度任务；普通扩容、纹理、秩、固定响应投影、正则化子空间求解对照。",
+      "disconfirming_evidence": "LR 基不稳定；只有 HR 基上界有效；普通条件门控相同；正常融合指标受损；完全同构近邻存在。",
+      "kill_criteria": "LR 基不稳定；只有 HR 基上界有效；普通条件门控相同；正常融合指标受损；完全同构近邻存在。",
+      "closest_work": [
+        "RASD",
+        "SRLF",
+        "Optics",
+        "MossFuse"
+      ],
+      "differentiation": "进一步收窄原 D5：区分维数与稳定可辨性，检验错谱注入，不主张 SVD 或岭权重公式新颖。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 3,
+        "feasibility": 4,
+        "testability": 5,
+        "significance": 4
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "selected",
+      "rationale": "进一步收窄原 D5：区分维数与稳定可辨性，检验错谱注入，不主张 SVD 或岭权重公式新颖。 进入定向新颖性审查，未认证新颖。",
+      "blocking_questions": [
+        "NQ1：近期响应条件子空间融合是否已完整实现相同门控与错误诊断？"
+      ]
+    },
+    {
+      "idea_id": "I06",
+      "title": "撤除真实测量时的功能分工变化",
+      "summary": "观测条件控制的修正接口，在真实留出目标训练下，能超越普通观测撤除和条件网络。",
+      "hypothesis": "观测条件控制的修正接口，在真实留出目标训练下，能超越普通观测撤除和条件网络。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://openreview.net/forum?id=upMIVpe467",
+        "https://doi.org/10.1016/j.isprsjprs.2026.02.024",
+        "https://doi.org/10.1007/s11263-026-02757-8",
+        "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003775"
+      ],
+      "assumptions": [
+        "留出通道在全部输入与辅助路径中移除。",
+        "HR 真值不进入训练与自监督选模；目标数量与预算公平。"
+      ],
+      "novelty_questions": [
+        "NQ2：观测拆分、缺失模态与算子条件网络是否完全覆盖功能分工机制？"
+      ],
+      "minimum_validation": "固定三种留一 MSI 通道视图；完整输入指标；同目标预算下普通 mask、R 条件、固定角色与条件角色对照。",
+      "disconfirming_evidence": "普通留出训练解释全部效果；角色仅在辅助头改变；完整输入无收益；仅记忆 mask。",
+      "kill_criteria": "普通留出训练解释全部效果；角色仅在辅助头改变；完整输入无收益；仅记忆 mask。",
+      "closest_work": [
+        "ES",
+        "SpecAware",
+        "MossFuse",
+        "RASD"
+      ],
+      "differentiation": "原 D1/D4 延伸为光谱观测变化的功能检验；不主张首次观测拆分或传感器条件化。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 3,
+        "feasibility": 4,
+        "testability": 5,
+        "significance": 4
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "selected",
+      "rationale": "原 D1/D4 延伸为光谱观测变化的功能检验；不主张首次观测拆分或传感器条件化。 进入定向新颖性审查，未认证新颖。",
+      "blocking_questions": [
+        "NQ2：观测拆分、缺失模态与算子条件网络是否完全覆盖功能分工机制？"
+      ]
+    },
+    {
+      "idea_id": "I07",
+      "title": "不可交换退化下的相容共享域",
+      "summary": "波段相关 D 下，不相容共享对齐可能混淆内容与成像差异；相容约束可能缓解。",
+      "hypothesis": "波段相关 D 下，不相容共享对齐可能混淆内容与成像差异；相容约束可能缓解。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://pubmed.ncbi.nlm.nih.gov/41191478/",
+        "https://www.tandfonline.com/doi/full/10.1080/19479832.2026.2613383",
+        "https://doi.org/10.1007/s11263-026-02757-8"
+      ],
+      "assumptions": [
+        "波段相关 D 有数据依据；非盲正确算子先成立。",
+        "非零共同域可能不存在，需允许失败。"
+      ],
+      "novelty_questions": [
+        "NQ3：相容算子、波段 PSF 与共同域对齐是否已有同构方法？"
+      ],
+      "minimum_validation": "统一 D 和波段 D 设置，正确算子无共享、错误共同域、相容域四组；先非盲。",
+      "disconfirming_evidence": "正确 D 普通训练解释全部收益；真实问题无依据；共同域不存在或不可稳定估计；已有同构算子法。",
+      "kill_criteria": "正确 D 普通训练解释全部收益；真实问题无依据；共同域不存在或不可稳定估计；已有同构算子法。",
+      "closest_work": [
+        "NUD_PAF",
+        "PSF2026",
+        "MossFuse"
+      ],
+      "differentiation": "首次考虑波长 PSF 不是贡献；关注共同线性量的成立条件及内容归因。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 3,
+        "feasibility": 2,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "high",
+      "estimated_effort": "months",
+      "status": "shortlisted",
+      "rationale": "首次考虑波长 PSF 不是贡献；关注共同线性量的成立条件及内容归因。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "NQ3：相容算子、波段 PSF 与共同域对齐是否已有同构方法？"
+      ]
+    },
+    {
+      "idea_id": "I08",
+      "title": "保护低能量但有区分力的细谱",
+      "summary": "全局能量或分离目标可能忽视窄吸收与稀有材料的有用变化。",
+      "hypothesis": "全局能量或分离目标可能忽视窄吸收与稀有材料的有用变化。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://vccimaging.org/Publications/Fu2025Limitations/",
+        "https://doi.org/10.1007/s11263-026-02757-8"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "先找自然稀有细谱错误，再与光谱导数、SAM、频带加权损失对照。",
+      "disconfirming_evidence": "失败不存在或普通光谱损失解释收益。",
+      "kill_criteria": "失败不存在或普通光谱损失解释收益。",
+      "closest_work": [
+        "Optics",
+        "MossFuse"
+      ],
+      "differentiation": "原 D5/D7 细化；尚缺可部署重要性定义与最新近邻。",
+      "scores": {
+        "clarity": 3,
+        "novelty_signal": 2,
+        "feasibility": 3,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "high",
+      "estimated_effort": "weeks",
+      "status": "needs_research",
+      "rationale": "原 D5/D7 细化；尚缺可部署重要性定义与最新近邻。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I09",
+      "title": "联合零空间的合成目标带来无条件恢复",
+      "summary": "若仅凭同一观测就恢复任意联合零空间内容，则主张不可成立。",
+      "hypothesis": "若仅凭同一观测就恢复任意联合零空间内容，则主张不可成立。",
+      "contribution_type": "diagnostic",
+      "source_basis": [
+        "https://openreview.net/forum?id=upMIVpe467",
+        "https://vccimaging.org/Publications/Fu2025Limitations/"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "构造 DZ=0 且 RZ=0 的非零变化，检验观测无法区分。",
+      "disconfirming_evidence": "两目标观测相同却声称唯一重建；目标实为新先验或隐藏 HR 标签。",
+      "kill_criteria": "两目标观测相同却声称唯一重建；目标实为新先验或隐藏 HR 标签。",
+      "closest_work": [
+        "ES",
+        "Optics"
+      ],
+      "differentiation": "合成四元可研究先验可学性，不能当独立观测证据。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 4,
+        "testability": 5,
+        "significance": 2
+      },
+      "risk": "high",
+      "estimated_effort": "days",
+      "status": "rejected",
+      "rationale": "合成四元可研究先验可学性，不能当独立观测证据。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I10",
+      "title": "完整路径的共享互补功能审计",
+      "summary": "有效分工应影响最终输出的相应测量响应，而不只改变探针。",
+      "hypothesis": "有效分工应影响最终输出的相应测量响应，而不只改变探针。",
+      "contribution_type": "diagnostic",
+      "source_basis": [
+        "https://doi.org/10.1007/s11263-026-02757-8",
+        "https://proceedings.iclr.cc/paper_files/paper/2025/file/108030643e640ac050e0ed5e6aace48f-Paper-Conference.pdf"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "对原融合、候选分支和插值路径做受控屏蔽，检查补偿与观测误差。",
+      "disconfirming_evidence": "只改变辅助头不影响最终功能，或归因受分布外干预主导。",
+      "kill_criteria": "只改变辅助头不影响最终功能，或归因受分布外干预主导。",
+      "closest_work": [
+        "MossFuse",
+        "CoMM"
+      ],
+      "differentiation": "原 D6：有诊断价值，但归因工具本身的新颖性与因果解释未确立。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 2,
+        "feasibility": 4,
+        "testability": 4,
+        "significance": 3
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "needs_research",
+      "rationale": "原 D6：有诊断价值，但归因工具本身的新颖性与因果解释未确立。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I11",
+      "title": "盲响应估计与角色交替优化",
+      "summary": "校准与分工共同训练可能改善盲融合。",
+      "hypothesis": "校准与分工共同训练可能改善盲融合。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://doi.org/10.1007/s11263-026-02757-8",
+        "https://pubmed.ncbi.nlm.nih.gov/41191478/"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "已知/未知 R 对照，先证明内容与响应具有可辨识条件。",
+      "disconfirming_evidence": "已有盲退化机制覆盖；内容与 R 相互补偿而不可识别。",
+      "kill_criteria": "已有盲退化机制覆盖；内容与 R 相互补偿而不可识别。",
+      "closest_work": [
+        "MossFuse",
+        "NUD_PAF"
+      ],
+      "differentiation": "MossFuse 已估计退化；未提出新增可辨识条件，不选泛化版本。",
+      "scores": {
+        "clarity": 3,
+        "novelty_signal": 1,
+        "feasibility": 3,
+        "testability": 3,
+        "significance": 3
+      },
+      "risk": "high",
+      "estimated_effort": "months",
+      "status": "rejected",
+      "rationale": "MossFuse 已估计退化；未提出新增可辨识条件，不选泛化版本。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    },
+    {
+      "idea_id": "I12",
+      "title": "由下游分类决定共享互补角色",
+      "summary": "应用标签可能识别重建指标不重视的信息。",
+      "hypothesis": "应用标签可能识别重建指标不重视的信息。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "https://doi.org/10.1016/j.isprsjprs.2026.02.024"
+      ],
+      "assumptions": [
+        "需要在当前任务与同预算对照中建立效果。"
+      ],
+      "novelty_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ],
+      "minimum_validation": "合法标签数据、正常融合及分类性能双重验收。",
+      "disconfirming_evidence": "需要额外标签却声称无标签，或分类提升损伤重建。",
+      "kill_criteria": "需要额外标签却声称无标签，或分类提升损伤重建。",
+      "closest_work": [
+        "SpecAware"
+      ],
+      "differentiation": "可能是另一个研究任务；当前缺数据且偏离 baseline 指标优先目标。",
+      "scores": {
+        "clarity": 3,
+        "novelty_signal": 2,
+        "feasibility": 2,
+        "testability": 3,
+        "significance": 3
+      },
+      "risk": "high",
+      "estimated_effort": "months",
+      "status": "needs_research",
+      "rationale": "可能是另一个研究任务；当前缺数据且偏离 baseline 指标优先目标。 暂不进入主方法实现。",
+      "blocking_questions": [
+        "需要排除直接模块与训练目标近邻。"
+      ]
+    }
+  ]
+}

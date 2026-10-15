@@ -1,0 +1,53 @@
+{
+  "status": "untrained_float64_operator_checks_only",
+  "R_rank": 3,
+  "P_idempotence_max_abs": 7.28583859910259e-17,
+  "R_null_max_abs": 1.9648879188080007e-17,
+  "A_inverse_roundtrip_max_abs": 3.1086244689504383e-15,
+  "geometry_scale_min_max": [
+    0.5,
+    1.0
+  ],
+  "visible_noise_variance_ratio_at_strong_edge": 0.25,
+  "null_noise_variance_ratio_at_strong_edge": 1.0,
+  "whitening_gradient_chain_max_abs": 1.3322676295501878e-15,
+  "common_nullspace_delta_norm": 0.9999999999999999,
+  "common_nullspace_R_delta_max_abs": 2.9942457516591723e-18,
+  "common_nullspace_D_delta_max_abs": 1.922470531954384e-18,
+  "constant_geometry_commutes_with_D": true,
+  "variable_geometry_D_product_vs_center_scale_max_abs": 0.010779694420403663,
+  "internal_scale_examples": [
+    {
+      "native_scale": 8,
+      "hr_size": 512,
+      "lr_hsi_size": 64,
+      "internal_target_size": 64,
+      "internal_input_size": 8,
+      "internal_kernel": 7,
+      "valid_convolution_possible": true
+    },
+    {
+      "native_scale": 32,
+      "hr_size": 512,
+      "lr_hsi_size": 16,
+      "internal_target_size": 16,
+      "internal_input_size": null,
+      "internal_kernel": 31,
+      "valid_convolution_possible": false
+    },
+    {
+      "native_scale": 32,
+      "hr_patch": 128,
+      "lr_hsi_patch": 4,
+      "internal_target_size": 4,
+      "internal_input_size": null,
+      "internal_kernel": 31,
+      "valid_convolution_possible": false
+    }
+  ],
+  "actual_torch_x32_internal_conv_errors": {
+    "16": "Calculated padded input size per channel: (16 x 16). Kernel size: (31 x 31). Kernel size can't be greater than actual input size",
+    "4": "Calculated padded input size per channel: (4 x 4). Kernel size: (31 x 31). Kernel size can't be greater than actual input size"
+  },
+  "scope": "Synthetic random row-normalized SRF and known Gaussian PSF; not measured dataset, trained network, or exact posterior sampler."
+}

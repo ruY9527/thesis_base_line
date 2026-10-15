@@ -1,0 +1,14 @@
+{
+  "output_language":"zh-CN",
+  "reviews":{
+    "Figure 1":{"status":"repair_requested","preserved":["选择机制示意","参数、PSNR 和 FLOPs 比较"],"notes":"完整图体位于第一页中部，自动候选混入标题、作者及机构，需要去除周围文字。","failure_reason":"surrounding_prose_contamination","revised_bbox":[0.078,0.326,0.900,0.507],"target_section":"研究问题"},
+    "Figure 2":{"status":"pass","preserved":["两种输入","级联 SRLF","跳跃连接与各阶段输出","Refine 和最终重建"],"notes":"完整图 2 图体，输入输出及所有支路标签保留。","target_section":"方法主线"},
+    "Figure 4":{"status":"pass","preserved":["空间再学习与光谱再学习两子图","响应函数","两种评分选择","输入观测与残差连接","全部标签"],"notes":"完整图 4；顶部仅留白，没有图注和相邻正文混入。","target_section":"方法主线"},
+    "Figure 5":{"status":"pass","preserved":["全部九种方法","重建、误差图与局部放大","色标范围和方法名"],"notes":"图 5 的全部面板及色标完整可读。","target_section":"关键结果"},
+    "Figure 6":{"status":"pass","preserved":["全部九种方法","Harvard 重建和光谱误差图","局部放大及色标"],"notes":"图 6 全部面板完整，未混入图注。","target_section":"关键结果"},
+    "Figure 7":{"status":"pass","preserved":["原始低分辨率 HSI 与各重建结果","方法名及局部放大"],"notes":"图 7 图体完整，顶部为留白；不存在真实 HR-HSI 面板，不能把左图当 HR 真值。","target_section":"数据与任务定义"},
+    "Figure 9":{"status":"pass","preserved":["MSI 和 LRHSI 观测","两种结构选择","四个阶段","三个比例系数及黑色未选区域"],"notes":"完整位置选择可视化，所有分组标签与系数保留。","target_section":"深度分析"},
+    "Table 1":{"status":"pass","preserved":["全部方法","两个数据集的全部四项指标","参数与 FLOPs","DAEM 脚注标记和最佳值"],"notes":"完整主结果表图体，未混入表题；计算口径另外根据补充材料说明。","target_section":"关键结果"},
+    "Table 4":{"status":"pass","preserved":["四种模块设置","FLOPs 和全部四项指标","全部数值"],"notes":"完整模块消融表，标题被剔除。","target_section":"关键结果"}
+  }
+}

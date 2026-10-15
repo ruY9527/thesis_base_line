@@ -1,0 +1,37 @@
+{
+  "name": "gsnr",
+  "identifier": "https://openaccess.thecvf.com/content/CVPR2026/papers/Gualdron-Hurtado_GSNR_Graph_Smooth_Null-Space_Representation_for_Inverse_Problems_CVPR_2026_paper.pdf",
+  "canonical_id": "url:e3e793af408e3a65",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_e3e793af408e3a65\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_e3e793af408e3a65\\parsed.md",
+  "parser": "pypdf fallback; page markers retained",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1143,
+  "parsed_chars": 49219,
+  "sentinel": "e56a8daee065",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_e3e793af408e3a65\\parsed.md",
+      "offset": 0,
+      "limit": 1143
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

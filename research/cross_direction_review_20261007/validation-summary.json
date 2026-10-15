@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "json_files_parsed": 44,
+  "core_fulltext": 10,
+  "recent_requested_main_venues_fulltext": 9,
+  "additional_fulltext_opponents": 5,
+  "extended_abstract_or_metadata_catalog": 12,
+  "exact_queries_including_repeats": 65,
+  "ideas_by_status": {
+    "rejected": 13,
+    "selected": 1,
+    "needs_research": 1
+  },
+  "local_artifact_links_checked": 21,
+  "baseline_file_hashes_unchanged": {
+    "model.py": true,
+    "train_cave_M.py": true,
+    "train_dataloader.py": true,
+    "utils.py": true,
+    "calculate_metrics.py": true
+  },
+  "errors": [],
+  "limits": "integrity and structural checks only; no literature completeness, novelty proof, GPU training or empirical improvement"
+}

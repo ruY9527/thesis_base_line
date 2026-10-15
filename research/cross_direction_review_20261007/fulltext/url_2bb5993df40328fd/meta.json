@@ -1,0 +1,35 @@
+{
+  "canonical_id": "url:2bb5993df40328fd",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\parsed.md",
+  "parser": "pypdf fallback; page markers retained",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1044,
+  "parsed_chars": 48915,
+  "sentinel": "2593c6d9b523",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\parsed.md",
+      "offset": 0,
+      "limit": 1044
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

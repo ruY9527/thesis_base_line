@@ -1,0 +1,30 @@
+[
+  {
+    "title": "MorphJEPA: Morphology-Aware Latent Prediction for Hyperspectral Images",
+    "url": "https://eccv.ecva.net/virtual/2026/poster/4891"
+  },
+  {
+    "title": "Filterless Snapshot Hyperspectral Imaging using Guided Patch Diffusion",
+    "url": "https://eccv.ecva.net/virtual/2026/poster/3834"
+  },
+  {
+    "title": "Compact Low-Cost Hyperspectral Imaging via Angular-to-Spectral Diversity Conversion",
+    "url": "https://eccv.ecva.net/virtual/2026/poster/3677"
+  },
+  {
+    "title": "OneHSI: A Unified Hyperspectral Foundation Model with Physical Consistency",
+    "url": "https://eccv.ecva.net/virtual/2026/poster/4477"
+  },
+  {
+    "title": "Context-Aware Joint Alignment for Cross-Scene Hyperspectral Image Classification",
+    "url": "https://eccv.ecva.net/virtual/2026/poster/4764"
+  },
+  {
+    "title": "LGD-Net: Leader-Guided Cross-Modal Dynamics for Hyperspectral and Panchromatic Image Fusion",
+    "url": "https://eccv.ecva.net/virtual/2026/poster/3288"
+  },
+  {
+    "title": "Rethinking Cross-Spectral Image Generation via Shared-Specific Representation",
+    "url": "https://eccv.ecva.net/virtual/2026/poster/4507"
+  }
+]

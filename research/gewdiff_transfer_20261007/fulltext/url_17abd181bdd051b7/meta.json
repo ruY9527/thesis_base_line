@@ -1,0 +1,35 @@
+{
+  "canonical_id": "url:17abd181bdd051b7",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\url_17abd181bdd051b7\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\url_17abd181bdd051b7\\parsed.md",
+  "parser": "pypdf-layout (bundled fallback)",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 524,
+  "parsed_chars": 56851,
+  "sentinel": "2e50a8e97214",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\fulltext\\url_17abd181bdd051b7\\parsed.md",
+      "offset": 0,
+      "limit": 524
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

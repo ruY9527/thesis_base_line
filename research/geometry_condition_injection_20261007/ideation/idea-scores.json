@@ -1,0 +1,354 @@
+{
+  "topic": "当前CAVE监督baseline的几何条件融合",
+  "scoring_scale": "1-5",
+  "ideas": [
+    {
+      "idea_id": "G01",
+      "title": "局部光谱可辨性约束的方向几何注入",
+      "summary": "几何与连续RU灵敏度联合条件优于单独几何门控，减少边界光谱分配错误。",
+      "hypothesis": "几何与连续RU灵敏度联合条件优于单独几何门控，减少边界光谱分配错误。",
+      "contribution_type": "method",
+      "source_basis": [
+        "SDP-Net",
+        "GGAT",
+        "Matrix-R",
+        "dTV",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "自然边界分组诊断、同几何同秩不同响应模拟、几何×灵敏度2×2消融。",
+      "disconfirming_evidence": "仅oracle基有效，或同预算门控/固定投影/经典子空间求解解释全部收益。",
+      "kill_criteria": "仅oracle基有效，或同预算门控/固定投影/经典子空间求解解释全部收益。",
+      "closest_work": [
+        "SDP-Net",
+        "GGAT",
+        "Matrix-R",
+        "dTV"
+      ],
+      "differentiation": "局部内容相关响应耦合几何修正；公式本身不是新意。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 3,
+        "feasibility": 4,
+        "testability": 5,
+        "significance": 4
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "selected",
+      "rationale": "局部内容相关响应耦合几何修正；公式本身不是新意。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    },
+    {
+      "idea_id": "G02",
+      "title": "退化带宽条件下的尺度几何传递",
+      "summary": "区分观测支持的粗几何和细几何，比普通多尺度拼接更少错误传播。",
+      "hypothesis": "区分观测支持的粗几何和细几何，比普通多尺度拼接更少错误传播。",
+      "contribution_type": "method",
+      "source_basis": [
+        "DDIF",
+        "SDP-Net",
+        "Prior-consistent DIM",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "同几何不同PSF/尺度干预，与同条件多尺度卷积对照。",
+      "disconfirming_evidence": "普通多尺度/物理一致性解释全部收益，或无法得到可部署的尺度支持量。",
+      "kill_criteria": "普通多尺度/物理一致性解释全部收益，或无法得到可部署的尺度支持量。",
+      "closest_work": [
+        "DDIF",
+        "SDP-Net",
+        "Prior-consistent DIM"
+      ],
+      "differentiation": "把尺度支持能力作为可测条件，不将小波分解称为创新。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 3,
+        "feasibility": 3,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "high",
+      "estimated_effort": "weeks",
+      "status": "shortlisted",
+      "rationale": "把尺度支持能力作为可测条件，不将小波分解称为创新。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    },
+    {
+      "idea_id": "G03",
+      "title": "几何条件干预与光谱响应诊断",
+      "summary": "干预几何条件产生的光谱变化与有效观测灵敏度对应，可揭示错误注入。",
+      "hypothesis": "干预几何条件产生的光谱变化与有效观测灵敏度对应，可揭示错误注入。",
+      "contribution_type": "diagnostic",
+      "source_basis": [
+        "SDP-Net",
+        "GEWDiff",
+        "Matrix-R",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "仅扰动辅助几何条件并检查局部输出方向，同时监测真实输入不变的合理先验变化。",
+      "disconfirming_evidence": "响应只反映任意辅助分支或通用平滑，无法对应自然误差或主重建路径。",
+      "kill_criteria": "响应只反映任意辅助分支或通用平滑，无法对应自然误差或主重建路径。",
+      "closest_work": [
+        "SDP-Net",
+        "GEWDiff",
+        "Matrix-R"
+      ],
+      "differentiation": "作为主线诊断；不能要求所有不可测几何扰动都严格不影响预测。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 3,
+        "feasibility": 4,
+        "testability": 5,
+        "significance": 3
+      },
+      "risk": "medium",
+      "estimated_effort": "days",
+      "status": "shortlisted",
+      "rationale": "作为主线诊断；不能要求所有不可测几何扰动都严格不影响预测。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    },
+    {
+      "idea_id": "G04",
+      "title": "双观测弱支持细节的不确定性",
+      "summary": "弱约束区域输出校准区间比仅锐化更可靠。",
+      "hypothesis": "弱约束区域输出校准区间比仅锐化更可靠。",
+      "contribution_type": "mixed",
+      "source_basis": [
+        "HSDiff",
+        "ARGS-Diff",
+        "DDSR",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "先比异方差头和ensemble，再考虑后验采样；报告覆盖率与区间宽度。",
+      "disconfirming_evidence": "普通不确定性模型相同效果，或HSDiff/CDPS近邻已覆盖。",
+      "kill_criteria": "普通不确定性模型相同效果，或HSDiff/CDPS近邻已覆盖。",
+      "closest_work": [
+        "HSDiff",
+        "ARGS-Diff",
+        "DDSR"
+      ],
+      "differentiation": "融合双观测支持范围的校准，尚不声称空白。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 3,
+        "feasibility": 2,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "high",
+      "estimated_effort": "months",
+      "status": "needs_research",
+      "rationale": "融合双观测支持范围的校准，尚不声称空白。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    },
+    {
+      "idea_id": "G05",
+      "title": "几何配准与融合联合优化",
+      "summary": "联合估计形变可减少错位边界。",
+      "hypothesis": "联合估计形变可减少错位边界。",
+      "contribution_type": "method",
+      "source_basis": [
+        "SA-RFM",
+        "dTV",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "比较联合与顺序配准、SA-RFM。",
+      "disconfirming_evidence": "近期联合方法已有核心机制，且当前数据无错位。",
+      "kill_criteria": "近期联合方法已有核心机制，且当前数据无错位。",
+      "closest_work": [
+        "SA-RFM",
+        "dTV"
+      ],
+      "differentiation": "当前没有清晰区别，作为失配测试背景。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 2,
+        "feasibility": 2,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "high",
+      "estimated_effort": "months",
+      "status": "rejected",
+      "rationale": "当前没有清晰区别，作为失配测试背景。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    },
+    {
+      "idea_id": "G06",
+      "title": "空间小波几何门控",
+      "summary": "小波高频门控改善边缘。",
+      "hypothesis": "小波高频门控改善边缘。",
+      "contribution_type": "method",
+      "source_basis": [
+        "DDIF",
+        "SDP-Net",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "与DDIF/SDP-Net思想及同条件卷积对照。",
+      "disconfirming_evidence": "普通高频条件或门控已覆盖核心。",
+      "kill_criteria": "普通高频条件或门控已覆盖核心。",
+      "closest_work": [
+        "DDIF",
+        "SDP-Net"
+      ],
+      "differentiation": "单独研究不足，必要时作为尺度实现。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 2,
+        "feasibility": 4,
+        "testability": 4,
+        "significance": 3
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "rejected",
+      "rationale": "单独研究不足，必要时作为尺度实现。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    },
+    {
+      "idea_id": "G07",
+      "title": "几何条件残差扩散",
+      "summary": "在弱支持区域多步条件恢复优于同条件确定性方法。",
+      "hypothesis": "在弱支持区域多步条件恢复优于同条件确定性方法。",
+      "contribution_type": "method",
+      "source_basis": [
+        "DDIF",
+        "HSR-Diff",
+        "GEWDiff",
+        "ARGS-Diff",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "同条件、实际时间与参数预算比较，并额外测量校准。",
+      "disconfirming_evidence": "确定性修正相同或更好，或条件组合与DDIF等同构。",
+      "kill_criteria": "确定性修正相同或更好，或条件组合与DDIF等同构。",
+      "closest_work": [
+        "DDIF",
+        "HSR-Diff",
+        "GEWDiff",
+        "ARGS-Diff"
+      ],
+      "differentiation": "扩散必要性尚无证据，不作主线先决条件。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 2,
+        "feasibility": 2,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "high",
+      "estimated_effort": "months",
+      "status": "needs_research",
+      "rationale": "扩散必要性尚无证据，不作主线先决条件。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    },
+    {
+      "idea_id": "G08",
+      "title": "语义区域mask注入",
+      "summary": "分割区域可能提供梯度之外的结构信息。",
+      "hypothesis": "分割区域可能提供梯度之外的结构信息。",
+      "contribution_type": "method",
+      "source_basis": [
+        "GEWDiff",
+        "research-report.md",
+        "observation-probe.json"
+      ],
+      "assumptions": [
+        "条件仅来自推理可用Y/M及已知或已校准退化",
+        "机制能够在自然或物理合理诊断中检验"
+      ],
+      "novelty_questions": [
+        "最近完整方法是否已有相同条件、作用机制和训练/评估接口"
+      ],
+      "minimum_validation": "与梯度/张量同预算比较，控制额外预训练模型。",
+      "disconfirming_evidence": "GEWDiff已覆盖且CAVE领域动机弱，收益来自外部模型。",
+      "kill_criteria": "GEWDiff已覆盖且CAVE领域动机弱，收益来自外部模型。",
+      "closest_work": [
+        "GEWDiff"
+      ],
+      "differentiation": "需要新任务证据，当前不优先。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 1,
+        "feasibility": 3,
+        "testability": 4,
+        "significance": 2
+      },
+      "risk": "medium",
+      "estimated_effort": "weeks",
+      "status": "rejected",
+      "rationale": "需要新任务证据，当前不优先。",
+      "blocking_questions": [
+        "全文近邻覆盖仍不完整；未有自然场景机制和训练证据"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sha": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+  "node_id": "C_kwDOOKc1q9oAKGQ2YzdlYjRhNDg3MDQ2YWVjYWU1MjY1Y2FiZjgxYjBjMjM1MDY0NjU",
+  "commit": {
+    "author": {
+      "name": "dusongcheng",
+      "email": "63056305+dusongcheng@users.noreply.github.com",
+      "date": "2026-09-28T11:04:58Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-28T11:04:58Z"
+    },
+    "message": "update\n\nUpdated the show function to include epoch parameter.",
+    "tree": {
+      "sha": "7eabd56baa5e3a8125acf719a2e7e0bd0e82a4bf",
+      "url": "https://api.github.com/repos/dusongcheng/MossFuse/git/trees/7eabd56baa5e3a8125acf719a2e7e0bd0e82a4bf"
+    },
+    "url": "https://api.github.com/repos/dusongcheng/MossFuse/git/commits/d6c7eb4a487046aecae5265cabf81b0c23506465",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquknaCRC1aQ7uu5UhlAAApPkQAAZDdu8M2JjwQLb0agSeD5FH\nzSoAJxM7nW39Nn/4tB+Ga4dC9uOt5hh+56RxwcEcal5Hw6gaTHexndApuwdI/B1A\ng2kpE2UcO8/UjEuuAe9owTO+WchnkZpiaCvq6gL1uiUy81I7kbpmUj+gDuRDKyu0\nUf2+EdE53If5lH3MW76URxWFdPTHw56qmXP0zL8eZmB9+pirQtMYRA5TGqdI66zP\nsOC5gvGjJEOP5YXv7ogEmx/Wd8kHpUF3PsT0gU38W+i4SO3BkiiL24mrlzYwCFOz\n3Ob29gBj3YWjAacCCS48crf8AZT+YK1LMMooydsQfshtReUdNWNJ1HT/t9TBmHSF\npGd6ovBSabIjNR+gaqeGlRdYN+Ueqo2hM9jTCz/xub051vN/EAldRNjEjGAuQIa+\nWhgxOy4ijnJwLxs0ZC76xvr0YbJG60ByiYIzyZC/7S1mzCUKKaBfvQjoLtg18CSY\nztICohfs6eBuxXDdyb0wIF0m/0mAfwTP98RP22rQfmQEEJXwlDdtsQPbRe91aG1t\nmtqYuLr7Joh6lXMolGD56bQ5tyHPHSHm+hJROPm8eJpKsLenv2eQ0w3jFAulkVrx\nxWZaxBHD4wtq/ODhyAUUyIpgine3QViaLd43kp/an8Vv5fEEB1d0/SkIjd2Uq6Ka\n0EQ6oQCTksOpDqXcd4z+\n=QvyD\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 7eabd56baa5e3a8125acf719a2e7e0bd0e82a4bf\nparent 962344ac474b0bfcf1139910831146ceed0030b2\nauthor dusongcheng <63056305+dusongcheng@users.noreply.github.com> 1790593498 +0800\ncommitter GitHub <noreply@github.com> 1790593498 +0800\n\nupdate\n\nUpdated the show function to include epoch parameter.",
+      "verified_at": "2026-09-28T11:04:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/dusongcheng/MossFuse/commits/d6c7eb4a487046aecae5265cabf81b0c23506465",
+  "html_url": "https://github.com/dusongcheng/MossFuse/commit/d6c7eb4a487046aecae5265cabf81b0c23506465",
+  "comments_url": "https://api.github.com/repos/dusongcheng/MossFuse/commits/d6c7eb4a487046aecae5265cabf81b0c23506465/comments",
+  "author": {
+    "login": "dusongcheng",
+    "id": 63056305,
+    "node_id": "MDQ6VXNlcjYzMDU2MzA1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/63056305?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dusongcheng",
+    "html_url": "https://github.com/dusongcheng",
+    "followers_url": "https://api.github.com/users/dusongcheng/followers",
+    "following_url": "https://api.github.com/users/dusongcheng/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dusongcheng/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dusongcheng/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dusongcheng/subscriptions",
+    "organizations_url": "https://api.github.com/users/dusongcheng/orgs",
+    "repos_url": "https://api.github.com/users/dusongcheng/repos",
+    "events_url": "https://api.github.com/users/dusongcheng/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dusongcheng/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "962344ac474b0bfcf1139910831146ceed0030b2",
+      "url": "https://api.github.com/repos/dusongcheng/MossFuse/commits/962344ac474b0bfcf1139910831146ceed0030b2",
+      "html_url": "https://github.com/dusongcheng/MossFuse/commit/962344ac474b0bfcf1139910831146ceed0030b2"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b86c416b312cce0fed636cdd7ce07b69a5d02556",
+      "filename": "utils.py",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/utils.py",
+      "raw_url": "https://github.com/dusongcheng/MossFuse/raw/d6c7eb4a487046aecae5265cabf81b0c23506465/utils.py",
+      "contents_url": "https://api.github.com/repos/dusongcheng/MossFuse/contents/utils.py?ref=d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "patch": "@@ -26,7 +26,7 @@ def record_loss(loss_csv,epoch, cc_B, cc_D, mse_MSI, mse_HSI, mse_HSI_R, mse_MSI\n     loss_csv.flush()    \n     loss_csv.close\n     \n-def show(srf, srf_g, psf, psf_g):\n+def show(epoch, srf, srf_g, psf, psf_g):\n     srf = np.array(srf.data.cpu())\n     srf_g = np.array(srf_g.data.cpu())\n     psf = np.array(psf.data.cpu())"
+    }
+  ]
+}

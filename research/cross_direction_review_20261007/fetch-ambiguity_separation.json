@@ -1,0 +1,41 @@
+{
+  "name": "ambiguity_separation",
+  "identifier": "https://arxiv.org/pdf/2605.15050",
+  "canonical_id": "arxiv:2605.15050",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Separating Intrinsic Ambiguity from Estimation Uncertainty in Deep Generative Models for Linear Inverse Problems",
+  "year": 2026,
+  "doi": null,
+  "arxiv_id": "2605.15050",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2605.15050\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2605.15050\\parsed.md",
+  "parser": "html",
+  "abstract": "Recently, deep generative models have been used for posterior inference in inverse problems, including high-stakes applications in medical imaging and scientific discovery, where the uncertainty of a prediction can matter as much as the prediction itself. However, posterior uncertainty is difficult to interpret because it can mix ambiguity inherent to the forward operator with uncertainty propagated through inference. We introduce a structural decomposition of posterior uncertainty that isolates intrinsic ambiguity. A cascade formulation makes this ambiguity accessible for calibration analysis, enabling qualitative diagnostics and simulation-based calibration tests that reveal failure modes that remain hidden when models are selected by reconstruction quality alone. We first validate the approach on a Gaussian example with analytical posterior structure, then illustrate the decomposition on accelerated magnetic resonance imaging (MRI), and finally apply the calibration diagnostics to electroencephalography (EEG) source imaging.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "no oa pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 736,
+  "parsed_chars": 68353,
+  "sentinel": "cdd680e21009",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2605.15050\\parsed.md",
+      "offset": 0,
+      "limit": 736
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

@@ -1,0 +1,49 @@
+{
+  "canonical_id": "doi:10.1109/tgrs.2026.3691782",
+  "source": "",
+  "format": "",
+  "status": "abstract_only",
+  "title": "HySens: Sensor-Agnostic Foundation Models for Hyperspectral Data",
+  "year": 2026,
+  "doi": "10.1109/TGRS.2026.3691782",
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": null,
+  "parsed_path": null,
+  "parser": null,
+  "abstract": "Foundation models (FMs) have been extensively explored and have demonstrated great performance in various remote sensing tasks. Among all the types of remote sensing data, there are relatively few studies on hyperspectral FMs. One big challenge is that different hyperspectral sensors have significantly different sensor characteristics in both spectral and spatial domains. Such discrepancies make it difficult to develop a universally applicable hyperspectral FM, which could be easily transferred and applied to datasets from diverse hyperspectral sensors. In this work, we develop HySens: a generic sensor-agnostic hyperspectral FM that can be applied easily and efficiently to various hyperspectral sensors. Specifically, 1) we integrate a spectral harmonizer by harmonizing various bands distribution into a unified spectral grid with high fidelity and less redundancy; 2) we design customized wavelength-based spectral embeddings such that the spectral embeddings are wavelength aware and could be easily generated based on the physical bands wavelengths; and 3) we treat the hyperspectral spectra as sequences and focus on the spectral sequential features by using a transformer backbone. The proposed FM is compared with other representative hyperspectral algorithms and recent hyperspectral FMs over both patch-based and pixel-based hyperspectral tasks. The developed model achieves superior performance with good interpretability and efficiency.",
+  "tried": [
+    {
+      "step": "unpaywall",
+      "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+    },
+    {
+      "step": "openalex_oa",
+      "outcome": "http 202"
+    },
+    {
+      "step": "openalex",
+      "outcome": "all oa urls failed"
+    },
+    {
+      "step": "semantic_scholar_oa",
+      "outcome": "http 202"
+    },
+    {
+      "step": "crossref",
+      "outcome": "no pdf link"
+    },
+    {
+      "step": "doi_landing",
+      "outcome": "http 202"
+    }
+  ],
+  "note": "All full-text sources failed; abstract retrieved from Semantic Scholar",
+  "parsed_lines": null,
+  "parsed_chars": null,
+  "sentinel": null,
+  "read_plan": [],
+  "figures": [],
+  "parser_used_ocr": null
+}

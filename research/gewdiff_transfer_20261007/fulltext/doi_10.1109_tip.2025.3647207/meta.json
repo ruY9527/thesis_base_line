@@ -1,0 +1,49 @@
+{
+  "canonical_id": "doi:10.1109/tip.2025.3647207",
+  "source": "",
+  "format": "",
+  "status": "abstract_only",
+  "title": "Coupled Diffusion Posterior Sampling for Unsupervised Hyperspectral and Multispectral Images Fusion",
+  "year": 2026,
+  "doi": "10.1109/TIP.2025.3647207",
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": null,
+  "parsed_path": null,
+  "parser": null,
+  "abstract": "Hyperspectral images (HSIs) and multispectral images (MSIs) fusion is a hot topic in the remote sensing society. A high-resolution HSI (HR-HSI) can be obtained by fusing a low-resolution HSI (LR-HSI) and a high-resolution MSI (HR-MSI) or RGB image. However, most deep learning-based methods require a large amount of HR-HSIs for supervised training, which is very rare in practice. In this paper, we propose a coupled diffusion posterior sampling (CDPS) method for HSI and MSI fusion in which the HR-HSIs are no longer required in the training process. Because the LR-HSI contains the spectral information and HR-MSI contains the spatial information of the captured scene, we design an unsupervised strategy that learns the required diffusion priors directly and solely from the input test image pair (the LR-HSI and HR-MSI themselves). Then, a coupled diffusion posterior sampling method is proposed to introduce the two priors in the diffusion posterior sampling which leverages the observed LR-HSI and HR-MSI as fidelity terms. Experimental results demonstrate that the proposed method outperforms other state-of-the-art unsupervised HSI and MSI fusion methods. Additionally, this method utilizes smaller networks that are simpler and easier to train without other data.",
+  "tried": [
+    {
+      "step": "unpaywall",
+      "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+    },
+    {
+      "step": "openalex",
+      "outcome": "no oa"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    },
+    {
+      "step": "crossref",
+      "outcome": "no pdf link"
+    },
+    {
+      "step": "doi_landing",
+      "outcome": "http 202"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "no oa pdf"
+    }
+  ],
+  "note": "All full-text sources failed; abstract retrieved from Semantic Scholar",
+  "parsed_lines": null,
+  "parsed_chars": null,
+  "sentinel": null,
+  "read_plan": [],
+  "figures": [],
+  "parser_used_ocr": null
+}

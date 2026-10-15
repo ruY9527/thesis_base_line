@@ -1,0 +1,27 @@
+{
+  "output_language":"zh-CN",
+  "reviewer":"model",
+  "review_stage":"final_quality_review",
+  "note_sha256":"6221c485d55e268c2a6710950d3203c7291305ef8c952fe2a7c172ff7c42b03e",
+  "passes_quality_review":true,
+  "checks":{
+    "central_claims_are_supported_by_raw_sections_or_pages":true,
+    "key_experimental_settings_and_numbers_are_present":true,
+    "mechanisms_or_protocol_choices_are_mapped_to_results":true,
+    "comparisons_explain_positioning_against_alternatives":true,
+    "discussion_or_limitation_claims_are_explained_mechanistically":true,
+    "proven_claims_are_separated_from_unproven_or_unvalidated_claims":true,
+    "research_or_engineering_takeaways_are_specific_and_reusable":true,
+    "followup_questions_are_specific_to_replication_or_extension":true
+  },
+  "review_findings":[
+    "按原始 PDF 第 4 页核对残差方向、反向分母和噪声系数；没有依据错误图注写反残差。",
+    "表 1 至表 6 的关键数值及差值核对完毕；五步最优只限定于已测步数。",
+    "专用去噪器、辅助目标和监督的混杂已说明，未将全部收益归于扩散。",
+    "代码审查与主文证据分开；测试未使用伪 MSI 变量的判断限于已检查调用，未指称数据泄漏。",
+    "跨传感器假设被标为待验证，未包装成已证明创新；基线修改仅为计划。",
+    "7 项图像插入决策和 5 项占位与正文一致，误配的表 6 没有插入。"
+  ],
+  "warnings":[],
+  "edits_required":false
+}

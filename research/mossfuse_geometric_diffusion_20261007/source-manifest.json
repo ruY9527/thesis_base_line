@@ -1,0 +1,68 @@
+{
+  "repository": "dusongcheng/MossFuse",
+  "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+  "author_code": [
+    {
+      "name": "MossFuseNet.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/MossFuseNet.py",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\author_code\\MossFuseNet.py.txt",
+      "sha256": "f359ca1c9a5985f41b7e731cd0d9db0b8f11ab3aa68749d0acdb7a4a23bcf74c",
+      "retrieval": "existing immutable cache"
+    },
+    {
+      "name": "net.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/net.py",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\author_code\\net.py.txt",
+      "sha256": "f846258cf120362836bafebf8b02b9c2fe3ae12e36de4c5b1ddebbe71da2c81e",
+      "retrieval": "existing immutable cache"
+    },
+    {
+      "name": "train.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/train.py",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\author_code\\train.py.txt",
+      "sha256": "7ff9c5298af8b05b8d65df51958cbfc1246da61e0a790e6a69bbe47e4d8290d3",
+      "retrieval": "existing immutable cache"
+    },
+    {
+      "name": "utils.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/utils.py",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\author_code\\utils.py.txt",
+      "sha256": "6014a003c1f0d69d9c92cdadc30cc8230367fccd7987167f7ffebf90ad6daab0",
+      "retrieval": "existing immutable cache"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/README.md",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\author_code\\README.md.txt",
+      "sha256": "abc0547596d13ac356b6d800544ab5dffb4f1c49ec1c722ef169297e1d442fd8",
+      "retrieval": "existing immutable cache"
+    },
+    {
+      "name": "degradation_net.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/degradation_net.py",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\author_code\\degradation_net.py.txt",
+      "sha256": "a91946b318cf0a429836f94c21294313bfc2d9105c66cdfb0d99d5d82bc8e0e7",
+      "retrieval": "public author repository"
+    },
+    {
+      "name": "dataset.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/dataset.py",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\mossfuse_geometric_diffusion_20261007\\author_code\\dataset.py.txt",
+      "sha256": "cf137a80be81bc4c789d9c11431b4c870910ad4c71f7abca845c17dde4396c01",
+      "retrieval": "public author repository"
+    }
+  ],
+  "active_baseline_hashes_before": {
+    "model.py": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66",
+    "train_cave_M.py": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc",
+    "train_dataloader.py": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578",
+    "utils.py": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944"
+  },
+  "active_baseline_hashes_after": {
+    "model.py": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66",
+    "train_cave_M.py": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc",
+    "train_dataloader.py": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578",
+    "utils.py": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944"
+  },
+  "active_baseline_unchanged": true
+}

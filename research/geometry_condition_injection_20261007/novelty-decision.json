@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1",
+  "status": "complete",
+  "novelty_decision_rating": 3,
+  "impact_positioning_rating": 3,
+  "decision_confidence_rating": 2,
+  "narrowest_defensible_positioning": "在已知响应、配准及稳定LR局部基条件下，检验方向几何与连续有效光谱响应灵敏度的条件耦合能否减少边界光谱分配误差，优于等预算门控与同信息量子空间对照；不宣称首次或已证实。",
+  "what_would_change_the_decision": "若完整近邻已同构，或可部署局部基无效、自然失败不存在、等预算门控/经典求解解释全部收益，则降至2/5或放弃；完整查新和独立实验支持后才考虑提高。",
+  "top_kill_shot_objections": [
+    "SDP-Net已明确控制MSI结构传播和光谱偏移，可靠性门控故事直接重合。",
+    "GGAT、dTV和SA-RFM已覆盖显式几何、方向及结构条件生成。",
+    "Matrix-R、DDSR与标准子空间正则化覆盖响应投影，公式是常规正则化。",
+    "RU来自低分辨率局部估计，可能遗漏HR材料变化，只有oracle基有效不构成部署方法。",
+    "baseline的原MSI路径会绕过新增门控，不能声称控制了全部结构注入。",
+    "两个观测都不可见的扰动不可唯一恢复，物理一致性不是细节正确证明。"
+  ],
+  "literature_context_used": [
+    "research-report.md",
+    "sources.json",
+    "prior-art-matrix.md",
+    "../gewdiff_transfer_20261007/analysis.md",
+    "../mossfuse_shared_complementary_ideation_20261007/research_direction_analysis.md"
+  ],
+  "paper_review_summary_used": "",
+  "claims_to_qualify": [
+    "新颖性仅为定向自审暂定3/5；最近论文未获完整方法。",
+    "不能首创几何条件、门控、小波扩散、投影或同色异谱增强。",
+    "未证明自然失败、可部署基、训练增益或SOTA。",
+    "附加路径控制不等于全网络受控，弱响应不等于全任务不可辨。"
+  ],
+  "missing_prior_work": [
+    "SDP-Net完整方法和代码比对",
+    "GGAT与SA-RFM完整方法",
+    "近期局部子空间/响应条件方法全文"
+  ],
+  "review_findings_to_add": [],
+  "literature_assurance": {
+    "mode": "unlinked",
+    "paths": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "file_sha256": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "corpus_manifest_sha256": "",
+    "corpus_version": null,
+    "review_profile": "",
+    "assurance_verdict": "targeted-search-only; material-fulltext-gaps",
+    "unresolved_high_priority_novelty_question_ids": [
+      "NQ1",
+      "NQ2",
+      "NQ3",
+      "NQ4"
+    ]
+  },
+  "selection_history": "文献及已有光谱可辨性候选告知；合成算子诊断告知恢复边界；未查看新训练结果。",
+  "evidence_class": "exploratory hypothesis with synthetic operator checks",
+  "review_independence": "self-review; no delegated or materially independent pass"
+}

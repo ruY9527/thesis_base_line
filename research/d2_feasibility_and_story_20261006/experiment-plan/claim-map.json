@@ -1,0 +1,63 @@
+[
+  {
+    "claim_id": "C1",
+    "priority": "primary",
+    "claim": "在声明算子与生成先验的有限容量任务内，指定分离位置对正确联合响应存在可重复的取舍。",
+    "why_it_matters": "区分表示几何、功能配合和不可辨识性。",
+    "minimum_convincing_evidence": "合理权重、相同数据和角色目标的多种子控制；弱约束可以竞争。",
+    "anti_claim": "效应只由极强损失、任务不可学、辅助头塌缩或额外数据造成。",
+    "falsifier": "合理范围没有响应取舍，或弱约束解释全部结果。",
+    "decision_if_unproven": "reframe",
+    "linked_blocks": [
+      "B1",
+      "B2",
+      "B3",
+      "B5"
+    ],
+    "decision_rule": "仅在受控任务有效且公平控制不能解释时保留；自然关联另由 C2 判断。",
+    "loss_contract": "完整四幅误差、混合误差、加性零目标绝对误差、角色误差与失败记录均保留。",
+    "falsification_test": "加性任务、可加参照、无分离角色辅助、弱直接分离和零空间冲突。",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_history": [
+      "Recent-paper reframing after prior-art inspection; broad interaction framing downgraded.",
+      "Previous interpolation and phase outcomes inspected; no D2 training outcomes exist.",
+      "Current numeric preflight is synthetic algebra only, not natural-image evidence."
+    ],
+    "predecessor_failures": [
+      "Generic interaction, projection and synergy training have substantial prior art.",
+      "Unrestricted joint-null targets are not identifiable from the two observations.",
+      "Uploaded supervised checkpoint binding and test-based selection are unsuitable as the main comparator."
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "priority": "supporting",
+    "claim": "接口与内部组合训练在不使用真实HR训练标签的情况下，超越同样数据与预算的普通训练并改善未见场景。",
+    "why_it_matters": "机制需要转化为 PSNR/RMSE/SAM 的实际收益。",
+    "minimum_convincing_evidence": "二因素消融、同四元数据普通L1、原架构自监督组与自然场景多种子比较。",
+    "anti_claim": "收益来自额外目标、计算、参数、测试选模或改变退化与归一化。",
+    "falsifier": "没有自然收益，或普通内部训练、弱约束及相同预算可完全解释。",
+    "decision_if_unproven": "defer",
+    "linked_blocks": [
+      "B1",
+      "B4",
+      "B5"
+    ],
+    "decision_rule": "只在冻结配置后的自然评估与同预算强对照成立时保留任务改进主张。",
+    "loss_contract": "同checkpoint完整PSNR、RMSE、SAM、每场景与种子差值、训练成本和全部失败。",
+    "falsification_test": "同样完整四元目标无混合损失、真实内部任务预算替代、CAVE冻结测试、先验偏差。",
+    "current_evidence_class": "exploratory",
+    "evidence_class": "exploratory",
+    "selection_history": [
+      "Recent-paper reframing after prior-art inspection; broad interaction framing downgraded.",
+      "Previous interpolation and phase outcomes inspected; no D2 training outcomes exist.",
+      "Current numeric preflight is synthetic algebra only, not natural-image evidence."
+    ],
+    "predecessor_failures": [
+      "Generic interaction, projection and synergy training have substantial prior art.",
+      "Unrestricted joint-null targets are not identifiable from the two observations.",
+      "Uploaded supervised checkpoint binding and test-based selection are unsuitable as the main comparator."
+    ]
+  }
+]

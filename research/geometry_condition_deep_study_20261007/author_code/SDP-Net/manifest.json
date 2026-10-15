@@ -1,0 +1,80 @@
+{
+  "repo": "LRuiRui517/SDP-Net",
+  "commit": "8be9f77675894bee56c34b64b8ecbe6b300f869d",
+  "execution": "static reading only; author code not executed",
+  "files": [
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/README.md",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\README.md.txt",
+      "sha256": "2706b3ca9cba6f84db8c03c32bb767ffa751e33e9ff49e66a8e347bf19468ba0",
+      "bytes": 519,
+      "status": "ok"
+    },
+    {
+      "file": "args_parser.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/args_parser.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\args_parser.py.txt",
+      "sha256": "697fd89fd18da399d836cf20ad6a270b349fac984662e2b87c3ff23d6e7bfff8",
+      "bytes": 1386,
+      "status": "ok"
+    },
+    {
+      "file": "data_loader.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/data_loader.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\data_loader.py.txt",
+      "sha256": "7b08bad58432f79d78ada4417bd97a3049d56d10e00f1df42002e78d55988c59",
+      "bytes": 4881,
+      "status": "ok"
+    },
+    {
+      "file": "main.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/main.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\main.py.txt",
+      "sha256": "966d62bd0678189b6b344b364643a47c9f4f56e2dece03d15a668d6df8d54855",
+      "bytes": 5808,
+      "status": "ok"
+    },
+    {
+      "file": "metrics.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/metrics.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\metrics.py.txt",
+      "sha256": "793f3a6ffcdea89db126a5e496be6fcb117ac10b43c5e5c11ac83d00b3699c19",
+      "bytes": 2698,
+      "status": "ok"
+    },
+    {
+      "file": "models/SDPNet.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/models/SDPNet.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\models__SDPNet.py.txt",
+      "sha256": "cc67f0b3e92c49201ea5a56265e17f73ce5b1951f154acecd3844dc09b16254e",
+      "bytes": 21416,
+      "status": "ok"
+    },
+    {
+      "file": "train.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/train.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\train.py.txt",
+      "sha256": "a0a84b9a8d77638cb685de29336d2324283ec72c71dd8ba44f1f2189cc9c3627",
+      "bytes": 4916,
+      "status": "ok"
+    },
+    {
+      "file": "utils.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/utils.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\utils.py.txt",
+      "sha256": "1602eb08bc54a1ff2f39181ba3876f2daf6f91a7f8292a652eba53c0568dd68d",
+      "bytes": 2670,
+      "status": "ok"
+    },
+    {
+      "file": "validate.py",
+      "url": "https://raw.githubusercontent.com/LRuiRui517/SDP-Net/8be9f77675894bee56c34b64b8ecbe6b300f869d/validate.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\SDP-Net\\validate.py.txt",
+      "sha256": "4abc371768d8a1a673e8a481b2fff98fd4095bb3983aae58c7d51fa6c4195338",
+      "bytes": 1523,
+      "status": "ok"
+    }
+  ],
+  "paper_paths": []
+}

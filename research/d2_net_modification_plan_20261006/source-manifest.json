@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-06",
+  "mode": "standalone exploratory planning",
+  "skills": [
+    "research-pipeline-planner",
+    "research-experiment-plan"
+  ],
+  "local_python_before": {
+    "calculate_metrics.py": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94",
+    "FunctionTest.py": "e2123da95b5fc25d2727fc7e680b06395f104a3aef9c64545290cabb6685f961",
+    "model.py": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66",
+    "train_cave_M.py": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc",
+    "train_dataloader.py": "f7c3562a2f32d758fd9fb81574f172ac6adc7bc07200a75ee39fb58767ce8578",
+    "utils.py": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944",
+    "other_base\\baseline.py": "dfc7a5ca076305bfe5ab1b99a83438b310cf3e27177f912dd67b3f49133b43e7",
+    "research\\baseline_diagnostics.py": "1b531516dcdd3bfe9f786d4e98310e4e7890f1ab3aa0edaee9a898329afe94e2",
+    "research\\build_baseline_learning_report.py": "b6fb32c6440655214843ef258c418d9fbf9978f97907fe485683dbfbba30f3ec",
+    "research\\d2_feasibility_and_story_20261006\\build_planning_pack.py": "59e1d686c549fb6f5bea098b5b3e0ff19401253651bd54323f35551579f274c7",
+    "research\\d2_feasibility_and_story_20261006\\feasibility_preflight.py": "1d7ac980dd4871f3f5b97867aac653a4f755e8581b8b4dd3a64f88c67cc8afa5",
+    "research\\d2_researchability_review_20261006\\verify_observation_quartet.py": "c6b0936b2c38049bd1ed46d81ad95dd1e6dfbd5d2b4737873f2d0c12168e4b9a"
+  },
+  "reference_files": [
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "MossFuseNet.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/MossFuseNet.py",
+      "sha256": "f359ca1c9a5985f41b7e731cd0d9db0b8f11ab3aa68749d0acdb7a4a23bcf74c",
+      "lines": 263,
+      "review_scope": "编码器、Decoder_HR、MossFuse.forward；不声称复现全部训练",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/MossFuseNet.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "net.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/net.py",
+      "sha256": "f846258cf120362836bafebf8b02b9c2fe3ae12e36de4c5b1ddebbe71da2c81e",
+      "lines": 320,
+      "review_scope": "Cross_Spatial_Attention、Cross_Spectral_Attention、聚合类",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/net.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "train.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/train.py",
+      "sha256": "7ff9c5298af8b05b8d65df51958cbfc1246da61e0a790e6a69bbe47e4d8290d3",
+      "lines": 294,
+      "review_scope": "活动 backward 项与仅用于日志的 HR loss",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/train.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "utils.py",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/utils.py",
+      "sha256": "6014a003c1f0d69d9c92cdadc30cc8230367fccd7987167f7ffebf90ad6daab0",
+      "lines": 269,
+      "review_scope": "cal_cos_loss、cal_decomp_loss（本轮 MossFuse 文件）",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/utils.py"
+    },
+    {
+      "repository": "dusongcheng/MossFuse",
+      "commit": "d6c7eb4a487046aecae5265cabf81b0c23506465",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/dusongcheng/MossFuse/d6c7eb4a487046aecae5265cabf81b0c23506465/README.md",
+      "sha256": "abc0547596d13ac356b6d800544ab5dffb4f1c49ec1c722ef169297e1d442fd8",
+      "lines": 68,
+      "review_scope": "仓库说明与方法/环境边界",
+      "blob_url": "https://github.com/dusongcheng/MossFuse/blob/d6c7eb4a487046aecae5265cabf81b0c23506465/README.md"
+    },
+    {
+      "repository": "wangting1907/CLoRF-Fusion",
+      "commit": "185fff41bccf4367b39a4f791c704b94268eee16",
+      "path": "train_tv_spatial.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/train_tv_spatial.py",
+      "sha256": "fcbf0f48dfd796e63fc5581655935697981060c9e132503367f1af0e4997a29c",
+      "lines": 244,
+      "review_scope": "组合输出、观测损失、真值选模",
+      "blob_url": "https://github.com/wangting1907/CLoRF-Fusion/blob/185fff41bccf4367b39a4f791c704b94268eee16/train_tv_spatial.py"
+    },
+    {
+      "repository": "wangting1907/CLoRF-Fusion",
+      "commit": "185fff41bccf4367b39a4f791c704b94268eee16",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/README.md",
+      "sha256": "de2c1d7a81677d9604ecfb73b250a31aaccdd36c1be8bf1a77e9dd1d5a2172ba",
+      "lines": 49,
+      "review_scope": "仓库说明与方法/环境边界",
+      "blob_url": "https://github.com/wangting1907/CLoRF-Fusion/blob/185fff41bccf4367b39a4f791c704b94268eee16/README.md"
+    },
+    {
+      "repository": "Shawn-H-Wang/SHOTUN",
+      "commit": "d0bec639d1ed77150c0e4c2aaac3da876c9886bf",
+      "path": "LowRankNetwork.py",
+      "url": "https://raw.githubusercontent.com/Shawn-H-Wang/SHOTUN/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/LowRankNetwork.py",
+      "sha256": "331228206831aa0ccae29625add40ff1b3cd7af5e6cc3427ec81be384ca6cf83",
+      "lines": 331,
+      "review_scope": "选读 Coeff/光谱基网络；FMSAN 存在但不视为当前入口实际调用",
+      "blob_url": "https://github.com/Shawn-H-Wang/SHOTUN/blob/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/LowRankNetwork.py"
+    },
+    {
+      "repository": "Shawn-H-Wang/SHOTUN",
+      "commit": "d0bec639d1ed77150c0e4c2aaac3da876c9886bf",
+      "path": "unfolded_net_sparse_representation_full_unfolded_nonlocal.py",
+      "url": "https://raw.githubusercontent.com/Shawn-H-Wang/SHOTUN/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/unfolded_net_sparse_representation_full_unfolded_nonlocal.py",
+      "sha256": "682704b81980a11a90363c5fb4c4ba9bc80a4e943c3b3722ad72cf40050ec234",
+      "lines": 498,
+      "review_scope": "HOTN、CoreTensorUpdateStage、聚合、活动训练损失",
+      "blob_url": "https://github.com/Shawn-H-Wang/SHOTUN/blob/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/unfolded_net_sparse_representation_full_unfolded_nonlocal.py"
+    },
+    {
+      "repository": "Shawn-H-Wang/SHOTUN",
+      "commit": "d0bec639d1ed77150c0e4c2aaac3da876c9886bf",
+      "path": "utils_blocks.py",
+      "url": "https://raw.githubusercontent.com/Shawn-H-Wang/SHOTUN/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/utils_blocks.py",
+      "sha256": "9b8dc24cd362536c7ecc10f44b55cc6eb5e9bca0902ed566bc886dbf10bb59d7",
+      "lines": 187,
+      "review_scope": "分块和聚合索引/边界",
+      "blob_url": "https://github.com/Shawn-H-Wang/SHOTUN/blob/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/utils_blocks.py"
+    },
+    {
+      "repository": "Shawn-H-Wang/SHOTUN",
+      "commit": "d0bec639d1ed77150c0e4c2aaac3da876c9886bf",
+      "path": "im2col.py",
+      "url": "https://raw.githubusercontent.com/Shawn-H-Wang/SHOTUN/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/im2col.py",
+      "sha256": "de52e8e59fc73416985abfca8e7a16185a796d9285747e67b78fbb31e7b2474f",
+      "lines": 127,
+      "review_scope": "仅获取关联文件，不宣称完整可运行验证",
+      "blob_url": "https://github.com/Shawn-H-Wang/SHOTUN/blob/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/im2col.py"
+    },
+    {
+      "repository": "Shawn-H-Wang/SHOTUN",
+      "commit": "d0bec639d1ed77150c0e4c2aaac3da876c9886bf",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Shawn-H-Wang/SHOTUN/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/README.md",
+      "sha256": "4a636a315c47131fbfc61aacd599c1fdaeaa00672151e54a83389f9da0d564fd",
+      "lines": 62,
+      "review_scope": "仓库说明与方法/环境边界",
+      "blob_url": "https://github.com/Shawn-H-Wang/SHOTUN/blob/d0bec639d1ed77150c0e4c2aaac3da876c9886bf/README.md"
+    },
+    {
+      "repository": "Zhu1116/CDPS-train",
+      "commit": "54cf99b92b872ee77b191045c8003851398a9065",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Zhu1116/CDPS-train/54cf99b92b872ee77b191045c8003851398a9065/README.md",
+      "sha256": "0881150c97abf1f324d894de8d542368716a2adcfcddcea8802f8b0f0eceeb7d",
+      "lines": 86,
+      "review_scope": "仓库说明与方法/环境边界",
+      "blob_url": "https://github.com/Zhu1116/CDPS-train/blob/54cf99b92b872ee77b191045c8003851398a9065/README.md"
+    },
+    {
+      "repository": "Zhu1116/CDPS-train",
+      "commit": "54cf99b92b872ee77b191045c8003851398a9065",
+      "path": "spatial_sample.py",
+      "url": "https://raw.githubusercontent.com/Zhu1116/CDPS-train/54cf99b92b872ee77b191045c8003851398a9065/spatial_sample.py",
+      "sha256": "033ab6946f505734f4702748e29c720da3c3f760d37b659b31dbbc43c8c58ba1",
+      "lines": 126,
+      "review_scope": "空间采样入口；未确认完整耦合后验融合",
+      "blob_url": "https://github.com/Zhu1116/CDPS-train/blob/54cf99b92b872ee77b191045c8003851398a9065/spatial_sample.py"
+    },
+    {
+      "repository": "Zhu1116/CDPS-train",
+      "commit": "54cf99b92b872ee77b191045c8003851398a9065",
+      "path": "guided_diffusion/image_datasets_spatial.py",
+      "url": "https://raw.githubusercontent.com/Zhu1116/CDPS-train/54cf99b92b872ee77b191045c8003851398a9065/guided_diffusion/image_datasets_spatial.py",
+      "sha256": "b8c2c79f0883c05bf22d929b47902bc6723b39b2e30deef7ade994902db24ba5",
+      "lines": 59,
+      "review_scope": "完整空间观测数据类",
+      "blob_url": "https://github.com/Zhu1116/CDPS-train/blob/54cf99b92b872ee77b191045c8003851398a9065/guided_diffusion/image_datasets_spatial.py"
+    },
+    {
+      "repository": "Zhu1116/CDPS-train",
+      "commit": "54cf99b92b872ee77b191045c8003851398a9065",
+      "path": "guided_diffusion/image_datasets_spectral.py",
+      "url": "https://raw.githubusercontent.com/Zhu1116/CDPS-train/54cf99b92b872ee77b191045c8003851398a9065/guided_diffusion/image_datasets_spectral.py",
+      "sha256": "1e6273ba5c8f219e41d19e60ceceef7bf106c3e0f0644c9530480b2070830c27",
+      "lines": 47,
+      "review_scope": "完整光谱观测数据类",
+      "blob_url": "https://github.com/Zhu1116/CDPS-train/blob/54cf99b92b872ee77b191045c8003851398a9065/guided_diffusion/image_datasets_spectral.py"
+    },
+    {
+      "repository": "Zhu1116/CDPS-train",
+      "commit": "54cf99b92b872ee77b191045c8003851398a9065",
+      "path": "guided_diffusion/gaussian_diffusion.py",
+      "url": "https://raw.githubusercontent.com/Zhu1116/CDPS-train/54cf99b92b872ee77b191045c8003851398a9065/guided_diffusion/gaussian_diffusion.py",
+      "sha256": "8abed7c85842081c9d9feaf6c1ae60a03ae91be930d290a58d95cdbf6289432d",
+      "lines": 917,
+      "review_scope": "仅获取版本/文件摘要，未完整审查全部扩散实现",
+      "blob_url": "https://github.com/Zhu1116/CDPS-train/blob/54cf99b92b872ee77b191045c8003851398a9065/guided_diffusion/gaussian_diffusion.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "cs+inp/train.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs+inp/train.py",
+      "sha256": "dd61cbef68894adde477c30638856a718c880bdf0c2d95f52cdbc7d51069f65b",
+      "lines": 139,
+      "review_scope": "physics/model/losses 的训练组织",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs%2Binp/train.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "cs+inp/run_train.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs+inp/run_train.py",
+      "sha256": "ed6f9069dd76471036ea3b6b1372ef7e3a16cb0cbfa9c471ccbf2d313dd3be77",
+      "lines": 35,
+      "review_scope": "仅下载保存摘要，未进行完整语义审查",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/cs%2Binp/run_train.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "mri/losses.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/losses.py",
+      "sha256": "a60c8ee10a1e18344e9e813b2eb380304715d4e5960a4d1e5f368a0b82081a7b",
+      "lines": 109,
+      "review_scope": "SplitR2RLoss 及 model adaptation",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/losses.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "mri/training.py",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/training.py",
+      "sha256": "a952de697834440249e719e2f35c390c34351ddfe5463153b069d4e3ab26ed1a",
+      "lines": 1393,
+      "review_scope": "仅选读数据流片段，不宣称完整训练器审查",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/mri/training.py"
+    },
+    {
+      "repository": "vsechaud/Equivariant-Splitting",
+      "commit": "1316067cd61f787284a3ddfca6ee5442dc7d4394",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/vsechaud/Equivariant-Splitting/1316067cd61f787284a3ddfca6ee5442dc7d4394/README.md",
+      "sha256": "6cb36d06466f4c9cfb7b02b5e8d5e92ca0038ea5dcdcfed79039c1a3ff0c4867",
+      "lines": 162,
+      "review_scope": "仓库说明与方法/环境边界",
+      "blob_url": "https://github.com/vsechaud/Equivariant-Splitting/blob/1316067cd61f787284a3ddfca6ee5442dc7d4394/README.md"
+    }
+  ],
+  "neural_training_run": false,
+  "new_network_implemented": false,
+  "reference_code_executed": false,
+  "review_independent": false
+}

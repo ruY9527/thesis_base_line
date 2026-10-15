@@ -1,0 +1,59 @@
+[
+  {
+    "claim_id": "C1",
+    "priority": "primary",
+    "claim": "在保留原 Net 的条件下，来源条件交互及局部光谱路由可改善融合；具体分离取舍需另做机制实验。",
+    "why_it_matters": "将结构收益、分离原因和局部光谱分配区分，避免只靠模块命名形成故事。",
+    "minimum_convincing_evidence": "同协议 E0/E1/E2、加性/MLP/平滑等对照及配对种子；若讲解耦取舍还需 B3。",
+    "anti_claim": "收益只来自额外参数、初始化、上采样相位或局部平滑；分离损害只在极端强度出现。",
+    "falsifier": "简单对照解释收益，合理分离没有取舍，或 E1/E2 对 E0 无稳定改善。",
+    "decision_if_unproven": "reframe",
+    "linked_blocks": [
+      "B0",
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "evidence_class": "exploratory",
+    "current_evidence_class": "exploratory",
+    "decision_rule": "按 main plan 第3.7/5.5节工程门槛继续，3配对seed和公平消融后决定贡献，未达标保留失败。",
+    "loss_contract": "完整预测 PSNR/RMSE/SAM及局部误差；缺失区域、NaN、OOM、未跑和失败种子保留。",
+    "falsification_test": "E1-add/E1-mlp/E2-uniform/E2-conv；角色无分离与合理弱分离允许胜出。",
+    "selection_history": [
+      "来自既有D2讨论、近两年代码和已查看的baseline/插值报告；本轮未看到新增网络结果。",
+      "既有12测试场景曾被评价，后续在该集合的结论保持探索性。"
+    ],
+    "predecessor_failures": [
+      "泛化的解耦、交互、乘积和投影头已有先例。",
+      "当前Net没有显式分离，不能预设它存在解耦损害。",
+      "历史保存/测试选模与上采样相位问题不能混入结构归因。"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "priority": "supporting",
+    "claim": "在无HR标签的同协议训练中，声明先验下的内部联合目标可能超过相同四组普通重建。",
+    "why_it_matters": "为任务配合提供可追溯监督，同时承认成像不可辨识与额外目标信息冗余。",
+    "minimum_convincing_evidence": "算子一致、HR隔离、观测/内部基线、结构×训练2×2、同四组及前向预算，完整自然图像指标。",
+    "anti_claim": "指标来自HR预训练/选模泄漏、不同样本与训练预算，或仅合成差分好看。",
+    "falsifier": "同目标的普通重建解释全部收益，观测冲突、自然图像无收益或存在HR泄漏。",
+    "decision_if_unproven": "defer",
+    "linked_blocks": [
+      "B0",
+      "B4"
+    ],
+    "evidence_class": "exploratory",
+    "current_evidence_class": "exploratory",
+    "decision_rule": "B4技术预检和同预算对照通过才保留训练机制；不得与监督阶段横比。",
+    "loss_contract": "完整四组重建、Lobs、Lmix、全部自然图像指标与失败状态共同记录，不能只用差分误差。",
+    "falsification_test": "共同输出偏移、加性零混合对照、同quartet普通目标、无HR权重初始化。",
+    "selection_history": [
+      "已有数学预检查只支持不可辨识/受限先验性质，不是本方案网络证据。"
+    ],
+    "predecessor_failures": [
+      "一般联合零空间目标不能由观测无条件唯一恢复。",
+      "完整四组标签已有时Lmix无新增独立真值。",
+      "当前训练入口使用HR-L1，尚不是selfsup。"
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "output_language":"zh-CN",
+  "reviewer":"model",
+  "review_stage":"final_quality_review",
+  "note_sha256":"30dcd464ba3593aa3ef96c53417d7d610ddf2bf1da05f2950a83963a635d35cc",
+  "passes_quality_review":true,
+  "checks":{
+    "central_claims_are_supported_by_raw_sections_or_pages":true,
+    "key_experimental_settings_and_numbers_are_present":true,
+    "mechanisms_or_protocol_choices_are_mapped_to_results":true,
+    "comparisons_explain_positioning_against_alternatives":true,
+    "discussion_or_limitation_claims_are_explained_mechanistically":true,
+    "proven_claims_are_separated_from_unproven_or_unvalidated_claims":true,
+    "research_or_engineering_takeaways_are_specific_and_reusable":true,
+    "followup_questions_are_specific_to_replication_or_extension":true
+  },
+  "review_findings":[
+    "主文全部核心段落、表 1–4 和补充第 1–2 页已核对；正文没有遗漏学习退化代理消融。",
+    "准确率差值与计算节省独立报告，未把多尺度骨干的收益归于选择机制。",
+    "对实际 HR 真值缺失、损失 gap 的符号、UIQI 非最优与 FLOPs 省略项分别作了明确限定。",
+    "读过作者核心文件后才解释特征映射、索引回填、批次共用点数与通道注意力；复杂度推断对应实际注意力方向。",
+    "观测一致性不等价真值正确性被标为机制分析，后续标定实验没有被写成已有结果。",
+    "9 项图像和 3 项保留占位与冻结决策相符；补充图 11–12 不冒充已逐例精读。"
+  ],
+  "warnings":[],
+  "edits_required":false
+}

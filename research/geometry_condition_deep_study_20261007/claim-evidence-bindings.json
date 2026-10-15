@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "joint-support-directional-fusion",
+  "identity_version": 1,
+  "status": "complete",
+  "claims": [
+    {
+      "paper_claim_id": "P0",
+      "claim": "几何方向、局部低秩、观测融合与学习门控已有先例",
+      "claim_type": "context",
+      "evidence_mode": "citation",
+      "support_status": "supported",
+      "manuscript_action": "assert",
+      "required_assurance_class": "none",
+      "source_claim_ids": [],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [
+        "deep-research-report.md"
+      ],
+      "planned_sections": [
+        "Introduction",
+        "Method",
+        "Experiments",
+        "Limitations"
+      ],
+      "exhibit_ids": [],
+      "citation_need_ids": [
+        "N1"
+      ],
+      "limitations": [
+        "最近论文存在全文缺口"
+      ],
+      "missing_evidence": [],
+      "scope": "已配准HSI-MSI；固定局部模型与声明的观测；两训练路线分别解释",
+      "rationale": "按证据边界，不能把计划或数值反例晋升为网络性能"
+    },
+    {
+      "paper_claim_id": "P1",
+      "claim": "固定局部线性模型的法矩阵零空间为两类受限观测零空间交集",
+      "claim_type": "supporting",
+      "evidence_mode": "theoretical",
+      "support_status": "supported",
+      "manuscript_action": "assert",
+      "required_assurance_class": "none",
+      "source_claim_ids": [],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [
+        "deep-research-report.md",
+        "joint_support_probe.py"
+      ],
+      "planned_sections": [
+        "Introduction",
+        "Method",
+        "Experiments",
+        "Limitations"
+      ],
+      "exhibit_ids": [
+        "F1"
+      ],
+      "citation_need_ids": [
+        "N2"
+      ],
+      "limitations": [
+        "标准线性代数事实，不构成首次理论创新"
+      ],
+      "missing_evidence": [],
+      "scope": "已配准HSI-MSI；固定局部模型与声明的观测；两训练路线分别解释",
+      "rationale": "按证据边界，不能把计划或数值反例晋升为网络性能"
+    },
+    {
+      "paper_claim_id": "P2",
+      "claim": "局部联合支持能解释超出rank/texture/RU/scale-ridge的自然几何失稳",
+      "claim_type": "primary",
+      "evidence_mode": "empirical",
+      "support_status": "blocked",
+      "manuscript_action": "omit",
+      "required_assurance_class": "exploratory",
+      "source_claim_ids": [
+        "C1"
+      ],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [],
+      "planned_sections": [
+        "Introduction",
+        "Method",
+        "Experiments",
+        "Limitations"
+      ],
+      "exhibit_ids": [
+        "F2"
+      ],
+      "citation_need_ids": [],
+      "limitations": [
+        "尚无自然场景证据"
+      ],
+      "missing_evidence": [
+        "B2及强机制对照和结果审计"
+      ],
+      "scope": "已配准HSI-MSI；固定局部模型与声明的观测；两训练路线分别解释",
+      "rationale": "按证据边界，不能把计划或数值反例晋升为网络性能"
+    },
+    {
+      "paper_claim_id": "P3",
+      "claim": "额外物理几何残差在两训练路线中改善边界光谱归属而整体不劣",
+      "claim_type": "primary",
+      "evidence_mode": "empirical",
+      "support_status": "blocked",
+      "manuscript_action": "omit",
+      "required_assurance_class": "exploratory",
+      "source_claim_ids": [
+        "C2"
+      ],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [],
+      "planned_sections": [
+        "Introduction",
+        "Method",
+        "Experiments",
+        "Limitations"
+      ],
+      "exhibit_ids": [
+        "F3",
+        "T1"
+      ],
+      "citation_need_ids": [],
+      "limitations": [
+        "尚未训练候选模型"
+      ],
+      "missing_evidence": [
+        "B3-B5两路线实验及结果审计"
+      ],
+      "scope": "已配准HSI-MSI；固定局部模型与声明的观测；两训练路线分别解释",
+      "rationale": "按证据边界，不能把计划或数值反例晋升为网络性能"
+    },
+    {
+      "paper_claim_id": "P4",
+      "claim": "观测拟合不能单独证明共同零空间内的HR谱细节正确",
+      "claim_type": "limitation",
+      "evidence_mode": "limitation",
+      "support_status": "supported",
+      "manuscript_action": "limitation",
+      "required_assurance_class": "none",
+      "source_claim_ids": [],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [
+        "deep-research-report.md"
+      ],
+      "planned_sections": [
+        "Introduction",
+        "Method",
+        "Experiments",
+        "Limitations"
+      ],
+      "exhibit_ids": [
+        "F1"
+      ],
+      "citation_need_ids": [
+        "N2"
+      ],
+      "limitations": [
+        "先验能选择解，但不增加观测信息"
+      ],
+      "missing_evidence": [],
+      "scope": "已配准HSI-MSI；固定局部模型与声明的观测；两训练路线分别解释",
+      "rationale": "按证据边界，不能把计划或数值反例晋升为网络性能"
+    }
+  ]
+}

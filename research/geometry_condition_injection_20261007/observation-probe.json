@@ -1,0 +1,64 @@
+{
+  "evidence_class": "synthetic algebraic examples; no training; no natural scene performance evidence",
+  "seed": 20261007,
+  "spectral_response_shape": [
+    3,
+    31
+  ],
+  "spectral_response_rank": 3,
+  "spectral_response_singular_values": [
+    0.3226421405617311,
+    0.26792085588699766,
+    0.21849997396141888
+  ],
+  "common_operator_commutation_max_abs": 2.7755575615628914e-16,
+  "same_rank_different_sensitivity": [
+    {
+      "rowspace_fraction": 1.0,
+      "local_rank": 2,
+      "msi_rank": 2,
+      "singular_values": [
+        0.3226421405617312,
+        0.26792085588699754
+      ],
+      "condition_number": 1.2042442141861989
+    },
+    {
+      "rowspace_fraction": 0.1,
+      "local_rank": 2,
+      "msi_rank": 2,
+      "singular_values": [
+        0.3226421405617312,
+        0.026792085588699752
+      ],
+      "condition_number": 12.04244214186199
+    },
+    {
+      "rowspace_fraction": 0.01,
+      "local_rank": 2,
+      "msi_rank": 2,
+      "singular_values": [
+        0.3226421405617312,
+        0.002679208558869971
+      ],
+      "condition_number": 120.42442141862008
+    }
+  ],
+  "joint_null_example": {
+    "dimensions": [
+      31,
+      32,
+      32
+    ],
+    "value_range": [
+      0.4,
+      0.5877036972143916
+    ],
+    "hr_max_difference": 0.1,
+    "hr_rmse_difference": 0.013556037673418385,
+    "msi_max_difference": 1.4323327138070219e-18,
+    "lr_hsi_max_difference": 5.095750210681871e-18,
+    "spatial_mean_abs_gradient_difference": 0.007735416023201652,
+    "interpretation": "Same ideal observed pair does not uniquely specify all HR geometry. Signed perturbation is synthetic, not a measured material spectrum."
+  }
+}

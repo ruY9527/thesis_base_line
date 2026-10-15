@@ -1,0 +1,37 @@
+[
+  [
+    "hsc_repo",
+    "https://api.github.com/repos/1318133/HSC-Sampling/git/trees/main?recursive=1",
+    "json"
+  ],
+  [
+    "srlf_repo",
+    "https://api.github.com/repos/YuanyeLiu/SRLF-Net/git/trees/main?recursive=1",
+    "json"
+  ],
+  [
+    "nud_train_real",
+    "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_real.py",
+    "text"
+  ],
+  [
+    "nud_train_syn",
+    "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_syn.py",
+    "text"
+  ],
+  [
+    "nud_readme",
+    "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/README.md",
+    "text"
+  ],
+  [
+    "srlf_supp",
+    "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liu_A_Selective_Re-learning_CVPR_2025_supplemental.pdf",
+    "pdf"
+  ],
+  [
+    "emr_trainer",
+    "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/model/ResShift_model.py",
+    "text"
+  ]
+]

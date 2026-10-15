@@ -1,0 +1,598 @@
+{
+  "topic": "有监督 CAVE HSI–MSI 融合的近两年跨方向迁移",
+  "scoring_scale": "1-5",
+  "ideas": [
+    {
+      "idea_id": "I01",
+      "title": "共享/私有模态解耦",
+      "summary": "模态解耦已被覆盖，仓库也已有同方向探索。",
+      "hypothesis": "共享/私有模态解耦能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "representation",
+      "source_basis": [
+        "MossFuse",
+        "local-mossfuse-ideation"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "MossFuse",
+        "local-mossfuse-ideation"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 1,
+        "feasibility": 4,
+        "testability": 4,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "模态解耦已被覆盖，仓库也已有同方向探索。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I02",
+      "title": "把 CNN 块替换为 Mamba 或注意力",
+      "summary": "模块替换缺少新的问题、机制与必要性。",
+      "hypothesis": "把 CNN 块替换为 Mamba 或注意力能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "architecture",
+      "source_basis": [
+        "SRLF",
+        "CO2IF"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "SRLF",
+        "CO2IF"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 1,
+        "feasibility": 4,
+        "testability": 4,
+        "significance": 2
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "模块替换缺少新的问题、机制与必要性。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I03",
+      "title": "边缘/小波/几何约束残差扩散",
+      "summary": "直接拼装已有方向，算力和查新风险都高。",
+      "hypothesis": "边缘/小波/几何约束残差扩散能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "generative-prior",
+      "source_basis": [
+        "GEWDiff",
+        "EMR-Diff",
+        "CDPS"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "GEWDiff",
+        "EMR-Diff",
+        "CDPS"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 3,
+        "novelty_signal": 1,
+        "feasibility": 2,
+        "testability": 3,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "直接拼装已有方向，算力和查新风险都高。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I04",
+      "title": "低秩丰度残差尾部",
+      "summary": "低秩细节与丰度残差已有直接先例。",
+      "hypothesis": "低秩丰度残差尾部能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "spectral-structure",
+      "source_basis": [
+        "UAFL",
+        "Hipandas"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "UAFL",
+        "Hipandas"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 5,
+        "testability": 5,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "低秩细节与丰度残差已有直接先例。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I05",
+      "title": "连续表示与可学习 SRF 融合",
+      "summary": "PINO 已包含 CAVE 融合，不能以任务迁移制造首创。",
+      "hypothesis": "连续表示与可学习 SRF 融合能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "continuous-operator",
+      "source_basis": [
+        "PINO",
+        "CLoRF",
+        "OTIAS"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "PINO",
+        "CLoRF",
+        "OTIAS"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 1,
+        "feasibility": 3,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "PINO 已包含 CAVE 融合，不能以任务迁移制造首创。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I06",
+      "title": "分位数归一化并保留原始跳连",
+      "summary": "原始域监督和跳连已在原文 Algorithm 1。",
+      "hypothesis": "分位数归一化并保留原始跳连能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "distribution-transfer",
+      "source_basis": [
+        "UniPAN"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "UniPAN"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 5,
+        "testability": 5,
+        "significance": 2
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "原始域监督和跳连已在原文 Algorithm 1。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I07",
+      "title": "空间光谱不确定性与困难加权",
+      "summary": "结构化不确定性与阶段加权已有先例。",
+      "hypothesis": "空间光谱不确定性与困难加权能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "uncertainty",
+      "source_basis": [
+        "UMNet",
+        "CoPGNet"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "UMNet",
+        "CoPGNet"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 5,
+        "testability": 5,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "结构化不确定性与阶段加权已有先例。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I08",
+      "title": "残差选点与自适应递归",
+      "summary": "选择性重新学习与可变递归已被覆盖。",
+      "hypothesis": "残差选点与自适应递归能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "adaptive-computation",
+      "source_basis": [
+        "SRLF",
+        "BUGPan"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "SRLF",
+        "BUGPan"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 1,
+        "feasibility": 4,
+        "testability": 4,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "选择性重新学习与可变递归已被覆盖。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I09",
+      "title": "语义基础模型先验引导融合",
+      "summary": "方向已有强重叠，缺少本任务独有必要机制。",
+      "hypothesis": "语义基础模型先验引导融合能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "external-prior",
+      "source_basis": [
+        "CO2IF",
+        "HyperSIGMA",
+        "CoPGNet"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "CO2IF",
+        "HyperSIGMA",
+        "CoPGNet"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 3,
+        "novelty_signal": 1,
+        "feasibility": 2,
+        "testability": 3,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "方向已有强重叠，缺少本任务独有必要机制。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I10",
+      "title": "联合去噪与超分辨率",
+      "summary": "有价值但转为有监督不是独立创新。",
+      "hypothesis": "联合去噪与超分辨率能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "joint-restoration",
+      "source_basis": [
+        "Hipandas"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "Hipandas"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 4,
+        "testability": 5,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "有价值但转为有监督不是独立创新。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I11",
+      "title": "内禀歧义与估计不确定性分离",
+      "summary": "Guo 2026 已直接给出分解、级联与校准；不能保留宽泛新颖性主张。",
+      "hypothesis": "内禀歧义与估计不确定性分离能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "uncertainty-decomposition",
+      "source_basis": [
+        "ambiguity_separation",
+        "uq_nullspace",
+        "local-geometry-ideation"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "ambiguity_separation",
+        "uq_nullspace",
+        "local-geometry-ideation"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 3,
+        "testability": 4,
+        "significance": 4
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "Guo 2026 已直接给出分解、级联与校准；不能保留宽泛新颖性主张。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I12",
+      "title": "配准置信度门控与 HSI 回退",
+      "summary": "2026-09 先例直接覆盖可靠性控制细节注入与回退。",
+      "hypothesis": "配准置信度门控与 HSI 回退能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "robust-guidance",
+      "source_basis": [
+        "lightweight_unaligned",
+        "UAFL",
+        "TTSR"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "lightweight_unaligned",
+        "UAFL",
+        "TTSR"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 1,
+        "feasibility": 5,
+        "testability": 5,
+        "significance": 4
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "2026-09 先例直接覆盖可靠性控制细节注入与回退。",
+      "blocking_questions": []
+    },
+    {
+      "idea_id": "I13",
+      "title": "监督 MSI 注入的实际光谱收益",
+      "summary": "仅保留窄假设：在相同专家/配准条件下，收益标签是否比可靠性分数与真值残差监督更有效；无结果、低查新置信度。",
+      "hypothesis": "同等几何可靠性下，光谱收益监督能够减少负迁移，且超过普通专家门控。",
+      "contribution_type": "decision-objective",
+      "source_basis": [
+        "UAFL",
+        "lightweight_unaligned",
+        "UMNet",
+        "SRLF",
+        "DIFIV",
+        "TTSR",
+        "Task Decoupled CVPR2022"
+      ],
+      "assumptions": [
+        "存在足量高可靠但负收益的引导区域",
+        "冻结/分折专家标签避免训练误差标签偏差",
+        "推理不依赖 HR 标签"
+      ],
+      "novelty_questions": [
+        "CoPGNet 是否已直接监督先验/引导带来的误差收益？",
+        "参考超分辨率和通用专家门控是否已有功能等价的收益教师？",
+        "普通 g* 标签或端到端 gate 是否足以达到相同收益？"
+      ],
+      "minimum_validation": "先测两专家的负迁移与 oracle 上限，再比较同专家的多种门控；严格验证场景。",
+      "disconfirming_evidence": "高可靠负收益区域不存在；简单 gate 同样有效。",
+      "kill_criteria": "oracle 上限很小；普通门控持平；只来自容量/合成扰动；干净场景持续退化。",
+      "closest_work": [
+        "UAFL",
+        "lightweight_unaligned",
+        "UMNet",
+        "SRLF",
+        "DIFIV",
+        "TTSR",
+        "Task Decoupled CVPR2022"
+      ],
+      "differentiation": "决策训练标签从匹配/误差尺度改为两专家的监督光谱误差差额；其必要性尚待证实。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 3,
+        "feasibility": 5,
+        "testability": 5,
+        "significance": 4
+      },
+      "risk": "routine MoE; incomplete prior-art coverage; limited scene count",
+      "estimated_effort": "low-to-medium CNN pilot on one 4090; runtime unmeasured",
+      "status": "selected",
+      "rationale": "仅保留窄假设：在相同专家/配准条件下，收益标签是否比可靠性分数与真值残差监督更有效；无结果、低查新置信度。",
+      "blocking_questions": [
+        "Q1",
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "idea_id": "I14",
+      "title": "完整 SRF 条件的轻量连续保谱重建",
+      "summary": "SpecAware 全文已含动态解码与保谱重建，现方案主要为已有方法组合；储备，不作为独立主贡献。",
+      "hypothesis": "完整 SRF 形状比中心波长/FWHM 在未见响应家族上提供必要重建信息。",
+      "contribution_type": "sensor-generalization",
+      "source_basis": [
+        "PINO",
+        "SpecAware",
+        "CARL",
+        "UniPAN"
+      ],
+      "assumptions": [
+        "已知响应函数可获取",
+        "严格场景与传感器留出",
+        "CAVE 采样谱不能自动代表连续真实谱"
+      ],
+      "novelty_questions": [
+        "完整响应条件是否只是 PINO 与 SpecAware 的常规组合？",
+        "何种非平凡失效需要新的必要机制？"
+      ],
+      "minimum_validation": "同预算完整 SRF vs 波长/FWHM vs 普通 SRF 增强，独立场景×传感器家族留出。",
+      "disconfirming_evidence": "PINO、SpecAware 已覆盖主要结构；完整响应条件没有额外价值。",
+      "kill_criteria": "普通随机 SRF 增强或元数据条件已足够；没有可重复的响应形状失败机制。",
+      "closest_work": [
+        "PINO",
+        "SpecAware",
+        "CARL",
+        "UniPAN"
+      ],
+      "differentiation": "用完整响应轮廓和已知成像积分检验幅值保真；现有构件差异不足。",
+      "scores": {
+        "clarity": 5,
+        "novelty_signal": 2,
+        "feasibility": 3,
+        "testability": 5,
+        "significance": 4
+      },
+      "risk": "routine combination and synthetic sensor generalization only",
+      "estimated_effort": "medium; variable-channel data and response metadata needed",
+      "status": "needs_research",
+      "rationale": "SpecAware 全文已含动态解码与保谱重建，现方案主要为已有方法组合；储备，不作为独立主贡献。",
+      "blocking_questions": [
+        "Q4"
+      ]
+    },
+    {
+      "idea_id": "I15",
+      "title": "两个观测的联合零空间图先验",
+      "summary": "零空间学习先验被覆盖；联合观测与 Kronecker 实现本身仍属常规迁移。",
+      "hypothesis": "两个观测的联合零空间图先验能提供不同于所列先例的必要机制；当前证据不支持这一宽泛主张。",
+      "contribution_type": "inverse-prior",
+      "source_basis": [
+        "GSNR",
+        "NPN",
+        "uq_nullspace",
+        "local-geometry-ideation"
+      ],
+      "assumptions": [
+        "与原始方法的任务、损失和机制需公平比较"
+      ],
+      "novelty_questions": [
+        "是否存在与所列最强先例的实质差异？"
+      ],
+      "minimum_validation": "在继续前逐维证明不同于最强先例；当前淘汰。",
+      "disconfirming_evidence": "已找到直接方法先例，详见先例矩阵。",
+      "kill_criteria": "宽泛主张已被覆盖，不继续以此为主创新。",
+      "closest_work": [
+        "GSNR",
+        "NPN",
+        "uq_nullspace",
+        "local-geometry-ideation"
+      ],
+      "differentiation": "尚无足够实质差异。",
+      "scores": {
+        "clarity": 4,
+        "novelty_signal": 1,
+        "feasibility": 3,
+        "testability": 4,
+        "significance": 3
+      },
+      "risk": "direct prior-art overlap",
+      "estimated_effort": "not scheduled",
+      "status": "rejected",
+      "rationale": "零空间学习先验被覆盖；联合观测与 Kronecker 实现本身仍属常规迁移。",
+      "blocking_questions": []
+    }
+  ]
+}

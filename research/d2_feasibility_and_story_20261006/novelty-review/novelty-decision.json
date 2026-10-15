@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.1",
+  "status": "complete",
+  "date": "2026-10-06",
+  "novelty_decision_rating": 3,
+  "impact_positioning_rating": 3,
+  "decision_confidence_rating": 3,
+  "original_broad_framing_rating": 2,
+  "generic_multiplicative_module_rating_range": [
+    1,
+    2
+  ],
+  "narrowest_defensible_positioning": "在声明成像算子与结构先验的受限任务中，探索特定分离接口的正确联合响应取舍，以及观测内部组合训练是否超越同数据普通训练并改善自然融合。",
+  "what_would_change_the_decision": "若合理分离没有功能取舍、简单弱约束或同数据普通训练解释全部收益、自然指标不改善或同构近期方法覆盖，则降级或重写；只有强对照与自然证据成立后才扩大定位。",
+  "top_kill_shot_objections": [
+    "Geometric separation does not imply loss of functional interaction.",
+    "Spectral-spatial factor multiplication, modulation, and synergy-aware disentanglement have strong prior art.",
+    "Weakening an artificially harmful penalty is not improvement over the original baseline.",
+    "Extra synthetic targets, capacity, or ordinary optimization may explain gains.",
+    "A constructed mixing prior does not establish natural-image identifiability or metric gains."
+  ],
+  "literature_context_used": [
+    "research/d2_baseline_interaction_metric_plan.md",
+    "research/p01_decoupling_research_directions.md",
+    "research/p01_mossfuse_deep_dive.md",
+    "research/baseline_comparison_20261006/results-audit.json",
+    "model.py",
+    "train_cave_M.py",
+    "utils.py",
+    "calculate_metrics.py",
+    "research/d2_researchability_review_20261006/novelty-report.md",
+    "research/d2_recent_2025_2026_review/prior-art-matrix.md",
+    "research/d2_feasibility_and_story_20261006/d2_feasibility_steps_motivation_story.md"
+  ],
+  "paper_review_summary_used": "",
+  "claims_to_qualify": [
+    "Do not claim first multimodal synergy or conditional modulation.",
+    "Do not claim separation necessarily destroys interaction.",
+    "Do not claim a first physical quartet until closest physical synthesis and auxiliary-task work is fully checked.",
+    "Do not claim PSNR, RMSE, or SAM improvements; no new network was trained or evaluated.",
+    "Procedural targets supply an explicit mixing prior, not naturally observed HR labels.",
+    "Rating governs positioning, not empirical correctness or readiness.",
+    "Recent publications do not prove that decoupling harms reconstruction.",
+    "Projected separation and conditional local graphs are hypotheses, not established novel mechanisms.",
+    "No blanket unbiased-risk theorem is transferred from Equivariant Splitting.",
+    "Internal downscaled targets impose a scale-generalization assumption.",
+    "Joint-response diagnostics are not PID synergy estimates.",
+    "SynCo 2026 is preprint counterevidence, not a verified journal/code recommendation.",
+    "Only restricted-family recoverability is checked; no new Net metrics."
+  ],
+  "missing_prior_work": [
+    "NQ1: 项目相关投影解耦与任务表示接口的完全同构近邻未排尽。",
+    "NQ2: 物理组合、内部目标和零空间辅助训练近邻未系统排尽。",
+    "NQ3: 近期IEEE全文及SynCo等协同训练对比仍需深入核验。"
+  ],
+  "review_findings_to_add": [],
+  "review_independence": {
+    "type": "self-review",
+    "materially_independent": false,
+    "description": "Same agent and project context; no independent second review pass."
+  },
+  "selection_history": {
+    "previous_task_outcomes_seen": true,
+    "new_d2_model_outcomes_seen": false,
+    "reframing_after_adverse_literature": true,
+    "evidence_class": "exploratory_hypothesis",
+    "prior_failures": "Generic modulation is strongly overlapped; no actual D2 empirical failures exist."
+  },
+  "evidence_scope": {
+    "network_training": false,
+    "natural_image_evaluation": false,
+    "numeric_preflight": "../preflight-results.json",
+    "scope": "five synthetic algebra families only"
+  },
+  "literature_assurance": {
+    "mode": "unlinked",
+    "paths": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "file_sha256": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "corpus_manifest_sha256": "",
+    "corpus_version": null,
+    "review_profile": "targeted-novelty-review",
+    "assurance_verdict": "targeted-search-only-not-systematic",
+    "unresolved_high_priority_novelty_question_ids": [
+      "NQ1",
+      "NQ2",
+      "NQ3"
+    ],
+    "query_count": 6
+  },
+  "context_sha256": {
+    "research/d2_baseline_interaction_metric_plan.md": "9ea846a8002133cfa6dab836b9c45420a5bbcf3ad0d95645d76ff246215b8355",
+    "research/p01_decoupling_research_directions.md": "d0e592262981fb57b9e5c35d3a3fdbd7eafbe163f7439821da3fcd5b00151fe9",
+    "research/p01_mossfuse_deep_dive.md": "877475ec353db4d25ac0cda9f2c1cb4637d839060c41323d9b20404c16c28174",
+    "research/baseline_comparison_20261006/results-audit.json": "612c103262a7cca2d0ba362e860404c94a2d2830e8cf8721c199ea93144b71cf",
+    "model.py": "8f866b52264b94e3dfcd00137c0e451a338404398f78b35b1c6414a3ddd49b66",
+    "train_cave_M.py": "c9d377055d65f706f80e92cdfd585c2ae9be6b895970557f2fc0119401cc6efc",
+    "utils.py": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944",
+    "calculate_metrics.py": "3831057f6ee92212d22dbca275870fef23f131a35a137153473dede0aeb96d94"
+  },
+  "next_step": "B1协议与可微D、B2受控网络可学性和合理分离效应；不要先堆叠局部关系模块。",
+  "recent_scope": {
+    "date": "2026-10-06",
+    "formal_journal_years": [
+      2025,
+      2026
+    ],
+    "verified_journal_count": 7,
+    "supplemental_conference_count": 2,
+    "exhaustive": false
+  }
+}

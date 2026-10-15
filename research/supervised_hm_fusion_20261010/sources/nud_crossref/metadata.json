@@ -1,0 +1,290 @@
+[
+  {
+    "title": [
+      "Building Non-Uniform Degradation Model for Position-Aware Hyperspectral Image Fusion"
+    ],
+    "DOI": "10.1109/tpami.2025.3604234",
+    "container-title": [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tpami.2025.3604234",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9752-8260",
+        "authenticated-orcid": false,
+        "given": "Jie",
+        "family": "Lian",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1953-3339",
+        "authenticated-orcid": false,
+        "given": "Lizhi",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Artificial Intelligence, Beijing Normal University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6487-0441",
+        "authenticated-orcid": false,
+        "given": "Lin",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9197-6292",
+        "authenticated-orcid": false,
+        "given": "Renwei",
+        "family": "Dian",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Robotics, Hunan University, Changsha, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9787-7460",
+        "authenticated-orcid": false,
+        "given": "Zhiwei",
+        "family": "Xiong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic Engineering and Information Science, University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2587-1702",
+        "authenticated-orcid": false,
+        "given": "Hua",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Artificial Intelligence, Beijing Normal University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/34/11230086/11230110.pdf?arnumber=11230110",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "title": [
+      "Blur-Resistant Hyperspectral Image Super-Resolution via Dual-Degradation Fusion Model"
+    ],
+    "DOI": "10.1109/tip.2026.3714832",
+    "container-title": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tip.2026.3714832",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0277-3301",
+        "authenticated-orcid": false,
+        "given": "Mai",
+        "family": "Xu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Beihang University",
+            "place": [
+              "Beijing, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-4973-420X",
+        "authenticated-orcid": false,
+        "given": "Yongxuan",
+        "family": "Dou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beihang University",
+            "place": [
+              "Beijing, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4708-6572",
+        "authenticated-orcid": false,
+        "given": "Xin",
+        "family": "Deng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beihang University",
+            "place": [
+              "Beijing, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xin",
+        "family": "Zou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Institute of Spacecraft System Engineering",
+            "place": [
+              "Beijing, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4772-3172",
+        "authenticated-orcid": false,
+        "given": "Zhenwei",
+        "family": "Shi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beihang University",
+            "place": [
+              "Beijing, China"
+            ],
+            "department": [
+              "Department of Aerospace Intelligent Science and Technology, the School of Astronautics"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11623387.pdf?arnumber=11623387",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  }
+]

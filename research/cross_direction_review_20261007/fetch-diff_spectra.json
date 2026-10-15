@@ -1,0 +1,37 @@
+{
+  "name": "diff_spectra",
+  "identifier": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c34ddd05eb089991f06f3c5dc36836e0-Paper-Conference.pdf",
+  "canonical_id": "url:1a56609bb2664d53",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_1a56609bb2664d53\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_1a56609bb2664d53\\parsed.md",
+  "parser": "pypdf fallback; page markers retained",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1225,
+  "parsed_chars": 79555,
+  "sentinel": "a4f3dfe88cb4",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_1a56609bb2664d53\\parsed.md",
+      "offset": 0,
+      "limit": 1225
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

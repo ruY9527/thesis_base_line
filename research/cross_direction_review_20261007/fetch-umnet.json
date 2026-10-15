@@ -1,0 +1,37 @@
+{
+  "name": "umnet",
+  "identifier": "https://ojs.aaai.org/index.php/AAAI/article/download/37988/41950",
+  "canonical_id": "url:fe4bf9c1e6c6dec6",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_fe4bf9c1e6c6dec6\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_fe4bf9c1e6c6dec6\\parsed.md",
+  "parser": "pypdf fallback; page markers retained",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 880,
+  "parsed_chars": 33705,
+  "sentinel": "3e70f9ba059e",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_fe4bf9c1e6c6dec6\\parsed.md",
+      "offset": 0,
+      "limit": 880
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

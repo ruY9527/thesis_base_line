@@ -1,0 +1,46 @@
+[
+  {
+    "title": "HyperGS: Hyperspectral 3D Gaussian Splatting",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Thirgood_HyperGS_Hyperspectral_3D_Gaussian_Splatting_CVPR_2025_paper.html"
+  },
+  {
+    "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html"
+  },
+  {
+    "title": "Binarized Neural Network for Multi-spectral Image Fusion",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Hou_Binarized_Neural_Network_for_Multi-spectral_Image_Fusion_CVPR_2025_paper.html"
+  },
+  {
+    "title": "VolFormer: Explore More Comprehensive Cube Interaction for Hyperspectral Image Restoration and Beyond",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_VolFormer_Explore_More_Comprehensive_Cube_Interaction_for_Hyperspectral_Image_Restoration_CVPR_2025_paper.html"
+  },
+  {
+    "title": "Illumination Spectrum Estimation for Multispectral Images via Surface Reflectance Modeling and Spatial-Spectral Feature Generation",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Oh_Illumination_Spectrum_Estimation_for_Multispectral_Images_via_Surface_Reflectance_Modeling_CVPR_2025_paper.html"
+  },
+  {
+    "title": "Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhu_Self-Learning_Hyperspectral_and_Multispectral_Image_Fusion_via_Adaptive_Residual_Guided_CVPR_2025_paper.html"
+  },
+  {
+    "title": "Dense Dispersed Structured Light for Hyperspectral 3D Imaging of Dynamic Scenes",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Shin_Dense_Dispersed_Structured_Light_for_Hyperspectral_3D_Imaging_of_Dynamic_CVPR_2025_paper.html"
+  },
+  {
+    "title": "HyperFree: A Channel-adaptive and Tuning-free Foundation Model for Hyperspectral Remote Sensing Imagery",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Li_HyperFree_A_Channel-adaptive_and_Tuning-free_Foundation_Model_for_Hyperspectral_Remote_CVPR_2025_paper.html"
+  },
+  {
+    "title": "Automatic Spectral Calibration of Hyperspectral Images: Method, Dataset and Benchmark",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Du_Automatic_Spectral_Calibration_of_Hyperspectral_Images_Method_Dataset_and_Benchmark_CVPR_2025_paper.html"
+  },
+  {
+    "title": "Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html"
+  },
+  {
+    "title": "Active Hyperspectral Imaging Using an Event Camera",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_Active_Hyperspectral_Imaging_Using_an_Event_Camera_CVPR_2025_paper.html"
+  }
+]

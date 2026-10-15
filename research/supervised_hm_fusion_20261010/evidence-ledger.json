@@ -1,0 +1,942 @@
+{
+  "as_of": "2026-10-10",
+  "requests": [
+    {
+      "id": "eccv2026",
+      "requested_url": "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+      "final_url": "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+      "content_type": "text/html; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\eccv2026\\source.html",
+      "bytes": 4793927,
+      "sha256": "1eec2ae790117778a296efacfc8e6fd8a40042775de089c12f157eceaa17d1f3",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "spectral_titles": [
+        {
+          "title": "MorphJEPA: Morphology-Aware Latent Prediction for Hyperspectral Images",
+          "url": "https://eccv.ecva.net/virtual/2026/poster/4891"
+        },
+        {
+          "title": "Filterless Snapshot Hyperspectral Imaging using Guided Patch Diffusion",
+          "url": "https://eccv.ecva.net/virtual/2026/poster/3834"
+        },
+        {
+          "title": "Compact Low-Cost Hyperspectral Imaging via Angular-to-Spectral Diversity Conversion",
+          "url": "https://eccv.ecva.net/virtual/2026/poster/3677"
+        },
+        {
+          "title": "OneHSI: A Unified Hyperspectral Foundation Model with Physical Consistency",
+          "url": "https://eccv.ecva.net/virtual/2026/poster/4477"
+        },
+        {
+          "title": "Context-Aware Joint Alignment for Cross-Scene Hyperspectral Image Classification",
+          "url": "https://eccv.ecva.net/virtual/2026/poster/4764"
+        },
+        {
+          "title": "LGD-Net: Leader-Guided Cross-Modal Dynamics for Hyperspectral and Panchromatic Image Fusion",
+          "url": "https://eccv.ecva.net/virtual/2026/poster/3288"
+        },
+        {
+          "title": "Rethinking Cross-Spectral Image Generation via Shared-Specific Representation",
+          "url": "https://eccv.ecva.net/virtual/2026/poster/4507"
+        }
+      ]
+    },
+    {
+      "id": "cvpr2026",
+      "requested_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "final_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\cvpr2026\\source.html",
+      "bytes": 12117927,
+      "sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "spectral_titles": [
+        {
+          "title": "Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Cai_Exploring_Spatiotemporal_Feature_Propagation_for_Video-Level_Compressive_Spectral_Reconstruction_Dataset_CVPR_2026_paper.html"
+        },
+        {
+          "title": "Enhancing Unregistered Hyperspectral Image Super-Resolution via Unmixing-based Abundance Fusion Learning",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Enhancing_Unregistered_Hyperspectral_Image_Super-Resolution_via_Unmixing-based_Abundance_Fusion_Learning_CVPR_2026_paper.html"
+        },
+        {
+          "title": "Joint Spectral Image Reconstruction and Semantic Segmentation with Cooperative Unfolding",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper.html"
+        },
+        {
+          "title": "Spectral Super-Resolution via Adversarial Unfolding and Data-Driven Spectrum Regularization: From Multispectral Satellite Data to NASA Hyperspectral Image",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Young_Spectral_Super-Resolution_via_Adversarial_Unfolding_and_Data-Driven_Spectrum_Regularization_From_CVPR_2026_paper.html"
+        },
+        {
+          "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.html"
+        },
+        {
+          "title": "Lumosaic: Hyperspectral Video via Active Illumination and Coded-Exposure Pixels",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Verma_Lumosaic_Hyperspectral_Video_via_Active_Illumination_and_Coded-Exposure_Pixels_CVPR_2026_paper.html"
+        },
+        {
+          "title": "Regulating Rather than Constraining: Adaptive Guidance for Complex Spectral Reconstruction in Pansharpening",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wen_Regulating_Rather_than_Constraining_Adaptive_Guidance_for_Complex_Spectral_Reconstruction_CVPR_2026_paper.html"
+        },
+        {
+          "title": "MetaSpectra+: A Compact Broadband Metasurface Camera for Snapshot Hyperspectral+ Imaging",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_MetaSpectra_A_Compact_Broadband_Metasurface_Camera_for_Snapshot_Hyperspectral_Imaging_CVPR_2026_paper.html"
+        }
+      ]
+    },
+    {
+      "id": "diffdiff_crossref",
+      "requested_url": "https://api.crossref.org/works?query.title=A%20Two-Stage%20Conditional%20Diffusion%20Model%20With%20Differential%20Attention%20for%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=3",
+      "final_url": "https://api.crossref.org/works?query.title=A%20Two-Stage%20Conditional%20Diffusion%20Model%20With%20Differential%20Attention%20for%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=3",
+      "content_type": "application/json",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\diffdiff_crossref\\source.json",
+      "bytes": 28599,
+      "sha256": "8de9bf4a53df854430b26526380ac592d25d86e2446567aec34594340d00b270",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "matches": [
+        {
+          "title": [
+            "A Two-Stage Conditional Diffusion Model With Differential Attention for Hyperspectral and Multispectral Image Fusion"
+          ],
+          "DOI": "10.1109/tip.2026.3723234",
+          "container-title": [
+            "IEEE Transactions on Image Processing"
+          ],
+          "published-online": null
+        },
+        {
+          "title": [
+            "Unsupervised Model-Embedded Two-Stage Diffusion Method for Multispectral and Hyperspectral Image Fusion"
+          ],
+          "DOI": "10.1109/tgrs.2025.3610663",
+          "container-title": [
+            "IEEE Transactions on Geoscience and Remote Sensing"
+          ],
+          "published-online": null
+        },
+        {
+          "title": [
+            "Constrained Conditional Denoising Diffusion for Hyperspectral-Multispectral Fusion"
+          ],
+          "DOI": "10.1109/tci.2025.3643318",
+          "container-title": [
+            "IEEE Transactions on Computational Imaging"
+          ],
+          "published-online": null
+        }
+      ]
+    },
+    {
+      "id": "bhsr_crossref",
+      "requested_url": "https://api.crossref.org/works?query.title=Blur-Resistant%20Hyperspectral%20Image%20Super-Resolution%20via%20Dual-Degradation%20Fusion%20Model&rows=3",
+      "final_url": "https://api.crossref.org/works?query.title=Blur-Resistant%20Hyperspectral%20Image%20Super-Resolution%20via%20Dual-Degradation%20Fusion%20Model&rows=3",
+      "content_type": "application/json",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_crossref\\source.json",
+      "bytes": 19003,
+      "sha256": "9b4a755a196f244c8d043c49bd1b86e29b59a3807f6005486d3323e44b3bd1e8",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "matches": [
+        {
+          "title": [
+            "Blur-Resistant Hyperspectral Image Super-Resolution via Dual-Degradation Fusion Model"
+          ],
+          "DOI": "10.1109/tip.2026.3714832",
+          "container-title": [
+            "IEEE Transactions on Image Processing"
+          ],
+          "published-online": null
+        },
+        {
+          "title": [
+            "Hyperspectral Image Super-Resolution Via Adjacent Spectral Fusion Strategy"
+          ],
+          "DOI": "10.1109/icassp39728.2021.9413980",
+          "container-title": [
+            "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+          ],
+          "published-online": null
+        },
+        {
+          "title": [
+            "Image Fusion for Hyperspectral Image Super-Resolution"
+          ],
+          "DOI": "10.1109/whispers.2018.8747231",
+          "container-title": [
+            "2018 9th Workshop on Hyperspectral Image and Signal Processing: Evolution in Remote Sensing (WHISPERS)"
+          ],
+          "published-online": null
+        }
+      ]
+    },
+    {
+      "id": "emrdiff",
+      "requested_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+      "final_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EMR-Diff_Edge-aware_Multimodal_Residual_Diffusion_Model_for_Hyperspectral_Image_Super-resolution_CVPR_2026_paper.pdf",
+      "content_type": "application/pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+      "bytes": 3226159,
+      "sha256": "638a1409c0ffea067b25f72800cf3cb4f81dd3ab327d3aee578597c375608e60",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "extraction_error": "No module named 'pymupdf'"
+    },
+    {
+      "id": "co2if",
+      "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38261/42223",
+      "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38261/42223",
+      "content_type": "application/pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\co2if\\source.pdf",
+      "bytes": 2499001,
+      "sha256": "c3d1c2fc95f19ce1ae44219881c34b84448a150f77d43d975c6600db1d8f0d49",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "extraction_error": "No module named 'pymupdf'"
+    },
+    {
+      "id": "onehsi",
+      "requested_url": "https://eccv.ecva.net/virtual/2026/poster/4477",
+      "final_url": "https://eccv.ecva.net/virtual/2026/poster/4477",
+      "content_type": "text/html; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\onehsi\\source.html",
+      "bytes": 69889,
+      "sha256": "34ac5801b90a2687cbb2134dbc71207576fd2b3f3e21237133b53f3906c25c6e",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "lgdnet",
+      "requested_url": "https://eccv.ecva.net/virtual/2026/poster/3288",
+      "final_url": "https://eccv.ecva.net/virtual/2026/poster/3288",
+      "content_type": "text/html; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\lgdnet\\source.html",
+      "bytes": 69740,
+      "sha256": "1017335065cf24123e32a8c882c781d7757c286c0606567453ea73ee24f6c283",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "emrdiff_repo",
+      "requested_url": "https://api.github.com/repos/luocz55/EMR-Diff/git/trees/main?recursive=1",
+      "final_url": "https://api.github.com/repos/luocz55/EMR-Diff/git/trees/main?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_repo\\source.json",
+      "bytes": 8310,
+      "sha256": "46e5ceabfc66be271d1c4c2a1eda5141d09a4e729e20641428f6f099f55d3da6",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "bhsr_repo",
+      "requested_url": "https://api.github.com/repos/Dou0405/BHSR-Net/git/trees/main?recursive=1",
+      "final_url": "https://api.github.com/repos/Dou0405/BHSR-Net/git/trees/main?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_repo\\source.json",
+      "bytes": 5066,
+      "sha256": "334665da387c5acc1b72765e6d696a23e709705190edbcee17d8cc681721febe",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "diffdiff_repo",
+      "requested_url": "https://api.github.com/repos/Ruijie2580/DifferentialDiff/git/trees/main?recursive=1",
+      "final_url": "https://api.github.com/repos/Ruijie2580/DifferentialDiff/git/trees/main?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\diffdiff_repo\\source.json",
+      "bytes": 419,
+      "sha256": "ecc755070d02dcba0c2c3932c94cbd35791eeb95d2c7417adfe7b2cff0e276ec",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "irarf_repo",
+      "requested_url": "https://raw.githubusercontent.com/Jiahuiqu/IR-ArF/main/train.py",
+      "final_url": "https://raw.githubusercontent.com/Jiahuiqu/IR-ArF/main/train.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\irarf_repo\\source.html",
+      "bytes": 15065,
+      "sha256": "7bf75f96dedbde4cc9e4dd5b8c4cb4f92bdc0f86d853efe23e35e2548929fd1f",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "gewdiff",
+      "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/37978/41940",
+      "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/37978/41940",
+      "content_type": "application/pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\gewdiff\\source.pdf",
+      "bytes": 11649823,
+      "sha256": "07a7b454a0e09277aa0051d3368fa37259a04f2d84f995ffc514a53c0cc01a80",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "pages": 9
+    },
+    {
+      "id": "nud_crossref",
+      "requested_url": "https://api.crossref.org/works?query.title=Building%20Non-Uniform%20Degradation%20Model%20for%20Position-Aware%20Hyperspectral%20Image%20Fusion&rows=2",
+      "final_url": "https://api.crossref.org/works?query.title=Building%20Non-Uniform%20Degradation%20Model%20for%20Position-Aware%20Hyperspectral%20Image%20Fusion&rows=2",
+      "content_type": "application/json",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_crossref\\source.json",
+      "bytes": 20991,
+      "sha256": "35a69c7ad7c3a8699c55ca10bf9d64086f8a7ba2ba8d073f6dabf88655ce7547",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "matches": [
+        {
+          "title": [
+            "Building Non-Uniform Degradation Model for Position-Aware Hyperspectral Image Fusion"
+          ],
+          "DOI": "10.1109/tpami.2025.3604234",
+          "container-title": [
+            "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+          ],
+          "published-online": null
+        },
+        {
+          "title": [
+            "Blur-Resistant Hyperspectral Image Super-Resolution via Dual-Degradation Fusion Model"
+          ],
+          "DOI": "10.1109/tip.2026.3714832",
+          "container-title": [
+            "IEEE Transactions on Image Processing"
+          ],
+          "published-online": null
+        }
+      ]
+    },
+    {
+      "id": "onehsi_pdf",
+      "requested_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/6113.pdf",
+      "final_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/6113.pdf",
+      "content_type": "application/pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\onehsi_pdf\\source.pdf",
+      "bytes": 2868992,
+      "sha256": "74e0043a47a94985fb735ac33aaa814375d22701014a81b51dd1ac372a588a20",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "pages": 22
+    },
+    {
+      "id": "lgdnet_pdf",
+      "requested_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/791.pdf",
+      "final_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/791.pdf",
+      "content_type": "application/pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\lgdnet_pdf\\source.pdf",
+      "bytes": 18080159,
+      "sha256": "1b551a9241fb1102fd8e65e0edfcb22a7a777c4a3c45545fe381843723fe8b3d",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "pages": 19
+    },
+    {
+      "id": "bhsr_train",
+      "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/train.py",
+      "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/train.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_train\\source.html",
+      "bytes": 22503,
+      "sha256": "a083073d8d83ba58c3e9633be3c5db6cb560a176efd1e34c4825bd61b2e22c27",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "bhsr_models",
+      "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/models.py",
+      "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/models.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_models\\source.html",
+      "bytes": 1965,
+      "sha256": "ef131db45fa1f2594c69238b45a62cdd57c30ffb7c0701d5cbc641de8001e94b",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "bhsr_readme",
+      "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_readme\\source.html",
+      "bytes": 4332,
+      "sha256": "de1f0f65592b9f096895207e81cd2b7b0a32caea0f9598ea17cc47fd7bc5e5fa",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "emrdiff_train",
+      "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/Train.py",
+      "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/Train.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_train\\source.html",
+      "bytes": 397,
+      "sha256": "6f632dbf0ce9a3a0afce7f9e99e28691fa07e486537954c87a52f7fa15477c13",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "emrdiff_core",
+      "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/EMRDiff.py",
+      "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/EMRDiff.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_core\\source.html",
+      "bytes": 7277,
+      "sha256": "0dc341de289d616024936b9e1847120b9338690fbe489e9b31a1c1b6a3274409",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "emrdiff_config",
+      "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/config/5_step_EMRDiff.yaml",
+      "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/config/5_step_EMRDiff.yaml",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_config\\source.html",
+      "bytes": 791,
+      "sha256": "d07283ef97178cda89612cd48515a54cbf1f9bac48c2f42cd27aeeb0c6fdbf32",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "dses_crossref",
+      "requested_url": "https://api.crossref.org/works?query.title=DSES-Diff%3A%20A%20Dynamic-Spectral%20and%20Efficient-Spatial%20Diffusion-Based%20Foundation%20Model%20for%20Scalable%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=2",
+      "final_url": "https://api.crossref.org/works?query.title=DSES-Diff%3A%20A%20Dynamic-Spectral%20and%20Efficient-Spatial%20Diffusion-Based%20Foundation%20Model%20for%20Scalable%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=2",
+      "content_type": "application/json",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\dses_crossref\\source.json",
+      "bytes": 18855,
+      "sha256": "97c50f845de19bc66ec3eb28b7cd097fc104e70805b85212b7d97ca8966e8106",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "matches": [
+        {
+          "title": [
+            "DSES-Diff: A Dynamic-Spectral and Efficient-Spatial Diffusion-Based Foundation Model for Scalable Hyperspectral and Multispectral Image Fusion"
+          ],
+          "DOI": "10.1109/tip.2026.3736733",
+          "container-title": [
+            "IEEE Transactions on Image Processing"
+          ],
+          "published-online": null
+        },
+        {
+          "title": [
+            "Hierarchical Spectral–Spatial Transformer for Hyperspectral and Multispectral Image Fusion"
+          ],
+          "DOI": "10.3390/rs16224127",
+          "container-title": [
+            "Remote Sensing"
+          ],
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "uncertainty_crossref",
+      "requested_url": "https://api.crossref.org/works?query.title=Uncertainty-Driven%20Generative%20Prior%20Learning%20for%20Sparse%20Model-Guided%20Hyperspectral%20Image%20Fusion&rows=2",
+      "final_url": "https://api.crossref.org/works?query.title=Uncertainty-Driven%20Generative%20Prior%20Learning%20for%20Sparse%20Model-Guided%20Hyperspectral%20Image%20Fusion&rows=2",
+      "content_type": "application/json",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\uncertainty_crossref\\source.json",
+      "bytes": 31409,
+      "sha256": "be65de1a85b9d4d26d7e6f7f7f16fc9785b89cbf42b3455a403924e70e62341e",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "matches": [
+        {
+          "title": [
+            "Uncertainty-Driven Generative Prior Learning for Sparse Model-Guided Hyperspectral Image Fusion"
+          ],
+          "DOI": "10.1109/tip.2026.3689415",
+          "container-title": [
+            "IEEE Transactions on Image Processing"
+          ],
+          "published-online": null
+        },
+        {
+          "title": [
+            "Exploring structured uncertainty for external prior-guided hyperspectral image fusion"
+          ],
+          "DOI": "10.1016/j.inffus.2025.103997",
+          "container-title": [
+            "Information Fusion"
+          ],
+          "published-online": null
+        }
+      ]
+    },
+    {
+      "id": "bhsr_pdf",
+      "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11623387",
+      "final_url": "https://ieeexplore.ieee.org/document/11623387/;jsessionid=716238CAE7627FAE4603E612EC585EF6",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_pdf\\source.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "unavailable_pdf",
+      "retrieved_on": "2026-10-10",
+      "error": "Empty/non-PDF publisher response. Full text unavailable."
+    },
+    {
+      "id": "diffdiff_pdf",
+      "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11658817",
+      "final_url": "https://ieeexplore.ieee.org/document/11658817/;jsessionid=9C98AB8EA32444BE5766F95956F6C00A",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\diffdiff_pdf\\source.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "unavailable_pdf",
+      "retrieved_on": "2026-10-10",
+      "error": "Empty/non-PDF publisher response. Full text unavailable."
+    },
+    {
+      "id": "vpg_pdf",
+      "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11520599",
+      "final_url": "https://ieeexplore.ieee.org/document/11520599/;jsessionid=CCECD856F63B3B678CB29AB6AB30AECE",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\vpg_pdf\\source.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "unavailable_pdf",
+      "retrieved_on": "2026-10-10",
+      "error": "Empty/non-PDF publisher response. Full text unavailable."
+    },
+    {
+      "id": "dses_pdf",
+      "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11715984",
+      "final_url": "https://ieeexplore.ieee.org/document/11715984/;jsessionid=AD8A233F6405DC15536A9353E43802E4",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\dses_pdf\\source.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "unavailable_pdf",
+      "retrieved_on": "2026-10-10",
+      "error": "Empty/non-PDF publisher response. Full text unavailable."
+    },
+    {
+      "id": "hsc_pubmed",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41336172&format=json&resultType=core",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41336172&format=json&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_pubmed\\source.json",
+      "bytes": 5161,
+      "sha256": "efc115ccc7f7cbfaac4322a7048ff1949b0d51849042f42014f9ecf1d1f75bc5",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "dses_pubmed",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42821724&format=json&resultType=core",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42821724&format=json&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\dses_pubmed\\source.json",
+      "bytes": 4087,
+      "sha256": "a428e11bb72071b58eb0befdcff199363241d09a5c5f6ec2687b8e0da0d70d37",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "emrdiff_data",
+      "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/dataset_loader/dataloader.py",
+      "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/dataset_loader/dataloader.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_data\\source.html",
+      "bytes": 3240,
+      "sha256": "670a07fd8ac668c72b9bae5d9f1693efcd1b3b65b170447207500782b49f9eab",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "tip_tpami_census",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(ISSN%3A1057-7149%20OR%20ISSN%3A0162-8828)%20AND%20(hyperspectral%20AND%20(fusion%20OR%20super-resolution))%20AND%20FIRST_PDATE%3A%5B2025-01-01%20TO%202026-10-10%5D&format=json&resultType=core&pageSize=100",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(ISSN%3A1057-7149%20OR%20ISSN%3A0162-8828)%20AND%20(hyperspectral%20AND%20(fusion%20OR%20super-resolution))%20AND%20FIRST_PDATE%3A%5B2025-01-01%20TO%202026-10-10%5D&format=json&resultType=core&pageSize=100",
+      "content_type": "application/json;charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\tip_tpami_census\\source.json",
+      "bytes": 160136,
+      "sha256": "3fcc6b84d2e223479ae69bd17eae095d78c0e25a680da470fc558a2db7e39337",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "cvpr2025",
+      "requested_url": "https://openaccess.thecvf.com/CVPR2025?day=all",
+      "final_url": "https://openaccess.thecvf.com/CVPR2025?day=all",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\cvpr2025\\source.html",
+      "bytes": 8396274,
+      "sha256": "2f08dc191b870530993ba6a5a79e8c8ae812f158b6a30b21a96f3b190af96bfa",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "spectral_titles": [
+        {
+          "title": "HyperGS: Hyperspectral 3D Gaussian Splatting",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Thirgood_HyperGS_Hyperspectral_3D_Gaussian_Splatting_CVPR_2025_paper.html"
+        },
+        {
+          "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html"
+        },
+        {
+          "title": "Binarized Neural Network for Multi-spectral Image Fusion",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Hou_Binarized_Neural_Network_for_Multi-spectral_Image_Fusion_CVPR_2025_paper.html"
+        },
+        {
+          "title": "VolFormer: Explore More Comprehensive Cube Interaction for Hyperspectral Image Restoration and Beyond",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_VolFormer_Explore_More_Comprehensive_Cube_Interaction_for_Hyperspectral_Image_Restoration_CVPR_2025_paper.html"
+        },
+        {
+          "title": "Illumination Spectrum Estimation for Multispectral Images via Surface Reflectance Modeling and Spatial-Spectral Feature Generation",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Oh_Illumination_Spectrum_Estimation_for_Multispectral_Images_via_Surface_Reflectance_Modeling_CVPR_2025_paper.html"
+        },
+        {
+          "title": "Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhu_Self-Learning_Hyperspectral_and_Multispectral_Image_Fusion_via_Adaptive_Residual_Guided_CVPR_2025_paper.html"
+        },
+        {
+          "title": "Dense Dispersed Structured Light for Hyperspectral 3D Imaging of Dynamic Scenes",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Shin_Dense_Dispersed_Structured_Light_for_Hyperspectral_3D_Imaging_of_Dynamic_CVPR_2025_paper.html"
+        },
+        {
+          "title": "HyperFree: A Channel-adaptive and Tuning-free Foundation Model for Hyperspectral Remote Sensing Imagery",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Li_HyperFree_A_Channel-adaptive_and_Tuning-free_Foundation_Model_for_Hyperspectral_Remote_CVPR_2025_paper.html"
+        },
+        {
+          "title": "Automatic Spectral Calibration of Hyperspectral Images: Method, Dataset and Benchmark",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Du_Automatic_Spectral_Calibration_of_Hyperspectral_Images_Method_Dataset_and_Benchmark_CVPR_2025_paper.html"
+        },
+        {
+          "title": "Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html"
+        },
+        {
+          "title": "Active Hyperspectral Imaging Using an Event Camera",
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_Active_Hyperspectral_Imaging_Using_an_Event_Camera_CVPR_2025_paper.html"
+        }
+      ]
+    },
+    {
+      "id": "iccv2025",
+      "requested_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "final_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\iccv2025\\source.html",
+      "bytes": 7692642,
+      "sha256": "e684fe760c417a35c2f1e9a5acb3015a192fce10e566086e2d4bf7f78cbb97fe",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "spectral_titles": [
+        {
+          "title": "Physical Degradation Model-Guided Interferometric Hyperspectral Reconstruction with Unfolding Transformer",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.html"
+        },
+        {
+          "title": "Spectral Image Tokenizer",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Esteves_Spectral_Image_Tokenizer_ICCV_2025_paper.html"
+        },
+        {
+          "title": "Hipandas: Hyperspectral Image Joint Denoising and Super-Resolution by Image Fusion with the Panchromatic Image",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Xu_Hipandas_Hyperspectral_Image_Joint_Denoising_and_Super-Resolution_by_Image_Fusion_ICCV_2025_paper.html"
+        },
+        {
+          "title": "MP-HSIR: A Multi-Prompt Framework for Universal Hyperspectral Image Restoration",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wu_MP-HSIR_A_Multi-Prompt_Framework_for_Universal_Hyperspectral_Image_Restoration_ICCV_2025_paper.html"
+        },
+        {
+          "title": "Spatio-Spectral Pattern Illumination for Direct and Indirect Separation from a Single Hyperspectral Image",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Ishihara_Spatio-Spectral_Pattern_Illumination_for_Direct_and_Indirect_Separation_from_a_ICCV_2025_paper.html"
+        }
+      ]
+    },
+    {
+      "id": "bhsr_modules",
+      "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/modules.py",
+      "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/modules.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_modules\\source.html",
+      "bytes": 5628,
+      "sha256": "236e9a2271b9698dd913d7c0ad4a1587303a45f0cefef65f5de26d056e145e95",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "bhsr_loss",
+      "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/loss.py",
+      "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/loss.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_loss\\source.html",
+      "bytes": 3291,
+      "sha256": "c1a0e6851de220a07eb425a82664eef6d56f8e4a56d19d83932666f1a20cf140",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "nud_repo",
+      "requested_url": "https://api.github.com/repos/jeline0110/NUD_PAF/git/trees/main?recursive=1",
+      "final_url": "https://api.github.com/repos/jeline0110/NUD_PAF/git/trees/main?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_repo\\source.json",
+      "bytes": 4590,
+      "sha256": "ac11faa39f2cb6c615fefd7f90af83841b48ce357791d319d527811b47d15a01",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "hsc_repo",
+      "requested_url": "https://api.github.com/repos/1318133/HSC-Sampling/git/trees/main?recursive=1",
+      "final_url": "https://api.github.com/repos/1318133/HSC-Sampling/git/trees/main?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_repo\\source.json",
+      "bytes": 8886,
+      "sha256": "6b1a62e0e76958a852d8aa66660c08b5fb43bee81fc071e37a06c99a7b9a53a8",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "srlf_repo",
+      "requested_url": "https://api.github.com/repos/YuanyeLiu/SRLF-Net/git/trees/main?recursive=1",
+      "final_url": "https://api.github.com/repos/YuanyeLiu/SRLF-Net/git/trees/main?recursive=1",
+      "content_type": "application/json; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf_repo\\source.json",
+      "bytes": 2861,
+      "sha256": "af622f62a4137283124eba39eb39821e4aa77552912c200fb03bfb3bd6ce44b5",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "nud_train_real",
+      "requested_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_real.py",
+      "final_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_real.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_train_real\\source.html",
+      "bytes": 5079,
+      "sha256": "e9312b72252cc217ede978f683ffdd286119aaf9ad94751e4dc8f9b571d36992",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "nud_train_syn",
+      "requested_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_syn.py",
+      "final_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_syn.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_train_syn\\source.html",
+      "bytes": 4669,
+      "sha256": "6f223427175ad8125cd6ee3e251f28afef684de36793ce5bd25fe4e0649ae019",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "nud_readme",
+      "requested_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_readme\\source.html",
+      "bytes": 4243,
+      "sha256": "8105f0f737f363cf50053c6f78e3cbefac82bcf6ca32c4b58527f2620aab7e4b",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "srlf_supp",
+      "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liu_A_Selective_Re-learning_CVPR_2025_supplemental.pdf",
+      "final_url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liu_A_Selective_Re-learning_CVPR_2025_supplemental.pdf",
+      "content_type": "application/pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf_supp\\source.pdf",
+      "bytes": 4342393,
+      "sha256": "5b3a74ff593bd1c868db411116923b0568fc1a1851a57f473e1851daf56b4280",
+      "status": "ok",
+      "retrieved_on": "2026-10-10",
+      "pages": 4
+    },
+    {
+      "id": "emr_trainer",
+      "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/model/ResShift_model.py",
+      "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/model/ResShift_model.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emr_trainer\\source.html",
+      "bytes": 14094,
+      "sha256": "60b94f2bd5147508c0159056fd9ce1af483b2a91bbc84e8931ee2d89aab68ba3",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "hsc_train",
+      "requested_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/train_caveL1_method2.py",
+      "final_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/train_caveL1_method2.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_train\\source.html",
+      "bytes": 9157,
+      "sha256": "42c1ce7dae113932aefc6ab05d0fd8e958e065c684050f5402beb2f3d38f5bd8",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "hsc_model",
+      "requested_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/net2/multiscale_specconvfront2_reschangemarx.py",
+      "final_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/HSC-sampling/net2/multiscale_specconvfront2_reschangemarx.py",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_model\\source.html",
+      "bytes": 20860,
+      "sha256": "9bb0f46f17080381f6d7018bc965bded1bfabfedf9ac069d38e8f13fa51106b4",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "hsc_readme",
+      "requested_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/1318133/HSC-Sampling/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_readme\\source.html",
+      "bytes": 1328,
+      "sha256": "f681c2f98dd4d2d7b27b1b67987ccfa850e6c507a8b50fef4e9ba32f3d3c079a",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "neurips2026",
+      "requested_url": "https://neurips.cc/Downloads/2026",
+      "final_url": "https://neurips.cc/Downloads/2026",
+      "content_type": "text/html; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\neurips2026\\source.html",
+      "bytes": 1377548,
+      "sha256": "3b983840566e7565c969a620f069ec7bc1d718053f07ba10941d08aa112fe267",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "carl_pdf",
+      "url": "https://openreview.net/pdf/06c03489864236829ee6008cde9cee87d1b41a15.pdf",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "clorf_metadata",
+      "requested_url": "https://api.crossref.org/works/10.1007/s11263-025-02540-1",
+      "final_url": "https://api.crossref.org/works/10.1007/s11263-025-02540-1",
+      "content_type": "application/json",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\clorf_metadata\\source.json",
+      "bytes": 30088,
+      "sha256": "5132dda9b7db8038806112a56db6a7f60fbf338428551efd12a19806915c8376",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "ssc_metadata",
+      "requested_url": "https://api.crossref.org/works/10.1007/s11263-025-02466-8",
+      "final_url": "https://api.crossref.org/works/10.1007/s11263-025-02466-8",
+      "content_type": "application/json",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\ssc_metadata\\source.json",
+      "bytes": 34451,
+      "sha256": "c65a1bc82f641adb3ae720eb0495ac745065b7e0df6246a806a7c42286b8ca67",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "feinfn",
+      "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/74088c68894b99383c12399c9c637be9-Abstract-Conference.html",
+      "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/74088c68894b99383c12399c9c637be9-Abstract-Conference.html",
+      "content_type": "text/html; charset=utf-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\feinfn\\source.html",
+      "bytes": 10051,
+      "sha256": "83618cb6d804f92e2a03b18f2b6f7b82d8f2ba6a36fd57a2fafe5faf7350534c",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    },
+    {
+      "id": "danet_official",
+      "requested_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wen_Regulating_Rather_than_Constraining_Adaptive_Guidance_for_Complex_Spectral_Reconstruction_CVPR_2026_paper.html",
+      "final_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wen_Regulating_Rather_than_Constraining_Adaptive_Guidance_for_Complex_Spectral_Reconstruction_CVPR_2026_paper.html",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\danet_official\\source.html",
+      "bytes": 6684,
+      "sha256": "ef39537f67757d426fb004e69de24907b76b151d2c9b405aff1fd7209f4c00eb",
+      "status": "ok",
+      "retrieved_on": "2026-10-10"
+    }
+  ],
+  "local_pdfs": [
+    {
+      "id": "co2if",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\co2if\\source.pdf",
+      "pages": 9,
+      "sha256": "c3d1c2fc95f19ce1ae44219881c34b84448a150f77d43d975c6600db1d8f0d49"
+    },
+    {
+      "id": "emrdiff",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff\\source.pdf",
+      "pages": 11,
+      "sha256": "638a1409c0ffea067b25f72800cf3cb4f81dd3ab327d3aee578597c375608e60"
+    },
+    {
+      "id": "gewdiff",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\gewdiff\\source.pdf",
+      "pages": 9,
+      "sha256": "07a7b454a0e09277aa0051d3368fa37259a04f2d84f995ffc514a53c0cc01a80"
+    },
+    {
+      "id": "lgdnet_pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\lgdnet_pdf\\source.pdf",
+      "pages": 19,
+      "sha256": "1b551a9241fb1102fd8e65e0edfcb22a7a777c4a3c45545fe381843723fe8b3d"
+    },
+    {
+      "id": "onehsi_pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\onehsi_pdf\\source.pdf",
+      "pages": 22,
+      "sha256": "74e0043a47a94985fb735ac33aaa814375d22701014a81b51dd1ac372a588a20"
+    },
+    {
+      "id": "pino",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\pino\\source.pdf",
+      "pages": 31,
+      "sha256": "cc80de9d212f381ecb953cedb3c757b3654bb2ef5cfcf93651a9ef38071c5664"
+    },
+    {
+      "id": "srlf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+      "pages": 10,
+      "sha256": "cad1f047916b146817526efc2e8f898db8af0bfdc87599bb45ddf05cd1b146a9"
+    },
+    {
+      "id": "srlf_supp",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf_supp\\source.pdf",
+      "pages": 4,
+      "sha256": "5b3a74ff593bd1c868db411116923b0568fc1a1851a57f473e1851daf56b4280"
+    },
+    {
+      "id": "uafl",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\uafl\\source.pdf",
+      "pages": 11,
+      "sha256": "65d8e849d6f44818cf4baa9e1366b7a588aeefbd64b351e0dffee604f15d7c42"
+    }
+  ],
+  "reused": [
+    {
+      "id": "srlf",
+      "original_local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_d592a59bf26e9693\\raw.pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+      "sha256": "cad1f047916b146817526efc2e8f898db8af0bfdc87599bb45ddf05cd1b146a9",
+      "retrieval": "Existing local official PDF reused; venue/identity rechecked 2026-10-10."
+    },
+    {
+      "id": "uafl",
+      "original_local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\raw.pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\uafl\\source.pdf",
+      "sha256": "65d8e849d6f44818cf4baa9e1366b7a588aeefbd64b351e0dffee604f15d7c42",
+      "retrieval": "Existing local official PDF reused; venue/identity rechecked 2026-10-10."
+    },
+    {
+      "id": "pino",
+      "original_local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f2374da1c30123d5\\raw.pdf",
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\pino\\source.pdf",
+      "sha256": "cc80de9d212f381ecb953cedb3c757b3654bb2ef5cfcf93651a9ef38071c5664",
+      "retrieval": "Existing local official PDF reused; venue/identity rechecked 2026-10-10."
+    }
+  ]
+}

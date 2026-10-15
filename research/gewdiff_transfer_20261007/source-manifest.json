@@ -1,0 +1,128 @@
+{
+  "repo": "zhu-xlab/GEWDiff",
+  "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+  "retrieved_date": "2026-10-07",
+  "execution": "source reading only, author code not executed",
+  "files": [
+    {
+      "file": "model/RWT.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/model/RWT.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/model/RWT.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\model__RWT.py.txt",
+      "sha256": "f9351236e9415f02f8573711e27d17f3404eefebced639bbc899a691190e9af4",
+      "bytes": 11008,
+      "status": "ok"
+    },
+    {
+      "file": "model/edm.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/model/edm.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/model/edm.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\model__edm.py.txt",
+      "sha256": "e795592ef533858b58e29fc9e029bce47ac0caed7bca1b35779c6c08ac4e39d2",
+      "bytes": 26902,
+      "status": "ok"
+    },
+    {
+      "file": "model/unet3d.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/model/unet3d.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/model/unet3d.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\model__unet3d.py.txt",
+      "sha256": "7c5847ebc3d401ad214cc139ca8af1725771ff02ddcdfd209b89d2459b2c15d2",
+      "bytes": 12856,
+      "status": "ok"
+    },
+    {
+      "file": "train.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/train.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/train.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\train.py.txt",
+      "sha256": "819c694c4f0bd1d054098e823d945889a87a58acf61982f02c4c42903884a4f2",
+      "bytes": 17873,
+      "status": "ok"
+    },
+    {
+      "file": "data/dataset.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/data/dataset.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/data/dataset.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\data__dataset.py.txt",
+      "sha256": "041c88ef765150c43a9ac699f409bb8a2de95736e358e636d2a30ffc3a96c4d2",
+      "bytes": 8934,
+      "status": "ok"
+    },
+    {
+      "file": "data/process_mask_edge.ipynb",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/data/process_mask_edge.ipynb",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/data/process_mask_edge.ipynb",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\data__process_mask_edge.ipynb.txt",
+      "sha256": "c71f45377e9e51707c937da6fe8d7c267d4766d1253db055ca7fae316f96bf54",
+      "bytes": 7093,
+      "status": "ok"
+    },
+    {
+      "file": "test.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/test.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/test.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\test.py.txt",
+      "sha256": "794f67adb51af7e033321af037bc717feceff6e0cb8dc74d478ffaa1fb091c10",
+      "bytes": 16524,
+      "status": "ok"
+    },
+    {
+      "file": "test_wdc.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/test_wdc.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/test_wdc.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\test_wdc.py.txt",
+      "sha256": "80af2a71fe6832d27c2ebae36b267b50110f32a464bd58e98dc06f73d2beecb3",
+      "bytes": 25024,
+      "status": "ok"
+    },
+    {
+      "file": "test_enmap.py",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/test_enmap.py",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/test_enmap.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\test_enmap.py.txt",
+      "sha256": "78346d755a67ef22872ee462c3e8a3f74886486c7d4742286e95697251506774",
+      "bytes": 22600,
+      "status": "ok"
+    },
+    {
+      "file": "run.sh",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/run.sh",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/run.sh",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\run.sh.txt",
+      "sha256": "d8827966ed943705e0a9d4c45bda18c2e525eaaae4706cdd204df9f74328b3f1",
+      "bytes": 1191,
+      "status": "ok"
+    },
+    {
+      "file": "requirements.txt",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/requirements.txt",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/requirements.txt",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\requirements.txt.txt",
+      "sha256": "b1b25c3f2d79f524af2c2302519f7eec79cdce1b9d10c730a3e97a9c1512b3a3",
+      "bytes": 1290,
+      "status": "ok"
+    },
+    {
+      "file": "README.md",
+      "commit": "1744732922fc74a61f210b7d5f65de2ad4fe1a45",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GEWDiff/1744732922fc74a61f210b7d5f65de2ad4fe1a45/README.md",
+      "browser_url": "https://github.com/zhu-xlab/GEWDiff/blob/1744732922fc74a61f210b7d5f65de2ad4fe1a45/README.md",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\gewdiff_transfer_20261007\\author_code\\README.md.txt",
+      "sha256": "a79a4fbbe2fd65bdee272304f8763910dd848d88b8b8eedc739baa47c92829d7",
+      "bytes": 6859,
+      "status": "ok"
+    }
+  ]
+}

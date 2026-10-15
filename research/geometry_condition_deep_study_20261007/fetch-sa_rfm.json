@@ -1,0 +1,35 @@
+{
+  "canonical_id": "url:9b543176ba2eb748",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\url_9b543176ba2eb748\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\url_9b543176ba2eb748\\parsed.md",
+  "parser": "pypdf-layout fallback",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1737,
+  "parsed_chars": 108083,
+  "sentinel": "4b86a82f8070",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\url_9b543176ba2eb748\\parsed.md",
+      "offset": 0,
+      "limit": 1737
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

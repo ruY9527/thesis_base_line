@@ -1,0 +1,45 @@
+{
+  "canonical_id": "doi:10.1109/tip.2026.3689415",
+  "source": "",
+  "format": "",
+  "status": "abstract_only",
+  "title": "Uncertainty-Driven Generative Prior Learning for Sparse Model-Guided Hyperspectral Image Fusion",
+  "year": 2026,
+  "doi": "10.1109/TIP.2026.3689415",
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": null,
+  "parsed_path": null,
+  "parser": null,
+  "abstract": "As an alternative to acquiring high-resolution hyperspectral images (HR-HSI), Hyperspectral Image Fusion (HIF) aims to recover clean HR-HSIs by fusing degraded low spatial resolution hyperspectral images and high spatial resolution multispectral images. Among existing HIF approaches, model-guided HIF methods stand out by integrating physical degradation constraints with the learning capabilities of data-driven networks. However, most of them learn deep priors only from degraded-clean pairs without degradation-free knowledge, making them struggle with severe or unseen degradations. To address these issues, we propose a Vector-Quantized Prior-Guided Network (VPG-Net), an unfolding-based HIF framework enhanced by sparse representation and novel uncertainty-driven generative priors. Specifically, VPG-Net unfolds the Maximum A Posteriori (MAP) estimation with a sparse representation model into an uncertainty-aware VQ prior-guided network implementation. Within this framework, the sparse representation prior is integrated into the MAP formulation to improve noise resistance. As the core of our method, we leverage a high-quality vector-quantized (VQ) prior, which serves as a powerful degradation-free generative prior for the HIF process. We pre-train a discrete codebook and encoder on clean HR-HSIs to generate a VQ-prior representation (VQPR), which preserves complete spatial-spectral information. To effectively bridge the gap between degraded inputs and the learned degradation-free codebook, we further incorporate a novel uncertainty-driven probabilistic matching strategy that improves feature alignment and suppresses artifacts. The learned VQPR is then incorporated into the deep prior module as dynamic modulation parameters to enhance the fidelity and realism of the reconstructed results, particularly for severely degraded inputs. Extensive experiments on clean and degraded synthetic and real-world datasets demonstrate that our approach outperforms state-of-the-art HIF methods in both quantitative metrics and visual quality.",
+  "tried": [
+    {
+      "step": "unpaywall",
+      "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+    },
+    {
+      "step": "openalex",
+      "outcome": "no oa"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "no oa pdf"
+    },
+    {
+      "step": "crossref",
+      "outcome": "no pdf link"
+    },
+    {
+      "step": "doi_landing",
+      "outcome": "http 202"
+    }
+  ],
+  "note": "All full-text sources failed; abstract retrieved from Semantic Scholar",
+  "parsed_lines": null,
+  "parsed_chars": null,
+  "sentinel": null,
+  "read_plan": [],
+  "figures": [],
+  "parser_used_ocr": null
+}

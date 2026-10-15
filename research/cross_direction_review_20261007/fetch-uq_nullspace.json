@@ -1,0 +1,41 @@
+{
+  "name": "uq_nullspace",
+  "identifier": "https://arxiv.org/pdf/2304.06955",
+  "canonical_id": "arxiv:2304.06955",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "Uncertainty-Aware Null Space Networks for Data-Consistent Image Reconstruction",
+  "year": 2023,
+  "doi": null,
+  "arxiv_id": "2304.06955",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2304.06955\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2304.06955\\parsed.md",
+  "parser": "html",
+  "abstract": "Reconstructing an image from noisy and incomplete measurements is a central task in several image processing applications. In recent years, state-of-the-art reconstruction methods have been developed based on recent advances in deep learning. Especially for highly underdetermined problems, maintaining data consistency is a key goal. This can be achieved either by iterative network architectures or by a subsequent projection of the network reconstruction. However, for such approaches to be used in safety-critical domains such as medical imaging, the network reconstruction should not only provide the user with a reconstructed image, but also with some level of confidence in the reconstruction. In order to meet these two key requirements, this paper combines deep null-space networks with uncertainty quantification. Evaluation of the proposed method includes image reconstruction from undersampled Radon measurements on a toy CT dataset and accelerated MRI reconstruction on the fastMRI dataset. This work is the first approach to solving inverse problems that additionally models data-dependent uncertainty by estimating an input-dependent scale map, providing a robust assessment of reconstruction quality.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 933,
+  "parsed_chars": 54950,
+  "sentinel": "f16507201b27",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2304.06955\\parsed.md",
+      "offset": 0,
+      "limit": 933
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

@@ -1,0 +1,166 @@
+[
+  {
+    "id": "onehsi_pdf",
+    "requested_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/6113.pdf",
+    "final_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/6113.pdf",
+    "content_type": "application/pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\onehsi_pdf\\source.pdf",
+    "bytes": 2868992,
+    "sha256": "74e0043a47a94985fb735ac33aaa814375d22701014a81b51dd1ac372a588a20",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "pages": 22
+  },
+  {
+    "id": "lgdnet_pdf",
+    "requested_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/791.pdf",
+    "final_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/791.pdf",
+    "content_type": "application/pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\lgdnet_pdf\\source.pdf",
+    "bytes": 18080159,
+    "sha256": "1b551a9241fb1102fd8e65e0edfcb22a7a777c4a3c45545fe381843723fe8b3d",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "pages": 19
+  },
+  {
+    "id": "bhsr_train",
+    "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/train.py",
+    "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/train.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_train\\source.html",
+    "bytes": 22503,
+    "sha256": "a083073d8d83ba58c3e9633be3c5db6cb560a176efd1e34c4825bd61b2e22c27",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "bhsr_models",
+    "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/models.py",
+    "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/models.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_models\\source.html",
+    "bytes": 1965,
+    "sha256": "ef131db45fa1f2594c69238b45a62cdd57c30ffb7c0701d5cbc641de8001e94b",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "bhsr_readme",
+    "requested_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/README.md",
+    "final_url": "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_readme\\source.html",
+    "bytes": 4332,
+    "sha256": "de1f0f65592b9f096895207e81cd2b7b0a32caea0f9598ea17cc47fd7bc5e5fa",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "emrdiff_train",
+    "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/Train.py",
+    "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/Train.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_train\\source.html",
+    "bytes": 397,
+    "sha256": "6f632dbf0ce9a3a0afce7f9e99e28691fa07e486537954c87a52f7fa15477c13",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "emrdiff_core",
+    "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/EMRDiff.py",
+    "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/EMRDiff.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_core\\source.html",
+    "bytes": 7277,
+    "sha256": "0dc341de289d616024936b9e1847120b9338690fbe489e9b31a1c1b6a3274409",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "emrdiff_config",
+    "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/config/5_step_EMRDiff.yaml",
+    "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/config/5_step_EMRDiff.yaml",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_config\\source.html",
+    "bytes": 791,
+    "sha256": "d07283ef97178cda89612cd48515a54cbf1f9bac48c2f42cd27aeeb0c6fdbf32",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "dses_crossref",
+    "requested_url": "https://api.crossref.org/works?query.title=DSES-Diff%3A%20A%20Dynamic-Spectral%20and%20Efficient-Spatial%20Diffusion-Based%20Foundation%20Model%20for%20Scalable%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=2",
+    "final_url": "https://api.crossref.org/works?query.title=DSES-Diff%3A%20A%20Dynamic-Spectral%20and%20Efficient-Spatial%20Diffusion-Based%20Foundation%20Model%20for%20Scalable%20Hyperspectral%20and%20Multispectral%20Image%20Fusion&rows=2",
+    "content_type": "application/json",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\dses_crossref\\source.json",
+    "bytes": 18855,
+    "sha256": "97c50f845de19bc66ec3eb28b7cd097fc104e70805b85212b7d97ca8966e8106",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "matches": [
+      {
+        "title": [
+          "DSES-Diff: A Dynamic-Spectral and Efficient-Spatial Diffusion-Based Foundation Model for Scalable Hyperspectral and Multispectral Image Fusion"
+        ],
+        "DOI": "10.1109/tip.2026.3736733",
+        "container-title": [
+          "IEEE Transactions on Image Processing"
+        ],
+        "published-online": null
+      },
+      {
+        "title": [
+          "Hierarchical Spectral–Spatial Transformer for Hyperspectral and Multispectral Image Fusion"
+        ],
+        "DOI": "10.3390/rs16224127",
+        "container-title": [
+          "Remote Sensing"
+        ],
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              5
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "uncertainty_crossref",
+    "requested_url": "https://api.crossref.org/works?query.title=Uncertainty-Driven%20Generative%20Prior%20Learning%20for%20Sparse%20Model-Guided%20Hyperspectral%20Image%20Fusion&rows=2",
+    "final_url": "https://api.crossref.org/works?query.title=Uncertainty-Driven%20Generative%20Prior%20Learning%20for%20Sparse%20Model-Guided%20Hyperspectral%20Image%20Fusion&rows=2",
+    "content_type": "application/json",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\uncertainty_crossref\\source.json",
+    "bytes": 31409,
+    "sha256": "be65de1a85b9d4d26d7e6f7f7f16fc9785b89cbf42b3455a403924e70e62341e",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "matches": [
+      {
+        "title": [
+          "Uncertainty-Driven Generative Prior Learning for Sparse Model-Guided Hyperspectral Image Fusion"
+        ],
+        "DOI": "10.1109/tip.2026.3689415",
+        "container-title": [
+          "IEEE Transactions on Image Processing"
+        ],
+        "published-online": null
+      },
+      {
+        "title": [
+          "Exploring structured uncertainty for external prior-guided hyperspectral image fusion"
+        ],
+        "DOI": "10.1016/j.inffus.2025.103997",
+        "container-title": [
+          "Information Fusion"
+        ],
+        "published-online": null
+      }
+    ]
+  }
+]

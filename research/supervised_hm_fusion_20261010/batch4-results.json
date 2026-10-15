@@ -1,0 +1,83 @@
+[
+  {
+    "id": "bhsr_pdf",
+    "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11623387",
+    "final_url": "https://ieeexplore.ieee.org/document/11623387/;jsessionid=716238CAE7627FAE4603E612EC585EF6",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_pdf\\source.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "unavailable_pdf",
+    "retrieved_on": "2026-10-10",
+    "error": "Empty/non-PDF publisher response. Full text unavailable."
+  },
+  {
+    "id": "diffdiff_pdf",
+    "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11658817",
+    "final_url": "https://ieeexplore.ieee.org/document/11658817/;jsessionid=9C98AB8EA32444BE5766F95956F6C00A",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\diffdiff_pdf\\source.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "unavailable_pdf",
+    "retrieved_on": "2026-10-10",
+    "error": "Empty/non-PDF publisher response. Full text unavailable."
+  },
+  {
+    "id": "vpg_pdf",
+    "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11520599",
+    "final_url": "https://ieeexplore.ieee.org/document/11520599/;jsessionid=CCECD856F63B3B678CB29AB6AB30AECE",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\vpg_pdf\\source.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "unavailable_pdf",
+    "retrieved_on": "2026-10-10",
+    "error": "Empty/non-PDF publisher response. Full text unavailable."
+  },
+  {
+    "id": "dses_pdf",
+    "requested_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11715984",
+    "final_url": "https://ieeexplore.ieee.org/document/11715984/;jsessionid=AD8A233F6405DC15536A9353E43802E4",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\dses_pdf\\source.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "unavailable_pdf",
+    "retrieved_on": "2026-10-10",
+    "error": "Empty/non-PDF publisher response. Full text unavailable."
+  },
+  {
+    "id": "hsc_pubmed",
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41336172&format=json&resultType=core",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41336172&format=json&resultType=core",
+    "content_type": "application/json;charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_pubmed\\source.json",
+    "bytes": 5161,
+    "sha256": "efc115ccc7f7cbfaac4322a7048ff1949b0d51849042f42014f9ecf1d1f75bc5",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "dses_pubmed",
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42821724&format=json&resultType=core",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42821724&format=json&resultType=core",
+    "content_type": "application/json;charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\dses_pubmed\\source.json",
+    "bytes": 4087,
+    "sha256": "a428e11bb72071b58eb0befdcff199363241d09a5c5f6ec2687b8e0da0d70d37",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "emrdiff_data",
+    "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/dataset_loader/dataloader.py",
+    "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/dataset_loader/dataloader.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_data\\source.html",
+    "bytes": 3240,
+    "sha256": "670a07fd8ac668c72b9bae5d9f1693efcd1b3b65b170447207500782b49f9eab",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  }
+]

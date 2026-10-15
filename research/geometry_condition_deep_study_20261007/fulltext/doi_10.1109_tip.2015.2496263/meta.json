@@ -1,0 +1,43 @@
+{
+  "canonical_id": "doi:10.1109/tip.2015.2496263",
+  "source": "semantic_scholar_oa",
+  "format": "pdf",
+  "status": "ok",
+  "title": "Hyperspectral Super-Resolution of Locally Low Rank Images From Complementary Multisource Data",
+  "year": 2015,
+  "doi": "10.1109/TIP.2015.2496263",
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\doi_10.1109_tip.2015.2496263\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\doi_10.1109_tip.2015.2496263\\parsed.md",
+  "parser": "pypdf-layout fallback",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "unpaywall",
+      "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+    },
+    {
+      "step": "openalex",
+      "outcome": "no oa"
+    },
+    {
+      "step": "semantic_scholar_oa",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 710,
+  "parsed_chars": 33163,
+  "sentinel": "358766021635",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\doi_10.1109_tip.2015.2496263\\parsed.md",
+      "offset": 0,
+      "limit": 710
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

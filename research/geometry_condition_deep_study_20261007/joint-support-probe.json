@@ -1,0 +1,52 @@
+{
+  "evidence_class": "exploratory synthetic algebraic examples",
+  "source_operator": "utils.py: create_F, fspecial, Gaussian_downsample",
+  "conditions": "known fixed orthonormal basis and spatial templates; no model training",
+  "ridge_lambda": 0.001,
+  "cases": [
+    {
+      "spatial_mode": "coarse",
+      "spectral_mode": "msi_visible",
+      "lr_energy": 0.015624999999999997,
+      "msi_energy": 0.10409795086625583,
+      "joint_energy": 0.11972295086625583,
+      "msi_only_gate": 0.9904850666282489,
+      "joint_gate": 0.99171657093515
+    },
+    {
+      "spatial_mode": "coarse",
+      "spectral_mode": "msi_null",
+      "lr_energy": 0.015624999999999997,
+      "msi_energy": 1.2992868088510848e-33,
+      "joint_energy": 0.015624999999999997,
+      "msi_only_gate": 1.2992868088510848e-30,
+      "joint_gate": 0.9398496240601503
+    },
+    {
+      "spatial_mode": "spatial_null",
+      "spectral_mode": "msi_visible",
+      "lr_energy": 2.3701605094112577e-35,
+      "msi_energy": 0.10409795086625583,
+      "joint_energy": 0.10409795086625583,
+      "msi_only_gate": 0.9904850666282489,
+      "joint_gate": 0.9904850666282489
+    },
+    {
+      "spatial_mode": "spatial_null",
+      "spectral_mode": "msi_null",
+      "lr_energy": 2.3701605094112577e-35,
+      "msi_energy": 1.2992868088510848e-33,
+      "joint_energy": 1.3229884139451973e-33,
+      "msi_only_gate": 1.2992868088510848e-30,
+      "joint_gate": 1.3229884139451973e-30
+    }
+  ],
+  "restricted_joint_eigenvalues": [
+    3.1387656711989716e-34,
+    0.015625,
+    0.10356939695761579,
+    0.12025150477489611
+  ],
+  "rotation_invariance_max_error": 1.5998313784848505e-14,
+  "conclusion": "MSI-only support can suppress a coarse spectral mode that LR-HSI observes. Joint-null perturbations remain unobservable. Neither gate is a proof of reconstruction accuracy."
+}

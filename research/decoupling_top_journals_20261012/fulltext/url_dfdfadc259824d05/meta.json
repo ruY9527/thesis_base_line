@@ -1,0 +1,29 @@
+{
+  "canonical_id": "url:dfdfadc259824d05",
+  "source": "",
+  "format": "",
+  "status": "failed",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": null,
+  "parsed_path": null,
+  "parser": null,
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "http 503"
+    }
+  ],
+  "note": "All sources failed and no abstract was retrievable",
+  "parsed_lines": null,
+  "parsed_chars": null,
+  "sentinel": null,
+  "read_plan": [],
+  "figures": [],
+  "parser_used_ocr": null
+}

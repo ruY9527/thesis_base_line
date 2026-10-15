@@ -1,0 +1,57 @@
+{
+  "status": "numeric_preflight_passed",
+  "evidence_class": "exploratory_algebra_only",
+  "new_network_training": false,
+  "uses_natural_data": false,
+  "seed": 20261006,
+  "quartet_families_checked": 5,
+  "operator": {
+    "R_shape": [
+      3,
+      31
+    ],
+    "D_shape": [
+      4,
+      256
+    ],
+    "side": 16,
+    "scale": 8,
+    "kernel": 8,
+    "sigma": 3,
+    "boundary": "symm",
+    "sampling": "0::8"
+  },
+  "same_observations_distinct_truths_max_error": 1.558798106547688e-17,
+  "nonzero_joint_target_norm_range": [
+    0.06909359646250178,
+    0.09407057865151315
+  ],
+  "restricted_family_oracle_max_error": 3.3306690738754696e-16,
+  "oracle_extra_information": [
+    "fixed known w",
+    "fixed known mu",
+    "fixed known t0",
+    "assumed multiplicative generator; no added joint-null component"
+  ],
+  "best_additive_balanced_quartet_mean_squared_frobenius_error_range": [
+    0.0002983703170076899,
+    0.0005530796104894082
+  ],
+  "additive_target_mixed_response_max_abs": 5.551115123125783e-17,
+  "orthogonal_features_dot": 0.0,
+  "orthogonal_features_downstream_product": 6.0,
+  "constant_anti_aligned_head_cosine": -1.0,
+  "constant_head_sample_variance": 0.0,
+  "common_output_drift_full_mae": 0.01,
+  "common_output_drift_mixed_error": 0.0,
+  "mix_loss_information_relation": "Mixed error is e11-e10-e01+e00; its L1 is bounded by the sum of full L1 errors. It adds emphasis, not independent target information.",
+  "source_utils_sha256": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944",
+  "interpretation": [
+    "An unrestricted observation inverse cannot distinguish the null-space collision.",
+    "A stated restricted family prior makes a joint target recoverable in this toy family.",
+    "An additive comparator can win on a truly additive target.",
+    "Orthogonality does not imply absence of functional interaction.",
+    "Geometric head separation alone does not establish noncollapsed semantic roles.",
+    "No architecture effect, natural PSNR/RMSE/SAM gain or novelty is established."
+  ]
+}

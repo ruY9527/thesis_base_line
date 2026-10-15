@@ -1,0 +1,49 @@
+{
+  "canonical_id": "doi:10.1016/j.patcog.2026.113592",
+  "source": "",
+  "format": "",
+  "status": "failed",
+  "title": "High-frequency geometry enhanced graph attention network for hyperspectral and multispectral image fusion",
+  "year": 2026,
+  "doi": "10.1016/j.patcog.2026.113592",
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": null,
+  "parsed_path": null,
+  "parser": null,
+  "abstract": null,
+  "tried": [
+    {
+      "step": "unpaywall",
+      "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+    },
+    {
+      "step": "openalex",
+      "outcome": "no oa"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    },
+    {
+      "step": "crossref",
+      "outcome": "no pdf link"
+    },
+    {
+      "step": "doi_landing",
+      "outcome": "http 200"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    }
+  ],
+  "note": "All sources failed and no abstract was retrievable",
+  "parsed_lines": null,
+  "parsed_chars": null,
+  "sentinel": null,
+  "read_plan": [],
+  "figures": [],
+  "parser_used_ocr": null
+}

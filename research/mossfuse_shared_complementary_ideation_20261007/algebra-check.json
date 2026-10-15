@@ -1,0 +1,96 @@
+{
+  "scope": "Algebra-only; no training, no natural-scene diagnostic. U consists of signed variation directions, not measured endmembers.",
+  "source_R": "utils.py:create_F extracted via AST without importing module/global CUDA side effects",
+  "R_rank": 3,
+  "first_two_rows_rank": 2,
+  "equal_rank_examples": [
+    {
+      "epsilon": 1.0,
+      "rank_U": 2,
+      "rank_RU": 2,
+      "minimum_singular_value": 0.26792085588699754,
+      "condition_number": 1.2042442141861989
+    },
+    {
+      "epsilon": 0.1,
+      "rank_U": 2,
+      "rank_RU": 2,
+      "minimum_singular_value": 0.026792085588699752,
+      "condition_number": 12.04244214186199
+    },
+    {
+      "epsilon": 0.01,
+      "rank_U": 2,
+      "rank_RU": 2,
+      "minimum_singular_value": 0.002679208558869971,
+      "condition_number": 120.42442141862008
+    }
+  ],
+  "reproduction": {
+    "U": "SVD R; U=[v0, epsilon*v1+sqrt(1-epsilon^2)*v3]; v3 is null direction.",
+    "noncommuting_input_X": [
+      [
+        0.2,
+        0.6,
+        0.4,
+        0.8
+      ],
+      [
+        0.5,
+        0.1,
+        0.9,
+        0.3
+      ]
+    ],
+    "D1": [
+      [
+        0.5,
+        0.5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0.5,
+        0.5
+      ]
+    ],
+    "D2": [
+      [
+        0.8,
+        0.2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0.2,
+        0.8
+      ]
+    ],
+    "R_toy": [
+      [
+        0.6,
+        0.4
+      ]
+    ]
+  },
+  "noncommuting": {
+    "RL": [
+      [
+        0.408,
+        0.528
+      ]
+    ],
+    "DM": [
+      [
+        0.36,
+        0.6
+      ]
+    ],
+    "max_abs_difference": 0.07199999999999995,
+    "same_D_difference": 1.1102230246251565e-16
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "canonical_id": "arxiv:2603.11530",
+  "source": "",
+  "format": "",
+  "status": "abstract_only",
+  "title": "Blind Hyperspectral and Multispectral Images Fusion: A Unified Tensor Fusion Framework from Coupled Inverse Problem Perspective",
+  "year": 2026,
+  "doi": null,
+  "arxiv_id": "2603.11530",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": null,
+  "parsed_path": null,
+  "parser": null,
+  "abstract": "Hyperspectral and multispectral images fusion aims at integrating a low-resolution hyperspectral image (LR-HSI) and a high-resolution multispectral image (HR-MSI) to construct a high-resolution hyperspectral image (HR-HSI). It is generally assumed that spatial blurring operator and spectral response operator are prior-known. However, such an assumption is extremely restrictive in practice. To overcome this limitation, this paper formulates blind fusion as a coupled inverse problem, integrating blind deconvolution in the spatial domain with blind unmixing in the spectral domain. From this novel perspective, we propose a unified tensor fusion framework capable of flexible self-adjustment and real-time fusion without pre-training. We further introduce an optimization model for the joint estimation of the target HR-HSI, the spatial point spread function, and the spectral response function. To solve this model, we devise a partially linearized alternating direction method of multipliers (ADMM) algorithm with Moreau envelope smoothing, accompanied by the rigorous convergence analysis. An initialization estimator tailored to the specific characteristics of the fusion problem is proposed. Numerical comparisons with state-of-the-art methods on both synthetic and real-world datasets demonstrate the compelling performance of the proposed method.",
+  "tried": [
+    {
+      "step": "arxiv_html",
+      "outcome": "http 404"
+    },
+    {
+      "step": "arxiv_pdf",
+      "outcome": "pdf parse failed"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    }
+  ],
+  "note": "All full-text sources failed; abstract retrieved from Semantic Scholar",
+  "parsed_lines": null,
+  "parsed_chars": null,
+  "sentinel": null,
+  "read_plan": [],
+  "figures": [],
+  "parser_used_ocr": null
+}

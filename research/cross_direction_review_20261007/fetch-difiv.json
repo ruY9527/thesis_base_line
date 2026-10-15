@@ -1,0 +1,37 @@
+{
+  "name": "difiv",
+  "identifier": "https://www.cedric-richard.fr/Articles/wang2023deep.pdf",
+  "canonical_id": "url:4db410cd0a0fae61",
+  "source": "direct_url",
+  "format": "pdf",
+  "status": "ok",
+  "title": null,
+  "year": null,
+  "doi": null,
+  "arxiv_id": null,
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_4db410cd0a0fae61\\raw.pdf",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_4db410cd0a0fae61\\parsed.md",
+  "parser": "pypdf fallback; page markers retained",
+  "abstract": null,
+  "tried": [
+    {
+      "step": "direct_url",
+      "outcome": "ok pdf"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 1545,
+  "parsed_chars": 70943,
+  "sentinel": "20dec1dde813",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_4db410cd0a0fae61\\parsed.md",
+      "offset": 0,
+      "limit": 1545
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": false
+}

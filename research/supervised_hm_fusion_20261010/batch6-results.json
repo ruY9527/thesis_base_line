@@ -1,0 +1,80 @@
+[
+  {
+    "id": "hsc_repo",
+    "requested_url": "https://api.github.com/repos/1318133/HSC-Sampling/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/1318133/HSC-Sampling/git/trees/main?recursive=1",
+    "content_type": "application/json; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\hsc_repo\\source.json",
+    "bytes": 8886,
+    "sha256": "6b1a62e0e76958a852d8aa66660c08b5fb43bee81fc071e37a06c99a7b9a53a8",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "srlf_repo",
+    "requested_url": "https://api.github.com/repos/YuanyeLiu/SRLF-Net/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/YuanyeLiu/SRLF-Net/git/trees/main?recursive=1",
+    "content_type": "application/json; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf_repo\\source.json",
+    "bytes": 2861,
+    "sha256": "af622f62a4137283124eba39eb39821e4aa77552912c200fb03bfb3bd6ce44b5",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "nud_train_real",
+    "requested_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_real.py",
+    "final_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_real.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_train_real\\source.html",
+    "bytes": 5079,
+    "sha256": "e9312b72252cc217ede978f683ffdd286119aaf9ad94751e4dc8f9b571d36992",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "nud_train_syn",
+    "requested_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_syn.py",
+    "final_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/PAF/main_fus_syn.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_train_syn\\source.html",
+    "bytes": 4669,
+    "sha256": "6f223427175ad8125cd6ee3e251f28afef684de36793ce5bd25fe4e0649ae019",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "nud_readme",
+    "requested_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/README.md",
+    "final_url": "https://raw.githubusercontent.com/jeline0110/NUD_PAF/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_readme\\source.html",
+    "bytes": 4243,
+    "sha256": "8105f0f737f363cf50053c6f78e3cbefac82bcf6ca32c4b58527f2620aab7e4b",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "srlf_supp",
+    "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liu_A_Selective_Re-learning_CVPR_2025_supplemental.pdf",
+    "final_url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liu_A_Selective_Re-learning_CVPR_2025_supplemental.pdf",
+    "content_type": "application/pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf_supp\\source.pdf",
+    "bytes": 4342393,
+    "sha256": "5b3a74ff593bd1c868db411116923b0568fc1a1851a57f473e1851daf56b4280",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "pages": 4
+  },
+  {
+    "id": "emr_trainer",
+    "requested_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/model/ResShift_model.py",
+    "final_url": "https://raw.githubusercontent.com/luocz55/EMR-Diff/main/model/ResShift_model.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emr_trainer\\source.html",
+    "bytes": 14094,
+    "sha256": "60b94f2bd5147508c0159056fd9ce1af483b2a91bbc84e8931ee2d89aab68ba3",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  }
+]

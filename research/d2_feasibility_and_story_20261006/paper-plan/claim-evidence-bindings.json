@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "d2-exploratory-interface-20261006",
+  "identity_version": 1,
+  "status": "draft",
+  "claims": [
+    {
+      "paper_claim_id": "PC0",
+      "claim": "近期已有角色解耦、空间光谱组合与协同训练，通用交互不是空白。",
+      "claim_type": "context",
+      "evidence_mode": "citation",
+      "support_status": "supported",
+      "manuscript_action": "assert",
+      "required_assurance_class": "none",
+      "source_claim_ids": [],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [],
+      "planned_sections": [
+        "Introduction",
+        "Related Work"
+      ],
+      "exhibit_ids": [],
+      "citation_need_ids": [
+        "CN1",
+        "CN2",
+        "CN3"
+      ],
+      "limitations": [
+        "定向覆盖，不是穷尽综述。"
+      ],
+      "missing_evidence": [],
+      "scope": "已声明先验和算子中的受控任务及CAVE探索性自然评估",
+      "rationale": "引用或解析限制不代替经验收益。"
+    },
+    {
+      "paper_claim_id": "PC1",
+      "claim": "特定分离接口在合理设置下影响正确联合响应。",
+      "claim_type": "primary",
+      "evidence_mode": "empirical",
+      "support_status": "blocked",
+      "manuscript_action": "omit",
+      "required_assurance_class": "exploratory",
+      "source_claim_ids": [
+        "C1"
+      ],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [],
+      "planned_sections": [
+        "Introduction",
+        "Methods"
+      ],
+      "exhibit_ids": [
+        "F1",
+        "F2"
+      ],
+      "citation_need_ids": [
+        "CN1",
+        "CN3"
+      ],
+      "limitations": [
+        "没有网络结果；只在声明先验和容量范围提出假设。"
+      ],
+      "missing_evidence": [
+        "B2/B3实际运行、角色非塌缩与强对照审计。"
+      ],
+      "scope": "已声明先验和算子中的受控任务及CAVE探索性自然评估",
+      "rationale": "经验主张无同scope审计，不能assert；仅计划检验。"
+    },
+    {
+      "paper_claim_id": "PC2",
+      "claim": "内部组合训练超越同数据普通训练，并改善自然PSNR/RMSE/SAM。",
+      "claim_type": "supporting",
+      "evidence_mode": "empirical",
+      "support_status": "blocked",
+      "manuscript_action": "omit",
+      "required_assurance_class": "exploratory",
+      "source_claim_ids": [
+        "C2"
+      ],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [],
+      "planned_sections": [
+        "Introduction",
+        "Methods"
+      ],
+      "exhibit_ids": [
+        "F3",
+        "F4"
+      ],
+      "citation_need_ids": [
+        "CN2",
+        "CN3"
+      ],
+      "limitations": [
+        "没有自然新指标；不保证跨尺度与跨先验泛化。"
+      ],
+      "missing_evidence": [
+        "B4/B5配对种子与场景结果、成本与结果审计。"
+      ],
+      "scope": "已声明先验和算子中的受控任务及CAVE探索性自然评估",
+      "rationale": "经验主张无同scope审计，不能assert；仅计划检验。"
+    },
+    {
+      "paper_claim_id": "PC3",
+      "claim": "联合零空间存在同观测不同真值，只能在声明结构先验内讨论恢复。",
+      "claim_type": "limitation",
+      "evidence_mode": "theoretical",
+      "support_status": "supported",
+      "manuscript_action": "limitation",
+      "required_assurance_class": "none",
+      "source_claim_ids": [],
+      "audit_ids": [],
+      "audit_exclusions": [],
+      "evidence_artifacts": [
+        "research/d2_feasibility_and_story_20261006/d2_feasibility_steps_motivation_story.md",
+        "research/d2_feasibility_and_story_20261006/preflight-results.json"
+      ],
+      "planned_sections": [
+        "Introduction",
+        "Methods"
+      ],
+      "exhibit_ids": [
+        "F0"
+      ],
+      "citation_need_ids": [],
+      "limitations": [
+        "程序样本检查不证明自然恢复；受限oracle知道生成常量。"
+      ],
+      "missing_evidence": [],
+      "scope": "已声明先验和算子中的受控任务及CAVE探索性自然评估",
+      "rationale": "引用或解析限制不代替经验收益。"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  [
+    "tip_tpami_census",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(ISSN%3A1057-7149%20OR%20ISSN%3A0162-8828)%20AND%20(hyperspectral%20AND%20(fusion%20OR%20super-resolution))%20AND%20FIRST_PDATE%3A%5B2025-01-01%20TO%202026-10-10%5D&format=json&resultType=core&pageSize=100",
+    "json"
+  ],
+  [
+    "cvpr2025",
+    "https://openaccess.thecvf.com/CVPR2025?day=all",
+    "index"
+  ],
+  [
+    "iccv2025",
+    "https://openaccess.thecvf.com/ICCV2025?day=all",
+    "index"
+  ],
+  [
+    "bhsr_modules",
+    "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/modules.py",
+    "text"
+  ],
+  [
+    "bhsr_loss",
+    "https://raw.githubusercontent.com/Dou0405/BHSR-Net/main/loss.py",
+    "text"
+  ],
+  [
+    "nud_repo",
+    "https://api.github.com/repos/jeline0110/NUD_PAF/git/trees/main?recursive=1",
+    "json"
+  ]
+]

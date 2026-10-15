@@ -1,0 +1,24 @@
+{
+  "decision": "proceed_to_experiment_plan",
+  "selected_idea_ids": [
+    "I13"
+  ],
+  "confidence": "low",
+  "novelty_check_status": "reviewed",
+  "rationale": "只有窄收益监督假设进入探索试验；原始置信度回退与歧义分解被否定，传感器路线降为储备。",
+  "next_skill": "research-experiment-plan",
+  "required_handoffs": [
+    "research-report.md section 5",
+    "novelty-review/novelty-decision.json",
+    "baseline-snapshot.json",
+    "prior-art threats Q1-Q3",
+    "outcome-independent exploratory pilot; no trained results"
+  ],
+  "limits": [
+    "novelty self-review, not independent",
+    "not an exhaustive systematic review",
+    "missing CoPGNet/BUGPan full texts",
+    "no GPU training",
+    "not confirmatory or route-ready"
+  ]
+}

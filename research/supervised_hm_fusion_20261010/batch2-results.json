@@ -1,0 +1,113 @@
+[
+  {
+    "id": "onehsi",
+    "requested_url": "https://eccv.ecva.net/virtual/2026/poster/4477",
+    "final_url": "https://eccv.ecva.net/virtual/2026/poster/4477",
+    "content_type": "text/html; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\onehsi\\source.html",
+    "bytes": 69889,
+    "sha256": "34ac5801b90a2687cbb2134dbc71207576fd2b3f3e21237133b53f3906c25c6e",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "lgdnet",
+    "requested_url": "https://eccv.ecva.net/virtual/2026/poster/3288",
+    "final_url": "https://eccv.ecva.net/virtual/2026/poster/3288",
+    "content_type": "text/html; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\lgdnet\\source.html",
+    "bytes": 69740,
+    "sha256": "1017335065cf24123e32a8c882c781d7757c286c0606567453ea73ee24f6c283",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "emrdiff_repo",
+    "requested_url": "https://api.github.com/repos/luocz55/EMR-Diff/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/luocz55/EMR-Diff/git/trees/main?recursive=1",
+    "content_type": "application/json; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\emrdiff_repo\\source.json",
+    "bytes": 8310,
+    "sha256": "46e5ceabfc66be271d1c4c2a1eda5141d09a4e729e20641428f6f099f55d3da6",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "bhsr_repo",
+    "requested_url": "https://api.github.com/repos/Dou0405/BHSR-Net/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/Dou0405/BHSR-Net/git/trees/main?recursive=1",
+    "content_type": "application/json; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\bhsr_repo\\source.json",
+    "bytes": 5066,
+    "sha256": "334665da387c5acc1b72765e6d696a23e709705190edbcee17d8cc681721febe",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "diffdiff_repo",
+    "requested_url": "https://api.github.com/repos/Ruijie2580/DifferentialDiff/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/Ruijie2580/DifferentialDiff/git/trees/main?recursive=1",
+    "content_type": "application/json; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\diffdiff_repo\\source.json",
+    "bytes": 419,
+    "sha256": "ecc755070d02dcba0c2c3932c94cbd35791eeb95d2c7417adfe7b2cff0e276ec",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "irarf_repo",
+    "requested_url": "https://raw.githubusercontent.com/Jiahuiqu/IR-ArF/main/train.py",
+    "final_url": "https://raw.githubusercontent.com/Jiahuiqu/IR-ArF/main/train.py",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\irarf_repo\\source.html",
+    "bytes": 15065,
+    "sha256": "7bf75f96dedbde4cc9e4dd5b8c4cb4f92bdc0f86d853efe23e35e2548929fd1f",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  },
+  {
+    "id": "gewdiff",
+    "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/37978/41940",
+    "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/37978/41940",
+    "content_type": "application/pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\gewdiff\\source.pdf",
+    "bytes": 11649823,
+    "sha256": "07a7b454a0e09277aa0051d3368fa37259a04f2d84f995ffc514a53c0cc01a80",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "pages": 9
+  },
+  {
+    "id": "nud_crossref",
+    "requested_url": "https://api.crossref.org/works?query.title=Building%20Non-Uniform%20Degradation%20Model%20for%20Position-Aware%20Hyperspectral%20Image%20Fusion&rows=2",
+    "final_url": "https://api.crossref.org/works?query.title=Building%20Non-Uniform%20Degradation%20Model%20for%20Position-Aware%20Hyperspectral%20Image%20Fusion&rows=2",
+    "content_type": "application/json",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\nud_crossref\\source.json",
+    "bytes": 20991,
+    "sha256": "35a69c7ad7c3a8699c55ca10bf9d64086f8a7ba2ba8d073f6dabf88655ce7547",
+    "status": "ok",
+    "retrieved_on": "2026-10-10",
+    "matches": [
+      {
+        "title": [
+          "Building Non-Uniform Degradation Model for Position-Aware Hyperspectral Image Fusion"
+        ],
+        "DOI": "10.1109/tpami.2025.3604234",
+        "container-title": [
+          "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+        ],
+        "published-online": null
+      },
+      {
+        "title": [
+          "Blur-Resistant Hyperspectral Image Super-Resolution via Dual-Degradation Fusion Model"
+        ],
+        "DOI": "10.1109/tip.2026.3714832",
+        "container-title": [
+          "IEEE Transactions on Image Processing"
+        ],
+        "published-online": null
+      }
+    ]
+  }
+]

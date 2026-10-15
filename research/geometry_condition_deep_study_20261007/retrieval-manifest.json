@@ -1,0 +1,249 @@
+[
+  {
+    "name": "sdp",
+    "identifier": "10.1016/j.knosys.2026.116227",
+    "status": "failed",
+    "parsed_path": null,
+    "parsed_lines": null,
+    "parsed_chars": null,
+    "sentinel": null,
+    "source": "",
+    "read_plan": [],
+    "tried": [
+      {
+        "step": "unpaywall",
+        "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+      },
+      {
+        "step": "openalex",
+        "outcome": "no oa"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      },
+      {
+        "step": "crossref",
+        "outcome": "no pdf link"
+      },
+      {
+        "step": "doi_landing",
+        "outcome": "http 200"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ]
+  },
+  {
+    "name": "ggat",
+    "identifier": "10.1016/j.patcog.2026.113592",
+    "status": "failed",
+    "parsed_path": null,
+    "parsed_lines": null,
+    "parsed_chars": null,
+    "sentinel": null,
+    "source": "",
+    "read_plan": [],
+    "tried": [
+      {
+        "step": "unpaywall",
+        "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+      },
+      {
+        "step": "openalex",
+        "outcome": "no oa"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      },
+      {
+        "step": "crossref",
+        "outcome": "no pdf link"
+      },
+      {
+        "step": "doi_landing",
+        "outcome": "http 200"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ]
+  },
+  {
+    "name": "clorf",
+    "identifier": "arxiv:2405.17818",
+    "status": "ok",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_2405.17818\\parsed.md",
+    "parsed_lines": 2267,
+    "parsed_chars": 91972,
+    "sentinel": "f844f69e099d",
+    "source": "arxiv_html",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_2405.17818\\parsed.md",
+        "offset": 0,
+        "limit": 2000
+      },
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_2405.17818\\parsed.md",
+        "offset": 2000,
+        "limit": 267
+      }
+    ],
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "no oa pdf"
+      }
+    ]
+  },
+  {
+    "name": "hysure",
+    "identifier": "arxiv:1411.4005",
+    "status": "ok",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1411.4005\\parsed.md",
+    "parsed_lines": 1100,
+    "parsed_chars": 104653,
+    "sentinel": "ae722f549f12",
+    "source": "semantic_scholar_oa",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1411.4005\\parsed.md",
+        "offset": 0,
+        "limit": 1100
+      }
+    ],
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar_oa",
+        "outcome": "ok pdf"
+      }
+    ]
+  },
+  {
+    "name": "stereo",
+    "identifier": "arxiv:1804.05307",
+    "status": "ok",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1804.05307\\parsed.md",
+    "parsed_lines": 14,
+    "parsed_chars": 313,
+    "sentinel": "5a8241f4a6ea",
+    "source": "arxiv_html",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1804.05307\\parsed.md",
+        "offset": 0,
+        "limit": 14
+      }
+    ],
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ]
+  },
+  {
+    "name": "local_unmix",
+    "identifier": "10.1109/TGRS.2017.2718728",
+    "status": "failed",
+    "parsed_path": null,
+    "parsed_lines": null,
+    "parsed_chars": null,
+    "sentinel": null,
+    "source": "",
+    "read_plan": [],
+    "tried": [
+      {
+        "step": "unpaywall",
+        "outcome": "skipped (set UNPAYWALL_EMAIL or OPENALEX_EMAIL)"
+      },
+      {
+        "step": "openalex",
+        "outcome": "no oa"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      },
+      {
+        "step": "crossref",
+        "outcome": "no pdf link"
+      },
+      {
+        "step": "doi_landing",
+        "outcome": "http 202"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ]
+  },
+  {
+    "name": "dtv",
+    "identifier": "arxiv:1710.05705",
+    "status": "ok",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1710.05705\\parsed.md",
+    "parsed_lines": 901,
+    "parsed_chars": 60703,
+    "sentinel": "a4aac5004727",
+    "source": "arxiv_html",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\arxiv_1710.05705\\parsed.md",
+        "offset": 0,
+        "limit": 901
+      }
+    ],
+    "tried": [
+      {
+        "step": "try_arxiv",
+        "outcome": "exception: bad escape \\c at position 8"
+      },
+      {
+        "step": "semantic_scholar",
+        "outcome": "http 429"
+      }
+    ]
+  },
+  {
+    "name": "sa_rfm",
+    "identifier": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26df/zhang26df.pdf",
+    "status": "ok",
+    "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\url_9b543176ba2eb748\\parsed.md",
+    "parsed_lines": 1737,
+    "parsed_chars": 108083,
+    "sentinel": "4b86a82f8070",
+    "source": "direct_url",
+    "read_plan": [
+      {
+        "path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\fulltext\\url_9b543176ba2eb748\\parsed.md",
+        "offset": 0,
+        "limit": 1737
+      }
+    ],
+    "tried": [
+      {
+        "step": "direct_url",
+        "outcome": "ok pdf"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "kind": "analytic_synthetic_counterexample_not_training",
+  "spectral_operator": "exact create_F literal, row normalized",
+  "spatial_operator": "illustrative 16x16 to 2x2 block average x8; NOT baseline Gaussian",
+  "rank_R": 3,
+  "dim_null_R": 28,
+  "max_R_delta": 2.752427915216534e-18,
+  "max_delta_Dt": 2.168404344971009e-19,
+  "max_MSI_difference": 2.220446049250313e-16,
+  "max_LR_difference": 3.3306690738754696e-16,
+  "HR_RMSE_difference": 0.0036471893525707997,
+  "range_left": [
+    0.35,
+    0.5400384935348972
+  ],
+  "range_right": [
+    0.4599615064651028,
+    0.65
+  ],
+  "conclusion": "identical dual observations can correspond to distinct bounded HR cubes; residual alone cannot certify truth",
+  "limits": "synthetic spectra are not asserted to be real materials; no new theorem, no trained performance or calibrated coverage"
+}

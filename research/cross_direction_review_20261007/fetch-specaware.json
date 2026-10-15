@@ -1,0 +1,46 @@
+{
+  "name": "specaware",
+  "identifier": "https://arxiv.org/pdf/2510.27219",
+  "canonical_id": "arxiv:2510.27219",
+  "source": "arxiv_html",
+  "format": "html",
+  "status": "ok",
+  "title": "SpecAware: A Spectral-Content Aware Foundation Model for Unifying Multi-Sensor Learning in Hyperspectral Remote Sensing Mapping",
+  "year": 2025,
+  "doi": null,
+  "arxiv_id": "2510.27219",
+  "pmid": null,
+  "pmcid": null,
+  "raw_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\raw.html",
+  "parsed_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\parsed.md",
+  "parser": "html",
+  "abstract": "Hyperspectral imaging (HSI) is a critical technique for fine-grained land-use and land-cover (LULC) mapping. However, the inherent heterogeneity of HSI data, particularly the variation in spectral channels across sensors, has long constrained the development of model generalization via transfer learning or joint training. Existing HSI foundation models show promise for different downstream tasks, but typically underutilize the critical guiding role of sensor meta-attributes and image semantic features, resulting in limited adaptability to cross-sensor joint learning. To address these issues, we propose SpecAware, which is a novel hyperspectral spectral-content aware foundation model for unifying multi-sensor learning for HSI mapping. To support this work, we constructed the Hyper-400K dataset, which is a new large-scale pre-training dataset with over 400\\,k high-quality patches from diverse airborne AVIRIS sensors that cover two data processing levels (L1 and L2). The core of SpecAware is a hypernetwork-driven unified image embedding process for HSI data. Firstly, we designed a meta-content aware module to generate a unique conditional input for each HSI sample, tailored to each spectral band by fusing the sensor meta-attributes and its own image content. Secondly, we designed the HyperEmbedding module, where a sample-conditioned hypernetwork dynamically generates a pair of matrix factors for channel-wise encoding. This process implements two-step matrix factorization, consisting of adaptive spatial pattern extraction and latent semantic feature projection, yielding a unified hyperspectral token representation. Thus, SpecAware learns to capture and interpret spatial-spectral features across diverse scenes and sensors, enabling adaptive processing of variable spectral channels within a unified multi-sensor joint pre-training framework.",
+  "tried": [
+    {
+      "step": "try_arxiv",
+      "outcome": "exception: bad escape \\c at position 8"
+    },
+    {
+      "step": "semantic_scholar",
+      "outcome": "http 429"
+    }
+  ],
+  "note": null,
+  "parsed_lines": 2892,
+  "parsed_chars": 109905,
+  "sentinel": "709b41987850",
+  "read_plan": [
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\parsed.md",
+      "offset": 0,
+      "limit": 2000
+    },
+    {
+      "path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\arxiv_2510.27219\\parsed.md",
+      "offset": 2000,
+      "limit": 892
+    }
+  ],
+  "figures": [],
+  "parser_used_ocr": null
+}

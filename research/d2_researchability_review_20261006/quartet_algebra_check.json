@@ -1,0 +1,49 @@
+{
+  "status": "algebraic_checks_passed",
+  "evidence_class": "synthetic_numeric_algebra_check_only",
+  "uses_real_hsi_data": false,
+  "network_training_or_evaluation": false,
+  "seed": 20261006,
+  "source_utils_sha256": "74198fdb7468cf441175c84ab8d6da41d80aa56265ef697d5f16cea23744d944",
+  "operator": {
+    "R_shape": [
+      3,
+      31
+    ],
+    "R_rank": 3,
+    "D_shape": [
+      4,
+      256
+    ],
+    "D_rank": 4,
+    "patch_side": 16,
+    "scale": 8,
+    "psf_size": 8,
+    "sigma": 3,
+    "boundary": "symm",
+    "mode": "same",
+    "sampling": "[0::8,0::8]"
+  },
+  "errors": {
+    "spectral_null_max_abs": 3.0357660829594124e-18,
+    "spatial_null_max_abs": 2.6020852139652106e-18,
+    "hsi_unchanged_under_spatial_factor_max_abs": 3.3306690738754696e-16,
+    "msi_unchanged_under_spectral_factor_max_abs": 3.3306690738754696e-16,
+    "mixed_response_identity_max_abs": 1.0505919051384538e-16,
+    "mixed_response_spectral_measurement_max_abs": 2.6526704300544068e-17,
+    "mixed_response_spatial_measurement_max_abs": 5.3139458978945786e-17
+  },
+  "nonzero_responses": {
+    "hsi_spectral_factor_norm": 0.08742987076777801,
+    "msi_spatial_factor_norm": 0.03090043858996973,
+    "mixed_output_norm": 0.06803127360605368,
+    "mixed_output_max_abs": 0.006000000000000005,
+    "cube_min": 0.3925218350940757,
+    "cube_max": 0.44045173762386813
+  },
+  "limitations": [
+    "Procedural spectra and patterns, not natural-image validation.",
+    "Joint-null interaction is specified by the generator's mixing prior, not uniquely identified by R and D.",
+    "Does not establish loss-induced damage, novelty, PSNR, RMSE, or SAM improvement."
+  ]
+}

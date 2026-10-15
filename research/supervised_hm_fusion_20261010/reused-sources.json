@@ -1,0 +1,23 @@
+[
+  {
+    "id": "srlf",
+    "original_local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_d592a59bf26e9693\\raw.pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+    "sha256": "cad1f047916b146817526efc2e8f898db8af0bfdc87599bb45ddf05cd1b146a9",
+    "retrieval": "Existing local official PDF reused; venue/identity rechecked 2026-10-10."
+  },
+  {
+    "id": "uafl",
+    "original_local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_2bb5993df40328fd\\raw.pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\uafl\\source.pdf",
+    "sha256": "65d8e849d6f44818cf4baa9e1366b7a588aeefbd64b351e0dffee604f15d7c42",
+    "retrieval": "Existing local official PDF reused; venue/identity rechecked 2026-10-10."
+  },
+  {
+    "id": "pino",
+    "original_local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\cross_direction_review_20261007\\fulltext\\url_f2374da1c30123d5\\raw.pdf",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\pino\\source.pdf",
+    "sha256": "cc80de9d212f381ecb953cedb3c757b3654bb2ef5cfcf93651a9ef38071c5664",
+    "retrieval": "Existing local official PDF reused; venue/identity rechecked 2026-10-10."
+  }
+]

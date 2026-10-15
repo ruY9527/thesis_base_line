@@ -1,0 +1,25 @@
+{
+  "output_language":"zh-CN",
+  "reviewer":"model",
+  "review_stage":"final_readability_review",
+  "note_sha256":"30dcd464ba3593aa3ef96c53417d7d610ddf2bf1da05f2950a83963a635d35cc",
+  "passes_readability_review":true,
+  "checks":{
+    "language_profile_zh_CN_only":true,
+    "metadata_and_canonical_section_order":true,
+    "faithful_abstract_meaning_without_hindsight":true,
+    "four_step_mechanism_has_inputs_operations_and_destinations":true,
+    "technical_terms_are_defined_and_formulas_are_explained":true,
+    "tables_replace_unwieldy_numeric_prose":true,
+    "interpretation_and_unvalidated_hypotheses_are_distinguishable":true,
+    "no_machine_translation_fragments":true
+  },
+  "review_findings":[
+    "开头明确本篇记号，避免与 EMR-Diff 中 X/Y/Z 含义混淆。",
+    "四步流程与评分、特征实现、实验、解释依次衔接，图表位于相应论证附近。",
+    "普通性能改善、效率、真实适应性和抗过拟合主张分别讨论，读者能辨别证据力度。",
+    "长数字比较已转为小表，剩余段落均有明确主题，没有需要进一步修改的行文问题。"
+  ],
+  "warnings":[],
+  "edits_made":false
+}

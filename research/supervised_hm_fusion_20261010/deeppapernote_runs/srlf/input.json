@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "source_type": "seed_record",
+  "title": "A Selective Re-learning Mechanism for Hyperspectral Fusion Imaging",
+  "translated_title": "用于高光谱融合成像的选择性再学习机制",
+  "authors": ["Yuanye Liu", "Jinyang Liu", "Renwei Dian", "Shutao Li"],
+  "year": "2025",
+  "venue": "CVPR 2025, pp. 7437–7446",
+  "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.html",
+  "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_A_Selective_Re-learning_Mechanism_for_Hyperspectral_Fusion_Imaging_CVPR_2025_paper.pdf",
+  "local_pdf_path": "D:/coding/github_self/thesis_base_line/research/supervised_hm_fusion_20261010/sources/srlf/source.pdf",
+  "metadata_sources": ["official_cvf_landing_page", "official_cvf_pdf_first_page"],
+  "abstract": "Hyperspectral fusion imaging is challenged by high computational cost due to the abundant spectral information. We find that pixels in regions with smooth spatial-spectral structure can be reconstructed well using a shallow network, while only those in regions with complex spatial-spectral structure require a deeper network. However, existing methods process all pixels uniformly, which ignores this property. To leverage this property, we propose a Selective Re-learning Fusion Network (SRLF) that initially extracts features from all pixels uniformly and then selectively refines distorted feature points. Specifically, SRLF first employs a Preliminary Fusion Module with robust global modeling capability to generate a preliminary fusion feature. Afterward, it applies a Selective Re-learning Module to focus on improving distorted feature points in the preliminary fusion feature. To achieve targeted learning, we present a novel Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SSG-SRL) that integrates the observation model to identify the feature points with spatial or spectral distortions. Only these distorted points are sent to the corresponding re-learning blocks, reducing both computational cost and the risk of overfitting. Finally, we develop an SRLF-Net, composed of multiple cascaded SRLFs, which surpasses multiple state-of-the-art methods on several datasets with minimal computational cost."
+}

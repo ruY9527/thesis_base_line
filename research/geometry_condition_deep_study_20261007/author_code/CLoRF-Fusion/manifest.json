@@ -1,0 +1,136 @@
+{
+  "repo": "wangting1907/CLoRF-Fusion",
+  "commit": "185fff41bccf4367b39a4f791c704b94268eee16",
+  "execution": "static reading only; author code not executed",
+  "files": [
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/README.md",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\README.md.txt",
+      "sha256": "de2c1d7a81677d9604ecfb73b250a31aaccdd36c1be8bf1a77e9dd1d5a2172ba",
+      "bytes": 1559,
+      "status": "ok"
+    },
+    {
+      "file": "inr/SPDER.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/SPDER.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__SPDER.py.txt",
+      "sha256": "359bc6af15244ee2dbe16a99b6581d47a4303e6648c768ec6b455aa7f51343fe",
+      "bytes": 6190,
+      "status": "ok"
+    },
+    {
+      "file": "inr/__init__.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/__init__.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr____init__.py.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "status": "ok"
+    },
+    {
+      "file": "inr/gauss.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/gauss.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__gauss.py.txt",
+      "sha256": "ed61c95d2badba5e12874f563788a4510a09271a8de1ec73581fd6bda41bdf44",
+      "bytes": 2361,
+      "status": "ok"
+    },
+    {
+      "file": "inr/lin_inverse.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/lin_inverse.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__lin_inverse.py.txt",
+      "sha256": "0faafbcbbbea73ec5fcd2d18e5fa92c85d4c92825f69fe0af905255bd9658bc3",
+      "bytes": 2640,
+      "status": "ok"
+    },
+    {
+      "file": "inr/mfn.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/mfn.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__mfn.py.txt",
+      "sha256": "bf2718e3f77d840cc98743432e7e064051b02aec0ba006b20503d08fe2475169",
+      "bytes": 2346,
+      "status": "ok"
+    },
+    {
+      "file": "inr/models.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/models.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__models.py.txt",
+      "sha256": "933536dd9da1b80ffa5fd0cdd42e93726e0d82cfe4be6ba271c22814f1348569",
+      "bytes": 2490,
+      "status": "ok"
+    },
+    {
+      "file": "inr/motion.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/motion.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__motion.py.txt",
+      "sha256": "60939e7688f6edaa27984d6d4dd32197512f12b7274c1c2aeacf1471befc5a23",
+      "bytes": 22759,
+      "status": "ok"
+    },
+    {
+      "file": "inr/relu.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/relu.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__relu.py.txt",
+      "sha256": "e8e59b07c35f60e9aea98f5cc38b846507c772d8f0569c801b092ac356d67d4d",
+      "bytes": 4754,
+      "status": "ok"
+    },
+    {
+      "file": "inr/siren.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/siren.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__siren.py.txt",
+      "sha256": "999d62006a21311aaae763b8bb6391a7ba9ecc9353a6451d044f5f24e868d672",
+      "bytes": 3546,
+      "status": "ok"
+    },
+    {
+      "file": "inr/utils.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/utils.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__utils.py.txt",
+      "sha256": "3a63efc8d649e011cffdf57e3d2fd7003b667de89cf10b99cd8bba74bcc3acb2",
+      "bytes": 7178,
+      "status": "ok"
+    },
+    {
+      "file": "inr/volutils.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/volutils.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__volutils.py.txt",
+      "sha256": "aa968e364521f16ea3afdd34bd9649ec970de11df23fb0ff509b78ea8f53b15e",
+      "bytes": 16205,
+      "status": "ok"
+    },
+    {
+      "file": "inr/wire.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/wire.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__wire.py.txt",
+      "sha256": "c3616dcf4911666c2953fd89cca9956a929c414bb29314f9173f43d1b685b59f",
+      "bytes": 4813,
+      "status": "ok"
+    },
+    {
+      "file": "inr/wire2d.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/inr/wire2d.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\inr__wire2d.py.txt",
+      "sha256": "bf08fbdc2ed79d2792a8a75d9e0c80f4bc5adc77c04fdc3dcafd0dc0c785347a",
+      "bytes": 4111,
+      "status": "ok"
+    },
+    {
+      "file": "train_tv_spatial.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/train_tv_spatial.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\train_tv_spatial.py.txt",
+      "sha256": "fcbf0f48dfd796e63fc5581655935697981060c9e132503367f1af0e4997a29c",
+      "bytes": 9462,
+      "status": "ok"
+    },
+    {
+      "file": "utils.py",
+      "url": "https://raw.githubusercontent.com/wangting1907/CLoRF-Fusion/185fff41bccf4367b39a4f791c704b94268eee16/utils.py",
+      "local_path": "D:\\coding\\github_self\\thesis_base_line\\research\\geometry_condition_deep_study_20261007\\author_code\\CLoRF-Fusion\\utils.py.txt",
+      "sha256": "75f9dccfe9b876b265c3ac548c8e6ec471252e7ac2adc72252b143628969c702",
+      "bytes": 10034,
+      "status": "ok"
+    }
+  ],
+  "paper_paths": []
+}

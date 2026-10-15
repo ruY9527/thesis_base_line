@@ -1,0 +1,3042 @@
+{
+  "status": "ok",
+  "script": "plan_figures.py",
+  "paper_id": "doi:10.1109/cvpr52734.2025.00697",
+  "output_language": "zh-CN",
+  "figure_plan": {
+    "paper_id": "doi:10.1109/cvpr52734.2025.00697",
+    "figures": [
+      {
+        "id": "Figure 2",
+        "caption": "The overview of the proposed SRLF-Net. The Embedding layer and the Refine layer are both individual convolutional layers.",
+        "kind": "method_overview",
+        "section": "机制流程",
+        "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+        "priority": 1,
+        "anchor_text": "机制流程",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_004_fig_figure_2.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_2.png",
+          "width": 630,
+          "height": 112,
+          "size_bytes": 27723,
+          "label": "Figure 2",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.0821,
+            "visual_rect_count": 32,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 0,
+            "table_body_rows": 0,
+            "caption_text_chars": 131,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 4,
+            "score": 8,
+            "matched_terms": [
+              "fig. 2",
+              "proposed",
+              "srlf-net",
+              "embedding",
+              "layer",
+              "refine"
+            ],
+            "snippet": "is the fusion result of two scale features. 3.3. Selective Re-learning Module As shown in Fig. 2, the Selective Re-learning Module con- sists of a Spatial Re-learning (Spa-RL) block, a S",
+            "images": [
+              {
+                "filename": "page_004_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_01.jpx",
+                "width": 171,
+                "height": 176,
+                "size_bytes": 3575
+              },
+              {
+                "filename": "page_004_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_02.jpx",
+                "width": 132,
+                "height": 128,
+                "size_bytes": 2042
+              },
+              {
+                "filename": "page_004_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_03.jpx",
+                "width": 102,
+                "height": 100,
+                "size_bytes": 1200
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_004_fig_figure_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_2.png",
+                "width": 630,
+                "height": 112,
+                "size_bytes": 27723,
+                "label": "Figure 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.0821,
+                  "visual_rect_count": 32,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 131,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_004_fig_figure_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_3.png",
+                "width": 796,
+                "height": 515,
+                "size_bytes": 94532,
+                "label": "Figure 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.476433,
+                  "visual_rect_count": 94,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 424,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Figure 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 3,
+            "matched_terms": [
+              "srlf-net",
+              "layer",
+              "refine"
+            ],
+            "snippet": "decreases the PSNR but also increases the FLOPs by 5.43 GFLOPs. Impact of prior C and R. SRLF-Net involves the spec- tral response function R and the spatial response function B of the ob",
+            "images": [
+              {
+                "filename": "page_008_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_01.jpx",
+                "width": 334,
+                "height": 334,
+                "size_bytes": 13401
+              },
+              {
+                "filename": "page_008_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_02.jpx",
+                "width": 370,
+                "height": 370,
+                "size_bytes": 16411
+              },
+              {
+                "filename": "page_008_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_03.jpx",
+                "width": 287,
+                "height": 287,
+                "size_bytes": 9889
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_figure_9.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9.png",
+                "width": 629,
+                "height": 230,
+                "size_bytes": 178605,
+                "label": "Figure 9",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.168313,
+                  "visual_rect_count": 54,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 114,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 409,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 2,
+            "matched_terms": [
+              "srlf-net",
+              "refine"
+            ],
+            "snippet": "y, China {yuanye liu, jinyangliu, drw, shutao li}@hnu.edu.cn https://github.com/YuanyeLiu/SRLF-Net Preliminary fusion feature Pseudo-MSI Pseudo-LRHSI High spectral fidelity Spatial re-lear",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_01.jpx",
+                "width": 165,
+                "height": 111,
+                "size_bytes": 2204
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_02.jpeg",
+                "width": 15,
+                "height": 15,
+                "size_bytes": 683
+              },
+              {
+                "filename": "page_001_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_03.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+                "width": 816,
+                "height": 544,
+                "size_bytes": 131412,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.51528,
+                  "visual_rect_count": 52,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 658,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 576,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 4",
+        "caption": "The process of the Spatial Re-learning (Spa-RL) block and Spectral Re-learning (Spe-RL) block. The Spa-RL block and the",
+        "kind": "method_overview",
+        "section": "机制流程",
+        "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+        "priority": 1,
+        "anchor_text": "机制流程",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_005_fig_figure_4.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_figure_4.png",
+          "width": 784,
+          "height": 395,
+          "size_bytes": 78093,
+          "label": "Figure 4",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.360076,
+            "visual_rect_count": 80,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 0,
+            "table_body_rows": 0,
+            "caption_text_chars": 262,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 5,
+            "score": 8,
+            "matched_terms": [
+              "figure 4",
+              "process",
+              "spatial",
+              "re-learning",
+              "spa-rl",
+              "block"
+            ],
+            "snippet": "lection Re-learning Re-learning + (a) Spatial Re-learning Block Rresponse Bands 0 1 R G B Figure 4. The process of the Spatial Re-learning (Spa-RL) block and Spectral Re-learning (Spe-RL)",
+            "images": [
+              {
+                "filename": "page_005_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_01.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              },
+              {
+                "filename": "page_005_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_02.jpx",
+                "width": 109,
+                "height": 105,
+                "size_bytes": 1387
+              },
+              {
+                "filename": "page_005_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_03.jpx",
+                "width": 183,
+                "height": 184,
+                "size_bytes": 4049
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_005_fig_figure_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_figure_4.png",
+                "width": 784,
+                "height": 395,
+                "size_bytes": 78093,
+                "label": "Figure 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.360076,
+                  "visual_rect_count": 80,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 262,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_005_fig_table_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_table_1.png",
+                "width": 668,
+                "height": 172,
+                "size_bytes": 29929,
+                "label": "Table 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.133907,
+                  "visual_rect_count": 1,
+                  "visual_body_ratio": 0.099816,
+                  "paragraph_text_chars": 854,
+                  "table_body_rows": 12,
+                  "caption_text_chars": 134,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 3,
+            "matched_terms": [
+              "process",
+              "spatial",
+              "re-learning",
+              "block"
+            ],
+            "snippet": "complex spatial- spectral structure require a deeper network. However, ex- isting methods process all pixels uniformly, which ignores this property. To leverage this property, we propose",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_01.jpx",
+                "width": 165,
+                "height": 111,
+                "size_bytes": 2204
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_02.jpeg",
+                "width": 15,
+                "height": 15,
+                "size_bytes": 683
+              },
+              {
+                "filename": "page_001_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_03.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+                "width": 816,
+                "height": 544,
+                "size_bytes": 131412,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.51528,
+                  "visual_rect_count": 52,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 658,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 576,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 2,
+            "score": 3,
+            "matched_terms": [
+              "process",
+              "spatial",
+              "re-learning",
+              "block"
+            ],
+            "snippet": "to account for the spatial and spectral structure simultaneously. Additionally, directly processing the image patches or pixels obtained through classification disrupts their inherent po",
+            "images": [],
+            "figure_assets": [
+              {
+                "filename": "page_002_fig_fig_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_002_fig_fig_1.png",
+                "width": 816,
+                "height": 273,
+                "size_bytes": 59200,
+                "label": "Fig. 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "large_text_block_suspected",
+                    "low_visual_body_ratio"
+                  ],
+                  "page_coverage_ratio": 0.258731,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1904,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 466,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 9",
+        "caption": "Visualization of the positions of distorted feature points under varied ratio coefficient λ for different stages. Visualization of",
+        "kind": "method_overview",
+        "section": "机制流程",
+        "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+        "priority": 1,
+        "anchor_text": "机制流程",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_008_fig_figure_9.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9.png",
+          "width": 629,
+          "height": 230,
+          "size_bytes": 178605,
+          "label": "Figure 9",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.168313,
+            "visual_rect_count": 54,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 114,
+            "table_body_rows": 0,
+            "caption_text_chars": 409,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "fig. 9",
+              "visualization",
+              "positions",
+              "distorted",
+              "feature",
+              "points"
+            ],
+            "snippet": "λ > 0.5, SAM gradually increases. Mean- while, the FLOPs grow linearly as λ increases. In Fig. 9, we further visualize the selection results at different stages for various values of λ.",
+            "images": [
+              {
+                "filename": "page_008_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_01.jpx",
+                "width": 334,
+                "height": 334,
+                "size_bytes": 13401
+              },
+              {
+                "filename": "page_008_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_02.jpx",
+                "width": 370,
+                "height": 370,
+                "size_bytes": 16411
+              },
+              {
+                "filename": "page_008_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_03.jpx",
+                "width": 287,
+                "height": 287,
+                "size_bytes": 9889
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_figure_9.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9.png",
+                "width": 629,
+                "height": 230,
+                "size_bytes": 178605,
+                "label": "Figure 9",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.168313,
+                  "visual_rect_count": 54,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 114,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 409,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 3,
+            "matched_terms": [
+              "distorted",
+              "feature",
+              "points"
+            ],
+            "snippet": "sion feature Pseudo-MSI Pseudo-LRHSI High spectral fidelity Spatial re-learning Spatially distorted feature points Spectrally distorted feature points GT Re Value Bands GT Re Value Bands Rr",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_01.jpx",
+                "width": 165,
+                "height": 111,
+                "size_bytes": 2204
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_02.jpeg",
+                "width": 15,
+                "height": 15,
+                "size_bytes": 683
+              },
+              {
+                "filename": "page_001_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_03.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+                "width": 816,
+                "height": 544,
+                "size_bytes": 131412,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.51528,
+                  "visual_rect_count": 52,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 658,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 576,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 2,
+            "score": 3,
+            "matched_terms": [
+              "distorted",
+              "feature",
+              "points"
+            ],
+            "snippet": "sion feature, with most feature points accurately extracted and only a few feature points distorted. The Selective Re-learning Mod- ule consists of two Spectral Transformer blocks and one M",
+            "images": [],
+            "figure_assets": [
+              {
+                "filename": "page_002_fig_fig_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_002_fig_fig_1.png",
+                "width": 816,
+                "height": 273,
+                "size_bytes": 59200,
+                "label": "Fig. 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "large_text_block_suspected",
+                    "low_visual_body_ratio"
+                  ],
+                  "page_coverage_ratio": 0.258731,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1904,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 466,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 3",
+        "caption": "Ablation study on network depth.",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_007_fig_table_3.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+          "width": 757,
+          "height": 466,
+          "size_bytes": 104846,
+          "label": "Table 3",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "reject",
+            "quality_reason_codes": [
+              "table_text_contamination_suspected",
+              "multiple_caption_regions_suspected"
+            ],
+            "page_coverage_ratio": 0.409517,
+            "visual_rect_count": 9,
+            "visual_body_ratio": 0.868417,
+            "paragraph_text_chars": 1466,
+            "table_body_rows": 5,
+            "caption_text_chars": 81,
+            "other_caption_count": 2,
+            "other_caption_labels": [
+              "Figure 8",
+              "Table 4"
+            ]
+          },
+          "candidate_status": "reject_visual_quality"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "table 3",
+              "ablation",
+              "network",
+              "depth"
+            ],
+            "snippet": "CN [12] LRTN [30] Ours QNR 0.9456 0.8944 0.9626 0.9717 0.9722 0.9714 0.9720 0.9718 0.9733 Table 3. Ablation study on network depth. The best result is marked in bold font. Model PSNR SAM",
+            "images": [
+              {
+                "filename": "page_007_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_01.jpeg",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 78479
+              },
+              {
+                "filename": "page_007_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_02.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85186
+              },
+              {
+                "filename": "page_007_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_03.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85350
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+                "width": 751,
+                "height": 195,
+                "size_bytes": 107049,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.170604,
+                  "visual_rect_count": 44,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 96,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 87,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+                "width": 757,
+                "height": 466,
+                "size_bytes": 104846,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_text_contamination_suspected",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.409517,
+                  "visual_rect_count": 9,
+                  "visual_body_ratio": 0.868417,
+                  "paragraph_text_chars": 1466,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 81,
+                  "other_caption_count": 2,
+                  "other_caption_labels": [
+                    "Figure 8",
+                    "Table 4"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_figure_8.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+                "width": 754,
+                "height": 453,
+                "size_bytes": 144548,
+                "label": "Figure 8",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.397505,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 390,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 57,
+                  "other_caption_count": 3,
+                  "other_caption_labels": [
+                    "Figure 7",
+                    "Table 2",
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "table 3",
+              "ablation",
+              "network",
+              "depth"
+            ],
+            "snippet": "on Study Impact of network depth N. The network depth N deter- mines the number of SRLFs. Table 3 records the results for N ranging from 1 to 5. It shows that when N <= 4, eval- uation me",
+            "images": [
+              {
+                "filename": "page_008_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_01.jpx",
+                "width": 334,
+                "height": 334,
+                "size_bytes": 13401
+              },
+              {
+                "filename": "page_008_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_02.jpx",
+                "width": 370,
+                "height": 370,
+                "size_bytes": 16411
+              },
+              {
+                "filename": "page_008_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_03.jpx",
+                "width": 287,
+                "height": 287,
+                "size_bytes": 9889
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_figure_9.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9.png",
+                "width": 629,
+                "height": 230,
+                "size_bytes": 178605,
+                "label": "Figure 9",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.168313,
+                  "visual_rect_count": 54,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 114,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 409,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 1,
+            "matched_terms": [
+              "network"
+            ],
+            "snippet": "rk, while only those in regions with complex spatial- spectral structure require a deeper network. However, ex- isting methods process all pixels uniformly, which ignores this property. T",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_01.jpx",
+                "width": 165,
+                "height": 111,
+                "size_bytes": 2204
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_02.jpeg",
+                "width": 15,
+                "height": 15,
+                "size_bytes": 683
+              },
+              {
+                "filename": "page_001_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_03.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+                "width": 816,
+                "height": 544,
+                "size_bytes": 131412,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.51528,
+                  "visual_rect_count": 52,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 658,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 576,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 4",
+        "caption": "Ablation study on key modules. The best result is marked",
+        "kind": "main_result",
+        "section": "关键结果",
+        "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+        "priority": 2,
+        "anchor_text": "关键结果",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_007_fig_table_4.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_4.png",
+          "width": 331,
+          "height": 83,
+          "size_bytes": 9128,
+          "label": "Table 4",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.03218,
+            "visual_rect_count": 1,
+            "visual_body_ratio": 0.170305,
+            "paragraph_text_chars": 186,
+            "table_body_rows": 5,
+            "caption_text_chars": 79,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "table 4",
+              "ablation",
+              "modules",
+              "best",
+              "marked"
+            ],
+            "snippet": ".2477 0.9750 0.9951 N = 4 49.3881 2.1816 0.9752 0.9954 N = 5 49.5214 2.1693 0.9753 0.9954 Table 4. Ablation study on key modules. The best result is marked in bold font. Model FLOPs(G) PS",
+            "images": [
+              {
+                "filename": "page_007_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_01.jpeg",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 78479
+              },
+              {
+                "filename": "page_007_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_02.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85186
+              },
+              {
+                "filename": "page_007_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_03.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85350
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+                "width": 751,
+                "height": 195,
+                "size_bytes": 107049,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.170604,
+                  "visual_rect_count": 44,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 96,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 87,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+                "width": 757,
+                "height": 466,
+                "size_bytes": 104846,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_text_contamination_suspected",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.409517,
+                  "visual_rect_count": 9,
+                  "visual_body_ratio": 0.868417,
+                  "paragraph_text_chars": 1466,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 81,
+                  "other_caption_count": 2,
+                  "other_caption_labels": [
+                    "Figure 8",
+                    "Table 4"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_figure_8.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+                "width": 754,
+                "height": 453,
+                "size_bytes": 144548,
+                "label": "Figure 8",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.397505,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 390,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 57,
+                  "other_caption_count": 3,
+                  "other_caption_labels": [
+                    "Figure 7",
+                    "Table 2",
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 6,
+            "matched_terms": [
+              "table 4",
+              "ablation"
+            ],
+            "snippet": "this structure, we substitute it with the struc- ture shown in Fig. 3(b). As indicated in Table 4, the PSNR of the model without multi-scale decreases by 1.3408 dB. Impact of SSG-SRL. SSG",
+            "images": [
+              {
+                "filename": "page_008_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_01.jpx",
+                "width": 334,
+                "height": 334,
+                "size_bytes": 13401
+              },
+              {
+                "filename": "page_008_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_02.jpx",
+                "width": 370,
+                "height": 370,
+                "size_bytes": 16411
+              },
+              {
+                "filename": "page_008_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_03.jpx",
+                "width": 287,
+                "height": 287,
+                "size_bytes": 9889
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_figure_9.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9.png",
+                "width": 629,
+                "height": 230,
+                "size_bytes": 178605,
+                "label": "Figure 9",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.168313,
+                  "visual_rect_count": 54,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 114,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 409,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 5,
+            "score": 2,
+            "matched_terms": [
+              "best",
+              "marked"
+            ],
+            "snippet": "Quantitative indexes of the test methods on the CAVE dataset and the Harvard dataset. The best result is marked in bold font. Method FLOPS Params(M) CAVE Harvard PSNR SAM UIQI SSIM PSN",
+            "images": [
+              {
+                "filename": "page_005_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_01.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              },
+              {
+                "filename": "page_005_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_02.jpx",
+                "width": 109,
+                "height": 105,
+                "size_bytes": 1387
+              },
+              {
+                "filename": "page_005_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_03.jpx",
+                "width": 183,
+                "height": 184,
+                "size_bytes": 4049
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_005_fig_figure_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_figure_4.png",
+                "width": 784,
+                "height": 395,
+                "size_bytes": 78093,
+                "label": "Figure 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.360076,
+                  "visual_rect_count": 80,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 262,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_005_fig_table_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_table_1.png",
+                "width": 668,
+                "height": 172,
+                "size_bytes": 29929,
+                "label": "Table 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.133907,
+                  "visual_rect_count": 1,
+                  "visual_body_ratio": 0.099816,
+                  "paragraph_text_chars": 854,
+                  "table_body_rows": 12,
+                  "caption_text_chars": 134,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 1",
+        "caption": "The diagram of the Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SSG-SRL) and PSNR-FLOPs-Params",
+        "kind": "supporting_figure",
+        "section": "深度分析",
+        "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+        "priority": 3,
+        "anchor_text": "深度分析",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_001_fig_figure_1.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+          "width": 816,
+          "height": 544,
+          "size_bytes": 131412,
+          "label": "Figure 1",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.51528,
+            "visual_rect_count": 52,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 658,
+            "table_body_rows": 0,
+            "caption_text_chars": 576,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 1,
+            "score": 8,
+            "matched_terms": [
+              "figure 1",
+              "diagram",
+              "spatial-spectral",
+              "structure-guided",
+              "selective",
+              "re-learning"
+            ],
+            "snippet": ".5 49 49.5 46.5 40 SRLF-Net (ours) Mog-DCN MIMO-SST LRTN DSPNet FusionMamba DAEM DHIF-Net Figure 1. The diagram of the Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SS",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_01.jpx",
+                "width": 165,
+                "height": 111,
+                "size_bytes": 2204
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_02.jpeg",
+                "width": 15,
+                "height": 15,
+                "size_bytes": 683
+              },
+              {
+                "filename": "page_001_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_03.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+                "width": 816,
+                "height": 544,
+                "size_bytes": 131412,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.51528,
+                  "visual_rect_count": 52,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 658,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 576,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 2,
+            "score": 8,
+            "matched_terms": [
+              "fig. 1",
+              "spatial-spectral",
+              "selective",
+              "re-learning"
+            ],
+            "snippet": "propose a Spatial-Spectral Guided Selective Re-learning Mechanism (SSG-SRL), as shown in Fig. 1. This mechanism incorporates the observation model to generate pseudo-MSI and pseudo-LRHS",
+            "images": [],
+            "figure_assets": [
+              {
+                "filename": "page_002_fig_fig_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_002_fig_fig_1.png",
+                "width": 816,
+                "height": 273,
+                "size_bytes": 59200,
+                "label": "Fig. 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "large_text_block_suspected",
+                    "low_visual_body_ratio"
+                  ],
+                  "page_coverage_ratio": 0.258731,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1904,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 466,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 4,
+            "score": 3,
+            "matched_terms": [
+              "spatial-spectral",
+              "structure-guided",
+              "selective",
+              "re-learning"
+            ],
+            "snippet": "rate, with only a few points exhibiting signif- icant distortion. Therefore, we propose a Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SSG- 11.67G per fine-tuning, multiplied",
+            "images": [
+              {
+                "filename": "page_004_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_01.jpx",
+                "width": 171,
+                "height": 176,
+                "size_bytes": 3575
+              },
+              {
+                "filename": "page_004_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_02.jpx",
+                "width": 132,
+                "height": 128,
+                "size_bytes": 2042
+              },
+              {
+                "filename": "page_004_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_03.jpx",
+                "width": 102,
+                "height": 100,
+                "size_bytes": 1200
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_004_fig_figure_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_2.png",
+                "width": 630,
+                "height": 112,
+                "size_bytes": 27723,
+                "label": "Figure 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.0821,
+                  "visual_rect_count": 32,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 131,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_004_fig_figure_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_3.png",
+                "width": 796,
+                "height": 515,
+                "size_bytes": 94532,
+                "label": "Figure 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.476433,
+                  "visual_rect_count": 94,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 424,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Figure 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 3",
+        "caption": "Different structures of Preliminary Fusion Modules and Effective Receptive Fields. (a) Due to the limitations of the SSM",
+        "kind": "supporting_figure",
+        "section": "深度分析",
+        "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+        "priority": 3,
+        "anchor_text": "深度分析",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_004_fig_figure_3.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_3.png",
+          "width": 796,
+          "height": 515,
+          "size_bytes": 94532,
+          "label": "Figure 3",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "reject",
+            "quality_reason_codes": [
+              "multiple_caption_regions_suspected"
+            ],
+            "page_coverage_ratio": 0.476433,
+            "visual_rect_count": 94,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 0,
+            "table_body_rows": 0,
+            "caption_text_chars": 424,
+            "other_caption_count": 1,
+            "other_caption_labels": [
+              "Figure 2"
+            ]
+          },
+          "candidate_status": "reject_visual_quality"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 4,
+            "score": 8,
+            "matched_terms": [
+              "fig. 3",
+              "different",
+              "structures",
+              "preliminary",
+              "fusion",
+              "modules"
+            ],
+            "snippet": "ture, which has a significantly larger highlighted central region in its ERF, as shown in Fig. 3(c). Denote the input of this module as Fin, then the process of the Preliminary Fusion Mo",
+            "images": [
+              {
+                "filename": "page_004_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_01.jpx",
+                "width": 171,
+                "height": 176,
+                "size_bytes": 3575
+              },
+              {
+                "filename": "page_004_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_02.jpx",
+                "width": 132,
+                "height": 128,
+                "size_bytes": 2042
+              },
+              {
+                "filename": "page_004_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_img_03.jpx",
+                "width": 102,
+                "height": 100,
+                "size_bytes": 1200
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_004_fig_figure_2.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_2.png",
+                "width": 630,
+                "height": 112,
+                "size_bytes": 27723,
+                "label": "Figure 2",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.0821,
+                  "visual_rect_count": 32,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 131,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_004_fig_figure_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_3.png",
+                "width": 796,
+                "height": 515,
+                "size_bytes": 94532,
+                "label": "Figure 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.476433,
+                  "visual_rect_count": 94,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 424,
+                  "other_caption_count": 1,
+                  "other_caption_labels": [
+                    "Figure 2"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 8,
+            "matched_terms": [
+              "fig. 3",
+              "different",
+              "preliminary",
+              "fusion"
+            ],
+            "snippet": "assess the performance of this structure, we substitute it with the struc- ture shown in Fig. 3(b). As indicated in Table 4, the PSNR of the model without multi-scale decreases by 1.340",
+            "images": [
+              {
+                "filename": "page_008_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_01.jpx",
+                "width": 334,
+                "height": 334,
+                "size_bytes": 13401
+              },
+              {
+                "filename": "page_008_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_02.jpx",
+                "width": 370,
+                "height": 370,
+                "size_bytes": 16411
+              },
+              {
+                "filename": "page_008_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_03.jpx",
+                "width": 287,
+                "height": 287,
+                "size_bytes": 9889
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_figure_9.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9.png",
+                "width": 629,
+                "height": 230,
+                "size_bytes": 178605,
+                "label": "Figure 9",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.168313,
+                  "visual_rect_count": 54,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 114,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 409,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 3,
+            "matched_terms": [
+              "different",
+              "preliminary",
+              "fusion"
+            ],
+            "snippet": "nary fusion feature for targeted learning. (b) The PSNR-FLOPs-Params Comparisons evaluate different methods from three aspects: the quality of the fused image (vertical axis), model size (h",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_01.jpx",
+                "width": 165,
+                "height": 111,
+                "size_bytes": 2204
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_02.jpeg",
+                "width": 15,
+                "height": 15,
+                "size_bytes": 683
+              },
+              {
+                "filename": "page_001_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_03.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+                "width": 816,
+                "height": 544,
+                "size_bytes": 131412,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.51528,
+                  "visual_rect_count": 52,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 658,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 576,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 5",
+        "caption": "The pseudo-color images and spectral angle error maps of reconstructed jelly beans ms (a test image of the CAVE dataset) by",
+        "kind": "data_or_task",
+        "section": "数据与任务定义",
+        "reason": "这张图更像任务设定或数据说明，放在数据与任务定义最合适。",
+        "priority": 3,
+        "anchor_text": "数据与任务定义",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_006_fig_figure_5.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5.png",
+          "width": 664,
+          "height": 211,
+          "size_bytes": 247244,
+          "label": "Figure 5",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.162982,
+            "visual_rect_count": 84,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 93,
+            "table_body_rows": 0,
+            "caption_text_chars": 152,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 6,
+            "score": 8,
+            "matched_terms": [
+              "figure 5",
+              "pseudo-color",
+              "images",
+              "spectral",
+              "angle",
+              "error"
+            ],
+            "snippet": "R (c) Hysure (d) DHIF-Net (e) DSPNet (f) MIMO-SST (g) Mog-DCN (h) LRTN (i) Ours 0 5 10 15 Figure 5. The pseudo-color images and spectral angle error maps of reconstructed jelly beans ms (a",
+            "images": [
+              {
+                "filename": "page_006_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_01.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56456
+              },
+              {
+                "filename": "page_006_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_02.jpeg",
+                "width": 1024,
+                "height": 1024,
+                "size_bytes": 69403
+              },
+              {
+                "filename": "page_006_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_03.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56250
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_006_fig_figure_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5.png",
+                "width": 664,
+                "height": 211,
+                "size_bytes": 247244,
+                "label": "Figure 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.162982,
+                  "visual_rect_count": 84,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 152,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_006_fig_figure_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6.png",
+                "width": 664,
+                "height": 174,
+                "size_bytes": 140889,
+                "label": "Figure 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.134797,
+                  "visual_rect_count": 90,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 142,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 7,
+            "score": 3,
+            "matched_terms": [
+              "pseudo-color",
+              "images",
+              "spectral",
+              "error"
+            ],
+            "snippet": ") Hysure (d) DHIF-Net (e) DSPNet (f) MIMO-SST (g) Mog-DCN (h) LRTN (i) Ours Figure 7. The pseudo-color images of reconstructed Gaofen5 (part) by different methods. Table 2. No-reference qualit",
+            "images": [
+              {
+                "filename": "page_007_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_01.jpeg",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 78479
+              },
+              {
+                "filename": "page_007_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_02.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85186
+              },
+              {
+                "filename": "page_007_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_03.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85350
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+                "width": 751,
+                "height": 195,
+                "size_bytes": 107049,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.170604,
+                  "visual_rect_count": 44,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 96,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 87,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+                "width": 757,
+                "height": 466,
+                "size_bytes": 104846,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_text_contamination_suspected",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.409517,
+                  "visual_rect_count": 9,
+                  "visual_body_ratio": 0.868417,
+                  "paragraph_text_chars": 1466,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 81,
+                  "other_caption_count": 2,
+                  "other_caption_labels": [
+                    "Figure 8",
+                    "Table 4"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_figure_8.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+                "width": 754,
+                "height": 453,
+                "size_bytes": 144548,
+                "label": "Figure 8",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.397505,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 390,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 57,
+                  "other_caption_count": 3,
+                  "other_caption_labels": [
+                    "Figure 7",
+                    "Table 2",
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 2,
+            "score": 2,
+            "matched_terms": [
+              "images",
+              "spectral"
+            ],
+            "snippet": "l-spatial fusion, which attempts to ob- tain HRHSI by fusing low-resolution hyperspectral images (LRHSI) with multispectral images (MSI). Spectral-spatial fusion methods can be broadly c",
+            "images": [],
+            "figure_assets": [
+              {
+                "filename": "page_002_fig_fig_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_002_fig_fig_1.png",
+                "width": 816,
+                "height": 273,
+                "size_bytes": 59200,
+                "label": "Fig. 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "large_text_block_suspected",
+                    "low_visual_body_ratio"
+                  ],
+                  "page_coverage_ratio": 0.258731,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1904,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 466,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 6",
+        "caption": "The pseudo-color images spectral angle error maps of reconstructed imgf7 (a test image of the Harvard dataset) by different",
+        "kind": "data_or_task",
+        "section": "数据与任务定义",
+        "reason": "这张图更像任务设定或数据说明，放在数据与任务定义最合适。",
+        "priority": 3,
+        "anchor_text": "数据与任务定义",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_006_fig_figure_6.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6.png",
+          "width": 664,
+          "height": 174,
+          "size_bytes": 140889,
+          "label": "Figure 6",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.134797,
+            "visual_rect_count": 90,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 93,
+            "table_body_rows": 0,
+            "caption_text_chars": 142,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 6,
+            "score": 8,
+            "matched_terms": [
+              "figure 6",
+              "pseudo-color",
+              "images",
+              "spectral",
+              "angle",
+              "error"
+            ],
+            "snippet": "Hysure (d) DHIF-Net (e) DSPNet (f) MIMO-SST (g) Mog-DCN (h) LRTN (i) Ours 0 2 4 6 8 10 12 Figure 6. The pseudo-color images spectral angle error maps of reconstructed imgf7 (a test image o",
+            "images": [
+              {
+                "filename": "page_006_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_01.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56456
+              },
+              {
+                "filename": "page_006_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_02.jpeg",
+                "width": 1024,
+                "height": 1024,
+                "size_bytes": 69403
+              },
+              {
+                "filename": "page_006_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_03.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56250
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_006_fig_figure_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5.png",
+                "width": 664,
+                "height": 211,
+                "size_bytes": 247244,
+                "label": "Figure 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.162982,
+                  "visual_rect_count": 84,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 152,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_006_fig_figure_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6.png",
+                "width": 664,
+                "height": 174,
+                "size_bytes": 140889,
+                "label": "Figure 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.134797,
+                  "visual_rect_count": 90,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 142,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 7,
+            "score": 3,
+            "matched_terms": [
+              "pseudo-color",
+              "images",
+              "spectral",
+              "error"
+            ],
+            "snippet": ") Hysure (d) DHIF-Net (e) DSPNet (f) MIMO-SST (g) Mog-DCN (h) LRTN (i) Ours Figure 7. The pseudo-color images of reconstructed Gaofen5 (part) by different methods. Table 2. No-reference qualit",
+            "images": [
+              {
+                "filename": "page_007_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_01.jpeg",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 78479
+              },
+              {
+                "filename": "page_007_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_02.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85186
+              },
+              {
+                "filename": "page_007_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_03.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85350
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+                "width": 751,
+                "height": 195,
+                "size_bytes": 107049,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.170604,
+                  "visual_rect_count": 44,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 96,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 87,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+                "width": 757,
+                "height": 466,
+                "size_bytes": 104846,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_text_contamination_suspected",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.409517,
+                  "visual_rect_count": 9,
+                  "visual_body_ratio": 0.868417,
+                  "paragraph_text_chars": 1466,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 81,
+                  "other_caption_count": 2,
+                  "other_caption_labels": [
+                    "Figure 8",
+                    "Table 4"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_figure_8.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+                "width": 754,
+                "height": 453,
+                "size_bytes": 144548,
+                "label": "Figure 8",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.397505,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 390,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 57,
+                  "other_caption_count": 3,
+                  "other_caption_labels": [
+                    "Figure 7",
+                    "Table 2",
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 2,
+            "score": 2,
+            "matched_terms": [
+              "images",
+              "spectral"
+            ],
+            "snippet": "l-spatial fusion, which attempts to ob- tain HRHSI by fusing low-resolution hyperspectral images (LRHSI) with multispectral images (MSI). Spectral-spatial fusion methods can be broadly c",
+            "images": [],
+            "figure_assets": [
+              {
+                "filename": "page_002_fig_fig_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_002_fig_fig_1.png",
+                "width": 816,
+                "height": 273,
+                "size_bytes": 59200,
+                "label": "Fig. 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "large_text_block_suspected",
+                    "low_visual_body_ratio"
+                  ],
+                  "page_coverage_ratio": 0.258731,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1904,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 466,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 7",
+        "caption": "The pseudo-color images of reconstructed Gaofen5 (part) by different methods.",
+        "kind": "supporting_figure",
+        "section": "深度分析",
+        "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+        "priority": 3,
+        "anchor_text": "深度分析",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_007_fig_figure_7.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+          "width": 751,
+          "height": 195,
+          "size_bytes": 107049,
+          "label": "Figure 7",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.170604,
+            "visual_rect_count": 44,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 96,
+            "table_body_rows": 0,
+            "caption_text_chars": 87,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "fig. 7",
+              "pseudo-color",
+              "images",
+              "reconstructed",
+              "gaofen",
+              "part"
+            ],
+            "snippet": "ferent methods, as shown in Ta- ble 2. Our method achieves the highest QNR. Additionally, Fig. 7 presents the visual results of the reconstructed im- ages generated by traditional approa",
+            "images": [
+              {
+                "filename": "page_007_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_01.jpeg",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 78479
+              },
+              {
+                "filename": "page_007_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_02.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85186
+              },
+              {
+                "filename": "page_007_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_03.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85350
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+                "width": 751,
+                "height": 195,
+                "size_bytes": 107049,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.170604,
+                  "visual_rect_count": 44,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 96,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 87,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+                "width": 757,
+                "height": 466,
+                "size_bytes": 104846,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_text_contamination_suspected",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.409517,
+                  "visual_rect_count": 9,
+                  "visual_body_ratio": 0.868417,
+                  "paragraph_text_chars": 1466,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 81,
+                  "other_caption_count": 2,
+                  "other_caption_labels": [
+                    "Figure 8",
+                    "Table 4"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_figure_8.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+                "width": 754,
+                "height": 453,
+                "size_bytes": 144548,
+                "label": "Figure 8",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.397505,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 390,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 57,
+                  "other_caption_count": 3,
+                  "other_caption_labels": [
+                    "Figure 7",
+                    "Table 2",
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 6,
+            "score": 3,
+            "matched_terms": [
+              "pseudo-color",
+              "images",
+              "reconstructed",
+              "part"
+            ],
+            "snippet": "d) DHIF-Net (e) DSPNet (f) MIMO-SST (g) Mog-DCN (h) LRTN (i) Ours 0 5 10 15 Figure 5. The pseudo-color images and spectral angle error maps of reconstructed jelly beans ms (a test image of the",
+            "images": [
+              {
+                "filename": "page_006_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_01.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56456
+              },
+              {
+                "filename": "page_006_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_02.jpeg",
+                "width": 1024,
+                "height": 1024,
+                "size_bytes": 69403
+              },
+              {
+                "filename": "page_006_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_03.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56250
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_006_fig_figure_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5.png",
+                "width": 664,
+                "height": 211,
+                "size_bytes": 247244,
+                "label": "Figure 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.162982,
+                  "visual_rect_count": 84,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 152,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_006_fig_figure_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6.png",
+                "width": 664,
+                "height": 174,
+                "size_bytes": 140889,
+                "label": "Figure 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.134797,
+                  "visual_rect_count": 90,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 142,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 1,
+            "score": 1,
+            "matched_terms": [
+              "reconstructed"
+            ],
+            "snippet": "information. We find that pixels in regions with smooth spatial-spectral structure can be reconstructed well using a shallow net- work, while only those in regions with complex spatial- spectra",
+            "images": [
+              {
+                "filename": "page_001_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_01.jpx",
+                "width": 165,
+                "height": 111,
+                "size_bytes": 2204
+              },
+              {
+                "filename": "page_001_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_02.jpeg",
+                "width": 15,
+                "height": 15,
+                "size_bytes": 683
+              },
+              {
+                "filename": "page_001_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_img_03.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_001_fig_figure_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1.png",
+                "width": 816,
+                "height": 544,
+                "size_bytes": 131412,
+                "label": "Figure 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.51528,
+                  "visual_rect_count": 52,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 658,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 576,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Figure 8",
+        "caption": "Robustness analysis of the ratio coefficient λ.",
+        "kind": "supporting_figure",
+        "section": "深度分析",
+        "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+        "priority": 3,
+        "anchor_text": "深度分析",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_007_fig_figure_8.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+          "width": 754,
+          "height": 453,
+          "size_bytes": 144548,
+          "label": "Figure 8",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "reject",
+            "quality_reason_codes": [
+              "multiple_caption_regions_suspected"
+            ],
+            "page_coverage_ratio": 0.397505,
+            "visual_rect_count": 53,
+            "visual_body_ratio": 1.0,
+            "paragraph_text_chars": 390,
+            "table_body_rows": 0,
+            "caption_text_chars": 57,
+            "other_caption_count": 3,
+            "other_caption_labels": [
+              "Figure 7",
+              "Table 2",
+              "Table 3"
+            ]
+          },
+          "candidate_status": "reject_visual_quality"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "figure 8",
+              "robustness",
+              "analysis",
+              "ratio",
+              "coefficient"
+            ],
+            "snippet": "Ps calculation only considers multiplication and division operations. SAM (deg) FLOPs (G) Figure 8. Robustness analysis of the ratio coefficient λ. [33], LRTN [30], Mog-DCN [12], DHIF-Net",
+            "images": [
+              {
+                "filename": "page_007_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_01.jpeg",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 78479
+              },
+              {
+                "filename": "page_007_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_02.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85186
+              },
+              {
+                "filename": "page_007_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_03.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85350
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+                "width": 751,
+                "height": 195,
+                "size_bytes": 107049,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.170604,
+                  "visual_rect_count": 44,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 96,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 87,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+                "width": 757,
+                "height": 466,
+                "size_bytes": 104846,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_text_contamination_suspected",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.409517,
+                  "visual_rect_count": 9,
+                  "visual_body_ratio": 0.868417,
+                  "paragraph_text_chars": 1466,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 81,
+                  "other_caption_count": 2,
+                  "other_caption_labels": [
+                    "Figure 8",
+                    "Table 4"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_figure_8.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+                "width": 754,
+                "height": 453,
+                "size_bytes": 144548,
+                "label": "Figure 8",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.397505,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 390,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 57,
+                  "other_caption_count": 3,
+                  "other_caption_labels": [
+                    "Figure 7",
+                    "Table 2",
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 8,
+            "score": 7,
+            "matched_terms": [
+              "fig. 8",
+              "ratio",
+              "coefficient"
+            ],
+            "snippet": "ng inference from 0 to 1 to test its effect on network performance and FLOPs. As shown in Fig. 8, SAM remains relatively sta- ble when 0.1 ≤λ ≤0.3. When λ > 0.3, SAM begins to fluctuate,",
+            "images": [
+              {
+                "filename": "page_008_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_01.jpx",
+                "width": 334,
+                "height": 334,
+                "size_bytes": 13401
+              },
+              {
+                "filename": "page_008_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_02.jpx",
+                "width": 370,
+                "height": 370,
+                "size_bytes": 16411
+              },
+              {
+                "filename": "page_008_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_img_03.jpx",
+                "width": 287,
+                "height": 287,
+                "size_bytes": 9889
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_008_fig_figure_9.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9.png",
+                "width": 629,
+                "height": 230,
+                "size_bytes": 178605,
+                "label": "Figure 9",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.168313,
+                  "visual_rect_count": 54,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 114,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 409,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 2,
+            "score": 2,
+            "matched_terms": [
+              "analysis",
+              "coefficient"
+            ],
+            "snippet": "approaches, such as component substitution (CS)-based methods [2, 35] and multiresolution analysis (MRA)-based methods [1, 26], were initially designed for panchromatic sharpening tasks, b",
+            "images": [],
+            "figure_assets": [
+              {
+                "filename": "page_002_fig_fig_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_002_fig_fig_1.png",
+                "width": 816,
+                "height": 273,
+                "size_bytes": 59200,
+                "label": "Fig. 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "large_text_block_suspected",
+                    "low_visual_body_ratio"
+                  ],
+                  "page_coverage_ratio": 0.258731,
+                  "visual_rect_count": 0,
+                  "visual_body_ratio": 0.0,
+                  "paragraph_text_chars": 1904,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 466,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      },
+      {
+        "id": "Table 1",
+        "caption": "Quantitative indexes of the test methods on the CAVE dataset and the Harvard dataset. The best result is marked in bold font.",
+        "kind": "data_or_task",
+        "section": "数据与任务定义",
+        "reason": "这张图更像任务设定或数据说明，放在数据与任务定义最合适。",
+        "priority": 3,
+        "anchor_text": "数据与任务定义",
+        "insert_mode": "placeholder",
+        "figure_asset_candidate": {
+          "filename": "page_005_fig_table_1.png",
+          "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_table_1.png",
+          "width": 668,
+          "height": 172,
+          "size_bytes": 29929,
+          "label": "Table 1",
+          "extraction_level": "figure",
+          "quality_signals": {
+            "visual_quality_status": "usable",
+            "quality_reason_codes": [],
+            "page_coverage_ratio": 0.133907,
+            "visual_rect_count": 1,
+            "visual_body_ratio": 0.099816,
+            "paragraph_text_chars": 854,
+            "table_body_rows": 12,
+            "caption_text_chars": 134,
+            "other_caption_count": 0,
+            "other_caption_labels": []
+          },
+          "candidate_status": "usable_candidate"
+        },
+        "candidate_pages": [
+          {
+            "page_number": 5,
+            "score": 8,
+            "matched_terms": [
+              "table 1",
+              "quantitative",
+              "indexes",
+              "test",
+              "methods",
+              "cave"
+            ],
+            "snippet": "ing targeted re-learning of spatial-spectral distorted feature points for reconstruction. Table 1. Quantitative indexes of the test methods on the CAVE dataset and the Harvard dataset. Th",
+            "images": [
+              {
+                "filename": "page_005_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_01.jpx",
+                "width": 139,
+                "height": 135,
+                "size_bytes": 2255
+              },
+              {
+                "filename": "page_005_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_02.jpx",
+                "width": 109,
+                "height": 105,
+                "size_bytes": 1387
+              },
+              {
+                "filename": "page_005_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_img_03.jpx",
+                "width": 183,
+                "height": 184,
+                "size_bytes": 4049
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_005_fig_figure_4.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_figure_4.png",
+                "width": 784,
+                "height": 395,
+                "size_bytes": 78093,
+                "label": "Figure 4",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.360076,
+                  "visual_rect_count": 80,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 0,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 262,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_005_fig_table_1.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_table_1.png",
+                "width": 668,
+                "height": 172,
+                "size_bytes": 29929,
+                "label": "Table 1",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.133907,
+                  "visual_rect_count": 1,
+                  "visual_body_ratio": 0.099816,
+                  "paragraph_text_chars": 854,
+                  "table_body_rows": 12,
+                  "caption_text_chars": 134,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          },
+          {
+            "page_number": 7,
+            "score": 8,
+            "matched_terms": [
+              "table 1",
+              "quantitative",
+              "test",
+              "methods",
+              "cave"
+            ],
+            "snippet": "HIF-Net [20], DSPNet [37], and MIMO-SST [13]. 4.3. Experimental Results on Simulated Data Table 1 records the test results of all methods on the CAVE and Harvard datasets. Our method achi",
+            "images": [
+              {
+                "filename": "page_007_img_01.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_01.jpeg",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 78479
+              },
+              {
+                "filename": "page_007_img_02.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_02.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85186
+              },
+              {
+                "filename": "page_007_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_img_03.jpx",
+                "width": 859,
+                "height": 828,
+                "size_bytes": 85350
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_007_fig_figure_7.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7.png",
+                "width": 751,
+                "height": 195,
+                "size_bytes": 107049,
+                "label": "Figure 7",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.170604,
+                  "visual_rect_count": 44,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 96,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 87,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_007_fig_table_3.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png",
+                "width": 757,
+                "height": 466,
+                "size_bytes": 104846,
+                "label": "Table 3",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "table_text_contamination_suspected",
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.409517,
+                  "visual_rect_count": 9,
+                  "visual_body_ratio": 0.868417,
+                  "paragraph_text_chars": 1466,
+                  "table_body_rows": 5,
+                  "caption_text_chars": 81,
+                  "other_caption_count": 2,
+                  "other_caption_labels": [
+                    "Figure 8",
+                    "Table 4"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              },
+              {
+                "filename": "page_007_fig_figure_8.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png",
+                "width": 754,
+                "height": 453,
+                "size_bytes": 144548,
+                "label": "Figure 8",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "reject",
+                  "quality_reason_codes": [
+                    "multiple_caption_regions_suspected"
+                  ],
+                  "page_coverage_ratio": 0.397505,
+                  "visual_rect_count": 53,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 390,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 57,
+                  "other_caption_count": 3,
+                  "other_caption_labels": [
+                    "Figure 7",
+                    "Table 2",
+                    "Table 3"
+                  ]
+                },
+                "candidate_status": "reject_visual_quality"
+              }
+            ]
+          },
+          {
+            "page_number": 6,
+            "score": 3,
+            "matched_terms": [
+              "test",
+              "methods",
+              "cave"
+            ],
+            "snippet": "The pseudo-color images and spectral angle error maps of reconstructed jelly beans ms (a test image of the CAVE dataset) by different methods. (a) GT (b) NSSR (c) Hysure (d) DHIF-Net",
+            "images": [
+              {
+                "filename": "page_006_img_01.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_01.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56456
+              },
+              {
+                "filename": "page_006_img_02.jpeg",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_02.jpeg",
+                "width": 1024,
+                "height": 1024,
+                "size_bytes": 69403
+              },
+              {
+                "filename": "page_006_img_03.jpx",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_img_03.jpx",
+                "width": 686,
+                "height": 686,
+                "size_bytes": 56250
+              }
+            ],
+            "figure_assets": [
+              {
+                "filename": "page_006_fig_figure_5.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5.png",
+                "width": 664,
+                "height": 211,
+                "size_bytes": 247244,
+                "label": "Figure 5",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.162982,
+                  "visual_rect_count": 84,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 152,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              },
+              {
+                "filename": "page_006_fig_figure_6.png",
+                "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6.png",
+                "width": 664,
+                "height": 174,
+                "size_bytes": 140889,
+                "label": "Figure 6",
+                "extraction_level": "figure",
+                "quality_signals": {
+                  "visual_quality_status": "usable",
+                  "quality_reason_codes": [],
+                  "page_coverage_ratio": 0.134797,
+                  "visual_rect_count": 90,
+                  "visual_body_ratio": 1.0,
+                  "paragraph_text_chars": 93,
+                  "table_body_rows": 0,
+                  "caption_text_chars": 142,
+                  "other_caption_count": 0,
+                  "other_caption_labels": []
+                },
+                "candidate_status": "usable_candidate"
+              }
+            ]
+          }
+        ],
+        "matching_strategy": "figure-asset-candidate"
+      }
+    ]
+  }
+}

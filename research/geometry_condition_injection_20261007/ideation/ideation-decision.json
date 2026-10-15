@@ -1,0 +1,21 @@
+{
+  "decision": "proceed_to_novelty_review",
+  "selected_idea_ids": [
+    "G01"
+  ],
+  "confidence": "low",
+  "novelty_check_status": "reviewed",
+  "rationale": "定向自审暂定3/5，需补全文和经典对照，尚未冻结确认性主张。",
+  "next_skill": "research-novelty-review",
+  "required_handoffs": [
+    "selected-idea.md",
+    "idea-scores.json",
+    "landscape-map.md",
+    "../novelty-decision.json"
+  ],
+  "limits": [
+    "exploratory only; no training gains",
+    "self-review, material fulltext gaps",
+    "synthetic diagnostics do not establish natural failures"
+  ]
+}

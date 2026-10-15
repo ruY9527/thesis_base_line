@@ -1,0 +1,352 @@
+[
+  {
+    "title": [
+      "Uncertainty-Driven Generative Prior Learning for Sparse Model-Guided Hyperspectral Image Fusion"
+    ],
+    "DOI": "10.1109/tip.2026.3689415",
+    "container-title": [
+      "IEEE Transactions on Image Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1109/tip.2026.3689415",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9375-5426",
+        "authenticated-orcid": false,
+        "given": "Junwei",
+        "family": "Xu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Artificial Intelligence, Xidian University, Xi&#x2019;an, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Teng",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hangzhou Institute of Technology, Xidian University, Hangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-2358-9091",
+        "authenticated-orcid": false,
+        "given": "Zhenxuan",
+        "family": "Fang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Artificial Intelligence, Xidian University, Xi&#x2019;an, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3082-832X",
+        "authenticated-orcid": false,
+        "given": "Fangfang",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Xidian University, Xi&#x2019;an, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1410-1534",
+        "authenticated-orcid": false,
+        "given": "Le",
+        "family": "Dong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Artificial Intelligence, Xidian University, Xi&#x2019;an, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-4378-8837",
+        "authenticated-orcid": false,
+        "given": "Tao",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hangzhou Institute of Technology, Xidian University, Hangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhou",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Artificial Intelligence, Xidian University, Xi&#x2019;an, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9632-985X",
+        "authenticated-orcid": false,
+        "given": "Weisheng",
+        "family": "Dong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Artificial Intelligence, Xidian University, Xi&#x2019;an, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2067-2763",
+        "authenticated-orcid": false,
+        "given": "Xin",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, University at Albany, Albany, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/83/11355710/11520599.pdf?arnumber=11520599",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "title": [
+      "Exploring structured uncertainty for external prior-guided hyperspectral image fusion"
+    ],
+    "DOI": "10.1016/j.inffus.2025.103997",
+    "container-title": [
+      "Information Fusion"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1016/j.inffus.2025.103997",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9375-5426",
+        "authenticated-orcid": false,
+        "given": "Junwei",
+        "family": "Xu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-2358-9091",
+        "authenticated-orcid": false,
+        "given": "Zhenxuan",
+        "family": "Fang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0005-4067-2519",
+        "authenticated-orcid": false,
+        "given": "Mengzu",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2358-0293",
+        "authenticated-orcid": false,
+        "given": "Fangfang",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-4378-8837",
+        "authenticated-orcid": false,
+        "given": "Tao",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9632-985X",
+        "authenticated-orcid": false,
+        "given": "Weisheng",
+        "family": "Dong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2067-2763",
+        "authenticated-orcid": false,
+        "given": "Xin",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2179-3292",
+        "authenticated-orcid": false,
+        "given": "Guangming",
+        "family": "Shi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": null,
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525010590?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1566253525010590?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  }
+]

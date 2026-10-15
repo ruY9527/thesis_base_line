@@ -1,0 +1,619 @@
+{
+  "status": "ok",
+  "script": "plan_figure_table_decisions.py",
+  "output_language": "zh-CN",
+  "paper_id": "doi:10.1109/cvpr52734.2025.00697",
+  "decisions": [
+    {
+      "item_id": "figure:Figure 1",
+      "source_id": "Figure 1",
+      "kind": "figure",
+      "label": "Figure 1",
+      "caption": "The diagram of the Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SSG-SRL) and PSNR-FLOPs-Params",
+      "pages": [
+        1
+      ],
+      "section_id": "sec:preamble",
+      "decision": "insert",
+      "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 3,
+      "target_section": "研究问题",
+      "plan_kind": "supporting_figure",
+      "source_image_filename": "page_001_fig_figure_1_review_repair1.png",
+      "relative_markdown_embed": "![Figure 1](images/page_001_fig_figure_1_review_repair1.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1_review_repair1.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "8778c96a514ab3672735d463b3855f3d17108cf950637d1dabcc865a6136fa92",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_001_fig_figure_1_review_repair1.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_001.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 1,
+        "caption": "The diagram of the Spatial-Spectral Structure-Guided Selective Re-learning Mechanism (SSG-SRL) and PSNR-FLOPs-Params",
+        "bbox_pt": [
+          47.736,
+          258.192,
+          550.8,
+          401.544
+        ],
+        "normalized_bbox": [
+          0.078,
+          0.326,
+          0.9,
+          0.507
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "8778c96a514ab3672735d463b3855f3d17108cf950637d1dabcc865a6136fa92",
+        "preserved_scientific_elements": [
+          "两个完整子图",
+          "观测响应和再学习示意",
+          "PSNR、参数与圆面积的比较",
+          "全部方法、坐标和子图标签"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "已对照原始页面确认重裁剪去除标题作者和图注，图体无科学内容缺失。",
+        "failure_reason": "",
+        "repair_attempts": 1,
+        "revised_bbox": [
+          0.078,
+          0.326,
+          0.9,
+          0.507
+        ]
+      }
+    },
+    {
+      "item_id": "figure:Figure 2",
+      "source_id": "Figure 2",
+      "kind": "figure",
+      "label": "Figure 2",
+      "caption": "The overview of the proposed SRLF-Net. The Embedding layer and the Refine layer are both individual convolutional layers.",
+      "pages": [
+        4
+      ],
+      "section_id": "sec:related-work",
+      "decision": "insert",
+      "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 1,
+      "target_section": "方法主线",
+      "plan_kind": "method_overview",
+      "source_image_filename": "page_004_fig_figure_2_review.png",
+      "relative_markdown_embed": "![Figure 2](images/page_004_fig_figure_2_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_2_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "b072923336f500db70d87a464748c3cec7f3696cf6c4ddb4a50afa3605d66e21",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_2_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_004.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 4,
+        "caption": "The overview of the proposed SRLF-Net. The Embedding layer and the Refine layer are both individual convolutional layers.",
+        "bbox_pt": [
+          61.759307861328125,
+          70.12979125976562,
+          534.4954833984375,
+          154.3084716796875
+        ],
+        "normalized_bbox": [
+          0.100914,
+          0.088548,
+          0.873359,
+          0.194834
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "b072923336f500db70d87a464748c3cec7f3696cf6c4ddb4a50afa3605d66e21",
+        "preserved_scientific_elements": [
+          "两种输入",
+          "级联 SRLF",
+          "跳跃连接与各阶段输出",
+          "Refine 和最终重建"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "完整图 2 图体，输入输出及所有支路标签保留。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 3",
+      "source_id": "Figure 3",
+      "kind": "figure",
+      "label": "Figure 3",
+      "caption": "Different structures of Preliminary Fusion Modules and Effective Receptive Fields. (a) Due to the limitations of the SSM",
+      "pages": [
+        4
+      ],
+      "section_id": "sec:related-work",
+      "decision": "visual_defect",
+      "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+      "skip_reason": "visual_quality_gate_rejected_candidate",
+      "visual_quality_status": "reject_visual_quality",
+      "priority": 3,
+      "target_section": "深度分析",
+      "plan_kind": "supporting_figure",
+      "source_image_filename": "page_004_fig_figure_3.png",
+      "relative_markdown_embed": "![Figure 3](images/page_004_fig_figure_3.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_004_fig_figure_3.png"
+    },
+    {
+      "item_id": "figure:Figure 4",
+      "source_id": "Figure 4",
+      "kind": "figure",
+      "label": "Figure 4",
+      "caption": "The process of the Spatial Re-learning (Spa-RL) block and Spectral Re-learning (Spe-RL) block. The Spa-RL block and the",
+      "pages": [
+        5
+      ],
+      "section_id": "sec:preliminary-3",
+      "decision": "insert",
+      "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 1,
+      "target_section": "方法主线",
+      "plan_kind": "method_overview",
+      "source_image_filename": "page_005_fig_figure_4_review.png",
+      "relative_markdown_embed": "![Figure 4](images/page_005_fig_figure_4_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_figure_4_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "2549140474a8e8d547342bf18e5468952541b3a9a853200a2782a4346266b062",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_figure_4_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_005.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 5,
+        "caption": "The process of the Spatial Re-learning (Spa-RL) block and Spectral Re-learning (Spe-RL) block. The Spa-RL block and the",
+        "bbox_pt": [
+          23.669029235839844,
+          0.0,
+          612.0,
+          296.6529846191406
+        ],
+        "normalized_bbox": [
+          0.038675,
+          0.0,
+          1.0,
+          0.374562
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "2549140474a8e8d547342bf18e5468952541b3a9a853200a2782a4346266b062",
+        "preserved_scientific_elements": [
+          "空间再学习与光谱再学习两子图",
+          "响应函数",
+          "两种评分选择",
+          "输入观测与残差连接",
+          "全部标签"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "完整图 4；顶部仅留白，没有图注和相邻正文混入。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 5",
+      "source_id": "Figure 5",
+      "kind": "figure",
+      "label": "Figure 5",
+      "caption": "The pseudo-color images and spectral angle error maps of reconstructed jelly beans ms (a test image of the CAVE dataset) by",
+      "pages": [
+        6
+      ],
+      "section_id": "sec:method",
+      "decision": "insert",
+      "reason": "这张图更像任务设定或数据说明，放在数据与任务定义最合适。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 3,
+      "target_section": "关键结果",
+      "plan_kind": "data_or_task",
+      "source_image_filename": "page_006_fig_figure_5_review.png",
+      "relative_markdown_embed": "![Figure 5](images/page_006_fig_figure_5_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "d1d90c88e58e7f327f21248e5b08251c7a51a8d334bf8c62a724f62e960bd7ad",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_5_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_006.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 6,
+        "caption": "The pseudo-color images and spectral angle error maps of reconstructed jelly beans ms (a test image of the CAVE dataset) by",
+        "bbox_pt": [
+          48.58599853515625,
+          68.00074768066406,
+          546.6349487304688,
+          226.61599731445312
+        ],
+        "normalized_bbox": [
+          0.079389,
+          0.08586,
+          0.893194,
+          0.286131
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "d1d90c88e58e7f327f21248e5b08251c7a51a8d334bf8c62a724f62e960bd7ad",
+        "preserved_scientific_elements": [
+          "全部九种方法",
+          "重建、误差图与局部放大",
+          "色标范围和方法名"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "图 5 的全部面板及色标完整可读。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 6",
+      "source_id": "Figure 6",
+      "kind": "figure",
+      "label": "Figure 6",
+      "caption": "The pseudo-color images spectral angle error maps of reconstructed imgf7 (a test image of the Harvard dataset) by different",
+      "pages": [
+        6
+      ],
+      "section_id": "sec:method",
+      "decision": "insert",
+      "reason": "这张图更像任务设定或数据说明，放在数据与任务定义最合适。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 3,
+      "target_section": "关键结果",
+      "plan_kind": "data_or_task",
+      "source_image_filename": "page_006_fig_figure_6_review.png",
+      "relative_markdown_embed": "![Figure 6](images/page_006_fig_figure_6_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "855e113680618ff1002235d0ecf80fe507cee3f9eaa99e8fb1e2f5635ef24a95",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_006_fig_figure_6_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_006.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 6,
+        "caption": "The pseudo-color images spectral angle error maps of reconstructed imgf7 (a test image of the Harvard dataset) by different",
+        "bbox_pt": [
+          48.58599853515625,
+          250.9469451904297,
+          546.635986328125,
+          382.1319885253906
+        ],
+        "normalized_bbox": [
+          0.079389,
+          0.316852,
+          0.893196,
+          0.48249
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "855e113680618ff1002235d0ecf80fe507cee3f9eaa99e8fb1e2f5635ef24a95",
+        "preserved_scientific_elements": [
+          "全部九种方法",
+          "Harvard 重建和光谱误差图",
+          "局部放大及色标"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "图 6 全部面板完整，未混入图注。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 7",
+      "source_id": "Figure 7",
+      "kind": "figure",
+      "label": "Figure 7",
+      "caption": "The pseudo-color images of reconstructed Gaofen5 (part) by different methods.",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "insert",
+      "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 3,
+      "target_section": "数据与任务定义",
+      "plan_kind": "supporting_figure",
+      "source_image_filename": "page_007_fig_figure_7_review.png",
+      "relative_markdown_embed": "![Figure 7](images/page_007_fig_figure_7_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "0477320cf66d32995d2dffcbb364d3ff807f414fb5b6a86be1d8a59618f0e850",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_7_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_007.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 7,
+        "caption": "The pseudo-color images of reconstructed Gaofen5 (part) by different methods.",
+        "bbox_pt": [
+          48.58599853515625,
+          0.0,
+          612.0,
+          146.76998901367188
+        ],
+        "normalized_bbox": [
+          0.079389,
+          0.0,
+          1.0,
+          0.185316
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "0477320cf66d32995d2dffcbb364d3ff807f414fb5b6a86be1d8a59618f0e850",
+        "preserved_scientific_elements": [
+          "原始低分辨率 HSI 与各重建结果",
+          "方法名及局部放大"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "图 7 图体完整，顶部为留白；不存在真实 HR-HSI 面板，不能把左图当 HR 真值。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "figure:Figure 8",
+      "source_id": "Figure 8",
+      "kind": "figure",
+      "label": "Figure 8",
+      "caption": "Robustness analysis of the ratio coefficient λ.",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "visual_defect",
+      "reason": "这张图更适合作为补充图，放在深度分析部分帮助解释作者论点。",
+      "skip_reason": "visual_quality_gate_rejected_candidate",
+      "visual_quality_status": "reject_visual_quality",
+      "priority": 3,
+      "target_section": "深度分析",
+      "plan_kind": "supporting_figure",
+      "source_image_filename": "page_007_fig_figure_8.png",
+      "relative_markdown_embed": "![Figure 8](images/page_007_fig_figure_8.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_figure_8.png"
+    },
+    {
+      "item_id": "figure:Figure 9",
+      "source_id": "Figure 9",
+      "kind": "figure",
+      "label": "Figure 9",
+      "caption": "Visualization of the positions of distorted feature points under varied ratio coefficient λ for different stages. Visualization of",
+      "pages": [
+        8
+      ],
+      "section_id": "sec:experiments",
+      "decision": "insert",
+      "reason": "这张图概括了整体方法或系统流程；如果匹配置信度足够高，最适合放在 `### 机制流程` 帮助快速建立执行链理解。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 1,
+      "target_section": "深度分析",
+      "plan_kind": "method_overview",
+      "source_image_filename": "page_008_fig_figure_9_review.png",
+      "relative_markdown_embed": "![Figure 9](images/page_008_fig_figure_9_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "084045727ee7479292238440d1cd930e5c761e6707f0db57b6b42afa7ee41638",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_008_fig_figure_9_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_008.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 8,
+        "caption": "Visualization of the positions of distorted feature points under varied ratio coefficient λ for different stages. Visualization of",
+        "bbox_pt": [
+          61.24324035644531,
+          68.75590515136719,
+          533.3704223632812,
+          241.55227661132812
+        ],
+        "normalized_bbox": [
+          0.100071,
+          0.086813,
+          0.87152,
+          0.30499
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "084045727ee7479292238440d1cd930e5c761e6707f0db57b6b42afa7ee41638",
+        "preserved_scientific_elements": [
+          "MSI 和 LRHSI 观测",
+          "两种结构选择",
+          "四个阶段",
+          "三个比例系数及黑色未选区域"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "完整位置选择可视化，所有分组标签与系数保留。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "table:Table 1",
+      "source_id": "Table 1",
+      "kind": "table",
+      "label": "Table 1",
+      "caption": "Quantitative indexes of the test methods on the CAVE dataset and the Harvard dataset. The best result is marked in bold font.",
+      "pages": [
+        5
+      ],
+      "section_id": "sec:preliminary-3",
+      "decision": "insert",
+      "reason": "这张图更像任务设定或数据说明，放在数据与任务定义最合适。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 3,
+      "target_section": "关键结果",
+      "plan_kind": "data_or_task",
+      "source_image_filename": "page_005_fig_table_1_review.png",
+      "relative_markdown_embed": "![Table 1](images/page_005_fig_table_1_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_table_1_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "47b5944f018c27967ff42d52968d6609d327fc161fc60b3461cf7636dda44878",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_005_fig_table_1_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_005.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 5,
+        "caption": "Quantitative indexes of the test methods on the CAVE dataset and the Harvard dataset. The best result is marked in bold font.",
+        "bbox_pt": [
+          44.11199951171875,
+          349.7425842285156,
+          545.134765625,
+          479.28765869140625
+        ],
+        "normalized_bbox": [
+          0.072078,
+          0.441594,
+          0.890743,
+          0.605161
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "47b5944f018c27967ff42d52968d6609d327fc161fc60b3461cf7636dda44878",
+        "preserved_scientific_elements": [
+          "全部方法",
+          "两个数据集的全部四项指标",
+          "参数与 FLOPs",
+          "DAEM 脚注标记和最佳值"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "完整主结果表图体，未混入表题；计算口径另外根据补充材料说明。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    },
+    {
+      "item_id": "table:Table 2",
+      "source_id": "Table 2",
+      "kind": "table",
+      "label": "Table 2",
+      "caption": "No-reference quality assessment for Gaofen5. The best result is marked in bold font.",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "low_priority",
+      "reason": "caption_detected_but_not_selected_by_figure_plan",
+      "skip_reason": "",
+      "visual_quality_status": "",
+      "priority": 99,
+      "target_section": ""
+    },
+    {
+      "item_id": "table:Table 3",
+      "source_id": "Table 3",
+      "kind": "table",
+      "label": "Table 3",
+      "caption": "Ablation study on network depth.",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "visual_defect",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "visual_quality_gate_rejected_candidate",
+      "visual_quality_status": "reject_visual_quality",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_007_fig_table_3.png",
+      "relative_markdown_embed": "![Table 3](images/page_007_fig_table_3.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_3.png"
+    },
+    {
+      "item_id": "table:Table 4",
+      "source_id": "Table 4",
+      "kind": "table",
+      "label": "Table 4",
+      "caption": "Ablation study on key modules. The best result is marked",
+      "pages": [
+        7
+      ],
+      "section_id": "sec:methods",
+      "decision": "insert",
+      "reason": "这张图或表直接承载主结果，适合放在关键结果部分。",
+      "skip_reason": "",
+      "visual_quality_status": "usable_candidate",
+      "priority": 2,
+      "target_section": "关键结果",
+      "plan_kind": "main_result",
+      "source_image_filename": "page_007_fig_table_4_review.png",
+      "relative_markdown_embed": "![Table 4](images/page_007_fig_table_4_review.png)",
+      "source_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_4_review.png",
+      "materialization_status": "pending",
+      "source_image_sha256": "03ef1c26aaddf06a82ad9af7500cc831db22d381a23d6e8907fb3c90cdce1479",
+      "review_evidence": {
+        "candidate_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\images\\page_007_fig_table_4_review.png",
+        "page_preview_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\srlf\\srlf_assets\\page_previews\\page_007.png",
+        "source_pdf_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\srlf\\source.pdf",
+        "source_page": 7,
+        "caption": "Ablation study on key modules. The best result is marked",
+        "bbox_pt": [
+          44.11199951171875,
+          386.4295654296875,
+          292.36248779296875,
+          449.2596435546875
+        ],
+        "normalized_bbox": [
+          0.072078,
+          0.487916,
+          0.477716,
+          0.567247
+        ],
+        "render_dpi": 300
+      },
+      "visual_review": {
+        "status": "pass",
+        "reviewed_asset_sha256": "03ef1c26aaddf06a82ad9af7500cc831db22d381a23d6e8907fb3c90cdce1479",
+        "preserved_scientific_elements": [
+          "四种模块设置",
+          "FLOPs 和全部四项指标",
+          "全部数值"
+        ],
+        "omitted_scientific_elements": [],
+        "notes": "完整模块消融表，标题被剔除。",
+        "failure_reason": "",
+        "repair_attempts": 0,
+        "revised_bbox": []
+      }
+    }
+  ],
+  "summary": {
+    "total_items": 13,
+    "by_decision": {
+      "insert": 9,
+      "visual_defect": 3,
+      "low_priority": 1
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.1",
+  "status": "complete",
+  "novelty_decision_rating": 2,
+  "impact_positioning_rating": 3,
+  "decision_confidence_rating": 2,
+  "narrowest_defensible_positioning": "Under identical frozen HSI-only and HSI-MSI experts, information and budgets, test whether explicit endpoint spectral-gain auxiliary supervision adds reproducible reconstruction benefit beyond ordinary policy, cost-sensitive weighting, oracle-weight teachers and reference-set ensembles.",
+  "what_would_change_the_decision": "Ordinary policy/cost-sensitive/ensemble comparisons match gain arm: reduce method novelty to 1-2; Functionally equivalent gain teacher found: abandon current first-method claim; Necessary mechanism and repeatable independent failure pattern supported by experiments: rerun bounded novelty review before promotion",
+  "top_kill_shot_objections": [
+    "EnsIR already learns frozen recovery expert weights from GT reference data",
+    "Endpoint benefit is not optimal continuous action strength",
+    "Unresolved exact same-domain full-text overlaps"
+  ],
+  "literature_context_used": [
+    "literature-addendum.md",
+    "sources-addendum.json",
+    "prior-art-addendum.md",
+    "../cross_direction_review_20261007/research-report.md"
+  ],
+  "paper_review_summary_used": "",
+  "claims_to_qualify": [
+    "first GT-guided expert weighting",
+    "negative endpoint gain means all partial injection is harmful",
+    "BCE probability equals optimal injection strength",
+    "raw MSE oracle is full deployed-pipeline optimum",
+    "confirmed no prior art",
+    "performance improvement",
+    "validated top-venue contribution"
+  ],
+  "missing_prior_work": [
+    "CoPGNet full text",
+    "WCGE-Net full text",
+    "EnsIR same-expert transfer comparator",
+    "VPG-Net full text"
+  ],
+  "review_findings_to_add": [],
+  "literature_assurance": {
+    "mode": "unlinked",
+    "paths": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "file_sha256": {
+      "protocol": "",
+      "search_log": "",
+      "recall_audit": "",
+      "corpus_manifest": "",
+      "screening_log": "",
+      "evidence": "",
+      "report": ""
+    },
+    "corpus_manifest_sha256": "",
+    "corpus_version": null,
+    "review_profile": "",
+    "assurance_verdict": "bounded-unlinked; no systematic coverage assurance",
+    "unresolved_high_priority_novelty_question_ids": [
+      "CoPGNet-fulltext",
+      "WCGE-fulltext",
+      "EnsIR-matched-comparator",
+      "VPG-fulltext"
+    ]
+  },
+  "date": "2026-10-07",
+  "window": [
+    "2024-10-07",
+    "2026-10-07"
+  ],
+  "narrow_empirical_question_rating": 3,
+  "decision": "reframe_architecture_and_test_narrow_exploratory_question",
+  "narrow_positioning": "Under identical frozen HSI-only and HSI-MSI experts, information and budgets, test whether explicit endpoint spectral-gain auxiliary supervision adds reproducible reconstruction benefit beyond ordinary policy, cost-sensitive weighting, oracle-weight teachers and reference-set ensembles.",
+  "evidence_class": "exploratory; infrastructure tests and one-step smoke checks only",
+  "selection_history": "Inherited I13 from existing local review; narrowed after EnsIR overlap and endpoint-vs-continuous-action counterexample; no converged outcome used to select the idea.",
+  "review_provenance": "separate native worker contexts with shared prior context; not blind, cross-model or exhaustive independent novelty certification",
+  "unresolved_novelty_threats": [
+    "CoPGNet full text",
+    "WCGE-Net full text",
+    "EnsIR same-expert transfer comparator",
+    "VPG-Net full text"
+  ],
+  "change_conditions": [
+    "Ordinary policy/cost-sensitive/ensemble comparisons match gain arm: reduce method novelty to 1-2",
+    "Functionally equivalent gain teacher found: abandon current first-method claim",
+    "Necessary mechanism and repeatable independent failure pattern supported by experiments: rerun bounded novelty review before promotion"
+  ],
+  "report": "novelty-report.md",
+  "prior_art": "prior-art-addendum.md",
+  "linked_literature_pack_validated": false,
+  "scientific_or_publication_guarantee": false,
+  "implementation_status": "withdrawn_at_user_request",
+  "implementation_code_present": false
+}

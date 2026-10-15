@@ -1,0 +1,80 @@
+{
+  "purpose": "Algebraic illustration only; no MossFuse model or dataset experiment was run.",
+  "orientation": "X is spectral-bands by spatial-pixels; H=X D^T; M=R X.",
+  "R_A": [
+    [
+      0.5,
+      0.5
+    ]
+  ],
+  "R_B": [
+    [
+      0.75,
+      0.25
+    ]
+  ],
+  "D": [
+    [
+      0.5,
+      0.5
+    ]
+  ],
+  "X1": [
+    [
+      11.0,
+      9.0
+    ],
+    [
+      9.0,
+      11.0
+    ]
+  ],
+  "X2": [
+    [
+      9.0,
+      11.0
+    ],
+    [
+      11.0,
+      9.0
+    ]
+  ],
+  "observed_H": [
+    [
+      10.0
+    ],
+    [
+      10.0
+    ]
+  ],
+  "observed_M": [
+    [
+      10.0,
+      10.0
+    ]
+  ],
+  "two_candidate_H_difference_l1": 0.0,
+  "two_candidate_M_difference_l1": 0.0,
+  "two_candidate_HR_difference_l1": 8.0,
+  "four_part_reconstruction_error": 1.7763568394002505e-15,
+  "joint_null_H_norm": 2.482534153247273e-16,
+  "joint_null_M_norm": 1.1102230246251565e-16,
+  "v": [
+    1.0,
+    -1.0
+  ],
+  "R_A_v": 0.0,
+  "R_B_v": 0.5,
+  "all_candidates_nonnegative": true,
+  "assumptions": [
+    "known fixed linear spectral and spatial operators",
+    "noise-free registered observations",
+    "spatial operator identical across spectral bands",
+    "no restrictive tensor or material model imposed"
+  ],
+  "not_established": [
+    "MossFuse shared branch fails",
+    "a new method improves reconstruction",
+    "the proposed positioning is novel"
+  ]
+}

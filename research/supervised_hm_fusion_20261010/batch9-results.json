@@ -1,0 +1,13 @@
+[
+  {
+    "id": "danet_official",
+    "requested_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wen_Regulating_Rather_than_Constraining_Adaptive_Guidance_for_Complex_Spectral_Reconstruction_CVPR_2026_paper.html",
+    "final_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wen_Regulating_Rather_than_Constraining_Adaptive_Guidance_for_Complex_Spectral_Reconstruction_CVPR_2026_paper.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\sources\\danet_official\\source.html",
+    "bytes": 6684,
+    "sha256": "ef39537f67757d426fb004e69de24907b76b151d2c9b405aff1fd7209f4c00eb",
+    "status": "ok",
+    "retrieved_on": "2026-10-10"
+  }
+]

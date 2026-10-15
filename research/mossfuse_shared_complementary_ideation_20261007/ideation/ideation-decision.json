@@ -1,0 +1,21 @@
+{
+  "decision": "proceed_to_novelty_review",
+  "selected_idea_ids": [
+    "I05",
+    "I06"
+  ],
+  "confidence": "low",
+  "novelty_check_status": "quick_signal_only",
+  "rationale": "完成本轮定向反证审查，但关键同构近邻未排尽；先保留 A/B 的窄问题，C 条件储备。",
+  "next_skill": "research-novelty-review",
+  "required_handoffs": [
+    "补完 NQ1/NQ2 的系统近邻检索与全文检查。",
+    "先做 A 的自然诊断或 B 的普通留出训练强对照，再冻结完整方法主张。"
+  ],
+  "limits": [
+    "未训练新网络。",
+    "无系统检索保障；没有证明不存在同构方法。",
+    "A 为原 D5 收窄，B 为 D1/D4 机制延伸，不能称全新概念。",
+    "C 不属于当前统一 D 设置中的已证实问题。"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "script": "write_obsidian_note.py",
+  "output_language": "zh-CN",
+  "paper_id": "title:b594f500b60c",
+  "title": "EMR-Diff: Edge-aware Multimodal Residual Diffusion Model for Hyperspectral Image Super-resolution",
+  "note_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\EMR-Diff.md",
+  "subdir": "高光谱图像融合",
+  "images_dir": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images",
+  "materialized_figures": [
+    {
+      "source_id": "Figure 1",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_001_fig_figure_1_review_repair1.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images\\page_001_fig_figure_1_review_repair1.png",
+      "relative_markdown_path": "images/page_001_fig_figure_1_review_repair1.png",
+      "reviewed_asset_sha256": "7fae5132b8002ce88f621fcaa7388efc6c1412588826768fd3f7acdd2dba4d02"
+    },
+    {
+      "source_id": "Figure 2",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_003_fig_figure_2_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images\\page_003_fig_figure_2_review.png",
+      "relative_markdown_path": "images/page_003_fig_figure_2_review.png",
+      "reviewed_asset_sha256": "d58790b5976b74b84efb198bfef1aea7580c5b870d0fd6aa51b44639f8cbafc4"
+    },
+    {
+      "source_id": "Figure 3",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_004_fig_figure_3_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images\\page_004_fig_figure_3_review.png",
+      "relative_markdown_path": "images/page_004_fig_figure_3_review.png",
+      "reviewed_asset_sha256": "49a33b09abf369a34a53da9c458e39e797d24c70a38acecf70d8a40d2528ade1"
+    },
+    {
+      "source_id": "Figure 4",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_005_fig_figure_4_review_repair1.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images\\page_005_fig_figure_4_review_repair1.png",
+      "relative_markdown_path": "images/page_005_fig_figure_4_review_repair1.png",
+      "reviewed_asset_sha256": "631e4cab90843801818fb92e1bf329eb72305a6c700a09105a1fd38d074a12b9"
+    },
+    {
+      "source_id": "Figure 5",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_006_fig_figure_5_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images\\page_006_fig_figure_5_review.png",
+      "relative_markdown_path": "images/page_006_fig_figure_5_review.png",
+      "reviewed_asset_sha256": "7bde48d4bdbfff082bf5b6eccc1a90dea49c7b1f3a8ced2930d5f38c16a1dfca"
+    },
+    {
+      "source_id": "Figure 7",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_figure_7_review_repair1.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images\\page_008_fig_figure_7_review_repair1.png",
+      "relative_markdown_path": "images/page_008_fig_figure_7_review_repair1.png",
+      "reviewed_asset_sha256": "d7474c852e29ba5035f5ed034e95745ccbe00dda0b3ac8fd04e998afb0f145f1"
+    },
+    {
+      "source_id": "Table 5",
+      "source_image": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\deeppapernote_runs\\emrdiff\\emrdiff_assets\\images\\page_008_fig_table_5_review.png",
+      "dest_image_path": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes\\高光谱图像融合\\EMR-Diff\\images\\page_008_fig_table_5_review.png",
+      "relative_markdown_path": "images/page_008_fig_table_5_review.png",
+      "reviewed_asset_sha256": "ef5ddfc4fa4bacfd7870a27d9c18e165a45522fc53241a90590cad5480d90e2e"
+    }
+  ],
+  "overwrote_existing_note": false,
+  "admission": "workspace",
+  "domain_routing_skipped": false,
+  "output_mode": "workspace",
+  "base_output_root": "D:\\coding\\github_self\\thesis_base_line\\research\\supervised_hm_fusion_20261010\\notes"
+}
